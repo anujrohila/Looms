@@ -127,6 +127,12 @@
     <Compile Include="Forms\Master\CompanyView.Designer.cs">
       <DependentUpon>CompanyView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMasterView.Designer.cs">
+      <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\PartyMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     </Compile>
     <Compile Include="Forms\Master\PartyMasterView.Designer.cs">
       <DependentUpon>PartyMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\PenaltyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\PenaltyMaster.Designer.cs">
+      <DependentUpon>PenaltyMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Production\frmMachine.cs">
       <SubType>Form</SubType>
@@ -163,11 +175,17 @@
     <EmbeddedResource Include="Forms\Master\CompanyView.resx">
       <DependentUpon>CompanyView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmPenaltyMasterView.resx">
+      <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\PartyMaster.resx">
       <DependentUpon>PartyMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\PartyMasterView.resx">
       <DependentUpon>PartyMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\PenaltyMaster.resx">
+      <DependentUpon>PenaltyMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
