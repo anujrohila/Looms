@@ -23,6 +23,5 @@ namespace LoomsManagement.Windows.Forms.Master
 
         }
 
-       
     }
 }
