@@ -103,6 +103,12 @@
     <Compile Include="Forms\Business\frmFirm.Designer.cs">
       <DependentUpon>frmFirm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmAttandanceMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmAttandanceMasterView.Designer.cs">
+      <DependentUpon>frmAttandanceMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmAttendanceMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,18 @@
     <Compile Include="Forms\Master\frmWithdrawnMasterView.Designer.cs">
       <DependentUpon>frmWithdrawnMasterView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMaster.Designer.cs">
+      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMasterView.Designer.cs">
+      <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Production\frmMachine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +204,9 @@
     <Compile Include="Utilities\LoomsManagementApplication.cs" />
     <EmbeddedResource Include="Forms\Account\frmCompanyMaster.resx">
       <DependentUpon>frmCompanyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmAttandanceMasterView.resx">
+      <DependentUpon>frmAttandanceMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmAttendanceMaster.resx">
       <DependentUpon>frmAttendanceMaster.cs</DependentUpon>
@@ -222,6 +243,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmWithdrawnMasterView.resx">
       <DependentUpon>frmWithdrawnMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnQualityMaster.resx">
+      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnQualityMasterView.resx">
+      <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

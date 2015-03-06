@@ -36,7 +36,7 @@
             this.comboEmployeeName = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtWorkHour = new DevExpress.XtraEditors.TextEdit();
+            this.txtMeterWorked = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEndDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEndDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboEmployeeName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWorkHour.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMeterWorked.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             this.groupControl1.Controls.Add(this.comboEmployeeName);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.txtWorkHour);
+            this.groupControl1.Controls.Add(this.txtMeterWorked);
             this.groupControl1.Controls.Add(this.labelControl14);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
@@ -81,7 +81,7 @@
             this.dateStartDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateStartDate.Size = new System.Drawing.Size(205, 26);
-            this.dateStartDate.TabIndex = 2;
+            this.dateStartDate.TabIndex = 1;
             this.dateStartDate.ToolTip = "Select Date.";
             // 
             // labelControl4
@@ -106,7 +106,7 @@
             this.dateEndDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEndDate.Size = new System.Drawing.Size(205, 26);
-            this.dateEndDate.TabIndex = 3;
+            this.dateEndDate.TabIndex = 2;
             this.dateEndDate.ToolTip = "Select Date.";
             // 
             // comboEmployeeName
@@ -155,18 +155,18 @@
             this.labelControl2.TabIndex = 105;
             this.labelControl2.Text = "Start Date";
             // 
-            // txtWorkHour
+            // txtMeterWorked
             // 
-            this.txtWorkHour.EditValue = "";
-            this.txtWorkHour.Location = new System.Drawing.Point(155, 122);
-            this.txtWorkHour.Name = "txtWorkHour";
-            this.txtWorkHour.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWorkHour.Properties.Appearance.Options.UseFont = true;
-            this.txtWorkHour.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtWorkHour.Properties.Mask.EditMask = "n2";
-            this.txtWorkHour.Size = new System.Drawing.Size(205, 26);
-            this.txtWorkHour.TabIndex = 4;
-            this.txtWorkHour.ToolTip = "Enter Cheque Number";
+            this.txtMeterWorked.EditValue = "";
+            this.txtMeterWorked.Location = new System.Drawing.Point(155, 122);
+            this.txtMeterWorked.Name = "txtMeterWorked";
+            this.txtMeterWorked.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMeterWorked.Properties.Appearance.Options.UseFont = true;
+            this.txtMeterWorked.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtMeterWorked.Properties.Mask.EditMask = "n2";
+            this.txtMeterWorked.Size = new System.Drawing.Size(205, 26);
+            this.txtMeterWorked.TabIndex = 3;
+            this.txtMeterWorked.ToolTip = "Enter Cheque Number";
             // 
             // labelControl14
             // 
@@ -194,7 +194,7 @@
             this.btnSave.Location = new System.Drawing.Point(80, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
-            this.btnSave.TabIndex = 10;
+            this.btnSave.TabIndex = 4;
             this.btnSave.Text = "&Save";
             // 
             // btnCancel
@@ -205,7 +205,7 @@
             this.btnCancel.Location = new System.Drawing.Point(172, 12);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 31);
-            this.btnCancel.TabIndex = 11;
+            this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "&Cancel";
             // 
             // frmAttendanceMaster
@@ -225,7 +225,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEndDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEndDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboEmployeeName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWorkHour.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMeterWorked.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -241,7 +241,7 @@
         private DevExpress.XtraEditors.LookUpEdit comboEmployeeName;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtWorkHour;
+        private DevExpress.XtraEditors.TextEdit txtMeterWorked;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         public DevExpress.XtraEditors.SimpleButton btnSave;
