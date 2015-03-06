@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class PartyMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmPartyMasterView : DevExpress.XtraEditors.XtraForm
     {
-        public PartyMaster()
+        public frmPartyMasterView()
         {
             InitializeComponent();
         }

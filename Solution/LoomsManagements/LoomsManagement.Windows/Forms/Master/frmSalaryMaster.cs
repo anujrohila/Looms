@@ -11,17 +11,16 @@ using DevExpress.XtraEditors;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class BeamMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmSalaryMaster : DevExpress.XtraEditors.XtraForm
     {
-        public BeamMaster()
+        public frmSalaryMaster()
         {
             InitializeComponent();
         }
 
-        private void labelControl20_Click(object sender, EventArgs e)
+        private void labelControl3_Click(object sender, EventArgs e)
         {
 
         }
-
     }
 }

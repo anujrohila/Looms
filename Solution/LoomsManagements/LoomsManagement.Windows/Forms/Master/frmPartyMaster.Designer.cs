@@ -1,6 +1,6 @@
 ﻿namespace LoomsManagement.Windows.Forms.Master
 {
-    partial class PartyMaster
+    partial class frmPartyMaster
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PartyMaster));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPartyMaster));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txt_CompanyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();

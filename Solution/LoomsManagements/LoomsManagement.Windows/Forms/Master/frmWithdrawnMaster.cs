@@ -11,11 +11,16 @@ using DevExpress.XtraEditors;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class PenaltyMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmWithdrawnMaster : DevExpress.XtraEditors.XtraForm
     {
-        public PenaltyMaster()
+        public frmWithdrawnMaster()
         {
             InitializeComponent();
+        }
+
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

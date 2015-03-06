@@ -9,18 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace LoomsManagement.Windows.Forms.Account
+namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class CompanyMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmSalaryMasterView : DevExpress.XtraEditors.XtraForm
     {
-        public CompanyMaster()
+        public frmSalaryMasterView()
         {
             InitializeComponent();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

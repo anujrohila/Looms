@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class BeamMasterView : DevExpress.XtraEditors.XtraForm
+    public partial class frmAttendanceMaster : DevExpress.XtraEditors.XtraForm
     {
-        public BeamMasterView()
+        public frmAttendanceMaster()
         {
             InitializeComponent();
         }

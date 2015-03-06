@@ -1,6 +1,6 @@
 ﻿namespace LoomsManagement.Windows.Forms.Master
 {
-    partial class BeamMaster
+    partial class frmBeamMaster
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BeamMaster));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeamMaster));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.combo_CompanyName = new DevExpress.XtraEditors.LookUpEdit();
             this.txt_Remark = new DevExpress.XtraEditors.TextEdit();

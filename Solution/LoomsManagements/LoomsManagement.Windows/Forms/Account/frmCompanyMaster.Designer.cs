@@ -1,6 +1,6 @@
 ﻿namespace LoomsManagement.Windows.Forms.Account
 {
-    partial class CompanyMaster
+    partial class frmCompanyMaster
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CompanyMaster));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompanyMaster));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txt_CompanyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
