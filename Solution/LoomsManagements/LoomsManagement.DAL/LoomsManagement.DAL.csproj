@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +43,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoomsManagement.Database\LoomsManagement.Database.csproj">
+      <Project>{0A14C293-DF78-4312-AA07-755FECD18C1C}</Project>
+      <Name>LoomsManagement.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoomsManagement.Domain\LoomsManagement.Domain.csproj">
+      <Project>{96C17E4B-D6E1-4A60-AB95-3CF50CF29594}</Project>
+      <Name>LoomsManagement.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
