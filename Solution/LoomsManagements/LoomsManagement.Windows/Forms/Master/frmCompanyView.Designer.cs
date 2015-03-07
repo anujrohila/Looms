@@ -29,65 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompanyView));
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.CompanyID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.CompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ComapnyCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grd_Customer = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.Edit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.Delete = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.View = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Code = new DevExpress.XtraGrid.Columns.GridColumn();
             this.OwnerName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ContactPersonName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Address = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.CreationDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.StartDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.InvestmentAmount = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.PANNo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.CSTNo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ECCNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.OpeningDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SMSNO = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.CompanyID = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_Customer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_View)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl1.Location = new System.Drawing.Point(12, 72);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(749, 352);
-            this.gridControl1.TabIndex = 61;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.CompanyID,
-            this.CompanyName,
-            this.ComapnyCode,
-            this.OwnerName,
-            this.ContactPersonName,
-            this.Address,
-            this.CreationDate,
-            this.StartDate,
-            this.InvestmentAmount,
-            this.PANNo,
-            this.CSTNo,
-            this.ECCNo,
-            this.SMSNO});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
             // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.btnSave);
-            this.panelControl1.Location = new System.Drawing.Point(12, 12);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(749, 54);
+            this.panelControl1.Size = new System.Drawing.Size(773, 43);
             this.panelControl1.TabIndex = 62;
             // 
             // btnSave
@@ -95,161 +71,193 @@
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(18, 11);
+            this.btnSave.Location = new System.Drawing.Point(9, 6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
             this.btnSave.TabIndex = 59;
             this.btnSave.Text = "&Add";
             // 
-            // CompanyID
+            // grd_Customer
             // 
-            this.CompanyID.Caption = "Company ID";
-            this.CompanyID.FieldName = "CompanyID";
-            this.CompanyID.Name = "CompanyID";
+            this.grd_Customer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.grd_Customer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grd_Customer.Location = new System.Drawing.Point(0, 43);
+            this.grd_Customer.MainView = this.gridView2;
+            this.grd_Customer.Name = "grd_Customer";
+            this.grd_Customer.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.Btn_Edit,
+            this.Btn_Delete,
+            this.Btn_View});
+            this.grd_Customer.Size = new System.Drawing.Size(773, 393);
+            this.grd_Customer.TabIndex = 63;
+            this.grd_Customer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
             // 
-            // CompanyName
+            // gridView2
             // 
-            this.CompanyName.Caption = "Company Name";
-            this.CompanyName.FieldName = "CompanyName";
-            this.CompanyName.Name = "CompanyName";
-            this.CompanyName.Visible = true;
-            this.CompanyName.VisibleIndex = 0;
-            this.CompanyName.Width = 83;
+            this.gridView2.Appearance.FooterPanel.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView2.Appearance.FooterPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gridView2.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridView2.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView2.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridView2.Appearance.HeaderPanel.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.gridView2.Appearance.Row.Font = new System.Drawing.Font("Cambria", 8.5F);
+            this.gridView2.Appearance.Row.Options.UseFont = true;
+            this.gridView2.ColumnPanelRowHeight = 25;
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.Edit,
+            this.Delete,
+            this.View,
+            this.Name,
+            this.Code,
+            this.OwnerName,
+            this.OpeningDate,
+            this.SMSNO,
+            this.CompanyID});
+            this.gridView2.GridControl = this.grd_Customer;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsBehavior.ReadOnly = true;
+            this.gridView2.OptionsView.ShowAutoFilterRow = true;
+            this.gridView2.OptionsView.ShowFooter = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // ComapnyCode
+            // Edit
             // 
-            this.ComapnyCode.Caption = "Comapny Code";
-            this.ComapnyCode.FieldName = "ComapnyCode";
-            this.ComapnyCode.Name = "ComapnyCode";
-            this.ComapnyCode.Visible = true;
-            this.ComapnyCode.VisibleIndex = 1;
-            this.ComapnyCode.Width = 86;
+            this.Edit.Caption = "Edit";
+            this.Edit.ColumnEdit = this.Btn_Edit;
+            this.Edit.Name = "Edit";
+            this.Edit.OptionsFilter.AllowFilter = false;
+            this.Edit.Visible = true;
+            this.Edit.VisibleIndex = 0;
+            this.Edit.Width = 62;
+            // 
+            // Btn_Edit
+            // 
+            this.Btn_Edit.AutoHeight = false;
+            this.Btn_Edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("Btn_Edit.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            this.Btn_Edit.Name = "Btn_Edit";
+            this.Btn_Edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // Delete
+            // 
+            this.Delete.Caption = "Delete";
+            this.Delete.ColumnEdit = this.Btn_Delete;
+            this.Delete.Name = "Delete";
+            this.Delete.Visible = true;
+            this.Delete.VisibleIndex = 1;
+            this.Delete.Width = 62;
+            // 
+            // Btn_Delete
+            // 
+            this.Btn_Delete.AutoHeight = false;
+            this.Btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("Btn_Delete.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            this.Btn_Delete.Name = "Btn_Delete";
+            this.Btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // View
+            // 
+            this.View.Caption = "View";
+            this.View.ColumnEdit = this.Btn_View;
+            this.View.Name = "View";
+            this.View.Visible = true;
+            this.View.VisibleIndex = 2;
+            this.View.Width = 45;
+            // 
+            // Btn_View
+            // 
+            this.Btn_View.AutoHeight = false;
+            this.Btn_View.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("Btn_View.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            this.Btn_View.Name = "Btn_View";
+            this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // Name
+            // 
+            this.Name.Caption = "Name";
+            this.Name.Name = "Name";
+            this.Name.Visible = true;
+            this.Name.VisibleIndex = 3;
+            this.Name.Width = 115;
+            // 
+            // Code
+            // 
+            this.Code.Caption = "Code";
+            this.Code.Name = "Code";
+            this.Code.Visible = true;
+            this.Code.VisibleIndex = 4;
+            this.Code.Width = 115;
             // 
             // OwnerName
             // 
             this.OwnerName.Caption = "Owner Name";
-            this.OwnerName.FieldName = "OwnerName";
             this.OwnerName.Name = "OwnerName";
             this.OwnerName.Visible = true;
-            this.OwnerName.VisibleIndex = 2;
-            this.OwnerName.Width = 70;
+            this.OwnerName.VisibleIndex = 5;
+            this.OwnerName.Width = 115;
             // 
-            // ContactPersonName
+            // OpeningDate
             // 
-            this.ContactPersonName.Caption = "Contact Person Name";
-            this.ContactPersonName.FieldName = "ContactPersonName";
-            this.ContactPersonName.Name = "ContactPersonName";
-            this.ContactPersonName.Visible = true;
-            this.ContactPersonName.VisibleIndex = 3;
-            this.ContactPersonName.Width = 114;
-            // 
-            // Address
-            // 
-            this.Address.Caption = "Address";
-            this.Address.FieldName = "Address";
-            this.Address.Name = "Address";
-            this.Address.Visible = true;
-            this.Address.VisibleIndex = 4;
-            this.Address.Width = 48;
-            // 
-            // CreationDate
-            // 
-            this.CreationDate.Caption = "Creation Date";
-            this.CreationDate.FieldName = "CreationDate";
-            this.CreationDate.Name = "CreationDate";
-            this.CreationDate.Visible = true;
-            this.CreationDate.VisibleIndex = 5;
-            this.CreationDate.Width = 74;
-            // 
-            // StartDate
-            // 
-            this.StartDate.Caption = "Start Date";
-            this.StartDate.FieldName = "StartDate";
-            this.StartDate.Name = "StartDate";
-            this.StartDate.Visible = true;
-            this.StartDate.VisibleIndex = 6;
-            this.StartDate.Width = 61;
-            // 
-            // InvestmentAmount
-            // 
-            this.InvestmentAmount.Caption = "Investment Amount";
-            this.InvestmentAmount.FieldName = "InvestmentAmount";
-            this.InvestmentAmount.Name = "InvestmentAmount";
-            this.InvestmentAmount.Visible = true;
-            this.InvestmentAmount.VisibleIndex = 7;
-            this.InvestmentAmount.Width = 85;
-            // 
-            // PANNo
-            // 
-            this.PANNo.Caption = "PAN Number";
-            this.PANNo.FieldName = "PANNo";
-            this.PANNo.Name = "PANNo";
-            this.PANNo.Visible = true;
-            this.PANNo.VisibleIndex = 8;
-            this.PANNo.Width = 54;
-            // 
-            // CSTNo
-            // 
-            this.CSTNo.Caption = "CST Number";
-            this.CSTNo.FieldName = "CSTNo";
-            this.CSTNo.Name = "CSTNo";
-            this.CSTNo.Visible = true;
-            this.CSTNo.VisibleIndex = 9;
-            this.CSTNo.Width = 37;
-            // 
-            // ECCNo
-            // 
-            this.ECCNo.Caption = "ECC Number";
-            this.ECCNo.FieldName = "ECCNo";
-            this.ECCNo.Name = "ECCNo";
-            this.ECCNo.Visible = true;
-            this.ECCNo.VisibleIndex = 10;
-            this.ECCNo.Width = 34;
+            this.OpeningDate.Caption = "Opening Date";
+            this.OpeningDate.Name = "OpeningDate";
+            this.OpeningDate.Visible = true;
+            this.OpeningDate.VisibleIndex = 6;
+            this.OpeningDate.Width = 115;
             // 
             // SMSNO
             // 
-            this.SMSNO.Caption = "SMS Number";
-            this.SMSNO.FieldName = "SMSNO";
+            this.SMSNO.Caption = "SMS NO";
             this.SMSNO.Name = "SMSNO";
             this.SMSNO.Visible = true;
-            this.SMSNO.VisibleIndex = 11;
-            this.SMSNO.Width = 20;
+            this.SMSNO.VisibleIndex = 7;
+            this.SMSNO.Width = 126;
             // 
-            // CompanyView
+            // CompanyID
+            // 
+            this.CompanyID.Caption = "CompanyID";
+            this.CompanyID.Name = "CompanyID";
+            // 
+            // frmCompanyView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 436);
+            this.Controls.Add(this.grd_Customer);
             this.Controls.Add(this.panelControl1);
-            this.Controls.Add(this.gridControl1);
-            this.Name = "CompanyView";
+            this.Name = "frmCompanyView";
             this.Text = "CompanyView";
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grd_Customer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_View)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraGrid.Columns.GridColumn CompanyID;
-        private DevExpress.XtraGrid.Columns.GridColumn CompanyName;
-        private DevExpress.XtraGrid.Columns.GridColumn ComapnyCode;
-        private DevExpress.XtraGrid.Columns.GridColumn OwnerName;
-        private DevExpress.XtraGrid.Columns.GridColumn ContactPersonName;
-        private DevExpress.XtraGrid.Columns.GridColumn Address;
-        private DevExpress.XtraGrid.Columns.GridColumn CreationDate;
-        private DevExpress.XtraGrid.Columns.GridColumn StartDate;
-        private DevExpress.XtraGrid.Columns.GridColumn InvestmentAmount;
-        private DevExpress.XtraGrid.Columns.GridColumn PANNo;
-        private DevExpress.XtraGrid.Columns.GridColumn CSTNo;
-        private DevExpress.XtraGrid.Columns.GridColumn ECCNo;
-        private DevExpress.XtraGrid.Columns.GridColumn SMSNO;
         public DevExpress.XtraEditors.SimpleButton btnSave;
+        public DevExpress.XtraGrid.GridControl grd_Customer;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Columns.GridColumn Edit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_Edit;
+        private DevExpress.XtraGrid.Columns.GridColumn Delete;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_Delete;
+        private DevExpress.XtraGrid.Columns.GridColumn View;
+        private DevExpress.XtraGrid.Columns.GridColumn Name;
+        private DevExpress.XtraGrid.Columns.GridColumn Code;
+        private DevExpress.XtraGrid.Columns.GridColumn OwnerName;
+        private DevExpress.XtraGrid.Columns.GridColumn OpeningDate;
+        private DevExpress.XtraGrid.Columns.GridColumn SMSNO;
+        private DevExpress.XtraGrid.Columns.GridColumn CompanyID;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_View;
     }
 }

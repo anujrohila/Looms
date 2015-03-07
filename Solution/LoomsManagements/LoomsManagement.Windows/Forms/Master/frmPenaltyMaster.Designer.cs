@@ -87,7 +87,7 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.txtPenaltyCode);
             this.groupControl1.Controls.Add(this.labelControl14);
-            this.groupControl1.Location = new System.Drawing.Point(12, 12);
+            this.groupControl1.Location = new System.Drawing.Point(8, 7);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(353, 163);
             this.groupControl1.TabIndex = 100;
@@ -158,14 +158,14 @@
             this.labelControl14.TabIndex = 101;
             this.labelControl14.Text = "Penalty Code";
             // 
-            // PenaltyMaster
+            // frmPenaltyMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 246);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.panelControl1);
-            this.Name = "PenaltyMaster";
+            this.Name = "frmPenaltyMaster";
             this.Text = "Penalty Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
