@@ -30,8 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +47,324 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ORM\LoomsManagementDatabase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoomsManagementDatabase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\LoomsManagementDatabase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\LoomsManagementDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblAttendanceMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblAttendanceMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblAttendanceMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBankMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBankMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBankMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeamMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeamMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeamMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeemProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeemProcess_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeemProcess_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBemProcessDetail.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBemProcessDetails_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBemProcessDetails_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBoilerProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBoilerProcess_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBoilerProcess_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBolierProcessDetail.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBolierProcessDetails_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBolierProcessDetails_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBranchMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBranchMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBranchMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBrokersMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBrokersMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBrokersMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblCompany.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblCompanyMachineMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblCompany_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblCompany_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblEmployee.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblEmployeeTypeMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblEmployee_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblEmployee_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcessWork.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcessWork_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcessWork_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcess_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcess_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMachineMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMachineTypeMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMandingProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMandingProcess_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMandingProcess_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingDetailsProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingDetailsProcess_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingDetailsProcess_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingPenulty.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingPenulty_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingPenulty_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPartysMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPartysMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPartysMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPenaltyMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPenaltyMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPenaltyMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblProductQualityMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblSalaryMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblSalaryMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblSalaryMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblTFOProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblTFOProcess_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblTFOProcess_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWindingWork.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWindingWork_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWindingWork_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWithdrownMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWithdrownMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWithdrownMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWorkingYear.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWorkingYear_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWorkingYear_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPackageType.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPackageType_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPackageType_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchase.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchaseItem.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchaseItems_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchaseItems_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchase_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchase_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnQualityMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnQualityMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnQualityMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnTypeMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnTypeMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnTypeMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\WithdrownReturnMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\WithdrownReturnMST_BY_ID_LOAD_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\WithdrownReturnMST_LOAD_ALL_Result.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ORM\LoomsManagementDatabase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoomsManagementDatabase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="ORM\LoomsManagementDatabase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+      <LastGenOutput>LoomsManagementDatabase.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ORM\LoomsManagementDatabase.edmx.diagram">
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+    </None>
+    <None Include="ORM\LoomsManagementDatabase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+      <LastGenOutput>LoomsManagementDatabase.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
