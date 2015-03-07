@@ -28,8 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeamMaster));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.date_BhidanDate = new DevExpress.XtraEditors.DateEdit();
+            this.txt_MinStrategy = new DevExpress.XtraEditors.TextEdit();
+            this.date_LoadingDate = new DevExpress.XtraEditors.DateEdit();
+            this.date_BeemDate = new DevExpress.XtraEditors.DateEdit();
             this.combo_CompanyName = new DevExpress.XtraEditors.LookUpEdit();
             this.txt_Remark = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
@@ -85,12 +90,41 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.date_BeemDate = new DevExpress.XtraEditors.DateEdit();
-            this.date_LoadingDate = new DevExpress.XtraEditors.DateEdit();
-            this.txt_MinStrategy = new DevExpress.XtraEditors.TextEdit();
-            this.date_BhidanDate = new DevExpress.XtraEditors.DateEdit();
+            this.errorCompanyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorWrapperPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorJobberPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBeemDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorYarnQuality = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorGreyQuality = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorTarNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMeters = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorTaka = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorWeight = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorProductionMeter = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorProductionTaka = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPipeWeight = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorLoadingDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMachineNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBhidanStatus = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBhidanDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPasaraiName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorCount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorIssueDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorTakaMeter = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorRPM = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMeterConsumption = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPick = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorRate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorAmount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_MinStrategy.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combo_CompanyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Remark.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).BeginInit();
@@ -117,13 +151,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_WrapperPartyname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_MinStrategy.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCompanyName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorWrapperPartyName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorJobberPartyName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBeemDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorYarnQuality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorGreyQuality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTarNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMeters)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTaka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorWeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProductionMeter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProductionTaka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPipeWeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorLoadingDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMachineNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBhidanStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBhidanDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPasaraiName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIssueDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTakaMeter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorRPM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMeterConsumption)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPick)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -186,11 +239,202 @@
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(817, 488);
+            this.groupControl1.Size = new System.Drawing.Size(755, 488);
             this.groupControl1.TabIndex = 0;
+            // 
+            // date_BhidanDate
+            // 
+            this.date_BhidanDate.EditValue = null;
+            this.errorMeters.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanStatus.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.date_BhidanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.date_BhidanDate.Location = new System.Drawing.Point(510, 127);
+            this.date_BhidanDate.Name = "date_BhidanDate";
+            this.date_BhidanDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.date_BhidanDate.Properties.Appearance.Options.UseFont = true;
+            this.date_BhidanDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.date_BhidanDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_BhidanDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.date_BhidanDate.Size = new System.Drawing.Size(205, 26);
+            this.date_BhidanDate.TabIndex = 17;
+            this.date_BhidanDate.ToolTip = "Select Date.";
+            // 
+            // txt_MinStrategy
+            // 
+            this.txt_MinStrategy.EditValue = "";
+            this.errorBhidanStatus.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_MinStrategy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_MinStrategy.Location = new System.Drawing.Point(510, 35);
+            this.txt_MinStrategy.Name = "txt_MinStrategy";
+            this.txt_MinStrategy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MinStrategy.Properties.Appearance.Options.UseFont = true;
+            this.txt_MinStrategy.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txt_MinStrategy.Properties.Mask.EditMask = "n2";
+            this.txt_MinStrategy.Size = new System.Drawing.Size(205, 26);
+            this.txt_MinStrategy.TabIndex = 14;
+            this.txt_MinStrategy.ToolTip = "Enter Cheque Number";
+            // 
+            // date_LoadingDate
+            // 
+            this.date_LoadingDate.EditValue = null;
+            this.errorMeters.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanStatus.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.date_LoadingDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.date_LoadingDate.Location = new System.Drawing.Point(150, 437);
+            this.date_LoadingDate.Name = "date_LoadingDate";
+            this.date_LoadingDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.date_LoadingDate.Properties.Appearance.Options.UseFont = true;
+            this.date_LoadingDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.date_LoadingDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_LoadingDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.date_LoadingDate.Size = new System.Drawing.Size(205, 26);
+            this.date_LoadingDate.TabIndex = 13;
+            this.date_LoadingDate.ToolTip = "Select Date.";
+            // 
+            // date_BeemDate
+            // 
+            this.date_BeemDate.EditValue = null;
+            this.errorMeters.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanStatus.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.date_BeemDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.date_BeemDate.Location = new System.Drawing.Point(150, 127);
+            this.date_BeemDate.Name = "date_BeemDate";
+            this.date_BeemDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.date_BeemDate.Properties.Appearance.Options.UseFont = true;
+            this.date_BeemDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.date_BeemDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_BeemDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.date_BeemDate.Size = new System.Drawing.Size(205, 26);
+            this.date_BeemDate.TabIndex = 3;
+            this.date_BeemDate.ToolTip = "Select Date.";
             // 
             // combo_CompanyName
             // 
+            this.errorBeemDate.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanStatus.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.combo_CompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.combo_CompanyName.Location = new System.Drawing.Point(150, 34);
             this.combo_CompanyName.Name = "combo_CompanyName";
             this.combo_CompanyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -220,7 +464,33 @@
             // txt_Remark
             // 
             this.txt_Remark.EditValue = "";
-            this.txt_Remark.Location = new System.Drawing.Point(534, 451);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Remark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Remark.Location = new System.Drawing.Point(510, 438);
             this.txt_Remark.Name = "txt_Remark";
             this.txt_Remark.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Remark.Properties.Appearance.Options.UseFont = true;
@@ -233,7 +503,7 @@
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Location = new System.Drawing.Point(392, 455);
+            this.labelControl16.Location = new System.Drawing.Point(392, 442);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(49, 17);
             this.labelControl16.TabIndex = 121;
@@ -242,7 +512,33 @@
             // txtAmount
             // 
             this.txtAmount.EditValue = "";
-            this.txtAmount.Location = new System.Drawing.Point(534, 419);
+            this.errorBhidanStatus.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtAmount.Location = new System.Drawing.Point(510, 406);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount.Properties.Appearance.Options.UseFont = true;
@@ -255,7 +551,7 @@
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Location = new System.Drawing.Point(394, 359);
+            this.labelControl17.Location = new System.Drawing.Point(392, 353);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(28, 17);
             this.labelControl17.TabIndex = 119;
@@ -264,7 +560,33 @@
             // txt_Rate
             // 
             this.txt_Rate.EditValue = "";
-            this.txt_Rate.Location = new System.Drawing.Point(534, 387);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Rate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Rate.Location = new System.Drawing.Point(510, 375);
             this.txt_Rate.Name = "txt_Rate";
             this.txt_Rate.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Rate.Properties.Appearance.Options.UseFont = true;
@@ -277,7 +599,7 @@
             // labelControl18
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Location = new System.Drawing.Point(392, 295);
+            this.labelControl18.Location = new System.Drawing.Point(392, 286);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(30, 17);
             this.labelControl18.TabIndex = 117;
@@ -286,7 +608,33 @@
             // txt_Pick
             // 
             this.txt_Pick.EditValue = "";
-            this.txt_Pick.Location = new System.Drawing.Point(534, 355);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Pick, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Pick.Location = new System.Drawing.Point(510, 344);
             this.txt_Pick.Name = "txt_Pick";
             this.txt_Pick.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Pick.Properties.Appearance.Options.UseFont = true;
@@ -299,7 +647,7 @@
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Location = new System.Drawing.Point(392, 327);
+            this.labelControl19.Location = new System.Drawing.Point(392, 317);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(111, 17);
             this.labelControl19.TabIndex = 115;
@@ -308,7 +656,33 @@
             // txtMeterConsuption
             // 
             this.txtMeterConsuption.EditValue = "";
-            this.txtMeterConsuption.Location = new System.Drawing.Point(534, 323);
+            this.errorBhidanStatus.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txtMeterConsuption, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtMeterConsuption.Location = new System.Drawing.Point(510, 313);
             this.txtMeterConsuption.Name = "txtMeterConsuption";
             this.txtMeterConsuption.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeterConsuption.Properties.Appearance.Options.UseFont = true;
@@ -321,7 +695,7 @@
             // labelControl20
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl20.Location = new System.Drawing.Point(394, 423);
+            this.labelControl20.Location = new System.Drawing.Point(392, 410);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(51, 17);
             this.labelControl20.TabIndex = 113;
@@ -331,7 +705,33 @@
             // txt_RPM
             // 
             this.txt_RPM.EditValue = "";
-            this.txt_RPM.Location = new System.Drawing.Point(534, 291);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_RPM, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_RPM.Location = new System.Drawing.Point(510, 282);
             this.txt_RPM.Name = "txt_RPM";
             this.txt_RPM.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_RPM.Properties.Appearance.Options.UseFont = true;
@@ -344,7 +744,7 @@
             // labelControl21
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl21.Location = new System.Drawing.Point(392, 391);
+            this.labelControl21.Location = new System.Drawing.Point(392, 379);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(28, 17);
             this.labelControl21.TabIndex = 111;
@@ -353,7 +753,33 @@
             // txtTakaMeter
             // 
             this.txtTakaMeter.EditValue = "";
-            this.txtTakaMeter.Location = new System.Drawing.Point(534, 259);
+            this.errorBhidanStatus.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txtTakaMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtTakaMeter.Location = new System.Drawing.Point(510, 251);
             this.txtTakaMeter.Name = "txtTakaMeter";
             this.txtTakaMeter.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTakaMeter.Properties.Appearance.Options.UseFont = true;
@@ -366,7 +792,7 @@
             // labelControl22
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl22.Location = new System.Drawing.Point(392, 263);
+            this.labelControl22.Location = new System.Drawing.Point(392, 255);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(71, 17);
             this.labelControl22.TabIndex = 109;
@@ -375,7 +801,33 @@
             // date_IssueDate
             // 
             this.date_IssueDate.EditValue = "";
-            this.date_IssueDate.Location = new System.Drawing.Point(534, 227);
+            this.errorBhidanStatus.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.date_IssueDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.date_IssueDate.Location = new System.Drawing.Point(510, 220);
             this.date_IssueDate.Name = "date_IssueDate";
             this.date_IssueDate.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_IssueDate.Properties.Appearance.Options.UseFont = true;
@@ -388,7 +840,7 @@
             // labelControl23
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl23.Location = new System.Drawing.Point(392, 231);
+            this.labelControl23.Location = new System.Drawing.Point(392, 224);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(64, 17);
             this.labelControl23.TabIndex = 107;
@@ -397,7 +849,33 @@
             // txt_Count
             // 
             this.txt_Count.EditValue = "";
-            this.txt_Count.Location = new System.Drawing.Point(534, 195);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Count, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Count.Location = new System.Drawing.Point(510, 189);
             this.txt_Count.Name = "txt_Count";
             this.txt_Count.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Count.Properties.Appearance.Options.UseFont = true;
@@ -410,7 +888,7 @@
             // labelControl24
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl24.Location = new System.Drawing.Point(392, 199);
+            this.labelControl24.Location = new System.Drawing.Point(392, 193);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(38, 17);
             this.labelControl24.TabIndex = 105;
@@ -419,7 +897,33 @@
             // txt_PasaraiName
             // 
             this.txt_PasaraiName.EditValue = "";
-            this.txt_PasaraiName.Location = new System.Drawing.Point(534, 163);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_PasaraiName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_PasaraiName.Location = new System.Drawing.Point(510, 158);
             this.txt_PasaraiName.Name = "txt_PasaraiName";
             this.txt_PasaraiName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_PasaraiName.Properties.Appearance.Options.UseFont = true;
@@ -432,7 +936,7 @@
             // labelControl25
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl25.Location = new System.Drawing.Point(392, 167);
+            this.labelControl25.Location = new System.Drawing.Point(392, 162);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(85, 17);
             this.labelControl25.TabIndex = 103;
@@ -441,7 +945,7 @@
             // labelControl26
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl26.Location = new System.Drawing.Point(392, 135);
+            this.labelControl26.Location = new System.Drawing.Point(393, 132);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(76, 17);
             this.labelControl26.TabIndex = 101;
@@ -450,7 +954,33 @@
             // txt_BhidanStatus
             // 
             this.txt_BhidanStatus.EditValue = "";
-            this.txt_BhidanStatus.Location = new System.Drawing.Point(534, 99);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_BhidanStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_BhidanStatus.Location = new System.Drawing.Point(510, 96);
             this.txt_BhidanStatus.Name = "txt_BhidanStatus";
             this.txt_BhidanStatus.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_BhidanStatus.Properties.Appearance.Options.UseFont = true;
@@ -463,7 +993,7 @@
             // labelControl27
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl27.Location = new System.Drawing.Point(392, 103);
+            this.labelControl27.Location = new System.Drawing.Point(392, 100);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(85, 17);
             this.labelControl27.TabIndex = 99;
@@ -472,7 +1002,33 @@
             // txt_MachineNo
             // 
             this.txt_MachineNo.EditValue = "";
-            this.txt_MachineNo.Location = new System.Drawing.Point(534, 67);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_MachineNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_MachineNo.Location = new System.Drawing.Point(510, 65);
             this.txt_MachineNo.Name = "txt_MachineNo";
             this.txt_MachineNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MachineNo.Properties.Appearance.Options.UseFont = true;
@@ -485,7 +1041,7 @@
             // labelControl28
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl28.Location = new System.Drawing.Point(392, 71);
+            this.labelControl28.Location = new System.Drawing.Point(392, 69);
             this.labelControl28.Name = "labelControl28";
             this.labelControl28.Size = new System.Drawing.Size(77, 17);
             this.labelControl28.TabIndex = 97;
@@ -503,7 +1059,7 @@
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl13.Location = new System.Drawing.Point(8, 455);
+            this.labelControl13.Location = new System.Drawing.Point(8, 442);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(82, 17);
             this.labelControl13.TabIndex = 94;
@@ -512,7 +1068,33 @@
             // txt_PipeWeight
             // 
             this.txt_PipeWeight.EditValue = "";
-            this.txt_PipeWeight.Location = new System.Drawing.Point(150, 419);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_PipeWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_PipeWeight.Location = new System.Drawing.Point(150, 406);
             this.txt_PipeWeight.Name = "txt_PipeWeight";
             this.txt_PipeWeight.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_PipeWeight.Properties.Appearance.Options.UseFont = true;
@@ -525,7 +1107,7 @@
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl14.Location = new System.Drawing.Point(8, 423);
+            this.labelControl14.Location = new System.Drawing.Point(8, 410);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(77, 17);
             this.labelControl14.TabIndex = 92;
@@ -534,7 +1116,33 @@
             // txt_ProductionTaka
             // 
             this.txt_ProductionTaka.EditValue = "";
-            this.txt_ProductionTaka.Location = new System.Drawing.Point(150, 387);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_ProductionTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_ProductionTaka.Location = new System.Drawing.Point(150, 375);
             this.txt_ProductionTaka.Name = "txt_ProductionTaka";
             this.txt_ProductionTaka.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ProductionTaka.Properties.Appearance.Options.UseFont = true;
@@ -547,7 +1155,7 @@
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(8, 391);
+            this.labelControl11.Location = new System.Drawing.Point(8, 379);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(105, 17);
             this.labelControl11.TabIndex = 90;
@@ -556,7 +1164,33 @@
             // txt_ProductionMeter
             // 
             this.txt_ProductionMeter.EditValue = "";
-            this.txt_ProductionMeter.Location = new System.Drawing.Point(150, 355);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_ProductionMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_ProductionMeter.Location = new System.Drawing.Point(150, 344);
             this.txt_ProductionMeter.Name = "txt_ProductionMeter";
             this.txt_ProductionMeter.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ProductionMeter.Properties.Appearance.Options.UseFont = true;
@@ -569,7 +1203,7 @@
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(8, 359);
+            this.labelControl12.Location = new System.Drawing.Point(8, 348);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(111, 17);
             this.labelControl12.TabIndex = 88;
@@ -578,7 +1212,33 @@
             // txt_Weight
             // 
             this.txt_Weight.EditValue = "";
-            this.txt_Weight.Location = new System.Drawing.Point(150, 323);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Weight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Weight.Location = new System.Drawing.Point(150, 313);
             this.txt_Weight.Name = "txt_Weight";
             this.txt_Weight.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Weight.Properties.Appearance.Options.UseFont = true;
@@ -591,7 +1251,7 @@
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(8, 327);
+            this.labelControl10.Location = new System.Drawing.Point(8, 317);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(46, 17);
             this.labelControl10.TabIndex = 86;
@@ -600,7 +1260,33 @@
             // txt_Taka
             // 
             this.txt_Taka.EditValue = "";
-            this.txt_Taka.Location = new System.Drawing.Point(150, 291);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Taka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Taka.Location = new System.Drawing.Point(150, 282);
             this.txt_Taka.Name = "txt_Taka";
             this.txt_Taka.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Taka.Properties.Appearance.Options.UseFont = true;
@@ -613,7 +1299,7 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(8, 295);
+            this.labelControl9.Location = new System.Drawing.Point(8, 286);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(31, 17);
             this.labelControl9.TabIndex = 84;
@@ -622,7 +1308,33 @@
             // txt_Meters
             // 
             this.txt_Meters.EditValue = "";
-            this.txt_Meters.Location = new System.Drawing.Point(150, 259);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_Meters, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_Meters.Location = new System.Drawing.Point(150, 251);
             this.txt_Meters.Name = "txt_Meters";
             this.txt_Meters.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Meters.Properties.Appearance.Options.UseFont = true;
@@ -635,7 +1347,7 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(8, 263);
+            this.labelControl8.Location = new System.Drawing.Point(8, 255);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(43, 17);
             this.labelControl8.TabIndex = 82;
@@ -644,7 +1356,33 @@
             // txt_TarNumber
             // 
             this.txt_TarNumber.EditValue = "";
-            this.txt_TarNumber.Location = new System.Drawing.Point(150, 227);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_TarNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_TarNumber.Location = new System.Drawing.Point(150, 220);
             this.txt_TarNumber.Name = "txt_TarNumber";
             this.txt_TarNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TarNumber.Properties.Appearance.Options.UseFont = true;
@@ -657,7 +1395,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(8, 231);
+            this.labelControl7.Location = new System.Drawing.Point(8, 224);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(76, 17);
             this.labelControl7.TabIndex = 80;
@@ -666,7 +1404,33 @@
             // txt_GreyQuality
             // 
             this.txt_GreyQuality.EditValue = "";
-            this.txt_GreyQuality.Location = new System.Drawing.Point(150, 195);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_GreyQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_GreyQuality.Location = new System.Drawing.Point(150, 189);
             this.txt_GreyQuality.Name = "txt_GreyQuality";
             this.txt_GreyQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GreyQuality.Properties.Appearance.Options.UseFont = true;
@@ -679,7 +1443,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(8, 199);
+            this.labelControl5.Location = new System.Drawing.Point(8, 193);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(79, 17);
             this.labelControl5.TabIndex = 78;
@@ -688,7 +1452,33 @@
             // txt_YarnQuality
             // 
             this.txt_YarnQuality.EditValue = "";
-            this.txt_YarnQuality.Location = new System.Drawing.Point(150, 163);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_YarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_YarnQuality.Location = new System.Drawing.Point(150, 158);
             this.txt_YarnQuality.Name = "txt_YarnQuality";
             this.txt_YarnQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_YarnQuality.Properties.Appearance.Options.UseFont = true;
@@ -701,7 +1491,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(8, 167);
+            this.labelControl4.Location = new System.Drawing.Point(8, 162);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(79, 17);
             this.labelControl4.TabIndex = 76;
@@ -710,7 +1500,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(8, 135);
+            this.labelControl3.Location = new System.Drawing.Point(8, 132);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(67, 17);
             this.labelControl3.TabIndex = 74;
@@ -719,7 +1509,33 @@
             // txt_JobberPartyName
             // 
             this.txt_JobberPartyName.EditValue = "";
-            this.txt_JobberPartyName.Location = new System.Drawing.Point(150, 99);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_JobberPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_JobberPartyName.Location = new System.Drawing.Point(150, 96);
             this.txt_JobberPartyName.Name = "txt_JobberPartyName";
             this.txt_JobberPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_JobberPartyName.Properties.Appearance.Options.UseFont = true;
@@ -732,7 +1548,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(8, 103);
+            this.labelControl2.Location = new System.Drawing.Point(8, 100);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(119, 17);
             this.labelControl2.TabIndex = 72;
@@ -741,7 +1557,33 @@
             // txt_WrapperPartyname
             // 
             this.txt_WrapperPartyname.EditValue = "";
-            this.txt_WrapperPartyname.Location = new System.Drawing.Point(150, 67);
+            this.errorBhidanStatus.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGreyQuality.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterConsumption.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeters.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTarNumber.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionTaka.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorProductionMeter.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLoadingDate.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPipeWeight.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineNumber.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPick.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBhidanDate.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWrapperPartyName.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobberPartyName.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBeemDate.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCount.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPasaraiName.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIssueDate.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRPM.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTakaMeter.SetIconAlignment(this.txt_WrapperPartyname, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txt_WrapperPartyname.Location = new System.Drawing.Point(150, 65);
             this.txt_WrapperPartyname.Name = "txt_WrapperPartyname";
             this.txt_WrapperPartyname.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_WrapperPartyname.Properties.Appearance.Options.UseFont = true;
@@ -754,7 +1596,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(8, 71);
+            this.labelControl1.Location = new System.Drawing.Point(8, 69);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(133, 17);
             this.labelControl1.TabIndex = 70;
@@ -775,7 +1617,7 @@
             this.panelControl1.Controls.Add(this.btnCancel);
             this.panelControl1.Location = new System.Drawing.Point(12, 506);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(817, 54);
+            this.panelControl1.Size = new System.Drawing.Size(755, 54);
             this.panelControl1.TabIndex = 67;
             // 
             // btnSave
@@ -783,7 +1625,7 @@
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(58, 12);
+            this.btnSave.Location = new System.Drawing.Point(8, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
             this.btnSave.TabIndex = 28;
@@ -794,85 +1636,135 @@
             this.btnCancel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Appearance.Options.UseFont = true;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(199, 12);
+            this.btnCancel.Location = new System.Drawing.Point(100, 12);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 31);
             this.btnCancel.TabIndex = 29;
             this.btnCancel.Text = "&Cancel";
             // 
-            // date_BeemDate
+            // errorCompanyName
             // 
-            this.date_BeemDate.EditValue = null;
-            this.date_BeemDate.Location = new System.Drawing.Point(150, 131);
-            this.date_BeemDate.Name = "date_BeemDate";
-            this.date_BeemDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.date_BeemDate.Properties.Appearance.Options.UseFont = true;
-            this.date_BeemDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.date_BeemDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_BeemDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.date_BeemDate.Size = new System.Drawing.Size(205, 26);
-            this.date_BeemDate.TabIndex = 3;
-            this.date_BeemDate.ToolTip = "Select Date.";
+            this.errorCompanyName.ContainerControl = this;
             // 
-            // date_LoadingDate
+            // errorWrapperPartyName
             // 
-            this.date_LoadingDate.EditValue = null;
-            this.date_LoadingDate.Location = new System.Drawing.Point(150, 451);
-            this.date_LoadingDate.Name = "date_LoadingDate";
-            this.date_LoadingDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.date_LoadingDate.Properties.Appearance.Options.UseFont = true;
-            this.date_LoadingDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.date_LoadingDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_LoadingDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.date_LoadingDate.Size = new System.Drawing.Size(205, 26);
-            this.date_LoadingDate.TabIndex = 13;
-            this.date_LoadingDate.ToolTip = "Select Date.";
+            this.errorWrapperPartyName.ContainerControl = this;
             // 
-            // txt_MinStrategy
+            // errorJobberPartyName
             // 
-            this.txt_MinStrategy.EditValue = "";
-            this.txt_MinStrategy.Location = new System.Drawing.Point(534, 35);
-            this.txt_MinStrategy.Name = "txt_MinStrategy";
-            this.txt_MinStrategy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MinStrategy.Properties.Appearance.Options.UseFont = true;
-            this.txt_MinStrategy.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_MinStrategy.Properties.Mask.EditMask = "n2";
-            this.txt_MinStrategy.Size = new System.Drawing.Size(205, 26);
-            this.txt_MinStrategy.TabIndex = 14;
-            this.txt_MinStrategy.ToolTip = "Enter Cheque Number";
+            this.errorJobberPartyName.ContainerControl = this;
             // 
-            // date_BhidanDate
+            // errorBeemDate
             // 
-            this.date_BhidanDate.EditValue = null;
-            this.date_BhidanDate.Location = new System.Drawing.Point(534, 130);
-            this.date_BhidanDate.Name = "date_BhidanDate";
-            this.date_BhidanDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.date_BhidanDate.Properties.Appearance.Options.UseFont = true;
-            this.date_BhidanDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.date_BhidanDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_BhidanDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.date_BhidanDate.Size = new System.Drawing.Size(205, 26);
-            this.date_BhidanDate.TabIndex = 17;
-            this.date_BhidanDate.ToolTip = "Select Date.";
+            this.errorBeemDate.ContainerControl = this;
             // 
-            // BeamMaster
+            // errorYarnQuality
+            // 
+            this.errorYarnQuality.ContainerControl = this;
+            // 
+            // errorGreyQuality
+            // 
+            this.errorGreyQuality.ContainerControl = this;
+            // 
+            // errorTarNumber
+            // 
+            this.errorTarNumber.ContainerControl = this;
+            // 
+            // errorMeters
+            // 
+            this.errorMeters.ContainerControl = this;
+            // 
+            // errorTaka
+            // 
+            this.errorTaka.ContainerControl = this;
+            // 
+            // errorWeight
+            // 
+            this.errorWeight.ContainerControl = this;
+            // 
+            // errorProductionMeter
+            // 
+            this.errorProductionMeter.ContainerControl = this;
+            // 
+            // errorProductionTaka
+            // 
+            this.errorProductionTaka.ContainerControl = this;
+            // 
+            // errorPipeWeight
+            // 
+            this.errorPipeWeight.ContainerControl = this;
+            // 
+            // errorLoadingDate
+            // 
+            this.errorLoadingDate.ContainerControl = this;
+            // 
+            // errorMachineNumber
+            // 
+            this.errorMachineNumber.ContainerControl = this;
+            // 
+            // errorBhidanStatus
+            // 
+            this.errorBhidanStatus.ContainerControl = this;
+            // 
+            // errorBhidanDate
+            // 
+            this.errorBhidanDate.ContainerControl = this;
+            // 
+            // errorPasaraiName
+            // 
+            this.errorPasaraiName.ContainerControl = this;
+            // 
+            // errorCount
+            // 
+            this.errorCount.ContainerControl = this;
+            // 
+            // errorIssueDate
+            // 
+            this.errorIssueDate.ContainerControl = this;
+            // 
+            // errorTakaMeter
+            // 
+            this.errorTakaMeter.ContainerControl = this;
+            // 
+            // errorRPM
+            // 
+            this.errorRPM.ContainerControl = this;
+            // 
+            // errorMeterConsumption
+            // 
+            this.errorMeterConsumption.ContainerControl = this;
+            // 
+            // errorPick
+            // 
+            this.errorPick.ContainerControl = this;
+            // 
+            // errorRate
+            // 
+            this.errorRate.ContainerControl = this;
+            // 
+            // errorAmount
+            // 
+            this.errorAmount.ContainerControl = this;
+            // 
+            // frmBeamMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 570);
+            this.ClientSize = new System.Drawing.Size(779, 570);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.groupControl1);
-            this.Name = "BeamMaster";
+            this.Name = "frmBeamMaster";
             this.Text = "Beam Master";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_MinStrategy.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combo_CompanyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Remark.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).EndInit();
@@ -899,13 +1791,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_WrapperPartyname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BeemDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_LoadingDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_MinStrategy.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_BhidanDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCompanyName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorWrapperPartyName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorJobberPartyName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBeemDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorYarnQuality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorGreyQuality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTarNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMeters)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTaka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorWeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProductionMeter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProductionTaka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPipeWeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorLoadingDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMachineNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBhidanStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBhidanDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPasaraiName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIssueDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTakaMeter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorRPM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMeterConsumption)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPick)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorAmount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -972,5 +1883,31 @@
         private DevExpress.XtraEditors.DateEdit date_BeemDate;
         private DevExpress.XtraEditors.DateEdit date_BhidanDate;
         private DevExpress.XtraEditors.TextEdit txt_MinStrategy;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorCompanyName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorWrapperPartyName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorJobberPartyName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBeemDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorYarnQuality;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorGreyQuality;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorTarNumber;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMeters;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorTaka;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorWeight;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorProductionMeter;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorProductionTaka;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPipeWeight;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorLoadingDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMachineNumber;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBhidanStatus;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBhidanDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPasaraiName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorCount;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorIssueDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorTakaMeter;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorRPM;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMeterConsumption;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPick;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorRate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorAmount;
     }
 }

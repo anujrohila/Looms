@@ -55,7 +55,7 @@
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(15, 9);
+            this.btnSave.Location = new System.Drawing.Point(12, 9);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
             this.btnSave.TabIndex = 58;
@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 389);
+            this.ClientSize = new System.Drawing.Size(480, 389);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmYarnQualityMasterView";

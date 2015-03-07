@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYarnQualityMaster));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtYarnQualityName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtDescription = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.txtYarnQualityName = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -55,6 +55,19 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(389, 117);
             this.groupControl1.TabIndex = 108;
+            // 
+            // txtYarnQualityName
+            // 
+            this.txtYarnQualityName.EditValue = "";
+            this.txtYarnQualityName.Location = new System.Drawing.Point(155, 33);
+            this.txtYarnQualityName.Name = "txtYarnQualityName";
+            this.txtYarnQualityName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYarnQualityName.Properties.Appearance.Options.UseFont = true;
+            this.txtYarnQualityName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtYarnQualityName.Properties.Mask.EditMask = "n2";
+            this.txtYarnQualityName.Size = new System.Drawing.Size(205, 26);
+            this.txtYarnQualityName.TabIndex = 0;
+            this.txtYarnQualityName.ToolTip = "Enter Cheque Number";
             // 
             // labelControl2
             // 
@@ -101,7 +114,7 @@
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(80, 12);
+            this.btnSave.Location = new System.Drawing.Point(12, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
             this.btnSave.TabIndex = 2;
@@ -112,24 +125,11 @@
             this.btnCancel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Appearance.Options.UseFont = true;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(172, 12);
+            this.btnCancel.Location = new System.Drawing.Point(104, 12);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 31);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "&Cancel";
-            // 
-            // txtYarnQualityName
-            // 
-            this.txtYarnQualityName.EditValue = "";
-            this.txtYarnQualityName.Location = new System.Drawing.Point(155, 33);
-            this.txtYarnQualityName.Name = "txtYarnQualityName";
-            this.txtYarnQualityName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYarnQualityName.Properties.Appearance.Options.UseFont = true;
-            this.txtYarnQualityName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtYarnQualityName.Properties.Mask.EditMask = "n2";
-            this.txtYarnQualityName.Size = new System.Drawing.Size(205, 26);
-            this.txtYarnQualityName.TabIndex = 0;
-            this.txtYarnQualityName.ToolTip = "Enter Cheque Number";
             // 
             // frmYarnQualityMaster
             // 
@@ -143,10 +143,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

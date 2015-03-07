@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAttendanceMaster));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dateStartDate = new DevExpress.XtraEditors.DateEdit();
@@ -41,6 +42,10 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.errorEmployeeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorStartDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorEndDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMeterWorked = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateStartDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -51,6 +56,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMeterWorked.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorStartDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEndDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMeterWorked)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -65,13 +74,17 @@
             this.groupControl1.Controls.Add(this.labelControl14);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(389, 172);
+            this.groupControl1.Size = new System.Drawing.Size(365, 172);
             this.groupControl1.TabIndex = 106;
             // 
             // dateStartDate
             // 
             this.dateStartDate.EditValue = null;
-            this.dateStartDate.Location = new System.Drawing.Point(155, 63);
+            this.errorStartDate.SetIconAlignment(this.dateStartDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterWorked.SetIconAlignment(this.dateStartDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.dateStartDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEndDate.SetIconAlignment(this.dateStartDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.dateStartDate.Location = new System.Drawing.Point(126, 63);
             this.dateStartDate.Name = "dateStartDate";
             this.dateStartDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dateStartDate.Properties.Appearance.Options.UseFont = true;
@@ -96,7 +109,11 @@
             // dateEndDate
             // 
             this.dateEndDate.EditValue = null;
-            this.dateEndDate.Location = new System.Drawing.Point(155, 92);
+            this.errorStartDate.SetIconAlignment(this.dateEndDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterWorked.SetIconAlignment(this.dateEndDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.dateEndDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEndDate.SetIconAlignment(this.dateEndDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.dateEndDate.Location = new System.Drawing.Point(126, 92);
             this.dateEndDate.Name = "dateEndDate";
             this.dateEndDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dateEndDate.Properties.Appearance.Options.UseFont = true;
@@ -111,7 +128,11 @@
             // 
             // comboEmployeeName
             // 
-            this.comboEmployeeName.Location = new System.Drawing.Point(155, 33);
+            this.errorEmployeeName.SetIconAlignment(this.comboEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorStartDate.SetIconAlignment(this.comboEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEndDate.SetIconAlignment(this.comboEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterWorked.SetIconAlignment(this.comboEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.comboEmployeeName.Location = new System.Drawing.Point(126, 33);
             this.comboEmployeeName.Name = "comboEmployeeName";
             this.comboEmployeeName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.comboEmployeeName.Properties.Appearance.Options.UseFont = true;
@@ -158,7 +179,11 @@
             // txtMeterWorked
             // 
             this.txtMeterWorked.EditValue = "";
-            this.txtMeterWorked.Location = new System.Drawing.Point(155, 122);
+            this.errorEndDate.SetIconAlignment(this.txtMeterWorked, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtMeterWorked, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorStartDate.SetIconAlignment(this.txtMeterWorked, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeterWorked.SetIconAlignment(this.txtMeterWorked, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtMeterWorked.Location = new System.Drawing.Point(126, 122);
             this.txtMeterWorked.Name = "txtMeterWorked";
             this.txtMeterWorked.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeterWorked.Properties.Appearance.Options.UseFont = true;
@@ -183,7 +208,7 @@
             this.panelControl1.Controls.Add(this.btnCancel);
             this.panelControl1.Location = new System.Drawing.Point(12, 190);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(389, 54);
+            this.panelControl1.Size = new System.Drawing.Size(365, 54);
             this.panelControl1.TabIndex = 105;
             // 
             // btnSave
@@ -191,7 +216,7 @@
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(80, 12);
+            this.btnSave.Location = new System.Drawing.Point(12, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
             this.btnSave.TabIndex = 4;
@@ -202,17 +227,33 @@
             this.btnCancel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Appearance.Options.UseFont = true;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(172, 12);
+            this.btnCancel.Location = new System.Drawing.Point(104, 12);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 31);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "&Cancel";
             // 
+            // errorEmployeeName
+            // 
+            this.errorEmployeeName.ContainerControl = this;
+            // 
+            // errorStartDate
+            // 
+            this.errorStartDate.ContainerControl = this;
+            // 
+            // errorEndDate
+            // 
+            this.errorEndDate.ContainerControl = this;
+            // 
+            // errorMeterWorked
+            // 
+            this.errorMeterWorked.ContainerControl = this;
+            // 
             // frmAttendanceMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 258);
+            this.ClientSize = new System.Drawing.Size(384, 258);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmAttendanceMaster";
@@ -228,6 +269,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMeterWorked.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorStartDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEndDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMeterWorked)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,5 +291,9 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         public DevExpress.XtraEditors.SimpleButton btnSave;
         public DevExpress.XtraEditors.SimpleButton btnCancel;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEmployeeName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorStartDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEndDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMeterWorked;
     }
 }

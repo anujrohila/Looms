@@ -33,11 +33,11 @@
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.gridAttandanceMaster = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.AttendanceID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.StartTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EndTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MeterWorked = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.AttendanceID = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridAttandanceMaster)).BeginInit();
@@ -47,7 +47,7 @@
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.btnSave);
-            this.panelControl1.Location = new System.Drawing.Point(3, 0);
+            this.panelControl1.Location = new System.Drawing.Point(6, 5);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(553, 49);
             this.panelControl1.TabIndex = 5;
@@ -57,7 +57,7 @@
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(15, 9);
+            this.btnSave.Location = new System.Drawing.Point(14, 9);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 31);
             this.btnSave.TabIndex = 58;
@@ -66,7 +66,7 @@
             // gridAttandanceMaster
             // 
             this.gridAttandanceMaster.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridAttandanceMaster.Location = new System.Drawing.Point(3, 55);
+            this.gridAttandanceMaster.Location = new System.Drawing.Point(6, 61);
             this.gridAttandanceMaster.MainView = this.gridView1;
             this.gridAttandanceMaster.Name = "gridAttandanceMaster";
             this.gridAttandanceMaster.Size = new System.Drawing.Size(553, 315);
@@ -84,6 +84,12 @@
             this.MeterWorked});
             this.gridView1.GridControl = this.gridAttandanceMaster;
             this.gridView1.Name = "gridView1";
+            // 
+            // AttendanceID
+            // 
+            this.AttendanceID.Caption = "Attendance ID";
+            this.AttendanceID.FieldName = "AttendanceID";
+            this.AttendanceID.Name = "AttendanceID";
             // 
             // EmployeeID
             // 
@@ -118,17 +124,11 @@
             this.MeterWorked.VisibleIndex = 2;
             this.MeterWorked.Width = 100;
             // 
-            // AttendanceID
-            // 
-            this.AttendanceID.Caption = "Attendance ID";
-            this.AttendanceID.FieldName = "AttendanceID";
-            this.AttendanceID.Name = "AttendanceID";
-            // 
             // frmAttandanceMasterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 382);
+            this.ClientSize = new System.Drawing.Size(568, 393);
             this.Controls.Add(this.gridAttandanceMaster);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmAttandanceMasterView";
