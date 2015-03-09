@@ -19,53 +19,66 @@ namespace LoomsManagement.Windows.Forms.Master
             InitializeComponent();
         }
 
+        public void SetFlag()
+        {
+
+        }
+
+        #region Button Event
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        #endregion
+
+
+        #region Vadidation
+
+        public Boolean Validation()
+        {
+           
+            ErrorHandlor.SetErrorCount();
+            ErrorHandlor.SetTextboxErrorWithCount(error_companyName, txt_CompanyName, "Enter Company Name");
+            ErrorHandlor.SetTextboxErrorWithCount(error_companyCode, txt_CompanyCode, "Enter Company Code");
+            ErrorHandlor.SetTextboxErrorWithCount(error_Ownername, txt_OwnerName, "Enter Owner Name");
+            ErrorHandlor.SetTextboxErrorWithCount(error_investmentamount, txt_InvestmentAmount, "Enter Company Name");
+            ErrorHandlor.SetTextboxErrorWithCount(error_contactpersoanname, txt_ContactPerrsonName, "Enter Company Name");
+
+            ErrorHandlor.SetTextboxErrorWithCount(error_panno, txt_ContactPerrsonName, "Enter Company Name");
+            ErrorHandlor.SetTextboxErrorWithCount(error_cst, txt_ContactPerrsonName, "Enter Company Name");
+            
+            ErrorHandlor.SetTextboxErrorWithCount(error_ecc, txt_ContactPerrsonName, "Enter Company Name");
+            ErrorHandlor.SetTextboxErrorWithCount(error_sms, txt_ContactPerrsonName, "Enter Company Name");
+
+
+           // ErrorHandlor.SetTextboxErrorWithCount(error_customer, txt_customername, "Enter CustomerName");
+
+            if (ErrorHandlor.count == 0)
+                return true;
+            else
+                return false;
+          
+        }
+        
+        #endregion
 
         #region KeyEvent
 
         private void EnterEvent(object sender, EventArgs e)
         {
-            if ((sender as DateEdit) is DateEdit)
-            {
-                (sender as DateEdit).BackColor = GlobalClass.m_tbcolorleave;
-            }
-            else
-                if ((sender as LookUpEdit) is LookUpEdit)
-                {
-                    (sender as LookUpEdit).BackColor = GlobalClass.m_tbcolorleave;
-                }
-                else
-                    if ((sender as TextEdit) is TextEdit)
-                    {
-                        (sender as TextEdit).BackColor = GlobalClass.m_tbcolorenter;
-                    }
-                    else
-                        if ((sender as MemoEdit) is MemoEdit)
-                        {
-                            (sender as MemoEdit).BackColor = GlobalClass.m_tbcolorenter;
-                        }
+            GlobalClass.EnterEvents(sender, e);
         }
 
         private void LeaveEvent(object sender, EventArgs e)
         {
-            if ((sender as DateEdit) is DateEdit)
-            {
-                (sender as DateEdit).BackColor = GlobalClass.m_tbcolorleave;
-            }
-            else
-                if ((sender as LookUpEdit) is LookUpEdit)
-                {
-                    (sender as LookUpEdit).BackColor = GlobalClass.m_tbcolorleave;
-                }
-                else
-                    if ((sender as TextEdit) is TextEdit)
-                    {
-                        (sender as TextEdit).BackColor = GlobalClass.m_tbcolorleave;
-                    }
-                    else
-                        if ((sender as MemoEdit) is MemoEdit)
-                        {
-                            (sender as MemoEdit).BackColor = GlobalClass.m_tbcolorleave;
-                        }
+            GlobalClass.LeaveEvents(sender, e);
         }
 
         private void txt_KeyDown(object sender, KeyEventArgs e)
@@ -79,5 +92,6 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #endregion
 
+       
     }
 }

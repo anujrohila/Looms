@@ -16,7 +16,10 @@ namespace DaryInventory.Classes
             {
                 ep.SetError(c, message);
                 c.BackColor = GlobalClass.m_tbcolorerror;
+                if (count == 0)
+                    c.Focus();
                 count++;
+
             }
             else
             {
@@ -33,6 +36,8 @@ namespace DaryInventory.Classes
             {
                 ep.SetError(c, message);
                 c.BackColor = GlobalClass.m_tbcolorerror;
+                if (count == 0)
+                    c.Focus();
                 count++;
             }
             else
@@ -50,6 +55,8 @@ namespace DaryInventory.Classes
             {
                 ep.SetError(c, message);
                 c.BackColor = GlobalClass.m_tbcolorerror;
+                if (count == 0)
+                    c.Focus();
                 count++;
             }
             else
@@ -67,6 +74,8 @@ namespace DaryInventory.Classes
             {
                 ep.SetError(c, message);
                 c.BackColor = GlobalClass.m_tbcolorerror;
+                if (count == 0)
+                    c.Focus();
                 count++;
             }
             else

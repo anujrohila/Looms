@@ -42,6 +42,16 @@
     <Compile Include="BussinessLogic\CompnayBussinesLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoomsManagement.DAL\LoomsManagement.DAL.csproj">
+      <Project>{03f518e2-dff5-4923-a42f-f7c2d68d58ab}</Project>
+      <Name>LoomsManagement.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoomsManagement.Domain\LoomsManagement.Domain.csproj">
+      <Project>{96c17e4b-d6e1-4a60-ab95-3cf50cf29594}</Project>
+      <Name>LoomsManagement.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

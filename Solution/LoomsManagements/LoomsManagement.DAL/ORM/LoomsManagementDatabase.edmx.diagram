@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05b76c60ebd544d88f2888e4f3daa776" Name="Diagram1">
+        <EntityTypeShape EntityType="LoomsManagementModel.tblAttendanceMST" Width="1.5" PointX="16.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBankMST" Width="1.5" PointX="11.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="5.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBeemProcess" Width="1.5" PointX="9.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBemProcessDetail" Width="1.5" PointX="12" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBoilerProcess" Width="1.5" PointX="9.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBolierProcessDetail" Width="1.5" PointX="15" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBranchMST" Width="1.5" PointX="14" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBrokersMST" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblCompany" Width="1.5" PointX="2.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblCompanyMachineMST" Width="1.5" PointX="5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblEmployee" Width="1.5" PointX="14" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblEmployeeTypeMST" Width="1.5" PointX="11.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblLoomProcess" Width="1.5" PointX="17.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblLoomProcessWork" Width="1.5" PointX="14.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblMachineMST" Width="1.5" PointX="2.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblMachineTypeMST" Width="1.5" PointX="11.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblMandingProcess" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblMendingDetailsProcess" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblMendingPenulty" Width="1.5" PointX="18.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblPartysMST" Width="1.5" PointX="18.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblPenaltyMST" Width="1.5" PointX="19.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblProductQualityMST" Width="1.5" PointX="7.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblSalaryMST" Width="1.5" PointX="16.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblTFOProcess" Width="1.5" PointX="9.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblWindingWork" Width="1.5" PointX="7.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblWithdrownMST" Width="1.5" PointX="19.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblWorkingYear" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblYarnPackageType" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblYarnPurchase" Width="1.5" PointX="3" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblYarnPurchaseItem" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblYarnQualityMST" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblYarnTypeMST" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoomsManagementModel.WithdrownReturnMST" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblAttendanceMST_tblEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBranchMST_tblBankMST" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBemProcessDetails_tblBeemProcess" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBemProcessDetails_tblBoilerProcess" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBemProcessDetails_tblTFOProcess" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBolierProcessDetails_tblBoilerProcess" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBolierProcessDetails_tblTFOProcess" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblCompanyMachine_tblCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblCompanyMachine_tblMachine" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblEmployee_tblEmployeeType" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblSalaryMST_tblEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblTFOProcess_tblWindingWork" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblWindingWork_tblYarnPurchaseItems" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPackageType" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnMST" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST" ManuallyRouted="false" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

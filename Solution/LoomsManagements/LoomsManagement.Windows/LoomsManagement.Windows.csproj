@@ -64,10 +64,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Tools\Windows Forms\DevExpress.CodedUIExtension.VS12.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Dashboard.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -78,9 +81,13 @@
     <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v14.1.Extensions, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -88,6 +95,96 @@
     <Compile Include="Classes\ErrorHandlor.cs" />
     <Compile Include="Classes\GlobalClass.cs" />
     <Compile Include="Classes\Validation.cs" />
+    <Compile Include="FormDemo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemo1.Designer.cs">
+      <DependentUpon>FormDemo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemo2.Designer.cs">
+      <DependentUpon>FormDemo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemoGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemoGrid.Designer.cs">
+      <DependentUpon>FormDemoGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormAttandanceMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormAttandanceMasterView.Designer.cs">
+      <DependentUpon>FormAttandanceMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormAttendanceMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormAttendanceMaster.Designer.cs">
+      <DependentUpon>FormAttendanceMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormBeamMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormBeamMaster.Designer.cs">
+      <DependentUpon>FormBeamMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormBeamMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormBeamMasterView.Designer.cs">
+      <DependentUpon>FormBeamMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormCompanyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormCompanyMaster.Designer.cs">
+      <DependentUpon>FormCompanyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormCompanyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormCompanyView.Designer.cs">
+      <DependentUpon>FormCompanyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormPartyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormPartyMaster.Designer.cs">
+      <DependentUpon>FormPartyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormPartyMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormPartyMasterView.Designer.cs">
+      <DependentUpon>FormPartyMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormPenaltyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormPenaltyMaster.Designer.cs">
+      <DependentUpon>FormPenaltyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormPenaltyMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormPenaltyMasterView.Designer.cs">
+      <DependentUpon>FormPenaltyMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FormSalaryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FormSalaryMaster.Designer.cs">
+      <DependentUpon>FormSalaryMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmCompanyMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,9 +299,60 @@
     <Compile Include="Forms\Production\frmMachine.Designer.cs">
       <DependentUpon>frmMachine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inherite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inherite.Designer.cs">
+      <DependentUpon>Inherite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\LoomsManagementApplication.cs" />
+    <EmbeddedResource Include="FormDemo1.resx">
+      <DependentUpon>FormDemo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemo2.resx">
+      <DependentUpon>FormDemo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemoGrid.resx">
+      <DependentUpon>FormDemoGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormAttandanceMasterView.resx">
+      <DependentUpon>FormAttandanceMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormAttendanceMaster.resx">
+      <DependentUpon>FormAttendanceMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormBeamMaster.resx">
+      <DependentUpon>FormBeamMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormBeamMasterView.resx">
+      <DependentUpon>FormBeamMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormCompanyMaster.resx">
+      <DependentUpon>FormCompanyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormCompanyView.resx">
+      <DependentUpon>FormCompanyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormPartyMaster.resx">
+      <DependentUpon>FormPartyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormPartyMasterView.resx">
+      <DependentUpon>FormPartyMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormPenaltyMaster.resx">
+      <DependentUpon>FormPenaltyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormPenaltyMasterView.resx">
+      <DependentUpon>FormPenaltyMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FormSalaryMaster.resx">
+      <DependentUpon>FormSalaryMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmCompanyMaster.resx">
       <DependentUpon>frmCompanyMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +401,9 @@
     <EmbeddedResource Include="Forms\Master\frmYarnQualityMasterView.resx">
       <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inherite.resx">
+      <DependentUpon>Inherite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -264,6 +415,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.Config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -273,6 +425,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\DARY.bak" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\Deletebutton.png" />
+    <None Include="Resources\edit-icon.png" />
+    <None Include="Resources\viewBtn.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -291,7 +448,86 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\Calendar_16x16.png" />
+    <Content Include="Images\Drafts_16x16.png" />
+    <Content Include="Images\Inbox_16x16.png" />
+    <Content Include="Images\Mail_32x32.png" />
+    <Content Include="Images\Organizer_32x32.png" />
+    <Content Include="Images\Outbox_16x16.png" />
+    <Content Include="Images\Ribbon_AlignCenter_16x16.png" />
+    <Content Include="Images\Ribbon_AlignLeft_16x16.png" />
+    <Content Include="Images\Ribbon_AlignRight_16x16.png" />
+    <Content Include="Images\Ribbon_Bold_16x16.png" />
+    <Content Include="Images\Ribbon_Close_16x16.png" />
+    <Content Include="Images\Ribbon_Close_32x32.png" />
+    <Content Include="Images\Ribbon_Content_16x16.png" />
+    <Content Include="Images\Ribbon_Content_32x32.png" />
+    <Content Include="Images\Ribbon_Exit_16x16.png" />
+    <Content Include="Images\Ribbon_Exit_32x32.png" />
+    <Content Include="Images\Ribbon_Find_16x16.png" />
+    <Content Include="Images\Ribbon_Find_32x32.png" />
+    <Content Include="Images\Ribbon_Info_16x16.png" />
+    <Content Include="Images\Ribbon_Info_32x32.png" />
+    <Content Include="Images\Ribbon_Italic_16x16.png" />
+    <Content Include="Images\Ribbon_New_16x16.png" />
+    <Content Include="Images\Ribbon_New_32x32.png" />
+    <Content Include="Images\Ribbon_Open_16x16.png" />
+    <Content Include="Images\Ribbon_Open_32x32.png" />
+    <Content Include="Images\Ribbon_SaveAs_16x16.png" />
+    <Content Include="Images\Ribbon_SaveAs_32x32.png" />
+    <Content Include="Images\Ribbon_Save_16x16.png" />
+    <Content Include="Images\Ribbon_Save_32x32.png" />
+    <Content Include="Images\Ribbon_Underline_16x16.png" />
+    <Content Include="Images\Tasks_16x16.png" />
+    <Content Include="Images\Trash_16x16.png" />
+    <Content Include="Resources\1425812264_company.png" />
+    <Content Include="Resources\1425812463_Manager.png" />
+    <Content Include="Resources\1425812739_executive.png" />
+    <Content Include="Resources\4478380_orig.png" />
+    <Content Include="Resources\Bank.png" />
+    <Content Include="Resources\bank1.png" />
+    <Content Include="Resources\bank2.png" />
+    <Content Include="Resources\bank3.png" />
+    <Content Include="Resources\Branch.png" />
+    <None Include="Resources\btnAdd.png" />
+    <Content Include="Resources\Close %281%29.ico" />
+    <Content Include="Resources\CompanyMaster.png" />
+    <Content Include="Resources\Customer.ico" />
+    <Content Include="Resources\database_down.ico" />
+    <Content Include="Resources\database_down1.ico" />
+    <Content Include="Resources\database_up.ico" />
+    <Content Include="Resources\database_up1.ico" />
+    <Content Include="Resources\fevicon.ico" />
+    <Content Include="Resources\Home.ico" />
+    <Content Include="Resources\Home.jpg" />
+    <Content Include="Resources\Home1.jpg" />
+    <None Include="Resources\icon-excel.gif" />
+    <None Include="Resources\i-pdf-icon.gif" />
+    <Content Include="Resources\icon-print.png" />
+    <Content Include="Resources\logo.ico" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\Machine.png" />
+    <Content Include="Resources\Payment.ico" />
+    <Content Include="Resources\payment.png" />
+    <Content Include="Resources\penalty.png" />
+    <Content Include="Resources\penalty1.png" />
+    <None Include="Resources\printer-icon.png" />
+    <Content Include="Resources\Yarn1.png" />
+    <Content Include="Resources\yarn2.png" />
+    <Content Include="Resources\Yarn22.png" />
+    <Content Include="Resources\YarnQuality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoomsManagement.BAL\LoomsManagement.BAL.csproj">
+      <Project>{40c229c1-e707-452e-9ec3-5fe275604cc2}</Project>
+      <Name>LoomsManagement.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoomsManagement.Domain\LoomsManagement.Domain.csproj">
+      <Project>{96c17e4b-d6e1-4a60-ab95-3cf50cf29594}</Project>
+      <Name>LoomsManagement.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

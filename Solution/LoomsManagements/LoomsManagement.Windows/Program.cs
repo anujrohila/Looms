@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
-using LoomsManagement.Windows.Forms.Master;
+using LoomsManagement.Windows.Forms;
 
 namespace LoomsManagement.Windows
 {
@@ -20,7 +20,7 @@ namespace LoomsManagement.Windows
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
 
-            Application.Run(new frmCompanyView());
+            Application.Run(new Dashboard());
         }
     }
 }
