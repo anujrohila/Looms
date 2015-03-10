@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DaryInventory.Classes
+namespace LoomsManagement.Windows.Classes
 {
     public static class ErrorHandlor
     {
@@ -15,7 +15,7 @@ namespace DaryInventory.Classes
             if (c.Text.Trim() == "")
             {
                 ep.SetError(c, message);
-                c.BackColor = GlobalClass.m_tbcolorerror;
+                c.BackColor = CommanClass.m_tbcolorerror;
                 if (count == 0)
                     c.Focus();
                 count++;
@@ -24,7 +24,7 @@ namespace DaryInventory.Classes
             else
             {
                 ep.SetError(c, "");
-                c.BackColor = GlobalClass.m_tbcolorleave;
+                c.BackColor = CommanClass.m_tbcolorleave;
 
             }
         }
@@ -35,7 +35,7 @@ namespace DaryInventory.Classes
             if (c.ItemIndex == -1)
             {
                 ep.SetError(c, message);
-                c.BackColor = GlobalClass.m_tbcolorerror;
+                c.BackColor = CommanClass.m_tbcolorerror;
                 if (count == 0)
                     c.Focus();
                 count++;
@@ -43,7 +43,7 @@ namespace DaryInventory.Classes
             else
             {
                 ep.SetError(c, "");
-                c.BackColor = GlobalClass.m_tbcolorleave;
+                c.BackColor = CommanClass.m_tbcolorleave;
 
             }
         }
@@ -54,7 +54,7 @@ namespace DaryInventory.Classes
             if (c.Text.Trim() == "")
             {
                 ep.SetError(c, message);
-                c.BackColor = GlobalClass.m_tbcolorerror;
+                c.BackColor = CommanClass.m_tbcolorerror;
                 if (count == 0)
                     c.Focus();
                 count++;
@@ -62,7 +62,7 @@ namespace DaryInventory.Classes
             else
             {
                 ep.SetError(c, "");
-                c.BackColor = GlobalClass.m_tbcolorleave;
+                c.BackColor = CommanClass.m_tbcolorleave;
 
             }
         }
@@ -73,7 +73,7 @@ namespace DaryInventory.Classes
             if (c.Text.Trim() == "")
             {
                 ep.SetError(c, message);
-                c.BackColor = GlobalClass.m_tbcolorerror;
+                c.BackColor = CommanClass.m_tbcolorerror;
                 if (count == 0)
                     c.Focus();
                 count++;
@@ -81,7 +81,7 @@ namespace DaryInventory.Classes
             else
             {
                 ep.SetError(c, "");
-                c.BackColor = GlobalClass.m_tbcolorleave;
+                c.BackColor = CommanClass.m_tbcolorleave;
 
             }
         }

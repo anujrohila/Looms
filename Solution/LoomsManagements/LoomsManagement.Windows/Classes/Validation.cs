@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using System.Text;
 
-namespace DaryInventory.Classes
+namespace LoomsManagement.Windows.Classes
 {
     class Validation
     {

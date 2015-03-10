@@ -18,17 +18,13 @@ namespace LoomsManagement.Windows.Forms
         public Dashboard()
         {
             InitializeComponent();
-            InitSkinGallery();
+           // InitSkinGallery();
         }
 
-        void InitSkinGallery()
-        {
-            SkinHelper.InitSkinGallery(rgbiSkins, true);
-        }
-
+      
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
-            FormCompanyView companyview = new FormCompanyView();
+            frmCompanyView companyview = new frmCompanyView();
             companyview.MdiParent = this;
             companyview.Text = "Company Details";
             companyview.WindowState = FormWindowState.Maximized;

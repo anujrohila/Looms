@@ -29,131 +29,191 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompanyMaster));
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnReport = new DevExpress.XtraEditors.SimpleButton();
-            this.btnExit = new DevExpress.XtraEditors.SimpleButton();
-            this.btndelete = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.txt_CompanyName = new DevExpress.XtraEditors.TextEdit();
-            this.txt_ContactPerrsonName = new DevExpress.XtraEditors.TextEdit();
-            this.txt_CompanyCode = new DevExpress.XtraEditors.TextEdit();
-            this.txt_OwnerName = new DevExpress.XtraEditors.TextEdit();
-            this.txtSMSNo = new DevExpress.XtraEditors.TextEdit();
-            this.txt_InvestmentAmount = new DevExpress.XtraEditors.TextEdit();
-            this.txt_PANNo = new DevExpress.XtraEditors.TextEdit();
-            this.txt_ECCNo = new DevExpress.XtraEditors.TextEdit();
-            this.txt_CST = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.txtaddress = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.dp_Date = new DevExpress.XtraEditors.DateEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.error_companyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_companyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_Ownername = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_openingdate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_investmentamount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.dpOpeningDate = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCompanyName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.txtContactPerrsonName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCompanyCode = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.txtOwnerName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txtSMSNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.txtInvestmentAmount = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtPANNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtECCNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCST = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.errorcompanyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorcompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorOwnername = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.erroropeningdate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorinvestmentamount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.error_contactpersoanname = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.error_address = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.error_panno = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_cst = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_ecc = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_sms = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorcst = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorecc = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorsms = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CompanyName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_ContactPerrsonName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CompanyCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_OwnerName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_InvestmentAmount.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_PANNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_ECCNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CST.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dp_Date.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dp_Date.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtaddress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.error_companyName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_companyCode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_Ownername)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_openingdate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_investmentamount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContactPerrsonName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOwnerName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvestmentAmount.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPANNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtECCNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCST.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorcompanyName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorcompanyCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorOwnername)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erroropeningdate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorinvestmentamount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_contactpersoanname)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_address)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_panno)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_cst)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_ecc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_sms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorcst)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorecc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorsms)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSave
-            // 
-            this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(15, 10);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(86, 31);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "&Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.btnReport);
-            this.panelControl1.Controls.Add(this.btnExit);
-            this.panelControl1.Controls.Add(this.btnSave);
-            this.panelControl1.Controls.Add(this.btndelete);
-            this.panelControl1.Location = new System.Drawing.Point(9, 221);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(728, 51);
-            this.panelControl1.TabIndex = 61;
+            this.panelControl1.Location = new System.Drawing.Point(731, 0);
+            this.panelControl1.Size = new System.Drawing.Size(123, 228);
             // 
             // btnReport
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
-            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
-            this.btnReport.Location = new System.Drawing.Point(199, 10);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(86, 31);
-            this.btnReport.TabIndex = 13;
-            this.btnReport.Text = "&Print";
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(291, 10);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(86, 31);
-            this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "&Close";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
-            this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
-            this.btndelete.Location = new System.Drawing.Point(107, 10);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(86, 31);
-            this.btndelete.TabIndex = 12;
-            this.btndelete.Text = "&Delete";
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panelControl2);
+            this.panel1.Size = new System.Drawing.Size(731, 228);
+            // 
+            // txtaddress
+            // 
+            this.error_address.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtaddress.Location = new System.Drawing.Point(481, 16);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(205, 49);
+            this.txtaddress.TabIndex = 6;
+            this.txtaddress.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtaddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtaddress.Leave += new System.EventHandler(this.LeaveEvent);
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Location = new System.Drawing.Point(397, 73);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(48, 17);
+            this.labelControl9.TabIndex = 82;
+            this.labelControl9.Text = "Pan No.";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.txtaddress);
+            this.panelControl2.Controls.Add(this.dpOpeningDate);
+            this.panelControl2.Controls.Add(this.labelControl6);
+            this.panelControl2.Controls.Add(this.labelControl9);
+            this.panelControl2.Controls.Add(this.txtCompanyName);
+            this.panelControl2.Controls.Add(this.labelControl10);
+            this.panelControl2.Controls.Add(this.txtContactPerrsonName);
+            this.panelControl2.Controls.Add(this.labelControl11);
+            this.panelControl2.Controls.Add(this.txtCompanyCode);
+            this.panelControl2.Controls.Add(this.labelControl12);
+            this.panelControl2.Controls.Add(this.txtOwnerName);
+            this.panelControl2.Controls.Add(this.labelControl4);
+            this.panelControl2.Controls.Add(this.txtSMSNo);
+            this.panelControl2.Controls.Add(this.labelControl7);
+            this.panelControl2.Controls.Add(this.txtInvestmentAmount);
+            this.panelControl2.Controls.Add(this.labelControl8);
+            this.panelControl2.Controls.Add(this.txtPANNo);
+            this.panelControl2.Controls.Add(this.labelControl3);
+            this.panelControl2.Controls.Add(this.txtECCNo);
+            this.panelControl2.Controls.Add(this.labelControl2);
+            this.panelControl2.Controls.Add(this.txtCST);
+            this.panelControl2.Controls.Add(this.labelControl1);
+            this.panelControl2.Location = new System.Drawing.Point(12, 12);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(713, 208);
+            this.panelControl2.TabIndex = 64;
+            // 
+            // dpOpeningDate
+            // 
+            this.dpOpeningDate.EditValue = null;
+            this.errorcompanyCode.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.dpOpeningDate.Location = new System.Drawing.Point(156, 105);
+            this.dpOpeningDate.Name = "dpOpeningDate";
+            this.dpOpeningDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.dpOpeningDate.Properties.Appearance.Options.UseFont = true;
+            this.dpOpeningDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.dpOpeningDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dpOpeningDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dpOpeningDate.Size = new System.Drawing.Size(205, 26);
+            this.dpOpeningDate.TabIndex = 3;
+            this.dpOpeningDate.ToolTip = "Select Date.";
+            this.dpOpeningDate.Enter += new System.EventHandler(this.EnterEvent);
+            this.dpOpeningDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.dpOpeningDate.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl6
             // 
@@ -164,203 +224,101 @@
             this.labelControl6.TabIndex = 60;
             this.labelControl6.Text = "Company Name";
             // 
-            // txt_CompanyName
+            // txtCompanyName
             // 
-            this.txt_CompanyName.EditValue = "";
-            this.txt_CompanyName.Location = new System.Drawing.Point(156, 12);
-            this.txt_CompanyName.Name = "txt_CompanyName";
-            this.txt_CompanyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CompanyName.Properties.Appearance.Options.UseFont = true;
-            this.txt_CompanyName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_CompanyName.Properties.Mask.EditMask = "n2";
-            this.txt_CompanyName.Size = new System.Drawing.Size(205, 26);
-            this.txt_CompanyName.TabIndex = 0;
-            this.txt_CompanyName.ToolTip = "Enter Cheque Number";
-            this.txt_CompanyName.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_CompanyName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_CompanyName.Leave += new System.EventHandler(this.LeaveEvent);
+            this.txtCompanyName.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtCompanyName.Location = new System.Drawing.Point(156, 12);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyName.Properties.Appearance.Options.UseFont = true;
+            this.txtCompanyName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCompanyName.Properties.Mask.EditMask = "n2";
+            this.txtCompanyName.Size = new System.Drawing.Size(205, 26);
+            this.txtCompanyName.TabIndex = 0;
+            this.txtCompanyName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtCompanyName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtCompanyName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // txt_ContactPerrsonName
+            // labelControl10
             // 
-            this.txt_ContactPerrsonName.EditValue = "";
-            this.txt_ContactPerrsonName.Location = new System.Drawing.Point(156, 167);
-            this.txt_ContactPerrsonName.Name = "txt_ContactPerrsonName";
-            this.txt_ContactPerrsonName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ContactPerrsonName.Properties.Appearance.Options.UseFont = true;
-            this.txt_ContactPerrsonName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_ContactPerrsonName.Properties.Mask.EditMask = "n2";
-            this.txt_ContactPerrsonName.Size = new System.Drawing.Size(205, 26);
-            this.txt_ContactPerrsonName.TabIndex = 5;
-            this.txt_ContactPerrsonName.ToolTip = "Enter Cheque Number";
-            this.txt_ContactPerrsonName.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_ContactPerrsonName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_ContactPerrsonName.Leave += new System.EventHandler(this.LeaveEvent);
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Location = new System.Drawing.Point(397, 110);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(48, 17);
+            this.labelControl10.TabIndex = 81;
+            this.labelControl10.Text = "CST No.";
             // 
-            // txt_CompanyCode
+            // txtContactPerrsonName
             // 
-            this.txt_CompanyCode.EditValue = "";
-            this.txt_CompanyCode.Location = new System.Drawing.Point(156, 43);
-            this.txt_CompanyCode.Name = "txt_CompanyCode";
-            this.txt_CompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CompanyCode.Properties.Appearance.Options.UseFont = true;
-            this.txt_CompanyCode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_CompanyCode.Properties.Mask.EditMask = "n2";
-            this.txt_CompanyCode.Size = new System.Drawing.Size(205, 26);
-            this.txt_CompanyCode.TabIndex = 1;
-            this.txt_CompanyCode.ToolTip = "Enter Cheque Number";
-            this.txt_CompanyCode.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_CompanyCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_CompanyCode.Leave += new System.EventHandler(this.LeaveEvent);
+            this.txtContactPerrsonName.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtContactPerrsonName.Location = new System.Drawing.Point(156, 167);
+            this.txtContactPerrsonName.Name = "txtContactPerrsonName";
+            this.txtContactPerrsonName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactPerrsonName.Properties.Appearance.Options.UseFont = true;
+            this.txtContactPerrsonName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtContactPerrsonName.Properties.Mask.EditMask = "n2";
+            this.txtContactPerrsonName.Size = new System.Drawing.Size(205, 26);
+            this.txtContactPerrsonName.TabIndex = 5;
+            this.txtContactPerrsonName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtContactPerrsonName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtContactPerrsonName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // txt_OwnerName
+            // labelControl11
             // 
-            this.txt_OwnerName.EditValue = "";
-            this.txt_OwnerName.Location = new System.Drawing.Point(156, 74);
-            this.txt_OwnerName.Name = "txt_OwnerName";
-            this.txt_OwnerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_OwnerName.Properties.Appearance.Options.UseFont = true;
-            this.txt_OwnerName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_OwnerName.Properties.Mask.EditMask = "n2";
-            this.txt_OwnerName.Size = new System.Drawing.Size(205, 26);
-            this.txt_OwnerName.TabIndex = 2;
-            this.txt_OwnerName.ToolTip = "Enter Cheque Number";
-            this.txt_OwnerName.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_OwnerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_OwnerName.Leave += new System.EventHandler(this.LeaveEvent);
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Location = new System.Drawing.Point(396, 140);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(49, 17);
+            this.labelControl11.TabIndex = 80;
+            this.labelControl11.Text = "ECC No.";
             // 
-            // txtSMSNo
+            // txtCompanyCode
             // 
-            this.txtSMSNo.EditValue = "";
-            this.txtSMSNo.Location = new System.Drawing.Point(481, 162);
-            this.txtSMSNo.Name = "txtSMSNo";
-            this.txtSMSNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSMSNo.Properties.Appearance.Options.UseFont = true;
-            this.txtSMSNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtSMSNo.Properties.Mask.EditMask = "n2";
-            this.txtSMSNo.Size = new System.Drawing.Size(205, 26);
-            this.txtSMSNo.TabIndex = 10;
-            this.txtSMSNo.ToolTip = "Enter Cheque Number";
-            this.txtSMSNo.Enter += new System.EventHandler(this.EnterEvent);
-            this.txtSMSNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txtSMSNo.Leave += new System.EventHandler(this.LeaveEvent);
-            // 
-            // txt_InvestmentAmount
-            // 
-            this.txt_InvestmentAmount.EditValue = "";
-            this.txt_InvestmentAmount.Location = new System.Drawing.Point(156, 136);
-            this.txt_InvestmentAmount.Name = "txt_InvestmentAmount";
-            this.txt_InvestmentAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_InvestmentAmount.Properties.Appearance.Options.UseFont = true;
-            this.txt_InvestmentAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_InvestmentAmount.Properties.Mask.EditMask = "n2";
-            this.txt_InvestmentAmount.Size = new System.Drawing.Size(205, 26);
-            this.txt_InvestmentAmount.TabIndex = 4;
-            this.txt_InvestmentAmount.ToolTip = "Enter Cheque Number";
-            this.txt_InvestmentAmount.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_InvestmentAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_InvestmentAmount.Leave += new System.EventHandler(this.LeaveEvent);
-            // 
-            // txt_PANNo
-            // 
-            this.txt_PANNo.EditValue = "";
-            this.txt_PANNo.Location = new System.Drawing.Point(481, 69);
-            this.txt_PANNo.Name = "txt_PANNo";
-            this.txt_PANNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PANNo.Properties.Appearance.Options.UseFont = true;
-            this.txt_PANNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_PANNo.Properties.Mask.EditMask = "n2";
-            this.txt_PANNo.Size = new System.Drawing.Size(205, 26);
-            this.txt_PANNo.TabIndex = 7;
-            this.txt_PANNo.ToolTip = "Enter Cheque Number";
-            this.txt_PANNo.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_PANNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_PANNo.Leave += new System.EventHandler(this.LeaveEvent);
-            // 
-            // txt_ECCNo
-            // 
-            this.txt_ECCNo.EditValue = "";
-            this.txt_ECCNo.Location = new System.Drawing.Point(481, 131);
-            this.txt_ECCNo.Name = "txt_ECCNo";
-            this.txt_ECCNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ECCNo.Properties.Appearance.Options.UseFont = true;
-            this.txt_ECCNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_ECCNo.Properties.Mask.EditMask = "n2";
-            this.txt_ECCNo.Size = new System.Drawing.Size(205, 26);
-            this.txt_ECCNo.TabIndex = 9;
-            this.txt_ECCNo.ToolTip = "Enter Cheque Number";
-            this.txt_ECCNo.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_ECCNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_ECCNo.Leave += new System.EventHandler(this.LeaveEvent);
-            // 
-            // txt_CST
-            // 
-            this.txt_CST.EditValue = "";
-            this.txt_CST.Location = new System.Drawing.Point(481, 100);
-            this.txt_CST.Name = "txt_CST";
-            this.txt_CST.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CST.Properties.Appearance.Options.UseFont = true;
-            this.txt_CST.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_CST.Properties.Mask.EditMask = "n2";
-            this.txt_CST.Size = new System.Drawing.Size(205, 26);
-            this.txt_CST.TabIndex = 8;
-            this.txt_CST.ToolTip = "Enter Cheque Number";
-            this.txt_CST.Enter += new System.EventHandler(this.EnterEvent);
-            this.txt_CST.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.txt_CST.Leave += new System.EventHandler(this.LeaveEvent);
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(11, 109);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(84, 17);
-            this.labelControl1.TabIndex = 72;
-            this.labelControl1.Text = "Opening Date";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(11, 78);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(82, 17);
-            this.labelControl2.TabIndex = 73;
-            this.labelControl2.Text = "Owner Name";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(11, 47);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(93, 17);
-            this.labelControl3.TabIndex = 74;
-            this.labelControl3.Text = "Company Code";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(395, 16);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(50, 17);
-            this.labelControl8.TabIndex = 75;
-            this.labelControl8.Text = "Address";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(397, 170);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(50, 17);
-            this.labelControl7.TabIndex = 76;
-            this.labelControl7.Text = "SMS No.";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(11, 171);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(134, 17);
-            this.labelControl4.TabIndex = 78;
-            this.labelControl4.Text = "Contact Person Name";
+            this.txtCompanyCode.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtCompanyCode.Location = new System.Drawing.Point(156, 43);
+            this.txtCompanyCode.Name = "txtCompanyCode";
+            this.txtCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyCode.Properties.Appearance.Options.UseFont = true;
+            this.txtCompanyCode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCompanyCode.Properties.Mask.EditMask = "n2";
+            this.txtCompanyCode.Size = new System.Drawing.Size(205, 26);
+            this.txtCompanyCode.TabIndex = 1;
+            this.txtCompanyCode.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtCompanyCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtCompanyCode.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl12
             // 
@@ -371,110 +329,237 @@
             this.labelControl12.TabIndex = 79;
             this.labelControl12.Text = "Investment Amount";
             // 
-            // labelControl11
+            // txtOwnerName
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(397, 138);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(49, 17);
-            this.labelControl11.TabIndex = 80;
-            this.labelControl11.Text = "ECC No.";
+            this.txtOwnerName.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtOwnerName.Location = new System.Drawing.Point(156, 74);
+            this.txtOwnerName.Name = "txtOwnerName";
+            this.txtOwnerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwnerName.Properties.Appearance.Options.UseFont = true;
+            this.txtOwnerName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtOwnerName.Properties.Mask.EditMask = "n2";
+            this.txtOwnerName.Size = new System.Drawing.Size(205, 26);
+            this.txtOwnerName.TabIndex = 2;
+            this.txtOwnerName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtOwnerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtOwnerName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // labelControl10
+            // labelControl4
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(397, 106);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(48, 17);
-            this.labelControl10.TabIndex = 81;
-            this.labelControl10.Text = "CST No.";
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Location = new System.Drawing.Point(11, 171);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(134, 17);
+            this.labelControl4.TabIndex = 78;
+            this.labelControl4.Text = "Contact Person Name";
             // 
-            // labelControl9
+            // txtSMSNo
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(397, 74);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(48, 17);
-            this.labelControl9.TabIndex = 82;
-            this.labelControl9.Text = "Pan No.";
+            this.txtSMSNo.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtSMSNo.Location = new System.Drawing.Point(481, 167);
+            this.txtSMSNo.Name = "txtSMSNo";
+            this.txtSMSNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSMSNo.Properties.Appearance.Options.UseFont = true;
+            this.txtSMSNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtSMSNo.Properties.Mask.EditMask = "d";
+            this.txtSMSNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtSMSNo.Size = new System.Drawing.Size(205, 26);
+            this.txtSMSNo.TabIndex = 10;
+            this.txtSMSNo.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtSMSNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtSMSNo.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // dp_Date
+            // labelControl7
             // 
-            this.dp_Date.EditValue = null;
-            this.dp_Date.Location = new System.Drawing.Point(156, 105);
-            this.dp_Date.Name = "dp_Date";
-            this.dp_Date.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.dp_Date.Properties.Appearance.Options.UseFont = true;
-            this.dp_Date.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.dp_Date.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dp_Date.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dp_Date.Size = new System.Drawing.Size(205, 26);
-            this.dp_Date.TabIndex = 3;
-            this.dp_Date.ToolTip = "Select Date.";
-            this.dp_Date.Enter += new System.EventHandler(this.EnterEvent);
-            this.dp_Date.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.dp_Date.Leave += new System.EventHandler(this.LeaveEvent);
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Location = new System.Drawing.Point(397, 171);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(50, 17);
+            this.labelControl7.TabIndex = 76;
+            this.labelControl7.Text = "SMS No.";
             // 
-            // memoEdit1
+            // txtInvestmentAmount
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(481, 14);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(205, 49);
-            this.memoEdit1.TabIndex = 6;
-            this.memoEdit1.Enter += new System.EventHandler(this.EnterEvent);
-            this.memoEdit1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.memoEdit1.Leave += new System.EventHandler(this.LeaveEvent);
+            this.txtInvestmentAmount.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtInvestmentAmount.Location = new System.Drawing.Point(156, 136);
+            this.txtInvestmentAmount.Name = "txtInvestmentAmount";
+            this.txtInvestmentAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvestmentAmount.Properties.Appearance.Options.UseFont = true;
+            this.txtInvestmentAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtInvestmentAmount.Properties.Mask.EditMask = "n";
+            this.txtInvestmentAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtInvestmentAmount.Size = new System.Drawing.Size(205, 26);
+            this.txtInvestmentAmount.TabIndex = 4;
+            this.txtInvestmentAmount.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtInvestmentAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtInvestmentAmount.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // panelControl2
+            // labelControl8
             // 
-            this.panelControl2.Controls.Add(this.memoEdit1);
-            this.panelControl2.Controls.Add(this.dp_Date);
-            this.panelControl2.Controls.Add(this.labelControl6);
-            this.panelControl2.Controls.Add(this.labelControl9);
-            this.panelControl2.Controls.Add(this.txt_CompanyName);
-            this.panelControl2.Controls.Add(this.labelControl10);
-            this.panelControl2.Controls.Add(this.txt_ContactPerrsonName);
-            this.panelControl2.Controls.Add(this.labelControl11);
-            this.panelControl2.Controls.Add(this.txt_CompanyCode);
-            this.panelControl2.Controls.Add(this.labelControl12);
-            this.panelControl2.Controls.Add(this.txt_OwnerName);
-            this.panelControl2.Controls.Add(this.labelControl4);
-            this.panelControl2.Controls.Add(this.txtSMSNo);
-            this.panelControl2.Controls.Add(this.labelControl7);
-            this.panelControl2.Controls.Add(this.txt_InvestmentAmount);
-            this.panelControl2.Controls.Add(this.labelControl8);
-            this.panelControl2.Controls.Add(this.txt_PANNo);
-            this.panelControl2.Controls.Add(this.labelControl3);
-            this.panelControl2.Controls.Add(this.txt_ECCNo);
-            this.panelControl2.Controls.Add(this.labelControl2);
-            this.panelControl2.Controls.Add(this.txt_CST);
-            this.panelControl2.Controls.Add(this.labelControl1);
-            this.panelControl2.Location = new System.Drawing.Point(9, 8);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(728, 208);
-            this.panelControl2.TabIndex = 62;
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Location = new System.Drawing.Point(395, 16);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(50, 17);
+            this.labelControl8.TabIndex = 75;
+            this.labelControl8.Text = "Address";
             // 
-            // error_companyName
+            // txtPANNo
             // 
-            this.error_companyName.ContainerControl = this;
+            this.txtPANNo.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtPANNo.Location = new System.Drawing.Point(481, 74);
+            this.txtPANNo.Name = "txtPANNo";
+            this.txtPANNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPANNo.Properties.Appearance.Options.UseFont = true;
+            this.txtPANNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtPANNo.Properties.Mask.EditMask = "n2";
+            this.txtPANNo.Size = new System.Drawing.Size(205, 26);
+            this.txtPANNo.TabIndex = 7;
+            this.txtPANNo.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtPANNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtPANNo.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // error_companyCode
+            // labelControl3
             // 
-            this.error_companyCode.ContainerControl = this;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Location = new System.Drawing.Point(11, 47);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(93, 17);
+            this.labelControl3.TabIndex = 74;
+            this.labelControl3.Text = "Company Code";
             // 
-            // error_Ownername
+            // txtECCNo
             // 
-            this.error_Ownername.ContainerControl = this;
+            this.txtECCNo.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtECCNo.Location = new System.Drawing.Point(481, 136);
+            this.txtECCNo.Name = "txtECCNo";
+            this.txtECCNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtECCNo.Properties.Appearance.Options.UseFont = true;
+            this.txtECCNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtECCNo.Properties.Mask.EditMask = "n2";
+            this.txtECCNo.Size = new System.Drawing.Size(205, 26);
+            this.txtECCNo.TabIndex = 9;
+            this.txtECCNo.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtECCNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtECCNo.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // error_openingdate
+            // labelControl2
             // 
-            this.error_openingdate.ContainerControl = this;
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Location = new System.Drawing.Point(11, 78);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(82, 17);
+            this.labelControl2.TabIndex = 73;
+            this.labelControl2.Text = "Owner Name";
             // 
-            // error_investmentamount
+            // txtCST
             // 
-            this.error_investmentamount.ContainerControl = this;
+            this.txtCST.EditValue = "";
+            this.errorecc.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorsms.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtCST.Location = new System.Drawing.Point(481, 105);
+            this.txtCST.Name = "txtCST";
+            this.txtCST.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCST.Properties.Appearance.Options.UseFont = true;
+            this.txtCST.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCST.Properties.Mask.EditMask = "n2";
+            this.txtCST.Size = new System.Drawing.Size(205, 26);
+            this.txtCST.TabIndex = 8;
+            this.txtCST.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtCST.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtCST.Leave += new System.EventHandler(this.LeaveEvent);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Location = new System.Drawing.Point(11, 109);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(84, 17);
+            this.labelControl1.TabIndex = 72;
+            this.labelControl1.Text = "Opening Date";
+            // 
+            // errorcompanyName
+            // 
+            this.errorcompanyName.ContainerControl = this;
+            // 
+            // errorcompanyCode
+            // 
+            this.errorcompanyCode.ContainerControl = this;
+            // 
+            // errorOwnername
+            // 
+            this.errorOwnername.ContainerControl = this;
+            // 
+            // erroropeningdate
+            // 
+            this.erroropeningdate.ContainerControl = this;
+            // 
+            // errorinvestmentamount
+            // 
+            this.errorinvestmentamount.ContainerControl = this;
             // 
             // error_contactpersoanname
             // 
@@ -488,102 +573,95 @@
             // 
             this.error_panno.ContainerControl = this;
             // 
-            // error_cst
+            // errorcst
             // 
-            this.error_cst.ContainerControl = this;
+            this.errorcst.ContainerControl = this;
             // 
-            // error_ecc
+            // errorecc
             // 
-            this.error_ecc.ContainerControl = this;
+            this.errorecc.ContainerControl = this;
             // 
-            // error_sms
+            // errorsms
             // 
-            this.error_sms.ContainerControl = this;
+            this.errorsms.ContainerControl = this;
             // 
             // frmCompanyMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 280);
-            this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.panelControl1);
+            this.ClientSize = new System.Drawing.Size(854, 228);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCompanyMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.ShowInTaskbar = false;
             this.Text = "Company Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CompanyName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_ContactPerrsonName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CompanyCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_OwnerName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_InvestmentAmount.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_PANNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_ECCNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_CST.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dp_Date.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dp_Date.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtaddress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.error_companyName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_companyCode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_Ownername)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_openingdate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_investmentamount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContactPerrsonName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOwnerName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvestmentAmount.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPANNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtECCNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCST.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorcompanyName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorcompanyCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorOwnername)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erroropeningdate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorinvestmentamount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_contactpersoanname)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_address)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_panno)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_cst)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_ecc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.error_sms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorcst)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorecc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorsms)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit txt_CompanyName;
-        private DevExpress.XtraEditors.TextEdit txt_ContactPerrsonName;
-        private DevExpress.XtraEditors.TextEdit txt_CompanyCode;
-        private DevExpress.XtraEditors.TextEdit txt_OwnerName;
-        private DevExpress.XtraEditors.TextEdit txtSMSNo;
-        private DevExpress.XtraEditors.TextEdit txt_InvestmentAmount;
-        private DevExpress.XtraEditors.TextEdit txt_PANNo;
-        private DevExpress.XtraEditors.TextEdit txt_ECCNo;
-        private DevExpress.XtraEditors.TextEdit txt_CST;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.DateEdit dp_Date;
-        public DevExpress.XtraEditors.SimpleButton btnReport;
-        public DevExpress.XtraEditors.SimpleButton btnExit;
-        public DevExpress.XtraEditors.SimpleButton btndelete;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_companyName;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_companyCode;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_Ownername;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_openingdate;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_investmentamount;
+        private DevExpress.XtraEditors.MemoEdit txtaddress;
+        private DevExpress.XtraEditors.DateEdit dpOpeningDate;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.TextEdit txtCompanyName;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.TextEdit txtContactPerrsonName;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.TextEdit txtCompanyCode;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.TextEdit txtOwnerName;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.TextEdit txtSMSNo;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.TextEdit txtInvestmentAmount;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.TextEdit txtPANNo;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.TextEdit txtECCNo;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.TextEdit txtCST;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorcompanyName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorcompanyCode;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorOwnername;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider erroropeningdate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorinvestmentamount;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_contactpersoanname;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_address;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_panno;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_cst;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_ecc;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider error_sms;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorcst;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorecc;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorsms;
     }
 }

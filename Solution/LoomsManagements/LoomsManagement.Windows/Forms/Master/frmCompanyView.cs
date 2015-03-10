@@ -1,39 +1,112 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraPrinting;
+using DevExpress.XtraPrintingLinks;
+using DevExpress.XtraSplashScreen;
+using LoomsManagement.BAL;
+using LoomsManagement.Windows.Classes;
+using System;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using LoomsManagement.Windows.Forms.Master;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class frmCompanyView : DevExpress.XtraEditors.XtraForm
+    public partial class frmCompanyView : LoomsManagement.Windows.FormDemoGrid
     {
+
+        #region [Constructor]
+
         public frmCompanyView()
         {
             InitializeComponent();
         }
 
-        private void btnAddRecord_Click(object sender, EventArgs e)
+        #endregion
+
+        #region [Page Event]
+
+        private void frmCompanyView_Activated(object sender, EventArgs e)
         {
-            frmCompanyMaster objform = new frmCompanyMaster();
-            objform.ShowDialog();
-            objform.FormClosed += objform_FormClosed;
+            BindGridData();
+        }
+
+        #endregion
+
+        #region [Control Event]
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var frmCompanyMaster = new frmCompanyMaster();
+            frmCompanyMaster.FormClosed += objform_FormClosed;
+            frmCompanyMaster.ShowDialog();
         }
 
         void objform_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
         }
 
-        public void RefreshGridData()
+        private void InnderGrid_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                var frmCompanyMaster = new frmCompanyMaster();
+                frmCompanyMaster.IsEdit = true;
+                frmCompanyMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "CompanyID"));
+                frmCompanyMaster.FormClosed += objform_FormClosed;
+                frmCompanyMaster.ShowDialog();
+            }
 
         }
+
+        #endregion
+
+        #region [Private Method]
+
+        private void BindGridData()
+        {
+            gridViewCompany.DataSource = CompnayBussinesLogic.GetAllCompanyDetails();
+            InnerGrid.BestFitColumns();
+        }
+
+        #endregion
+
+        #region [Master Page Event]
+
+        private void BtnMasterPrint_Click(object sender, EventArgs e)
+        {
+            CompositeLink composLink = new CompositeLink(new PrintingSystem());
+            PrintableComponentLink pcLink1 = new PrintableComponentLink();
+            pcLink1.Component = this.gridViewCompany;
+            composLink.Links.Add(pcLink1);
+            composLink.ShowPreview();
+        }
+
+        private void BtnMasterPDF_Click(object sender, EventArgs e)
+        {
+            InnerGrid.SaveLayoutToXml("tempLayout.xml");
+            foreach (GridColumn column in InnerGrid.Columns)
+            {
+                // column.Visible = true;
+            }
+            InnerGrid.ExportToPdf(CommanClass.ExportDataPath + "CompanyDetails.pdf");
+            InnerGrid.RestoreLayoutFromXml("tempLayout.xml");
+        }
+
+        private void btnMasterExcel_Click(object sender, EventArgs e)
+        {
+            InnerGrid.SaveLayoutToXml("tempLayout.xml");
+            foreach (GridColumn column in InnerGrid.Columns)
+            {
+                column.Visible = true;
+            }
+            InnerGrid.ExportToXls(CommanClass.ExportDataPath + "CompanyDetails.xls");
+            InnerGrid.RestoreLayoutFromXml("tempLayout.xml");
+        }
+
+        #endregion
+
+       
+
     }
 }

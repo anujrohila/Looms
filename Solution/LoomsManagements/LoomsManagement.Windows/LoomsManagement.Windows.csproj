@@ -93,7 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ErrorHandlor.cs" />
-    <Compile Include="Classes\GlobalClass.cs" />
+    <Compile Include="Classes\CommanClass.cs" />
+    <Compile Include="Classes\UserContext.cs" />
     <Compile Include="Classes\Validation.cs" />
     <Compile Include="FormDemo1.cs">
       <SubType>Form</SubType>
@@ -113,83 +114,71 @@
     <Compile Include="FormDemoGrid.Designer.cs">
       <DependentUpon>FormDemoGrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Account\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Master\FormAttandanceMasterView.cs">
+    <Compile Include="Forms\Master\frmMachineTypeMaster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Master\FormAttandanceMasterView.Designer.cs">
-      <DependentUpon>FormAttandanceMasterView.cs</DependentUpon>
+    <Compile Include="Forms\Master\frmMachineTypeMaster.Designer.cs">
+      <DependentUpon>frmMachineTypeMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Master\FormAttendanceMaster.cs">
+    <Compile Include="Forms\Master\frmEmployeeMasterView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Master\FormAttendanceMaster.Designer.cs">
-      <DependentUpon>FormAttendanceMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormBeamMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormBeamMaster.Designer.cs">
-      <DependentUpon>FormBeamMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormBeamMasterView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormBeamMasterView.Designer.cs">
-      <DependentUpon>FormBeamMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormCompanyMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormCompanyMaster.Designer.cs">
-      <DependentUpon>FormCompanyMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormCompanyView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormCompanyView.Designer.cs">
-      <DependentUpon>FormCompanyView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormPartyMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormPartyMaster.Designer.cs">
-      <DependentUpon>FormPartyMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormPartyMasterView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormPartyMasterView.Designer.cs">
-      <DependentUpon>FormPartyMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormPenaltyMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormPenaltyMaster.Designer.cs">
-      <DependentUpon>FormPenaltyMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormPenaltyMasterView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormPenaltyMasterView.Designer.cs">
-      <DependentUpon>FormPenaltyMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\FormSalaryMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\FormSalaryMaster.Designer.cs">
-      <DependentUpon>FormSalaryMaster.cs</DependentUpon>
+    <Compile Include="Forms\Master\frmEmployeeMasterView.Designer.cs">
+      <DependentUpon>frmEmployeeMasterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmCompanyMaster.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Master\frmCompanyMaster.Designer.cs">
       <DependentUpon>frmCompanyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmCompanyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmCompanyView.Designer.cs">
+      <DependentUpon>frmCompanyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeMaster.Designer.cs">
+      <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMasterView.Designer.cs">
+      <DependentUpon>frmEmployeeTypeMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMaster.Designer.cs">
+      <DependentUpon>frmEmployeeTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmPartyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPartyMaster.Designer.cs">
+      <DependentUpon>frmPartyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMaster.Designer.cs">
+      <DependentUpon>frmPenaltyMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Account\frmLogin.cs">
       <SubType>Form</SubType>
@@ -203,35 +192,11 @@
     <Compile Include="Forms\Business\frmFirm.Designer.cs">
       <DependentUpon>frmFirm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Master\frmAttandanceMasterView.cs">
+    <Compile Include="Forms\Master\frmPartyMasterView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Master\frmAttandanceMasterView.Designer.cs">
-      <DependentUpon>frmAttandanceMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmAttendanceMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmAttendanceMaster.Designer.cs">
-      <DependentUpon>frmAttendanceMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmBeamMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmBeamMaster.Designer.cs">
-      <DependentUpon>frmBeamMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmBeamMasterView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmBeamMasterView.Designer.cs">
-      <DependentUpon>frmBeamMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmCompanyView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmCompanyView.Designer.cs">
-      <DependentUpon>frmCompanyView.cs</DependentUpon>
+    <Compile Include="Forms\Master\frmPartyMasterView.Designer.cs">
+      <DependentUpon>frmPartyMasterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmPenaltyMasterView.cs">
       <SubType>Form</SubType>
@@ -239,47 +204,17 @@
     <Compile Include="Forms\Master\frmPenaltyMasterView.Designer.cs">
       <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Master\frmPartyMaster.cs">
+    <Compile Include="Forms\Master\frmYarnPackageTypeMaster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Master\frmPartyMaster.Designer.cs">
-      <DependentUpon>frmPartyMaster.cs</DependentUpon>
+    <Compile Include="Forms\Master\frmYarnPackageTypeMaster.Designer.cs">
+      <DependentUpon>frmYarnPackageTypeMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Master\frmPartyMasterView.cs">
+    <Compile Include="Forms\Master\frmYarnPackageTypeMasterView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Master\frmPartyMasterView.Designer.cs">
-      <DependentUpon>frmPartyMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmPenaltyMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmPenaltyMaster.Designer.cs">
-      <DependentUpon>frmPenaltyMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmSalaryMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmSalaryMaster.Designer.cs">
-      <DependentUpon>frmSalaryMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmSalaryMasterView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmSalaryMasterView.Designer.cs">
-      <DependentUpon>frmSalaryMasterView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmWithdrawnMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmWithdrawnMaster.Designer.cs">
-      <DependentUpon>frmWithdrawnMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Master\frmWithdrawnMasterView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmWithdrawnMasterView.Designer.cs">
-      <DependentUpon>frmWithdrawnMasterView.cs</DependentUpon>
+    <Compile Include="Forms\Master\frmYarnPackageTypeMasterView.Designer.cs">
+      <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmYarnQualityMaster.cs">
       <SubType>Form</SubType>
@@ -292,6 +227,18 @@
     </Compile>
     <Compile Include="Forms\Master\frmYarnQualityMasterView.Designer.cs">
       <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMaster.Designer.cs">
+      <DependentUpon>frmYarnTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMasterView.Designer.cs">
+      <DependentUpon>frmYarnTypeMasterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Production\frmMachine.cs">
       <SubType>Form</SubType>
@@ -308,6 +255,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\LoomsManagementApplication.cs" />
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm2.Designer.cs">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormDemo1.resx">
       <DependentUpon>FormDemo1.cs</DependentUpon>
     </EmbeddedResource>
@@ -317,89 +276,65 @@
     <EmbeddedResource Include="FormDemoGrid.resx">
       <DependentUpon>FormDemoGrid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormAttandanceMasterView.resx">
-      <DependentUpon>FormAttandanceMasterView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmMachineTypeMaster.resx">
+      <DependentUpon>frmMachineTypeMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormAttendanceMaster.resx">
-      <DependentUpon>FormAttendanceMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormBeamMaster.resx">
-      <DependentUpon>FormBeamMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormBeamMasterView.resx">
-      <DependentUpon>FormBeamMasterView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormCompanyMaster.resx">
-      <DependentUpon>FormCompanyMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormCompanyView.resx">
-      <DependentUpon>FormCompanyView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormPartyMaster.resx">
-      <DependentUpon>FormPartyMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormPartyMasterView.resx">
-      <DependentUpon>FormPartyMasterView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormPenaltyMaster.resx">
-      <DependentUpon>FormPenaltyMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormPenaltyMasterView.resx">
-      <DependentUpon>FormPenaltyMasterView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\FormSalaryMaster.resx">
-      <DependentUpon>FormSalaryMaster.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeMasterView.resx">
+      <DependentUpon>frmEmployeeMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmCompanyMaster.resx">
       <DependentUpon>frmCompanyMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmAttandanceMasterView.resx">
-      <DependentUpon>frmAttandanceMasterView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmAttendanceMaster.resx">
-      <DependentUpon>frmAttendanceMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmBeamMaster.resx">
-      <DependentUpon>frmBeamMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmBeamMasterView.resx">
-      <DependentUpon>frmBeamMasterView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmCompanyView.resx">
       <DependentUpon>frmCompanyView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmPenaltyMasterView.resx">
-      <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeMaster.resx">
+      <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeTypeMasterView.resx">
+      <DependentUpon>frmEmployeeTypeMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeTypeMaster.resx">
+      <DependentUpon>frmEmployeeTypeMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmPartyMaster.resx">
       <DependentUpon>frmPartyMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmPartyMasterView.resx">
-      <DependentUpon>frmPartyMasterView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmPenaltyMaster.resx">
       <DependentUpon>frmPenaltyMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmSalaryMaster.resx">
-      <DependentUpon>frmSalaryMaster.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmPartyMasterView.resx">
+      <DependentUpon>frmPartyMasterView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmSalaryMasterView.resx">
-      <DependentUpon>frmSalaryMasterView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmPenaltyMasterView.resx">
+      <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmWithdrawnMaster.resx">
-      <DependentUpon>frmWithdrawnMaster.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMaster.resx">
+      <DependentUpon>frmYarnPackageTypeMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmWithdrawnMasterView.resx">
-      <DependentUpon>frmWithdrawnMasterView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMasterView.resx">
+      <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnQualityMaster.resx">
       <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnQualityMasterView.resx">
       <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnTypeMaster.resx">
+      <DependentUpon>frmYarnTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnTypeMasterView.resx">
+      <DependentUpon>frmYarnTypeMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inherite.resx">
       <DependentUpon>Inherite.cs</DependentUpon>
@@ -415,6 +350,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm2.resx">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.Config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -484,6 +425,7 @@
     <Content Include="Resources\1425812264_company.png" />
     <Content Include="Resources\1425812463_Manager.png" />
     <Content Include="Resources\1425812739_executive.png" />
+    <None Include="Resources\1732542-balls-of-thead-on-a-white-background.jpg" />
     <Content Include="Resources\4478380_orig.png" />
     <Content Include="Resources\Bank.png" />
     <Content Include="Resources\bank1.png" />

@@ -36,11 +36,6 @@
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.iExit = new DevExpress.XtraBars.BarButtonItem();
-            this.iHelp = new DevExpress.XtraBars.BarButtonItem();
-            this.iAbout = new DevExpress.XtraBars.BarButtonItem();
-            this.siStatus = new DevExpress.XtraBars.BarStaticItem();
-            this.siInfo = new DevExpress.XtraBars.BarStaticItem();
-            this.rgbiSkins = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.bar_Company = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
@@ -53,10 +48,6 @@
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.skinRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.skinRibbonGalleryBarItem3 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.skinRibbonGalleryBarItem4 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -85,6 +76,7 @@
             this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
             this.printRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.PrintRibbonPageGroup();
             this.commonRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.CommonRibbonPageGroup();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -153,11 +145,6 @@
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
             this.iExit,
-            this.iHelp,
-            this.iAbout,
-            this.siStatus,
-            this.siInfo,
-            this.rgbiSkins,
             this.bar_Company,
             this.barButtonItem2,
             this.barButtonItem3,
@@ -170,15 +157,11 @@
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
-            this.skinRibbonGalleryBarItem1,
-            this.skinRibbonGalleryBarItem2,
-            this.skinRibbonGalleryBarItem3,
-            this.skinRibbonGalleryBarItem4});
+            this.skinRibbonGalleryBarItem1});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 1;
+            this.ribbonControl.MaxItemId = 3;
             this.ribbonControl.Name = "ribbonControl";
-            this.ribbonControl.PageHeaderItemLinks.Add(this.skinRibbonGalleryBarItem4);
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.helpRibbonPage});
@@ -188,6 +171,7 @@
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl.Size = new System.Drawing.Size(1100, 144);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
+            this.ribbonControl.Toolbar.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
             // 
             // ribbonImageCollection
             // 
@@ -225,57 +209,6 @@
             this.iExit.ImageIndex = 6;
             this.iExit.LargeImageIndex = 6;
             this.iExit.Name = "iExit";
-            // 
-            // iHelp
-            // 
-            this.iHelp.Caption = "Help";
-            this.iHelp.Description = "Start the program help system.";
-            this.iHelp.Hint = "Start the program help system";
-            this.iHelp.Id = 22;
-            this.iHelp.ImageIndex = 7;
-            this.iHelp.LargeImageIndex = 7;
-            this.iHelp.Name = "iHelp";
-            // 
-            // iAbout
-            // 
-            this.iAbout.Description = "Displays general program information.";
-            this.iAbout.Hint = "Displays general program information";
-            this.iAbout.Id = 24;
-            this.iAbout.ImageIndex = 8;
-            this.iAbout.LargeImageIndex = 8;
-            this.iAbout.Name = "iAbout";
-            // 
-            // siStatus
-            // 
-            this.siStatus.Caption = "Some Status Info";
-            this.siStatus.Id = 31;
-            this.siStatus.Name = "siStatus";
-            this.siStatus.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
-            // siInfo
-            // 
-            this.siInfo.Caption = "Some Info";
-            this.siInfo.Id = 32;
-            this.siInfo.Name = "siInfo";
-            this.siInfo.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
-            // rgbiSkins
-            // 
-            this.rgbiSkins.Caption = "Skins";
-            // 
-            // 
-            // 
-            this.rgbiSkins.Gallery.AllowHoverImages = true;
-            this.rgbiSkins.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseFont = true;
-            this.rgbiSkins.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = true;
-            this.rgbiSkins.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.rgbiSkins.Gallery.ColumnCount = 4;
-            this.rgbiSkins.Gallery.FixedHoverImageSize = false;
-            this.rgbiSkins.Gallery.ImageSize = new System.Drawing.Size(32, 17);
-            this.rgbiSkins.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Top;
-            this.rgbiSkins.Gallery.RowCount = 4;
-            this.rgbiSkins.Id = 60;
-            this.rgbiSkins.Name = "rgbiSkins";
             // 
             // bar_Company
             // 
@@ -366,30 +299,6 @@
             this.barButtonItem12.ImageIndex = 7;
             this.barButtonItem12.Name = "barButtonItem12";
             // 
-            // skinRibbonGalleryBarItem1
-            // 
-            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
-            this.skinRibbonGalleryBarItem1.Id = 113;
-            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
-            // 
-            // skinRibbonGalleryBarItem2
-            // 
-            this.skinRibbonGalleryBarItem2.Caption = "skinRibbonGalleryBarItem2";
-            this.skinRibbonGalleryBarItem2.Id = 114;
-            this.skinRibbonGalleryBarItem2.Name = "skinRibbonGalleryBarItem2";
-            // 
-            // skinRibbonGalleryBarItem3
-            // 
-            this.skinRibbonGalleryBarItem3.Caption = "skinRibbonGalleryBarItem3";
-            this.skinRibbonGalleryBarItem3.Id = 115;
-            this.skinRibbonGalleryBarItem3.Name = "skinRibbonGalleryBarItem3";
-            // 
-            // skinRibbonGalleryBarItem4
-            // 
-            this.skinRibbonGalleryBarItem4.Caption = "skinRibbonGalleryBarItem4";
-            this.skinRibbonGalleryBarItem4.Id = 1;
-            this.skinRibbonGalleryBarItem4.Name = "skinRibbonGalleryBarItem4";
-            // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
@@ -427,49 +336,43 @@
             this.ribbonPageGroup3,
             this.ribbonPageGroup4,
             this.ribbonPageGroup5});
-            this.ribbonPage1.KeyTip = "M";
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Master";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.bar_Company, "CM");
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2, "O");
-            this.ribbonPageGroup1.KeyTip = "CO";
+            this.ribbonPageGroup1.ItemLinks.Add(this.bar_Company);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Company Master";
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3, "PA");
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem5, "EP");
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4, "EL");
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem6, "PN");
-            this.ribbonPageGroup2.KeyTip = "EM";
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Employee Master";
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem7, "YR");
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem8, "YN");
-            this.ribbonPageGroup3.KeyTip = "YA";
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Yarn Master";
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9, "MC");
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem10, "MH");
-            this.ribbonPageGroup4.KeyTip = "MA";
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Machin Master";
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem11, "BN");
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem12, "BK");
-            this.ribbonPageGroup5.KeyTip = "BA";
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Bank Master";
             // 
@@ -477,15 +380,11 @@
             // 
             this.helpRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.helpRibbonPageGroup});
-            this.helpRibbonPage.KeyTip = "H";
             this.helpRibbonPage.Name = "helpRibbonPage";
             this.helpRibbonPage.Text = "Help";
             // 
             // helpRibbonPageGroup
             // 
-            this.helpRibbonPageGroup.ItemLinks.Add(this.iHelp, "HL");
-            this.helpRibbonPageGroup.ItemLinks.Add(this.iAbout, "0");
-            this.helpRibbonPageGroup.KeyTip = "HE";
             this.helpRibbonPageGroup.Name = "helpRibbonPageGroup";
             this.helpRibbonPageGroup.Text = "Help";
             // 
@@ -603,6 +502,12 @@
             this.commonRibbonPageGroup1.Name = "commonRibbonPageGroup1";
             this.commonRibbonPageGroup1.Text = "";
             // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 2;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
+            // 
             // Dashboard
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -657,11 +562,6 @@
         private DevExpress.XtraScheduler.UI.CommonRibbonPageGroup commonRibbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.BarButtonItem iExit;
-        private DevExpress.XtraBars.BarButtonItem iHelp;
-        private DevExpress.XtraBars.BarButtonItem iAbout;
-        private DevExpress.XtraBars.BarStaticItem siStatus;
-        private DevExpress.XtraBars.BarStaticItem siInfo;
-        private DevExpress.XtraBars.RibbonGalleryBarItem rgbiSkins;
         private DevExpress.XtraBars.BarButtonItem bar_Company;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
@@ -674,10 +574,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
-        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem2;
-        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem3;
-        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem4;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
@@ -688,6 +584,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup helpRibbonPageGroup;
         private DevExpress.XtraScheduler.UI.RepositoryItemDuration repositoryItemDuration1;
         private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryItemSpinEdit1;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
 
     }
 }

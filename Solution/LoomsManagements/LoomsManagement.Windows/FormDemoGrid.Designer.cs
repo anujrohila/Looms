@@ -30,10 +30,11 @@
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.txt_export = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_print = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_pdf = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAddRecord = new DevExpress.XtraEditors.SimpleButton();
+            this.btnMasterExcel = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnMasterPrint = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnMasterPDF = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LoomsManagement.Windows.WaitForm1), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -43,7 +44,7 @@
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.panelControl2);
-            this.panelControl1.Controls.Add(this.btnAddRecord);
+            this.panelControl1.Controls.Add(this.btnAdd);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
@@ -53,59 +54,59 @@
             // panelControl2
             // 
             this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl2.Controls.Add(this.txt_export);
-            this.panelControl2.Controls.Add(this.btn_print);
-            this.panelControl2.Controls.Add(this.btn_pdf);
+            this.panelControl2.Controls.Add(this.btnMasterExcel);
+            this.panelControl2.Controls.Add(this.BtnMasterPrint);
+            this.panelControl2.Controls.Add(this.BtnMasterPDF);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelControl2.Location = new System.Drawing.Point(491, 2);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(303, 39);
             this.panelControl2.TabIndex = 62;
             // 
-            // txt_export
+            // btnMasterExcel
             // 
-            this.txt_export.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_export.Appearance.Options.UseFont = true;
-            this.txt_export.Image = global::LoomsManagement.Windows.Properties.Resources.icon_excel;
-            this.txt_export.Location = new System.Drawing.Point(207, 4);
-            this.txt_export.Name = "txt_export";
-            this.txt_export.Size = new System.Drawing.Size(86, 31);
-            this.txt_export.TabIndex = 62;
-            this.txt_export.Text = "&Exports";
+            this.btnMasterExcel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMasterExcel.Appearance.Options.UseFont = true;
+            this.btnMasterExcel.Image = global::LoomsManagement.Windows.Properties.Resources.icon_excel;
+            this.btnMasterExcel.Location = new System.Drawing.Point(207, 4);
+            this.btnMasterExcel.Name = "btnMasterExcel";
+            this.btnMasterExcel.Size = new System.Drawing.Size(86, 31);
+            this.btnMasterExcel.TabIndex = 62;
+            this.btnMasterExcel.Text = "&Exports";
             // 
-            // btn_print
+            // BtnMasterPrint
             // 
-            this.btn_print.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_print.Appearance.Options.UseFont = true;
-            this.btn_print.Image = global::LoomsManagement.Windows.Properties.Resources.printer_icon;
-            this.btn_print.Location = new System.Drawing.Point(23, 5);
-            this.btn_print.Name = "btn_print";
-            this.btn_print.Size = new System.Drawing.Size(86, 31);
-            this.btn_print.TabIndex = 61;
-            this.btn_print.Text = "&Print";
+            this.BtnMasterPrint.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMasterPrint.Appearance.Options.UseFont = true;
+            this.BtnMasterPrint.Image = global::LoomsManagement.Windows.Properties.Resources.printer_icon;
+            this.BtnMasterPrint.Location = new System.Drawing.Point(23, 5);
+            this.BtnMasterPrint.Name = "BtnMasterPrint";
+            this.BtnMasterPrint.Size = new System.Drawing.Size(86, 31);
+            this.BtnMasterPrint.TabIndex = 61;
+            this.BtnMasterPrint.Text = "&Print";
             // 
-            // btn_pdf
+            // BtnMasterPDF
             // 
-            this.btn_pdf.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pdf.Appearance.Options.UseFont = true;
-            this.btn_pdf.Image = global::LoomsManagement.Windows.Properties.Resources.i_pdf_icon;
-            this.btn_pdf.Location = new System.Drawing.Point(115, 5);
-            this.btn_pdf.Name = "btn_pdf";
-            this.btn_pdf.Size = new System.Drawing.Size(86, 31);
-            this.btn_pdf.TabIndex = 60;
-            this.btn_pdf.Text = "&PDF";
+            this.BtnMasterPDF.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMasterPDF.Appearance.Options.UseFont = true;
+            this.BtnMasterPDF.Image = global::LoomsManagement.Windows.Properties.Resources.i_pdf_icon;
+            this.BtnMasterPDF.Location = new System.Drawing.Point(115, 5);
+            this.BtnMasterPDF.Name = "BtnMasterPDF";
+            this.BtnMasterPDF.Size = new System.Drawing.Size(86, 31);
+            this.BtnMasterPDF.TabIndex = 60;
+            this.BtnMasterPDF.Text = "&PDF";
             // 
-            // btnAddRecord
+            // btnAdd
             // 
-            this.btnAddRecord.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRecord.Appearance.Options.UseFont = true;
-            this.btnAddRecord.Image = global::LoomsManagement.Windows.Properties.Resources.btnAdd;
-            this.btnAddRecord.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnAddRecord.Location = new System.Drawing.Point(12, 6);
-            this.btnAddRecord.Name = "btnAddRecord";
-            this.btnAddRecord.Size = new System.Drawing.Size(86, 31);
-            this.btnAddRecord.TabIndex = 59;
-            this.btnAddRecord.Text = "&Add";
+            this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Image = global::LoomsManagement.Windows.Properties.Resources.btnAdd;
+            this.btnAdd.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(12, 6);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(86, 31);
+            this.btnAdd.TabIndex = 59;
+            this.btnAdd.Text = "&Add";
             // 
             // FormDemoGrid
             // 
@@ -126,10 +127,11 @@
         #endregion
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        public DevExpress.XtraEditors.SimpleButton btn_pdf;
-        public DevExpress.XtraEditors.SimpleButton btnAddRecord;
-        public DevExpress.XtraEditors.SimpleButton btn_print;
+        public DevExpress.XtraEditors.SimpleButton BtnMasterPDF;
+        public DevExpress.XtraEditors.SimpleButton btnAdd;
+        public DevExpress.XtraEditors.SimpleButton BtnMasterPrint;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        public DevExpress.XtraEditors.SimpleButton txt_export;
+        public DevExpress.XtraEditors.SimpleButton btnMasterExcel;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }

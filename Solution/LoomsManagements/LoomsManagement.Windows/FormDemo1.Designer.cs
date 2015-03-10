@@ -35,6 +35,7 @@
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btndelete = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LoomsManagement.Windows.WaitForm1), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -127,5 +128,6 @@
         public DevExpress.XtraEditors.SimpleButton btnSave;
         public DevExpress.XtraEditors.SimpleButton btndelete;
         public System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }

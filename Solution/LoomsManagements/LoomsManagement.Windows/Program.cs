@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
 using LoomsManagement.Windows.Forms;
+using LoomsManagement.Windows.Forms.Account;
 
 namespace LoomsManagement.Windows
 {
@@ -20,7 +21,7 @@ namespace LoomsManagement.Windows
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
 
-            Application.Run(new Dashboard());
+            Application.Run(new frmLogin());
         }
     }
 }
