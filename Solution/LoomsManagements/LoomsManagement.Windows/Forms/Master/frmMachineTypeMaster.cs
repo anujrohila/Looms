@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class frmYarnQualityMaster : LoomsManagement.Windows.FormDemo1
+    public partial class frmYarnQualityMaster1 : LoomsManagement.Windows.FormDemo1
     {
-        public frmYarnQualityMaster()
+        public frmYarnQualityMaster1()
         {
             InitializeComponent();
         }

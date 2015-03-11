@@ -140,6 +140,15 @@ namespace LoomsManagement.Windows.Forms.Master
             }
         }
 
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
+            {
+                this.Close();
+                return true;
+            }
+            return base.ProcessDialogKey(keyData);
+        }
 
         #endregion
 
@@ -241,6 +250,8 @@ namespace LoomsManagement.Windows.Forms.Master
         }
 
         #endregion
+
+    
 
     }
 }

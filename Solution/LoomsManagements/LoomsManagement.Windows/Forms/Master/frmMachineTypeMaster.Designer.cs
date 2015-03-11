@@ -1,6 +1,6 @@
 ﻿namespace LoomsManagement.Windows.Forms.Master
 {
-    partial class frmYarnQualityMaster
+    partial class frmYarnQualityMaster1
     {
         /// <summary>
         /// Required designer variable.

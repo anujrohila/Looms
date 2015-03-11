@@ -128,17 +128,17 @@
             // 
             // txtaddress
             // 
+            this.errorecc.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.error_address.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.error_panno.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOwnername.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.erroropeningdate.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorcst.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorecc.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtaddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtaddress.Location = new System.Drawing.Point(481, 16);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Size = new System.Drawing.Size(205, 49);
@@ -188,15 +188,15 @@
             // dpOpeningDate
             // 
             this.dpOpeningDate.EditValue = null;
-            this.errorcompanyCode.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOwnername.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorecc.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorinvestmentamount.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.error_address.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorinvestmentamount.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOwnername.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorcompanyName.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.dpOpeningDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.dpOpeningDate.Location = new System.Drawing.Point(156, 105);
@@ -227,16 +227,16 @@
             // txtCompanyName
             // 
             this.txtCompanyName.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtCompanyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtCompanyName.Location = new System.Drawing.Point(156, 12);
             this.txtCompanyName.Name = "txtCompanyName";
@@ -262,16 +262,16 @@
             // txtContactPerrsonName
             // 
             this.txtContactPerrsonName.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtContactPerrsonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtContactPerrsonName.Location = new System.Drawing.Point(156, 167);
             this.txtContactPerrsonName.Name = "txtContactPerrsonName";
@@ -297,16 +297,16 @@
             // txtCompanyCode
             // 
             this.txtCompanyCode.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtCompanyCode.Location = new System.Drawing.Point(156, 43);
             this.txtCompanyCode.Name = "txtCompanyCode";
@@ -332,16 +332,16 @@
             // txtOwnerName
             // 
             this.txtOwnerName.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtOwnerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtOwnerName.Location = new System.Drawing.Point(156, 74);
             this.txtOwnerName.Name = "txtOwnerName";
@@ -367,16 +367,16 @@
             // txtSMSNo
             // 
             this.txtSMSNo.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtSMSNo.Location = new System.Drawing.Point(481, 167);
             this.txtSMSNo.Name = "txtSMSNo";
@@ -403,16 +403,16 @@
             // txtInvestmentAmount
             // 
             this.txtInvestmentAmount.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtInvestmentAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtInvestmentAmount.Location = new System.Drawing.Point(156, 136);
             this.txtInvestmentAmount.Name = "txtInvestmentAmount";
@@ -439,16 +439,16 @@
             // txtPANNo
             // 
             this.txtPANNo.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtPANNo.Location = new System.Drawing.Point(481, 74);
             this.txtPANNo.Name = "txtPANNo";
@@ -474,16 +474,16 @@
             // txtECCNo
             // 
             this.txtECCNo.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtECCNo.Location = new System.Drawing.Point(481, 136);
             this.txtECCNo.Name = "txtECCNo";
@@ -509,16 +509,16 @@
             // txtCST
             // 
             this.txtCST.EditValue = "";
-            this.errorecc.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcst.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.erroropeningdate.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_panno.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_contactpersoanname.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.error_address.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyCode.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorcompanyName.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorinvestmentamount.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyCode.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcst.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorecc.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_contactpersoanname.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorcompanyName.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_panno.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOwnername.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.erroropeningdate.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.error_address.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorsms.SetIconAlignment(this.txtCST, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtCST.Location = new System.Drawing.Point(481, 105);
             this.txtCST.Name = "txtCST";

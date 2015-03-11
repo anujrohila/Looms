@@ -25,7 +25,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void frmCompanyView_Activated(object sender, EventArgs e)
         {
-            BindGridData();
+          //  BindGridData();
         }
 
         #endregion
