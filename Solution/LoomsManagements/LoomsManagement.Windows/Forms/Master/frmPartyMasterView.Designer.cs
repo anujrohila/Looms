@@ -200,16 +200,12 @@
             // 
             this.ECCNo.Caption = "ECCNo";
             this.ECCNo.Name = "ECCNo";
-            this.ECCNo.Visible = true;
-            this.ECCNo.VisibleIndex = 7;
             // 
             // TINNo
             // 
             this.TINNo.Caption = "TINNo";
             this.TINNo.FieldName = "TINNo";
             this.TINNo.Name = "TINNo";
-            this.TINNo.Visible = true;
-            this.TINNo.VisibleIndex = 8;
             // 
             // PANNO
             // 
@@ -217,15 +213,13 @@
             this.PANNO.FieldName = "PANNO";
             this.PANNO.Name = "PANNO";
             this.PANNO.Visible = true;
-            this.PANNO.VisibleIndex = 9;
+            this.PANNO.VisibleIndex = 7;
             // 
             // CSTTINNo
             // 
             this.CSTTINNo.Caption = "CSTTINNo";
             this.CSTTINNo.FieldName = "CSTTINNo";
             this.CSTTINNo.Name = "CSTTINNo";
-            this.CSTTINNo.Visible = true;
-            this.CSTTINNo.VisibleIndex = 10;
             // 
             // Btn_Edit
             // 
