@@ -1,11 +1,7 @@
 ﻿using LoomsManagement.BAL;
+using LoomsManagement.Domain.DTO;
 using LoomsManagement.Windows.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Master
@@ -20,6 +16,7 @@ namespace LoomsManagement.Windows.Forms.Master
         #endregion
 
         #region Constructor
+
         public frmPartyMaster()
         {
             InitializeComponent();
@@ -32,13 +29,129 @@ namespace LoomsManagement.Windows.Forms.Master
 
         void frmPartyMaster_Load(object sender, EventArgs e)
         {
+            SetFlag();
             LoadCompanyCode();
+            cmbCompanyCode.Focus();
         }
 
         #endregion
 
         #region Control Event
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (!Validation())
+                return;
+            CommanClass.ShowProcessBar();
+            var tblPartysMSTDTO = new tblPartysMSTDTO();
+            tblPartysMSTDTO.CompanyCode = Convert.ToInt32(cmbCompanyCode.EditValue);
+            tblPartysMSTDTO.ContactPersonName = txtContactPersonName.Text;
+            tblPartysMSTDTO.OfficeAddress = txtofficeAddress.Text;
+            tblPartysMSTDTO.ShippingAddress = txtShippingAddress.Text;
+            tblPartysMSTDTO.City = txtCity.Text;
+            tblPartysMSTDTO.State = txtState.Text;
+            tblPartysMSTDTO.MobileNo = txtMobileNo.Text;
+            tblPartysMSTDTO.PhoneNo = txtPhoneNo.Text;
+            tblPartysMSTDTO.EmailID = txtEmail.Text;
+            tblPartysMSTDTO.TINNo = txtTINNo.Text;
+            tblPartysMSTDTO.TINDate = dpTINDate.DateTime;
+            tblPartysMSTDTO.PANNO = txtPANNo.Text;
+            tblPartysMSTDTO.CSTTINNo = txtCSTNo.Text;
+            tblPartysMSTDTO.ECCNo = txtECCNo.Text;
+            tblPartysMSTDTO.ReferencePersonName = txtRefPersonName.Text;
+            tblPartysMSTDTO.ReferencePersonMobileNo = txtRefPersonMobNo.Text;
+            tblPartysMSTDTO.ExtraDetails = txtExtraDetails.Text;
+            tblPartysMSTDTO.IsActive = true;
+            tblPartysMSTDTO.IsDelete = false;
+
+            if (IsEdit)
+            {
+                tblPartysMSTDTO.PartyID = id;
+                tblPartysMSTDTO.UpdateBy = CommanClass.UserId;
+                tblPartysMSTDTO.UpdationDateTIme = DateTime.Now;
+            }
+            else
+            {
+                tblPartysMSTDTO.CreateBye = CommanClass.UserId;
+                tblPartysMSTDTO.CreationDateTime = DateTime.Now;
+            }
+
+            int ReturnValue = PartyMasterBusinessLogic.SavePartyMasterData(tblPartysMSTDTO);
+            CommanClass.HideProcessBar();
+            if (ReturnValue == 1)
+            {
+                errorPartyName.SetError(txtPartyName,"Party Name Already Exists.");
+            }
+            else if (ReturnValue == 2)
+            {
+                // error_companyName.SetError(txt_CompanyName, "Company Name Already Exist");
+            }
+            else
+            {
+                MessageBox.Show("Successfully Save Data");
+                ClearData();
+                if (IsEdit)
+                {
+                    this.Close();
+                }
+            }
+        }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                if (PartyMasterBusinessLogic.DeletePartyData(id) != 0)
+                {
+                    MessageBox.Show("Tramsaction fail");
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            ClearData();
+            this.Close();
+        }
+
+        #region Key Event
+
+        private void EnterEvent(object sender, EventArgs e)
+        {
+            CommanClass.EnterEvents(sender, e);
+        }
+
+        private void LeaveEvent(object sender, EventArgs e)
+        {
+            CommanClass.LeaveEvents(sender, e);
+        }
+
+        private void txt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
+            {
+                this.Close();
+                return true;
+            }
+            return base.ProcessDialogKey(keyData);
+        }
+
         #endregion
+
+      #endregion
 
         # region Private Method 
 
@@ -46,7 +159,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             cmbCompanyCode.Properties.DataSource = PartyMasterBusinessLogic.GetCompanyCode();
             cmbCompanyCode.Properties.ValueMember = "CompanyID";
-            cmbCompanyCode.Properties.DisplayMember = "ComapnyCode";
+            cmbCompanyCode.Properties.DisplayMember = "CompanyName";
         }
 
         private void SetFlag()
@@ -172,38 +285,7 @@ namespace LoomsManagement.Windows.Forms.Master
             cmbCompanyCode.Focus();
         }
 
-        #endregion
-
-        #region Key Event
-
-        private void EnterEvent(object sender, EventArgs e)
-        {
-            CommanClass.EnterEvents(sender, e);
-        }
-
-        private void LeaveEvent(object sender, EventArgs e)
-        {
-            CommanClass.LeaveEvents(sender, e);
-        }
-
-        private void txt_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                SendKeys.Send("{TAB}");
-            }
-        }
-
-        protected override bool ProcessDialogKey(Keys keyData)
-        {
-            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
-            {
-                this.Close();
-                return true;
-            }
-            return base.ProcessDialogKey(keyData);
-        }
-
-        #endregion
+        #endregion    
+      
     }
 }
