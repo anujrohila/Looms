@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="05b76c60ebd544d88f2888e4f3daa776" Name="Diagram1">
+      <Diagram DiagramId="96d6c15cf4a3403e9029b9cd6e213159" Name="Diagram1">
         <EntityTypeShape EntityType="LoomsManagementModel.tblAttendanceMST" Width="1.5" PointX="16.25" PointY="15.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBankMST" Width="1.5" PointX="11.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="5.75" PointY="15.75" IsExpanded="true" />

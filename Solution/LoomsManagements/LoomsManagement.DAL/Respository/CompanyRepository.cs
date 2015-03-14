@@ -77,7 +77,7 @@ namespace LoomsManagement.DAL
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
-                return LoomsManagementEntities.tblCompanies.Where(m => m.CompanyID == CompanyID).FirstOrDefault().ToDTO();
+                return LoomsManagementEntities.tblCompanies.Where(m => m.CompanyID == CompanyID && m.IsDelete == false).FirstOrDefault().ToDTO();
             }
         }
 
