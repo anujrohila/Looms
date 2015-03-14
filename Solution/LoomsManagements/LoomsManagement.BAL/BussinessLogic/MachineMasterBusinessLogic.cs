@@ -7,7 +7,7 @@ namespace LoomsManagement.BAL
    public static class MachineMasterBusinessLogic
     {
        
-       public int SavaMachineMasterData(tblMachineMSTDTO tblMachineMSTDTO)
+       public static int SavaMachineMasterData(tblMachineMSTDTO tblMachineMSTDTO)
        {
            var MachineMasterRepository = new MachineMasterRepository();
            return MachineMasterRepository.SavaMachineMasterData(tblMachineMSTDTO);
@@ -25,7 +25,7 @@ namespace LoomsManagement.BAL
            return MachineMasterRepository.GetMachineMasterData(MachineId);
        }
 
-       public int DeleteMachineMasterData(int MachineId)
+       public static int DeleteMachineMasterData(int MachineId)
        {
            var MachineMasterRepository = new MachineMasterRepository();
            return MachineMasterRepository.DeleteMachineMasterData(MachineId);

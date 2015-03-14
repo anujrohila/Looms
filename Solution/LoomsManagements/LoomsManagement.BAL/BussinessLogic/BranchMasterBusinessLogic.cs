@@ -25,7 +25,7 @@ namespace LoomsManagement.BAL
              return BranchMasterRepository.GetBranchData(BranchId);
        }
 
-       public int DeleteBranchMasterData(int BranchId)
+       public static int DeleteBranchMasterData(int BranchId)
        {
             var BranchMasterRepository = new BranchMasterRepository();
             return BranchMasterRepository.DeleteBranchMasterData(BranchId);

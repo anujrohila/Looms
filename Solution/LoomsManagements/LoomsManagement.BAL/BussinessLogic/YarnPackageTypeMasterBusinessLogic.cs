@@ -25,7 +25,7 @@ namespace LoomsManagement.BAL
            return  YarnPackageTypeRepository.GetYarnPackageTypeData(YarnPackageTypeId);
         }
 
-        public int DeleteYarnPackageTypeData(int YarnPackageTypeId)
+        public static int DeleteYarnPackageTypeData(int YarnPackageTypeId)
         {
             var YarnPackageTypeRepository = new YarnPackageTypeRepository();
             return YarnPackageTypeRepository.DeleteYarnPackageTypeData(YarnPackageTypeId);

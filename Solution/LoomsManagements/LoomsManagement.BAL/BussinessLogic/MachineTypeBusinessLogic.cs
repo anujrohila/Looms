@@ -24,7 +24,7 @@ namespace LoomsManagement.BAL
             return MachineTypeRepository.GetMachineTypeData(MachineTypeId);
         }
 
-        public int DeleteMachineTypeData(int MachineTypeId)
+        public static int DeleteMachineTypeData(int MachineTypeId)
         {
             var MachineTypeRepository = new MachineTypeRepository();
             return MachineTypeRepository.DeleteMachineTypeData(MachineTypeId);
