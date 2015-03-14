@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BussinessLogic\CompnayBussinesLogic.cs" />
+    <Compile Include="BussinessLogic\EmployeetypeBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\PartyMasterBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\YarnTypeBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
