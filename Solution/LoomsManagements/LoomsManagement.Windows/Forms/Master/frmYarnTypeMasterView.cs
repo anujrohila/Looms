@@ -4,28 +4,28 @@ using DevExpress.XtraPrintingLinks;
 using LoomsManagement.BAL;
 using LoomsManagement.Windows.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
     public partial class frmYarnTypeMasterView : LoomsManagement.Windows.FormDemoGrid
     {
+
         #region [Constructor]
+
         public frmYarnTypeMasterView()
         {
             InitializeComponent();
         }
+
         #endregion
 
         #region PageEvent
+
         #endregion
 
         #region ControlEvent
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var frmYarnTypeMaster = new frmYarnTypeMaster();
@@ -49,22 +49,31 @@ namespace LoomsManagement.Windows.Forms.Master
                 frmYarnTypeMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "YarnTypeID"));
                 frmYarnTypeMaster.FormClosed+=frmYarnTypeMaster_FormClosed;
                 frmYarnTypeMaster.ShowDialog();
-                
             }
         }
 
         #endregion
 
         #region Private Method
+
+        /// <summary>
+        /// Fill all yarn type data
+        /// </summary>
         private void BindGridData()
         {
             gridYarnType.DataSource = YarnTypeBusinessLogic.GetAllYarnTypeDetails();
             InnerGrid.BestFitColumns();
         }
+
         #endregion
 
         #region Master Page Event
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnMasterPrint_Click(object sender, EventArgs e)
         {
             CompositeLink composLink = new CompositeLink(new PrintingSystem());
