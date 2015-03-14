@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtYarnQualityName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -38,6 +39,10 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtNumberOfFilaments = new DevExpress.XtraEditors.TextEdit();
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
+            this.errorYarnTypeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorYarnQuality = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorDenier = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorNumberOfFilamets = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -46,6 +51,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDenier.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumberOfFilaments.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorYarnTypeName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorYarnQuality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDenier)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNumberOfFilamets)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -57,21 +66,25 @@
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
@@ -90,6 +103,10 @@
             // txtYarnQualityName
             // 
             this.txtYarnQualityName.EditValue = "";
+            this.errorDenier.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnTypeName.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorNumberOfFilamets.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtYarnQualityName.Location = new System.Drawing.Point(167, 12);
             this.txtYarnQualityName.Name = "txtYarnQualityName";
             this.txtYarnQualityName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,6 +115,9 @@
             this.txtYarnQualityName.Properties.Mask.EditMask = "n2";
             this.txtYarnQualityName.Size = new System.Drawing.Size(205, 26);
             this.txtYarnQualityName.TabIndex = 110;
+            this.txtYarnQualityName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtYarnQualityName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtYarnQualityName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl2
             // 
@@ -119,6 +139,10 @@
             // 
             // cmbYarnQuality
             // 
+            this.errorYarnQuality.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnTypeName.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDenier.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorNumberOfFilamets.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbYarnQuality.Location = new System.Drawing.Point(167, 44);
             this.cmbYarnQuality.Name = "cmbYarnQuality";
             this.cmbYarnQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -137,13 +161,14 @@
             this.cmbYarnQuality.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbYarnQuality.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyID", "CompanyID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyName", "CompanyName"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ComapnyCode", "ComapnyCode")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
             this.cmbYarnQuality.Properties.NullText = "";
             this.cmbYarnQuality.Size = new System.Drawing.Size(205, 26);
             this.cmbYarnQuality.TabIndex = 160;
-            this.cmbYarnQuality.ToolTip = "Select Bank Name.";
+            this.cmbYarnQuality.Enter += new System.EventHandler(this.EnterEvent);
+            this.cmbYarnQuality.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.cmbYarnQuality.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl1
             // 
@@ -166,6 +191,10 @@
             // txtDenier
             // 
             this.txtDenier.EditValue = "";
+            this.errorDenier.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnTypeName.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorNumberOfFilamets.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtDenier.Location = new System.Drawing.Point(167, 76);
             this.txtDenier.Name = "txtDenier";
             this.txtDenier.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,6 +203,9 @@
             this.txtDenier.Properties.Mask.EditMask = "n2";
             this.txtDenier.Size = new System.Drawing.Size(205, 26);
             this.txtDenier.TabIndex = 162;
+            this.txtDenier.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtDenier.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtDenier.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl4
             // 
@@ -187,6 +219,10 @@
             // txtNumberOfFilaments
             // 
             this.txtNumberOfFilaments.EditValue = "";
+            this.errorDenier.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnTypeName.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorNumberOfFilamets.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtNumberOfFilaments.Location = new System.Drawing.Point(167, 108);
             this.txtNumberOfFilaments.Name = "txtNumberOfFilaments";
             this.txtNumberOfFilaments.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,6 +231,9 @@
             this.txtNumberOfFilaments.Properties.Mask.EditMask = "n2";
             this.txtNumberOfFilaments.Size = new System.Drawing.Size(205, 26);
             this.txtNumberOfFilaments.TabIndex = 165;
+            this.txtNumberOfFilaments.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtNumberOfFilaments.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtNumberOfFilaments.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // txtDescription
             // 
@@ -202,11 +241,32 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
             this.txtDescription.TabIndex = 166;
+            this.txtDescription.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtDescription.Leave += new System.EventHandler(this.LeaveEvent);
+            // 
+            // errorYarnTypeName
+            // 
+            this.errorYarnTypeName.ContainerControl = this;
+            // 
+            // errorYarnQuality
+            // 
+            this.errorYarnQuality.ContainerControl = this;
+            // 
+            // errorDenier
+            // 
+            this.errorDenier.ContainerControl = this;
+            // 
+            // errorNumberOfFilamets
+            // 
+            this.errorNumberOfFilamets.ContainerControl = this;
             // 
             // frmYarnTypeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(534, 246);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmYarnTypeMaster";
             this.Text = "Yarn Type Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -218,6 +278,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDenier.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumberOfFilaments.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorYarnTypeName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorYarnQuality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDenier)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNumberOfFilamets)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +298,9 @@
         private DevExpress.XtraEditors.TextEdit txtDenier;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.MemoEdit txtDescription;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorYarnTypeName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorYarnQuality;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorDenier;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorNumberOfFilamets;
     }
 }

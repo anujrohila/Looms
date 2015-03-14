@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtTypeName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
+            this.errorMachineType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTypeName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMachineType)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -76,6 +79,7 @@
             // txtTypeName
             // 
             this.txtTypeName.EditValue = "";
+            this.errorMachineType.SetIconAlignment(this.txtTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtTypeName.Location = new System.Drawing.Point(155, 15);
             this.txtTypeName.Name = "txtTypeName";
             this.txtTypeName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,13 +114,17 @@
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
             this.txtDescription.TabIndex = 167;
             // 
-            // frmYarnQualityMaster
+            // errorMachineType
+            // 
+            this.errorMachineType.ContainerControl = this;
+            // 
+            // frmYarnQualityMaster1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(514, 150);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmYarnQualityMaster";
+            this.Name = "frmYarnQualityMaster1";
             this.Text = "Yarn Quality Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
@@ -124,6 +132,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTypeName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMachineType)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,5 +143,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.MemoEdit txtDescription;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMachineType;
     }
 }
