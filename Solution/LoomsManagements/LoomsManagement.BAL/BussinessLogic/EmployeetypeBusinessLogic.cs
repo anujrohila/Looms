@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LoomsManagement.DAL;
+﻿using LoomsManagement.DAL;
 using LoomsManagement.Domain.DTO;
+using System.Collections.Generic;
 
 
 namespace LoomsManagement.BAL
