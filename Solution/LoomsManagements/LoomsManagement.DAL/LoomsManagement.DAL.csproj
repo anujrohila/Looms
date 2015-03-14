@@ -202,10 +202,16 @@
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respository\BankMasterRepository.cs" />
+    <Compile Include="Respository\BranchMasterRepository.cs" />
     <Compile Include="Respository\CompanyRepository.cs" />
     <Compile Include="Respository\EmployeeTypeRepository.cs" />
+    <Compile Include="Respository\MachineMasterRepository.cs" />
     <Compile Include="Respository\MachineTypeRepository.cs" />
     <Compile Include="Respository\PartyMasterRepositotry.cs" />
+    <Compile Include="Respository\PenaltyMasterRepository.cs" />
+    <Compile Include="Respository\YarnPackageTypeRepository.cs" />
+    <Compile Include="Respository\YarnQualityMasterRepository.cs" />
     <Compile Include="Respository\YarnTypeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
