@@ -48,6 +48,7 @@
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -76,7 +77,6 @@
             this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
             this.printRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.PrintRibbonPageGroup();
             this.commonRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.CommonRibbonPageGroup();
-            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -160,7 +160,7 @@
             this.skinRibbonGalleryBarItem1});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 3;
+            this.ribbonControl.MaxItemId = 4;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -219,7 +219,8 @@
             this.bar_Company.Name = "bar_Company";
             this.bar_Company.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.bar_Company.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            this.bar_Company.Tag = "Company Master View";
+            this.bar_Company.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem2
             // 
@@ -227,6 +228,8 @@
             this.barButtonItem2.Id = 102;
             this.barButtonItem2.ImageIndex = 2;
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.Tag = "Owner Master View";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem3
             // 
@@ -235,6 +238,8 @@
             this.barButtonItem3.ImageIndex = 2;
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)((DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem3.Tag = "Party Master View";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem4
             // 
@@ -242,6 +247,8 @@
             this.barButtonItem4.Id = 104;
             this.barButtonItem4.ImageIndex = 3;
             this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.Tag = "Employee Master View";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem5
             // 
@@ -249,6 +256,8 @@
             this.barButtonItem5.Id = 105;
             this.barButtonItem5.LargeImageIndex = 3;
             this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.Tag = "Employee Type Master View";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem6
             // 
@@ -256,6 +265,8 @@
             this.barButtonItem6.Id = 106;
             this.barButtonItem6.ImageIndex = 16;
             this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.Tag = "Panalty Master View";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem7
             // 
@@ -263,6 +274,8 @@
             this.barButtonItem7.Id = 107;
             this.barButtonItem7.ImageIndex = 20;
             this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.Tag = "Yarn Type Master View";
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem8
             // 
@@ -270,20 +283,26 @@
             this.barButtonItem8.Id = 108;
             this.barButtonItem8.ImageIndex = 19;
             this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.Tag = "Yarn Quality Master View";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem9
             // 
-            this.barButtonItem9.Caption = "Machin Type";
+            this.barButtonItem9.Caption = "Machine Type";
             this.barButtonItem9.Id = 109;
             this.barButtonItem9.ImageIndex = 14;
             this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.Tag = "Machine Type Master View";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem10
             // 
-            this.barButtonItem10.Caption = "Machin";
+            this.barButtonItem10.Caption = "Machine";
             this.barButtonItem10.Id = 110;
             this.barButtonItem10.ImageIndex = 14;
             this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.Tag = "Machine Master View";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem11
             // 
@@ -291,6 +310,8 @@
             this.barButtonItem11.Id = 111;
             this.barButtonItem11.ImageIndex = 6;
             this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.Tag = "Bank Master View";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // barButtonItem12
             // 
@@ -298,6 +319,14 @@
             this.barButtonItem12.Id = 112;
             this.barButtonItem12.ImageIndex = 7;
             this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.Tag = "Bank Branch Master View";
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 2;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
             // ribbonImageCollectionLarge
             // 
@@ -501,12 +530,6 @@
             // 
             this.commonRibbonPageGroup1.Name = "commonRibbonPageGroup1";
             this.commonRibbonPageGroup1.Text = "";
-            // 
-            // skinRibbonGalleryBarItem1
-            // 
-            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
-            this.skinRibbonGalleryBarItem1.Id = 2;
-            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
             // Dashboard
             // 

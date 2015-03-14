@@ -1,6 +1,6 @@
 ﻿namespace LoomsManagement.Windows.Forms.Master
 {
-    partial class frmYarnQualityMaster1
+    partial class frmMachineTypeMaster
     {
         /// <summary>
         /// Required designer variable.
@@ -118,14 +118,14 @@
             // 
             this.errorMachineType.ContainerControl = this;
             // 
-            // frmYarnQualityMaster1
+            // frmMachineTypeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(514, 150);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmYarnQualityMaster1";
-            this.Text = "Yarn Quality Master";
+            this.Name = "frmMachineTypeMaster";
+            this.Text = "Machine Type Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

@@ -141,6 +141,42 @@
     <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMaster.Designer.cs">
+      <DependentUpon>frmBankBranchMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMasterView.Designer.cs">
+      <DependentUpon>frmBankBranchMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMasterView.Designer.cs">
+      <DependentUpon>frmBankMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMaster.Designer.cs">
+      <DependentUpon>frmBankMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMaster.Designer.cs">
+      <DependentUpon>frmMachineMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMasterView.Designer.cs">
+      <DependentUpon>frmMachineMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmMachineTypeMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +218,12 @@
     </Compile>
     <Compile Include="Forms\Master\frmEmployeeTypeMaster.Designer.cs">
       <DependentUpon>frmEmployeeTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineTypeMasterView.Designer.cs">
+      <DependentUpon>frmMachineTypeMasterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmPartyMaster.cs">
       <SubType>Form</SubType>

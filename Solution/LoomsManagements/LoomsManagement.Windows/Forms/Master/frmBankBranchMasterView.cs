@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class frmMachineTypeMaster : LoomsManagement.Windows.FormDemo1
+    public partial class frmBankBranchMasterView : LoomsManagement.Windows.FormDemoGrid
     {
-        public frmMachineTypeMaster()
+        public frmBankBranchMasterView()
         {
             InitializeComponent();
         }
