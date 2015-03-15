@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.gridViewCompany = new DevExpress.XtraGrid.GridControl();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            this.gridViewYarnPackageType = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.YarnPackageTypeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TypeName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewYarnPackageType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).BeginInit();
@@ -49,36 +49,40 @@
             // 
             this.BtnMasterPDF.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMasterPDF.Appearance.Options.UseFont = true;
+            this.BtnMasterPDF.Click += new System.EventHandler(this.BtnMasterPDF_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // BtnMasterPrint
             // 
             this.BtnMasterPrint.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMasterPrint.Appearance.Options.UseFont = true;
+            this.BtnMasterPrint.Click += new System.EventHandler(this.BtnMasterPrint_Click);
             // 
             // btnMasterExcel
             // 
             this.btnMasterExcel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasterExcel.Appearance.Options.UseFont = true;
+            this.btnMasterExcel.Click += new System.EventHandler(this.btnMasterExcel_Click);
             // 
-            // gridViewCompany
+            // gridViewYarnPackageType
             // 
-            this.gridViewCompany.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridViewCompany.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridViewCompany.Location = new System.Drawing.Point(0, 43);
-            this.gridViewCompany.MainView = this.InnerGrid;
-            this.gridViewCompany.Name = "gridViewCompany";
-            this.gridViewCompany.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.gridViewYarnPackageType.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridViewYarnPackageType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridViewYarnPackageType.Location = new System.Drawing.Point(0, 43);
+            this.gridViewYarnPackageType.MainView = this.InnerGrid;
+            this.gridViewYarnPackageType.Name = "gridViewYarnPackageType";
+            this.gridViewYarnPackageType.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.Btn_Edit,
             this.Btn_Delete,
             this.Btn_View});
-            this.gridViewCompany.Size = new System.Drawing.Size(796, 338);
-            this.gridViewCompany.TabIndex = 67;
-            this.gridViewCompany.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewYarnPackageType.Size = new System.Drawing.Size(796, 338);
+            this.gridViewYarnPackageType.TabIndex = 67;
+            this.gridViewYarnPackageType.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
             // 
             // InnerGrid
@@ -97,7 +101,7 @@
             this.InnerGrid.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.YarnPackageTypeID,
             this.TypeName});
-            this.InnerGrid.GridControl = this.gridViewCompany;
+            this.InnerGrid.GridControl = this.gridViewYarnPackageType;
             this.InnerGrid.Name = "InnerGrid";
             this.InnerGrid.OptionsBehavior.ReadOnly = true;
             this.InnerGrid.OptionsCustomization.AllowGroup = false;
@@ -105,6 +109,7 @@
             this.InnerGrid.OptionsView.BestFitUseErrorInfo = DevExpress.Utils.DefaultBoolean.True;
             this.InnerGrid.OptionsView.ShowAutoFilterRow = true;
             this.InnerGrid.OptionsView.ShowFooter = true;
+            this.InnerGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InnerGrid_KeyDown);
             // 
             // YarnPackageTypeID
             // 
@@ -129,7 +134,7 @@
             // 
             this.Btn_Edit.AutoHeight = false;
             this.Btn_Edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.edit_icon, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.edit_icon, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject19, "", null, null, true)});
             this.Btn_Edit.Name = "Btn_Edit";
             this.Btn_Edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -137,7 +142,7 @@
             // 
             this.Btn_Delete.AutoHeight = false;
             this.Btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.delete, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.delete, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject20, "", null, null, true)});
             this.Btn_Delete.Name = "Btn_Delete";
             this.Btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -145,7 +150,7 @@
             // 
             this.Btn_View.AutoHeight = false;
             this.Btn_View.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.viewBtn, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.viewBtn, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, "", null, null, true)});
             this.Btn_View.Name = "Btn_View";
             this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -153,10 +158,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(796, 381);
-            this.Controls.Add(this.gridViewCompany);
+            this.Controls.Add(this.gridViewYarnPackageType);
             this.Name = "frmYarnPackageTypeMasterView";
-            this.Controls.SetChildIndex(this.gridViewCompany, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).EndInit();
+            this.Text = "Yarn Package Type Detail";
+            this.Controls.SetChildIndex(this.gridViewYarnPackageType, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewYarnPackageType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).EndInit();
@@ -167,7 +173,7 @@
 
         #endregion
 
-        public DevExpress.XtraGrid.GridControl gridViewCompany;
+        public DevExpress.XtraGrid.GridControl gridViewYarnPackageType;
         public DevExpress.XtraGrid.Views.Grid.GridView InnerGrid;
         private DevExpress.XtraGrid.Columns.GridColumn YarnPackageTypeID;
         private DevExpress.XtraGrid.Columns.GridColumn TypeName;

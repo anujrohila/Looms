@@ -69,11 +69,6 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #region Master Page Event
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void BtnMasterPrint_Click(object sender, EventArgs e)
         {
             CompositeLink composLink = new CompositeLink(new PrintingSystem());

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtYarnQualityName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -39,10 +38,14 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtNumberOfFilaments = new DevExpress.XtraEditors.TextEdit();
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
-            this.errorYarnTypeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorYarnQuality = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorDenier = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorNumberOfFilamets = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorYarnTypeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorYarnQuality = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorDenier = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorNumberOfFilamets = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,6 +91,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelControl8);
+            this.panel1.Controls.Add(this.labelControl7);
+            this.panel1.Controls.Add(this.labelControl6);
+            this.panel1.Controls.Add(this.labelControl5);
             this.panel1.Controls.Add(this.txtDescription);
             this.panel1.Controls.Add(this.txtNumberOfFilaments);
             this.panel1.Controls.Add(this.labelControl4);
@@ -104,8 +111,8 @@
             // 
             this.txtYarnQualityName.EditValue = "";
             this.errorDenier.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtYarnQualityName.Location = new System.Drawing.Point(167, 12);
             this.txtYarnQualityName.Name = "txtYarnQualityName";
@@ -139,8 +146,8 @@
             // 
             // cmbYarnQuality
             // 
-            this.errorYarnQuality.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDenier.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbYarnQuality.Location = new System.Drawing.Point(167, 44);
@@ -192,8 +199,8 @@
             // 
             this.txtDenier.EditValue = "";
             this.errorDenier.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtDenier.Location = new System.Drawing.Point(167, 76);
             this.txtDenier.Name = "txtDenier";
@@ -220,8 +227,8 @@
             // 
             this.txtNumberOfFilaments.EditValue = "";
             this.errorDenier.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtNumberOfFilaments.Location = new System.Drawing.Point(167, 108);
             this.txtNumberOfFilaments.Name = "txtNumberOfFilaments";
@@ -260,6 +267,46 @@
             // errorNumberOfFilamets
             // 
             this.errorNumberOfFilamets.ContainerControl = this;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl5.Location = new System.Drawing.Point(158, 15);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(6, 17);
+            this.labelControl5.TabIndex = 176;
+            this.labelControl5.Text = "*";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl6.Location = new System.Drawing.Point(158, 47);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(6, 17);
+            this.labelControl6.TabIndex = 177;
+            this.labelControl6.Text = "*";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl7.Location = new System.Drawing.Point(158, 79);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(6, 17);
+            this.labelControl7.TabIndex = 178;
+            this.labelControl7.Text = "*";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl8.Location = new System.Drawing.Point(159, 111);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(6, 17);
+            this.labelControl8.TabIndex = 179;
+            this.labelControl8.Text = "*";
             // 
             // frmYarnTypeMaster
             // 
@@ -302,5 +349,9 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorYarnQuality;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorDenier;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorNumberOfFilamets;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }

@@ -31,7 +31,7 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.gridViewCompany = new DevExpress.XtraGrid.GridControl();
+            this.gridViewPenaltyMaster = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.PenaltyID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.PenaltyCode = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -40,7 +40,7 @@
             this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPenaltyMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).BeginInit();
@@ -56,6 +56,7 @@
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // BtnMasterPrint
             // 
@@ -67,20 +68,20 @@
             this.btnMasterExcel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasterExcel.Appearance.Options.UseFont = true;
             // 
-            // gridViewCompany
+            // gridViewPenaltyMaster
             // 
-            this.gridViewCompany.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridViewCompany.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridViewCompany.Location = new System.Drawing.Point(0, 43);
-            this.gridViewCompany.MainView = this.InnerGrid;
-            this.gridViewCompany.Name = "gridViewCompany";
-            this.gridViewCompany.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.gridViewPenaltyMaster.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridViewPenaltyMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridViewPenaltyMaster.Location = new System.Drawing.Point(0, 43);
+            this.gridViewPenaltyMaster.MainView = this.InnerGrid;
+            this.gridViewPenaltyMaster.Name = "gridViewPenaltyMaster";
+            this.gridViewPenaltyMaster.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.Btn_Edit,
             this.Btn_Delete,
             this.Btn_View});
-            this.gridViewCompany.Size = new System.Drawing.Size(796, 338);
-            this.gridViewCompany.TabIndex = 66;
-            this.gridViewCompany.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewPenaltyMaster.Size = new System.Drawing.Size(796, 338);
+            this.gridViewPenaltyMaster.TabIndex = 66;
+            this.gridViewPenaltyMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
             // 
             // InnerGrid
@@ -101,7 +102,7 @@
             this.PenaltyCode,
             this.PenaltyName,
             this.Description});
-            this.InnerGrid.GridControl = this.gridViewCompany;
+            this.InnerGrid.GridControl = this.gridViewPenaltyMaster;
             this.InnerGrid.Name = "InnerGrid";
             this.InnerGrid.OptionsBehavior.ReadOnly = true;
             this.InnerGrid.OptionsCustomization.AllowGroup = false;
@@ -109,6 +110,7 @@
             this.InnerGrid.OptionsView.BestFitUseErrorInfo = DevExpress.Utils.DefaultBoolean.True;
             this.InnerGrid.OptionsView.ShowAutoFilterRow = true;
             this.InnerGrid.OptionsView.ShowFooter = true;
+            this.InnerGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InnerGrid_KeyDown);
             // 
             // PenaltyID
             // 
@@ -133,7 +135,7 @@
             // 
             this.PenaltyName.AppearanceCell.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PenaltyName.AppearanceCell.Options.UseFont = true;
-            this.PenaltyName.Caption = "Code";
+            this.PenaltyName.Caption = "Penalty Name";
             this.PenaltyName.FieldName = "PenaltyName";
             this.PenaltyName.Name = "PenaltyName";
             this.PenaltyName.Visible = true;
@@ -179,10 +181,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(796, 381);
-            this.Controls.Add(this.gridViewCompany);
+            this.Controls.Add(this.gridViewPenaltyMaster);
             this.Name = "frmPenaltyMasterView";
-            this.Controls.SetChildIndex(this.gridViewCompany, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).EndInit();
+            this.Text = "Penalty Master Detail";
+            this.Controls.SetChildIndex(this.gridViewPenaltyMaster, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPenaltyMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).EndInit();
@@ -193,7 +196,7 @@
 
         #endregion
 
-        public DevExpress.XtraGrid.GridControl gridViewCompany;
+        public DevExpress.XtraGrid.GridControl gridViewPenaltyMaster;
         public DevExpress.XtraGrid.Views.Grid.GridView InnerGrid;
         private DevExpress.XtraGrid.Columns.GridColumn PenaltyID;
         private DevExpress.XtraGrid.Columns.GridColumn PenaltyCode;

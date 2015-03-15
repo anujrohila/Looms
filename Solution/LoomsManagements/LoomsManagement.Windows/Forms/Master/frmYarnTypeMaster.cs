@@ -117,6 +117,38 @@ namespace LoomsManagement.Windows.Forms.Master
 
         }
 
+        #region Key Event
+
+        private void EnterEvent(object sender, EventArgs e)
+        {
+            CommanClass.EnterEvents(sender, e);
+        }
+
+        private void LeaveEvent(object sender, EventArgs e)
+        {
+            CommanClass.LeaveEvents(sender, e);
+        }
+
+        private void txt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
+            {
+                this.Close();
+                return true;
+            }
+            return base.ProcessDialogKey(keyData);
+        }
+
+        #endregion
+
         #endregion
 
         # region Private Method
@@ -191,40 +223,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         }
 
-        #endregion
+        #endregion 
 
-        #region Key Event
-
-        private void EnterEvent(object sender, EventArgs e)
-        {
-            CommanClass.EnterEvents(sender, e);
-        }
-
-        private void LeaveEvent(object sender, EventArgs e)
-        {
-            CommanClass.LeaveEvents(sender, e);
-        }
-
-        private void txt_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                SendKeys.Send("{TAB}");
-            }
-        }
-
-        protected override bool ProcessDialogKey(Keys keyData)
-        {
-            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
-            {
-                this.Close();
-                return true;
-            }
-            return base.ProcessDialogKey(keyData);
-        }
-
-        #endregion
-
-      
-    }
+     }
 }

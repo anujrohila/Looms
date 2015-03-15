@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.gridViewCompany = new DevExpress.XtraGrid.GridControl();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            this.gridViewYarnQualityMaster = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.YarnQualityID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.YarnQualityName = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -39,7 +39,7 @@
             this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewYarnQualityMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).BeginInit();
@@ -55,6 +55,7 @@
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // BtnMasterPrint
             // 
@@ -66,20 +67,20 @@
             this.btnMasterExcel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasterExcel.Appearance.Options.UseFont = true;
             // 
-            // gridViewCompany
+            // gridViewYarnQualityMaster
             // 
-            this.gridViewCompany.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridViewCompany.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridViewCompany.Location = new System.Drawing.Point(0, 43);
-            this.gridViewCompany.MainView = this.InnerGrid;
-            this.gridViewCompany.Name = "gridViewCompany";
-            this.gridViewCompany.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.gridViewYarnQualityMaster.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridViewYarnQualityMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridViewYarnQualityMaster.Location = new System.Drawing.Point(0, 43);
+            this.gridViewYarnQualityMaster.MainView = this.InnerGrid;
+            this.gridViewYarnQualityMaster.Name = "gridViewYarnQualityMaster";
+            this.gridViewYarnQualityMaster.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.Btn_Edit,
             this.Btn_Delete,
             this.Btn_View});
-            this.gridViewCompany.Size = new System.Drawing.Size(796, 338);
-            this.gridViewCompany.TabIndex = 67;
-            this.gridViewCompany.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewYarnQualityMaster.Size = new System.Drawing.Size(796, 338);
+            this.gridViewYarnQualityMaster.TabIndex = 67;
+            this.gridViewYarnQualityMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
             // 
             // InnerGrid
@@ -99,7 +100,7 @@
             this.YarnQualityID,
             this.YarnQualityName,
             this.Description});
-            this.InnerGrid.GridControl = this.gridViewCompany;
+            this.InnerGrid.GridControl = this.gridViewYarnQualityMaster;
             this.InnerGrid.Name = "InnerGrid";
             this.InnerGrid.OptionsBehavior.ReadOnly = true;
             this.InnerGrid.OptionsCustomization.AllowGroup = false;
@@ -107,6 +108,7 @@
             this.InnerGrid.OptionsView.BestFitUseErrorInfo = DevExpress.Utils.DefaultBoolean.True;
             this.InnerGrid.OptionsView.ShowAutoFilterRow = true;
             this.InnerGrid.OptionsView.ShowFooter = true;
+            this.InnerGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InnerGrid_KeyDown);
             // 
             // YarnQualityID
             // 
@@ -137,7 +139,7 @@
             // 
             this.Btn_Edit.AutoHeight = false;
             this.Btn_Edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.edit_icon, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.edit_icon, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject7, "", null, null, true)});
             this.Btn_Edit.Name = "Btn_Edit";
             this.Btn_Edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -145,7 +147,7 @@
             // 
             this.Btn_Delete.AutoHeight = false;
             this.Btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.delete, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.delete, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject8, "", null, null, true)});
             this.Btn_Delete.Name = "Btn_Delete";
             this.Btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -153,7 +155,7 @@
             // 
             this.Btn_View.AutoHeight = false;
             this.Btn_View.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.viewBtn, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.viewBtn, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, "", null, null, true)});
             this.Btn_View.Name = "Btn_View";
             this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -161,11 +163,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(796, 381);
-            this.Controls.Add(this.gridViewCompany);
+            this.Controls.Add(this.gridViewYarnQualityMaster);
             this.Name = "frmYarnQualityMasterView";
             this.Text = "Yarn Quality Master";
-            this.Controls.SetChildIndex(this.gridViewCompany, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).EndInit();
+            this.Controls.SetChildIndex(this.gridViewYarnQualityMaster, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewYarnQualityMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Delete)).EndInit();
@@ -176,7 +178,7 @@
 
         #endregion
 
-        public DevExpress.XtraGrid.GridControl gridViewCompany;
+        public DevExpress.XtraGrid.GridControl gridViewYarnQualityMaster;
         public DevExpress.XtraGrid.Views.Grid.GridView InnerGrid;
         private DevExpress.XtraGrid.Columns.GridColumn YarnQualityID;
         private DevExpress.XtraGrid.Columns.GridColumn YarnQualityName;
