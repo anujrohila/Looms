@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtBranchName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbBankName = new DevExpress.XtraEditors.LookUpEdit();
-            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
-            this.errorBranchName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
-            this.errorAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBranchName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.txtAddress = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -60,21 +61,28 @@
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.TabIndex = 6;
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.TabIndex = 4;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
@@ -99,7 +107,7 @@
             this.txtBranchName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtBranchName.Properties.Mask.EditMask = "n2";
             this.txtBranchName.Size = new System.Drawing.Size(205, 26);
-            this.txtBranchName.TabIndex = 110;
+            this.txtBranchName.TabIndex = 1;
             this.txtBranchName.ToolTip = "Enter Cheque Number";
             // 
             // labelControl14
@@ -154,7 +162,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ComapnyCode", "ComapnyCode")});
             this.cmbBankName.Properties.NullText = "";
             this.cmbBankName.Size = new System.Drawing.Size(205, 26);
-            this.cmbBankName.TabIndex = 160;
+            this.cmbBankName.TabIndex = 0;
             this.cmbBankName.ToolTip = "Select Bank Name.";
             // 
             // errorBankName
@@ -174,7 +182,7 @@
             this.txtAddress.Location = new System.Drawing.Point(121, 79);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(205, 90);
-            this.txtAddress.TabIndex = 168;
+            this.txtAddress.TabIndex = 2;
             // 
             // labelControl3
             // 
