@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtEmployeeTypeName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtDescription = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.errorEmployeeTypeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorEmployeeTypeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -44,46 +44,51 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Location = new System.Drawing.Point(389, 0);
-            this.panelControl1.Size = new System.Drawing.Size(127, 116);
+            this.panelControl1.Location = new System.Drawing.Point(412, 0);
+            this.panelControl1.Size = new System.Drawing.Size(127, 159);
             // 
             // btnReport
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.Location = new System.Drawing.Point(13, 114);
             this.btnReport.Visible = false;
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.Location = new System.Drawing.Point(13, 77);
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.Location = new System.Drawing.Point(13, 3);
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.Location = new System.Drawing.Point(13, 40);
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelControl3);
             this.panel1.Controls.Add(this.txtEmployeeTypeName);
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.txtDescription);
             this.panel1.Controls.Add(this.labelControl14);
-            this.panel1.Size = new System.Drawing.Size(389, 116);
+            this.panel1.Size = new System.Drawing.Size(412, 159);
             // 
             // txtEmployeeTypeName
             // 
             this.txtEmployeeTypeName.EditValue = "";
             this.errorEmployeeTypeName.SetIconAlignment(this.txtEmployeeTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtEmployeeTypeName.Location = new System.Drawing.Point(155, 15);
+            this.txtEmployeeTypeName.Location = new System.Drawing.Point(168, 15);
             this.txtEmployeeTypeName.Name = "txtEmployeeTypeName";
             this.txtEmployeeTypeName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployeeTypeName.Properties.Appearance.Options.UseFont = true;
@@ -107,7 +112,7 @@
             // txtDescription
             // 
             this.txtDescription.EditValue = "";
-            this.txtDescription.Location = new System.Drawing.Point(155, 47);
+            this.txtDescription.Location = new System.Drawing.Point(168, 47);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Properties.Appearance.Options.UseFont = true;
@@ -132,10 +137,20 @@
             // 
             this.errorEmployeeTypeName.ContainerControl = this;
             // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl3.Location = new System.Drawing.Point(159, 15);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(6, 17);
+            this.labelControl3.TabIndex = 175;
+            this.labelControl3.Text = "*";
+            // 
             // frmEmployeeTypeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(516, 116);
+            this.ClientSize = new System.Drawing.Size(539, 159);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEmployeeTypeMaster";
@@ -158,5 +173,6 @@
         private DevExpress.XtraEditors.TextEdit txtDescription;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEmployeeTypeName;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }
