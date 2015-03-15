@@ -15,7 +15,7 @@ namespace LoomsManagement.DAL
             {
                 if (tblPenaltyMSTDTO.PenaltyID == 0)
                 {
-                    if (loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyID == tblPenaltyMSTDTO.PenaltyID && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyName == tblPenaltyMSTDTO.PenaltyName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 0;
                     }

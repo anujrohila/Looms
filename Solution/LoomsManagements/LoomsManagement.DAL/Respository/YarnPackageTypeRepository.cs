@@ -14,7 +14,7 @@ namespace LoomsManagement.DAL
             {
                 if (tblYarnPackageTypeDTO.YarnPackageTypeID == 0)
                 {
-                    if (loomsManagementEntity.tblYarnPackageTypes.Where(m => m.YarnPackageTypeID == tblYarnPackageTypeDTO.YarnPackageTypeID && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblYarnPackageTypes.Where(m => m.TypeName == tblYarnPackageTypeDTO.TypeName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 1;
                     }

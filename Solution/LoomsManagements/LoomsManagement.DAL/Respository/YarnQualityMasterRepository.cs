@@ -14,7 +14,7 @@ namespace LoomsManagement.DAL
            {
                if (tblYarnQualityMSTDTO.YarnQualityID == 0)
                {
-                   if (loomsManagementEntity.tblYarnQualityMSTs.Where(m => m.YarnQualityID == tblYarnQualityMSTDTO.YarnQualityID && m.IsDelete == false).ToList().Count() > 0)
+                   if (loomsManagementEntity.tblYarnQualityMSTs.Where(m => m.YarnQualityName == tblYarnQualityMSTDTO.YarnQualityName && m.IsDelete == false).ToList().Count() > 0)
                    {
                        return 1;
                    }

@@ -17,7 +17,7 @@ namespace LoomsManagement.DAL
             {
                 if (tblBranchMSTDTO.BranchID == 0)
                 {
-                    if (loomsManagementEntity.tblBranchMSTs.Where(m => m.BranchID == tblBranchMSTDTO.BranchID && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblBranchMSTs.Where(m => m.BranchName==tblBranchMSTDTO.BranchName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 0;
                     }

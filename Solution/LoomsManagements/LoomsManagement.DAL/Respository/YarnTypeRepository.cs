@@ -13,7 +13,7 @@ namespace LoomsManagement.DAL
             {
                 if (tblYarnTypeDTO.YarnTypeID == 0)
                 {
-                    if (loomsManagementSystemEntity.tblYarnTypeMSTs.Where(m => m.YarnTypeID == tblYarnTypeDTO.YarnTypeID && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementSystemEntity.tblYarnTypeMSTs.Where(m => m.YarnTypeName == tblYarnTypeDTO.YarnTypeName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 1;
                     }

@@ -16,7 +16,7 @@ namespace LoomsManagement.DAL
             {
                 if (tblPartyMSTDTO.PartyID == 0)
                 {
-                    if (loomsManagementEntity.tblPartysMSTs.Where(m => m.PartyID == tblPartyMSTDTO.PartyID && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblPartysMSTs.Where(m => m.PartyName==tblPartyMSTDTO.PartyName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 1;
                     }

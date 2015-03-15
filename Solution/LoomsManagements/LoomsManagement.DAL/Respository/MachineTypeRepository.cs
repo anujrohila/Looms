@@ -17,7 +17,7 @@ namespace LoomsManagement.DAL
            {
                if (tblMachineTypeMSTDTO.MachineTypeID == 0)
                {
-                   if (loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.MachineTypeID == tblMachineTypeMSTDTO.MachineTypeID && m.IsDelete == false).ToList().Count() > 0)
+                   if (loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.TypeName == tblMachineTypeMSTDTO.TypeName && m.IsDelete == false).ToList().Count() > 0)
                    {
                        return 1;
                    }
