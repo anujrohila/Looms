@@ -203,14 +203,22 @@ namespace LoomsManagement.Windows.Forms.Master
             ErrorHandlor.SetErrorCount();
             ErrorHandlor.SetTextboxErrorWithCount(errorPartyName, txtPartyName, "Enter Party Party Name");
             ErrorHandlor.SetLookUPErrorWithCount(errorCompanyCode, cmbCompanyCode, "Select Company Code");
-            ErrorHandlor.SetTextboxErrorWithCount(errorOfficeAddress, txtofficeAddress, "Enter Office Address");
-            ErrorHandlor.SetTextboxErrorWithCount(errorShippingAddress, txtShippingAddress, "Enter Shipping Address");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorOfficeAddress, txtofficeAddress, "Enter Office Address");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorShippingAddress, txtShippingAddress, "Enter Shipping Address");
             ErrorHandlor.SetTextboxErrorWithCount(errorCity, txtCity, "Enter City Name");
             ErrorHandlor.SetTextboxErrorWithCount(errorState, txtState, "Enter State Name");
             ErrorHandlor.SetTextboxErrorWithCount(errorMobileNo, txtMobileNo, "Enter Mobile Number");
             ErrorHandlor.SetTextboxErrorWithCount(errorPhoneNo, txtPhoneNo, "Enter Phone Number");
-            ErrorHandlor.SetTextboxErrorWithCount(errorShippingAddress, txtShippingAddress, "Enter Shipping Address");
-            ErrorHandlor.SetTextboxErrorWithCount(errorShippingAddress, txtShippingAddress, "Enter Shipping Address");
+            ErrorHandlor.SetTextboxErrorWithCount(errorEmail, txtEmail, "Enter Email Address");
+            ErrorHandlor.SetTextboxErrorWithCount(errorTINNo, txtTINNo, "Enter TIN Number");
+            ErrorHandlor.SetDateErrorWithCount(errorTINDate, dpTINDate, "Select Current Date");
+            ErrorHandlor.SetTextboxErrorWithCount(errorPANNo, txtPANNo, "Enter PAN Number");
+            ErrorHandlor.SetTextboxErrorWithCount(errorCSTNo, txtCSTNo, "Enter CST Number");
+            ErrorHandlor.SetDateErrorWithCount(errorCSTDate, dpCSTDate, "Select Current Date");
+            ErrorHandlor.SetTextboxErrorWithCount(errorECCNo, txtECCNo, "Enter ECC No");
+            ErrorHandlor.SetTextboxErrorWithCount(errorRefPersonName, txtRefPersonName, "Enter Refrence Person Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorRefPersonMobileNo, txtRefPersonMobNo, "Enter Reference Person Mobile Number");
+           
 
 
             if (ErrorHandlor.count == 0)
