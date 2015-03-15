@@ -16,7 +16,7 @@ namespace LoomsManagement.DAL
                 {
                     if (loomsManagementEntity.tblBankMSTs.Where(m => m.BankName==tblBankMSTDTO.BankName && m.IsDelete == false).ToList().Count() > 0)
                     {
-                        return 0;
+                        return 1;
                     }
                     else
                     {
