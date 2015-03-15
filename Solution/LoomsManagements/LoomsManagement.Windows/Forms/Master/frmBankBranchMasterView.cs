@@ -62,7 +62,7 @@ namespace LoomsManagement.Windows.Forms.Master
         #region Private Method
 
         /// <summary>
-        /// Fill all yarn type data
+        /// Fill all Branch data
         /// </summary>
         private void BindGridData()
         {
