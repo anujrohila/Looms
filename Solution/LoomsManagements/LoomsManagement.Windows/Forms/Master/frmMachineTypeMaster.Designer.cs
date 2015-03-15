@@ -34,6 +34,7 @@
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
             this.errorMachineType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -51,25 +52,33 @@
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.TabIndex = 5;
             this.btnReport.Visible = false;
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.TabIndex = 3;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelControl8);
             this.panel1.Controls.Add(this.txtDescription);
             this.panel1.Controls.Add(this.txtTypeName);
             this.panel1.Controls.Add(this.labelControl2);
@@ -87,7 +96,7 @@
             this.txtTypeName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtTypeName.Properties.Mask.EditMask = "n2";
             this.txtTypeName.Size = new System.Drawing.Size(205, 26);
-            this.txtTypeName.TabIndex = 106;
+            this.txtTypeName.TabIndex = 0;
             // 
             // labelControl2
             // 
@@ -112,11 +121,21 @@
             this.txtDescription.Location = new System.Drawing.Point(155, 47);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
-            this.txtDescription.TabIndex = 167;
+            this.txtDescription.TabIndex = 1;
             // 
             // errorMachineType
             // 
             this.errorMachineType.ContainerControl = this;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl8.Location = new System.Drawing.Point(146, 18);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(6, 17);
+            this.labelControl8.TabIndex = 180;
+            this.labelControl8.Text = "*";
             // 
             // frmMachineTypeMaster
             // 
@@ -144,5 +163,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.MemoEdit txtDescription;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMachineType;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
     }
 }
