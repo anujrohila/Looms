@@ -100,6 +100,9 @@
             // txtBranchName
             // 
             this.txtBranchName.EditValue = "";
+            this.errorAddress.SetIconAlignment(this.txtBranchName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtBranchName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBranchName.SetIconAlignment(this.txtBranchName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtBranchName.Location = new System.Drawing.Point(121, 46);
             this.txtBranchName.Name = "txtBranchName";
             this.txtBranchName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,6 +112,9 @@
             this.txtBranchName.Size = new System.Drawing.Size(205, 26);
             this.txtBranchName.TabIndex = 1;
             this.txtBranchName.ToolTip = "Enter Cheque Number";
+            this.txtBranchName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtBranchName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtBranchName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl14
             // 
@@ -139,6 +145,9 @@
             // 
             // cmbBankName
             // 
+            this.errorAddress.SetIconAlignment(this.cmbBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.cmbBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBranchName.SetIconAlignment(this.cmbBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbBankName.Location = new System.Drawing.Point(121, 14);
             this.cmbBankName.Name = "cmbBankName";
             this.cmbBankName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -164,6 +173,9 @@
             this.cmbBankName.Size = new System.Drawing.Size(205, 26);
             this.cmbBankName.TabIndex = 0;
             this.cmbBankName.ToolTip = "Select Bank Name.";
+            this.cmbBankName.Enter += new System.EventHandler(this.EnterEvent);
+            this.cmbBankName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.cmbBankName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // errorBankName
             // 
@@ -179,10 +191,16 @@
             // 
             // txtAddress
             // 
+            this.errorAddress.SetIconAlignment(this.txtAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBranchName.SetIconAlignment(this.txtAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtAddress.Location = new System.Drawing.Point(121, 79);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(205, 90);
             this.txtAddress.TabIndex = 2;
+            this.txtAddress.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtAddress.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl3
             // 
