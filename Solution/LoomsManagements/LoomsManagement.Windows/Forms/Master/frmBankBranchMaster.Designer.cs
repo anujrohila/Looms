@@ -35,9 +35,9 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbBankName = new DevExpress.XtraEditors.LookUpEdit();
             this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.txtAddress = new DevExpress.XtraEditors.MemoEdit();
             this.errorBranchName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.txtAddress = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -47,9 +47,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtBranchName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBankName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBankName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBranchName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorAddress)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -166,9 +166,8 @@
             this.cmbBankName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbBankName.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyID", "CompanyID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyName", "CompanyName"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ComapnyCode", "ComapnyCode")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("BankID", "BankID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("BankName", " Bank Name")});
             this.cmbBankName.Properties.NullText = "";
             this.cmbBankName.Size = new System.Drawing.Size(205, 26);
             this.cmbBankName.TabIndex = 0;
@@ -180,14 +179,6 @@
             // errorBankName
             // 
             this.errorBankName.ContainerControl = this;
-            // 
-            // errorBranchName
-            // 
-            this.errorBranchName.ContainerControl = this;
-            // 
-            // errorAddress
-            // 
-            this.errorAddress.ContainerControl = this;
             // 
             // txtAddress
             // 
@@ -201,6 +192,14 @@
             this.txtAddress.Enter += new System.EventHandler(this.EnterEvent);
             this.txtAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtAddress.Leave += new System.EventHandler(this.LeaveEvent);
+            // 
+            // errorBranchName
+            // 
+            this.errorBranchName.ContainerControl = this;
+            // 
+            // errorAddress
+            // 
+            this.errorAddress.ContainerControl = this;
             // 
             // labelControl3
             // 
@@ -245,9 +244,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtBranchName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBankName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBankName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBranchName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorAddress)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

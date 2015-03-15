@@ -58,23 +58,27 @@
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.TabIndex = 6;
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.TabIndex = 4;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
@@ -91,13 +95,20 @@
             // 
             // txtDescription
             // 
+            this.errorMachineType.SetIconAlignment(this.txtDescription, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineName.SetIconAlignment(this.txtDescription, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtDescription.Location = new System.Drawing.Point(125, 81);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
-            this.txtDescription.TabIndex = 168;
+            this.txtDescription.TabIndex = 2;
+            this.txtDescription.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtDescription.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // cmbMachineType
             // 
+            this.errorMachineName.SetIconAlignment(this.cmbMachineType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineType.SetIconAlignment(this.cmbMachineType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbMachineType.Location = new System.Drawing.Point(125, 17);
             this.cmbMachineType.Name = "cmbMachineType";
             this.cmbMachineType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -120,8 +131,11 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TypeName", "Machine Type Name")});
             this.cmbMachineType.Properties.NullText = "";
             this.cmbMachineType.Size = new System.Drawing.Size(205, 26);
-            this.cmbMachineType.TabIndex = 173;
-            this.cmbMachineType.ToolTip = "Select Bank Name.";
+            this.cmbMachineType.TabIndex = 0;
+            this.cmbMachineType.ToolTip = "Select Machine Type";
+            this.cmbMachineType.Enter += new System.EventHandler(this.EnterEvent);
+            this.cmbMachineType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.cmbMachineType.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl2
             // 
@@ -144,6 +158,8 @@
             // txtMachineName
             // 
             this.txtMachineName.EditValue = "";
+            this.errorMachineType.SetIconAlignment(this.txtMachineName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineName.SetIconAlignment(this.txtMachineName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtMachineName.Location = new System.Drawing.Point(125, 49);
             this.txtMachineName.Name = "txtMachineName";
             this.txtMachineName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,8 +167,11 @@
             this.txtMachineName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtMachineName.Properties.Mask.EditMask = "n2";
             this.txtMachineName.Size = new System.Drawing.Size(205, 26);
-            this.txtMachineName.TabIndex = 169;
+            this.txtMachineName.TabIndex = 1;
             this.txtMachineName.ToolTip = "Enter Cheque Number";
+            this.txtMachineName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtMachineName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtMachineName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl14
             // 

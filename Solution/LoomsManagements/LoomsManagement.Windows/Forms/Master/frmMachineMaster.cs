@@ -21,21 +21,22 @@ namespace LoomsManagement.Windows.Forms.Master
         #endregion
 
         #region Constructor
+        
         public frmMachineMaster()
         {
             InitializeComponent();
             this.Load += frmMachineMaster_Load;
         }
 
-       
         #endregion
 
         #region Page Event
 
         void frmMachineMaster_Load(object sender, EventArgs e)
         {
-            LoadMachineTypeName();
+          
             SetFlag();
+            LoadMachineTypeName();
             cmbMachineType.Focus();
         }
 
@@ -53,6 +54,8 @@ namespace LoomsManagement.Windows.Forms.Master
             tblMachineMSTDTO.MachineTypeID = Convert.ToInt32(cmbMachineType.EditValue);
             tblMachineMSTDTO.MachineName = txtMachineName.Text;
             tblMachineMSTDTO.AboutMachine = txtDescription.Text;
+            tblMachineMSTDTO.IsActive = true;
+            tblMachineMSTDTO.IsDelete = false;
             if (IsEdit)
             {
                 tblMachineMSTDTO.MachineID = id;
@@ -88,7 +91,6 @@ namespace LoomsManagement.Windows.Forms.Master
 
         }
         
-
         private void btndelete_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);

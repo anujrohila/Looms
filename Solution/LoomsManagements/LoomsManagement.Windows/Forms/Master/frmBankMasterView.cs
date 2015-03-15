@@ -50,7 +50,7 @@ namespace LoomsManagement.Windows.Forms.Master
             {
                 var frmBankMaster = new frmBankMaster();
                 frmBankMaster.IsEdit = true;
-                frmBankMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "YarnTypeID"));
+                frmBankMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "BankID"));
                 frmBankMaster.FormClosed +=frmBankMaster_FormClosed;
                 frmBankMaster.ShowDialog();
             }

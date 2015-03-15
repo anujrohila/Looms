@@ -52,7 +52,7 @@ namespace LoomsManagement.Windows.Forms.Master
             {
                 var frmMachineTypeMaster = new frmMachineTypeMaster();
                 frmMachineTypeMaster.IsEdit = true;
-                frmMachineTypeMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "YarnTypeID"));
+                frmMachineTypeMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "MachineTypeID"));
                 frmMachineTypeMaster.FormClosed +=frmMachineTypeMaster_FormClosed;
                 frmMachineTypeMaster.ShowDialog();
             }

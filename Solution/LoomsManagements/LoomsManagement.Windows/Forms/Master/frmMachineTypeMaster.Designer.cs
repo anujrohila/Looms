@@ -97,6 +97,9 @@
             this.txtTypeName.Properties.Mask.EditMask = "n2";
             this.txtTypeName.Size = new System.Drawing.Size(205, 26);
             this.txtTypeName.TabIndex = 0;
+            this.txtTypeName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtTypeName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtTypeName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl2
             // 
@@ -122,6 +125,9 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
             this.txtDescription.TabIndex = 1;
+            this.txtDescription.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtDescription.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // errorMachineType
             // 
