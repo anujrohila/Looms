@@ -184,7 +184,7 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 164);
+            this.ClientSize = new System.Drawing.Size(521, 164);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmYarnQualityMaster";

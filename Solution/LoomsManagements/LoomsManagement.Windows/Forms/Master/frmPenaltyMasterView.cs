@@ -44,13 +44,13 @@ namespace LoomsManagement.Windows.Forms.Master
             CommanClass.HideProcessBar();
         }
 
-       private void InnerGrid_KeyDown(object sender, KeyEventArgs e)
+        private void InnerGrid_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 var frmPenaltyMaster = new frmPenaltyMaster();
                 frmPenaltyMaster.IsEdit = true;
-                frmPenaltyMaster.id=Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle,"PenaltyID");
+                frmPenaltyMaster.id=Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle,"PenaltyID"));
                 frmPenaltyMaster.FormClosed += frmPenaltyMaster_FormClosed;
                 frmPenaltyMaster.ShowDialog();
             }
@@ -61,7 +61,7 @@ namespace LoomsManagement.Windows.Forms.Master
         #region Private Method
 
         /// <summary>
-        /// Fill all yarn type data
+        /// Fill all Penalty Master data
         /// </summary>
         private void BindGridData()
         {

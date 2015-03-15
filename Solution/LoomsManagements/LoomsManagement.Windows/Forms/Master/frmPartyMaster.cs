@@ -45,6 +45,7 @@ namespace LoomsManagement.Windows.Forms.Master
             CommanClass.ShowProcessBar();
             var tblPartysMSTDTO = new tblPartysMSTDTO();
             tblPartysMSTDTO.CompanyCode = Convert.ToInt32(cmbCompanyCode.EditValue);
+            tblPartysMSTDTO.PartyName = txtPartyName.Text;
             tblPartysMSTDTO.ContactPersonName = txtContactPersonName.Text;
             tblPartysMSTDTO.OfficeAddress = txtofficeAddress.Text;
             tblPartysMSTDTO.ShippingAddress = txtShippingAddress.Text;
@@ -202,6 +203,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
             ErrorHandlor.SetErrorCount();
             ErrorHandlor.SetTextboxErrorWithCount(errorPartyName, txtPartyName, "Enter Party Party Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorContactPersonName, txtContactPersonName, "Enter Contact person Name");
             ErrorHandlor.SetLookUPErrorWithCount(errorCompanyCode, cmbCompanyCode, "Select Company Code");
             ErrorHandlor.SetMemoEditErrorWithCount(errorOfficeAddress, txtofficeAddress, "Enter Office Address");
             ErrorHandlor.SetMemoEditErrorWithCount(errorShippingAddress, txtShippingAddress, "Enter Shipping Address");
@@ -233,6 +235,7 @@ namespace LoomsManagement.Windows.Forms.Master
             cmbCompanyCode.EditValue = 0;
             txtCity.Text = "";
             txtContactPersonName.Text = "";
+            txtPartyName.Text = "";
             txtCSTNo.Text = "";
             txtECCNo.Text = "";
             txtPartyName.Text = "";
@@ -274,6 +277,7 @@ namespace LoomsManagement.Windows.Forms.Master
             //Reset error 
             errorCompanyCode.SetError(cmbCompanyCode, "");
             errorPartyName.SetError(txtPartyName, "");
+            errorContactPersonName.SetError(txtContactPersonName, "");
             errorContactPersonName.SetError(txtContactPersonName, "");
             errorOfficeAddress.SetError(txtofficeAddress, "");
             errorShippingAddress.SetError(txtShippingAddress, "");
