@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtYarnQualityName = new DevExpress.XtraEditors.TextEdit();
+            this.components = new System.ComponentModel.Container();
+            this.txtBankName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBankName)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,35 +54,42 @@
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.labelControl3);
-            this.panel1.Controls.Add(this.txtYarnQualityName);
+            this.panel1.Controls.Add(this.txtBankName);
             this.panel1.Controls.Add(this.labelControl14);
             this.panel1.Size = new System.Drawing.Size(339, 159);
             // 
-            // txtYarnQualityName
+            // txtBankName
             // 
-            this.txtYarnQualityName.EditValue = "";
-            this.txtYarnQualityName.Location = new System.Drawing.Point(110, 12);
-            this.txtYarnQualityName.Name = "txtYarnQualityName";
-            this.txtYarnQualityName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYarnQualityName.Properties.Appearance.Options.UseFont = true;
-            this.txtYarnQualityName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtYarnQualityName.Properties.Mask.EditMask = "n2";
-            this.txtYarnQualityName.Size = new System.Drawing.Size(205, 26);
-            this.txtYarnQualityName.TabIndex = 113;
+            this.txtBankName.EditValue = "";
+            this.errorBankName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtBankName.Location = new System.Drawing.Point(110, 12);
+            this.txtBankName.Name = "txtBankName";
+            this.txtBankName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBankName.Properties.Appearance.Options.UseFont = true;
+            this.txtBankName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtBankName.Properties.Mask.EditMask = "n2";
+            this.txtBankName.Size = new System.Drawing.Size(205, 26);
+            this.txtBankName.TabIndex = 0;
+            this.txtBankName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtBankName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtBankName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl14
             // 
@@ -116,7 +124,7 @@
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBankName)).EndInit();
             this.ResumeLayout(false);
 
@@ -124,7 +132,7 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit txtYarnQualityName;
+        private DevExpress.XtraEditors.TextEdit txtBankName;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBankName;
