@@ -6,6 +6,7 @@
     <edmx:StorageModels>
       <Schema Namespace="LoomsManagementModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="LoomsManagementModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="LoomsManagementModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblAttendanceMST" EntityType="LoomsManagementModel.Store.tblAttendanceMST" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblBankMST" EntityType="LoomsManagementModel.Store.tblBankMST" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblBeamMST" EntityType="LoomsManagementModel.Store.tblBeamMST" store:Type="Tables" Schema="dbo" />
@@ -29,6 +30,7 @@
           <EntitySet Name="tblPartysMST" EntityType="LoomsManagementModel.Store.tblPartysMST" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblPenaltyMST" EntityType="LoomsManagementModel.Store.tblPenaltyMST" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblProductQualityMST" EntityType="LoomsManagementModel.Store.tblProductQualityMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblProfeListMst" EntityType="LoomsManagementModel.Store.tblProfeListMst" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblSalaryMST" EntityType="LoomsManagementModel.Store.tblSalaryMST" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblTFOProcess" EntityType="LoomsManagementModel.Store.tblTFOProcess" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblWindingWork" EntityType="LoomsManagementModel.Store.tblWindingWork" store:Type="Tables" Schema="dbo" />
@@ -117,6 +119,16 @@
             <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMST" />
           </AssociationSet>
         </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
         <EntityType Name="tblAttendanceMST">
           <Key>
             <PropertyRef Name="AttendanceID" />
@@ -571,6 +583,13 @@
           <Property Name="UpdatedBy" Type="int" />
           <Property Name="UpdatedDateTime" Type="datetime" />
         </EntityType>
+        <EntityType Name="tblProfeListMst">
+          <Key>
+            <PropertyRef Name="ProfeID" />
+          </Key>
+          <Property Name="ProfeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="tblSalaryMST">
           <Key>
             <PropertyRef Name="SalaryID" />
@@ -1019,6 +1038,7 @@
     <edmx:ConceptualModels>
       <Schema Namespace="LoomsManagementModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="LoomsManagementEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="LoomsManagementModel.sysdiagram" />
           <EntitySet Name="tblAttendanceMSTs" EntityType="LoomsManagementModel.tblAttendanceMST" />
           <EntitySet Name="tblBankMSTs" EntityType="LoomsManagementModel.tblBankMST" />
           <EntitySet Name="tblBeamMSTs" EntityType="LoomsManagementModel.tblBeamMST" />
@@ -1042,6 +1062,7 @@
           <EntitySet Name="tblPartysMSTs" EntityType="LoomsManagementModel.tblPartysMST" />
           <EntitySet Name="tblPenaltyMSTs" EntityType="LoomsManagementModel.tblPenaltyMST" />
           <EntitySet Name="tblProductQualityMSTs" EntityType="LoomsManagementModel.tblProductQualityMST" />
+          <EntitySet Name="tblProfeListMsts" EntityType="LoomsManagementModel.tblProfeListMst" />
           <EntitySet Name="tblSalaryMSTs" EntityType="LoomsManagementModel.tblSalaryMST" />
           <EntitySet Name="tblTFOProcesses" EntityType="LoomsManagementModel.tblTFOProcess" />
           <EntitySet Name="tblWindingWorks" EntityType="LoomsManagementModel.tblWindingWork" />
@@ -1130,6 +1151,16 @@
             <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMSTs" />
           </AssociationSet>
         </EntityContainer>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
         <EntityType Name="tblAttendanceMST">
           <Key>
             <PropertyRef Name="AttendanceID" />
@@ -1603,6 +1634,13 @@
           <Property Name="UpdatedBy" Type="Int32" />
           <Property Name="UpdatedDateTime" Type="DateTime" Precision="3" />
         </EntityType>
+        <EntityType Name="tblProfeListMst">
+          <Key>
+            <PropertyRef Name="ProfeID" />
+          </Key>
+          <Property Name="ProfeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
         <EntityType Name="tblSalaryMST">
           <Key>
             <PropertyRef Name="SalaryID" />
@@ -2070,6 +2108,17 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="LoomsManagementModelStoreContainer" CdmEntityContainer="LoomsManagementEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="LoomsManagementModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="tblAttendanceMSTs">
             <EntityTypeMapping TypeName="LoomsManagementModel.tblAttendanceMST">
               <MappingFragment StoreEntitySet="tblAttendanceMST">
@@ -2544,6 +2593,14 @@
                 <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
                 <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
                 <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblProfeListMsts">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblProfeListMst">
+              <MappingFragment StoreEntitySet="tblProfeListMst">
+                <ScalarProperty Name="ProfeID" ColumnName="ProfeID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

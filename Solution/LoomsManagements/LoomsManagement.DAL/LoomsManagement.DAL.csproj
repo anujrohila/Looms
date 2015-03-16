@@ -73,6 +73,7 @@
     <Compile Include="Assemblers\tblPartysMSTAssembler.cs" />
     <Compile Include="Assemblers\tblPenaltyMSTAssembler.cs" />
     <Compile Include="Assemblers\tblProductQualityMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblProfeListMstAssembler.cs" />
     <Compile Include="Assemblers\tblSalaryMSTAssembler.cs" />
     <Compile Include="Assemblers\tblTFOProcessAssembler.cs" />
     <Compile Include="Assemblers\tblWindingWorkAssembler.cs" />
@@ -98,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\sysdiagram.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="ORM\tblAttendanceMST.cs">
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
@@ -168,6 +172,9 @@
     <Compile Include="ORM\tblProductQualityMST.cs">
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="ORM\tblProfeListMst.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="ORM\tblSalaryMST.cs">
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
@@ -205,6 +212,7 @@
     <Compile Include="Respository\BankMasterRepository.cs" />
     <Compile Include="Respository\BranchMasterRepository.cs" />
     <Compile Include="Respository\CompanyRepository.cs" />
+    <Compile Include="Respository\EmployeeRepository.cs" />
     <Compile Include="Respository\EmployeeTypeRepository.cs" />
     <Compile Include="Respository\MachineMasterRepository.cs" />
     <Compile Include="Respository\MachineTypeRepository.cs" />

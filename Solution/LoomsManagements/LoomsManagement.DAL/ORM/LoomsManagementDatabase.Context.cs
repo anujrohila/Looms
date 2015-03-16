@@ -25,6 +25,7 @@ namespace LoomsManagement.DAL.ORM
             throw new UnintentionalCodeFirstException();
         }
     
+        public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<tblAttendanceMST> tblAttendanceMSTs { get; set; }
         public DbSet<tblBankMST> tblBankMSTs { get; set; }
         public DbSet<tblBeamMST> tblBeamMSTs { get; set; }
@@ -48,6 +49,7 @@ namespace LoomsManagement.DAL.ORM
         public DbSet<tblPartysMST> tblPartysMSTs { get; set; }
         public DbSet<tblPenaltyMST> tblPenaltyMSTs { get; set; }
         public DbSet<tblProductQualityMST> tblProductQualityMSTs { get; set; }
+        public DbSet<tblProfeListMst> tblProfeListMsts { get; set; }
         public DbSet<tblSalaryMST> tblSalaryMSTs { get; set; }
         public DbSet<tblTFOProcess> tblTFOProcesses { get; set; }
         public DbSet<tblWindingWork> tblWindingWorks { get; set; }
