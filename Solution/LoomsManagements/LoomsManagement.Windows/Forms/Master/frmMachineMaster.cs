@@ -25,21 +25,26 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmMachineMaster()
         {
             InitializeComponent();
-            this.Load += frmMachineMaster_Load;
+            btnReport.Visible = false;
+            this.Paint += frmMachineMaster_Paint;
         }
+
+        
 
         #endregion
 
         #region Page Event
 
-        void frmMachineMaster_Load(object sender, EventArgs e)
+        void frmMachineMaster_Paint(object sender, PaintEventArgs e)
         {
-          
+            CommanClass.ShowProcessBar();
             SetFlag();
             LoadMachineTypeName();
             cmbMachineType.Focus();
+            CommanClass.HideProcessBar();
         }
 
+       
         #endregion
 
         #region Control Event

@@ -16,12 +16,22 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmPartyMasterView()
         {
             InitializeComponent();
+            this.Paint += frmPartyMasterView_Paint;
            
         }
+
+     
         #endregion
 
         #region Page Event
-       
+
+        void frmPartyMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
+
         #endregion
 
         #region Control Event

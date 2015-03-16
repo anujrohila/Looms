@@ -16,11 +16,19 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmYarnTypeMasterView()
         {
             InitializeComponent();
+            this.Paint += frmYarnTypeMasterView_Paint;
         }
 
         #endregion
 
         #region PageEvent
+
+        void frmYarnTypeMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
 
         #endregion
 

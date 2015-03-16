@@ -20,10 +20,21 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmYarnQualityMasterView()
         {
             InitializeComponent();
+            this.Paint += frmYarnQualityMasterView_Paint;
         }
+
+      
         #endregion
 
         #region Page Event
+
+        void frmYarnQualityMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
+
         #endregion
 
         #region Control Event

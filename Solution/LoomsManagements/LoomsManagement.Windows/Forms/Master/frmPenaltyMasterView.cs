@@ -20,10 +20,19 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmPenaltyMasterView()
         {
             InitializeComponent();
+            this.Paint += frmPenaltyMasterView_Paint;
         }
+
         #endregion
 
         #region PageEvent
+
+        void frmPenaltyMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
 
         #endregion
 

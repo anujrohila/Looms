@@ -25,21 +25,23 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmBankBranchMaster()
         {
             InitializeComponent();
-            this.Load += frmBankBranchMaster_Load;
+            btnReport.Visible = false;
+            this.Paint += frmBankBranchMaster_Paint;
         }
 
-        
+
         #endregion
 
         #region Page Event
-
-        void frmBankBranchMaster_Load(object sender, EventArgs e)
+      
+        void frmBankBranchMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             LoadBankName();
             SetFlag();
-            cmbBankName.Focus();
+             cmbBankName.Focus();
+            CommanClass.HideProcessBar();
         }
-
         #endregion
 
         #region Control Event
@@ -150,7 +152,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void LoadBankName()
         {
-            cmbBankName.Properties.DataSource = BankBusinessLogic.GetAllBankDetails();
+            cmbBankName.Properties.DataSource = UserContext.UserContexttblBankMSTDTO;
             cmbBankName.Properties.ValueMember = "BankID";
             cmbBankName.Properties.DisplayMember = "BankName";
         }

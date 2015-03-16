@@ -20,11 +20,20 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmBankMasterView()
         {
             InitializeComponent();
+            this.Paint += frmBankMasterView_Paint;
         }
 
+       
         #endregion
 
         #region PageEvent
+
+        void frmBankMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
 
         #endregion
 

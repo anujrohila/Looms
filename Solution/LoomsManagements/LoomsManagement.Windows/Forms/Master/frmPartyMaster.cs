@@ -20,18 +20,22 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmPartyMaster()
         {
             InitializeComponent();
-            this.Load += frmPartyMaster_Load;
+            btnReport.Visible = false;
+            this.Paint += frmPartyMaster_Paint;
         }
 
+      
         #endregion
 
         #region Page Event
 
-        void frmPartyMaster_Load(object sender, EventArgs e)
+        void frmPartyMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             LoadCompanyCode();
             cmbCompanyCode.Focus();
+            CommanClass.HideProcessBar();
         }
 
         #endregion

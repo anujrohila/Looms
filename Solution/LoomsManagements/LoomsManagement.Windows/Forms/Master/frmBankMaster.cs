@@ -26,17 +26,22 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmBankMaster()
         {
             InitializeComponent();
-            this.Load += frmBankMaster_Load;
+            this.Paint += frmBankMaster_Paint;
+            btnReport.Visible = false;
         }
+
+       
 
         #endregion  
 
         #region Page Event
 
-        void frmBankMaster_Load(object sender, EventArgs e)
+        void frmBankMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             txtBankName.Focus();
+            CommanClass.HideProcessBar();
         }
 
         #endregion

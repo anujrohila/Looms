@@ -24,18 +24,24 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmYarnPackageTypeMaster()
         {
             InitializeComponent();
-            this.Load += frmYarnPackageTypeMaster_Load;
+            btnReport.Visible = false;
+            this.Paint += frmYarnPackageTypeMaster_Paint;
         }
+
+       
 
        
         #endregion
 
         #region Page Event
 
-        void frmYarnPackageTypeMaster_Load(object sender, EventArgs e)
+        
+        void frmYarnPackageTypeMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             txtYarnPackageType.Focus();
+            CommanClass.HideProcessBar();
         }
 
         #endregion

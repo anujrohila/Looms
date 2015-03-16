@@ -21,11 +21,20 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmMachineMasterView()
         {
             InitializeComponent();
+            this.Paint += frmMachineMasterView_Paint;
         }
 
+       
         #endregion
 
         #region PageEvent
+
+        void frmMachineMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
 
         #endregion
 

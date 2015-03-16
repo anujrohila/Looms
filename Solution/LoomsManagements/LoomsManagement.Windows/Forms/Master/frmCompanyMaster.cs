@@ -21,17 +21,23 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmCompanyMaster()
         {
             InitializeComponent();
-            this.Load += frmCompanyMaster_Load;
+           btnReport.Visible=false;
+            this.Paint += frmCompanyMaster_Paint;
         }
+
+       
 
         #endregion
 
         #region [Page Event]
 
-        void frmCompanyMaster_Load(object sender, EventArgs e)
+        
+        void frmCompanyMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             txtCompanyName.Focus();
+            CommanClass.HideProcessBar();
         }
         
         #endregion

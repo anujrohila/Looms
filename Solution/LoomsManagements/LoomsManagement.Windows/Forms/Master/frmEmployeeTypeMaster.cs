@@ -23,20 +23,24 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmEmployeeTypeMaster()
         {
             InitializeComponent();
-            this.Load += frmEmployeeTypeMaster_Load;
+            btnReport.Visible = false;
+            this.Paint += frmEmployeeTypeMaster_Paint;
         }
 
-        
+               
         #endregion
 
         #region [Page Event]
 
-        void frmEmployeeTypeMaster_Load(object sender, EventArgs e)
+        void frmEmployeeTypeMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             txtEmployeeTypeName.Focus();
+            CommanClass.HideProcessBar();
         }
 
+        
         #endregion
 
         #region  [Control Event]

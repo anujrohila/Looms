@@ -26,21 +26,23 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             InitializeComponent();
             btnReport.Visible = false;
-            this.Load += frmPenaltyMaster_Load;
+            this.Paint += frmPenaltyMaster_Paint;
         }
 
-       
+                     
         #endregion
 
         #region Page Event
 
-        void frmPenaltyMaster_Load(object sender, EventArgs e)
+        void frmPenaltyMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             txtPenaltyCode.Focus();
+            CommanClass.HideProcessBar();
         }
 
-        #endregion
+       #endregion
 
         #region Control Event
 

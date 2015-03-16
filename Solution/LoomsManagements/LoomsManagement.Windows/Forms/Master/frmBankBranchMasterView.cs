@@ -21,12 +21,19 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmBankBranchMasterView()
         {
             InitializeComponent();
+            this.Paint += frmBankBranchMasterView_Paint;
         }
 
         #endregion
 
         #region PageEvent
 
+        void frmBankBranchMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
         #endregion
 
         #region ControlEvent

@@ -20,11 +20,20 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmEmployeeMasterView()
         {
             InitializeComponent();
+            this.Paint += frmEmployeeMasterView_Paint;
         }
 
+       
         #endregion
 
         #region [Page Event]
+
+        void frmEmployeeMasterView_Paint(object sender, PaintEventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
+        }
 
         private void frmCompanyView_Activated(object sender, EventArgs e)
         {

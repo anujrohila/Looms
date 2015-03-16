@@ -27,17 +27,24 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmYarnQualityMaster()
         {
             InitializeComponent();
-            this.Load += frmYarnQualityMaster_Load;
+            btnReport.Visible = false;
+            this.Paint += frmYarnQualityMaster_Paint;
         }
+
+        
 
         #endregion
 
         #region Page Event
 
-        void frmYarnQualityMaster_Load(object sender, EventArgs e)
+      
+
+        void frmYarnQualityMaster_Paint(object sender, PaintEventArgs e)
         {
+            CommanClass.ShowProcessBar();
             SetFlag();
             txtYarnQualityName.Focus();
+            CommanClass.HideProcessBar();
         }
 
         #endregion
