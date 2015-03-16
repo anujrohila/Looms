@@ -78,7 +78,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void BindGridData()
         {
-            gridViewCompany.DataSource = EmployeeBusinessLogic.GetAllEmployeeDetails();
+            gridViewCompany.DataSource = UserContext.UserContexttblEmployeeDTO;
             InnerGrid.BestFitColumns();
         }
 
