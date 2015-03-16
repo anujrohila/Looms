@@ -41,6 +41,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmMachineMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblMachineMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -66,7 +67,7 @@ namespace LoomsManagement.Windows.Forms.Master
         /// </summary>
         private void BindGridData()
         {
-            gridMachineMaster.DataSource = MachineMasterBusinessLogic.GetAllMachineData();
+            gridMachineMaster.DataSource = UserContext.UserContexttblMachineMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

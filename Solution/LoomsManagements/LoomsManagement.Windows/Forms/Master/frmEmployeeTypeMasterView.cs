@@ -38,6 +38,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmEmployeeTypeMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLEmployeeTypeMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
 
@@ -61,7 +62,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void BindGridData()
         {
-            gridViewEmployeeType.DataSource = EmployeetypeBusinessLogic.GetAllEmployeeTypeDetails();
+            gridViewEmployeeType.DataSource = UserContext.UserContexttblEmployeeTypeMSTDTO;
             InnerGrid.BestFitColumns();
         }
         #endregion

@@ -38,6 +38,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmYarnQualityMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblYarnQualityMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -60,7 +61,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void BindGridData()
         {
-            gridViewYarnQualityMaster.DataSource = YarnQualityMasterBusinessLogic.GetAllYarnQualityDetails();
+            gridViewYarnQualityMaster.DataSource = UserContext.UserContexttblYarnQualityMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

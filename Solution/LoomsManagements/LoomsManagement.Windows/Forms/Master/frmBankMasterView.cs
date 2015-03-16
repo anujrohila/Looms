@@ -40,6 +40,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmBankMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblBankMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -65,7 +66,7 @@ namespace LoomsManagement.Windows.Forms.Master
         /// </summary>
         private void BindGridData()
         {
-            gridBankMaster.DataSource = BankMasterBusinessLogic.GetAllBankMasterData();
+            gridBankMaster.DataSource = UserContext.UserContexttblBankMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

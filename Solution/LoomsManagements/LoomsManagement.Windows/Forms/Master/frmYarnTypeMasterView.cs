@@ -36,6 +36,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmYarnTypeMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblYarnTypeMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -61,7 +62,7 @@ namespace LoomsManagement.Windows.Forms.Master
         /// </summary>
         private void BindGridData()
         {
-            gridYarnType.DataSource = YarnTypeBusinessLogic.GetAllYarnTypeDetails();
+            gridYarnType.DataSource = UserContext.UserContexttblYarnTypeMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

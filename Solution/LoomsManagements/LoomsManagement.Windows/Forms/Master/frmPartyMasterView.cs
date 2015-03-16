@@ -36,8 +36,9 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmPartyMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblPartysMSTDTO();
             BindGridData();
-                CommanClass.HideProcessBar();
+            CommanClass.HideProcessBar();
         }
 
         private void InnerGrid_KeyDown(object sender, KeyEventArgs e)
@@ -55,7 +56,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void BindGridData()
         {
-            gridViewCompany.DataSource = PartyMasterBusinessLogic.GetAllPartyMasterDetails();
+            gridViewCompany.DataSource = UserContext.UserContexttblPartysMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

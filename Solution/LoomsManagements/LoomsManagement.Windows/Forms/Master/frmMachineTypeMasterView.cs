@@ -42,6 +42,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmMachineTypeMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblMachineTypeMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -68,7 +69,7 @@ namespace LoomsManagement.Windows.Forms.Master
         /// </summary>
         private void BindGridData()
         {
-            gridMachineType.DataSource = MachineTypeBusinessLogic.GetAllMachineTypeDate();
+            gridMachineType.DataSource = UserContext.UserContexttblMachineTypeMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

@@ -40,6 +40,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void frmPenaltyMaster_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblPenaltyMSTDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -65,7 +66,7 @@ namespace LoomsManagement.Windows.Forms.Master
         /// </summary>
         private void BindGridData()
         {
-            gridViewPenaltyMaster.DataSource = PenaltyMasterBusinessLogic.GetAllPenaltyMasterData();
+            gridViewPenaltyMaster.DataSource = UserContext.UserContexttblPenaltyMSTDTO;
             InnerGrid.BestFitColumns();
         }
 

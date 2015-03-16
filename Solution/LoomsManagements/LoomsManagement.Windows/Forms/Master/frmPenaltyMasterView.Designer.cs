@@ -183,6 +183,7 @@
             this.ClientSize = new System.Drawing.Size(796, 381);
             this.Controls.Add(this.gridViewPenaltyMaster);
             this.Name = "frmPenaltyMasterView";
+            this.Tag = "Panalty Master View";
             this.Text = "Penalty Master Detail";
             this.Controls.SetChildIndex(this.gridViewPenaltyMaster, 0);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPenaltyMaster)).EndInit();
