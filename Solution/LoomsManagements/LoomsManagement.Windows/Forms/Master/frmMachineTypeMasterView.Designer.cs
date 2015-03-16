@@ -64,10 +64,11 @@
             // gridMachineType
             // 
             this.gridMachineType.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridMachineType.Location = new System.Drawing.Point(0, 44);
+            this.gridMachineType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridMachineType.Location = new System.Drawing.Point(0, 43);
             this.gridMachineType.MainView = this.InnerGrid;
             this.gridMachineType.Name = "gridMachineType";
-            this.gridMachineType.Size = new System.Drawing.Size(796, 307);
+            this.gridMachineType.Size = new System.Drawing.Size(796, 338);
             this.gridMachineType.TabIndex = 65;
             this.gridMachineType.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
