@@ -69,7 +69,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblBranchMSTDTO.CreationDateTime = DateTime.Now;
             }
 
-            int ReturnValue = BranchMasterBusinessLogic.SaveBranchMasterData(tblBranchMSTDTO);
+            int ReturnValue = BankBusinessLogic.SaveBranch(tblBranchMSTDTO);
             CommanClass.HideProcessBar();
 
             if (ReturnValue == 1)
@@ -96,7 +96,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (BranchMasterBusinessLogic.DeleteBranchMasterData(id) != 0)
+                if (BankBusinessLogic.DeleteBranch(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -150,7 +150,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void LoadBankName()
         {
-            cmbBankName.Properties.DataSource = BranchMasterBusinessLogic.GetAllBankMasterData();
+            cmbBankName.Properties.DataSource = BankBusinessLogic.GetAllBankDetails();
             cmbBankName.Properties.ValueMember = "BankID";
             cmbBankName.Properties.DisplayMember = "BankName";
         }
@@ -159,7 +159,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var branchData = BranchMasterBusinessLogic.GetBranchData(id);
+                var branchData = BankBusinessLogic.GetBranchDetails(id);
                 cmbBankName.EditValue = branchData.BankID;
                 txtBranchName.Text = branchData.BranchName;
                 txtAddress.Text = branchData.Address;
@@ -179,7 +179,7 @@ namespace LoomsManagement.Windows.Forms.Master
             ErrorHandlor.SetErrorCount();
             ErrorHandlor.SetLookUPErrorWithCount(errorBankName, cmbBankName, "Select Bank Name");
             ErrorHandlor.SetTextboxErrorWithCount(errorBranchName, txtBranchName, "Enter Branch Name");
-           ErrorHandlor.SetMemoEditErrorWithCount(errorAddress, txtAddress, "Enter Branch Address");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorAddress, txtAddress, "Enter Branch Address");
             
             if (ErrorHandlor.count == 0)
                 return true;
