@@ -63,6 +63,7 @@
     <Compile Include="DTO\tblPartysMSTDTO.cs" />
     <Compile Include="DTO\tblPenaltyMSTDTO.cs" />
     <Compile Include="DTO\tblProductQualityMSTDTO.cs" />
+    <Compile Include="DTO\tblProfeListMstDTO.cs" />
     <Compile Include="DTO\tblSalaryMSTDTO.cs" />
     <Compile Include="DTO\tblTFOProcessDTO.cs" />
     <Compile Include="DTO\tblWindingWorkDTO.cs" />
