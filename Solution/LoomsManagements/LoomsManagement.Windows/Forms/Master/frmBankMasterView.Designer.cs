@@ -63,10 +63,11 @@
             // gridBankMaster
             // 
             this.gridBankMaster.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridBankMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridBankMaster.Location = new System.Drawing.Point(0, 43);
             this.gridBankMaster.MainView = this.InnerGrid;
             this.gridBankMaster.Name = "gridBankMaster";
-            this.gridBankMaster.Size = new System.Drawing.Size(796, 305);
+            this.gridBankMaster.Size = new System.Drawing.Size(796, 338);
             this.gridBankMaster.TabIndex = 65;
             this.gridBankMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
