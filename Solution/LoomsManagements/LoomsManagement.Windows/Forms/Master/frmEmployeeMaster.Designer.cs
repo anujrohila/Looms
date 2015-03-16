@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtResidentialAddress = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtMiddleName = new DevExpress.XtraEditors.TextEdit();
@@ -67,6 +68,16 @@
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtBankName = new DevExpress.XtraEditors.TextEdit();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.rbCash = new System.Windows.Forms.RadioButton();
             this.rbBank = new System.Windows.Forms.RadioButton();
@@ -95,7 +106,6 @@
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.txtAccountNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.cmdBankName = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.txtPerHourSalary = new DevExpress.XtraEditors.TextEdit();
@@ -110,6 +120,30 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.errorFirstName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMiddleName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorLastName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorDateofBirth = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMobileno = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorResidentialAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPermanentAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorEmailId = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorIdProfType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorIdProfeNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorCompanyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorEmployeeType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorEmployeeCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorJobTitle = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorDateOfJoining = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorEmployeeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorSalary = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPerDayWorkingHour = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPerHourSalary = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorAccountNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorRTGSNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorIFSCCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorOpeningBalance = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -128,6 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dpDOB.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -143,53 +178,103 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtIFSCCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRTGSNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccountNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdBankName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPerHourSalary.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPerDayWorkingHours.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalary.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMiddleName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorLastName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDateofBirth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMobileno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorResidentialAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPermanentAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmailId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIdProfType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIdProfeNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCompanyName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorJobTitle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDateOfJoining)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorSalary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPerDayWorkingHour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPerHourSalary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBankName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorAccountNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorRTGSNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIFSCCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorOpeningBalance)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.Location = new System.Drawing.Point(1078, 0);
+            this.panelControl1.Location = new System.Drawing.Point(1088, 0);
             this.panelControl1.Size = new System.Drawing.Size(127, 478);
             // 
             // btnReport
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
-            this.btnReport.TabIndex = 33;
+            this.btnReport.TabIndex = 36;
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
-            this.btnExit.TabIndex = 32;
+            this.btnExit.TabIndex = 35;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.TabIndex = 30;
+            this.btnSave.TabIndex = 33;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
-            this.btndelete.TabIndex = 31;
+            this.btndelete.TabIndex = 34;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.groupControl1);
             this.panel1.Controls.Add(this.rbEvening);
-            this.panel1.Size = new System.Drawing.Size(1078, 478);
+            this.panel1.Size = new System.Drawing.Size(1088, 478);
             // 
             // txtResidentialAddress
             // 
+            this.errorLastName.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtResidentialAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtResidentialAddress.Location = new System.Drawing.Point(505, 32);
             this.txtResidentialAddress.Name = "txtResidentialAddress";
             this.txtResidentialAddress.Size = new System.Drawing.Size(205, 77);
-            this.txtResidentialAddress.TabIndex = 6;
+            this.txtResidentialAddress.TabIndex = 7;
             this.txtResidentialAddress.Enter += new System.EventHandler(this.EnterEvent);
             this.txtResidentialAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtResidentialAddress.Leave += new System.EventHandler(this.LeaveEvent);
@@ -206,6 +291,30 @@
             // txtMiddleName
             // 
             this.txtMiddleName.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtMiddleName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtMiddleName.Location = new System.Drawing.Point(129, 62);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,6 +348,30 @@
             // txtFirstName
             // 
             this.txtFirstName.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtFirstName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtFirstName.Location = new System.Drawing.Point(129, 31);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,6 +405,30 @@
             // txtLastName
             // 
             this.txtLastName.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtLastName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtLastName.Location = new System.Drawing.Point(129, 94);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -325,7 +482,7 @@
             this.rbEvening.Controls.Add(this.labelControl12);
             this.rbEvening.Location = new System.Drawing.Point(9, 8);
             this.rbEvening.Name = "rbEvening";
-            this.rbEvening.Size = new System.Drawing.Size(1059, 223);
+            this.rbEvening.Size = new System.Drawing.Size(1073, 223);
             this.rbEvening.TabIndex = 144;
             this.rbEvening.Text = "Empoyee Pesonal Infomation";
             // 
@@ -334,9 +491,12 @@
             this.btnSelectPhoto.Location = new System.Drawing.Point(842, 123);
             this.btnSelectPhoto.Name = "btnSelectPhoto";
             this.btnSelectPhoto.Size = new System.Drawing.Size(87, 23);
-            this.btnSelectPhoto.TabIndex = 12;
+            this.btnSelectPhoto.TabIndex = 13;
             this.btnSelectPhoto.Text = "Select Photo";
             this.btnSelectPhoto.UseVisualStyleBackColor = true;
+            this.btnSelectPhoto.Enter += new System.EventHandler(this.EnterEvent);
+            this.btnSelectPhoto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.btnSelectPhoto.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // label15
             // 
@@ -389,6 +549,30 @@
             // txtProfeNo
             // 
             this.txtProfeNo.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtProfeNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtProfeNo.Location = new System.Drawing.Point(842, 92);
             this.txtProfeNo.Name = "txtProfeNo";
             this.txtProfeNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -397,13 +581,37 @@
             this.txtProfeNo.Properties.Mask.EditMask = "n";
             this.txtProfeNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtProfeNo.Size = new System.Drawing.Size(191, 26);
-            this.txtProfeNo.TabIndex = 11;
+            this.txtProfeNo.TabIndex = 12;
             this.txtProfeNo.Enter += new System.EventHandler(this.EnterEvent);
             this.txtProfeNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtProfeNo.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // cmbProfeType
             // 
+            this.errorPerHourSalary.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.cmbProfeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbProfeType.Location = new System.Drawing.Point(842, 60);
             this.cmbProfeType.Name = "cmbProfeType";
             this.cmbProfeType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -426,7 +634,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProfeID", "ProfeID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default)});
             this.cmbProfeType.Properties.NullText = "";
             this.cmbProfeType.Size = new System.Drawing.Size(191, 26);
-            this.cmbProfeType.TabIndex = 10;
+            this.cmbProfeType.TabIndex = 11;
             this.cmbProfeType.ToolTip = "Select Profe Type";
             this.cmbProfeType.Enter += new System.EventHandler(this.EnterEvent);
             this.cmbProfeType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
@@ -435,6 +643,30 @@
             // txtEmail
             // 
             this.txtEmail.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtEmail.Location = new System.Drawing.Point(842, 28);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -442,7 +674,7 @@
             this.txtEmail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtEmail.Properties.Mask.EditMask = "n";
             this.txtEmail.Size = new System.Drawing.Size(191, 26);
-            this.txtEmail.TabIndex = 9;
+            this.txtEmail.TabIndex = 10;
             this.txtEmail.Enter += new System.EventHandler(this.EnterEvent);
             this.txtEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtEmail.Leave += new System.EventHandler(this.LeaveEvent);
@@ -461,10 +693,34 @@
             // 
             // txtPermanentAddress
             // 
+            this.errorLastName.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtPermanentAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtPermanentAddress.Location = new System.Drawing.Point(505, 137);
             this.txtPermanentAddress.Name = "txtPermanentAddress";
             this.txtPermanentAddress.Size = new System.Drawing.Size(205, 77);
-            this.txtPermanentAddress.TabIndex = 8;
+            this.txtPermanentAddress.TabIndex = 9;
             this.txtPermanentAddress.Enter += new System.EventHandler(this.EnterEvent);
             this.txtPermanentAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtPermanentAddress.Leave += new System.EventHandler(this.LeaveEvent);
@@ -487,7 +743,7 @@
             this.rbFemale.Location = new System.Drawing.Point(200, 129);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(59, 17);
-            this.rbFemale.TabIndex = 156;
+            this.rbFemale.TabIndex = 4;
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
             this.rbFemale.Enter += new System.EventHandler(this.EnterEvent);
@@ -497,15 +753,39 @@
             // txtMobileNo
             // 
             this.txtMobileNo.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtMobileNo.Location = new System.Drawing.Point(129, 182);
             this.txtMobileNo.Name = "txtMobileNo";
             this.txtMobileNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobileNo.Properties.Appearance.Options.UseFont = true;
             this.txtMobileNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtMobileNo.Properties.Mask.EditMask = "n";
+            this.txtMobileNo.Properties.Mask.EditMask = "d";
             this.txtMobileNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMobileNo.Size = new System.Drawing.Size(205, 26);
-            this.txtMobileNo.TabIndex = 5;
+            this.txtMobileNo.TabIndex = 6;
             this.txtMobileNo.Enter += new System.EventHandler(this.EnterEvent);
             this.txtMobileNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtMobileNo.Leave += new System.EventHandler(this.LeaveEvent);
@@ -513,6 +793,30 @@
             // dpDOB
             // 
             this.dpDOB.EditValue = null;
+            this.errorLastName.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.dpDOB, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.dpDOB.Location = new System.Drawing.Point(129, 150);
             this.dpDOB.Name = "dpDOB";
             this.dpDOB.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
@@ -523,7 +827,7 @@
             this.dpDOB.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dpDOB.Size = new System.Drawing.Size(205, 26);
-            this.dpDOB.TabIndex = 4;
+            this.dpDOB.TabIndex = 5;
             this.dpDOB.ToolTip = "Select Date.";
             this.dpDOB.Enter += new System.EventHandler(this.EnterEvent);
             this.dpDOB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
@@ -595,7 +899,7 @@
             this.chkAddress.Location = new System.Drawing.Point(426, 114);
             this.chkAddress.Name = "chkAddress";
             this.chkAddress.Size = new System.Drawing.Size(212, 17);
-            this.chkAddress.TabIndex = 7;
+            this.chkAddress.TabIndex = 8;
             this.chkAddress.Text = "Permanet Address same as Residential ";
             this.chkAddress.UseVisualStyleBackColor = true;
             this.chkAddress.CheckedChanged += new System.EventHandler(this.chkAddress_CheckedChanged);
@@ -683,6 +987,16 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.txtBankName);
+            this.groupControl1.Controls.Add(this.label25);
+            this.groupControl1.Controls.Add(this.label24);
+            this.groupControl1.Controls.Add(this.label23);
+            this.groupControl1.Controls.Add(this.label22);
+            this.groupControl1.Controls.Add(this.label21);
+            this.groupControl1.Controls.Add(this.label20);
+            this.groupControl1.Controls.Add(this.label19);
+            this.groupControl1.Controls.Add(this.label18);
+            this.groupControl1.Controls.Add(this.label17);
             this.groupControl1.Controls.Add(this.panelControl3);
             this.groupControl1.Controls.Add(this.panelControl2);
             this.groupControl1.Controls.Add(this.dpDOJ);
@@ -707,7 +1021,6 @@
             this.groupControl1.Controls.Add(this.labelControl26);
             this.groupControl1.Controls.Add(this.txtAccountNo);
             this.groupControl1.Controls.Add(this.labelControl25);
-            this.groupControl1.Controls.Add(this.cmdBankName);
             this.groupControl1.Controls.Add(this.labelControl23);
             this.groupControl1.Controls.Add(this.labelControl22);
             this.groupControl1.Controls.Add(this.txtPerHourSalary);
@@ -724,16 +1037,163 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(10, 237);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1059, 229);
+            this.groupControl1.Size = new System.Drawing.Size(1072, 229);
             this.groupControl1.TabIndex = 145;
             this.groupControl1.Text = "Office Infomation";
+            // 
+            // txtBankName
+            // 
+            this.txtBankName.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtBankName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtBankName.Location = new System.Drawing.Point(851, 67);
+            this.txtBankName.Name = "txtBankName";
+            this.txtBankName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBankName.Properties.Appearance.Options.UseFont = true;
+            this.txtBankName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtBankName.Properties.Mask.EditMask = "n";
+            this.txtBankName.Size = new System.Drawing.Size(191, 26);
+            this.txtBankName.TabIndex = 28;
+            this.txtBankName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtBankName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtBankName.Leave += new System.EventHandler(this.LeaveEvent);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(836, 196);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(13, 17);
+            this.label25.TabIndex = 208;
+            this.label25.Text = "*";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(835, 167);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(13, 17);
+            this.label24.TabIndex = 207;
+            this.label24.Text = "*";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(835, 133);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(13, 17);
+            this.label23.TabIndex = 206;
+            this.label23.Text = "*";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(835, 102);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(13, 17);
+            this.label22.TabIndex = 205;
+            this.label22.Text = "*";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(836, 71);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(13, 17);
+            this.label21.TabIndex = 204;
+            this.label21.Text = "*";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(513, 155);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(13, 17);
+            this.label20.TabIndex = 203;
+            this.label20.Text = "*";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(513, 125);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(13, 17);
+            this.label19.TabIndex = 202;
+            this.label19.Text = "*";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(513, 93);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(13, 17);
+            this.label18.TabIndex = 201;
+            this.label18.Text = "*";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(514, 61);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(13, 17);
+            this.label17.TabIndex = 193;
+            this.label17.Text = "*";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panelControl3
             // 
             this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl3.Controls.Add(this.rbCash);
             this.panelControl3.Controls.Add(this.rbBank);
-            this.panelControl3.Location = new System.Drawing.Point(841, 32);
+            this.panelControl3.Location = new System.Drawing.Point(850, 32);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(191, 32);
             this.panelControl3.TabIndex = 200;
@@ -745,7 +1205,7 @@
             this.rbCash.Location = new System.Drawing.Point(18, 8);
             this.rbCash.Name = "rbCash";
             this.rbCash.Size = new System.Drawing.Size(49, 17);
-            this.rbCash.TabIndex = 18;
+            this.rbCash.TabIndex = 26;
             this.rbCash.TabStop = true;
             this.rbCash.Text = "Cash";
             this.rbCash.UseVisualStyleBackColor = true;
@@ -760,7 +1220,7 @@
             this.rbBank.Location = new System.Drawing.Point(97, 8);
             this.rbBank.Name = "rbBank";
             this.rbBank.Size = new System.Drawing.Size(50, 17);
-            this.rbBank.TabIndex = 166;
+            this.rbBank.TabIndex = 27;
             this.rbBank.Text = "Bank";
             this.rbBank.UseVisualStyleBackColor = true;
             this.rbBank.CheckedChanged += new System.EventHandler(this.Paymenttype_CheckedChanged);
@@ -785,10 +1245,13 @@
             this.rbMorning.Location = new System.Drawing.Point(17, 9);
             this.rbMorning.Name = "rbMorning";
             this.rbMorning.Size = new System.Drawing.Size(63, 17);
-            this.rbMorning.TabIndex = 197;
+            this.rbMorning.TabIndex = 19;
             this.rbMorning.TabStop = true;
             this.rbMorning.Text = "Morning";
             this.rbMorning.UseVisualStyleBackColor = true;
+            this.rbMorning.Enter += new System.EventHandler(this.EnterEvent);
+            this.rbMorning.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.rbMorning.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // radioButton1
             // 
@@ -796,13 +1259,40 @@
             this.radioButton1.Location = new System.Drawing.Point(101, 9);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(64, 17);
-            this.radioButton1.TabIndex = 198;
+            this.radioButton1.TabIndex = 20;
             this.radioButton1.Text = "Evening";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Enter += new System.EventHandler(this.EnterEvent);
+            this.radioButton1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.radioButton1.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // dpDOJ
             // 
             this.dpDOJ.EditValue = null;
+            this.errorLastName.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.dpDOJ, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.dpDOJ.Location = new System.Drawing.Point(133, 152);
             this.dpDOJ.Name = "dpDOJ";
             this.dpDOJ.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
@@ -813,7 +1303,7 @@
             this.dpDOJ.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dpDOJ.Size = new System.Drawing.Size(201, 26);
-            this.dpDOJ.TabIndex = 17;
+            this.dpDOJ.TabIndex = 18;
             this.dpDOJ.ToolTip = "Select Date.";
             this.dpDOJ.Enter += new System.EventHandler(this.EnterEvent);
             this.dpDOJ.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
@@ -822,6 +1312,30 @@
             // txtJobTitle
             // 
             this.txtJobTitle.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtJobTitle, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtJobTitle.Location = new System.Drawing.Point(133, 121);
             this.txtJobTitle.Name = "txtJobTitle";
             this.txtJobTitle.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -829,13 +1343,37 @@
             this.txtJobTitle.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtJobTitle.Properties.Mask.EditMask = "n2";
             this.txtJobTitle.Size = new System.Drawing.Size(201, 26);
-            this.txtJobTitle.TabIndex = 16;
+            this.txtJobTitle.TabIndex = 17;
             this.txtJobTitle.Enter += new System.EventHandler(this.EnterEvent);
             this.txtJobTitle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtJobTitle.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // cmbEmployeeType
             // 
+            this.errorPerHourSalary.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.cmbEmployeeType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbEmployeeType.Location = new System.Drawing.Point(133, 60);
             this.cmbEmployeeType.Name = "cmbEmployeeType";
             this.cmbEmployeeType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -859,7 +1397,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", 30, "Description")});
             this.cmbEmployeeType.Properties.NullText = "";
             this.cmbEmployeeType.Size = new System.Drawing.Size(201, 26);
-            this.cmbEmployeeType.TabIndex = 14;
+            this.cmbEmployeeType.TabIndex = 15;
             this.cmbEmployeeType.ToolTip = "Select Employee Type";
             this.cmbEmployeeType.Enter += new System.EventHandler(this.EnterEvent);
             this.cmbEmployeeType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
@@ -867,6 +1405,30 @@
             // 
             // cmbCompanyCode
             // 
+            this.errorPerHourSalary.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbCompanyCode.Location = new System.Drawing.Point(133, 28);
             this.cmbCompanyCode.Name = "cmbCompanyCode";
             this.cmbCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -890,7 +1452,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ComapnyCode", "ComapnyCode")});
             this.cmbCompanyCode.Properties.NullText = "";
             this.cmbCompanyCode.Size = new System.Drawing.Size(201, 26);
-            this.cmbCompanyCode.TabIndex = 13;
+            this.cmbCompanyCode.TabIndex = 14;
             this.cmbCompanyCode.ToolTip = "Select Company Name";
             this.cmbCompanyCode.Enter += new System.EventHandler(this.EnterEvent);
             this.cmbCompanyCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
@@ -899,6 +1461,30 @@
             // txtEmployeeCode
             // 
             this.txtEmployeeCode.EditValue = "";
+            this.errorAccountNo.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtEmployeeCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtEmployeeCode.Location = new System.Drawing.Point(133, 90);
             this.txtEmployeeCode.Name = "txtEmployeeCode";
             this.txtEmployeeCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -906,7 +1492,7 @@
             this.txtEmployeeCode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtEmployeeCode.Properties.Mask.EditMask = "n2";
             this.txtEmployeeCode.Size = new System.Drawing.Size(201, 26);
-            this.txtEmployeeCode.TabIndex = 15;
+            this.txtEmployeeCode.TabIndex = 16;
             this.txtEmployeeCode.Enter += new System.EventHandler(this.EnterEvent);
             this.txtEmployeeCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtEmployeeCode.Leave += new System.EventHandler(this.LeaveEvent);
@@ -974,10 +1560,10 @@
             // chkIsSponsorer
             // 
             this.chkIsSponsorer.AutoSize = true;
-            this.chkIsSponsorer.Location = new System.Drawing.Point(517, 34);
+            this.chkIsSponsorer.Location = new System.Drawing.Point(529, 34);
             this.chkIsSponsorer.Name = "chkIsSponsorer";
             this.chkIsSponsorer.Size = new System.Drawing.Size(15, 14);
-            this.chkIsSponsorer.TabIndex = 19;
+            this.chkIsSponsorer.TabIndex = 21;
             this.chkIsSponsorer.UseVisualStyleBackColor = true;
             this.chkIsSponsorer.CheckStateChanged += new System.EventHandler(this.chkIsSponsorer_CheckedChanged);
             this.chkIsSponsorer.Enter += new System.EventHandler(this.EnterEvent);
@@ -986,7 +1572,31 @@
             // 
             // cmdEmployeeName
             // 
-            this.cmdEmployeeName.Location = new System.Drawing.Point(517, 58);
+            this.errorPerHourSalary.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAccountNo.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.cmdEmployeeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.cmdEmployeeName.Location = new System.Drawing.Point(529, 58);
             this.cmdEmployeeName.Name = "cmdEmployeeName";
             this.cmdEmployeeName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmdEmployeeName.Properties.Appearance.Options.UseFont = true;
@@ -1010,7 +1620,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MobileNo", "MobileNo")});
             this.cmdEmployeeName.Properties.NullText = "";
             this.cmdEmployeeName.Size = new System.Drawing.Size(178, 26);
-            this.cmdEmployeeName.TabIndex = 20;
+            this.cmdEmployeeName.TabIndex = 22;
             this.cmdEmployeeName.Enter += new System.EventHandler(this.EnterEvent);
             this.cmdEmployeeName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.cmdEmployeeName.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1036,14 +1646,38 @@
             // txtOpeningBalance
             // 
             this.txtOpeningBalance.EditValue = "";
-            this.txtOpeningBalance.Location = new System.Drawing.Point(842, 193);
+            this.errorAccountNo.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtOpeningBalance, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtOpeningBalance.Location = new System.Drawing.Point(851, 193);
             this.txtOpeningBalance.Name = "txtOpeningBalance";
             this.txtOpeningBalance.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOpeningBalance.Properties.Appearance.Options.UseFont = true;
             this.txtOpeningBalance.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtOpeningBalance.Properties.Mask.EditMask = "n2";
             this.txtOpeningBalance.Size = new System.Drawing.Size(191, 26);
-            this.txtOpeningBalance.TabIndex = 29;
+            this.txtOpeningBalance.TabIndex = 32;
             this.txtOpeningBalance.Enter += new System.EventHandler(this.EnterEvent);
             this.txtOpeningBalance.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtOpeningBalance.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1060,14 +1694,38 @@
             // txtIFSCCode
             // 
             this.txtIFSCCode.EditValue = "";
-            this.txtIFSCCode.Location = new System.Drawing.Point(842, 162);
+            this.errorAccountNo.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtIFSCCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtIFSCCode.Location = new System.Drawing.Point(851, 162);
             this.txtIFSCCode.Name = "txtIFSCCode";
             this.txtIFSCCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIFSCCode.Properties.Appearance.Options.UseFont = true;
             this.txtIFSCCode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtIFSCCode.Properties.Mask.EditMask = "n2";
             this.txtIFSCCode.Size = new System.Drawing.Size(191, 26);
-            this.txtIFSCCode.TabIndex = 28;
+            this.txtIFSCCode.TabIndex = 31;
             this.txtIFSCCode.Enter += new System.EventHandler(this.EnterEvent);
             this.txtIFSCCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtIFSCCode.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1075,7 +1733,7 @@
             // labelControl27
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl27.Location = new System.Drawing.Point(731, 164);
+            this.labelControl27.Location = new System.Drawing.Point(736, 164);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(59, 17);
             this.labelControl27.TabIndex = 183;
@@ -1084,14 +1742,38 @@
             // txtRTGSNo
             // 
             this.txtRTGSNo.EditValue = "";
-            this.txtRTGSNo.Location = new System.Drawing.Point(842, 130);
+            this.errorAccountNo.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtRTGSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtRTGSNo.Location = new System.Drawing.Point(851, 130);
             this.txtRTGSNo.Name = "txtRTGSNo";
             this.txtRTGSNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRTGSNo.Properties.Appearance.Options.UseFont = true;
             this.txtRTGSNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtRTGSNo.Properties.Mask.EditMask = "n2";
             this.txtRTGSNo.Size = new System.Drawing.Size(191, 26);
-            this.txtRTGSNo.TabIndex = 27;
+            this.txtRTGSNo.TabIndex = 30;
             this.txtRTGSNo.Enter += new System.EventHandler(this.EnterEvent);
             this.txtRTGSNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtRTGSNo.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1099,7 +1781,7 @@
             // labelControl26
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl26.Location = new System.Drawing.Point(731, 132);
+            this.labelControl26.Location = new System.Drawing.Point(736, 132);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(52, 17);
             this.labelControl26.TabIndex = 181;
@@ -1108,14 +1790,38 @@
             // txtAccountNo
             // 
             this.txtAccountNo.EditValue = "";
-            this.txtAccountNo.Location = new System.Drawing.Point(842, 98);
+            this.errorAccountNo.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtAccountNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtAccountNo.Location = new System.Drawing.Point(851, 98);
             this.txtAccountNo.Name = "txtAccountNo";
             this.txtAccountNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccountNo.Properties.Appearance.Options.UseFont = true;
             this.txtAccountNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtAccountNo.Properties.Mask.EditMask = "n2";
             this.txtAccountNo.Size = new System.Drawing.Size(191, 26);
-            this.txtAccountNo.TabIndex = 26;
+            this.txtAccountNo.TabIndex = 29;
             this.txtAccountNo.Enter += new System.EventHandler(this.EnterEvent);
             this.txtAccountNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtAccountNo.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1123,52 +1829,25 @@
             // labelControl25
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl25.Location = new System.Drawing.Point(731, 100);
+            this.labelControl25.Location = new System.Drawing.Point(736, 100);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(70, 17);
             this.labelControl25.TabIndex = 179;
             this.labelControl25.Text = "AccountNo";
             // 
-            // cmdBankName
-            // 
-            this.cmdBankName.Location = new System.Drawing.Point(842, 66);
-            this.cmdBankName.Name = "cmdBankName";
-            this.cmdBankName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmdBankName.Properties.Appearance.Options.UseFont = true;
-            this.cmdBankName.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmdBankName.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmdBankName.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmdBankName.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmdBankName.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmdBankName.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmdBankName.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmdBankName.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmdBankName.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmdBankName.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmdBankName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.cmdBankName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmdBankName.Properties.NullText = "";
-            this.cmdBankName.Size = new System.Drawing.Size(191, 26);
-            this.cmdBankName.TabIndex = 25;
-            this.cmdBankName.ToolTip = "Select Bank Name.";
-            this.cmdBankName.Enter += new System.EventHandler(this.EnterEvent);
-            this.cmdBankName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.cmdBankName.Leave += new System.EventHandler(this.LeaveEvent);
-            // 
             // labelControl23
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl23.Location = new System.Drawing.Point(731, 69);
+            this.labelControl23.Location = new System.Drawing.Point(736, 69);
             this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(70, 17);
+            this.labelControl23.Size = new System.Drawing.Size(71, 17);
             this.labelControl23.TabIndex = 175;
-            this.labelControl23.Text = "Back Name";
+            this.labelControl23.Text = "Bank Name";
             // 
             // labelControl22
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl22.Location = new System.Drawing.Point(731, 37);
+            this.labelControl22.Location = new System.Drawing.Point(736, 37);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(91, 17);
             this.labelControl22.TabIndex = 173;
@@ -1177,14 +1856,38 @@
             // txtPerHourSalary
             // 
             this.txtPerHourSalary.EditValue = "";
-            this.txtPerHourSalary.Location = new System.Drawing.Point(517, 152);
+            this.errorAccountNo.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtPerHourSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtPerHourSalary.Location = new System.Drawing.Point(529, 152);
             this.txtPerHourSalary.Name = "txtPerHourSalary";
             this.txtPerHourSalary.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPerHourSalary.Properties.Appearance.Options.UseFont = true;
             this.txtPerHourSalary.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtPerHourSalary.Properties.Mask.EditMask = "n2";
             this.txtPerHourSalary.Size = new System.Drawing.Size(178, 26);
-            this.txtPerHourSalary.TabIndex = 23;
+            this.txtPerHourSalary.TabIndex = 25;
             this.txtPerHourSalary.Enter += new System.EventHandler(this.EnterEvent);
             this.txtPerHourSalary.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtPerHourSalary.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1201,14 +1904,38 @@
             // txtPerDayWorkingHours
             // 
             this.txtPerDayWorkingHours.EditValue = "";
-            this.txtPerDayWorkingHours.Location = new System.Drawing.Point(517, 121);
+            this.errorAccountNo.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtPerDayWorkingHours, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtPerDayWorkingHours.Location = new System.Drawing.Point(529, 121);
             this.txtPerDayWorkingHours.Name = "txtPerDayWorkingHours";
             this.txtPerDayWorkingHours.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPerDayWorkingHours.Properties.Appearance.Options.UseFont = true;
             this.txtPerDayWorkingHours.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtPerDayWorkingHours.Properties.Mask.EditMask = "n2";
             this.txtPerDayWorkingHours.Size = new System.Drawing.Size(178, 26);
-            this.txtPerDayWorkingHours.TabIndex = 22;
+            this.txtPerDayWorkingHours.TabIndex = 24;
             this.txtPerDayWorkingHours.Enter += new System.EventHandler(this.EnterEvent);
             this.txtPerDayWorkingHours.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtPerDayWorkingHours.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1225,14 +1952,38 @@
             // txtSalary
             // 
             this.txtSalary.EditValue = "";
-            this.txtSalary.Location = new System.Drawing.Point(517, 90);
+            this.errorAccountNo.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLastName.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRTGSNo.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorResidentialAddress.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmailId.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPermanentAddress.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfeNo.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOpeningBalance.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeType.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyName.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIFSCCode.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorJobTitle.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeCode.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorIdProfType.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateofBirth.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileno.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSalary.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorFirstName.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBankName.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerHourSalary.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMiddleName.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDateOfJoining.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmployeeName.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPerDayWorkingHour.SetIconAlignment(this.txtSalary, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtSalary.Location = new System.Drawing.Point(529, 90);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalary.Properties.Appearance.Options.UseFont = true;
             this.txtSalary.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtSalary.Properties.Mask.EditMask = "n2";
             this.txtSalary.Size = new System.Drawing.Size(178, 26);
-            this.txtSalary.TabIndex = 21;
+            this.txtSalary.TabIndex = 23;
             this.txtSalary.Enter += new System.EventHandler(this.EnterEvent);
             this.txtSalary.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtSalary.Leave += new System.EventHandler(this.LeaveEvent);
@@ -1300,10 +2051,106 @@
             this.labelControl1.TabIndex = 155;
             this.labelControl1.Text = "Job Title";
             // 
+            // errorFirstName
+            // 
+            this.errorFirstName.ContainerControl = this;
+            // 
+            // errorMiddleName
+            // 
+            this.errorMiddleName.ContainerControl = this;
+            // 
+            // errorLastName
+            // 
+            this.errorLastName.ContainerControl = this;
+            // 
+            // errorDateofBirth
+            // 
+            this.errorDateofBirth.ContainerControl = this;
+            // 
+            // errorMobileno
+            // 
+            this.errorMobileno.ContainerControl = this;
+            // 
+            // errorResidentialAddress
+            // 
+            this.errorResidentialAddress.ContainerControl = this;
+            // 
+            // errorPermanentAddress
+            // 
+            this.errorPermanentAddress.ContainerControl = this;
+            // 
+            // errorEmailId
+            // 
+            this.errorEmailId.ContainerControl = this;
+            // 
+            // errorIdProfType
+            // 
+            this.errorIdProfType.ContainerControl = this;
+            // 
+            // errorIdProfeNo
+            // 
+            this.errorIdProfeNo.ContainerControl = this;
+            // 
+            // errorCompanyName
+            // 
+            this.errorCompanyName.ContainerControl = this;
+            // 
+            // errorEmployeeType
+            // 
+            this.errorEmployeeType.ContainerControl = this;
+            // 
+            // errorEmployeeCode
+            // 
+            this.errorEmployeeCode.ContainerControl = this;
+            // 
+            // errorJobTitle
+            // 
+            this.errorJobTitle.ContainerControl = this;
+            // 
+            // errorDateOfJoining
+            // 
+            this.errorDateOfJoining.ContainerControl = this;
+            // 
+            // errorEmployeeName
+            // 
+            this.errorEmployeeName.ContainerControl = this;
+            // 
+            // errorSalary
+            // 
+            this.errorSalary.ContainerControl = this;
+            // 
+            // errorPerDayWorkingHour
+            // 
+            this.errorPerDayWorkingHour.ContainerControl = this;
+            // 
+            // errorPerHourSalary
+            // 
+            this.errorPerHourSalary.ContainerControl = this;
+            // 
+            // errorBankName
+            // 
+            this.errorBankName.ContainerControl = this;
+            // 
+            // errorAccountNo
+            // 
+            this.errorAccountNo.ContainerControl = this;
+            // 
+            // errorRTGSNo
+            // 
+            this.errorRTGSNo.ContainerControl = this;
+            // 
+            // errorIFSCCode
+            // 
+            this.errorIFSCCode.ContainerControl = this;
+            // 
+            // errorOpeningBalance
+            // 
+            this.errorOpeningBalance.ContainerControl = this;
+            // 
             // frmEmployeeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1205, 478);
+            this.ClientSize = new System.Drawing.Size(1215, 478);
             this.Name = "frmEmployeeMaster";
             this.Text = "Employee Master";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmEmployeeMaster_Paint);
@@ -1327,6 +2174,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
@@ -1344,10 +2192,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtIFSCCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRTGSNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccountNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdBankName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPerHourSalary.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPerDayWorkingHours.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalary.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMiddleName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorLastName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDateofBirth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorMobileno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorResidentialAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPermanentAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmailId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIdProfType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIdProfeNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCompanyName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorJobTitle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDateOfJoining)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorEmployeeName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorSalary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPerDayWorkingHour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPerHourSalary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorBankName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorAccountNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorRTGSNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIFSCCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorOpeningBalance)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1408,7 +2279,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl26;
         private DevExpress.XtraEditors.TextEdit txtAccountNo;
         private DevExpress.XtraEditors.LabelControl labelControl25;
-        private DevExpress.XtraEditors.LookUpEdit cmdBankName;
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.XtraEditors.TextEdit txtOpeningBalance;
         private DevExpress.XtraEditors.LabelControl labelControl24;
@@ -1436,5 +2306,39 @@
         private System.Windows.Forms.RadioButton rbMorning;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl2;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorFirstName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMiddleName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorLastName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorDateofBirth;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorMobileno;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorResidentialAddress;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPermanentAddress;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEmailId;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorIdProfType;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorIdProfeNo;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorCompanyName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEmployeeType;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEmployeeCode;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorJobTitle;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorDateOfJoining;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorEmployeeName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorSalary;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPerDayWorkingHour;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPerHourSalary;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBankName;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorAccountNo;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorRTGSNo;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorIFSCCode;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorOpeningBalance;
+        private DevExpress.XtraEditors.TextEdit txtBankName;
     }
 }

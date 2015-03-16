@@ -57,7 +57,7 @@ namespace LoomsManagement.Windows.Forms.Master
             objEmployee.EmployeeCode = txtEmployeeCode.Text.Trim();
             objEmployee.JobTitle = txtJobTitle.Text.Trim();
             objEmployee.FirstName = txtFirstName.Text.Trim();
-            objEmployee.MiddleName = txtLastName.Text.Trim();
+            objEmployee.MiddleName = txtMiddleName.Text.Trim();
             objEmployee.LastName = txtLastName.Text.Trim();
             objEmployee.ResidentialAddress = txtResidentialAddress.Text.Trim();
             objEmployee.PermanentAddress = txtPermanentAddress.Text.Trim();
@@ -71,6 +71,7 @@ namespace LoomsManagement.Windows.Forms.Master
             objEmployee.IDProfe = Convert.ToString(cmbProfeType.EditValue);
             objEmployee.IDProfeNo = txtProfeNo.Text.Trim();
             //objEmployee.Photo = ;
+            objEmployee.CompanyID = Convert.ToInt32(cmbCompanyCode.EditValue);
             objEmployee.JoinDate = Convert.ToDateTime(dpDOJ.EditValue);
             if (chkIsSponsorer.Checked)
                 objEmployee.SponsorsID = Convert.ToInt32(cmdEmployeeName.EditValue);
@@ -96,7 +97,7 @@ namespace LoomsManagement.Windows.Forms.Master
             }
             else
             {
-                objEmployee.BankName = Convert.ToString(cmdBankName.EditValue);
+                objEmployee.BankName = txtBankName.Text;
                 objEmployee.BranchName = "";
                 objEmployee.AccountNo = txtAccountNo.Text;
                 objEmployee.RTGSNo = txtRTGSNo.Text;
@@ -105,7 +106,7 @@ namespace LoomsManagement.Windows.Forms.Master
             objEmployee.OpeningBalance = Convert.ToDouble(txtOpeningBalance.Text);
 
             objEmployee.IsActive = true;
-            objEmployee.IsDelete = true;
+            objEmployee.IsDelete = false;
             if (IsEdit)
             {
                 objEmployee.EmployeeID = id;
@@ -196,14 +197,14 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (rbCash.Checked)
             {
-                cmdBankName.Enabled = false;
+                txtBankName.Enabled = false;
                 txtAccountNo.Enabled = false;
                 txtIFSCCode.Enabled = false;
                 txtRTGSNo.Enabled = false;
             }
             else
             {
-                cmdBankName.Enabled = true;
+                txtBankName.Enabled = true;
                 txtAccountNo.Enabled = true;
                 txtIFSCCode.Enabled = true;
                 txtRTGSNo.Enabled = true;
@@ -258,18 +259,55 @@ namespace LoomsManagement.Windows.Forms.Master
             LoadProfeDetails();
             if (IsEdit)
             {
-                var companyData = CompnayBussinesLogic.GetCompanyDetails(id);
-                //txtCompanyName.Text = companyData.CompanyName;
-                //txtCompanyCode.Text = companyData.ComapnyCode;
-                //txtOwnerName.Text = companyData.OwnerName;
-                //txtInvestmentAmount.Text = Convert.ToString(companyData.InvestmentAmount);
-                //txtContactPerrsonName.Text = companyData.ContactPersonName;
-                //txtPANNo.Text = companyData.PANNo;
-                //txtCST.Text = companyData.CSTNo;
-                //txtECCNo.Text = companyData.ECCNo;
-                //txtSMSNo.Text = companyData.SMSNO;
-                //dpOpeningDate.EditValue = companyData.StartDate;
-                //txtaddress.Text = companyData.Address;
+                var employeeData = EmployeeBusinessLogic.GetEmployeeDetails(id);
+                txtFirstName.Text = employeeData.FirstName;
+                txtMiddleName.Text = employeeData.MiddleName;
+                txtLastName.Text = employeeData.LastName;
+                if (rbMale.Checked)
+                    employeeData.Gender = "male";
+                else
+                    employeeData.Gender = "femail";
+                dpDOB.DateTime = Convert.ToDateTime(employeeData.DOB);
+                txtMobileNo.Text = employeeData.MobileNo;
+                txtResidentialAddress.Text = employeeData.ResidentialAddress;
+                txtPermanentAddress.Text = employeeData.PermanentAddress;
+                txtEmail.Text = employeeData.EmailID;
+                cmbProfeType.EditValue = employeeData.IDProfe;
+                txtProfeNo.Text = employeeData.IDProfeNo;
+                cmbCompanyCode.EditValue = employeeData.CompanyID;
+                cmbEmployeeType.EditValue = employeeData.EmployeeTypeID;
+                txtEmployeeCode.Text = employeeData.EmployeeCode;
+                txtJobTitle.Text = employeeData.JobTitle;
+                dpDOJ.DateTime = Convert.ToDateTime(employeeData.JoinDate);
+               
+                if (rbMorning.Checked)
+                    employeeData.Shift = "m";
+                else
+                    employeeData.Shift = "e";
+
+                if (chkIsSponsorer.Checked)
+                    employeeData.SponsorsID = Convert.ToInt32(cmdEmployeeName.EditValue);
+                else
+                    employeeData.SponsorsID = 0;
+
+                cmdEmployeeName.EditValue = employeeData.EmployeeID;
+                txtSalary.Text = (employeeData.Salary).ToString();
+                txtPerDayWorkingHours.Text = (employeeData.PerDayWorkingHours).ToString() ;
+                txtPerHourSalary.Text = (employeeData.PerHourSalary).ToString();
+              
+                if (rbCash.Checked)
+                    employeeData.PaymentType = true;
+                else
+                    employeeData.PaymentType = false;
+                
+                txtBankName.Text = employeeData.BankName;
+                txtAccountNo.Text = employeeData.AccountNo;
+                txtRTGSNo.Text = txtRTGSNo.Text;
+                txtIFSCCode.Text = txtIFSCCode.Text;
+                txtOpeningBalance.Text = (employeeData.OpeningBalance).ToString();
+
+                
+
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;
             }
@@ -284,17 +322,28 @@ namespace LoomsManagement.Windows.Forms.Master
         {
 
             ErrorHandlor.SetErrorCount();
-            //ErrorHandlor.SetTextboxErrorWithCount(errorcompanyName, txtCompanyName, "Enter Company Name");
-            //ErrorHandlor.SetTextboxErrorWithCount(errorcompanyCode, txtCompanyCode, "Enter Company Code");
-            //ErrorHandlor.SetTextboxErrorWithCount(errorOwnername, txtOwnerName, "Enter Owner Name");
-            //ErrorHandlor.SetTextboxErrorWithCount(errorinvestmentamount, txtInvestmentAmount, "Enter investment Amount");
-            //ErrorHandlor.SetTextboxErrorWithCount(error_contactpersoanname, txtContactPerrsonName, "Enter Contact PersonName");
-            //ErrorHandlor.SetTextboxErrorWithCount(error_panno, txtPANNo, "Enter Pan No");
-            //ErrorHandlor.SetTextboxErrorWithCount(errorcst, txtCST, "Enter CST No");
-            //ErrorHandlor.SetTextboxErrorWithCount(errorecc, txtECCNo, "Enter ECC No");
-            //ErrorHandlor.SetTextboxErrorWithCount(errorsms, txtSMSNo, "Enter Sms No");
-            //ErrorHandlor.SetDateErrorWithCount(erroropeningdate, dpOpeningDate, "Select Date");
-            //ErrorHandlor.SetMemoEditErrorWithCount(error_address, txtaddress, "Enter Address");
+            ErrorHandlor.SetTextboxErrorWithCount(errorFirstName, txtFirstName, "Enter First Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorMiddleName, txtMiddleName, "Enter Middle Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorLastName, txtLastName, "Enter Last Name");
+            ErrorHandlor.SetDateErrorWithCount(errorDateofBirth, dpDOB, "Select Date of birth.");
+            ErrorHandlor.SetTextboxErrorWithCount(errorMobileno, txtMobileNo, "Enter Mobile number");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorResidentialAddress, txtResidentialAddress, "Enter Residential Address.");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorPermanentAddress, txtPermanentAddress, "Enter Permenant Address.");
+            ErrorHandlor.SetLookUPErrorWithCount(errorCompanyName, cmbCompanyCode, "Select Company name");
+            ErrorHandlor.SetLookUPErrorWithCount(errorEmployeeType, cmbEmployeeType, "Select Employee Type");
+            ErrorHandlor.SetTextboxErrorWithCount(errorEmployeeCode, txtEmployeeCode, "EnterEmployee Code");
+            ErrorHandlor.SetTextboxErrorWithCount(errorJobTitle, txtJobTitle, "Enter Job title.");
+            ErrorHandlor.SetDateErrorWithCount(errorDateOfJoining, dpDOJ, "Select Employee Joining Date.");
+            ErrorHandlor.SetLookUPErrorWithCount(errorEmployeeName, cmdEmployeeName, "Select Employee Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorSalary, txtSalary, "Enter Employee Salary");
+            ErrorHandlor.SetTextboxErrorWithCount(errorPerDayWorkingHour, txtPerDayWorkingHours, "Enter per day working hours.");
+            ErrorHandlor.SetTextboxErrorWithCount(errorPerHourSalary, txtPerHourSalary, "Enter per hour salary.");
+            ErrorHandlor.SetTextboxErrorWithCount(errorBankName, txtBankName, "Enter Bank Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorAccountNo, txtAccountNo, "Enter Account Number");
+            ErrorHandlor.SetTextboxErrorWithCount(errorRTGSNo, txtRTGSNo, "Enter RTGS Number");
+            ErrorHandlor.SetTextboxErrorWithCount(errorIFSCCode, txtIFSCCode   , "Enter IFSC Code");
+            ErrorHandlor.SetTextboxErrorWithCount(errorOpeningBalance, txtOpeningBalance, "Enter RTGS Number");
+           
 
             if (ErrorHandlor.count == 0)
                 return true;
@@ -305,43 +354,90 @@ namespace LoomsManagement.Windows.Forms.Master
         private void ClearData()
         {
             //Clear data
-            //txtCompanyName.Text = "";
-            //txtCompanyCode.Text = "";
-            //txtOwnerName.Text = "";
-            //txtInvestmentAmount.Text = "";
-            //txtContactPerrsonName.Text = "";
-            //txtPANNo.Text = "";
-            //txtCST.Text = "";
-            //txtECCNo.Text = "";
-            //txtSMSNo.Text = "";
-            //dpOpeningDate.EditValue = "";
-            //txtaddress.Text = "";
+            txtFirstName.Text = "";
+            txtMiddleName.Text = "";
+            txtLastName.Text = "";
+            rbMale.AutoCheck = true;
+            dpDOB.DateTime = DateTime.Now;
+            txtMobileNo.Text = "";
+            txtResidentialAddress.Text = "";
+            txtPermanentAddress.Text = "";
+            txtEmail.Text = "";
+            cmbProfeType.EditValue = 0;
+            txtProfeNo.Text = "";
+            cmbCompanyCode.EditValue = 0;
+            cmbEmployeeType.EditValue = 0;
+            txtEmployeeCode.Text = "";
+            txtJobTitle.Text = "";
+            dpDOJ.DateTime = DateTime.Now;
+            rbMorning.AutoCheck = true;
+           
+            cmdEmployeeName.EditValue = 0;
+            txtSalary.Text = "";
+            txtPerDayWorkingHours.Text = "";
+            txtPerHourSalary.Text = "";
+            rbCash.AutoCheck = true;
+            txtBankName.Text ="";
+            txtAccountNo.Text = "";
+            txtRTGSNo.Text = "";
+            txtIFSCCode.Text = "";
+            txtOpeningBalance.Text = "";
+           
+
+
 
             ////Reset BackGround Color
-            //txtCompanyName.BackColor = CommanClass.m_tbcolorleave;
-            //txtCompanyCode.BackColor = CommanClass.m_tbcolorleave;
-            //txtOwnerName.BackColor = CommanClass.m_tbcolorleave;
-            //txtInvestmentAmount.BackColor = CommanClass.m_tbcolorleave;
-            //txtContactPerrsonName.BackColor = CommanClass.m_tbcolorleave;
-            //txtPANNo.BackColor = CommanClass.m_tbcolorleave;
-            //txtCST.BackColor = CommanClass.m_tbcolorleave;
-            //txtECCNo.BackColor = CommanClass.m_tbcolorleave;
-            //txtSMSNo.BackColor = CommanClass.m_tbcolorleave;
-            //dpOpeningDate.BackColor = CommanClass.m_tbcolorleave;
-            //txtaddress.BackColor = CommanClass.m_tbcolorleave;
+            txtFirstName.BackColor = CommanClass.m_tbcolorleave;
+            txtMiddleName.BackColor = CommanClass.m_tbcolorleave;
+            txtLastName.BackColor = CommanClass.m_tbcolorleave;
+            dpDOB.BackColor = CommanClass.m_tbcolorleave;
+            txtMobileNo.BackColor = CommanClass.m_tbcolorleave;
+            txtResidentialAddress.BackColor = CommanClass.m_tbcolorleave;
+            txtPermanentAddress.BackColor = CommanClass.m_tbcolorleave;
+            txtEmail.BackColor = CommanClass.m_tbcolorleave;
+            cmbProfeType.BackColor = CommanClass.m_tbcolorleave;
+            txtProfeNo.BackColor = CommanClass.m_tbcolorleave;
+            cmbCompanyCode.BackColor = CommanClass.m_tbcolorleave;
+            cmbEmployeeType.BackColor = CommanClass.m_tbcolorleave;
+            txtEmployeeCode.BackColor = CommanClass.m_tbcolorleave;
+            txtJobTitle.BackColor = CommanClass.m_tbcolorleave;
+            dpDOJ.BackColor = CommanClass.m_tbcolorleave;
+            cmdEmployeeName.BackColor = CommanClass.m_tbcolorleave;
+            txtSalary.BackColor = CommanClass.m_tbcolorleave;
+            txtPerDayWorkingHours.BackColor = CommanClass.m_tbcolorleave;
+            txtPerHourSalary.BackColor = CommanClass.m_tbcolorleave;
+            txtBankName.BackColor = CommanClass.m_tbcolorleave;
+            txtAccountNo.BackColor = CommanClass.m_tbcolorleave;
+            txtRTGSNo.BackColor = CommanClass.m_tbcolorleave;
+            txtIFSCCode.BackColor = CommanClass.m_tbcolorleave;
+            txtOpeningBalance.BackColor = CommanClass.m_tbcolorleave;
 
-            ////Reset error 
-            //errorcompanyName.SetError(txtCompanyName, "");
-            //errorcompanyCode.SetError(txtCompanyCode, "");
-            //errorOwnername.SetError(txtOwnerName, "");
-            //errorinvestmentamount.SetError(txtInvestmentAmount, "");
-            //error_contactpersoanname.SetError(txtContactPerrsonName, "");
-            //error_panno.SetError(txtPANNo, "");
-            //errorcst.SetError(txtCST, "");
-            //errorecc.SetError(txtECCNo, "");
-            //errorsms.SetError(txtSMSNo, "");
-            //erroropeningdate.SetError(dpOpeningDate, "");
-            //error_address.SetError(txtaddress, "");
+            //Reset error 
+            errorFirstName.SetError(txtFirstName, "");
+            errorMiddleName.SetError(txtMiddleName, "");
+            errorLastName.SetError(txtLastName, "");
+            errorDateofBirth.SetError(dpDOB, "");
+            errorMobileno.SetError(txtMobileNo, "");
+            errorResidentialAddress.SetError(txtResidentialAddress, "");
+            errorPermanentAddress.SetError(txtPermanentAddress, "");
+            errorEmailId.SetError(txtEmail, "");
+            errorIdProfType.SetError(cmbProfeType, "");
+            errorIdProfeNo.SetError(txtProfeNo, "");
+            errorCompanyName.SetError(cmbCompanyCode, "");
+
+            errorEmployeeType.SetError(cmbProfeType, "");
+            errorEmployeeCode.SetError(txtEmployeeCode, "");
+            errorJobTitle.SetError(txtJobTitle, "");
+            errorDateOfJoining.SetError(dpDOJ,"");
+            errorEmployeeName.SetError(cmdEmployeeName, "");
+            errorSalary.SetError(txtSalary, "");
+            errorPerDayWorkingHour.SetError(txtPerDayWorkingHours, "");
+            errorPerHourSalary.SetError(txtPerHourSalary, "");
+            errorAccountNo.SetError(txtBankName, "");
+            errorAccountNo.SetError(txtAccountNo, "");
+            errorRTGSNo.SetError(txtRTGSNo, "");
+            errorIFSCCode.SetError(txtIFSCCode, "");
+            errorOpeningBalance.SetError(txtOpeningBalance, "");
 
             //txtCompanyName.Focus();
 
@@ -349,14 +445,14 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void LoadCompanyDetails()
         {
-            cmbCompanyCode.Properties.DataSource = CompnayBussinesLogic.GetAllCompanyDetails();
+            cmbCompanyCode.Properties.DataSource = UserContext.UserContexttblCompanyDTO;
             cmbCompanyCode.Properties.ValueMember = "CompanyID";
             cmbCompanyCode.Properties.DisplayMember = "CompanyName";
         }
 
         private void LoadEmployeeDetails()
         {
-            cmdEmployeeName.Properties.DataSource = EmployeeBusinessLogic.GetAllEmployeeDetails();
+            cmdEmployeeName.Properties.DataSource = UserContext.UserContexttblEmployeeDTO;
             cmdEmployeeName.Properties.ValueMember = "EmployeeID";
             cmdEmployeeName.Properties.DisplayMember = "EmployeeCode";
         }
