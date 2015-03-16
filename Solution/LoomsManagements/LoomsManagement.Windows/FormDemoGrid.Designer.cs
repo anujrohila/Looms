@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDemoGrid));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnMasterExcel = new DevExpress.XtraEditors.SimpleButton();
             this.BtnMasterPrint = new DevExpress.XtraEditors.SimpleButton();
             this.BtnMasterPDF = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LoomsManagement.Windows.WaitForm1), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -67,7 +67,7 @@
             // 
             this.btnMasterExcel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasterExcel.Appearance.Options.UseFont = true;
-            this.btnMasterExcel.Image = global::LoomsManagement.Windows.Properties.Resources.icon_excel;
+            this.btnMasterExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnMasterExcel.Image")));
             this.btnMasterExcel.Location = new System.Drawing.Point(207, 4);
             this.btnMasterExcel.Name = "btnMasterExcel";
             this.btnMasterExcel.Size = new System.Drawing.Size(86, 31);
@@ -78,7 +78,7 @@
             // 
             this.BtnMasterPrint.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMasterPrint.Appearance.Options.UseFont = true;
-            this.BtnMasterPrint.Image = global::LoomsManagement.Windows.Properties.Resources.printer_icon;
+            this.BtnMasterPrint.Image = ((System.Drawing.Image)(resources.GetObject("BtnMasterPrint.Image")));
             this.BtnMasterPrint.Location = new System.Drawing.Point(23, 5);
             this.BtnMasterPrint.Name = "BtnMasterPrint";
             this.BtnMasterPrint.Size = new System.Drawing.Size(86, 31);
@@ -89,7 +89,7 @@
             // 
             this.BtnMasterPDF.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMasterPDF.Appearance.Options.UseFont = true;
-            this.BtnMasterPDF.Image = global::LoomsManagement.Windows.Properties.Resources.i_pdf_icon;
+            this.BtnMasterPDF.Image = ((System.Drawing.Image)(resources.GetObject("BtnMasterPDF.Image")));
             this.BtnMasterPDF.Location = new System.Drawing.Point(115, 5);
             this.BtnMasterPDF.Name = "BtnMasterPDF";
             this.BtnMasterPDF.Size = new System.Drawing.Size(86, 31);
@@ -100,7 +100,7 @@
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
-            this.btnAdd.Image = global::LoomsManagement.Windows.Properties.Resources.btnAdd;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnAdd.Location = new System.Drawing.Point(12, 6);
             this.btnAdd.Name = "btnAdd";
@@ -132,6 +132,5 @@
         public DevExpress.XtraEditors.SimpleButton BtnMasterPrint;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         public DevExpress.XtraEditors.SimpleButton btnMasterExcel;
-        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }

@@ -311,6 +311,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\LoomsManagementApplication.cs" />
     <Compile Include="WaitForm1.cs">
       <SubType>Form</SubType>
@@ -393,14 +398,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="WaitForm1.resx">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </EmbeddedResource>
@@ -415,11 +415,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\DARY.bak" />
-    <None Include="Resources\delete.png" />
-    <None Include="Resources\Deletebutton.png" />
-    <None Include="Resources\edit-icon.png" />
-    <None Include="Resources\viewBtn.png" />
+    <None Include="Images\Resources\DARY.bak" />
+    <None Include="Images\Resources\delete.png" />
+    <None Include="Images\Resources\Deletebutton.png" />
+    <None Include="Images\Resources\edit-icon.png" />
+    <None Include="Images\Resources\viewBtn.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -471,43 +471,43 @@
     <Content Include="Images\Ribbon_Underline_16x16.png" />
     <Content Include="Images\Tasks_16x16.png" />
     <Content Include="Images\Trash_16x16.png" />
-    <Content Include="Resources\1425812264_company.png" />
-    <Content Include="Resources\1425812463_Manager.png" />
-    <Content Include="Resources\1425812739_executive.png" />
-    <None Include="Resources\1732542-balls-of-thead-on-a-white-background.jpg" />
-    <Content Include="Resources\4478380_orig.png" />
-    <Content Include="Resources\Bank.png" />
-    <Content Include="Resources\bank1.png" />
-    <Content Include="Resources\bank2.png" />
-    <Content Include="Resources\bank3.png" />
-    <Content Include="Resources\Branch.png" />
-    <None Include="Resources\btnAdd.png" />
-    <Content Include="Resources\Close %281%29.ico" />
-    <Content Include="Resources\CompanyMaster.png" />
-    <Content Include="Resources\Customer.ico" />
-    <Content Include="Resources\database_down.ico" />
-    <Content Include="Resources\database_down1.ico" />
-    <Content Include="Resources\database_up.ico" />
-    <Content Include="Resources\database_up1.ico" />
-    <Content Include="Resources\fevicon.ico" />
-    <Content Include="Resources\Home.ico" />
-    <Content Include="Resources\Home.jpg" />
-    <Content Include="Resources\Home1.jpg" />
-    <None Include="Resources\icon-excel.gif" />
-    <None Include="Resources\i-pdf-icon.gif" />
-    <Content Include="Resources\icon-print.png" />
-    <Content Include="Resources\logo.ico" />
-    <Content Include="Resources\logo.png" />
-    <Content Include="Resources\Machine.png" />
-    <Content Include="Resources\Payment.ico" />
-    <Content Include="Resources\payment.png" />
-    <Content Include="Resources\penalty.png" />
-    <Content Include="Resources\penalty1.png" />
-    <None Include="Resources\printer-icon.png" />
-    <Content Include="Resources\Yarn1.png" />
-    <Content Include="Resources\yarn2.png" />
-    <Content Include="Resources\Yarn22.png" />
-    <Content Include="Resources\YarnQuality.png" />
+    <Content Include="Images\Resources\1425812264_company.png" />
+    <Content Include="Images\Resources\1425812463_Manager.png" />
+    <Content Include="Images\Resources\1425812739_executive.png" />
+    <None Include="Images\Resources\1732542-balls-of-thead-on-a-white-background.jpg" />
+    <Content Include="Images\Resources\4478380_orig.png" />
+    <Content Include="Images\Resources\Bank.png" />
+    <Content Include="Images\Resources\bank1.png" />
+    <Content Include="Images\Resources\bank2.png" />
+    <Content Include="Images\Resources\bank3.png" />
+    <Content Include="Images\Resources\Branch.png" />
+    <None Include="Images\Resources\btnAdd.png" />
+    <Content Include="Images\Resources\Close %281%29.ico" />
+    <Content Include="Images\Resources\CompanyMaster.png" />
+    <Content Include="Images\Resources\Customer.ico" />
+    <Content Include="Images\Resources\database_down.ico" />
+    <Content Include="Images\Resources\database_down1.ico" />
+    <Content Include="Images\Resources\database_up.ico" />
+    <Content Include="Images\Resources\database_up1.ico" />
+    <Content Include="Images\Resources\fevicon.ico" />
+    <Content Include="Images\Resources\Home.ico" />
+    <Content Include="Images\Resources\Home.jpg" />
+    <Content Include="Images\Resources\Home1.jpg" />
+    <None Include="Images\Resources\icon-excel.gif" />
+    <None Include="Images\Resources\i-pdf-icon.gif" />
+    <Content Include="Images\Resources\icon-print.png" />
+    <Content Include="Images\Resources\logo.ico" />
+    <Content Include="Images\Resources\logo.png" />
+    <Content Include="Images\Resources\Machine.png" />
+    <Content Include="Images\Resources\Payment.ico" />
+    <Content Include="Images\Resources\payment.png" />
+    <Content Include="Images\Resources\penalty.png" />
+    <Content Include="Images\Resources\penalty1.png" />
+    <None Include="Images\Resources\printer-icon.png" />
+    <Content Include="Images\Resources\Yarn1.png" />
+    <Content Include="Images\Resources\yarn2.png" />
+    <Content Include="Images\Resources\Yarn22.png" />
+    <Content Include="Images\Resources\YarnQuality.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LoomsManagement.BAL\LoomsManagement.BAL.csproj">

@@ -16,9 +16,6 @@ namespace LoomsManagement.Windows
         {
             InitializeComponent();
         }
-
-
-
         
     }
 }

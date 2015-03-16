@@ -91,7 +91,6 @@
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
-            this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
             this.btndelete.Location = new System.Drawing.Point(9, 4);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(80, 31);
