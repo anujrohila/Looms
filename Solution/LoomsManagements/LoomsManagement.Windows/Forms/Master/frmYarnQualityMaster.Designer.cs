@@ -29,58 +29,60 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtYarnQualityName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.btndelete = new DevExpress.XtraEditors.SimpleButton();
-            this.btnExist = new DevExpress.XtraEditors.SimpleButton();
-            this.btnReport = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.errorYarnQualityName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorYarnQualityName)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Controls.Add(this.labelControl2);
-            this.panelControl1.Controls.Add(this.labelControl1);
-            this.panelControl1.Controls.Add(this.txtYarnQualityName);
-            this.panelControl1.Controls.Add(this.txtDescription);
-            this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(390, 164);
-            this.panelControl1.TabIndex = 0;
+            this.panelControl1.Location = new System.Drawing.Point(400, 0);
+            this.panelControl1.Size = new System.Drawing.Size(127, 153);
             // 
-            // labelControl3
+            // btnReport
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl3.Location = new System.Drawing.Point(142, 18);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(6, 17);
-            this.labelControl3.TabIndex = 175;
-            this.labelControl3.Text = "*";
+            this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.TabIndex = 5;
             // 
-            // labelControl2
+            // btnExit
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(12, 52);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(73, 17);
-            this.labelControl2.TabIndex = 176;
-            this.labelControl2.Text = "Description";
+            this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.TabIndex = 3;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.labelControl3);
+            this.panel1.Controls.Add(this.labelControl2);
+            this.panel1.Controls.Add(this.txtDescription);
+            this.panel1.Controls.Add(this.labelControl1);
+            this.panel1.Controls.Add(this.txtYarnQualityName);
+            this.panel1.Size = new System.Drawing.Size(400, 153);
             // 
             // labelControl1
             // 
@@ -88,7 +90,7 @@
             this.labelControl1.Location = new System.Drawing.Point(12, 19);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(118, 17);
-            this.labelControl1.TabIndex = 175;
+            this.labelControl1.TabIndex = 177;
             this.labelControl1.Text = "Yarn Quality Name";
             // 
             // txtYarnQualityName
@@ -108,8 +110,18 @@
             this.txtYarnQualityName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtYarnQualityName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Location = new System.Drawing.Point(12, 52);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(73, 17);
+            this.labelControl2.TabIndex = 179;
+            this.labelControl2.Text = "Description";
+            // 
             // txtDescription
             // 
+            this.errorYarnQualityName.SetIconAlignment(this.txtDescription, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtDescription.Location = new System.Drawing.Point(151, 47);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
@@ -118,62 +130,15 @@
             this.txtDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtDescription.Leave += new System.EventHandler(this.LeaveEvent);
             // 
-            // btnSave
+            // labelControl3
             // 
-            this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.Location = new System.Drawing.Point(14, 8);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(103, 31);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "&Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btndelete.Appearance.Options.UseFont = true;
-            this.btndelete.Image = global::LoomsManagement.Windows.Properties.Resources.Deletebutton;
-            this.btndelete.Location = new System.Drawing.Point(14, 45);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(103, 31);
-            this.btndelete.TabIndex = 3;
-            this.btndelete.Text = "&Delete";
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
-            // 
-            // btnExist
-            // 
-            this.btnExist.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnExist.Appearance.Options.UseFont = true;
-            this.btnExist.Image = global::LoomsManagement.Windows.Properties.Resources.delete;
-            this.btnExist.Location = new System.Drawing.Point(14, 82);
-            this.btnExist.Name = "btnExist";
-            this.btnExist.Size = new System.Drawing.Size(103, 31);
-            this.btnExist.TabIndex = 4;
-            this.btnExist.Text = "&Close";
-            this.btnExist.Click += new System.EventHandler(this.btnExist_Click);
-            // 
-            // btnReport
-            // 
-            this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnReport.Appearance.Options.UseFont = true;
-            this.btnReport.Image = global::LoomsManagement.Windows.Properties.Resources.printer_icon;
-            this.btnReport.Location = new System.Drawing.Point(14, 119);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(103, 31);
-            this.btnReport.TabIndex = 5;
-            this.btnReport.Text = "&Print";
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.btnSave);
-            this.panelControl4.Controls.Add(this.btnReport);
-            this.panelControl4.Controls.Add(this.btndelete);
-            this.panelControl4.Controls.Add(this.btnExist);
-            this.panelControl4.Location = new System.Drawing.Point(392, 0);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(128, 164);
-            this.panelControl4.TabIndex = 5;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl3.Location = new System.Drawing.Point(142, 18);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(6, 17);
+            this.labelControl3.TabIndex = 180;
+            this.labelControl3.Text = "*";
             // 
             // errorYarnQualityName
             // 
@@ -181,21 +146,16 @@
             // 
             // frmYarnQualityMaster
             // 
-            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 164);
-            this.Controls.Add(this.panelControl4);
-            this.Controls.Add(this.panelControl1);
+            this.ClientSize = new System.Drawing.Size(527, 153);
             this.Name = "frmYarnQualityMaster";
             this.Text = "Yarn Quality Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtYarnQualityName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorYarnQualityName)).EndInit();
             this.ResumeLayout(false);
 
@@ -203,17 +163,11 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txtYarnQualityName;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.MemoEdit txtDescription;
-        private DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.SimpleButton btndelete;
-        private DevExpress.XtraEditors.SimpleButton btnExist;
-        private DevExpress.XtraEditors.SimpleButton btnReport;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorYarnQualityName;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorYarnQualityName;
     }
 }

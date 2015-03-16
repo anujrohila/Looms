@@ -1,20 +1,17 @@
-﻿using System;
+﻿using LoomsManagement.BAL;
+using LoomsManagement.Domain.DTO;
+using LoomsManagement.Windows.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using LoomsManagement.Windows.Classes;
-using LoomsManagement.BAL;
-using LoomsManagement.Domain.DTO;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class frmYarnQualityMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmYarnQualityMaster : LoomsManagement.Windows.FormDemo1
     {
         #region Variable
 
@@ -23,7 +20,9 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #endregion
 
+
         #region Constructor
+
         public frmYarnQualityMaster()
         {
             InitializeComponent();
@@ -31,13 +30,9 @@ namespace LoomsManagement.Windows.Forms.Master
             this.Paint += frmYarnQualityMaster_Paint;
         }
 
-        
-
         #endregion
 
         #region Page Event
-
-      
 
         void frmYarnQualityMaster_Paint(object sender, PaintEventArgs e)
         {
@@ -71,8 +66,8 @@ namespace LoomsManagement.Windows.Forms.Master
             }
             else
             {
-                 YarnQualityMstDTO.CreateBy=CommanClass.UserId;
-                 YarnQualityMstDTO.CreationDateTime = DateTime.Now;
+                YarnQualityMstDTO.CreateBy = CommanClass.UserId;
+                YarnQualityMstDTO.CreationDateTime = DateTime.Now;
             }
 
             int ReturnValue = YarnBusinessLogic.SavaYarnQuality(YarnQualityMstDTO);
@@ -112,7 +107,7 @@ namespace LoomsManagement.Windows.Forms.Master
             }
         }
 
-        private void btnExist_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             ClearData();
             this.Close();
@@ -158,7 +153,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var yarnQualityMst =  YarnBusinessLogic.GetYarnQualityDetails(id);
+                var yarnQualityMst = YarnBusinessLogic.GetYarnQualityDetails(id);
                 txtYarnQualityName.Text = yarnQualityMst.YarnQualityName;
                 txtDescription.Text = yarnQualityMst.Description;
                 btndelete.Enabled = true;
@@ -176,7 +171,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
             ErrorHandlor.SetErrorCount();
             ErrorHandlor.SetTextboxErrorWithCount(errorYarnQualityName, txtYarnQualityName, "Enter Yarn Quality Name");
-          
+
             if (ErrorHandlor.count == 0)
                 return true;
             else
@@ -188,12 +183,12 @@ namespace LoomsManagement.Windows.Forms.Master
             //Clear data
             txtYarnQualityName.Text = "";
             txtDescription.Text = "";
-           
+
 
             //Reset BackGround Color
             txtYarnQualityName.BackColor = CommanClass.m_tbcolorleave;
             txtDescription.BackColor = CommanClass.m_tbcolorleave;
-          
+
 
 
             //Reset error 
