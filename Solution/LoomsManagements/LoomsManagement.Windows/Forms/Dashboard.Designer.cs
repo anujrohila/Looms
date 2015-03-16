@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection();
-            this.navbarImageCollection = new DevExpress.Utils.ImageCollection();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+            this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
+            this.navbarImageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection();
+            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.iExit = new DevExpress.XtraBars.BarButtonItem();
             this.bar_Company = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -48,7 +49,7 @@
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection();
+            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -77,6 +78,7 @@
             this.printRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.PrintRibbonPageGroup();
             this.commonRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.CommonRibbonPageGroup();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LoomsManagement.Windows.WaitForm1), true, true);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -157,10 +159,11 @@
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
-            this.skinRibbonGalleryBarItem1});
+            this.skinRibbonGalleryBarItem1,
+            this.barButtonItem1});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 4;
+            this.ribbonControl.MaxItemId = 5;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -388,6 +391,7 @@
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Yarn Master";
             // 
@@ -531,6 +535,14 @@
             this.commonRibbonPageGroup1.Name = "commonRibbonPageGroup1";
             this.commonRibbonPageGroup1.Text = "";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Yarn Package Type";
+            this.barButtonItem1.Id = 4;
+            this.barButtonItem1.LargeImageIndex = 0;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.Tag = "Yarn Package Type View";
+            // 
             // Dashboard
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -608,6 +620,7 @@
         private DevExpress.XtraScheduler.UI.RepositoryItemDuration repositoryItemDuration1;
         private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryItemSpinEdit1;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }

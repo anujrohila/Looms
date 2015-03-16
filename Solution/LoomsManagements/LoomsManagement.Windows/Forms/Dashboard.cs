@@ -49,7 +49,7 @@ namespace LoomsManagement.Windows.Forms
                     Currentform = new frmPartyMasterView();
                     break;
                 case "Employee Type Master View":
-                    Currentform = new frmEmployeeTypeMaster();
+                    Currentform = new frmEmployeeTypeMasterView();
                     break;
                 case "Employee Master View":
                     Currentform = new frmEmployeeMasterView();
@@ -57,7 +57,7 @@ namespace LoomsManagement.Windows.Forms
                 case "Panalty Master View":
                     Currentform = new frmPenaltyMasterView();
                     break;
-                case "YarnType Master View":
+                case "Yarn Type Master View":
                     Currentform = new frmYarnTypeMasterView();
                     break;
                 case "Yarn Quality Master View":
@@ -75,9 +75,9 @@ namespace LoomsManagement.Windows.Forms
                 case "Bank Branch Master View":
                     Currentform = new frmBankBranchMasterView();
                     break;
-                //case "payment generate":
-                //    Currentform = new CustomerPaymentDetails();
-                //    break;
+                case "Yarn Package Type View":
+                    Currentform = new frmYarnPackageTypeMasterView();
+                    break;
                 //case "milk lab entry":
                 //    Currentform = new MilkLabDetails();
                 //    break;
@@ -125,7 +125,7 @@ namespace LoomsManagement.Windows.Forms
             bool flag = false;
             foreach (Form form in this.MdiChildren)
             {
-                if (tagname == Convert.ToString(form.Text.ToLower()))
+                if (tagname == Convert.ToString(form.Text))
                 {
                     flag = true;
                     form.Focus();

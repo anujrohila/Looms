@@ -40,7 +40,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var frmPenaltyMaster = new frmBankMaster();
+            var frmPenaltyMaster = new frmPenaltyMaster();
             frmPenaltyMaster.FormClosed += frmPenaltyMaster_FormClosed;
             frmPenaltyMaster.ShowDialog();
  
