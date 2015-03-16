@@ -133,6 +133,9 @@ namespace LoomsManagement.Domain.DTO
         [DataMember()]
         public List<Int32> tblSalaryMSTs_SalaryID { get; set; }
 
+        [DataMember()]
+        public Int64 CompanyID { get; set; }
+
         public tblEmployeeDTO()
         {
         }
