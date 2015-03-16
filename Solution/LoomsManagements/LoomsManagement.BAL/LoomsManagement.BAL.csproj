@@ -39,18 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BussinessLogic\BankMasterBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\BranchMasterBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\BankBusinessLogic.cs" />
     <Compile Include="BussinessLogic\CompnayBussinesLogic.cs" />
     <Compile Include="BussinessLogic\EmployeeBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\EmployeetypeBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\MachineMasterBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\MachineTypeBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\MachineBusinessLogic.cs" />
     <Compile Include="BussinessLogic\PartyMasterBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\PenaltyMasterBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\YarnPackageTypeMasterBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\YarnQualityMasterBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\YarnTypeBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\YarnBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

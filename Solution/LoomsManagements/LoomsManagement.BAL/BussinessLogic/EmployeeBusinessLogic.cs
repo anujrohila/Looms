@@ -10,6 +10,9 @@ namespace LoomsManagement.BAL
 {
     public static class EmployeeBusinessLogic
     {
+
+        #region [Employee]
+
         public static int SaveEmployee(tblEmployeeDTO tblEmployeeMSTDTO)
         {
             var EmployeeRepository = new EmployeeRepository();
@@ -39,5 +42,63 @@ namespace LoomsManagement.BAL
             var EmployeeRepository = new EmployeeRepository();
             return EmployeeRepository.GetAllProfeList();
         }
+        
+        #endregion
+
+        #region [EmpoyeeType]
+
+        public static int SaveEmployeeType(tblEmployeeTypeMSTDTO tblEmployeeTypeMSTDTO)
+        {
+            var EmployeeTypeRepository = new EmployeeTypeRepository();
+            return EmployeeTypeRepository.SaveEmployeeType(tblEmployeeTypeMSTDTO);
+        }
+
+        public static List<tblEmployeeTypeMSTDTO> GetAllEmployeeTypeDetails()
+        {
+            var EmployeeTypeRepository = new EmployeeTypeRepository();
+            return EmployeeTypeRepository.GetAllEmployeeTypeDetails();
+        }
+
+        public static tblEmployeeTypeMSTDTO GetEmployeeTypeDetails(int EmployeeTypeId)
+        {
+            var EmployeeTypeRepository = new EmployeeTypeRepository();
+            return EmployeeTypeRepository.GetEmployeeTypeDetails(EmployeeTypeId);
+        }
+
+        public static int DeleteEmployeeType(int EmployeeTypeId)
+        {
+            var EmployeeTypeRepository = new EmployeeTypeRepository();
+            return EmployeeTypeRepository.DeleteEmployeeType(EmployeeTypeId);
+        }
+
+        #endregion
+
+        #region [Penalty]
+
+        public static int SavePenalty(tblPenaltyMSTDTO tblPenaltyMSTDTO)
+        {
+            var PenaltyMasterRepository = new PenaltyMasterRepository();
+            return PenaltyMasterRepository.SavePenalty(tblPenaltyMSTDTO);
+        }
+
+        public static List<tblPenaltyMSTDTO> GetAllPenaltyMasterDetails()
+        {
+            var PenaltyMasterRepository = new PenaltyMasterRepository();
+            return PenaltyMasterRepository.GetAllPenaltyMasterDetails();
+        }
+
+        public static tblPenaltyMSTDTO GetPenaltyMasterDetails(int PenaltyId)
+        {
+            var PenaltyMasterRepository = new PenaltyMasterRepository();
+            return PenaltyMasterRepository.GetPenaltyMasterDetails(PenaltyId);
+        }
+
+        public static int DeletePenalty(int PenaltyId)
+        {
+            var PenaltyMasterRepository = new PenaltyMasterRepository();
+            return PenaltyMasterRepository.DeletePenalty(PenaltyId);
+        }
+        #endregion
+
     }
 }
