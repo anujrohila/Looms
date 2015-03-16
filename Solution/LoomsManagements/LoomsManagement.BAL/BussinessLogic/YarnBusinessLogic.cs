@@ -10,26 +10,26 @@ namespace LoomsManagement.BAL
 
        public static int SaveYarnPackageType(tblYarnPackageTypeDTO tblYarnPackageTypeDTO)
        {
-           var YarnPackageTypeRepository = new YarnPackageTypeRepository();
-           return YarnPackageTypeRepository.SaveYarnPackageType(tblYarnPackageTypeDTO);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.SaveYarnPackageType(tblYarnPackageTypeDTO);
        }
 
        public static List<tblYarnPackageTypeDTO> GetAllyarnPackageTypeDetails()
        {
-           var YarnPackageTypeRepository = new YarnPackageTypeRepository();
-           return YarnPackageTypeRepository.GetAllyarnPackageTypeDetails();
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.GetAllyarnPackageTypeDetails();
        }
 
        public static tblYarnPackageTypeDTO GetYarnPackageTypeDetails(int YarnPackageTypeId)
        {
-           var YarnPackageTypeRepository = new YarnPackageTypeRepository();
-           return YarnPackageTypeRepository.GetYarnPackageTypeDetails(YarnPackageTypeId);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.GetYarnPackageTypeDetails(YarnPackageTypeId);
        }
 
        public static int DeleteYarnPackageType(int YarnPackageTypeId)
        {
-           var YarnPackageTypeRepository = new YarnPackageTypeRepository();
-           return YarnPackageTypeRepository.DeleteYarnPackageType(YarnPackageTypeId);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.DeleteYarnPackageType(YarnPackageTypeId);
        }
 
 
@@ -39,26 +39,26 @@ namespace LoomsManagement.BAL
 
        public static int SavaYarnQuality(tblYarnQualityMSTDTO tblYarnQualityMSTDTO)
        {
-           var YarnQualityMasterRepository = new YarnQualityMasterRepository();
-           return YarnQualityMasterRepository.SavaYarnQuality(tblYarnQualityMSTDTO);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.SavaYarnQuality(tblYarnQualityMSTDTO);
        }
 
        public static List<tblYarnQualityMSTDTO> GetAllYarnQualityDetails()
        {
-           var YarnQualityMasterRepository = new YarnQualityMasterRepository();
-           return YarnQualityMasterRepository.GetAllYarnQualityDetails();
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.GetAllYarnQualityDetails();
        }
 
        public static tblYarnQualityMSTDTO GetYarnQualityDetails(int YarnQualityId)
        {
-           var YarnQualityMasterRepository = new YarnQualityMasterRepository();
-           return YarnQualityMasterRepository.GetYarnQualityDetails(YarnQualityId);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.GetYarnQualityDetails(YarnQualityId);
        }
 
        public static int DeleteYarnQuality(int YarnQualityId)
        {
-           var YarnQualityMasterRepository = new YarnQualityMasterRepository();
-           return YarnQualityMasterRepository.DeleteYarnQuality(YarnQualityId);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.DeleteYarnQuality(YarnQualityId);
        }
 
 
@@ -68,26 +68,26 @@ namespace LoomsManagement.BAL
 
        public static int SaveYarnType(tblYarnTypeMSTDTO tblYarnTypeDTO)
        {
-           var YarnTypeRepository = new YarnTypeRepository();
-           return YarnTypeRepository.SaveYarnType(tblYarnTypeDTO);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.SaveYarnType(tblYarnTypeDTO);
        }
 
        public static List<tblYarnTypeMSTDTO> GetAllYarnTypeDetails()
        {
-           var YarnTypeRepository = new YarnTypeRepository();
-           return YarnTypeRepository.GetAllYarnTypeDetails();
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.GetAllYarnTypeDetails();
        }
 
        public static tblYarnTypeMSTDTO GetYarnTypeDetails(int YarnTypeId)
        {
-           var YarnTypeRepository = new YarnTypeRepository();
-           return YarnTypeRepository.GetYarnTypeDetails(YarnTypeId);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.GetYarnTypeDetails(YarnTypeId);
        }
 
        public static int DeleteYarnType(int YarnTypeId)
        {
-           var YarnTypeRepository = new YarnTypeRepository();
-           return YarnTypeRepository.DeleteYarnType(YarnTypeId);
+           var YarnRepository = new YarnRepository();
+           return YarnRepository.DeleteYarnType(YarnTypeId);
        }
 
        #endregion

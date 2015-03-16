@@ -11,26 +11,26 @@ namespace LoomsManagement.BAL
 
         public static int SaveBank(tblBankMSTDTO tblBankMSTDTO)
         {
-            var BankMasterRepository = new BankMasterRepository();
-            return BankMasterRepository.SaveBank(tblBankMSTDTO);
+            var BankRepository = new BankRepository();
+            return BankRepository.SaveBank(tblBankMSTDTO);
         }
 
-        public static List<tblBankMSTDTO> GetAllBankMasterDetails()
+        public static List<tblBankMSTDTO> GetAllBankDetails()
         {
-            var BankMasterRepository = new BankMasterRepository();
-            return BankMasterRepository.GetAllBankMasterDetails();
+            var BankRepository = new BankRepository();
+            return BankRepository.GetAllBankDetails();
         }
 
-        public static tblBankMSTDTO GetBankMasterDetails(int BankId)
+        public static tblBankMSTDTO GetBankDetails(int BankId)
         {
-            var BankMasterRepository = new BankMasterRepository();
-            return BankMasterRepository.GetBankMasterDetails(BankId);
+            var BankRepository = new BankRepository();
+            return BankRepository.GetBankDetails(BankId);
         }
 
         public static int DeleteBank(int bankId)
         {
-            var BankMasterRepository = new BankMasterRepository();
-            return BankMasterRepository.DeleteBank(bankId);
+            var BankRepository = new BankRepository();
+            return BankRepository.DeleteBank(bankId);
         }
         
         #endregion
@@ -44,30 +44,30 @@ namespace LoomsManagement.BAL
         /// <returns></returns>
         public static int SaveBranch(tblBranchMSTDTO tblBranchMSTDTO)
         {
-            var BranchMasterRepository = new BranchMasterRepository();
-            return BranchMasterRepository.SaveBranch(tblBranchMSTDTO);
+            var BankRepository = new BankRepository();
+            return BankRepository.SaveBranch(tblBranchMSTDTO);
         }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public static List<tblBranchMSTDTO> GetAllBranchMasterDetails()
+        public static List<tblBranchMSTDTO> GetAllBranchDetails()
         {
-            var BranchMasterRepository = new BranchMasterRepository();
-            return BranchMasterRepository.GetAllBranchMasterDetails();
+            var BankRepository = new BankRepository();
+            return BankRepository.GetAllBranchDetails();
         }
 
         public static tblBranchMSTDTO GetBranchDetails(int BranchId)
         {
-            var BranchMasterRepository = new BranchMasterRepository();
-            return BranchMasterRepository.GetBranchDetails(BranchId);
+            var BankRepository = new BankRepository();
+            return BankRepository.GetBranchDetails(BranchId);
         }
 
         public static int DeleteBranch(int BranchId)
         {
-            var BranchMasterRepository = new BranchMasterRepository();
-            return BranchMasterRepository.DeleteBranch(BranchId);
+            var BankRepository = new BankRepository();
+            return BankRepository.DeleteBranch(BranchId);
         }
 
        

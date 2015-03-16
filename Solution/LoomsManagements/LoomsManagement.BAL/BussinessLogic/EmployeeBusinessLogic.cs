@@ -34,7 +34,7 @@ namespace LoomsManagement.BAL
         public static int DeleteEmployeeData(int EmployeeId)
         {
             var EmployeeRepository = new EmployeeRepository();
-            return EmployeeRepository.DeleteEmployeeData(EmployeeId);
+            return EmployeeRepository.DeleteEmployee(EmployeeId);
         }
 
         public static List<tblProfeListMstDTO> GetAllProfeList()
@@ -49,26 +49,26 @@ namespace LoomsManagement.BAL
 
         public static int SaveEmployeeType(tblEmployeeTypeMSTDTO tblEmployeeTypeMSTDTO)
         {
-            var EmployeeTypeRepository = new EmployeeTypeRepository();
-            return EmployeeTypeRepository.SaveEmployeeType(tblEmployeeTypeMSTDTO);
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.SaveEmployeeType(tblEmployeeTypeMSTDTO);
         }
 
         public static List<tblEmployeeTypeMSTDTO> GetAllEmployeeTypeDetails()
         {
-            var EmployeeTypeRepository = new EmployeeTypeRepository();
-            return EmployeeTypeRepository.GetAllEmployeeTypeDetails();
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.GetAllEmployeeTypeDetails();
         }
 
         public static tblEmployeeTypeMSTDTO GetEmployeeTypeDetails(int EmployeeTypeId)
         {
-            var EmployeeTypeRepository = new EmployeeTypeRepository();
-            return EmployeeTypeRepository.GetEmployeeTypeDetails(EmployeeTypeId);
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.GetEmployeeTypeDetails(EmployeeTypeId);
         }
 
         public static int DeleteEmployeeType(int EmployeeTypeId)
         {
-            var EmployeeTypeRepository = new EmployeeTypeRepository();
-            return EmployeeTypeRepository.DeleteEmployeeType(EmployeeTypeId);
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.DeleteEmployeeType(EmployeeTypeId);
         }
 
         #endregion
@@ -77,26 +77,26 @@ namespace LoomsManagement.BAL
 
         public static int SavePenalty(tblPenaltyMSTDTO tblPenaltyMSTDTO)
         {
-            var PenaltyMasterRepository = new PenaltyMasterRepository();
-            return PenaltyMasterRepository.SavePenalty(tblPenaltyMSTDTO);
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.SavePenalty(tblPenaltyMSTDTO);
         }
 
-        public static List<tblPenaltyMSTDTO> GetAllPenaltyMasterDetails()
+        public static List<tblPenaltyMSTDTO> GetAllPenaltyDetails()
         {
-            var PenaltyMasterRepository = new PenaltyMasterRepository();
-            return PenaltyMasterRepository.GetAllPenaltyMasterDetails();
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.GetAllPenaltyDetails();
         }
 
-        public static tblPenaltyMSTDTO GetPenaltyMasterDetails(int PenaltyId)
+        public static tblPenaltyMSTDTO GetPenaltyDetails(int PenaltyId)
         {
-            var PenaltyMasterRepository = new PenaltyMasterRepository();
-            return PenaltyMasterRepository.GetPenaltyMasterDetails(PenaltyId);
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.GetPenaltyDetails(PenaltyId);
         }
 
         public static int DeletePenalty(int PenaltyId)
         {
-            var PenaltyMasterRepository = new PenaltyMasterRepository();
-            return PenaltyMasterRepository.DeletePenalty(PenaltyId);
+            var EmployeeRepository = new EmployeeRepository();
+            return EmployeeRepository.DeletePenalty(PenaltyId);
         }
         #endregion
 

@@ -11,26 +11,26 @@ namespace LoomsManagement.BAL
 
        public static int SavaMachine(tblMachineMSTDTO tblMachineMSTDTO)
        {
-           var MachineMasterRepository = new MachineMasterRepository();
-           return MachineMasterRepository.SavaMachine(tblMachineMSTDTO);
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.SavaMachine(tblMachineMSTDTO);
        }
 
        public static List<tblMachineMSTDTO> GetAllMachineDetails()
        {
-           var MachineMasterRepository = new MachineMasterRepository();
-           return MachineMasterRepository.GetAllMachineDetails();
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.GetAllMachineDetails();
        }
 
        public static tblMachineMSTDTO GetMachineDetails(int MachineId)
        {
-           var MachineMasterRepository = new MachineMasterRepository();
-           return MachineMasterRepository.GetMachineDetails(MachineId);
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.GetMachineDetails(MachineId);
        }
 
        public static int DeleteMachine(int MachineId)
        {
-           var MachineMasterRepository = new MachineMasterRepository();
-           return MachineMasterRepository.DeleteMachine(MachineId);
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.DeleteMachine(MachineId);
        }
 
        #endregion
@@ -39,30 +39,29 @@ namespace LoomsManagement.BAL
 
        public static int SavaMachineType(tblMachineTypeMSTDTO tblMachineTypeMSTDTO)
        {
-           var MachineTypeRepository = new MachineTypeRepository();
-           return MachineTypeRepository.SavaMachineType(tblMachineTypeMSTDTO);
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.SavaMachineType(tblMachineTypeMSTDTO);
        }
 
        public static List<tblMachineTypeMSTDTO> GetAllMachineType()
        {
-           var MachineTypeRepository = new MachineTypeRepository();
-           return MachineTypeRepository.GetAllMachineTypeDetails();
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.GetAllMachineTypeDetails();
        }
 
        public static tblMachineTypeMSTDTO GetMachineTypeDetails(int MachineTypeId)
        {
-           var MachineTypeRepository = new MachineTypeRepository();
-           return MachineTypeRepository.GetMachineTypeDetails(MachineTypeId);
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.GetMachineTypeDetails(MachineTypeId);
        }
 
        public static int DeleteMachineType(int MachineTypeId)
        {
-           var MachineTypeRepository = new MachineTypeRepository();
-           return MachineTypeRepository.DeleteMachineType(MachineTypeId);
+           var MachineRepository = new MachineRepository();
+           return MachineRepository.DeleteMachineType(MachineTypeId);
        }
 
        #endregion
-
 
    }
 }

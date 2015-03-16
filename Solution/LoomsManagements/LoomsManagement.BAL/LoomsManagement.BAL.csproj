@@ -43,7 +43,7 @@
     <Compile Include="BussinessLogic\CompnayBussinesLogic.cs" />
     <Compile Include="BussinessLogic\EmployeeBusinessLogic.cs" />
     <Compile Include="BussinessLogic\MachineBusinessLogic.cs" />
-    <Compile Include="BussinessLogic\PartyMasterBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\PartyBusinessLogic.cs" />
     <Compile Include="BussinessLogic\YarnBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
