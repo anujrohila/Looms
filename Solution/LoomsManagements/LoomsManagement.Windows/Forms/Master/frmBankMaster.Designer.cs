@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtBankName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -43,7 +42,7 @@
             // panelControl1
             // 
             this.panelControl1.Location = new System.Drawing.Point(339, 0);
-            this.panelControl1.Size = new System.Drawing.Size(127, 159);
+            this.panelControl1.Size = new System.Drawing.Size(127, 115);
             // 
             // btnReport
             // 
@@ -73,7 +72,7 @@
             this.panel1.Controls.Add(this.labelControl3);
             this.panel1.Controls.Add(this.txtBankName);
             this.panel1.Controls.Add(this.labelControl14);
-            this.panel1.Size = new System.Drawing.Size(339, 159);
+            this.panel1.Size = new System.Drawing.Size(339, 115);
             // 
             // txtBankName
             // 
@@ -84,7 +83,8 @@
             this.txtBankName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBankName.Properties.Appearance.Options.UseFont = true;
             this.txtBankName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtBankName.Properties.Mask.EditMask = "n2";
+            this.txtBankName.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtBankName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtBankName.Size = new System.Drawing.Size(205, 26);
             this.txtBankName.TabIndex = 0;
             this.txtBankName.Enter += new System.EventHandler(this.EnterEvent);
@@ -117,9 +117,12 @@
             // frmBankMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(466, 159);
+            this.ClientSize = new System.Drawing.Size(466, 115);
+            this.KeyPreview = true;
             this.Name = "frmBankMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Bank Master";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmBankMaster_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

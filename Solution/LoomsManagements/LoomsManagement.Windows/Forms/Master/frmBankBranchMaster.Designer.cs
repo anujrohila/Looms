@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtBranchName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbBankName = new DevExpress.XtraEditors.LookUpEdit();
-            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBankName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             this.txtAddress = new DevExpress.XtraEditors.MemoEdit();
-            this.errorBranchName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorBranchName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -236,7 +235,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(503, 185);
             this.Name = "frmBankBranchMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Bank Branch Master";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmBankBranchMaster_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

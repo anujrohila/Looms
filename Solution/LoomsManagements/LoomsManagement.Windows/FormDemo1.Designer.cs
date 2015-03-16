@@ -35,7 +35,7 @@
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btndelete = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-               ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,6 +110,7 @@
             this.ClientSize = new System.Drawing.Size(681, 356);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelControl1);
+            this.KeyPreview = true;
             this.Name = "FormDemo1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDemo1";

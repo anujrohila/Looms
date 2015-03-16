@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtYarnPackageType = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.errorYarnPackageType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorYarnPackageType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -43,7 +42,7 @@
             // panelControl1
             // 
             this.panelControl1.Location = new System.Drawing.Point(392, 0);
-            this.panelControl1.Size = new System.Drawing.Size(127, 152);
+            this.panelControl1.Size = new System.Drawing.Size(127, 114);
             // 
             // btnReport
             // 
@@ -77,7 +76,7 @@
             this.panel1.Controls.Add(this.labelControl5);
             this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Controls.Add(this.txtYarnPackageType);
-            this.panel1.Size = new System.Drawing.Size(392, 152);
+            this.panel1.Size = new System.Drawing.Size(392, 114);
             // 
             // labelControl6
             // 
@@ -121,8 +120,9 @@
             // frmYarnPackageTypeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(519, 152);
+            this.ClientSize = new System.Drawing.Size(519, 114);
             this.Name = "frmYarnPackageTypeMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Yarn Package Type";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtPenaltyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -37,8 +36,8 @@
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.errorPenaltyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorPenaltyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPenaltyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorPenaltyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -204,6 +203,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPenaltyMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Penalty Master";
             this.Enter += new System.EventHandler(this.EnterEvent);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);

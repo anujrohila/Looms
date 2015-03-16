@@ -16,6 +16,8 @@ namespace LoomsManagement.Windows.Forms
 {
     public partial class Dashboard : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        #region ControctorConstructor
+
         public Dashboard()
         {
             InitializeComponent();
@@ -23,12 +25,20 @@ namespace LoomsManagement.Windows.Forms
             this.Shown += Dashboard_Shown;
         }
 
+        #endregion
+       
+        #region PageEvent
+        
         void Dashboard_Shown(object sender, EventArgs e)
         {
-           CommanClass.ShowProcessBar();
-           UserContext.LoadAllData();
-           CommanClass.HideProcessBar();
+            RefreshData();
+           
         }
+
+        #endregion
+
+        #region Control Event
+
         private void Menulink_Click(object sender, ItemClickEventArgs e)
         {
             string tagname = e.Item.Tag.ToString().Trim();
@@ -43,7 +53,7 @@ namespace LoomsManagement.Windows.Forms
                     Currentform = new frmCompanyView();
                     break;
                 case "Owner Master View":
-                   // Currentform = new CustomerMaster();
+                    // Currentform = new CustomerMaster();
                     break;
                 case "Party Master View":
                     Currentform = new frmPartyMasterView();
@@ -117,7 +127,7 @@ namespace LoomsManagement.Windows.Forms
                 case "exit":
                     Close();
                     return;
-                   
+
                 default:
                     return;
             }
@@ -144,5 +154,37 @@ namespace LoomsManagement.Windows.Forms
                 Currentform.Show();
             }
         }
+
+        private void btnRefreshData_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            RefreshData();
+        }
+
+
+        #endregion
+
+        #region Private
+
+        private void RefreshData()
+        {
+            ribbonControl.Enabled = false;
+            CommanClass.ShowProcessBar();
+            UserContext.LoadAllData();
+            cmbCompany.DataSource = UserContext.UserContexttblCompanyDTO;
+            cmbCompany.ValueMember = "CompanyID";
+            cmbCompany.DisplayMember = "CompanyName";
+            CommanClass.HideProcessBar();
+            ribbonControl.Enabled = true;
+        }
+
+        #endregion
+
+      
+
+        private void cmbCompany_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+       
     }
 }

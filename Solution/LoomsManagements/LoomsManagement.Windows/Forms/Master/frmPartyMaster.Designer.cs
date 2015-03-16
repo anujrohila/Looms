@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtECCNo = new DevExpress.XtraEditors.TextEdit();
             this.txtCSTNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
@@ -67,24 +66,24 @@
             this.txtofficeAddress = new DevExpress.XtraEditors.MemoEdit();
             this.txtShippingAddress = new DevExpress.XtraEditors.MemoEdit();
             this.txtExtraDetails = new DevExpress.XtraEditors.MemoEdit();
-            this.errorCompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorContactPersonName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorOfficeAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorShippingAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorCity = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorState = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorMobileNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorEmail = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorTINNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorTINDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorPANNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorCSTNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorCSTDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorECCNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorRefPersonName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorRefPersonMobileNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorPhoneNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorCompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorContactPersonName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorOfficeAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorShippingAddress = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorCity = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorState = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorMobileNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorEmail = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorTINNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorTINDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorPANNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorCSTNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorCSTDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorECCNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorRefPersonName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorRefPersonMobileNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorPhoneNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
@@ -1298,6 +1297,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(951, 387);
             this.Name = "frmPartyMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Party Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

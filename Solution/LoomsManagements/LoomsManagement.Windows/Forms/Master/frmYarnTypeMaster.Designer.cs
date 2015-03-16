@@ -110,10 +110,10 @@
             // txtYarnQualityName
             // 
             this.txtYarnQualityName.EditValue = "";
-            this.errorDenier.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDenier.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtYarnQualityName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtYarnQualityName.Location = new System.Drawing.Point(167, 12);
             this.txtYarnQualityName.Name = "txtYarnQualityName";
             this.txtYarnQualityName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,10 +146,10 @@
             // 
             // cmbYarnQuality
             // 
-            this.errorYarnTypeName.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDenier.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnTypeName.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.cmbYarnQuality, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbYarnQuality.Location = new System.Drawing.Point(167, 44);
             this.cmbYarnQuality.Name = "cmbYarnQuality";
             this.cmbYarnQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -198,10 +198,10 @@
             // txtDenier
             // 
             this.txtDenier.EditValue = "";
-            this.errorDenier.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDenier.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtDenier, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtDenier.Location = new System.Drawing.Point(167, 76);
             this.txtDenier.Name = "txtDenier";
             this.txtDenier.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -226,10 +226,10 @@
             // txtNumberOfFilaments
             // 
             this.txtNumberOfFilaments.EditValue = "";
-            this.errorDenier.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorYarnTypeName.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorYarnQuality.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorNumberOfFilamets.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDenier.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorYarnQuality.SetIconAlignment(this.txtNumberOfFilaments, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtNumberOfFilaments.Location = new System.Drawing.Point(167, 108);
             this.txtNumberOfFilaments.Name = "txtNumberOfFilaments";
             this.txtNumberOfFilaments.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -315,6 +315,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmYarnTypeMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Yarn Type Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

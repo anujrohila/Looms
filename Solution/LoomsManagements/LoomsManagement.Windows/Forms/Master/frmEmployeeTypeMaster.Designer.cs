@@ -45,7 +45,7 @@
             // panelControl1
             // 
             this.panelControl1.Location = new System.Drawing.Point(412, 0);
-            this.panelControl1.Size = new System.Drawing.Size(127, 159);
+            this.panelControl1.Size = new System.Drawing.Size(127, 115);
             // 
             // btnReport
             // 
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.txtDescription);
             this.panel1.Controls.Add(this.labelControl14);
-            this.panel1.Size = new System.Drawing.Size(412, 159);
+            this.panel1.Size = new System.Drawing.Size(412, 115);
             // 
             // txtEmployeeTypeName
             // 
@@ -150,10 +150,11 @@
             // frmEmployeeTypeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(539, 159);
+            this.ClientSize = new System.Drawing.Size(539, 115);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEmployeeTypeMaster";
+            this.ShowInTaskbar = false;
             this.Text = "Employee Type Master";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

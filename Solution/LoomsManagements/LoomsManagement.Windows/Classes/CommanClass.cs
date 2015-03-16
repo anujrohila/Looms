@@ -74,12 +74,25 @@ namespace LoomsManagement.Windows.Classes
 
         public static void ShowProcessBar()
         {
-            SplashScreenManager.ShowForm(typeof(WaitForm1));
+            try
+            {
+                SplashScreenManager.ShowForm(typeof(WaitForm1));
+            }
+            catch (Exception)
+            {
+            }
+           
         }
 
         public static void HideProcessBar()
         {
-            SplashScreenManager.CloseForm();
+            try
+            {
+              SplashScreenManager.CloseForm();
+            }
+            catch (Exception)
+            {
+            }
         }
 
 

@@ -114,6 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 381);
             this.Controls.Add(this.panelControl1);
+            this.KeyPreview = true;
             this.Name = "FormDemoGrid";
             this.Text = "FormDemoGrid";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

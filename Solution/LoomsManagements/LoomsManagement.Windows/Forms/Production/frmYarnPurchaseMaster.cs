@@ -4,16 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace LoomsManagement.Windows.Forms.Production
 {
-    public partial class frmMachine : DevExpress.XtraEditors.XtraForm
+    public partial class frmYarnPurchaseMaster : LoomsManagement.Windows.FormDemo1
     {
-        public frmMachine()
+        public frmYarnPurchaseMaster()
         {
             InitializeComponent();
         }

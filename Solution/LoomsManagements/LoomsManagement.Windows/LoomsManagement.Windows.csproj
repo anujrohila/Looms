@@ -273,12 +273,6 @@
     <Compile Include="Forms\Master\frmYarnPackageTypeMasterView.Designer.cs">
       <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Master\frmYarnQualityMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Master\frmYarnQualityMaster.Designer.cs">
-      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Master\frmYarnQualityMasterView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,11 +291,11 @@
     <Compile Include="Forms\Master\frmYarnTypeMasterView.Designer.cs">
       <DependentUpon>frmYarnTypeMasterView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Production\frmMachine.cs">
+    <Compile Include="Forms\Production\frmYarnPurchaseMaster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Production\frmMachine.Designer.cs">
-      <DependentUpon>frmMachine.cs</DependentUpon>
+    <Compile Include="Forms\Production\frmYarnPurchaseMaster.Designer.cs">
+      <DependentUpon>frmYarnPurchaseMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Inherite.cs">
       <SubType>Form</SubType>
@@ -401,9 +395,6 @@
     <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMasterView.resx">
       <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Master\frmYarnQualityMaster.resx">
-      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnQualityMasterView.resx">
       <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
     </EmbeddedResource>
@@ -436,7 +427,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Images\Resources\DARY.bak" />
     <None Include="Images\Resources\delete.png" />
     <None Include="Images\Resources\Deletebutton.png" />
     <None Include="Images\Resources\edit-icon.png" />
@@ -466,6 +456,7 @@
     <Content Include="Images\Mail_32x32.png" />
     <Content Include="Images\Organizer_32x32.png" />
     <Content Include="Images\Outbox_16x16.png" />
+    <Content Include="Images\Resources\icon_refresh_green.gif" />
     <Content Include="Images\Ribbon_AlignCenter_16x16.png" />
     <Content Include="Images\Ribbon_AlignLeft_16x16.png" />
     <Content Include="Images\Ribbon_AlignRight_16x16.png" />
@@ -540,6 +531,7 @@
       <Name>LoomsManagement.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

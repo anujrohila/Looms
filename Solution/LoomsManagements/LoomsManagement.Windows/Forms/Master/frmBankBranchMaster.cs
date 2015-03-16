@@ -145,7 +145,27 @@ namespace LoomsManagement.Windows.Forms.Master
             return base.ProcessDialogKey(keyData);
         }
 
+        private void frmBankBranchMaster_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.S)
+            {
+                btnSave_Click(null, null);
+            }
+            else if (btnReport.Enabled == true && e.Control && e.KeyCode == Keys.P)
+            {
+            }
+            else if (btndelete.Enabled == true && e.KeyCode == Keys.Delete)
+            {
+                btndelete_Click(null, null);
+            }
+            else if (e.Control && e.KeyCode == Keys.X)
+            {
+                btnExit_Click(null, null);
+            }
+        }
+
         #endregion
+
         #endregion
 
         # region Private Method
@@ -211,7 +231,6 @@ namespace LoomsManagement.Windows.Forms.Master
 
         }
 
-        #endregion 
-       
+        #endregion        
     }
 }

@@ -195,6 +195,11 @@ namespace LoomsManagement.Windows.Forms.Master
         }
 
         #endregion 
+
+        private void frmBankMaster_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show("he;;");
+        }
        
     }
 }
