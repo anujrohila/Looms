@@ -1,22 +1,22 @@
-﻿using System;
+﻿using LoomsManagement.DAL.ORM;
+using LoomsManagement.Domain.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LoomsManagement.Domain.DTO;
-using LoomsManagement.DAL.ORM;
 
-namespace LoomsManagement.DAL
+namespace LoomsManagement.DAL.Respository
 {
-    public class PartyMasterRepositotry
+    public class a
     {
-        public int SavePartyMasterData(tblPartysMSTDTO tblPartyMSTDTO)
+        public int SaveParty(tblPartysMSTDTO tblPartyMSTDTO)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
                 if (tblPartyMSTDTO.PartyID == 0)
                 {
-                    if (loomsManagementEntity.tblPartysMSTs.Where(m => m.PartyName==tblPartyMSTDTO.PartyName && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblPartysMSTs.Where(m => m.PartyName == tblPartyMSTDTO.PartyName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 1;
                     }
@@ -64,9 +64,9 @@ namespace LoomsManagement.DAL
                         {
                             return 2;
                         }
-                        
+
                     }
-                    
+
                 }
 
                 if (loomsManagementEntity.SaveChanges() > 0)
@@ -78,7 +78,7 @@ namespace LoomsManagement.DAL
 
         }
 
-        public static List<tblPartysMSTDTO> GetAllPartyMasterDetails()
+        public List<tblPartysMSTDTO> GetAllPartyDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -86,15 +86,15 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static tblPartysMSTDTO GetPartyDetails(int PartyId)
+        public tblPartysMSTDTO GetPartyDetails(int PartyId)
         {
-             using (var loomsManagementEntity = new LoomsManagementEntities())
-             {
-                 return loomsManagementEntity.tblPartysMSTs.Where(m => m.PartyID == PartyId && m.IsDelete == false).FirstOrDefault().ToDTO();
-             }
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblPartysMSTs.Where(m => m.PartyID == PartyId && m.IsDelete == false).FirstOrDefault().ToDTO();
+            }
         }
 
-        public int DeletePartyData(int PartyId)
+        public int DeleteParty(int PartyId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -113,13 +113,6 @@ namespace LoomsManagement.DAL
                 }
             }
         }
-
-        public static List<tblCompanyDTO> GetCompanyCode()
-        {
-            using (var loomsManagementEntity = new LoomsManagementEntities())
-            {
-                return loomsManagementEntity.tblCompanies.Where(m => m.IsDelete == false).ToList().ToDTOs();
-            }
-        }
     }
+
 }

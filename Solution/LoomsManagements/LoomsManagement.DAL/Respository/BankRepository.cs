@@ -7,15 +7,15 @@ namespace LoomsManagement.DAL
 {
     public class BankRepository
     {
-        #region Bank Master
+        #region Bank
 
-        public int SaveBankMaster(tblBankMSTDTO tblBankMSTDTO)
+        public int SaveBank(tblBankMSTDTO tblBankMSTDTO)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
                 if (tblBankMSTDTO.BankID == 0)
                 {
-                    if (loomsManagementEntity.tblBankMSTs.Where(m => m.BankName==tblBankMSTDTO.BankName && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblBankMSTs.Where(m => m.BankName == tblBankMSTDTO.BankName && m.IsDelete == false).ToList().Count() > 0)
                     {
                         return 1;
                     }
@@ -56,19 +56,19 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblBankMSTDTO> GetAllBankMasterDetails()
+        public List<tblBankMSTDTO> GetAllBankDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
-                return loomsManagementEntity.tblBankMSTs.Where(m=>m.IsDelete==false).ToList().ToDTOs();
+                return loomsManagementEntity.tblBankMSTs.Where(m => m.IsDelete == false).ToList().ToDTOs();
             }
         }
 
-        public static tblBankMSTDTO GetBankMasterDetails(int BankId)
+        public tblBankMSTDTO GetBankDetails(int BankId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
-                return loomsManagementEntity.tblBankMSTs.Where(m=>m.BankID==BankId && m.IsDelete==false).FirstOrDefault().ToDTO();
+                return loomsManagementEntity.tblBankMSTs.Where(m => m.BankID == BankId && m.IsDelete == false).FirstOrDefault().ToDTO();
             }
         }
 
@@ -97,7 +97,7 @@ namespace LoomsManagement.DAL
 
         #endregion
 
-        #region Branch Master
+        #region Branch
 
         public int SaveBranch(tblBranchMSTDTO tblBranchMSTDTO)
         {
@@ -147,7 +147,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblBranchMSTDTO> GetAllBranchMasterDetails()
+        public List<tblBranchMSTDTO> GetAllBranchDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -156,7 +156,7 @@ namespace LoomsManagement.DAL
 
         }
 
-        public static tblBranchMSTDTO GetBranchMasterDetails(int BranchId)
+        public tblBranchMSTDTO GetBranchDetails(int BranchId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {

@@ -10,7 +10,9 @@ namespace LoomsManagement.DAL
     public class EmployeeRepository
     {
 
-        public static int SaveEmployee(tblEmployeeDTO tblEmployeeMSTDTO)
+        #region [Employee]
+
+        public  int SaveEmployee(tblEmployeeDTO tblEmployeeMSTDTO)
         {
             using (var loomsManagementEntities = new LoomsManagementEntities())
             {
@@ -82,7 +84,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblEmployeeDTO> GetAllEmployeeDetails()
+        public  List<tblEmployeeDTO> GetAllEmployeeDetails()
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
@@ -90,7 +92,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static tblEmployeeDTO GetEmployeeDetails(int EmployeeId)
+        public  tblEmployeeDTO GetEmployeeDetails(int EmployeeId)
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
@@ -98,7 +100,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static int DeleteEmployeeData(int EmployeeId)
+        public  int DeleteEmployee(int EmployeeId)
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
@@ -118,12 +120,196 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblProfeListMstDTO> GetAllProfeList()
+        public  List<tblProfeListMstDTO> GetAllProfeList()
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
                 return LoomsManagementEntities.tblProfeListMsts.ToList().ToDTOs();
             }
         }
+        
+        #endregion
+
+        #region [EmployeeType]
+        public int SaveEmployeeType(tblEmployeeTypeMSTDTO tblEmployeeTypeMSTDTO)
+        {
+            using (var loomsManagementEntities = new LoomsManagementEntities())
+            {
+                if (tblEmployeeTypeMSTDTO.EmployeeTypeID == 0)
+                {
+                    if (loomsManagementEntities.tblEmployeeTypeMSTs.Where(m => m.TypeName == tblEmployeeTypeMSTDTO.TypeName && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        tblEmployeeTypeMST objEmployeeType = tblEmployeeTypeMSTDTO.ToEntity();
+                        loomsManagementEntities.tblEmployeeTypeMSTs.Add(objEmployeeType);
+                    }
+                }
+                else
+                {
+                    if (loomsManagementEntities.tblEmployeeTypeMSTs.Where(m => m.TypeName == tblEmployeeTypeMSTDTO.TypeName && m.EmployeeTypeID != tblEmployeeTypeMSTDTO.EmployeeTypeID && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        tblEmployeeTypeMST objEmployeeType = loomsManagementEntities.tblEmployeeTypeMSTs.Where(m => m.EmployeeTypeID == tblEmployeeTypeMSTDTO.EmployeeTypeID && m.IsDelete == false).FirstOrDefault();
+                        if (objEmployeeType != null)
+                        {
+                            objEmployeeType.EmployeeTypeID = tblEmployeeTypeMSTDTO.EmployeeTypeID;
+                            objEmployeeType.TypeName = tblEmployeeTypeMSTDTO.TypeName;
+                            objEmployeeType.UpdatedBy = tblEmployeeTypeMSTDTO.UpdatedBy;
+                            objEmployeeType.UpdatedDateTime = tblEmployeeTypeMSTDTO.UpdatedDateTime;
+                        }
+                        else
+                        {
+                            return 2;
+                        }
+
+                    }
+                }
+
+                if (loomsManagementEntities.SaveChanges() > 0)
+                    return 0;
+                else
+                    return 2;
+
+            }
+
+        }
+
+        public  List<tblEmployeeTypeMSTDTO> GetAllEmployeeTypeDetails()
+        {
+            using (var LoomsManagementEntities = new LoomsManagementEntities())
+            {
+                return LoomsManagementEntities.tblEmployeeTypeMSTs.Where(m => m.IsDelete == false).ToList().ToDTOs();
+            }
+        }
+
+        public  tblEmployeeTypeMSTDTO GetEmployeeTypeDetails(int EmployeeTypeId)
+        {
+            using (var loomsManagementEntities = new LoomsManagementEntities())
+            {
+                return loomsManagementEntities.tblEmployeeTypeMSTs.Where(m => m.EmployeeTypeID == EmployeeTypeId && m.IsDelete == false).FirstOrDefault().ToDTO();
+            }
+        }
+
+        public int DeleteEmployeeType(int EmployeeTypeId)
+        {
+            using (var loomsManagementEntities = new LoomsManagementEntities())
+            {
+                tblEmployeeTypeMST objEmployeeType = loomsManagementEntities.tblEmployeeTypeMSTs.Where(m => m.EmployeeTypeID == EmployeeTypeId && m.IsDelete == false).FirstOrDefault();
+                if (objEmployeeType != null)
+                {
+                    objEmployeeType.IsDelete = true;
+                    if (loomsManagementEntities.SaveChanges() > 0)
+                        return 0;
+                    else
+                        return 2;
+                }
+
+                else
+                {
+                    return 3;
+                }
+
+            }
+        }
+
+        #endregion
+
+        #region [Penalty]
+
+        public int SavePenalty(tblPenaltyMSTDTO tblPenaltyMSTDTO)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                if (tblPenaltyMSTDTO.PenaltyID == 0)
+                {
+                    if (loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyName == tblPenaltyMSTDTO.PenaltyName && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 0;
+                    }
+                    else
+                    {
+                        tblPenaltyMST objPenaltyMst = tblPenaltyMSTDTO.ToEntity();
+                        loomsManagementEntity.tblPenaltyMSTs.Add(objPenaltyMst);
+                    }
+                }
+                else
+                {
+                    if (loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyName == tblPenaltyMSTDTO.PenaltyName && m.PenaltyID != tblPenaltyMSTDTO.PenaltyID && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        tblPenaltyMST objPenaltyMst = loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyID == tblPenaltyMSTDTO.PenaltyID && m.IsDelete == false).FirstOrDefault();
+                        if (objPenaltyMst != null)
+                        {
+                            objPenaltyMst.PenaltyID = tblPenaltyMSTDTO.PenaltyID;
+                            objPenaltyMst.PenaltyCode = tblPenaltyMSTDTO.PenaltyCode;
+                            objPenaltyMst.PenaltyName = tblPenaltyMSTDTO.PenaltyName;
+                            objPenaltyMst.Description = tblPenaltyMSTDTO.Description;
+                            objPenaltyMst.UpdateBy = tblPenaltyMSTDTO.UpdateBy;
+                            objPenaltyMst.UpdationDateTime = tblPenaltyMSTDTO.UpdationDateTime;
+                        }
+                        else
+                        {
+                            return 2;
+                        }
+                    }
+                }
+                if (loomsManagementEntity.SaveChanges() > 0)
+                    return 0;
+                else
+                    return 2;
+            }
+        }
+
+        public  List<tblPenaltyMSTDTO> GetAllPenaltyDetails()
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblPenaltyMSTs.Where(m => m.IsDelete == false).ToList().ToDTOs();
+            }
+        }
+
+        public  tblPenaltyMSTDTO GetPenaltyDetails(int PenaltyId)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyID == PenaltyId && m.IsDelete == false).FirstOrDefault().ToDTO();
+            }
+        }
+
+        public int DeletePenalty(int PenaltyId)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                tblPenaltyMST objPenaltyMst = loomsManagementEntity.tblPenaltyMSTs.Where(m => m.PenaltyID == PenaltyId && m.IsDelete == false).FirstOrDefault();
+                if (objPenaltyMst != null)
+                {
+                    objPenaltyMst.IsDelete = true;
+                    if (loomsManagementEntity.SaveChanges() > 0)
+                        return 0;
+                    else
+                        return 2;
+                }
+                else
+                {
+                    return 3;
+                }
+            }
+
+
+
+
+        }
+
+        #endregion
+
     }
 }

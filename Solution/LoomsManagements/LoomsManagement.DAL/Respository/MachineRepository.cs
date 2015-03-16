@@ -8,9 +8,9 @@ namespace LoomsManagement.DAL
    public class MachineRepository
    {
 
-       #region Machine Master
+       #region Machine 
 
-       public int SavaMachineMasterData(tblMachineMSTDTO tblMachineMSTDTO)
+       public int SavaMachine(tblMachineMSTDTO tblMachineMSTDTO)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -63,7 +63,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblMachineMSTDTO> GetAllMachineDetails()
+        public  List<tblMachineMSTDTO> GetAllMachineDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -71,7 +71,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static tblMachineMSTDTO GetMachineMasterDetails(int MachineId)
+        public  tblMachineMSTDTO GetMachineDetails(int MachineId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -79,7 +79,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public int DeleteMachineMasterData(int MachineId)
+        public int DeleteMachine(int MachineId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -108,7 +108,6 @@ namespace LoomsManagement.DAL
        #endregion
 
        #region Machine Type
-
 
         public int SavaMachineType(tblMachineTypeMSTDTO tblMachineTypeMSTDTO)
         {
@@ -159,7 +158,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblMachineTypeMSTDTO> GetAllMachineTypeDetails()
+        public  List<tblMachineTypeMSTDTO> GetAllMachineTypeDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -167,7 +166,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static tblMachineTypeMSTDTO GetMachineTypeDetails(int MachineTypeId)
+        public  tblMachineTypeMSTDTO GetMachineTypeDetails(int MachineTypeId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
