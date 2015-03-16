@@ -214,7 +214,6 @@
     <Compile Include="Respository\CompanyRepository.cs" />
     <Compile Include="Respository\EmployeeRepository.cs" />
     <Compile Include="Respository\MachineRepository.cs" />
-    <Compile Include="Respository\PartyRepositotry.cs" />
     <Compile Include="Respository\YarnRepository.cs" />
   </ItemGroup>
   <ItemGroup>
