@@ -6,7 +6,7 @@ namespace LoomsManagement.BAL
 {
     public static class PartyBusinessLogic
     {
-        public static int SavePartyMasterData(tblPartysMSTDTO tblPartyMSTDTO)
+        public static int SaveParty(tblPartysMSTDTO tblPartyMSTDTO)
         {
             var PartyRepositotry = new PartyRepositotry();
             return PartyRepositotry.SaveParty(tblPartyMSTDTO);
