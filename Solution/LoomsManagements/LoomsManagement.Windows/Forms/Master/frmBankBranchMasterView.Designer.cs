@@ -104,10 +104,11 @@
             // gridViewBranchMaster
             // 
             this.gridViewBranchMaster.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridViewBranchMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridViewBranchMaster.Location = new System.Drawing.Point(0, 43);
             this.gridViewBranchMaster.MainView = this.InnerGrid;
             this.gridViewBranchMaster.Name = "gridViewBranchMaster";
-            this.gridViewBranchMaster.Size = new System.Drawing.Size(794, 308);
+            this.gridViewBranchMaster.Size = new System.Drawing.Size(796, 338);
             this.gridViewBranchMaster.TabIndex = 65;
             this.gridViewBranchMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
