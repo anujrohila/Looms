@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Helpers;
 using LoomsManagement.Windows.Forms.Master;
+using LoomsManagement.Windows.Classes;
 
 namespace LoomsManagement.Windows.Forms
 {
@@ -19,9 +20,15 @@ namespace LoomsManagement.Windows.Forms
         {
             InitializeComponent();
             // InitSkinGallery();
+            this.Shown += Dashboard_Shown;
         }
 
-
+        void Dashboard_Shown(object sender, EventArgs e)
+        {
+           CommanClass.ShowProcessBar();
+           UserContext.LoadAllData();
+           CommanClass.HideProcessBar();
+        }
         private void Menulink_Click(object sender, ItemClickEventArgs e)
         {
             string tagname = e.Item.Tag.ToString().Trim();
