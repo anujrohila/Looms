@@ -12,7 +12,7 @@ namespace LoomsManagement.BAL
             return PartyRepositotry.SaveParty(tblPartyMSTDTO);
         }
 
-        public static List<tblPartysMSTDTO> GetAllPartyMasterDetails()
+        public static List<tblPartysMSTDTO> GetAllPartyDetails()
         {
             var PartyRepositotry = new PartyRepositotry();
             return PartyRepositotry.GetAllPartyDetails();
