@@ -43,7 +43,7 @@ namespace LoomsManagement.BAL
            return MachineRepository.SavaMachineType(tblMachineTypeMSTDTO);
        }
 
-       public static List<tblMachineTypeMSTDTO> GetAllMachineType()
+       public static List<tblMachineTypeMSTDTO> GetAllMachineTypeDetails()
        {
            var MachineRepository = new MachineRepository();
            return MachineRepository.GetAllMachineTypeDetails();
