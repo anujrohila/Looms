@@ -27,7 +27,7 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmEmployeeMaster()
         {
             InitializeComponent();
-            this.Load += frmEmployeeMaster_Load;
+            this.Paint+=frmEmployeeMaster_Paint;
         }
 
 
@@ -35,11 +35,11 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #region [Page Event]
 
-        void frmEmployeeMaster_Load(object sender, EventArgs e)
+        private void frmEmployeeMaster_Paint(object sender, PaintEventArgs e)
         {
-           // MessageBox.Show("load");
-            // SetFlag();
+            SetFlag();
         }
+
 
         #endregion
 
@@ -377,21 +377,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #endregion
 
-        private void frmEmployeeMaster_Shown(object sender, EventArgs e)
-        {
-          //  SetFlag();
-           // MessageBox.Show("Shown");
-        }
-
-        private void frmEmployeeMaster_Activated(object sender, EventArgs e)
-        {
-            //SetFlag();
-        }
-
-        private void frmEmployeeMaster_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+      
+       
     }
 }

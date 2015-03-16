@@ -64,7 +64,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblYarnPackageTypeDTO.CreatedDateTime = DateTime.Now;
                 
             }
-            int ReturnValue = YarnPackageTypeMasterBusinessLogic.SaveYarnPackageTypeMasterDetail(tblYarnPackageTypeDTO);
+            int ReturnValue = YarnBusinessLogic.SaveYarnPackageType(tblYarnPackageTypeDTO);
             CommanClass.HideProcessBar();
             if (ReturnValue == 1)
             {
@@ -89,7 +89,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (YarnPackageTypeMasterBusinessLogic.DeleteYarnPackageTypeData(id) != 0)
+                if (YarnBusinessLogic.DeleteYarnPackageType(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -146,7 +146,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var yarnPackageType = YarnPackageTypeMasterBusinessLogic.GetYarnPackageTypeData(id);
+                var yarnPackageType = YarnBusinessLogic.GetYarnPackageTypeDetails(id);
                 txtYarnPackageType.Text = yarnPackageType.TypeName;
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;

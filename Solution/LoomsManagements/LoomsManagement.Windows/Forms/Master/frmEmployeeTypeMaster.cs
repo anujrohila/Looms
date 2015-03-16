@@ -68,7 +68,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblEmployeeTypeMSTDTO.CreatedDateTime = DateTime.Now;
             }
 
-            int ReturnValue = EmployeetypeBusinessLogic.SaveEmployeeType(tblEmployeeTypeMSTDTO);
+            int ReturnValue = EmployeeBusinessLogic.SaveEmployeeType(tblEmployeeTypeMSTDTO);
 
             CommanClass.HideProcessBar();
 
@@ -96,7 +96,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (EmployeetypeBusinessLogic.DeleteEmployeeTypeData(id) != 0)
+                if (EmployeeBusinessLogic.DeleteEmployeeType(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -121,7 +121,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var employeetypeData = EmployeetypeBusinessLogic.GetEmployeeTypeDetails(id);
+                var employeetypeData = EmployeeBusinessLogic.GetEmployeeTypeDetails(id);
                 txtEmployeeTypeName.Text = employeetypeData.TypeName;
                 txtDescription.Text = employeetypeData.Description;
                 btndelete.Enabled = true;

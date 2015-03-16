@@ -69,7 +69,7 @@ namespace LoomsManagement.Windows.Forms.Master
                  tblPenaltyMSTDTO.CreationDateTime = DateTime.Now;
              }
 
-             int ReturnValue = PenaltyMasterBusinessLogic.SavePenaltyMasterData(tblPenaltyMSTDTO);
+             int ReturnValue = EmployeeBusinessLogic.SavePenalty(tblPenaltyMSTDTO);
              CommanClass.HideProcessBar();
              if (ReturnValue == 1)
              {
@@ -95,7 +95,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (PenaltyMasterBusinessLogic.DeletePenaltyMasterData(id) != 0)
+                if (EmployeeBusinessLogic.DeletePenalty(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -152,7 +152,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var penaltyData = PenaltyMasterBusinessLogic.GetPenaltyMasterData(id);
+                var penaltyData = EmployeeBusinessLogic.GetPenaltyDetails(id);
                 txtPenaltyCode.Text = penaltyData.PenaltyCode;
                 txtPenaltyName.Text = penaltyData.PenaltyName;
                 txtDescription.Text = penaltyData.Description;

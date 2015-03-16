@@ -68,7 +68,7 @@ namespace LoomsManagement.Windows.Forms.Master
                  YarnQualityMstDTO.CreationDateTime = DateTime.Now;
             }
 
-            int ReturnValue = YarnQualityMasterBusinessLogic.SavaYarnQualityDetails(YarnQualityMstDTO);
+            int ReturnValue = YarnBusinessLogic.SavaYarnQuality(YarnQualityMstDTO);
             CommanClass.HideProcessBar();
             if (ReturnValue == 1)
             {
@@ -94,7 +94,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (YarnQualityMasterBusinessLogic.DeleteYarnQualityData(id) != 0)
+                if (YarnBusinessLogic.DeleteYarnQuality(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -151,7 +151,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var yarnQualityMst =  YarnQualityMasterBusinessLogic.GetYarnQualityDetails(id);
+                var yarnQualityMst =  YarnBusinessLogic.GetYarnQualityDetails(id);
                 txtYarnQualityName.Text = yarnQualityMst.YarnQualityName;
                 txtDescription.Text = yarnQualityMst.Description;
                 btndelete.Enabled = true;

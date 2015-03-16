@@ -17,6 +17,14 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmCompanyView()
         {
             InitializeComponent();
+            this.Paint+=frmCompanyView_Paint; 
+        }
+
+        void frmCompanyView_Paint(object sender, EventArgs e)
+        {
+            CommanClass.ShowProcessBar();
+            BindGridData();
+            CommanClass.HideProcessBar();
         }
 
         #endregion
@@ -25,7 +33,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void frmCompanyView_Activated(object sender, EventArgs e)
         {
-          //  BindGridData();
+            //BindGridData();
         }
 
         #endregion
@@ -42,6 +50,7 @@ namespace LoomsManagement.Windows.Forms.Master
         void objform_FormClosed(object sender, FormClosedEventArgs e)
         {
             CommanClass.ShowProcessBar();
+            UserContext.GetALLtblCompanyDTO();
             BindGridData();
             CommanClass.HideProcessBar();
         }
@@ -65,7 +74,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void BindGridData()
         {
-            gridViewCompany.DataSource = CompnayBussinesLogic.GetAllCompanyDetails();
+            gridViewCompany.DataSource = UserContext.UserContexttblCompanyDTO;
             InnerGrid.BestFitColumns();
         }
 

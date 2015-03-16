@@ -77,7 +77,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblPartysMSTDTO.CreationDateTime = DateTime.Now;
             }
 
-            int ReturnValue = PartyMasterBusinessLogic.SavePartyMasterData(tblPartysMSTDTO);
+            int ReturnValue = PartyBusinessLogic.SaveParty(tblPartysMSTDTO);
             CommanClass.HideProcessBar();
             if (ReturnValue == 1)
             {
@@ -103,7 +103,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (PartyMasterBusinessLogic.DeletePartyData(id) != 0)
+                if (PartyBusinessLogic.DeleteParty(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -158,7 +158,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void LoadCompanyCode()
         {
-            cmbCompanyCode.Properties.DataSource = PartyMasterBusinessLogic.GetCompanyCode();
+            cmbCompanyCode.Properties.DataSource = UserContext.UserContexttblCompanyDTO;
             cmbCompanyCode.Properties.ValueMember = "CompanyID";
             cmbCompanyCode.Properties.DisplayMember = "CompanyName";
         }
@@ -167,7 +167,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var objPartyMst = PartyMasterBusinessLogic.GetPartyDetails(id);
+                var objPartyMst = PartyBusinessLogic.GetPartyDetails(id);
                 cmbCompanyCode.EditValue = objPartyMst.CompanyCode;
                 txtCity.Text = objPartyMst.City;
                 txtContactPersonName.Text = objPartyMst.ContactPersonName;

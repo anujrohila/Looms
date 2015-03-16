@@ -66,7 +66,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblBankMSTDTO.CreationDateTime = DateTime.Now;
             }
 
-            int ReturnValue = BankMasterBusinessLogic.SaveBankMasterData(tblBankMSTDTO);
+            int ReturnValue = BankBusinessLogic.SaveBank(tblBankMSTDTO);
             CommanClass.HideProcessBar();
 
             if (ReturnValue == 1)
@@ -93,7 +93,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (BankMasterBusinessLogic.DeleteBankMasterData(id) != 0)
+                if (BankBusinessLogic.DeleteBank(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -150,7 +150,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var bankMstData = BankMasterBusinessLogic.GetBankMasterData(id);
+                var bankMstData = BankBusinessLogic.GetBankDetails(id);
                 txtBankName.Text = bankMstData.BankName;
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;

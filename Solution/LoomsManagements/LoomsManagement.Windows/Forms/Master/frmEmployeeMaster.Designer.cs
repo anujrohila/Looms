@@ -1306,8 +1306,6 @@
             this.ClientSize = new System.Drawing.Size(1205, 478);
             this.Name = "frmEmployeeMaster";
             this.Text = "Employee Master";
-            this.Activated += new System.EventHandler(this.frmEmployeeMaster_Activated);
-            this.Shown += new System.EventHandler(this.frmEmployeeMaster_Shown);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmEmployeeMaster_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

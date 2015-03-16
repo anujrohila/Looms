@@ -67,7 +67,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblMachineTypeMSTDTO.CreatedDateTime= DateTime.Now;
             }
 
-            int ReturnValue = MachineTypeBusinessLogic.SavaMachineTypeData(tblMachineTypeMSTDTO);
+            int ReturnValue = MachineBusinessLogic.SavaMachineType(tblMachineTypeMSTDTO);
            
             if (ReturnValue == 1)
             {
@@ -93,7 +93,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (MachineTypeBusinessLogic.DeleteMachineTypeData(id) != 0)
+                if (MachineBusinessLogic.DeleteMachineType(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -150,7 +150,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var machineTypeMst = MachineTypeBusinessLogic.GetMachineTypeData(id);
+                var machineTypeMst = MachineBusinessLogic.GetMachineTypeDetails(id);
                 txtTypeName.Text = machineTypeMst.TypeName;
                 txtDescription.Text = machineTypeMst.Description;
                 btndelete.Enabled = true;

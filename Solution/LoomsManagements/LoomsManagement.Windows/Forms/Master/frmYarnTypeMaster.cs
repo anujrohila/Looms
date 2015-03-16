@@ -68,7 +68,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 tblYarnTypeDTO.CreationDateTIme = DateTime.Now;
             }
 
-            int ReturnValue = YarnTypeBusinessLogic.SaveYarnTypeDetail(tblYarnTypeDTO);
+            int ReturnValue = YarnBusinessLogic.SaveYarnType(tblYarnTypeDTO);
             CommanClass.HideProcessBar();
 
             if (ReturnValue == 1)
@@ -95,7 +95,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (YarnTypeBusinessLogic.DeleteYarnTypeDate(id) != 0)
+                if (YarnBusinessLogic.DeleteYarnType(id) != 0)
                 {
                     MessageBox.Show("Tramsaction fail");
                 }
@@ -151,11 +151,11 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #endregion
 
-        # region Private Method
+        #region Private Method
 
         private void LoadYarnQuality()
         {
-            cmbYarnQuality.Properties.DataSource = YarnTypeBusinessLogic.GetAllYarnQuality();
+            cmbYarnQuality.Properties.DataSource = UserContext.UserContexttblYarnQualityMSTDTO;
             cmbYarnQuality.Properties.ValueMember = "YarnQualityID";
             cmbYarnQuality.Properties.DisplayMember = "YarnQualityName";
         }
@@ -164,7 +164,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (IsEdit)
             {
-                var yarnTypeData = YarnTypeBusinessLogic.GetYarnTypeDetails(id);
+                var yarnTypeData = YarnBusinessLogic.GetYarnTypeDetails(id);
                 txtYarnQualityName.Text = yarnTypeData.YarnTypeName;
                 cmbYarnQuality.EditValue = yarnTypeData.YarnQualityID;
                 txtDenier.Text = yarnTypeData.Denier;
