@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LoomsManagement.DAL.Respository
 {
-    public class a
+    public class PartyRepositotry
     {
         public int SaveParty(tblPartysMSTDTO tblPartyMSTDTO)
         {
