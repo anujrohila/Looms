@@ -5,10 +5,12 @@ using System.Linq;
 
 namespace LoomsManagement.DAL
 {
-   public class MachineMasterRepository
-    {
+   public class MachineRepository
+   {
 
-        public int SavaMachineMasterData(tblMachineMSTDTO tblMachineMSTDTO)
+       #region Machine Master
+
+       public int SavaMachineMasterData(tblMachineMSTDTO tblMachineMSTDTO)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -61,7 +63,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblMachineMSTDTO> GetAllMachineData()
+        public static List<tblMachineMSTDTO> GetAllMachineDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -69,7 +71,7 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static tblMachineMSTDTO GetMachineMasterData(int MachineId)
+        public static tblMachineMSTDTO GetMachineMasterDetails(int MachineId)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -103,7 +105,61 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblMachineTypeMSTDTO> GetAllMachineTypeData()
+       #endregion
+
+       #region Machine Type
+
+
+        public int SavaMachineType(tblMachineTypeMSTDTO tblMachineTypeMSTDTO)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                if (tblMachineTypeMSTDTO.MachineTypeID == 0)
+                {
+                    if (loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.TypeName == tblMachineTypeMSTDTO.TypeName && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        tblMachineTypeMST objMachineType = tblMachineTypeMSTDTO.ToEntity();
+                        loomsManagementEntity.tblMachineTypeMSTs.Add(objMachineType);
+                    }
+                }
+                else
+                {
+                    if (loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.TypeName == tblMachineTypeMSTDTO.TypeName && m.MachineTypeID != tblMachineTypeMSTDTO.MachineTypeID && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        tblMachineTypeMST objMachineType = loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.MachineTypeID == tblMachineTypeMSTDTO.MachineTypeID && m.IsDelete == false).FirstOrDefault();
+                        if (objMachineType != null)
+                        {
+                            objMachineType.MachineTypeID = tblMachineTypeMSTDTO.MachineTypeID;
+                            objMachineType.TypeName = tblMachineTypeMSTDTO.TypeName;
+                            objMachineType.Description = tblMachineTypeMSTDTO.Description;
+                            objMachineType.UpdatedBy = tblMachineTypeMSTDTO.UpdatedBy;
+                            objMachineType.UpdatedDateTime = tblMachineTypeMSTDTO.UpdatedDateTime;
+                        }
+                        else
+                        {
+                            return 2;
+                        }
+
+                    }
+                }
+
+                if (loomsManagementEntity.SaveChanges() > 0)
+                    return 0;
+                else
+                    return 2;
+
+            }
+        }
+
+        public static List<tblMachineTypeMSTDTO> GetAllMachineTypeDetails()
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
             {
@@ -111,5 +167,35 @@ namespace LoomsManagement.DAL
             }
         }
 
-     }
+        public static tblMachineTypeMSTDTO GetMachineTypeDetails(int MachineTypeId)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.MachineTypeID == MachineTypeId && m.IsDelete == false).FirstOrDefault().ToDTO();
+            }
+        }
+
+        public int DeleteMachineType(int MachineTypeId)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                tblMachineTypeMST objMachineType = loomsManagementEntity.tblMachineTypeMSTs.Where(m => m.MachineTypeID == MachineTypeId && m.IsDelete == false).FirstOrDefault();
+                if (objMachineType != null)
+                {
+                    objMachineType.IsDelete = true;
+                    if (loomsManagementEntity.SaveChanges() > 0)
+                        return 0;
+                    else
+                        return 2;
+                }
+                else
+                {
+                    return 3;
+                }
+            }
+        }
+
+        #endregion
+
+    }
 }
