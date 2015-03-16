@@ -64,7 +64,6 @@
             // pictureEdit2
             // 
             this.pictureEdit2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureEdit2.EditValue = global::LoomsManagement.Windows.Properties.Resources._1732542_balls_of_thead_on_a_white_background;
             this.pictureEdit2.Location = new System.Drawing.Point(12, 12);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
