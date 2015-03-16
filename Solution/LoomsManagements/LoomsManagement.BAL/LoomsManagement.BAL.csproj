@@ -42,6 +42,7 @@
     <Compile Include="BussinessLogic\BankMasterBusinessLogic.cs" />
     <Compile Include="BussinessLogic\BranchMasterBusinessLogic.cs" />
     <Compile Include="BussinessLogic\CompnayBussinesLogic.cs" />
+    <Compile Include="BussinessLogic\EmployeeBusinessLogic.cs" />
     <Compile Include="BussinessLogic\EmployeetypeBusinessLogic.cs" />
     <Compile Include="BussinessLogic\MachineMasterBusinessLogic.cs" />
     <Compile Include="BussinessLogic\MachineTypeBusinessLogic.cs" />
