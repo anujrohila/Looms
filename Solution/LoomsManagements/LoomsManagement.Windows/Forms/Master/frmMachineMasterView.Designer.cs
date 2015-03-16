@@ -65,10 +65,11 @@
             // gridMachineMaster
             // 
             this.gridMachineMaster.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridMachineMaster.Location = new System.Drawing.Point(0, 44);
+            this.gridMachineMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridMachineMaster.Location = new System.Drawing.Point(0, 43);
             this.gridMachineMaster.MainView = this.InnerGrid;
             this.gridMachineMaster.Name = "gridMachineMaster";
-            this.gridMachineMaster.Size = new System.Drawing.Size(794, 307);
+            this.gridMachineMaster.Size = new System.Drawing.Size(796, 338);
             this.gridMachineMaster.TabIndex = 65;
             this.gridMachineMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
