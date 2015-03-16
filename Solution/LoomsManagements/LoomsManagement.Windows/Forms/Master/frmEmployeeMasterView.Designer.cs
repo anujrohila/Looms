@@ -60,6 +60,7 @@
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // BtnMasterPrint
             // 
@@ -225,12 +226,12 @@
             this.Btn_View.Name = "Btn_View";
             this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
-            // EmployeeMasterView
+            // frmEmployeeMasterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(796, 381);
             this.Controls.Add(this.gridViewCompany);
-            this.Name = "EmployeeMasterView";
+            this.Name = "frmEmployeeMasterView";
             this.Controls.SetChildIndex(this.gridViewCompany, 0);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
