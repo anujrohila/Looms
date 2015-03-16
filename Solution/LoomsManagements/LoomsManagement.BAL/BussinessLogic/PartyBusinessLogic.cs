@@ -24,7 +24,7 @@ namespace LoomsManagement.BAL
             return PartyRepositotry.GetPartyDetails(PartyId);
         }
 
-        public static int DeletePartyData(int PartyId)
+        public static int DeleteParty(int PartyId)
         {
             var PartyRepositotry = new PartyRepositotry();
             return PartyRepositotry.DeleteParty(PartyId);
