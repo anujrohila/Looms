@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LoomsManagement.DAL.Respository
+namespace LoomsManagement.DAL
 {
     public class PartyRepositotry
     {
