@@ -41,7 +41,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var frmYarnQualityMaster = new frmYarnQualityMaster1();
+            var frmYarnQualityMaster = new frmYarnQualityMaster();
             frmYarnQualityMaster.FormClosed += frmYarnQualityMaster_FormClosed;
             frmYarnQualityMaster.ShowDialog();
         }
@@ -58,7 +58,7 @@ namespace LoomsManagement.Windows.Forms.Master
         {
             if (e.KeyCode == Keys.Enter)
             {
-                var frmYarnQualityMaster = new frmYarnQualityMaster1();
+                var frmYarnQualityMaster = new frmYarnQualityMaster();
                 frmYarnQualityMaster.IsEdit = true;
                 frmYarnQualityMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "YarnQualityID"));
                 frmYarnQualityMaster.FormClosed+=frmYarnQualityMaster_FormClosed;
