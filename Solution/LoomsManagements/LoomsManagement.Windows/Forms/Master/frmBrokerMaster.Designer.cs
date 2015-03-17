@@ -151,6 +151,9 @@
             this.txtBrokerName.Properties.Mask.EditMask = "n2";
             this.txtBrokerName.Size = new System.Drawing.Size(205, 26);
             this.txtBrokerName.TabIndex = 0;
+            this.txtBrokerName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtBrokerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtBrokerName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl14
             // 
@@ -193,6 +196,9 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(205, 90);
             this.txtAddress.TabIndex = 2;
+            this.txtAddress.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtAddress.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // txtContactNumber
             // 
@@ -211,6 +217,9 @@
             this.txtContactNumber.Properties.Mask.EditMask = "n2";
             this.txtContactNumber.Size = new System.Drawing.Size(205, 26);
             this.txtContactNumber.TabIndex = 3;
+            this.txtContactNumber.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtContactNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtContactNumber.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl4
             // 
@@ -247,6 +256,9 @@
             this.txtBrokerFirmName.Properties.Mask.EditMask = "n2";
             this.txtBrokerFirmName.Size = new System.Drawing.Size(205, 26);
             this.txtBrokerFirmName.TabIndex = 1;
+            this.txtBrokerFirmName.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtBrokerFirmName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtBrokerFirmName.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl2
             // 
@@ -312,6 +324,9 @@
             this.txtMobileNumber.Properties.Mask.EditMask = "n2";
             this.txtMobileNumber.Size = new System.Drawing.Size(205, 26);
             this.txtMobileNumber.TabIndex = 4;
+            this.txtMobileNumber.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtMobileNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtMobileNumber.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // labelControl11
             // 
@@ -335,6 +350,9 @@
             this.txtDealingIn.Name = "txtDealingIn";
             this.txtDealingIn.Size = new System.Drawing.Size(205, 90);
             this.txtDealingIn.TabIndex = 5;
+            this.txtDealingIn.Enter += new System.EventHandler(this.EnterEvent);
+            this.txtDealingIn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            this.txtDealingIn.Leave += new System.EventHandler(this.LeaveEvent);
             // 
             // errorBrokerName
             // 

@@ -222,8 +222,5 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #endregion
 
-       
-
-
     }
 }
