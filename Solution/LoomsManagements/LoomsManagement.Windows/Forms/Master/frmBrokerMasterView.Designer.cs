@@ -66,10 +66,11 @@
             // gridBroker
             // 
             this.gridBroker.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridBroker.Location = new System.Drawing.Point(0, 44);
+            this.gridBroker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridBroker.Location = new System.Drawing.Point(0, 43);
             this.gridBroker.MainView = this.InnerGrid;
             this.gridBroker.Name = "gridBroker";
-            this.gridBroker.Size = new System.Drawing.Size(794, 305);
+            this.gridBroker.Size = new System.Drawing.Size(796, 338);
             this.gridBroker.TabIndex = 65;
             this.gridBroker.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
@@ -130,6 +131,7 @@
             this.ClientSize = new System.Drawing.Size(796, 381);
             this.Controls.Add(this.gridBroker);
             this.Name = "frmBrokerMasterView";
+            this.Tag = "Broker Master View";
             this.Text = "Broker Master Details";
             this.Controls.SetChildIndex(this.gridBroker, 0);
             ((System.ComponentModel.ISupportInitialize)(this.gridBroker)).EndInit();
