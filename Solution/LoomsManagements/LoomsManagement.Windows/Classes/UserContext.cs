@@ -42,6 +42,8 @@ namespace LoomsManagement.Windows.Classes
 
         public static List<tblBrokersMSTDTO> UserContexttblBrokersMSTDTO { get; set; }
 
+        public static List<tblProfeListMstDTO> UserContexttblProofMSTDTO { get; set; }
+
         #endregion
 
         #region [Method]
@@ -73,6 +75,9 @@ namespace LoomsManagement.Windows.Classes
             //party
             GetALLtblPartysMSTDTO();
             GetALLtblBrokersMSTDTO();
+
+            //Proof
+            
         }
        
         public static void GetALLtblEmployeeDTO()
@@ -128,7 +133,15 @@ namespace LoomsManagement.Windows.Classes
             UserContexttblPenaltyMSTDTO = EmployeeBusinessLogic.GetAllPenaltyDetails();
         }
 
-        public static void GetALLtblBrokersMSTDTO() { }
+        public static void GetALLtblBrokersMSTDTO() 
+        {
+            UserContexttblBrokersMSTDTO = PartyBusinessLogic.GetAllBrokerDetails();
+        }
+
+        public static void GetALLtblProofMSTDTO()
+        {
+            UserContexttblProofMSTDTO = ProofBusinessLogic.GetAllProofDetails();
+        }
 
         #endregion
     }
