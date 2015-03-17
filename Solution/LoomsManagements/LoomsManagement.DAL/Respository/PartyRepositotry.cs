@@ -10,6 +10,8 @@ namespace LoomsManagement.DAL
 {
     public class PartyRepositotry
     {
+        #region Party Master
+
         public int SaveParty(tblPartysMSTDTO tblPartyMSTDTO)
         {
             using (var loomsManagementEntity = new LoomsManagementEntities())
@@ -113,6 +115,104 @@ namespace LoomsManagement.DAL
                 }
             }
         }
+
+        #endregion
+
+        #region Broker Master
+
+        public int SaveBroker(tblBrokersMSTDTO tblBrokersMSTDTO)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                if (tblBrokersMSTDTO.BrokerID == 0)
+                {
+                    if (loomsManagementEntity.tblBrokersMSTs.Where(m => m.BrokerName == tblBrokersMSTDTO.BrokerName && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+
+                    tblBrokersMST objBrokerMst = tblBrokersMSTDTO.ToEntity();
+                    loomsManagementEntity.tblBrokersMSTs.Add(objBrokerMst);
+                }
+                else
+                {
+                    if (loomsManagementEntity.tblBrokersMSTs.Where(m => m.BrokerName == tblBrokersMSTDTO.BrokerName && m.BrokerID != tblBrokersMSTDTO.BrokerID && m.IsDelete == false).ToList().Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        tblBrokersMST objBrokerMst = loomsManagementEntity.tblBrokersMSTs.Where(m => m.BrokerID == tblBrokersMSTDTO.BrokerID && m.IsDelete == false).FirstOrDefault();
+                        if (objBrokerMst != null)
+                        {
+                            objBrokerMst.BrokerID = tblBrokersMSTDTO.BrokerID;
+                            objBrokerMst.BrokerName = tblBrokersMSTDTO.BrokerName;
+                            objBrokerMst.BrokerFirmName = tblBrokersMSTDTO.BrokerFirmName;
+                            objBrokerMst.ContactNo = tblBrokersMSTDTO.ContactNo;
+                            objBrokerMst.MobileNo = tblBrokersMSTDTO.MobileNo;
+                            objBrokerMst.CreationDateTime = tblBrokersMSTDTO.CreationDateTime;
+                            objBrokerMst.Address = tblBrokersMSTDTO.Address;
+                            objBrokerMst.DealingIn = tblBrokersMSTDTO.DealingIn;
+                            objBrokerMst.UpdateBy = tblBrokersMSTDTO.UpdateBy;
+                            objBrokerMst.UpdationDateTime = tblBrokersMSTDTO.UpdationDateTime;
+                        }
+                        else
+                        {
+                            return 2;
+                        }
+
+                    }
+
+                }
+
+                if (loomsManagementEntity.SaveChanges() > 0)
+                    return 0;
+                else
+                    return 2;
+            }
+
+
+        }
+
+        public List<tblBrokersMSTDTO> GetAllBrokerDetails()
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblBrokersMSTs.Where(m => m.IsDelete == false).ToList().ToDTOs();
+            }
+        }
+
+        public tblBrokersMSTDTO GetBrokerDetails(int BrokerId)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblBrokersMSTs.Where(m => m.BrokerID == BrokerId && m.IsDelete == false).FirstOrDefault().ToDTO();
+            }
+        }
+
+        public int DeleteBroker(int BrokerId)
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                tblBrokersMST objBrokerMst = loomsManagementEntity.tblBrokersMSTs.Where(m => m.BrokerID == BrokerId && m.IsDelete == false).FirstOrDefault();
+                if (objBrokerMst != null)
+                {
+                    objBrokerMst.IsDelete = true;
+                    if (loomsManagementEntity.SaveChanges() > 0)
+                        return 0;
+                    else
+                        return 2;
+                }
+                else
+                {
+                    return 3;
+                }
+            }
+        }
+
+        #endregion
+
+
     }
 
 }
