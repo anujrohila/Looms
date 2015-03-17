@@ -54,6 +54,7 @@
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.barcmbCompanycode = new DevExpress.XtraBars.BarEditItem();
             this.cmbCompany = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -86,6 +87,7 @@
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LoomsManagement.Windows.WaitForm1), true, true);
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -170,10 +172,12 @@
             this.btnRefreshData,
             this.barButtonItem13,
             this.barButtonItem15,
-            this.barcmbCompanycode});
+            this.barcmbCompanycode,
+            this.barButtonItem16,
+            this.barButtonItem17});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 10;
+            this.ribbonControl.MaxItemId = 12;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barcmbCompanycode);
             this.ribbonControl.PageHeaderItemLinks.Add(this.btnRefreshData);
@@ -391,6 +395,15 @@
             this.cmbCompany.Name = "cmbCompany";
             this.cmbCompany.EditValueChanged += new System.EventHandler(this.cmbCompany_EditValueChanged);
             // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "Broker";
+            this.barButtonItem16.Id = 10;
+            this.barButtonItem16.ImageIndex = 3;
+            this.barButtonItem16.Name = "barButtonItem16";
+            this.barButtonItem16.Tag = "Broker Master View";
+            this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
@@ -444,6 +457,7 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem16);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Employee Master";
             // 
@@ -459,6 +473,7 @@
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem17);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Machin Master";
             // 
@@ -604,6 +619,15 @@
             this.barEditItem1.Name = "barEditItem1";
             this.barEditItem1.Width = 200;
             // 
+            // barButtonItem17
+            // 
+            this.barButtonItem17.Caption = "Proof";
+            this.barButtonItem17.Id = 11;
+            this.barButtonItem17.ImageIndex = 18;
+            this.barButtonItem17.Name = "barButtonItem17";
+            this.barButtonItem17.Tag = "Proof Master View";
+            this.barButtonItem17.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
             // Dashboard
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -689,6 +713,8 @@
         private DevExpress.XtraBars.BarEditItem barcmbCompanycode;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit cmbCompany;
         private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }

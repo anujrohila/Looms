@@ -63,10 +63,11 @@
             // gridProofMaster
             // 
             this.gridProofMaster.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridProofMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridProofMaster.Location = new System.Drawing.Point(0, 43);
             this.gridProofMaster.MainView = this.InnerGrid;
             this.gridProofMaster.Name = "gridProofMaster";
-            this.gridProofMaster.Size = new System.Drawing.Size(796, 200);
+            this.gridProofMaster.Size = new System.Drawing.Size(796, 232);
             this.gridProofMaster.TabIndex = 65;
             this.gridProofMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
@@ -99,7 +100,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(796, 275);
             this.Controls.Add(this.gridProofMaster);
-          
+           
+            this.Tag = "Proof Master View";
             this.Text = "Proof Master Details";
             this.Controls.SetChildIndex(this.gridProofMaster, 0);
             ((System.ComponentModel.ISupportInitialize)(this.gridProofMaster)).EndInit();

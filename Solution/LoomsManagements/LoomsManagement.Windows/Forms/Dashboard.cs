@@ -88,12 +88,12 @@ namespace LoomsManagement.Windows.Forms
                 case "Yarn Package Type View":
                     Currentform = new frmYarnPackageTypeMasterView();
                     break;
-                //case "milk lab entry":
-                //    Currentform = new MilkLabDetails();
-                //    break;
-                //case "cheque entry":
-                //    Currentform = new AccountDetails();
-                //    break;
+                case "Broker Master View":
+                    Currentform = new frmBrokerMasterView();
+                    break;
+                case "Proof Master View":
+                    Currentform = new frmProofMasterView();
+                    break;
                 //case "withdrawn entry":
                 //    Currentform = new WithdrawnInstallmnetDetails();
                 //    break;

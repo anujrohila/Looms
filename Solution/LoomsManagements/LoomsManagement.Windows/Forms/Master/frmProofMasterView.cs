@@ -59,7 +59,7 @@ namespace LoomsManagement.Windows.Forms.Master
             {
                 var frmProofMaster = new frmProofMaster();
                 frmProofMaster.IsEdit = true;
-                frmProofMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "MachineTypeID"));
+                frmProofMaster.id = Convert.ToInt32(InnerGrid.GetRowCellValue(InnerGrid.FocusedRowHandle, "ProfeID"));
                 frmProofMaster.FormClosed += frmProofMaster_FormClosed;
                 frmProofMaster.ShowDialog();
             }
