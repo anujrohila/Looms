@@ -46,6 +46,12 @@ namespace LoomsManagement.DAL
 
             entity.ProfeID = dto.ProfeID;
             entity.Name = dto.Name;
+            entity.IsDelete = dto.IsDelete;
+            entity.IsActive = dto.IsActive;
+            entity.CreatedBy = dto.CreatedBy;
+            entity.CreatedDateTime = dto.CreatedDateTime;
+            entity.UpdateBy = dto.UpdateBy;
+            entity.UpdateDateTime = dto.UpdateDateTime;
 
             dto.OnEntity(entity);
 
@@ -64,7 +70,12 @@ namespace LoomsManagement.DAL
 
             dto.ProfeID = entity.ProfeID;
             dto.Name = entity.Name;
-
+            entity.IsDelete = dto.IsDelete;
+            entity.IsActive = dto.IsActive;
+            entity.CreatedBy = dto.CreatedBy;
+            entity.CreatedDateTime = dto.CreatedDateTime;
+            entity.UpdateBy = dto.UpdateBy;
+            entity.UpdateDateTime = dto.UpdateDateTime;
             entity.OnDTO(dto);
 
             return dto;
