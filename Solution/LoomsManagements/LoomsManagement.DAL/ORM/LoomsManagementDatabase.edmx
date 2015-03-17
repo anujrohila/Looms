@@ -579,6 +579,12 @@
           </Key>
           <Property Name="ProfeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdateDateTime" Type="datetime" />
+          <Property Name="IsDelete" Type="bit" />
         </EntityType>
         <EntityType Name="tblSalaryMST">
           <Key>
@@ -1619,6 +1625,12 @@
           </Key>
           <Property Type="Int32" Name="ProfeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdateDateTime" Precision="3" />
+          <Property Type="Boolean" Name="IsDelete" />
         </EntityType>
         <EntityType Name="tblSalaryMST">
           <Key>
@@ -2568,6 +2580,12 @@
           <EntitySetMapping Name="tblProfeListMsts">
             <EntityTypeMapping TypeName="LoomsManagementModel.tblProfeListMst">
               <MappingFragment StoreEntitySet="tblProfeListMst">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="ProfeID" ColumnName="ProfeID" />
               </MappingFragment>

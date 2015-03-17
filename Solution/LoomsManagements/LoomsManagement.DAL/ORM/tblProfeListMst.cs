@@ -16,5 +16,11 @@ namespace LoomsManagement.DAL.ORM
     {
         public int ProfeID { get; set; }
         public string Name { get; set; }
+         public Nullable<bool> IsDelete { get; set; }
+        public Nullable<bool> IsActive { get; set; }
+        public Nullable<int> CreatedBy { get; set; }
+        public Nullable<System.DateTime> CreatedDateTime { get; set; }
+        public Nullable<int> UpdateBy { get; set; }
+        public Nullable<System.DateTime> UpdateDateTime { get; set; } 
     }
 }
