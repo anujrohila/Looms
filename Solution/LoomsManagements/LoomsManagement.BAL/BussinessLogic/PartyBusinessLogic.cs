@@ -6,6 +6,8 @@ namespace LoomsManagement.BAL
 {
     public static class PartyBusinessLogic
     {
+        #region Party Master
+
         public static int SaveParty(tblPartysMSTDTO tblPartyMSTDTO)
         {
             var PartyRepositotry = new PartyRepositotry();
@@ -29,5 +31,36 @@ namespace LoomsManagement.BAL
             var PartyRepositotry = new PartyRepositotry();
             return PartyRepositotry.DeleteParty(PartyId);
         }
+
+        #endregion
+
+        #region Broker Master
+
+        public static int SaveBroker(tblBrokersMSTDTO tblBrokersMSTDTO)
+        {
+
+            var PartyRepositotry = new PartyRepositotry();
+            return PartyRepositotry.SaveBroker(tblBrokersMSTDTO);
+        }
+
+        public static List<tblBrokersMSTDTO> GetAllBrokerDetails()
+        {
+            var PartyRepositotry = new PartyRepositotry();
+            return PartyRepositotry.GetAllBrokerDetails();
+        }
+
+        public static tblBrokersMSTDTO GetBrokerDetails(int BrokerId)
+        {
+            var PartyRepositotry = new PartyRepositotry();
+            return PartyRepositotry.GetBrokerDetails(BrokerId);
+        }
+
+        public static int DeleteBroker(int BrokerId)
+        {
+            var PartyRepositotry = new PartyRepositotry();
+            return PartyRepositotry.DeleteBroker(BrokerId);
+        }
+
+        #endregion
     }
 }
