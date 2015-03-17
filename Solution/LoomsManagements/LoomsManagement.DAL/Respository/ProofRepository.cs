@@ -15,7 +15,7 @@ namespace LoomsManagement.DAL
             {
                 if (tblProfeListMstDTO.ProfeID == 0)
                 {
-                    if (loomsManagementEntity.tblProfeListMsts.Where(m => m.Name == tblProfeListMstDTO.Name && m.IsDelete == false).ToList().Count() > 0)
+                    if (loomsManagementEntity.tblProfeListMsts.Where(m=>m.Name==tblProfeListMstDTO.Name && m.IsDelete==false).ToList().Count()>0)
                     {
                         return 1;
                     }
