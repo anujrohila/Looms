@@ -22,14 +22,39 @@ namespace LoomsManagement.Domain.DTO
         [DataMember()]
         public String Name { get; set; }
 
+        [DataMember()]
+        public Nullable<Boolean> IsDelete { get; set; }
+
+        [DataMember()]
+        public Nullable<Boolean> IsActive { get; set; }
+
+        [DataMember()]
+        public Nullable<Int32> CreatedBy { get; set; }
+
+        [DataMember()]
+        public Nullable<DateTime> CreatedDateTime { get; set; }
+
+        [DataMember()]
+        public Nullable<Int32> UpdateBy { get; set; }
+
+        [DataMember()]
+        public Nullable<DateTime> UpdateDateTime { get; set; }
+
+
         public tblProfeListMstDTO()
         {
         }
 
-        public tblProfeListMstDTO(Int32 profeID, String name)
+        public tblProfeListMstDTO(Int32 profeID, String name, Nullable<Boolean> isDelete, Nullable<Boolean> isActive, Nullable<Int32> createBy, Nullable<DateTime> creationDateTime, Nullable<Int32> updateBy, Nullable<DateTime> updationDateTime)
         {
 			this.ProfeID = profeID;
 			this.Name = name;
+            this.IsDelete = isDelete;
+            this.IsActive = isActive;
+            this.CreatedBy = createBy;
+            this.CreatedDateTime = creationDateTime;
+            this.UpdateBy=updateBy;
+            this.UpdateDateTime = updationDateTime;
         }
     }
 }
