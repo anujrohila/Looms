@@ -57,7 +57,7 @@ namespace LoomsManagement.DAL
             entity.Grade = dto.Grade;
             entity.EmployeeId = dto.EmployeeId;
             entity.IsDelete = dto.IsDelete;
-            entity.IsDelete_bit_Checked = dto.IsDelete_bit_Checked;
+           
             entity.IsActive = dto.IsActive;
             entity.CreatedBy = dto.CreatedBy;
             entity.CreatedDateTime = dto.CreatedDateTime;
@@ -92,7 +92,7 @@ namespace LoomsManagement.DAL
             dto.Grade = entity.Grade;
             dto.EmployeeId = entity.EmployeeId;
             dto.IsDelete = entity.IsDelete;
-            dto.IsDelete_bit_Checked = entity.IsDelete_bit_Checked;
+          
             dto.IsActive = entity.IsActive;
             dto.CreatedBy = entity.CreatedBy;
             dto.CreatedDateTime = entity.CreatedDateTime;

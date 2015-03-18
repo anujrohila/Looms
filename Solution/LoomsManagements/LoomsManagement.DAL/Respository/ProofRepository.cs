@@ -94,5 +94,17 @@ namespace LoomsManagement.DAL
         }
 
         #endregion
+
+        #region Proof Master
+
+        public List<tblWorkingYearDTO> GetAllWorkoingYearDetails()
+        {
+            using (var loomsManagementEntity = new LoomsManagementEntities())
+            {
+                return loomsManagementEntity.tblWorkingYears.Where(m => m.IsDelete == false).ToList().ToDTOs();
+            }
+        }
+
+        #endregion
     }
 }
