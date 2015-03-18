@@ -11,6 +11,8 @@ namespace LoomsManagement.BAL
 {
     public static class ProofBusinessLogic
     {
+        #region ProofMaster 
+
         public static int SaveProof(tblProfeListMstDTO tblProfeListMstDTO)
         {
            var ProofRepository = new ProofRepository();
@@ -34,5 +36,17 @@ namespace LoomsManagement.BAL
             var ProofRepository = new ProofRepository();
             return ProofRepository.DeleteProof(ProofId);
         }
+
+        #endregion
+
+        #region Year
+
+        public static List<tblWorkingYearDTO> GetAllWorkoingYearDetails()
+        {
+             var ProofRepository = new ProofRepository();
+             return ProofRepository.GetAllWorkoingYearDetails();
+        }
+
+        #endregion
     }
 }
