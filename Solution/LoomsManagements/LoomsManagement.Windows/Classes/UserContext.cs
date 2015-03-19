@@ -44,6 +44,10 @@ namespace LoomsManagement.Windows.Classes
 
         public static List<tblProfeListMstDTO> UserContexttblProofMSTDTO { get; set; }
 
+        public static List<tblYarnPurchaseDTO> UserContexttblYarnPurchaseDTO { get; set; }
+
+        public static List<tblWorkingYearDTO> UserContexttblWorkingYearDTO { get; set; }
+
         #endregion
 
         #region [Method]
@@ -77,6 +81,14 @@ namespace LoomsManagement.Windows.Classes
             GetALLtblBrokersMSTDTO();
 
             //Proof
+            GetALLtblProofMSTDTO();
+
+            //Yarn Purchase
+            GetALLtblYarnPurchaseDTO();
+
+            //Year
+
+            GetALLtblWorkingYearDTO();
             
         }
        
@@ -141,6 +153,16 @@ namespace LoomsManagement.Windows.Classes
         public static void GetALLtblProofMSTDTO()
         {
             UserContexttblProofMSTDTO = ProofBusinessLogic.GetAllProofDetails();
+        }
+
+        public static void GetALLtblYarnPurchaseDTO()
+        {
+            UserContexttblYarnPurchaseDTO = YarnPurchaseBusinessLogic.GetAllYarnPurchase();
+        }
+
+        public static void GetALLtblWorkingYearDTO()
+        {
+            UserContexttblWorkingYearDTO = ProofBusinessLogic.GetAllWorkoingYearDetails();
         }
 
         #endregion
