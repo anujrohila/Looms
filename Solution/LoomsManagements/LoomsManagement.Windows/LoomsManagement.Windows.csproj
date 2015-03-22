@@ -153,6 +153,12 @@
     <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCompanySelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanySelect.Designer.cs">
+      <DependentUpon>frmCompanySelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmBankBranchMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,18 @@
     </Compile>
     <Compile Include="Forms\Master\frmBankMasterView.Designer.cs">
       <DependentUpon>frmBankMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMaster.Designer.cs">
+      <DependentUpon>frmBrokerMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMasterView.Designer.cs">
+      <DependentUpon>frmBrokerMasterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmCompanyMaster.cs">
       <SubType>Form</SubType>
@@ -261,6 +279,18 @@
     <Compile Include="Forms\Master\frmPenaltyMasterView.Designer.cs">
       <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmProofMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmProofMaster.Designer.cs">
+      <DependentUpon>frmProofMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmProofMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmProofMasterView.Designer.cs">
+      <DependentUpon>frmProofMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmYarnPackageTypeMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +302,12 @@
     </Compile>
     <Compile Include="Forms\Master\frmYarnPackageTypeMasterView.Designer.cs">
       <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMaster.designer.cs">
+      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmYarnQualityMasterView.cs">
       <SubType>Form</SubType>
@@ -335,6 +371,9 @@
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompanySelect.resx">
+      <DependentUpon>frmCompanySelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmBankBranchMaster.resx">
       <DependentUpon>frmBankBranchMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +385,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmBankMasterView.resx">
       <DependentUpon>frmBankMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBrokerMaster.resx">
+      <DependentUpon>frmBrokerMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBrokerMasterView.resx">
+      <DependentUpon>frmBrokerMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmCompanyMaster.resx">
       <DependentUpon>frmCompanyMaster.cs</DependentUpon>
@@ -389,11 +434,20 @@
     <EmbeddedResource Include="Forms\Master\frmPenaltyMasterView.resx">
       <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmProofMaster.resx">
+      <DependentUpon>frmProofMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmProofMasterView.resx">
+      <DependentUpon>frmProofMasterView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMaster.resx">
       <DependentUpon>frmYarnPackageTypeMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMasterView.resx">
       <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnQualityMaster.resx">
+      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnQualityMasterView.resx">
       <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
