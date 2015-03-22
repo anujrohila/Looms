@@ -100,6 +100,7 @@
             this.txtProofName.Properties.Mask.EditMask = "n2";
             this.txtProofName.Size = new System.Drawing.Size(205, 26);
             this.txtProofName.TabIndex = 0;
+            this.txtProofName.ToolTip = "Enter Proof name";
             this.txtProofName.Enter += new System.EventHandler(this.EnterEvent);
             this.txtProofName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtProofName.Leave += new System.EventHandler(this.LeaveEvent);

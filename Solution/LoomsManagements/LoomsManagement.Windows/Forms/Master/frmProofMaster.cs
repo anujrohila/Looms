@@ -146,7 +146,6 @@ namespace LoomsManagement.Windows.Forms.Master
         #endregion
 
        #endregion
-             
 
         #region Private Method
 
