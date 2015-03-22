@@ -12,6 +12,9 @@ namespace LoomsManagement.Windows.Classes
     {
         #region [Variable]
 
+        public static int SelectedCompanyCode { get; set; }
+
+
         public static tblEmployeeDTO UserContextUserInfo { get; set; }
 
         public static List<tblEmployeeDTO> UserContexttblEmployeeDTO { get; set; }
