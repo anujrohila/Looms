@@ -47,8 +47,8 @@ namespace LoomsManagement.Windows.Forms
         {
             if ((sender as Form).DialogResult == System.Windows.Forms.DialogResult.Cancel)
             {
-                MessageBox.Show("hello");
-                RefreshData();
+               // MessageBox.Show("hello");
+               // RefreshData();
             }
         }
 
@@ -105,12 +105,12 @@ namespace LoomsManagement.Windows.Forms
                 case "Yarn Package Type View":
                     Currentform = new frmYarnPackageTypeMasterView();
                     break;
-                case "Broker Master View":
-                    Currentform = new frmBrokerMasterView();
-                    break;
-                case "Proof Master View":
-                    Currentform = new frmProofMasterView();
-                    break;
+                //case "milk lab entry":
+                //    Currentform = new MilkLabDetails();
+                //    break;
+                //case "cheque entry":
+                //    Currentform = new AccountDetails();
+                //    break;
                 //case "withdrawn entry":
                 //    Currentform = new WithdrawnInstallmnetDetails();
                 //    break;
@@ -195,8 +195,6 @@ namespace LoomsManagement.Windows.Forms
         }
 
         #endregion
-
-
 
         private void cmbCompany_EditValueChanged(object sender, EventArgs e)
         {
