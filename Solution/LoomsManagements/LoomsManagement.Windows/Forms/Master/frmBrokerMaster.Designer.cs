@@ -151,6 +151,7 @@
             this.txtBrokerName.Properties.Mask.EditMask = "n2";
             this.txtBrokerName.Size = new System.Drawing.Size(205, 26);
             this.txtBrokerName.TabIndex = 0;
+            this.txtBrokerName.ToolTip = "Enter Broker Name";
             this.txtBrokerName.Enter += new System.EventHandler(this.EnterEvent);
             this.txtBrokerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtBrokerName.Leave += new System.EventHandler(this.LeaveEvent);
@@ -196,6 +197,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(205, 90);
             this.txtAddress.TabIndex = 2;
+            this.txtAddress.ToolTip = "Enter Broker Address";
             this.txtAddress.Enter += new System.EventHandler(this.EnterEvent);
             this.txtAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtAddress.Leave += new System.EventHandler(this.LeaveEvent);
@@ -214,9 +216,12 @@
             this.txtContactNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContactNumber.Properties.Appearance.Options.UseFont = true;
             this.txtContactNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtContactNumber.Properties.Mask.EditMask = "n2";
+            this.txtContactNumber.Properties.Mask.EditMask = "d";
+            this.txtContactNumber.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtContactNumber.Properties.MaxLength = 10;
             this.txtContactNumber.Size = new System.Drawing.Size(205, 26);
             this.txtContactNumber.TabIndex = 3;
+            this.txtContactNumber.ToolTip = "Enter Contact Number";
             this.txtContactNumber.Enter += new System.EventHandler(this.EnterEvent);
             this.txtContactNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtContactNumber.Leave += new System.EventHandler(this.LeaveEvent);
@@ -256,6 +261,7 @@
             this.txtBrokerFirmName.Properties.Mask.EditMask = "n2";
             this.txtBrokerFirmName.Size = new System.Drawing.Size(205, 26);
             this.txtBrokerFirmName.TabIndex = 1;
+            this.txtBrokerFirmName.ToolTip = "Enter Broker Firm Name";
             this.txtBrokerFirmName.Enter += new System.EventHandler(this.EnterEvent);
             this.txtBrokerFirmName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtBrokerFirmName.Leave += new System.EventHandler(this.LeaveEvent);
@@ -321,9 +327,12 @@
             this.txtMobileNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobileNumber.Properties.Appearance.Options.UseFont = true;
             this.txtMobileNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtMobileNumber.Properties.Mask.EditMask = "n2";
+            this.txtMobileNumber.Properties.Mask.EditMask = "d";
+            this.txtMobileNumber.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtMobileNumber.Properties.MaxLength = 10;
             this.txtMobileNumber.Size = new System.Drawing.Size(205, 26);
             this.txtMobileNumber.TabIndex = 4;
+            this.txtMobileNumber.ToolTip = "Enter Mobile Number";
             this.txtMobileNumber.Enter += new System.EventHandler(this.EnterEvent);
             this.txtMobileNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtMobileNumber.Leave += new System.EventHandler(this.LeaveEvent);
@@ -350,6 +359,7 @@
             this.txtDealingIn.Name = "txtDealingIn";
             this.txtDealingIn.Size = new System.Drawing.Size(205, 90);
             this.txtDealingIn.TabIndex = 5;
+            this.txtDealingIn.ToolTip = "Enter Deling description";
             this.txtDealingIn.Enter += new System.EventHandler(this.EnterEvent);
             this.txtDealingIn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtDealingIn.Leave += new System.EventHandler(this.LeaveEvent);
