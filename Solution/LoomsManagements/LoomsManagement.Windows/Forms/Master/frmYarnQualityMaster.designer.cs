@@ -105,7 +105,7 @@
             this.txtYarnQualityName.Properties.Mask.EditMask = "n2";
             this.txtYarnQualityName.Size = new System.Drawing.Size(205, 26);
             this.txtYarnQualityName.TabIndex = 0;
-            this.txtYarnQualityName.ToolTip = "Enter Cheque Number";
+            this.txtYarnQualityName.ToolTip = "Enter Yarn Quality Name";
             this.txtYarnQualityName.Enter += new System.EventHandler(this.EnterEvent);
             this.txtYarnQualityName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtYarnQualityName.Leave += new System.EventHandler(this.LeaveEvent);
@@ -126,6 +126,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(205, 90);
             this.txtDescription.TabIndex = 1;
+            this.txtDescription.ToolTip = "Enter Description";
             this.txtDescription.Enter += new System.EventHandler(this.EnterEvent);
             this.txtDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
             this.txtDescription.Leave += new System.EventHandler(this.LeaveEvent);
