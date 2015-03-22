@@ -16,6 +16,7 @@ namespace LoomsManagement.Windows.Forms
 {
     public partial class Dashboard : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+
         #region ControctorConstructor
 
         public Dashboard()
@@ -26,13 +27,29 @@ namespace LoomsManagement.Windows.Forms
         }
 
         #endregion
-       
+
         #region PageEvent
-        
+
         void Dashboard_Shown(object sender, EventArgs e)
         {
-            RefreshData();
-           
+            if (UserContext.SelectedCompanyCode == 0)
+            {
+                var companyselect = new frmCompanySelect();
+                companyselect.Deactivate += companyselect_Deactivate;
+                companyselect.ShowDialog();
+            }
+
+        }
+
+
+
+        void companyselect_Deactivate(object sender, EventArgs e)
+        {
+            if ((sender as Form).DialogResult == System.Windows.Forms.DialogResult.Cancel)
+            {
+                MessageBox.Show("hello");
+                RefreshData();
+            }
         }
 
         #endregion
@@ -179,12 +196,12 @@ namespace LoomsManagement.Windows.Forms
 
         #endregion
 
-      
+
 
         private void cmbCompany_EditValueChanged(object sender, EventArgs e)
         {
 
         }
-       
+
     }
 }

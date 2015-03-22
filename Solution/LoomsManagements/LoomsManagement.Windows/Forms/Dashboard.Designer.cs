@@ -376,7 +376,8 @@
             // barcmbCompanycode
             // 
             this.barcmbCompanycode.Edit = this.cmbCompany;
-            this.barcmbCompanycode.EditValue = '-';
+            this.barcmbCompanycode.EditHeight = 0;
+            this.barcmbCompanycode.EditValue = "-Select-";
             this.barcmbCompanycode.Id = 10;
             this.barcmbCompanycode.Name = "barcmbCompanycode";
             this.barcmbCompanycode.Width = 200;
