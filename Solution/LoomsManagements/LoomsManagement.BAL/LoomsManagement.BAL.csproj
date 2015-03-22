@@ -44,7 +44,9 @@
     <Compile Include="BussinessLogic\EmployeeBusinessLogic.cs" />
     <Compile Include="BussinessLogic\MachineBusinessLogic.cs" />
     <Compile Include="BussinessLogic\PartyBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\ProofBusinessLogic.cs" />
     <Compile Include="BussinessLogic\YarnBusinessLogic.cs" />
+    <Compile Include="BussinessLogic\YarnPurchaseBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
