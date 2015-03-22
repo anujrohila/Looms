@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoomsManagement.Windows.Classes;
+using System;
 using System.Threading;
 
 namespace LoomsManagement.Windows.Forms.Account
@@ -18,7 +19,9 @@ namespace LoomsManagement.Windows.Forms.Account
 
         private void button1_Click(object sender, EventArgs e)
         {
+            UserContext.GetALLtblCompanyDTO();
             var dashboard = new Dashboard();
+           
             dashboard.Show();
             this.Hide();
         }
