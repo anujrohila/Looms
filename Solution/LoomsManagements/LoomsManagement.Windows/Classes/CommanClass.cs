@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Classes
 {
@@ -11,21 +12,28 @@ namespace LoomsManagement.Windows.Classes
     {
 
         #region [Variable]
-        
-        #endregion
-
-        #region [Methods]
-        
-        #endregion
 
         public static int UserId = 1;
         public static System.Drawing.Color m_tbcolorenter = Color.FromArgb(233, 240, 173);
         public static System.Drawing.Color m_tbcolorleave = System.Drawing.Color.White;
         public static System.Drawing.Color m_tbcolorerror = Color.FromArgb(255, 189, 186);
         public static DateTime newdata = new DateTime(2016, 2, 1);
+        public static Keys SaveButton = Keys.S;
+        public static Keys DeleteButton = Keys.Delete;
+        public static Keys CloseButton = Keys.X;
+        public static Keys PrintButton = Keys.P;
 
         public static string ExportDataPath = "D:\\ExportData\\" + DateTime.Today.ToShortDateString() + "-";
 
+
+
+        #endregion
+
+        #region [Methods]
+        
+        #endregion
+
+    
         public static void EnterEvents(object sender, EventArgs e)
         {
             if ((sender as DateEdit) is DateEdit)
