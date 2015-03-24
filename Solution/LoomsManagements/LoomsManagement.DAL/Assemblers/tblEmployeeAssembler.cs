@@ -95,7 +95,7 @@ namespace LoomsManagement.DAL
             if (entity == null) return null;
 
             var dto = new tblEmployeeDTO();
-            dto.CompanyID = entity.CompanyID;
+            dto.CompanyID = entity.CompanyID ?? 0;
             dto.EmployeeID = entity.EmployeeID;
             dto.EmployeeTypeID = entity.EmployeeTypeID;
             dto.EmployeeCode = entity.EmployeeCode;
