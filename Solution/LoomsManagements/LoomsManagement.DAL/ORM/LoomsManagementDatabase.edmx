@@ -1062,6 +1062,7 @@
           <EntitySet Name="tblWithdrownMSTs" EntityType="LoomsManagementModel.tblWithdrownMST" />
           <EntitySet Name="tblWorkingYears" EntityType="LoomsManagementModel.tblWorkingYear" />
           <EntitySet Name="tblYarnPackageTypes" EntityType="LoomsManagementModel.tblYarnPackageType" />
+          <EntitySet Name="tblYarnPurchases" EntityType="LoomsManagementModel.tblYarnPurchase" />
           <EntitySet Name="tblYarnPurchaseItems" EntityType="LoomsManagementModel.tblYarnPurchaseItem" />
           <EntitySet Name="tblYarnQualityMSTs" EntityType="LoomsManagementModel.tblYarnQualityMST" />
           <EntitySet Name="tblYarnTypeMSTs" EntityType="LoomsManagementModel.tblYarnTypeMST" />
@@ -1122,6 +1123,10 @@
             <End Role="tblYarnPackageType" EntitySet="tblYarnPackageTypes" />
             <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
           </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnPurchase" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase">
+            <End Role="tblYarnPurchase" EntitySet="tblYarnPurchases" />
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
           <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnMST" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnMST">
             <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMSTs" />
             <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
@@ -1137,11 +1142,6 @@
           <AssociationSet Name="FK_tblYarnTypeMST_tblYarnQualityMST" Association="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST">
             <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMSTs" />
             <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMSTs" />
-          </AssociationSet>
-          <EntitySet Name="tblYarnPurchases" EntityType="LoomsManagementModel.tblYarnPurchase" />
-          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnPurchase" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase">
-            <End Role="tblYarnPurchase" EntitySet="tblYarnPurchases" />
-            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="tblAttendanceMST">
@@ -1755,6 +1755,30 @@
           <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
           <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPackageType" FromRole="tblYarnPackageType" ToRole="tblYarnPurchaseItem" />
         </EntityType>
+        <EntityType Name="tblYarnPurchase">
+          <Key>
+            <PropertyRef Name="PurchaseID" />
+          </Key>
+          <Property Type="Int64" Name="PurchaseID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="SRNo" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="PartyID" Nullable="false" />
+          <Property Type="Int64" Name="BrokerID" />
+          <Property Type="Int64" Name="YearID" />
+          <Property Type="DateTime" Name="PurchaseDate" Precision="0" />
+          <Property Type="String" Name="ChallanNo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LRNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RecieveAt" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Grade" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EmployeeId" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpDatedDateTime" Precision="3" />
+          <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" FromRole="tblYarnPurchase" ToRole="tblYarnPurchaseItem" />
+        </EntityType>
         <EntityType Name="tblYarnPurchaseItem">
           <Key>
             <PropertyRef Name="PurchaseItemID" />
@@ -1780,10 +1804,10 @@
           <Property Type="DateTime" Name="CreationDateTIme" Precision="3" />
           <NavigationProperty Name="tblWindingWorks" Relationship="LoomsManagementModel.FK_tblWindingWork_tblYarnPurchaseItems" FromRole="tblYarnPurchaseItem" ToRole="tblWindingWork" />
           <NavigationProperty Name="tblYarnPackageType" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPackageType" FromRole="tblYarnPurchaseItem" ToRole="tblYarnPackageType" />
+          <NavigationProperty Name="tblYarnPurchase" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" FromRole="tblYarnPurchaseItem" ToRole="tblYarnPurchase" />
           <NavigationProperty Name="tblYarnQualityMST" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnMST" FromRole="tblYarnPurchaseItem" ToRole="tblYarnQualityMST" />
           <NavigationProperty Name="tblYarnQualityMST1" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST" FromRole="tblYarnPurchaseItem" ToRole="tblYarnQualityMST" />
           <NavigationProperty Name="tblYarnTypeMST" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST" FromRole="tblYarnPurchaseItem" ToRole="tblYarnTypeMST" />
-          <NavigationProperty Name="tblYarnPurchase" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" FromRole="tblYarnPurchaseItem" ToRole="tblYarnPurchase" />
         </EntityType>
         <EntityType Name="tblYarnQualityMST">
           <Key>
@@ -2007,6 +2031,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnPurchase">
+          <End Type="LoomsManagementModel.tblYarnPurchase" Role="tblYarnPurchase" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPurchase">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItem">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_tblYarnPurchaseItems_tblYarnMST">
           <End Type="LoomsManagementModel.tblYarnQualityMST" Role="tblYarnQualityMST" Multiplicity="0..1" />
           <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
@@ -2052,42 +2088,6 @@
             </Principal>
             <Dependent Role="tblYarnTypeMST">
               <PropertyRef Name="YarnQualityID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityType Name="tblYarnPurchase">
-          <Key>
-            <PropertyRef Name="PurchaseID" />
-          </Key>
-          <Property Type="Int64" Name="PurchaseID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Int32" Name="SRNo" />
-          <Property Type="Int64" Name="CompanyID" />
-          <Property Type="Int64" Name="PartyID" Nullable="false" />
-          <Property Type="Int64" Name="BrokerID" />
-          <Property Type="Int64" Name="YearID" />
-          <Property Type="DateTime" Name="PurchaseDate" Precision="0" />
-          <Property Type="String" Name="ChallanNo" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="LRNo" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="RecieveAt" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="Grade" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Type="Int32" Name="EmployeeId" />
-          <Property Type="Boolean" Name="IsDelete" />
-          <Property Type="Boolean" Name="IsActive" />
-          <Property Type="Int32" Name="CreatedBy" />
-          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
-          <Property Type="Int32" Name="UpdatedBy" />
-          <Property Type="DateTime" Name="UpDatedDateTime" Precision="3" />
-          <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" FromRole="tblYarnPurchase" ToRole="tblYarnPurchaseItem" />
-        </EntityType>
-        <Association Name="FK_tblYarnPurchaseItems_tblYarnPurchase">
-          <End Type="LoomsManagementModel.tblYarnPurchase" Role="tblYarnPurchase" Multiplicity="0..1" />
-          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tblYarnPurchase">
-              <PropertyRef Name="PurchaseID" />
-            </Principal>
-            <Dependent Role="tblYarnPurchaseItem">
-              <PropertyRef Name="PurchaseID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -2712,6 +2712,30 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="tblYarnPurchases">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnPurchase">
+              <MappingFragment StoreEntitySet="tblYarnPurchase">
+                <ScalarProperty Name="UpDatedDateTime" ColumnName="UpDatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="RecieveAt" ColumnName="RecieveAt" />
+                <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+                <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+                <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+                <ScalarProperty Name="YearID" ColumnName="YearID" />
+                <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+                <ScalarProperty Name="PartyID" ColumnName="PartyID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="SRNo" ColumnName="SRNo" />
+                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="tblYarnPurchaseItems">
             <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnPurchaseItem">
               <MappingFragment StoreEntitySet="tblYarnPurchaseItems">
@@ -2786,30 +2810,6 @@
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="WithdrownReturnID" ColumnName="WithdrownReturnID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tblYarnPurchases">
-            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnPurchase">
-              <MappingFragment StoreEntitySet="tblYarnPurchase">
-                <ScalarProperty Name="UpDatedDateTime" ColumnName="UpDatedDateTime" />
-                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
-                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
-                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
-                <ScalarProperty Name="Grade" ColumnName="Grade" />
-                <ScalarProperty Name="RecieveAt" ColumnName="RecieveAt" />
-                <ScalarProperty Name="LRNo" ColumnName="LRNo" />
-                <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
-                <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
-                <ScalarProperty Name="YearID" ColumnName="YearID" />
-                <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
-                <ScalarProperty Name="PartyID" ColumnName="PartyID" />
-                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
-                <ScalarProperty Name="SRNo" ColumnName="SRNo" />
-                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
