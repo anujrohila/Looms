@@ -156,6 +156,25 @@ namespace LoomsManagement.Windows.Forms.Master
             return base.ProcessDialogKey(keyData);
         }
 
+        private void Page_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == CommanClass.SaveButton)
+            {
+                btnSave_Click(null, null);
+            }
+            else if (btnReport.Enabled == true && e.Control && e.KeyCode == CommanClass.PrintButton)
+            {
+            }
+            else if (btndelete.Enabled == true && e.KeyCode == CommanClass.DeleteButton)
+            {
+                btndelete_Click(null, null);
+            }
+            else if (e.Control && e.KeyCode == CommanClass.CloseButton)
+            {
+                btnExit_Click(null, null);
+            }
+        }
+
         #endregion
 
         #endregion
@@ -257,7 +276,7 @@ namespace LoomsManagement.Windows.Forms.Master
 
         #endregion
 
-    
+     
 
     }
 }

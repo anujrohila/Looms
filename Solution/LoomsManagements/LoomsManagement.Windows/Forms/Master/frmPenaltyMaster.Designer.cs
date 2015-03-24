@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtPenaltyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -36,8 +37,8 @@
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.errorPenaltyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
-            this.errorPenaltyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorPenaltyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorPenaltyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -96,8 +97,8 @@
             // txtPenaltyName
             // 
             this.txtPenaltyName.EditValue = "";
-            this.errorPenaltyCode.SetIconAlignment(this.txtPenaltyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPenaltyName.SetIconAlignment(this.txtPenaltyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPenaltyCode.SetIconAlignment(this.txtPenaltyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtPenaltyName.Location = new System.Drawing.Point(122, 46);
             this.txtPenaltyName.Name = "txtPenaltyName";
             this.txtPenaltyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -132,8 +133,8 @@
             // txtPenaltyCode
             // 
             this.txtPenaltyCode.EditValue = "";
-            this.errorPenaltyCode.SetIconAlignment(this.txtPenaltyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPenaltyName.SetIconAlignment(this.txtPenaltyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPenaltyCode.SetIconAlignment(this.txtPenaltyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtPenaltyCode.Location = new System.Drawing.Point(122, 14);
             this.txtPenaltyCode.Name = "txtPenaltyCode";
             this.txtPenaltyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -205,9 +206,7 @@
             this.Name = "frmPenaltyMaster";
             this.ShowInTaskbar = false;
             this.Text = "Penalty Master";
-            this.Enter += new System.EventHandler(this.EnterEvent);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
-            this.Leave += new System.EventHandler(this.LeaveEvent);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

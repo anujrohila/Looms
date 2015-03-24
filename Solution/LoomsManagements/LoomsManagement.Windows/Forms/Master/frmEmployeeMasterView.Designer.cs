@@ -118,6 +118,7 @@
             this.InnerGrid.OptionsView.BestFitUseErrorInfo = DevExpress.Utils.DefaultBoolean.True;
             this.InnerGrid.OptionsView.ShowAutoFilterRow = true;
             this.InnerGrid.OptionsView.ShowFooter = true;
+            this.InnerGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InnderGrid_KeyDown);
             // 
             // EmployeeID
             // 

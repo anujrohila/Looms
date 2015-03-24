@@ -2154,6 +2154,7 @@
             this.Name = "frmEmployeeMaster";
             this.Text = "Employee Master";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmEmployeeMaster_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

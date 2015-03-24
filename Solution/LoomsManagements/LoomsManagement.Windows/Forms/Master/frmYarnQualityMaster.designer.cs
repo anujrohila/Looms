@@ -151,6 +151,7 @@
             this.ClientSize = new System.Drawing.Size(527, 153);
             this.Name = "frmYarnQualityMaster";
             this.Text = "Yarn Quality Master";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

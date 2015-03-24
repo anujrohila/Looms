@@ -237,7 +237,7 @@
             this.Name = "frmBankBranchMaster";
             this.ShowInTaskbar = false;
             this.Text = "Bank Branch Master";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmBankBranchMaster_KeyDown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

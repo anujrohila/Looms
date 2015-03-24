@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtYarnPackageType = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.errorYarnPackageType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorYarnPackageType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -124,6 +125,7 @@
             this.Name = "frmYarnPackageTypeMaster";
             this.ShowInTaskbar = false;
             this.Text = "Yarn Package Type";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

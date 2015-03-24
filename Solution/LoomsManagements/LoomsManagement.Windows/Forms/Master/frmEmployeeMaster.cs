@@ -27,7 +27,7 @@ namespace LoomsManagement.Windows.Forms.Master
         public frmEmployeeMaster()
         {
             InitializeComponent();
-            this.Paint+=frmEmployeeMaster_Paint;
+            this.Paint += frmEmployeeMaster_Paint;
         }
 
 
@@ -241,6 +241,27 @@ namespace LoomsManagement.Windows.Forms.Master
             return base.ProcessDialogKey(keyData);
         }
 
+        private void Page_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == CommanClass.SaveButton)
+            {
+                btnSave_Click(null, null);
+            }
+            else if (btnReport.Enabled == true && e.Control && e.KeyCode == CommanClass.PrintButton)
+            {
+            }
+            else if (btndelete.Enabled == true && e.KeyCode == CommanClass.DeleteButton)
+            {
+                btndelete_Click(null, null);
+            }
+            else if (e.Control && e.KeyCode == CommanClass.CloseButton)
+            {
+                btnExit_Click(null, null);
+            }
+        }
+
+
+
         #endregion
 
         #endregion
@@ -279,34 +300,43 @@ namespace LoomsManagement.Windows.Forms.Master
                 txtEmployeeCode.Text = employeeData.EmployeeCode;
                 txtJobTitle.Text = employeeData.JobTitle;
                 dpDOJ.DateTime = Convert.ToDateTime(employeeData.JoinDate);
-               
+
                 if (rbMorning.Checked)
                     employeeData.Shift = "m";
                 else
                     employeeData.Shift = "e";
 
-                if (chkIsSponsorer.Checked)
-                    employeeData.SponsorsID = Convert.ToInt32(cmdEmployeeName.EditValue);
-                else
-                    employeeData.SponsorsID = 0;
+                if (employeeData.SponsorsID != 0)
+                {
+                    chkIsSponsorer_CheckedChanged(null, null);
+                    chkIsSponsorer.Checked = true;
+                    cmdEmployeeName.EditValue = employeeData.SponsorsID;
+                }
 
-                cmdEmployeeName.EditValue = employeeData.EmployeeID;
+
+
                 txtSalary.Text = (employeeData.Salary).ToString();
-                txtPerDayWorkingHours.Text = (employeeData.PerDayWorkingHours).ToString() ;
+                txtPerDayWorkingHours.Text = (employeeData.PerDayWorkingHours).ToString();
                 txtPerHourSalary.Text = (employeeData.PerHourSalary).ToString();
-              
-                if (rbCash.Checked)
-                    employeeData.PaymentType = true;
+
+                if (!employeeData.PaymentType.Value)
+                {
+                    rbBank.Checked = true;
+                    Paymenttype_CheckedChanged(null, null);
+                    txtBankName.Text = employeeData.BankName;
+                    txtAccountNo.Text = employeeData.AccountNo;
+                    txtRTGSNo.Text = employeeData.RTGSNo;
+                    txtIFSCCode.Text = employeeData.IFSCCode;
+                }
                 else
-                    employeeData.PaymentType = false;
-                
-                txtBankName.Text = employeeData.BankName;
-                txtAccountNo.Text = employeeData.AccountNo;
-                txtRTGSNo.Text = txtRTGSNo.Text;
-                txtIFSCCode.Text = txtIFSCCode.Text;
+                {
+                    rbCash.Checked = true;
+                }
+
+
                 txtOpeningBalance.Text = (employeeData.OpeningBalance).ToString();
 
-                
+
 
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;
@@ -334,16 +364,25 @@ namespace LoomsManagement.Windows.Forms.Master
             ErrorHandlor.SetTextboxErrorWithCount(errorEmployeeCode, txtEmployeeCode, "EnterEmployee Code");
             ErrorHandlor.SetTextboxErrorWithCount(errorJobTitle, txtJobTitle, "Enter Job title.");
             ErrorHandlor.SetDateErrorWithCount(errorDateOfJoining, dpDOJ, "Select Employee Joining Date.");
-            ErrorHandlor.SetLookUPErrorWithCount(errorEmployeeName, cmdEmployeeName, "Select Employee Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorEmailId, txtEmail, "Enter Email");
+            ErrorHandlor.SetLookUPErrorWithCount(errorIdProfType, cmbProfeType, "Select ID Profe");
+            ErrorHandlor.SetTextboxErrorWithCount(errorIdProfeNo, txtProfeNo, "Enter Profe Number");
+
+            if (chkIsSponsorer.Checked)
+                ErrorHandlor.SetLookUPErrorWithCount(errorEmployeeName, cmdEmployeeName, "Select Employee Name");
+
             ErrorHandlor.SetTextboxErrorWithCount(errorSalary, txtSalary, "Enter Employee Salary");
             ErrorHandlor.SetTextboxErrorWithCount(errorPerDayWorkingHour, txtPerDayWorkingHours, "Enter per day working hours.");
             ErrorHandlor.SetTextboxErrorWithCount(errorPerHourSalary, txtPerHourSalary, "Enter per hour salary.");
-            ErrorHandlor.SetTextboxErrorWithCount(errorBankName, txtBankName, "Enter Bank Name");
-            ErrorHandlor.SetTextboxErrorWithCount(errorAccountNo, txtAccountNo, "Enter Account Number");
-            ErrorHandlor.SetTextboxErrorWithCount(errorRTGSNo, txtRTGSNo, "Enter RTGS Number");
-            ErrorHandlor.SetTextboxErrorWithCount(errorIFSCCode, txtIFSCCode   , "Enter IFSC Code");
+            if (rbBank.Checked)
+            {
+                ErrorHandlor.SetTextboxErrorWithCount(errorBankName, txtBankName, "Enter Bank Name");
+                ErrorHandlor.SetTextboxErrorWithCount(errorAccountNo, txtAccountNo, "Enter Account Number");
+                ErrorHandlor.SetTextboxErrorWithCount(errorRTGSNo, txtRTGSNo, "Enter RTGS Number");
+                ErrorHandlor.SetTextboxErrorWithCount(errorIFSCCode, txtIFSCCode, "Enter IFSC Code");
+            }
             ErrorHandlor.SetTextboxErrorWithCount(errorOpeningBalance, txtOpeningBalance, "Enter RTGS Number");
-           
+
 
             if (ErrorHandlor.count == 0)
                 return true;
@@ -371,18 +410,18 @@ namespace LoomsManagement.Windows.Forms.Master
             txtJobTitle.Text = "";
             dpDOJ.DateTime = DateTime.Now;
             rbMorning.AutoCheck = true;
-           
+
             cmdEmployeeName.EditValue = 0;
             txtSalary.Text = "";
             txtPerDayWorkingHours.Text = "";
             txtPerHourSalary.Text = "";
             rbCash.AutoCheck = true;
-            txtBankName.Text ="";
+            txtBankName.Text = "";
             txtAccountNo.Text = "";
             txtRTGSNo.Text = "";
             txtIFSCCode.Text = "";
             txtOpeningBalance.Text = "";
-           
+
 
 
 
@@ -428,7 +467,7 @@ namespace LoomsManagement.Windows.Forms.Master
             errorEmployeeType.SetError(cmbProfeType, "");
             errorEmployeeCode.SetError(txtEmployeeCode, "");
             errorJobTitle.SetError(txtJobTitle, "");
-            errorDateOfJoining.SetError(dpDOJ,"");
+            errorDateOfJoining.SetError(dpDOJ, "");
             errorEmployeeName.SetError(cmdEmployeeName, "");
             errorSalary.SetError(txtSalary, "");
             errorPerDayWorkingHour.SetError(txtPerDayWorkingHours, "");
@@ -439,7 +478,8 @@ namespace LoomsManagement.Windows.Forms.Master
             errorIFSCCode.SetError(txtIFSCCode, "");
             errorOpeningBalance.SetError(txtOpeningBalance, "");
 
-            //txtCompanyName.Focus();
+            SetFlag();
+            txtFirstName.Focus();
 
         }
 
@@ -474,6 +514,8 @@ namespace LoomsManagement.Windows.Forms.Master
         #endregion
 
       
-       
+
+      
+
     }
 }

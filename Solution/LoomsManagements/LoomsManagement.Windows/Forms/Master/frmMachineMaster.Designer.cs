@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtDescription = new DevExpress.XtraEditors.MemoEdit();
             this.cmbMachineType = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -36,8 +37,8 @@
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.errorMachineType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
-            this.errorMachineName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorMachineType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorMachineName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -106,8 +107,8 @@
             // 
             // cmbMachineType
             // 
-            this.errorMachineName.SetIconAlignment(this.cmbMachineType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMachineType.SetIconAlignment(this.cmbMachineType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineName.SetIconAlignment(this.cmbMachineType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbMachineType.Location = new System.Drawing.Point(125, 17);
             this.cmbMachineType.Name = "cmbMachineType";
             this.cmbMachineType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -157,8 +158,8 @@
             // txtMachineName
             // 
             this.txtMachineName.EditValue = "";
-            this.errorMachineType.SetIconAlignment(this.txtMachineName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMachineName.SetIconAlignment(this.txtMachineName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMachineType.SetIconAlignment(this.txtMachineName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtMachineName.Location = new System.Drawing.Point(125, 49);
             this.txtMachineName.Name = "txtMachineName";
             this.txtMachineName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,6 +217,7 @@
             this.Name = "frmMachineMaster";
             this.ShowInTaskbar = false;
             this.Text = "Machine Master";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
