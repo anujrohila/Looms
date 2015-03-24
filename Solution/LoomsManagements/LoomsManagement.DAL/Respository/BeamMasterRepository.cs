@@ -7,6 +7,11 @@ namespace LoomsManagement.DAL
 {
     public class BeamMasterRepository
     {
+        /// <summary>
+        /// Save Beam Master
+        /// </summary>
+        /// <param name="tblBeamMSTDTO"></param>
+        /// <returns></returns>
         public int SaveBeamMaster(tblBeamMSTDTO tblBeamMSTDTO)
         {
             using (var loomsManagementEntities = new LoomsManagementEntities())
@@ -62,7 +67,11 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static List<tblBeamMSTDTO> GetAllBeamMasterDetails()
+        /// <summary>
+        /// Get All Beam Master Details
+        /// </summary>
+        /// <returns></returns>
+        public List<tblBeamMSTDTO> GetAllBeamMasterDetails()
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
@@ -70,7 +79,12 @@ namespace LoomsManagement.DAL
             }
         }
 
-        public static tblBeamMSTDTO GetBeamMasterDetails(int beamID)
+        /// <summary>
+        /// Get Beam Master Details
+        /// </summary>
+        /// <param name="beamID"></param>
+        /// <returns></returns>
+        public tblBeamMSTDTO GetBeamMasterDetails(int beamID)
         {
             using (var LoomsManagementEntities = new LoomsManagementEntities())
             {
@@ -78,6 +92,11 @@ namespace LoomsManagement.DAL
             }
         }
 
+        /// <summary>
+        /// Delete Company Data
+        /// </summary>
+        /// <param name="beamID"></param>
+        /// <returns></returns>
         public int DeleteCompanyData(int beamID)
         {
             using (var loomsManagementEntities = new LoomsManagementEntities())
