@@ -100,9 +100,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
     </Compile>
-    <Compile Include="ORM\sysdiagram.cs">
-      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
-    </Compile>
     <Compile Include="ORM\tblAttendanceMST.cs">
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
@@ -209,6 +206,9 @@
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respository\BeamMasterRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Respository\PartyRepositotry.cs" />
     <Compile Include="Respository\BankRepository.cs" />
     <Compile Include="Respository\CompanyRepository.cs" />
