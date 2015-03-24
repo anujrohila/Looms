@@ -48,7 +48,7 @@ namespace LoomsManagement.Windows.Forms
             if ((sender as Form).DialogResult == System.Windows.Forms.DialogResult.Cancel)
             {
                // MessageBox.Show("hello");
-               // RefreshData();
+                RefreshData();
             }
         }
 
