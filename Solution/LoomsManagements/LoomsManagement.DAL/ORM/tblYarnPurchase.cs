@@ -32,7 +32,6 @@ namespace LoomsManagement.DAL.ORM
         public string Grade { get; set; }
         public Nullable<int> EmployeeId { get; set; }
         public Nullable<bool> IsDelete { get; set; }
-      
         public Nullable<bool> IsActive { get; set; }
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> CreatedDateTime { get; set; }

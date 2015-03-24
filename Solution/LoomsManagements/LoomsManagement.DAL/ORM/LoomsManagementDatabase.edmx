@@ -152,7 +152,7 @@
             <PropertyRef Name="BeemID" />
           </Key>
           <Property Name="BeemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="CompnayID" Type="bigint" />
+          <Property Name="CompanyID" Type="bigint" />
           <Property Name="WrapperPartyName" Type="int" />
           <Property Name="JobberPartyName" Type="int" />
           <Property Name="BeemDate" Type="date" />
@@ -166,14 +166,14 @@
           <Property Name="ProductionTaka" Type="int" />
           <Property Name="PipeWeight" Type="float" />
           <Property Name="LoadingDate" Type="date" />
-          <Property Name="MinStragy" Type="float" />
-          <Property Name="MachinNo" Type="int" />
+          <Property Name="MinStrategy" Type="float" />
+          <Property Name="MachineNo" Type="int" />
           <Property Name="Remarks" Type="varchar" MaxLength="100" />
           <Property Name="BhidanStatus" Type="bit" />
           <Property Name="BhidanDate" Type="date" />
           <Property Name="PasaraiName" Type="int" />
           <Property Name="Count" Type="float" />
-          <Property Name="IssuDate" Type="date" />
+          <Property Name="IssueDate" Type="date" />
           <Property Name="TakaMeter" Type="bit" />
           <Property Name="Rate" Type="float" />
           <Property Name="Amount" Type="float" />
@@ -182,7 +182,7 @@
           <Property Name="Pick" Type="float" />
           <Property Name="IsDelete" Type="bit" />
           <Property Name="IsActive" Type="bit" />
-          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreatedBy" Type="int" />
           <Property Name="CreationDateTime" Type="datetime" />
           <Property Name="UpdateBy" Type="int" />
           <Property Name="UpdationDateTime" Type="datetime" />
@@ -1034,7 +1034,6 @@
         <EntityContainer Name="LoomsManagementEntities" p1:LazyLoadingEnabled="true">
           <EntitySet Name="tblAttendanceMSTs" EntityType="LoomsManagementModel.tblAttendanceMST" />
           <EntitySet Name="tblBankMSTs" EntityType="LoomsManagementModel.tblBankMST" />
-          <EntitySet Name="tblBeamMSTs" EntityType="LoomsManagementModel.tblBeamMST" />
           <EntitySet Name="tblBeemProcesses" EntityType="LoomsManagementModel.tblBeemProcess" />
           <EntitySet Name="tblBemProcessDetails" EntityType="LoomsManagementModel.tblBemProcessDetail" />
           <EntitySet Name="tblBoilerProcesses" EntityType="LoomsManagementModel.tblBoilerProcess" />
@@ -1143,6 +1142,7 @@
             <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMSTs" />
             <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMSTs" />
           </AssociationSet>
+          <EntitySet Name="tblBeamMSTs" EntityType="LoomsManagementModel.tblBeamMST" />
         </EntityContainer>
         <EntityType Name="tblAttendanceMST">
           <Key>
@@ -1174,46 +1174,6 @@
           <Property Type="Int32" Name="UpdateBy" />
           <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
           <NavigationProperty Name="tblBranchMSTs" Relationship="LoomsManagementModel.FK_tblBranchMST_tblBankMST" FromRole="tblBankMST" ToRole="tblBranchMST" />
-        </EntityType>
-        <EntityType Name="tblBeamMST">
-          <Key>
-            <PropertyRef Name="BeemID" />
-          </Key>
-          <Property Type="Int64" Name="BeemID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Int64" Name="CompnayID" />
-          <Property Type="Int32" Name="WrapperPartyName" />
-          <Property Type="Int32" Name="JobberPartyName" />
-          <Property Type="DateTime" Name="BeemDate" Precision="0" />
-          <Property Type="Int32" Name="YarnQuality" />
-          <Property Type="Int32" Name="GrayQuality" />
-          <Property Type="Int32" Name="TarNo" />
-          <Property Type="Double" Name="Meters" />
-          <Property Type="Int32" Name="Taka" />
-          <Property Type="Double" Name="Weight" />
-          <Property Type="Double" Name="ProductionMeters" />
-          <Property Type="Int32" Name="ProductionTaka" />
-          <Property Type="Double" Name="PipeWeight" />
-          <Property Type="DateTime" Name="LoadingDate" Precision="0" />
-          <Property Type="Double" Name="MinStragy" />
-          <Property Type="Int32" Name="MachinNo" />
-          <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Type="Boolean" Name="BhidanStatus" />
-          <Property Type="DateTime" Name="BhidanDate" Precision="0" />
-          <Property Type="Int32" Name="PasaraiName" />
-          <Property Type="Double" Name="Count" />
-          <Property Type="DateTime" Name="IssuDate" Precision="0" />
-          <Property Type="Boolean" Name="TakaMeter" />
-          <Property Type="Double" Name="Rate" />
-          <Property Type="Double" Name="Amount" />
-          <Property Type="Double" Name="MeterConsumption" />
-          <Property Type="Double" Name="RPM" />
-          <Property Type="Double" Name="Pick" />
-          <Property Type="Boolean" Name="IsDelete" />
-          <Property Type="Boolean" Name="IsActive" />
-          <Property Type="Int32" Name="CreateBy" />
-          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
-          <Property Type="Int32" Name="UpdateBy" />
-          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
         </EntityType>
         <EntityType Name="tblBeemProcess">
           <Key>
@@ -2091,6 +2051,46 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="tblBeamMST">
+          <Key>
+            <PropertyRef Name="BeemID" />
+          </Key>
+          <Property Type="Int64" Name="BeemID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int32" Name="WrapperPartyName" />
+          <Property Type="Int32" Name="JobberPartyName" />
+          <Property Type="DateTime" Name="BeemDate" Precision="0" />
+          <Property Type="Int32" Name="YarnQuality" />
+          <Property Type="Int32" Name="GrayQuality" />
+          <Property Type="Int32" Name="TarNo" />
+          <Property Type="Double" Name="Meters" />
+          <Property Type="Int32" Name="Taka" />
+          <Property Type="Double" Name="Weight" />
+          <Property Type="Double" Name="ProductionMeters" />
+          <Property Type="Int32" Name="ProductionTaka" />
+          <Property Type="Double" Name="PipeWeight" />
+          <Property Type="DateTime" Name="LoadingDate" Precision="0" />
+          <Property Type="Double" Name="MinStrategy" />
+          <Property Type="Int32" Name="MachineNo" />
+          <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="BhidanStatus" />
+          <Property Type="DateTime" Name="BhidanDate" Precision="0" />
+          <Property Type="Int32" Name="PasaraiName" />
+          <Property Type="Double" Name="Count" />
+          <Property Type="DateTime" Name="IssueDate" Precision="0" />
+          <Property Type="Boolean" Name="TakaMeter" />
+          <Property Type="Double" Name="Rate" />
+          <Property Type="Double" Name="Amount" />
+          <Property Type="Double" Name="MeterConsumption" />
+          <Property Type="Double" Name="RPM" />
+          <Property Type="Double" Name="Pick" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -2125,47 +2125,6 @@
                 <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
                 <ScalarProperty Name="BankName" ColumnName="BankName" />
                 <ScalarProperty Name="BankID" ColumnName="BankID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tblBeamMSTs">
-            <EntityTypeMapping TypeName="LoomsManagementModel.tblBeamMST">
-              <MappingFragment StoreEntitySet="tblBeamMST">
-                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
-                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
-                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
-                <ScalarProperty Name="Pick" ColumnName="Pick" />
-                <ScalarProperty Name="RPM" ColumnName="RPM" />
-                <ScalarProperty Name="MeterConsumption" ColumnName="MeterConsumption" />
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="Rate" ColumnName="Rate" />
-                <ScalarProperty Name="TakaMeter" ColumnName="TakaMeter" />
-                <ScalarProperty Name="IssuDate" ColumnName="IssuDate" />
-                <ScalarProperty Name="Count" ColumnName="Count" />
-                <ScalarProperty Name="PasaraiName" ColumnName="PasaraiName" />
-                <ScalarProperty Name="BhidanDate" ColumnName="BhidanDate" />
-                <ScalarProperty Name="BhidanStatus" ColumnName="BhidanStatus" />
-                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
-                <ScalarProperty Name="MachinNo" ColumnName="MachinNo" />
-                <ScalarProperty Name="MinStragy" ColumnName="MinStragy" />
-                <ScalarProperty Name="LoadingDate" ColumnName="LoadingDate" />
-                <ScalarProperty Name="PipeWeight" ColumnName="PipeWeight" />
-                <ScalarProperty Name="ProductionTaka" ColumnName="ProductionTaka" />
-                <ScalarProperty Name="ProductionMeters" ColumnName="ProductionMeters" />
-                <ScalarProperty Name="Weight" ColumnName="Weight" />
-                <ScalarProperty Name="Taka" ColumnName="Taka" />
-                <ScalarProperty Name="Meters" ColumnName="Meters" />
-                <ScalarProperty Name="TarNo" ColumnName="TarNo" />
-                <ScalarProperty Name="GrayQuality" ColumnName="GrayQuality" />
-                <ScalarProperty Name="YarnQuality" ColumnName="YarnQuality" />
-                <ScalarProperty Name="BeemDate" ColumnName="BeemDate" />
-                <ScalarProperty Name="JobberPartyName" ColumnName="JobberPartyName" />
-                <ScalarProperty Name="WrapperPartyName" ColumnName="WrapperPartyName" />
-                <ScalarProperty Name="CompnayID" ColumnName="CompnayID" />
-                <ScalarProperty Name="BeemID" ColumnName="BeemID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -2810,6 +2769,47 @@
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="WithdrownReturnID" ColumnName="WithdrownReturnID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBeamMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBeamMST">
+              <MappingFragment StoreEntitySet="tblBeamMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Pick" ColumnName="Pick" />
+                <ScalarProperty Name="RPM" ColumnName="RPM" />
+                <ScalarProperty Name="MeterConsumption" ColumnName="MeterConsumption" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="TakaMeter" ColumnName="TakaMeter" />
+                <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="PasaraiName" ColumnName="PasaraiName" />
+                <ScalarProperty Name="BhidanDate" ColumnName="BhidanDate" />
+                <ScalarProperty Name="BhidanStatus" ColumnName="BhidanStatus" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="MachineNo" ColumnName="MachineNo" />
+                <ScalarProperty Name="MinStrategy" ColumnName="MinStrategy" />
+                <ScalarProperty Name="LoadingDate" ColumnName="LoadingDate" />
+                <ScalarProperty Name="PipeWeight" ColumnName="PipeWeight" />
+                <ScalarProperty Name="ProductionTaka" ColumnName="ProductionTaka" />
+                <ScalarProperty Name="ProductionMeters" ColumnName="ProductionMeters" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Taka" ColumnName="Taka" />
+                <ScalarProperty Name="Meters" ColumnName="Meters" />
+                <ScalarProperty Name="TarNo" ColumnName="TarNo" />
+                <ScalarProperty Name="GrayQuality" ColumnName="GrayQuality" />
+                <ScalarProperty Name="YarnQuality" ColumnName="YarnQuality" />
+                <ScalarProperty Name="BeemDate" ColumnName="BeemDate" />
+                <ScalarProperty Name="JobberPartyName" ColumnName="JobberPartyName" />
+                <ScalarProperty Name="WrapperPartyName" ColumnName="WrapperPartyName" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="BeemID" ColumnName="BeemID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -15,7 +15,7 @@ namespace LoomsManagement.DAL.ORM
     public partial class tblBeamMST
     {
         public long BeemID { get; set; }
-        public Nullable<long> CompnayID { get; set; }
+        public Nullable<long> CompanyID { get; set; }
         public Nullable<int> WrapperPartyName { get; set; }
         public Nullable<int> JobberPartyName { get; set; }
         public Nullable<System.DateTime> BeemDate { get; set; }
@@ -29,14 +29,14 @@ namespace LoomsManagement.DAL.ORM
         public Nullable<int> ProductionTaka { get; set; }
         public Nullable<double> PipeWeight { get; set; }
         public Nullable<System.DateTime> LoadingDate { get; set; }
-        public Nullable<double> MinStragy { get; set; }
-        public Nullable<int> MachinNo { get; set; }
+        public Nullable<double> MinStrategy { get; set; }
+        public Nullable<int> MachineNo { get; set; }
         public string Remarks { get; set; }
         public Nullable<bool> BhidanStatus { get; set; }
         public Nullable<System.DateTime> BhidanDate { get; set; }
         public Nullable<int> PasaraiName { get; set; }
         public Nullable<double> Count { get; set; }
-        public Nullable<System.DateTime> IssuDate { get; set; }
+        public Nullable<System.DateTime> IssueDate { get; set; }
         public Nullable<bool> TakaMeter { get; set; }
         public Nullable<double> Rate { get; set; }
         public Nullable<double> Amount { get; set; }
@@ -45,7 +45,7 @@ namespace LoomsManagement.DAL.ORM
         public Nullable<double> Pick { get; set; }
         public Nullable<bool> IsDelete { get; set; }
         public Nullable<bool> IsActive { get; set; }
-        public Nullable<int> CreateBy { get; set; }
+        public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> CreationDateTime { get; set; }
         public Nullable<int> UpdateBy { get; set; }
         public Nullable<System.DateTime> UpdationDateTime { get; set; }

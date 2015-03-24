@@ -6,8 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="258e60913c134ace83925ed448c1cd51" Name="Diagram1">
         <EntityTypeShape EntityType="LoomsManagementModel.tblAttendanceMST" Width="1.5" PointX="0.42294874993290232" PointY="9.9544178144794042" />
-        <EntityTypeShape EntityType="LoomsManagementModel.tblBankMST" Width="1.5" PointX="3.0433647497759035" PointY="2.2860321413194908" />
-        <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="9.8624245663464176" PointY="5.2782119835159795" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBankMST" Width="1.5" PointX="3.75" PointY="2.25" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBeemProcess" Width="1.5" PointX="11.863234676357003" PointY="16.019251964995288" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBemProcessDetail" Width="1.5" PointX="11.78444566381371" PointY="5.562847721186861" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBoilerProcess" Width="1.5" PointX="6.56922761470509" PointY="30.4068251840802" />
@@ -59,6 +58,7 @@
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST" />
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST" />
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="7.8347572068845652" PointY="6.8569280388098806" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

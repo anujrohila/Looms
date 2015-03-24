@@ -21,7 +21,7 @@ namespace LoomsManagement.DAL.ORM
         }
     
         public long EmployeeID { get; set; }
-        public long CompanyID { get; set; }
+        public Nullable<long> CompanyID { get; set; }
         public Nullable<long> EmployeeTypeID { get; set; }
         public string EmployeeCode { get; set; }
         public string JobTitle { get; set; }
