@@ -63,6 +63,7 @@
     <Compile Include="Assemblers\tblCompanyMachineMSTAssembler.cs" />
     <Compile Include="Assemblers\tblEmployeeAssembler.cs" />
     <Compile Include="Assemblers\tblEmployeeTypeMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblFiscalYearAssembler.cs" />
     <Compile Include="Assemblers\tblLoomProcessAssembler.cs" />
     <Compile Include="Assemblers\tblLoomProcessWorkAssembler.cs" />
     <Compile Include="Assemblers\tblMachineMSTAssembler.cs" />

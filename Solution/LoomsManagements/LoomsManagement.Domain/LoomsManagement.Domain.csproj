@@ -53,6 +53,7 @@
     <Compile Include="DTO\tblCompanyMachineMSTDTO.cs" />
     <Compile Include="DTO\tblEmployeeDTO.cs" />
     <Compile Include="DTO\tblEmployeeTypeMSTDTO.cs" />
+    <Compile Include="DTO\tblFiscalYearDTO.cs" />
     <Compile Include="DTO\tblLoomProcessDTO.cs" />
     <Compile Include="DTO\tblLoomProcessWorkDTO.cs" />
     <Compile Include="DTO\tblMachineMSTDTO.cs" />
