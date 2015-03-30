@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="258e60913c134ace83925ed448c1cd51" Name="Diagram1">
+      <Diagram DiagramId="258e60913c134ace83925ed448c1cd51" Name="Diagram1" ZoomLevel="74">
         <EntityTypeShape EntityType="LoomsManagementModel.tblAttendanceMST" Width="1.5" PointX="0.42294874993290232" PointY="9.9544178144794042" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBankMST" Width="1.5" PointX="3.75" PointY="2.25" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBeemProcess" Width="1.5" PointX="11.863234676357003" PointY="16.019251964995288" />
@@ -58,7 +58,9 @@
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST" />
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST" />
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST" />
-        <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="7.8347572068845652" PointY="6.8569280388098806" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="0.77879305033888335" PointY="13.606516948717887" />
+        <AssociationConnector Association="LoomsManagementModel.FK_tblBeamMST_tblBeamMST" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblFiscalYear" Width="1.5" PointX="3.5632199736140757" PointY="16.93459261252293" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

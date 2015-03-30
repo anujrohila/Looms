@@ -19,6 +19,20 @@
           <EntitySet Name="tblCompanyMachineMST" EntityType="LoomsManagementModel.Store.tblCompanyMachineMST" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblEmployee" EntityType="LoomsManagementModel.Store.tblEmployee" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblEmployeeTypeMST" EntityType="LoomsManagementModel.Store.tblEmployeeTypeMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblFiscalYear" EntityType="LoomsManagementModel.Store.tblFiscalYear" store:Type="Tables" store:Schema="dbo" store:Name="tblFiscalYear">
+            <DefiningQuery>SELECT 
+      [tblFiscalYear].[FiscalYearId] AS [FiscalYearId], 
+      [tblFiscalYear].[FiscalName] AS [FiscalName], 
+      [tblFiscalYear].[StartYear] AS [StartYear], 
+      [tblFiscalYear].[EndYear] AS [EndYear], 
+      [tblFiscalYear].[IsActive] AS [IsActive], 
+      [tblFiscalYear].[IsDelete] AS [IsDelete], 
+      [tblFiscalYear].[CreatedBy] AS [CreatedBy], 
+      [tblFiscalYear].[CreatedDateTime] AS [CreatedDateTime], 
+      [tblFiscalYear].[UpdatedBy] AS [UpdatedBy], 
+      [tblFiscalYear].[UpdatedDateTime] AS [UpdatedDateTime]
+      FROM [dbo].[tblFiscalYear] AS [tblFiscalYear]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="tblLoomProcess" EntityType="LoomsManagementModel.Store.tblLoomProcess" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblLoomProcessWork" EntityType="LoomsManagementModel.Store.tblLoomProcessWork" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblMachineMST" EntityType="LoomsManagementModel.Store.tblMachineMST" store:Type="Tables" Schema="dbo" />
@@ -44,6 +58,10 @@
           <AssociationSet Name="FK_tblAttendanceMST_tblEmployee" Association="LoomsManagementModel.Store.FK_tblAttendanceMST_tblEmployee">
             <End Role="tblEmployee" EntitySet="tblEmployee" />
             <End Role="tblAttendanceMST" EntitySet="tblAttendanceMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBeamMST_tblBeamMST" Association="LoomsManagementModel.Store.FK_tblBeamMST_tblBeamMST">
+            <End Role="tblBeamMST" EntitySet="tblBeamMST" />
+            <End Role="tblBeamMST1" EntitySet="tblBeamMST" />
           </AssociationSet>
           <AssociationSet Name="FK_tblBemProcessDetails_tblBeemProcess" Association="LoomsManagementModel.Store.FK_tblBemProcessDetails_tblBeemProcess">
             <End Role="tblBeemProcess" EntitySet="tblBeemProcess" />
@@ -153,26 +171,28 @@
           </Key>
           <Property Name="BeemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="CompanyID" Type="bigint" />
-          <Property Name="WrapperPartyName" Type="int" />
-          <Property Name="JobberPartyName" Type="int" />
+          <Property Name="BeamNo" Type="varchar" MaxLength="50" />
+          <Property Name="WrapperPartyID" Type="bigint" />
+          <Property Name="JobberPartyName" Type="bigint" />
           <Property Name="BeemDate" Type="date" />
-          <Property Name="YarnQuality" Type="int" />
-          <Property Name="GrayQuality" Type="int" />
-          <Property Name="TarNo" Type="int" />
+          <Property Name="YarnQualityID" Type="bigint" />
+          <Property Name="GrayQualityId" Type="bigint" />
+          <Property Name="LotNo" Type="varchar" MaxLength="50" />
+          <Property Name="NoofTar" Type="int" />
           <Property Name="Meters" Type="float" />
           <Property Name="Taka" Type="int" />
-          <Property Name="Weight" Type="float" />
+          <Property Name="GrossWeight" Type="float" />
+          <Property Name="NetWeight" Type="float" />
+          <Property Name="LoadingDate" Type="date" />
+          <Property Name="BhidanStatus" Type="bit" />
+          <Property Name="BhidanDate" Type="date" />
+          <Property Name="PasaraiEmployeeId" Type="int" />
           <Property Name="ProductionMeters" Type="float" />
           <Property Name="ProductionTaka" Type="int" />
           <Property Name="PipeWeight" Type="float" />
-          <Property Name="LoadingDate" Type="date" />
           <Property Name="MinStrategy" Type="float" />
-          <Property Name="MachineNo" Type="int" />
+          <Property Name="MachineId" Type="bigint" />
           <Property Name="Remarks" Type="varchar" MaxLength="100" />
-          <Property Name="BhidanStatus" Type="bit" />
-          <Property Name="BhidanDate" Type="date" />
-          <Property Name="PasaraiName" Type="int" />
-          <Property Name="Count" Type="float" />
           <Property Name="IssueDate" Type="date" />
           <Property Name="TakaMeter" Type="bit" />
           <Property Name="Rate" Type="float" />
@@ -180,6 +200,8 @@
           <Property Name="MeterConsumption" Type="float" />
           <Property Name="RPM" Type="float" />
           <Property Name="Pick" Type="float" />
+          <Property Name="My" Type="float" />
+          <Property Name="FinalAmount" Type="float" />
           <Property Name="IsDelete" Type="bit" />
           <Property Name="IsActive" Type="bit" />
           <Property Name="CreatedBy" Type="int" />
@@ -375,6 +397,27 @@
           <Property Name="Description" Type="varchar" MaxLength="500" />
           <Property Name="IsDelete" Type="bit" />
           <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'LoomsManagement.dbo.tblFiscalYear' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="tblFiscalYear">
+          <Key>
+            <PropertyRef Name="FiscalYearId" />
+            <PropertyRef Name="FiscalName" />
+            <PropertyRef Name="StartYear" />
+            <PropertyRef Name="EndYear" />
+          </Key>
+          <Property Name="FiscalYearId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FiscalName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StartYear" Type="int" Nullable="false" />
+          <Property Name="EndYear" Type="int" Nullable="false" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDelete" Type="bit" />
           <Property Name="CreatedBy" Type="int" />
           <Property Name="CreatedDateTime" Type="datetime" />
           <Property Name="UpdatedBy" Type="int" />
@@ -811,6 +854,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_tblBeamMST_tblBeamMST">
+          <End Role="tblBeamMST" Type="LoomsManagementModel.Store.tblBeamMST" Multiplicity="1" />
+          <End Role="tblBeamMST1" Type="LoomsManagementModel.Store.tblBeamMST" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblBeamMST">
+              <PropertyRef Name="BeemID" />
+            </Principal>
+            <Dependent Role="tblBeamMST1">
+              <PropertyRef Name="BeemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_tblBemProcessDetails_tblBeemProcess">
           <End Role="tblBeemProcess" Type="LoomsManagementModel.Store.tblBeemProcess" Multiplicity="0..1" />
           <End Role="tblBemProcessDetails" Type="LoomsManagementModel.Store.tblBemProcessDetails" Multiplicity="*" />
@@ -1143,6 +1198,11 @@
             <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMSTs" />
           </AssociationSet>
           <EntitySet Name="tblBeamMSTs" EntityType="LoomsManagementModel.tblBeamMST" />
+          <AssociationSet Name="FK_tblBeamMST_tblBeamMST" Association="LoomsManagementModel.FK_tblBeamMST_tblBeamMST">
+            <End Role="tblBeamMST" EntitySet="tblBeamMSTs" />
+            <End Role="tblBeamMST1" EntitySet="tblBeamMSTs" />
+          </AssociationSet>
+          <EntitySet Name="tblFiscalYears" EntityType="LoomsManagementModel.tblFiscalYear" />
         </EntityContainer>
         <EntityType Name="tblAttendanceMST">
           <Key>
@@ -2057,26 +2117,28 @@
           </Key>
           <Property Type="Int64" Name="BeemID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="Int64" Name="CompanyID" />
-          <Property Type="Int32" Name="WrapperPartyName" />
+          <Property Type="String" Name="BeamNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="WrapperPartyID" />
           <Property Type="Int32" Name="JobberPartyName" />
           <Property Type="DateTime" Name="BeemDate" Precision="0" />
-          <Property Type="Int32" Name="YarnQuality" />
-          <Property Type="Int32" Name="GrayQuality" />
-          <Property Type="Int32" Name="TarNo" />
+          <Property Type="Int32" Name="YarnQualityID" />
+          <Property Type="Int32" Name="GrayQualityId" />
+          <Property Type="String" Name="LotNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NoofTar" />
           <Property Type="Double" Name="Meters" />
           <Property Type="Int32" Name="Taka" />
-          <Property Type="Double" Name="Weight" />
+          <Property Type="Double" Name="GrossWeight" />
+          <Property Type="Double" Name="NetWeight" />
+          <Property Type="DateTime" Name="LoadingDate" Precision="0" />
+          <Property Type="Boolean" Name="BhidanStatus" />
+          <Property Type="DateTime" Name="BhidanDate" Precision="0" />
+          <Property Type="Int32" Name="PasaraiEmployeeId" />
           <Property Type="Double" Name="ProductionMeters" />
           <Property Type="Int32" Name="ProductionTaka" />
           <Property Type="Double" Name="PipeWeight" />
-          <Property Type="DateTime" Name="LoadingDate" Precision="0" />
           <Property Type="Double" Name="MinStrategy" />
-          <Property Type="Int32" Name="MachineNo" />
+          <Property Type="Int64" Name="MachineId" />
           <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Type="Boolean" Name="BhidanStatus" />
-          <Property Type="DateTime" Name="BhidanDate" Precision="0" />
-          <Property Type="Int32" Name="PasaraiName" />
-          <Property Type="Double" Name="Count" />
           <Property Type="DateTime" Name="IssueDate" Precision="0" />
           <Property Type="Boolean" Name="TakaMeter" />
           <Property Type="Double" Name="Rate" />
@@ -2084,12 +2146,46 @@
           <Property Type="Double" Name="MeterConsumption" />
           <Property Type="Double" Name="RPM" />
           <Property Type="Double" Name="Pick" />
+          <Property Type="Double" Name="My" />
+          <Property Type="Double" Name="FinalAmount" />
           <Property Type="Boolean" Name="IsDelete" />
           <Property Type="Boolean" Name="IsActive" />
           <Property Type="Int32" Name="CreatedBy" />
           <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
           <Property Type="Int32" Name="UpdateBy" />
           <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblBeamMST1" Relationship="LoomsManagementModel.FK_tblBeamMST_tblBeamMST" FromRole="tblBeamMST" ToRole="tblBeamMST1" />
+          <NavigationProperty Name="tblBeamMST2" Relationship="LoomsManagementModel.FK_tblBeamMST_tblBeamMST" FromRole="tblBeamMST1" ToRole="tblBeamMST" />
+        </EntityType>
+        <Association Name="FK_tblBeamMST_tblBeamMST">
+          <End Type="LoomsManagementModel.tblBeamMST" Role="tblBeamMST" Multiplicity="1" />
+          <End Type="LoomsManagementModel.tblBeamMST" Role="tblBeamMST1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblBeamMST">
+              <PropertyRef Name="BeemID" />
+            </Principal>
+            <Dependent Role="tblBeamMST1">
+              <PropertyRef Name="BeemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tblFiscalYear">
+          <Key>
+            <PropertyRef Name="FiscalYearId" />
+            <PropertyRef Name="FiscalName" />
+            <PropertyRef Name="StartYear" />
+            <PropertyRef Name="EndYear" />
+          </Key>
+          <Property Type="Int64" Name="FiscalYearId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FiscalName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="StartYear" Nullable="false" />
+          <Property Type="Int32" Name="EndYear" Nullable="false" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -2781,6 +2877,8 @@
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="FinalAmount" ColumnName="FinalAmount" />
+                <ScalarProperty Name="My" ColumnName="My" />
                 <ScalarProperty Name="Pick" ColumnName="Pick" />
                 <ScalarProperty Name="RPM" ColumnName="RPM" />
                 <ScalarProperty Name="MeterConsumption" ColumnName="MeterConsumption" />
@@ -2788,28 +2886,46 @@
                 <ScalarProperty Name="Rate" ColumnName="Rate" />
                 <ScalarProperty Name="TakaMeter" ColumnName="TakaMeter" />
                 <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
-                <ScalarProperty Name="Count" ColumnName="Count" />
-                <ScalarProperty Name="PasaraiName" ColumnName="PasaraiName" />
-                <ScalarProperty Name="BhidanDate" ColumnName="BhidanDate" />
-                <ScalarProperty Name="BhidanStatus" ColumnName="BhidanStatus" />
                 <ScalarProperty Name="Remarks" ColumnName="Remarks" />
-                <ScalarProperty Name="MachineNo" ColumnName="MachineNo" />
+                <ScalarProperty Name="MachineId" ColumnName="MachineId" />
                 <ScalarProperty Name="MinStrategy" ColumnName="MinStrategy" />
-                <ScalarProperty Name="LoadingDate" ColumnName="LoadingDate" />
                 <ScalarProperty Name="PipeWeight" ColumnName="PipeWeight" />
                 <ScalarProperty Name="ProductionTaka" ColumnName="ProductionTaka" />
                 <ScalarProperty Name="ProductionMeters" ColumnName="ProductionMeters" />
-                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="PasaraiEmployeeId" ColumnName="PasaraiEmployeeId" />
+                <ScalarProperty Name="BhidanDate" ColumnName="BhidanDate" />
+                <ScalarProperty Name="BhidanStatus" ColumnName="BhidanStatus" />
+                <ScalarProperty Name="LoadingDate" ColumnName="LoadingDate" />
+                <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+                <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
                 <ScalarProperty Name="Taka" ColumnName="Taka" />
                 <ScalarProperty Name="Meters" ColumnName="Meters" />
-                <ScalarProperty Name="TarNo" ColumnName="TarNo" />
-                <ScalarProperty Name="GrayQuality" ColumnName="GrayQuality" />
-                <ScalarProperty Name="YarnQuality" ColumnName="YarnQuality" />
+                <ScalarProperty Name="NoofTar" ColumnName="NoofTar" />
+                <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+                <ScalarProperty Name="GrayQualityId" ColumnName="GrayQualityId" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
                 <ScalarProperty Name="BeemDate" ColumnName="BeemDate" />
                 <ScalarProperty Name="JobberPartyName" ColumnName="JobberPartyName" />
-                <ScalarProperty Name="WrapperPartyName" ColumnName="WrapperPartyName" />
+                <ScalarProperty Name="WrapperPartyID" ColumnName="WrapperPartyID" />
+                <ScalarProperty Name="BeamNo" ColumnName="BeamNo" />
                 <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
                 <ScalarProperty Name="BeemID" ColumnName="BeemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblFiscalYears">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblFiscalYear">
+              <MappingFragment StoreEntitySet="tblFiscalYear">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="EndYear" ColumnName="EndYear" />
+                <ScalarProperty Name="StartYear" ColumnName="StartYear" />
+                <ScalarProperty Name="FiscalName" ColumnName="FiscalName" />
+                <ScalarProperty Name="FiscalYearId" ColumnName="FiscalYearId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

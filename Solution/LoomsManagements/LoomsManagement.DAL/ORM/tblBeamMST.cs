@@ -16,26 +16,28 @@ namespace LoomsManagement.DAL.ORM
     {
         public long BeemID { get; set; }
         public Nullable<long> CompanyID { get; set; }
-        public Nullable<int> WrapperPartyName { get; set; }
+        public string BeamNo { get; set; }
+        public Nullable<long> WrapperPartyID { get; set; }
         public Nullable<int> JobberPartyName { get; set; }
         public Nullable<System.DateTime> BeemDate { get; set; }
-        public Nullable<int> YarnQuality { get; set; }
-        public Nullable<int> GrayQuality { get; set; }
-        public Nullable<int> TarNo { get; set; }
+        public Nullable<int> YarnQualityID { get; set; }
+        public Nullable<int> GrayQualityId { get; set; }
+        public string LotNo { get; set; }
+        public Nullable<int> NoofTar { get; set; }
         public Nullable<double> Meters { get; set; }
         public Nullable<int> Taka { get; set; }
-        public Nullable<double> Weight { get; set; }
+        public Nullable<double> GrossWeight { get; set; }
+        public Nullable<double> NetWeight { get; set; }
+        public Nullable<System.DateTime> LoadingDate { get; set; }
+        public Nullable<bool> BhidanStatus { get; set; }
+        public Nullable<System.DateTime> BhidanDate { get; set; }
+        public Nullable<int> PasaraiEmployeeId { get; set; }
         public Nullable<double> ProductionMeters { get; set; }
         public Nullable<int> ProductionTaka { get; set; }
         public Nullable<double> PipeWeight { get; set; }
-        public Nullable<System.DateTime> LoadingDate { get; set; }
         public Nullable<double> MinStrategy { get; set; }
-        public Nullable<int> MachineNo { get; set; }
+        public Nullable<long> MachineId { get; set; }
         public string Remarks { get; set; }
-        public Nullable<bool> BhidanStatus { get; set; }
-        public Nullable<System.DateTime> BhidanDate { get; set; }
-        public Nullable<int> PasaraiName { get; set; }
-        public Nullable<double> Count { get; set; }
         public Nullable<System.DateTime> IssueDate { get; set; }
         public Nullable<bool> TakaMeter { get; set; }
         public Nullable<double> Rate { get; set; }
@@ -43,11 +45,16 @@ namespace LoomsManagement.DAL.ORM
         public Nullable<double> MeterConsumption { get; set; }
         public Nullable<double> RPM { get; set; }
         public Nullable<double> Pick { get; set; }
+        public Nullable<double> My { get; set; }
+        public Nullable<double> FinalAmount { get; set; }
         public Nullable<bool> IsDelete { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> CreationDateTime { get; set; }
         public Nullable<int> UpdateBy { get; set; }
         public Nullable<System.DateTime> UpdationDateTime { get; set; }
+    
+        public virtual tblBeamMST tblBeamMST1 { get; set; }
+        public virtual tblBeamMST tblBeamMST2 { get; set; }
     }
 }

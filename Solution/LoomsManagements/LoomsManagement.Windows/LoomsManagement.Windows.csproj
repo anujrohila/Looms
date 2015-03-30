@@ -159,6 +159,18 @@
     <Compile Include="Forms\frmCompanySelect.Designer.cs">
       <DependentUpon>frmCompanySelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmBeamMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMaster.Designer.cs">
+      <DependentUpon>frmBeamMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMasterView.Designer.cs">
+      <DependentUpon>frmBeamMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmBankBranchMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -373,6 +385,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCompanySelect.resx">
       <DependentUpon>frmCompanySelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBeamMaster.resx">
+      <DependentUpon>frmBeamMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBeamMasterView.resx">
+      <DependentUpon>frmBeamMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmBankBranchMaster.resx">
       <DependentUpon>frmBankBranchMaster.cs</DependentUpon>

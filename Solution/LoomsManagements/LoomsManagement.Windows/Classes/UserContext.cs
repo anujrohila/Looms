@@ -14,6 +14,7 @@ namespace LoomsManagement.Windows.Classes
 
         public static int SelectedCompanyCode { get; set; }
 
+        public static List<tblBeamMSTDTO> UserContexttblBeamMSTDTO { get; set; }
 
         public static tblEmployeeDTO UserContextUserInfo { get; set; }
 
@@ -58,7 +59,7 @@ namespace LoomsManagement.Windows.Classes
 
         public static void LoadAllData()
         {
-
+            GetALLBeamMSTDTO();
             GetALLtblCompanyDTO();
             //Employee
             GetALLtblEmployeeDTO();
@@ -94,7 +95,12 @@ namespace LoomsManagement.Windows.Classes
             GetALLtblWorkingYearDTO();
             
         }
-       
+
+        public static void GetALLBeamMSTDTO()
+        {
+            UserContexttblBeamMSTDTO = BeamMasterBussinesLogic.GetAllBeamMasterDetails();
+        }
+
         public static void GetALLtblEmployeeDTO()
         {
             UserContexttblEmployeeDTO = EmployeeBusinessLogic.GetAllEmployeeDetails();

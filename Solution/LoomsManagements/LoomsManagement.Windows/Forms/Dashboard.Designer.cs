@@ -54,6 +54,8 @@
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.barcmbCompanycode = new DevExpress.XtraBars.BarEditItem();
             this.cmbCompany = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -61,6 +63,7 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.helpRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -170,10 +173,12 @@
             this.btnRefreshData,
             this.barButtonItem13,
             this.barButtonItem15,
-            this.barcmbCompanycode});
+            this.barcmbCompanycode,
+            this.barButtonItem16,
+            this.barButtonItem17});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 10;
+            this.ribbonControl.MaxItemId = 12;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barcmbCompanycode);
             this.ribbonControl.PageHeaderItemLinks.Add(this.btnRefreshData);
@@ -392,6 +397,21 @@
             this.cmbCompany.Name = "cmbCompany";
             this.cmbCompany.EditValueChanged += new System.EventHandler(this.cmbCompany_EditValueChanged);
             // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "barButtonItem16";
+            this.barButtonItem16.Id = 10;
+            this.barButtonItem16.Name = "barButtonItem16";
+            // 
+            // barButtonItem17
+            // 
+            this.barButtonItem17.Caption = "Beam Type";
+            this.barButtonItem17.Id = 11;
+            this.barButtonItem17.ImageIndex = 6;
+            this.barButtonItem17.Name = "barButtonItem17";
+            this.barButtonItem17.Tag = "Beam Master";
+            this.barButtonItem17.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
@@ -428,7 +448,8 @@
             this.ribbonPageGroup2,
             this.ribbonPageGroup3,
             this.ribbonPageGroup4,
-            this.ribbonPageGroup5});
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup7});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Master";
             // 
@@ -461,7 +482,7 @@
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Machin Master";
+            this.ribbonPageGroup4.Text = "Machine Master";
             // 
             // ribbonPageGroup5
             // 
@@ -469,6 +490,12 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Bank Master";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem17);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "Beam Master";
             // 
             // ribbonPage2
             // 
@@ -690,6 +717,9 @@
         private DevExpress.XtraBars.BarEditItem barcmbCompanycode;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit cmbCompany;
         private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }

@@ -105,6 +105,9 @@ namespace LoomsManagement.Windows.Forms
                 case "Yarn Package Type View":
                     Currentform = new frmYarnPackageTypeMasterView();
                     break;
+                case "Beam Master":
+                    Currentform = new frmBeamMasterView();
+                    break;
                 //case "milk lab entry":
                 //    Currentform = new MilkLabDetails();
                 //    break;

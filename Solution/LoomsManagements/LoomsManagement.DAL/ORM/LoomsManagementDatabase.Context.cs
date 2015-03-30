@@ -60,5 +60,6 @@ namespace LoomsManagement.DAL.ORM
         public DbSet<tblYarnTypeMST> tblYarnTypeMSTs { get; set; }
         public DbSet<WithdrownReturnMST> WithdrownReturnMSTs { get; set; }
         public DbSet<tblBeamMST> tblBeamMSTs { get; set; }
+        public DbSet<tblFiscalYear> tblFiscalYears { get; set; }
     }
 }

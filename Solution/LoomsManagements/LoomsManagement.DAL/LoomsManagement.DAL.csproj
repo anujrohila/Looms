@@ -139,6 +139,9 @@
     <Compile Include="ORM\tblEmployeeTypeMST.cs">
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="ORM\tblFiscalYear.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="ORM\tblLoomProcess.cs">
       <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
     </Compile>
