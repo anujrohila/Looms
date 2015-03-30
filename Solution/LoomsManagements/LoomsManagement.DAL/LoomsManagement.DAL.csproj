@@ -213,6 +213,7 @@
     <Compile Include="Respository\BeamMasterRepository.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Respository\FiscalYearRepository.cs" />
     <Compile Include="Respository\PartyRepositotry.cs" />
     <Compile Include="Respository\BankRepository.cs" />
     <Compile Include="Respository\CompanyRepository.cs" />
