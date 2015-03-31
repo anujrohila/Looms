@@ -16,8 +16,8 @@ namespace LoomsManagement.DAL.ORM
     {
         public long FiscalYearId { get; set; }
         public string FiscalName { get; set; }
-        public int StartYear { get; set; }
-        public int EndYear { get; set; }
+        public System.DateTime StartDate { get; set; }
+        public System.DateTime EndDate { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<bool> IsDelete { get; set; }
         public Nullable<int> CreatedBy { get; set; }

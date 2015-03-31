@@ -82,7 +82,7 @@ namespace LoomsManagement.Windows.Forms.Master
              }
              else
              {
-                 MessageBox.Show("Successfully Save Data");
+                 MessageBox.Show("Data saved successfully.");
                  ClearData();
                  if (IsEdit)
                  {
@@ -94,12 +94,12 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Are you Sure Delete This Record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
+            var result = MessageBox.Show("Are you sure you want to delete this record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 if (EmployeeBusinessLogic.DeletePenalty(id) != 0)
                 {
-                    MessageBox.Show("Tramsaction fail");
+                    MessageBox.Show("Transaction fail.");
                 }
                 else
                 {

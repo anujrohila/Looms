@@ -89,6 +89,8 @@
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LoomsManagement.Windows.WaitForm1), true, true);
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.menuFiscalYear = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -175,10 +177,11 @@
             this.barButtonItem15,
             this.barcmbCompanycode,
             this.barButtonItem16,
-            this.barButtonItem17});
+            this.barButtonItem17,
+            this.menuFiscalYear});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 12;
+            this.ribbonControl.MaxItemId = 13;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barcmbCompanycode);
             this.ribbonControl.PageHeaderItemLinks.Add(this.btnRefreshData);
@@ -494,6 +497,7 @@
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem17);
+            this.ribbonPageGroup7.ItemLinks.Add(this.menuFiscalYear);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "Beam Master";
             // 
@@ -632,6 +636,23 @@
             this.barEditItem1.Name = "barEditItem1";
             this.barEditItem1.Width = 200;
             // 
+            // barButtonItem18
+            // 
+            this.barButtonItem18.Caption = "Beam Type";
+            this.barButtonItem18.Id = 11;
+            this.barButtonItem18.ImageIndex = 6;
+            this.barButtonItem18.Name = "barButtonItem18";
+            this.barButtonItem18.Tag = "Beam Master";
+            // 
+            // menuFiscalYear
+            // 
+            this.menuFiscalYear.Caption = "Fiscal Year";
+            this.menuFiscalYear.Id = 12;
+            this.menuFiscalYear.ImageIndex = 6;
+            this.menuFiscalYear.Name = "menuFiscalYear";
+            this.menuFiscalYear.Tag = "Fiscal Year";
+            this.menuFiscalYear.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
             // Dashboard
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -720,6 +741,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraBars.BarButtonItem menuFiscalYear;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }

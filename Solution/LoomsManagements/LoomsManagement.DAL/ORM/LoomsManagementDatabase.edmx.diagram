@@ -60,7 +60,7 @@
         <AssociationConnector Association="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST" />
         <EntityTypeShape EntityType="LoomsManagementModel.tblBeamMST" Width="1.5" PointX="0.77879305033888335" PointY="13.606516948717887" />
         <AssociationConnector Association="LoomsManagementModel.FK_tblBeamMST_tblBeamMST" />
-        <EntityTypeShape EntityType="LoomsManagementModel.tblFiscalYear" Width="1.5" PointX="3.5632199736140757" PointY="16.93459261252293" />
+        <EntityTypeShape EntityType="LoomsManagementModel.tblFiscalYear" Width="1.5" PointX="7.60756134596074" PointY="18.74521740653795" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

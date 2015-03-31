@@ -44,8 +44,8 @@ namespace LoomsManagement.DAL
                         {
                             objFiscalYear.FiscalYearId = tblFiscalYearDTO.FiscalYearId;
                             objFiscalYear.FiscalName = tblFiscalYearDTO.FiscalName;
-                            objFiscalYear.StartYear = tblFiscalYearDTO.StartYear;
-                            objFiscalYear.EndYear = tblFiscalYearDTO.EndYear;
+                            objFiscalYear.StartDate = tblFiscalYearDTO.StartDate;
+                            objFiscalYear.EndDate = tblFiscalYearDTO.EndDate;
                             objFiscalYear.IsActive = tblFiscalYearDTO.IsActive;
                             objFiscalYear.IsDelete = tblFiscalYearDTO.IsDelete;
                             objFiscalYear.CreatedBy = tblFiscalYearDTO.CreatedBy;

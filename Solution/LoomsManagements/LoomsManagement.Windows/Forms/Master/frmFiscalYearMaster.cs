@@ -2,82 +2,86 @@
 using LoomsManagement.Domain.DTO;
 using LoomsManagement.Windows.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Master
 {
-    public partial class frmYarnQualityMaster : LoomsManagement.Windows.FormDemo1
+    public partial class frmFiscalYearMaster : LoomsManagement.Windows.FormDemo1
     {
-        #region Variable
+
+        #region [Variable]
 
         public Boolean IsEdit = false;
         public int id = 0;
 
         #endregion
 
+        #region [Constructor]
 
-        #region Constructor
-
-        public frmYarnQualityMaster()
+        public frmFiscalYearMaster()
         {
             InitializeComponent();
             btnReport.Visible = false;
-            this.Paint += frmYarnQualityMaster_Paint;
+            this.Paint += frmFiscalYearMaster_Paint;
         }
+
+
 
         #endregion
 
-        #region Page Event
+        #region [Page Event]
 
-        void frmYarnQualityMaster_Paint(object sender, PaintEventArgs e)
+
+        void frmFiscalYearMaster_Paint(object sender, PaintEventArgs e)
         {
             CommanClass.ShowProcessBar();
             SetFlag();
-            txtYarnQualityName.Focus();
+            dpStartDate.Focus();
             CommanClass.HideProcessBar();
         }
 
         #endregion
 
-        #region Control Event
+        #region  [Control Event]
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
             if (!Validation())
                 return;
+
             CommanClass.ShowProcessBar();
-            var YarnQualityMstDTO = new tblYarnQualityMSTDTO();
-            YarnQualityMstDTO.YarnQualityName = txtYarnQualityName.Text;
-            YarnQualityMstDTO.Description = txtDescription.Text;
-            YarnQualityMstDTO.IsActive = true;
-            YarnQualityMstDTO.IsDelete = false;
+
+            var tblFiscalYearDTO = new tblFiscalYearDTO();
+            tblFiscalYearDTO.StartDate = Convert.ToDateTime(dpStartDate.EditValue);
+            tblFiscalYearDTO.EndDate = Convert.ToDateTime(dpEndDate.EditValue);
+            tblFiscalYearDTO.FiscalName = string.Format("{0}-{1}", tblFiscalYearDTO.StartDate.Year.ToString().Substring(0, 2), tblFiscalYearDTO.EndDate.Year.ToString().Substring(0, 2));
+            tblFiscalYearDTO.IsActive = true;
+            tblFiscalYearDTO.IsDelete = false;
 
             if (IsEdit)
             {
-                YarnQualityMstDTO.YarnQualityID = id;
-                YarnQualityMstDTO.UpdateBy = CommanClass.UserId;
-                YarnQualityMstDTO.UpdationDateTime = DateTime.Now;
+                tblFiscalYearDTO.FiscalYearId = id;
+                tblFiscalYearDTO.UpdatedBy = CommanClass.UserId;
+                tblFiscalYearDTO.UpdatedDateTime = DateTime.Now;
             }
             else
             {
-                YarnQualityMstDTO.CreateBy = CommanClass.UserId;
-                YarnQualityMstDTO.CreationDateTime = DateTime.Now;
+                tblFiscalYearDTO.CreatedBy = CommanClass.UserId;
+                tblFiscalYearDTO.CreatedDateTime = DateTime.Now;
+
             }
 
-            int ReturnValue = YarnBusinessLogic.SavaYarnQuality(YarnQualityMstDTO);
+            int ReturnValue = FiscalYearBusinessLogic.SavaFiscalYear(tblFiscalYearDTO);
+
             CommanClass.HideProcessBar();
+
             if (ReturnValue == 1)
             {
-                errorYarnQualityName.SetError(txtYarnQualityName, "Yarn Quality Name Already Exists.");
+                errorWrongDate.SetError(dpStartDate, "Fiscal Year already exists.");
             }
             else if (ReturnValue == 2)
             {
+                errorWrongDate.SetError(dpStartDate, "Error in transaction please try again later.");
             }
             else
             {
@@ -88,7 +92,8 @@ namespace LoomsManagement.Windows.Forms.Master
                     this.Close();
                 }
             }
-            
+
+
         }
 
         private void btndelete_Click(object sender, EventArgs e)
@@ -96,7 +101,7 @@ namespace LoomsManagement.Windows.Forms.Master
             var result = MessageBox.Show("Are you sure you want to delete this record ?", "Delete Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                if (YarnBusinessLogic.DeleteYarnQuality(id) != 0)
+                if (CompnayBussinesLogic.DeleteCompanyData(id) != 0)
                 {
                     MessageBox.Show("Transaction fail.");
                 }
@@ -113,26 +118,7 @@ namespace LoomsManagement.Windows.Forms.Master
             this.Close();
         }
 
-        #region Key Event
-
-        private void Page_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Control && e.KeyCode == CommanClass.SaveButton)
-            {
-                btnSave_Click(null, null);
-            }
-            else if (btnReport.Enabled == true && e.Control && e.KeyCode == CommanClass.PrintButton)
-            {
-            }
-            else if (btndelete.Enabled == true && e.KeyCode == CommanClass.DeleteButton)
-            {
-                btndelete_Click(null, null);
-            }
-            else if (e.Control && e.KeyCode == CommanClass.CloseButton)
-            {
-                btnExit_Click(null, null);
-            }
-        }
+        #region KeyEvent
 
         private void EnterEvent(object sender, EventArgs e)
         {
@@ -162,19 +148,38 @@ namespace LoomsManagement.Windows.Forms.Master
             return base.ProcessDialogKey(keyData);
         }
 
-        #endregion
+        private void Page_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == CommanClass.SaveButton)
+            {
+                btnSave_Click(null, null);
+            }
+            else if (btnReport.Enabled == true && e.Control && e.KeyCode == CommanClass.PrintButton)
+            {
+            }
+            else if (btndelete.Enabled == true && e.KeyCode == CommanClass.DeleteButton)
+            {
+                btndelete_Click(null, null);
+            }
+            else if (e.Control && e.KeyCode == CommanClass.CloseButton)
+            {
+                btnExit_Click(null, null);
+            }
+        }
 
         #endregion
 
-        # region Private Method
+        #endregion
+
+        #region [Private Method]
 
         private void SetFlag()
         {
             if (IsEdit)
             {
-                var yarnQualityMst = YarnBusinessLogic.GetYarnQualityDetails(id);
-                txtYarnQualityName.Text = yarnQualityMst.YarnQualityName;
-                txtDescription.Text = yarnQualityMst.Description;
+                var fiscalYear = FiscalYearBusinessLogic.GetFiscalYear(id);
+                dpStartDate.EditValue = fiscalYear.StartDate;
+                dpEndDate.EditValue = fiscalYear.EndDate;
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;
             }
@@ -187,9 +192,13 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private Boolean Validation()
         {
-
+            DateTime sDate = Convert.ToDateTime(dpStartDate.EditValue);
+            DateTime eDate = Convert.ToDateTime(dpEndDate.EditValue);
             ErrorHandlor.SetErrorCount();
-            ErrorHandlor.SetTextboxErrorWithCount(errorYarnQualityName, txtYarnQualityName, "Enter Yarn Quality Name");
+            if (sDate > eDate)
+            {
+                ErrorHandlor.SetTextboxErrorWithCount(errorWrongDate, dpStartDate, "Please enter valid date start date must be less than end date.");
+            }
 
             if (ErrorHandlor.count == 0)
                 return true;
@@ -200,28 +209,13 @@ namespace LoomsManagement.Windows.Forms.Master
         private void ClearData()
         {
             //Clear data
-            txtYarnQualityName.Text = "";
-            txtDescription.Text = "";
+            errorWrongDate.SetError(dpStartDate, "");
 
-
-            //Reset BackGround Color
-            txtYarnQualityName.BackColor = CommanClass.m_tbcolorleave;
-            txtDescription.BackColor = CommanClass.m_tbcolorleave;
-
-
-
-            //Reset error 
-            errorYarnQualityName.SetError(txtYarnQualityName, "");
-            txtYarnQualityName.Focus();
+            dpStartDate.Focus();
 
         }
 
         #endregion
 
-      
-
-       
-
-       
     }
 }

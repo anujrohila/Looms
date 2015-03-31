@@ -47,7 +47,7 @@ namespace LoomsManagement.Windows.Forms
         {
             if ((sender as Form).DialogResult == System.Windows.Forms.DialogResult.Cancel)
             {
-               // MessageBox.Show("hello");
+                // MessageBox.Show("hello");
                 RefreshData();
             }
         }
@@ -107,6 +107,9 @@ namespace LoomsManagement.Windows.Forms
                     break;
                 case "Beam Master":
                     Currentform = new frmBeamMasterView();
+                    break;
+                case "Fiscal Year":
+                    Currentform = new frmFiscalYearView();
                     break;
                 //case "milk lab entry":
                 //    Currentform = new MilkLabDetails();

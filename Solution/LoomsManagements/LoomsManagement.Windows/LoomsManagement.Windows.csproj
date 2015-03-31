@@ -159,6 +159,18 @@
     <Compile Include="Forms\frmCompanySelect.Designer.cs">
       <DependentUpon>frmCompanySelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearMaster.Designer.cs">
+      <DependentUpon>frmFiscalYearMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearView.Designer.cs">
+      <DependentUpon>frmFiscalYearView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmBeamMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -385,6 +397,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCompanySelect.resx">
       <DependentUpon>frmCompanySelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmFiscalYearMaster.resx">
+      <DependentUpon>frmFiscalYearMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmFiscalYearView.resx">
+      <DependentUpon>frmFiscalYearView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmBeamMaster.resx">
       <DependentUpon>frmBeamMaster.cs</DependentUpon>

@@ -23,8 +23,8 @@
             <DefiningQuery>SELECT 
       [tblFiscalYear].[FiscalYearId] AS [FiscalYearId], 
       [tblFiscalYear].[FiscalName] AS [FiscalName], 
-      [tblFiscalYear].[StartYear] AS [StartYear], 
-      [tblFiscalYear].[EndYear] AS [EndYear], 
+      [tblFiscalYear].[StartDate] AS [StartDate], 
+      [tblFiscalYear].[EndDate] AS [EndDate], 
       [tblFiscalYear].[IsActive] AS [IsActive], 
       [tblFiscalYear].[IsDelete] AS [IsDelete], 
       [tblFiscalYear].[CreatedBy] AS [CreatedBy], 
@@ -409,13 +409,13 @@
           <Key>
             <PropertyRef Name="FiscalYearId" />
             <PropertyRef Name="FiscalName" />
-            <PropertyRef Name="StartYear" />
-            <PropertyRef Name="EndYear" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="EndDate" />
           </Key>
           <Property Name="FiscalYearId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="FiscalName" Type="varchar" Nullable="false" MaxLength="50" />
-          <Property Name="StartYear" Type="int" Nullable="false" />
-          <Property Name="EndYear" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" Nullable="false" />
           <Property Name="IsActive" Type="bit" />
           <Property Name="IsDelete" Type="bit" />
           <Property Name="CreatedBy" Type="int" />
@@ -2173,13 +2173,13 @@
           <Key>
             <PropertyRef Name="FiscalYearId" />
             <PropertyRef Name="FiscalName" />
-            <PropertyRef Name="StartYear" />
-            <PropertyRef Name="EndYear" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="EndDate" />
           </Key>
           <Property Type="Int64" Name="FiscalYearId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="FiscalName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Type="Int32" Name="StartYear" Nullable="false" />
-          <Property Type="Int32" Name="EndYear" Nullable="false" />
+          <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="0" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="0" />
           <Property Type="Boolean" Name="IsActive" />
           <Property Type="Boolean" Name="IsDelete" />
           <Property Type="Int32" Name="CreatedBy" />
@@ -2922,8 +2922,8 @@
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="EndYear" ColumnName="EndYear" />
-                <ScalarProperty Name="StartYear" ColumnName="StartYear" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
                 <ScalarProperty Name="FiscalName" ColumnName="FiscalName" />
                 <ScalarProperty Name="FiscalYearId" ColumnName="FiscalYearId" />
               </MappingFragment>
