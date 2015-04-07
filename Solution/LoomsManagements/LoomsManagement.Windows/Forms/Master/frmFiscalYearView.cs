@@ -42,9 +42,9 @@ namespace LoomsManagement.Windows.Forms.Master
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var frmCompanyMaster = new frmCompanyMaster();
-            frmCompanyMaster.FormClosed += objform_FormClosed;
-            frmCompanyMaster.ShowDialog();
+            var frmFiscalYearMaster = new frmFiscalYearMaster();
+            frmFiscalYearMaster.FormClosed += objform_FormClosed;
+            frmFiscalYearMaster.ShowDialog();
         }
 
         void objform_FormClosed(object sender, FormClosedEventArgs e)
