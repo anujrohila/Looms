@@ -52,10 +52,10 @@ namespace LoomsManagement.Windows.Forms.Master
             CommanClass.ShowProcessBar();
             var tblBrokersMSTDTO = new tblBrokersMSTDTO();
             tblBrokersMSTDTO.BrokerName = txtBrokerName.Text;
-            tblBrokersMSTDTO.BrokerFirmName = txtBrokerFirmName.Text;
-            tblBrokersMSTDTO.Address = txtAddress.Text;
-            tblBrokersMSTDTO.ContactNo = txtContactNumber.Text;
-            tblBrokersMSTDTO.MobileNo = txtMobileNumber.Text;
+            tblBrokersMSTDTO.BrokerFirmName = txtEmailAddress.Text;
+            tblBrokersMSTDTO.Address = txtRecidencialAddress.Text;
+            tblBrokersMSTDTO.ContactNo = txtPhoneNo1.Text;
+            tblBrokersMSTDTO.MobileNo = txtPhoneNo2.Text;
             tblBrokersMSTDTO.DealingIn = txtDealingIn.Text;
             tblBrokersMSTDTO.IsActive = true;
             tblBrokersMSTDTO.IsDelete = false;
@@ -158,10 +158,10 @@ namespace LoomsManagement.Windows.Forms.Master
             {
                 var brokerMstData = PartyBusinessLogic.GetBrokerDetails(id);
                 txtBrokerName.Text = brokerMstData.BrokerName;
-                txtBrokerFirmName.Text = brokerMstData.BrokerFirmName;
-                txtAddress.Text = brokerMstData.Address;
-                txtContactNumber.Text = brokerMstData.ContactNo;
-                txtMobileNumber.Text = brokerMstData.MobileNo;
+                txtEmailAddress.Text = brokerMstData.BrokerFirmName;
+                txtRecidencialAddress.Text = brokerMstData.Address;
+                txtPhoneNo1.Text = brokerMstData.ContactNo;
+                txtPhoneNo2.Text = brokerMstData.MobileNo;
                 txtDealingIn.Text = brokerMstData.DealingIn;
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;
@@ -178,11 +178,11 @@ namespace LoomsManagement.Windows.Forms.Master
 
             ErrorHandlor.SetErrorCount();
             ErrorHandlor.SetTextboxErrorWithCount(errorBrokerName, txtBrokerName, "Enter Broker Name");
-            ErrorHandlor.SetTextboxErrorWithCount(errorBrokerFirmName, txtBrokerFirmName, "Enter Broker Firm Name");
-            ErrorHandlor.SetMemoEditErrorWithCount(errorAddress, txtAddress, "Enter Address");
-            ErrorHandlor.SetTextboxErrorWithCount(errorContactNumber, txtContactNumber, "Enter Broker Contact Number.");
-            ErrorHandlor.SetTextboxErrorWithCount(errorMobileNumber, txtMobileNumber, "Enter Broker Mobile Number");
-            ErrorHandlor.SetMemoEditErrorWithCount(errorDealing, txtDealingIn, "Enter Deal");
+            ErrorHandlor.SetTextboxErrorWithCount(errorPhoneNo1, txtEmailAddress, "Enter Broker Firm Name");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorRecidencialAddress, txtRecidencialAddress, "Enter Address");
+            ErrorHandlor.SetTextboxErrorWithCount(errorPhoneNo2, txtPhoneNo1, "Enter Broker Contact Number.");
+            ErrorHandlor.SetTextboxErrorWithCount(errorWebsite, txtPhoneNo2, "Enter Broker Mobile Number");
+            ErrorHandlor.SetMemoEditErrorWithCount(errorPanNo, txtDealingIn, "Enter Deal");
 
             if (ErrorHandlor.count == 0)
                 return true;
@@ -193,34 +193,35 @@ namespace LoomsManagement.Windows.Forms.Master
         private void ClearData()
         {
             //Clear data
-            txtBrokerFirmName.Text = "";
+            txtEmailAddress.Text = "";
             txtBrokerName.Text = "";
-            txtAddress.Text = "";
-            txtContactNumber.Text = "";
-            txtMobileNumber.Text = "";
+            txtRecidencialAddress.Text = "";
+            txtPhoneNo1.Text = "";
+            txtPhoneNo2.Text = "";
             txtDealingIn.Text = "";
 
             //Reset BackGround Color
             txtBrokerName.BackColor = CommanClass.m_tbcolorleave;
-            txtBrokerFirmName.BackColor = CommanClass.m_tbcolorleave;
-            txtAddress.BackColor = CommanClass.m_tbcolorleave;
-            txtContactNumber.BackColor = CommanClass.m_tbcolorleave;
-            txtMobileNumber.BackColor = CommanClass.m_tbcolorleave;
+            txtEmailAddress.BackColor = CommanClass.m_tbcolorleave;
+            txtRecidencialAddress.BackColor = CommanClass.m_tbcolorleave;
+            txtPhoneNo1.BackColor = CommanClass.m_tbcolorleave;
+            txtPhoneNo2.BackColor = CommanClass.m_tbcolorleave;
             txtDealingIn.BackColor = CommanClass.m_tbcolorleave;
 
 
             //Reset error 
             errorBrokerName.SetError(txtBrokerName, "");
-            errorBrokerFirmName.SetError(txtBrokerFirmName, "");
-            errorAddress.SetError(txtAddress, "");
-            errorContactNumber.SetError(txtContactNumber, "");
-            errorMobileNumber.SetError(txtMobileNumber, "");
-            errorDealing.SetError(txtDealingIn, "");
+            errorPhoneNo1.SetError(txtEmailAddress, "");
+            errorRecidencialAddress.SetError(txtRecidencialAddress, "");
+            errorPhoneNo2.SetError(txtPhoneNo1, "");
+            errorWebsite.SetError(txtPhoneNo2, "");
+            errorPanNo.SetError(txtDealingIn, "");
             txtBrokerName.Focus();
 
         }
 
         #endregion
 
+       
     }
 }
