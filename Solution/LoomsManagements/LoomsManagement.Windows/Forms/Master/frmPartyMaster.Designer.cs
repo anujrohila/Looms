@@ -997,6 +997,7 @@
             this.errorTINDate.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtofficeAddress.Location = new System.Drawing.Point(172, 104);
             this.txtofficeAddress.Name = "txtofficeAddress";
+            this.txtofficeAddress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtofficeAddress.Size = new System.Drawing.Size(205, 69);
             this.txtofficeAddress.TabIndex = 3;
             this.txtofficeAddress.Enter += new System.EventHandler(this.EnterEvent);
@@ -1025,6 +1026,7 @@
             this.errorTINDate.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtShippingAddress.Location = new System.Drawing.Point(172, 178);
             this.txtShippingAddress.Name = "txtShippingAddress";
+            this.txtShippingAddress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtShippingAddress.Size = new System.Drawing.Size(205, 69);
             this.txtShippingAddress.TabIndex = 4;
             this.txtShippingAddress.Enter += new System.EventHandler(this.EnterEvent);
@@ -1035,6 +1037,7 @@
             // 
             this.txtExtraDetails.Location = new System.Drawing.Point(577, 292);
             this.txtExtraDetails.Name = "txtExtraDetails";
+            this.txtExtraDetails.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtExtraDetails.Size = new System.Drawing.Size(205, 79);
             this.txtExtraDetails.TabIndex = 18;
             this.txtExtraDetails.Enter += new System.EventHandler(this.EnterEvent);
