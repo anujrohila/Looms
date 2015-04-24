@@ -56,7 +56,7 @@ namespace LoomsManagement.Windows.Forms.Master
             tblBrokersMSTDTO.Address = txtRecidencialAddress.Text;
             tblBrokersMSTDTO.ContactNo = txtPhoneNo1.Text;
             tblBrokersMSTDTO.MobileNo = txtPhoneNo2.Text;
-            tblBrokersMSTDTO.DealingIn = txtDealingIn.Text;
+          //  tblBrokersMSTDTO.DealingIn = txtDealingIn.Text;
             tblBrokersMSTDTO.IsActive = true;
             tblBrokersMSTDTO.IsDelete = false;
 
@@ -162,7 +162,7 @@ namespace LoomsManagement.Windows.Forms.Master
                 txtRecidencialAddress.Text = brokerMstData.Address;
                 txtPhoneNo1.Text = brokerMstData.ContactNo;
                 txtPhoneNo2.Text = brokerMstData.MobileNo;
-                txtDealingIn.Text = brokerMstData.DealingIn;
+               // txtDealingIn.Text = brokerMstData.DealingIn;
                 btndelete.Enabled = true;
                 btnReport.Enabled = true;
             }
@@ -182,7 +182,7 @@ namespace LoomsManagement.Windows.Forms.Master
             ErrorHandlor.SetMemoEditErrorWithCount(errorRecidencialAddress, txtRecidencialAddress, "Enter Address");
             ErrorHandlor.SetTextboxErrorWithCount(errorPhoneNo2, txtPhoneNo1, "Enter Broker Contact Number.");
             ErrorHandlor.SetTextboxErrorWithCount(errorWebsite, txtPhoneNo2, "Enter Broker Mobile Number");
-            ErrorHandlor.SetMemoEditErrorWithCount(errorPanNo, txtDealingIn, "Enter Deal");
+          //  ErrorHandlor.SetMemoEditErrorWithCount(errorPanNo, txtDealingIn, "Enter Deal");
 
             if (ErrorHandlor.count == 0)
                 return true;
@@ -198,7 +198,7 @@ namespace LoomsManagement.Windows.Forms.Master
             txtRecidencialAddress.Text = "";
             txtPhoneNo1.Text = "";
             txtPhoneNo2.Text = "";
-            txtDealingIn.Text = "";
+          //  txtDealingIn.Text = "";
 
             //Reset BackGround Color
             txtBrokerName.BackColor = CommanClass.m_tbcolorleave;
@@ -206,7 +206,7 @@ namespace LoomsManagement.Windows.Forms.Master
             txtRecidencialAddress.BackColor = CommanClass.m_tbcolorleave;
             txtPhoneNo1.BackColor = CommanClass.m_tbcolorleave;
             txtPhoneNo2.BackColor = CommanClass.m_tbcolorleave;
-            txtDealingIn.BackColor = CommanClass.m_tbcolorleave;
+         //   txtDealingIn.BackColor = CommanClass.m_tbcolorleave;
 
 
             //Reset error 
@@ -215,7 +215,7 @@ namespace LoomsManagement.Windows.Forms.Master
             errorRecidencialAddress.SetError(txtRecidencialAddress, "");
             errorPhoneNo2.SetError(txtPhoneNo1, "");
             errorWebsite.SetError(txtPhoneNo2, "");
-            errorPanNo.SetError(txtDealingIn, "");
+          //  errorPanNo.SetError(txtDealingIn, "");
             txtBrokerName.Focus();
 
         }
