@@ -11,6 +11,9 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Helpers;
 using LoomsManagement.Windows.Forms.Master;
 using LoomsManagement.Windows.Classes;
+using LoomsManagement.Windows.Forms.Order;
+using LoomsManagement.Windows.Forms.Challan;
+using LoomsManagement.Windows.Forms.Returns;
 
 namespace LoomsManagement.Windows.Forms
 {
@@ -111,27 +114,27 @@ namespace LoomsManagement.Windows.Forms
                 case "Fiscal Year":
                     Currentform = new frmFiscalYearView();
                     break;
-                //case "milk lab entry":
-                //    Currentform = new MilkLabDetails();
-                //    break;
-                //case "cheque entry":
-                //    Currentform = new AccountDetails();
-                //    break;
-                //case "withdrawn entry":
-                //    Currentform = new WithdrawnInstallmnetDetails();
-                //    break;
-                //case "milk report":
-                //    Currentform = new MilkReport();
-                //    break;
-                //case "customer payement report":
-                //    Currentform = new CustomerPaymentReport();
-                //    break;
-                //case "customer enty from":
-                //    Currentform = new VilageDailyEntryFrom();
-                //    break;
-                //case "expense report":
-                //    Currentform = new ExpenseDetails();
-                //    break;
+                case "Sales Order":
+                    Currentform = new frmSalesOrder();
+                   break;
+                case "Purchase Order":
+                   Currentform = new frmYarnPurchaseOrder();
+                    break;
+                case "Sales Bill":
+                    Currentform = new frmSalesBill();
+                    break;
+                case "Purchase Bill":
+                    Currentform = new frmPurchaseBill();
+                    break;
+                case "Sales Challan":
+                    Currentform = new frmSalesChallan();
+                    break;
+                case "customer enty from":
+                    Currentform = new frmSalesReturn();
+                    break;
+                case "expense report":
+                    Currentform = new frmYarnPurchaseReturn();
+                    break;
                 //case "current fat details":
                 //    Currentform = new CurrentFatDetails();
                 //    break;
