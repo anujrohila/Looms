@@ -95,21 +95,25 @@
             // 
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
+            this.btnReport.TabIndex = 12;
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.TabIndex = 11;
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
+            this.btnSave.TabIndex = 9;
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
+            this.btndelete.TabIndex = 10;
             // 
             // panel1
             // 
@@ -159,7 +163,7 @@
             this.txtWeight.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtWeight.Properties.Mask.EditMask = "n2";
             this.txtWeight.Size = new System.Drawing.Size(205, 26);
-            this.txtWeight.TabIndex = 1;
+            this.txtWeight.TabIndex = 6;
             this.txtWeight.ToolTip = "Enter Broker Name";
             // 
             // txtOrderNumber
@@ -180,7 +184,7 @@
             this.txtOrderNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtOrderNumber.Properties.Mask.EditMask = "n2";
             this.txtOrderNumber.Size = new System.Drawing.Size(205, 26);
-            this.txtOrderNumber.TabIndex = 2;
+            this.txtOrderNumber.TabIndex = 0;
             this.txtOrderNumber.ToolTip = "Enter Broker Name";
             // 
             // labelControl14
@@ -234,7 +238,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
             this.cmbPartyName.Properties.NullText = "";
             this.cmbPartyName.Size = new System.Drawing.Size(205, 26);
-            this.cmbPartyName.TabIndex = 181;
+            this.cmbPartyName.TabIndex = 2;
             // 
             // dpOrderDate
             // 
@@ -257,7 +261,7 @@
             this.dpOrderDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dpOrderDate.Size = new System.Drawing.Size(205, 26);
-            this.dpOrderDate.TabIndex = 182;
+            this.dpOrderDate.TabIndex = 1;
             this.dpOrderDate.ToolTip = "Select Date.";
             // 
             // labelControl1
@@ -374,7 +378,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
             this.cmbBrokerName.Properties.NullText = "";
             this.cmbBrokerName.Size = new System.Drawing.Size(205, 26);
-            this.cmbBrokerName.TabIndex = 192;
+            this.cmbBrokerName.TabIndex = 3;
             // 
             // lookUpEdit2
             // 
@@ -408,7 +412,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
             this.lookUpEdit2.Properties.NullText = "";
             this.lookUpEdit2.Size = new System.Drawing.Size(205, 26);
-            this.lookUpEdit2.TabIndex = 193;
+            this.lookUpEdit2.TabIndex = 4;
             // 
             // cmbPackagingType
             // 
@@ -442,7 +446,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
             this.cmbPackagingType.Properties.NullText = "";
             this.cmbPackagingType.Size = new System.Drawing.Size(205, 26);
-            this.cmbPackagingType.TabIndex = 194;
+            this.cmbPackagingType.TabIndex = 5;
             // 
             // txtRate
             // 
@@ -462,7 +466,7 @@
             this.txtRate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtRate.Properties.Mask.EditMask = "n2";
             this.txtRate.Size = new System.Drawing.Size(205, 26);
-            this.txtRate.TabIndex = 195;
+            this.txtRate.TabIndex = 7;
             this.txtRate.ToolTip = "Enter Broker Name";
             // 
             // txtFinalAmount
@@ -475,7 +479,7 @@
             this.txtFinalAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtFinalAmount.Properties.Mask.EditMask = "n2";
             this.txtFinalAmount.Size = new System.Drawing.Size(205, 26);
-            this.txtFinalAmount.TabIndex = 196;
+            this.txtFinalAmount.TabIndex = 8;
             this.txtFinalAmount.ToolTip = "Enter Broker Name";
             // 
             // labelControl11

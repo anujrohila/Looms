@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Order
 {
-    public partial class SalesOrder : LoomsManagement.Windows.FormDemo1
+    public partial class frmSalesOrder : LoomsManagement.Windows.FormDemo1
     {
-        public SalesOrder()
+        public frmSalesOrder()
         {
             InitializeComponent();
         }
