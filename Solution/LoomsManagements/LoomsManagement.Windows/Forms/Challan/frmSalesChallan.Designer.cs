@@ -33,8 +33,8 @@
             this.dpDeliveryDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.cmbBrokerName = new DevExpress.XtraEditors.LookUpEdit();
-            this.dpInvoiceDate = new DevExpress.XtraEditors.DateEdit();
-            this.cmbInvoiceNo = new DevExpress.XtraEditors.LookUpEdit();
+            this.dpChallanDate = new DevExpress.XtraEditors.DateEdit();
+            this.cmbChallanNo = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbCheckedBy = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
@@ -87,9 +87,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbInvoiceNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpChallanDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpChallanDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbChallanNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCheckedBy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTruckNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTransport.Properties)).BeginInit();
@@ -122,24 +122,28 @@
             this.btnReport.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Appearance.Options.UseFont = true;
             this.btnReport.TabIndex = 16;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnExit
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
             this.btnExit.TabIndex = 15;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.TabIndex = 13;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
             this.btndelete.TabIndex = 14;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
@@ -149,8 +153,8 @@
             this.panel1.Controls.Add(this.dpDeliveryDate);
             this.panel1.Controls.Add(this.labelControl15);
             this.panel1.Controls.Add(this.cmbBrokerName);
-            this.panel1.Controls.Add(this.dpInvoiceDate);
-            this.panel1.Controls.Add(this.cmbInvoiceNo);
+            this.panel1.Controls.Add(this.dpChallanDate);
+            this.panel1.Controls.Add(this.cmbChallanNo);
             this.panel1.Controls.Add(this.cmbCheckedBy);
             this.panel1.Controls.Add(this.labelControl21);
             this.panel1.Controls.Add(this.labelControl22);
@@ -287,71 +291,71 @@
             this.cmbBrokerName.Size = new System.Drawing.Size(205, 26);
             this.cmbBrokerName.TabIndex = 4;
             // 
-            // dpInvoiceDate
+            // dpChallanDate
             // 
-            this.dpInvoiceDate.EditValue = null;
-            this.errorCheckedBy.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyname.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTransport.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLRNumber.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNo.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTruckNo.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.dpInvoiceDate.Location = new System.Drawing.Point(510, 13);
-            this.dpInvoiceDate.Name = "dpInvoiceDate";
-            this.dpInvoiceDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.dpInvoiceDate.Properties.Appearance.Options.UseFont = true;
-            this.dpInvoiceDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.dpInvoiceDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dpChallanDate.EditValue = null;
+            this.errorCheckedBy.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyname.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTransport.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLRNumber.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNo.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanDate.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTruckNo.SetIconAlignment(this.dpChallanDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.dpChallanDate.Location = new System.Drawing.Point(510, 13);
+            this.dpChallanDate.Name = "dpChallanDate";
+            this.dpChallanDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.dpChallanDate.Properties.Appearance.Options.UseFont = true;
+            this.dpChallanDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.dpChallanDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dpInvoiceDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dpChallanDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dpInvoiceDate.Size = new System.Drawing.Size(205, 26);
-            this.dpInvoiceDate.TabIndex = 1;
-            this.dpInvoiceDate.ToolTip = "Select Date.";
+            this.dpChallanDate.Size = new System.Drawing.Size(205, 26);
+            this.dpChallanDate.TabIndex = 1;
+            this.dpChallanDate.ToolTip = "Select Date.";
             // 
-            // cmbInvoiceNo
+            // cmbChallanNo
             // 
-            this.errorChallanNumber.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLRNumber.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCheckedBy.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTruckNo.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNo.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyname.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTransport.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.cmbInvoiceNo.Location = new System.Drawing.Point(137, 13);
-            this.cmbInvoiceNo.Name = "cmbInvoiceNo";
-            this.cmbInvoiceNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbInvoiceNo.Properties.Appearance.Options.UseFont = true;
-            this.cmbInvoiceNo.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbInvoiceNo.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbInvoiceNo.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbInvoiceNo.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbInvoiceNo.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbInvoiceNo.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbInvoiceNo.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbInvoiceNo.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbInvoiceNo.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbInvoiceNo.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbInvoiceNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.cmbInvoiceNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.errorChallanNumber.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLRNumber.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCheckedBy.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTruckNo.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNo.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanDate.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyname.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTransport.SetIconAlignment(this.cmbChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.cmbChallanNo.Location = new System.Drawing.Point(137, 13);
+            this.cmbChallanNo.Name = "cmbChallanNo";
+            this.cmbChallanNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbChallanNo.Properties.Appearance.Options.UseFont = true;
+            this.cmbChallanNo.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbChallanNo.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cmbChallanNo.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbChallanNo.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cmbChallanNo.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbChallanNo.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbChallanNo.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbChallanNo.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cmbChallanNo.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbChallanNo.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbChallanNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.cmbChallanNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbInvoiceNo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            this.cmbChallanNo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
-            this.cmbInvoiceNo.Properties.NullText = "";
-            this.cmbInvoiceNo.Size = new System.Drawing.Size(205, 26);
-            this.cmbInvoiceNo.TabIndex = 0;
+            this.cmbChallanNo.Properties.NullText = "";
+            this.cmbChallanNo.Size = new System.Drawing.Size(205, 26);
+            this.cmbChallanNo.TabIndex = 0;
             // 
             // cmbCheckedBy
             // 
@@ -883,9 +887,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbInvoiceNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpChallanDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpChallanDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbChallanNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCheckedBy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTruckNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTransport.Properties)).EndInit();
@@ -916,8 +920,8 @@
         private DevExpress.XtraEditors.DateEdit dpDeliveryDate;
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LookUpEdit cmbBrokerName;
-        private DevExpress.XtraEditors.DateEdit dpInvoiceDate;
-        private DevExpress.XtraEditors.LookUpEdit cmbInvoiceNo;
+        private DevExpress.XtraEditors.DateEdit dpChallanDate;
+        private DevExpress.XtraEditors.LookUpEdit cmbChallanNo;
         private DevExpress.XtraEditors.LookUpEdit cmbCheckedBy;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl22;
