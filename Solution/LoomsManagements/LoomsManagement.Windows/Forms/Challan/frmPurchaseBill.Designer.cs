@@ -63,10 +63,10 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbChallanNumber = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbBillNo = new DevExpress.XtraEditors.LookUpEdit();
             this.dpBillDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtBillNumber = new DevExpress.XtraEditors.TextEdit();
+            this.txtChallanNo = new DevExpress.XtraEditors.TextEdit();
             this.errorBillNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorBillDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorBrokerName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
@@ -75,7 +75,6 @@
             this.errorTaxType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorChallanNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorQualityName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorQualityTypeName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorGrade = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorReceivedBy = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
@@ -97,10 +96,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityTypeName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbChallanNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBillNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBillDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBillDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBillNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChallanNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBillNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBillDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).BeginInit();
@@ -109,7 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorTaxType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorChallanNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorQualityName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorQualityTypeName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorGrade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorReceivedBy)).BeginInit();
@@ -132,18 +130,21 @@
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
             this.btnExit.TabIndex = 17;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.TabIndex = 15;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
             this.btndelete.TabIndex = 16;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
@@ -184,27 +185,26 @@
             this.panel1.Controls.Add(this.labelControl3);
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Controls.Add(this.cmbChallanNumber);
+            this.panel1.Controls.Add(this.cmbBillNo);
             this.panel1.Controls.Add(this.dpBillDate);
             this.panel1.Controls.Add(this.labelControl5);
-            this.panel1.Controls.Add(this.txtBillNumber);
+            this.panel1.Controls.Add(this.txtChallanNo);
             this.panel1.Size = new System.Drawing.Size(739, 257);
             // 
             // cmbTaxType
             // 
-            this.errorBillDate.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorReceivedBy.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxAmount.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.cmbTaxType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbTaxType.Location = new System.Drawing.Point(131, 177);
             this.cmbTaxType.Name = "cmbTaxType";
             this.cmbTaxType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -240,19 +240,18 @@
             // 
             // cmbReceivedBy
             // 
-            this.errorBillDate.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorReceivedBy.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxAmount.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.cmbReceivedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbReceivedBy.Location = new System.Drawing.Point(504, 144);
             this.cmbReceivedBy.Name = "cmbReceivedBy";
             this.cmbReceivedBy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -381,18 +380,17 @@
             // 
             this.txtFinalAmount.EditValue = "";
             this.errorGrade.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTwistShed.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtFinalAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtFinalAmount.Location = new System.Drawing.Point(504, 212);
             this.txtFinalAmount.Name = "txtFinalAmount";
             this.txtFinalAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -407,18 +405,17 @@
             // 
             this.txtTaxAmount.EditValue = "";
             this.errorGrade.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTwistShed.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtTaxAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtTaxAmount.Location = new System.Drawing.Point(504, 178);
             this.txtTaxAmount.Name = "txtTaxAmount";
             this.txtTaxAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -433,18 +430,17 @@
             // 
             this.txtRemarks.EditValue = "";
             this.errorGrade.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTwistShed.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtRemarks, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtRemarks.Location = new System.Drawing.Point(131, 211);
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -459,18 +455,17 @@
             // 
             this.txtTwistShed.EditValue = "";
             this.errorGrade.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTwistShed.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtTwistShed, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtTwistShed.Location = new System.Drawing.Point(131, 144);
             this.txtTwistShed.Name = "txtTwistShed";
             this.txtTwistShed.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -485,18 +480,17 @@
             // 
             this.txtGrade.EditValue = "";
             this.errorGrade.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTwistShed.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtGrade.Location = new System.Drawing.Point(504, 111);
             this.txtGrade.Name = "txtGrade";
             this.txtGrade.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -511,18 +505,17 @@
             // 
             this.txtLotNo.EditValue = "";
             this.errorGrade.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTwistShed.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtLotNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtLotNo.Location = new System.Drawing.Point(131, 111);
             this.txtLotNo.Name = "txtLotNo";
             this.txtLotNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -535,19 +528,18 @@
             // 
             // cmbQualityTypeName
             // 
-            this.errorBillDate.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorReceivedBy.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxAmount.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbQualityTypeName.Location = new System.Drawing.Point(504, 78);
             this.cmbQualityTypeName.Name = "cmbQualityTypeName";
             this.cmbQualityTypeName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -574,19 +566,18 @@
             // 
             // cmbBrokerName
             // 
-            this.errorBillDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorReceivedBy.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxAmount.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbBrokerName.Location = new System.Drawing.Point(131, 78);
             this.cmbBrokerName.Name = "cmbBrokerName";
             this.cmbBrokerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -613,19 +604,18 @@
             // 
             // cmbPartyName
             // 
-            this.errorBillDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorReceivedBy.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxAmount.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbPartyName.Location = new System.Drawing.Point(504, 45);
             this.cmbPartyName.Name = "cmbPartyName";
             this.cmbPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
@@ -758,61 +748,59 @@
             this.labelControl1.TabIndex = 238;
             this.labelControl1.Text = "Quality Type Name";
             // 
-            // cmbChallanNumber
+            // cmbBillNo
             // 
-            this.errorBillDate.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.cmbChallanNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.cmbChallanNumber.Location = new System.Drawing.Point(504, 12);
-            this.cmbChallanNumber.Name = "cmbChallanNumber";
-            this.cmbChallanNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbChallanNumber.Properties.Appearance.Options.UseFont = true;
-            this.cmbChallanNumber.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbChallanNumber.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbChallanNumber.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbChallanNumber.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbChallanNumber.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbChallanNumber.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbChallanNumber.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbChallanNumber.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbChallanNumber.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbChallanNumber.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbChallanNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.cmbChallanNumber.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.errorReceivedBy.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.cmbBillNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.cmbBillNo.Location = new System.Drawing.Point(504, 12);
+            this.cmbBillNo.Name = "cmbBillNo";
+            this.cmbBillNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBillNo.Properties.Appearance.Options.UseFont = true;
+            this.cmbBillNo.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBillNo.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cmbBillNo.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBillNo.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cmbBillNo.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBillNo.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbBillNo.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBillNo.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cmbBillNo.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBillNo.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbBillNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.cmbBillNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbChallanNumber.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            this.cmbBillNo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
-            this.cmbChallanNumber.Properties.NullText = "";
-            this.cmbChallanNumber.Size = new System.Drawing.Size(205, 26);
-            this.cmbChallanNumber.TabIndex = 2;
+            this.cmbBillNo.Properties.NullText = "";
+            this.cmbBillNo.Size = new System.Drawing.Size(205, 26);
+            this.cmbBillNo.TabIndex = 2;
             // 
             // dpBillDate
             // 
             this.dpBillDate.EditValue = null;
-            this.errorLotNumber.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorReceivedBy.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaxType.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBillNumber.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorChallanNumber.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.dpBillDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.dpBillDate.Location = new System.Drawing.Point(131, 45);
             this.dpBillDate.Name = "dpBillDate";
             this.dpBillDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
@@ -836,31 +824,29 @@
             this.labelControl5.TabIndex = 237;
             this.labelControl5.Text = "*";
             // 
-            // txtBillNumber
+            // txtChallanNo
             // 
-            this.txtBillNumber.EditValue = "";
-            this.errorGrade.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillDate.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBillNumber.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityName.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorReceivedBy.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLotNumber.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxAmount.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaxType.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTwistShed.SetIconAlignment(this.txtBillNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtBillNumber.Location = new System.Drawing.Point(131, 12);
-            this.txtBillNumber.Name = "txtBillNumber";
-            this.txtBillNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBillNumber.Properties.Appearance.Options.UseFont = true;
-            this.txtBillNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtBillNumber.Properties.Mask.EditMask = "n2";
-            this.txtBillNumber.Size = new System.Drawing.Size(205, 26);
-            this.txtBillNumber.TabIndex = 1;
-            this.txtBillNumber.ToolTip = "Enter Broker Name";
+            this.txtChallanNo.EditValue = "";
+            this.errorGrade.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxType.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTwistShed.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaxAmount.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorReceivedBy.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillDate.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBillNumber.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLotNumber.SetIconAlignment(this.txtChallanNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtChallanNo.Location = new System.Drawing.Point(131, 12);
+            this.txtChallanNo.Name = "txtChallanNo";
+            this.txtChallanNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChallanNo.Properties.Appearance.Options.UseFont = true;
+            this.txtChallanNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtChallanNo.Properties.Mask.EditMask = "n2";
+            this.txtChallanNo.Size = new System.Drawing.Size(205, 26);
+            this.txtChallanNo.TabIndex = 1;
             // 
             // errorBillNumber
             // 
@@ -893,10 +879,6 @@
             // errorPartyName
             // 
             this.errorPartyName.ContainerControl = this;
-            // 
-            // errorQualityName
-            // 
-            this.errorQualityName.ContainerControl = this;
             // 
             // errorQualityTypeName
             // 
@@ -964,10 +946,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityTypeName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbChallanNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBillNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBillDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBillDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBillNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChallanNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBillNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBillDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).EndInit();
@@ -976,7 +958,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorTaxType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorChallanNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorQualityName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorQualityTypeName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorGrade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorReceivedBy)).EndInit();
@@ -1021,10 +1002,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LookUpEdit cmbChallanNumber;
+        private DevExpress.XtraEditors.LookUpEdit cmbBillNo;
         private DevExpress.XtraEditors.DateEdit dpBillDate;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit txtBillNumber;
+        private DevExpress.XtraEditors.TextEdit txtChallanNo;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBillNumber;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBillDate;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBrokerName;
@@ -1033,7 +1014,6 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorTaxType;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorChallanNumber;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPartyName;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorQualityName;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorQualityTypeName;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorGrade;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorReceivedBy;
