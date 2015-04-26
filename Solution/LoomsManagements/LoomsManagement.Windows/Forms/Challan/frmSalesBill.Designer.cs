@@ -68,8 +68,8 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.errorLRNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorChallanNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorChallanDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorInvoiceNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorInvoiceDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorOrderNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorPartyname = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorBrokerName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
@@ -99,8 +99,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbOrderName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorLRNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorChallanNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorChallanDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorInvoiceNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorInvoiceDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorOrderNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyname)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).BeginInit();
@@ -128,18 +128,21 @@
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
             this.btnExit.TabIndex = 15;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
             this.btnSave.TabIndex = 13;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btndelete
             // 
             this.btndelete.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Appearance.Options.UseFont = true;
             this.btndelete.TabIndex = 14;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // panel1
             // 
@@ -208,13 +211,13 @@
             // dpDeliveredDate
             // 
             this.dpDeliveredDate.EditValue = null;
-            this.errorChallanDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -236,13 +239,13 @@
             // dpDeliveryDate
             // 
             this.dpDeliveryDate.EditValue = null;
-            this.errorChallanDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -275,13 +278,13 @@
             // 
             this.errorDeliveryDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCheckedBy.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -312,13 +315,13 @@
             // dpInvoiceDate
             // 
             this.dpInvoiceDate.EditValue = null;
-            this.errorChallanDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.dpInvoiceDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -341,13 +344,13 @@
             // 
             this.errorDeliveryDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCheckedBy.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.cmbInvoiceNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -379,13 +382,13 @@
             // 
             this.errorDeliveryDate.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCheckedBy.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.cmbCheckedBy, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -524,9 +527,9 @@
             this.errorTruckNo.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.txtTruckNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtTruckNo.Location = new System.Drawing.Point(137, 144);
             this.txtTruckNo.Name = "txtTruckNo";
@@ -549,9 +552,9 @@
             this.errorTruckNo.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.txtTransport, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtTransport.Location = new System.Drawing.Point(510, 111);
             this.txtTransport.Name = "txtTransport";
@@ -574,9 +577,9 @@
             this.errorTruckNo.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.txtLRNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtLRNo.Location = new System.Drawing.Point(137, 111);
             this.txtLRNo.Name = "txtLRNo";
@@ -592,13 +595,13 @@
             // 
             this.errorDeliveryDate.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCheckedBy.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.cmbQualityTypeName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -630,13 +633,13 @@
             // 
             this.errorDeliveryDate.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCheckedBy.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.cmbOrderName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -668,13 +671,13 @@
             // 
             this.errorDeliveryDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOrderNo.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorBrokerName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTruckNo.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCheckedBy.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTransport.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorInvoiceNo.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorLRNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityTypeName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyname.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
@@ -824,13 +827,13 @@
             // 
             this.errorLRNumber.ContainerControl = this;
             // 
-            // errorChallanNumber
+            // errorInvoiceNo
             // 
-            this.errorChallanNumber.ContainerControl = this;
+            this.errorInvoiceNo.ContainerControl = this;
             // 
-            // errorChallanDate
+            // errorInvoiceDate
             // 
-            this.errorChallanDate.ContainerControl = this;
+            this.errorInvoiceDate.ContainerControl = this;
             // 
             // errorOrderNo
             // 
@@ -895,8 +898,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbOrderName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorLRNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorChallanNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorChallanDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorInvoiceNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorInvoiceDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorOrderNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyname)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).EndInit();
@@ -951,8 +954,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorLRNumber;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorChallanNumber;
-        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorChallanDate;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorInvoiceNo;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorInvoiceDate;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorOrderNo;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorPartyname;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorBrokerName;
