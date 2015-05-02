@@ -37,9 +37,9 @@ namespace LoomsManagement.Windows.Forms
         {
             if (UserContext.SelectedCompanyCode == 0)
             {
-                var companyselect = new frmCompanySelect();
-                companyselect.Deactivate += companyselect_Deactivate;
-                companyselect.ShowDialog();
+                //var companyselect = new frmCompanySelect();
+                //companyselect.Deactivate += companyselect_Deactivate;
+                //companyselect.ShowDialog();
             }
 
         }
@@ -51,7 +51,7 @@ namespace LoomsManagement.Windows.Forms
             if ((sender as Form).DialogResult == System.Windows.Forms.DialogResult.Cancel)
             {
                 // MessageBox.Show("hello");
-                RefreshData();
+              //  RefreshData();
             }
         }
 
@@ -129,27 +129,26 @@ namespace LoomsManagement.Windows.Forms
                 case "Sales Challan":
                     Currentform = new frmSalesChallan();
                     break;
-                case "customer enty from":
+                case "Sales Return":
                     Currentform = new frmSalesReturn();
                     break;
-                case "expense report":
+              case "Purchase Return":
                     Currentform = new frmYarnPurchaseReturn();
-                    break;
-                //case "current fat details":
-                //    Currentform = new CurrentFatDetails();
-                //    break;
-                //case "customer status":
-                //    Currentform = new CustomerStatus();
-                //    break;
-                //case "customer milk entry details":
-                //    Currentform = new CustomerMilkEntryDetails();
-                //    break;
+                  break;
+
+              case "Beam Purchase":
+                  Currentform = new frmBeamPurchase();
+                  break;
+              case "Gray Purchase":
+                  Currentform = new frmGrayPurchase();
+                  break;
                 //case "payment details list":
                 //    Currentform = new PaymentDetailsList();
                 //    break;
                 //case "lab details":
                 //    Currentform = new LabDetails();
                 //    break;
+              
                 case "exit":
                     Close();
                     return;
@@ -183,7 +182,7 @@ namespace LoomsManagement.Windows.Forms
 
         private void btnRefreshData_ItemClick(object sender, ItemClickEventArgs e)
         {
-            RefreshData();
+          //  RefreshData();
         }
 
 

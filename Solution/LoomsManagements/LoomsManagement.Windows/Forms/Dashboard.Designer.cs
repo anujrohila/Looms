@@ -57,6 +57,16 @@
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.menuFiscalYear = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -65,7 +75,8 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.helpRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.helpRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -91,17 +102,7 @@
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -196,20 +197,22 @@
             this.barButtonItem22,
             this.barButtonItem23,
             this.barButtonItem24,
-            this.barButtonItem25});
+            this.barButtonItem25,
+            this.barButtonItem26,
+            this.barButtonItem27,
+            this.barButtonItem28,
+            this.barButtonItem29});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 20;
+            this.ribbonControl.MaxItemId = 24;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barcmbCompanycode);
             this.ribbonControl.PageHeaderItemLinks.Add(this.btnRefreshData);
             this.ribbonControl.PageHeaderItemLinks.Add(this.ribbonControl.ExpandCollapseItem);
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
-            this.ribbonPage2,
-            this.helpRibbonPage,
             this.ribbonPage3,
-            this.ribbonPage4});
+            this.helpRibbonPage});
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.CmbCompanyCode,
             this.cmbCompany});
@@ -444,6 +447,96 @@
             this.menuFiscalYear.Tag = "Fiscal Year";
             this.menuFiscalYear.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
+            // barButtonItem19
+            // 
+            this.barButtonItem19.Caption = "Sales Order";
+            this.barButtonItem19.Id = 13;
+            this.barButtonItem19.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.LargeGlyph")));
+            this.barButtonItem19.Name = "barButtonItem19";
+            this.barButtonItem19.Tag = "Sales Order";
+            this.barButtonItem19.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem20
+            // 
+            this.barButtonItem20.Caption = "Purchase Order";
+            this.barButtonItem20.Id = 14;
+            this.barButtonItem20.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.LargeGlyph")));
+            this.barButtonItem20.Name = "barButtonItem20";
+            this.barButtonItem20.Tag = "Purchase Order";
+            this.barButtonItem20.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem21
+            // 
+            this.barButtonItem21.Caption = "Sales Bill";
+            this.barButtonItem21.Id = 15;
+            this.barButtonItem21.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.LargeGlyph")));
+            this.barButtonItem21.Name = "barButtonItem21";
+            this.barButtonItem21.Tag = "Sales Bill";
+            this.barButtonItem21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem22
+            // 
+            this.barButtonItem22.Caption = "Purchase Bill";
+            this.barButtonItem22.Id = 16;
+            this.barButtonItem22.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.LargeGlyph")));
+            this.barButtonItem22.Name = "barButtonItem22";
+            this.barButtonItem22.Tag = "Purchase Bill";
+            this.barButtonItem22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem23
+            // 
+            this.barButtonItem23.Caption = "Sales Challan";
+            this.barButtonItem23.Id = 17;
+            this.barButtonItem23.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.LargeGlyph")));
+            this.barButtonItem23.Name = "barButtonItem23";
+            this.barButtonItem23.Tag = "Sales Challan";
+            this.barButtonItem23.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem24
+            // 
+            this.barButtonItem24.Caption = "Sales Return";
+            this.barButtonItem24.Id = 18;
+            this.barButtonItem24.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem24.LargeGlyph")));
+            this.barButtonItem24.Name = "barButtonItem24";
+            this.barButtonItem24.Tag = "Sales Return";
+            this.barButtonItem24.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem25
+            // 
+            this.barButtonItem25.Caption = "Purchase Return";
+            this.barButtonItem25.Id = 19;
+            this.barButtonItem25.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.LargeGlyph")));
+            this.barButtonItem25.Name = "barButtonItem25";
+            this.barButtonItem25.Tag = "Purchase Return";
+            this.barButtonItem25.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem26
+            // 
+            this.barButtonItem26.Caption = "Purchase Return";
+            this.barButtonItem26.Id = 20;
+            this.barButtonItem26.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.LargeGlyph")));
+            this.barButtonItem26.Name = "barButtonItem26";
+            this.barButtonItem26.Tag = "Purchase Return";
+            this.barButtonItem26.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem27
+            // 
+            this.barButtonItem27.Caption = "Sales Return";
+            this.barButtonItem27.Id = 21;
+            this.barButtonItem27.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem27.LargeGlyph")));
+            this.barButtonItem27.Name = "barButtonItem27";
+            this.barButtonItem27.Tag = "Sales Return";
+            this.barButtonItem27.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
+            // barButtonItem28
+            // 
+            this.barButtonItem28.Caption = "Beam Purchase";
+            this.barButtonItem28.Id = 22;
+            this.barButtonItem28.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.LargeGlyph")));
+            this.barButtonItem28.Name = "barButtonItem28";
+            this.barButtonItem28.Tag = "Beam Purchase";
+            this.barButtonItem28.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
@@ -530,19 +623,32 @@
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "Beam Master";
             // 
-            // ribbonPage2
+            // ribbonPage3
             // 
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup8,
             this.ribbonPageGroup6});
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Production";
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Production";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem20);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem22);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem28);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem26);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "Purchase";
             // 
             // ribbonPageGroup6
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem15);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem19);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem21);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem23);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem27);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "Sales";
             // 
             // helpRibbonPage
             // 
@@ -673,99 +779,14 @@
             this.barButtonItem18.Name = "barButtonItem18";
             this.barButtonItem18.Tag = "Beam Master";
             // 
-            // ribbonPage3
+            // barButtonItem29
             // 
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup8});
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "Order";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem19);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem20);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem21);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem22);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem23);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
-            // 
-            // barButtonItem19
-            // 
-            this.barButtonItem19.Caption = "Sales Order";
-            this.barButtonItem19.Id = 13;
-            this.barButtonItem19.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.LargeGlyph")));
-            this.barButtonItem19.Name = "barButtonItem19";
-            this.barButtonItem19.Tag = "Sales Order";
-            this.barButtonItem19.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
-            // 
-            // barButtonItem20
-            // 
-            this.barButtonItem20.Caption = "Purchase Order";
-            this.barButtonItem20.Id = 14;
-            this.barButtonItem20.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.LargeGlyph")));
-            this.barButtonItem20.Name = "barButtonItem20";
-            this.barButtonItem20.Tag = "Purchase Order";
-            this.barButtonItem20.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
-            // 
-            // barButtonItem21
-            // 
-            this.barButtonItem21.Caption = "Sales Bill";
-            this.barButtonItem21.Id = 15;
-            this.barButtonItem21.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.LargeGlyph")));
-            this.barButtonItem21.Name = "barButtonItem21";
-            this.barButtonItem21.Tag = "Sales Bill";
-            this.barButtonItem21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
-            // 
-            // barButtonItem22
-            // 
-            this.barButtonItem22.Caption = "Purchase Bill";
-            this.barButtonItem22.Id = 16;
-            this.barButtonItem22.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.LargeGlyph")));
-            this.barButtonItem22.Name = "barButtonItem22";
-            this.barButtonItem22.Tag = "Purchase Bill";
-            this.barButtonItem22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
-            // 
-            // barButtonItem23
-            // 
-            this.barButtonItem23.Caption = "Sales Challan";
-            this.barButtonItem23.Id = 17;
-            this.barButtonItem23.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.LargeGlyph")));
-            this.barButtonItem23.Name = "barButtonItem23";
-            this.barButtonItem23.Tag = "Sales Challan";
-            this.barButtonItem23.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9});
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "Return";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem24);
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem25);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
-            // 
-            // barButtonItem24
-            // 
-            this.barButtonItem24.Caption = "Sales Return";
-            this.barButtonItem24.Id = 18;
-            this.barButtonItem24.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem24.LargeGlyph")));
-            this.barButtonItem24.Name = "barButtonItem24";
-            this.barButtonItem24.Tag = "Sales Return";
-            this.barButtonItem24.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
-            // 
-            // barButtonItem25
-            // 
-            this.barButtonItem25.Caption = "Purchase Return";
-            this.barButtonItem25.Id = 19;
-            this.barButtonItem25.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.LargeGlyph")));
-            this.barButtonItem25.Name = "barButtonItem25";
-            this.barButtonItem25.Tag = "Purchase Return";
-            this.barButtonItem25.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
+            this.barButtonItem29.Caption = "Gray Purchase";
+            this.barButtonItem29.Id = 23;
+            this.barButtonItem29.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.LargeGlyph")));
+            this.barButtonItem29.Name = "barButtonItem29";
+            this.barButtonItem29.Tag = "Gray Purchase";
+            this.barButtonItem29.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Menulink_Click);
             // 
             // Dashboard
             // 
@@ -846,8 +867,6 @@
         private DevExpress.XtraBars.BarButtonItem btnRefreshData;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarEditItem barcmbCompanycode;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit cmbCompany;
@@ -866,8 +885,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem24;
         private DevExpress.XtraBars.BarButtonItem barButtonItem25;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem26;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem27;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem28;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem29;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }
