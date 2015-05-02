@@ -50,30 +50,30 @@
             this.cmbBeamQuality = new DevExpress.XtraEditors.LookUpEdit();
             this.gridBeamPurchase = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Quality = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Tar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Ends = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Weight = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Length = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Rate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Amount = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbReceivedBy = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtTransportChargewithTax = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbTaxType = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTransportCharge = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbTaxType = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTransportChargewithTax = new DevExpress.XtraEditors.TextEdit();
+            this.cmbReceivedBy = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -92,10 +92,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Btn_View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbReceivedBy.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTransportChargewithTax.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTaxType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTransportCharge.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTaxType.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTransportChargewithTax.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbReceivedBy.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -112,6 +112,7 @@
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
@@ -386,7 +387,7 @@
             this.InnerGrid.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.Id,
             this.Quality,
-            this.Tar,
+            this.Ends,
             this.Weight,
             this.Length,
             this.Rate,
@@ -399,30 +400,6 @@
             this.InnerGrid.OptionsView.BestFitUseErrorInfo = DevExpress.Utils.DefaultBoolean.True;
             this.InnerGrid.OptionsView.ShowAutoFilterRow = true;
             this.InnerGrid.OptionsView.ShowFooter = true;
-            // 
-            // Btn_Edit
-            // 
-            this.Btn_Edit.AutoHeight = false;
-            this.Btn_Edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.edit_icon, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
-            this.Btn_Edit.Name = "Btn_Edit";
-            this.Btn_Edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            // 
-            // Btn_Delete
-            // 
-            this.Btn_Delete.AutoHeight = false;
-            this.Btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.delete, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, "", null, null, true)});
-            this.Btn_Delete.Name = "Btn_Delete";
-            this.Btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            // 
-            // Btn_View
-            // 
-            this.Btn_View.AutoHeight = false;
-            this.Btn_View.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.viewBtn, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject6, "", null, null, true)});
-            this.Btn_View.Name = "Btn_View";
-            this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // Id
             // 
@@ -438,13 +415,13 @@
             this.Quality.Visible = true;
             this.Quality.VisibleIndex = 0;
             // 
-            // Tar
+            // Ends
             // 
-            this.Tar.Caption = "Tar";
-            this.Tar.FieldName = "Tar";
-            this.Tar.Name = "Tar";
-            this.Tar.Visible = true;
-            this.Tar.VisibleIndex = 1;
+            this.Ends.Caption = "Ends";
+            this.Ends.FieldName = "Ends";
+            this.Ends.Name = "Ends";
+            this.Ends.Visible = true;
+            this.Ends.VisibleIndex = 1;
             // 
             // Weight
             // 
@@ -478,6 +455,30 @@
             this.Amount.Visible = true;
             this.Amount.VisibleIndex = 5;
             // 
+            // Btn_Edit
+            // 
+            this.Btn_Edit.AutoHeight = false;
+            this.Btn_Edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.edit_icon, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
+            this.Btn_Edit.Name = "Btn_Edit";
+            this.Btn_Edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // Btn_Delete
+            // 
+            this.Btn_Delete.AutoHeight = false;
+            this.Btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.delete, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, "", null, null, true)});
+            this.Btn_Delete.Name = "Btn_Delete";
+            this.Btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // Btn_View
+            // 
+            this.Btn_View.AutoHeight = false;
+            this.Btn_View.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::LoomsManagement.Windows.Properties.Resources.viewBtn, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject6, "", null, null, true)});
+            this.Btn_View.Name = "Btn_View";
+            this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
             // btnAdd
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -488,6 +489,7 @@
             this.btnAdd.Size = new System.Drawing.Size(103, 31);
             this.btnAdd.TabIndex = 307;
             this.btnAdd.Text = "&Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // groupControl2
             // 
@@ -507,128 +509,6 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(1163, 98);
             this.groupControl2.TabIndex = 308;
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(349, 33);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(167, 17);
-            this.labelControl12.TabIndex = 194;
-            this.labelControl12.Text = "Transport Charge with Tax";
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl13.Location = new System.Drawing.Point(14, 32);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(58, 17);
-            this.labelControl13.TabIndex = 197;
-            this.labelControl13.Text = "Tax Type";
-            // 
-            // cmbReceivedBy
-            // 
-            this.cmbReceivedBy.Location = new System.Drawing.Point(117, 60);
-            this.cmbReceivedBy.Name = "cmbReceivedBy";
-            this.cmbReceivedBy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbReceivedBy.Properties.Appearance.Options.UseFont = true;
-            this.cmbReceivedBy.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbReceivedBy.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbReceivedBy.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbReceivedBy.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbReceivedBy.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbReceivedBy.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbReceivedBy.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbReceivedBy.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbReceivedBy.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbReceivedBy.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbReceivedBy.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.cmbReceivedBy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbReceivedBy.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
-            this.cmbReceivedBy.Properties.NullText = "";
-            this.cmbReceivedBy.Size = new System.Drawing.Size(205, 26);
-            this.cmbReceivedBy.TabIndex = 10;
-            // 
-            // txtTransportChargewithTax
-            // 
-            this.txtTransportChargewithTax.EditValue = "";
-            this.txtTransportChargewithTax.Location = new System.Drawing.Point(541, 29);
-            this.txtTransportChargewithTax.Name = "txtTransportChargewithTax";
-            this.txtTransportChargewithTax.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransportChargewithTax.Properties.Appearance.Options.UseFont = true;
-            this.txtTransportChargewithTax.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtTransportChargewithTax.Properties.Mask.EditMask = "n2";
-            this.txtTransportChargewithTax.Size = new System.Drawing.Size(205, 26);
-            this.txtTransportChargewithTax.TabIndex = 12;
-            this.txtTransportChargewithTax.ToolTip = "Enter Broker Name";
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Location = new System.Drawing.Point(14, 64);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(77, 17);
-            this.labelControl15.TabIndex = 221;
-            this.labelControl15.Text = "Received By";
-            // 
-            // labelControl25
-            // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl25.Location = new System.Drawing.Point(105, 32);
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(6, 17);
-            this.labelControl25.TabIndex = 215;
-            this.labelControl25.Text = "*";
-            // 
-            // labelControl21
-            // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl21.Location = new System.Drawing.Point(531, 32);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(6, 17);
-            this.labelControl21.TabIndex = 219;
-            this.labelControl21.Text = "*";
-            // 
-            // cmbTaxType
-            // 
-            this.cmbTaxType.Location = new System.Drawing.Point(117, 28);
-            this.cmbTaxType.Name = "cmbTaxType";
-            this.cmbTaxType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbTaxType.Properties.Appearance.Options.UseFont = true;
-            this.cmbTaxType.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbTaxType.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbTaxType.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbTaxType.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbTaxType.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbTaxType.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbTaxType.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbTaxType.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbTaxType.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbTaxType.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbTaxType.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.cmbTaxType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbTaxType.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
-            this.cmbTaxType.Properties.NullText = "";
-            this.cmbTaxType.Size = new System.Drawing.Size(205, 26);
-            this.cmbTaxType.TabIndex = 11;
-            // 
-            // labelControl18
-            // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl18.Location = new System.Drawing.Point(107, 63);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(6, 17);
-            this.labelControl18.TabIndex = 222;
-            this.labelControl18.Text = "*";
             // 
             // labelControl2
             // 
@@ -662,6 +542,128 @@
             this.labelControl3.TabIndex = 224;
             this.labelControl3.Text = "Transport Charge Only";
             // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl18.Location = new System.Drawing.Point(107, 63);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(6, 17);
+            this.labelControl18.TabIndex = 222;
+            this.labelControl18.Text = "*";
+            // 
+            // cmbTaxType
+            // 
+            this.cmbTaxType.Location = new System.Drawing.Point(117, 28);
+            this.cmbTaxType.Name = "cmbTaxType";
+            this.cmbTaxType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbTaxType.Properties.Appearance.Options.UseFont = true;
+            this.cmbTaxType.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbTaxType.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cmbTaxType.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbTaxType.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cmbTaxType.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbTaxType.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbTaxType.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbTaxType.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cmbTaxType.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbTaxType.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbTaxType.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.cmbTaxType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbTaxType.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
+            this.cmbTaxType.Properties.NullText = "";
+            this.cmbTaxType.Size = new System.Drawing.Size(205, 26);
+            this.cmbTaxType.TabIndex = 11;
+            // 
+            // labelControl21
+            // 
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl21.Location = new System.Drawing.Point(531, 32);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(6, 17);
+            this.labelControl21.TabIndex = 219;
+            this.labelControl21.Text = "*";
+            // 
+            // labelControl25
+            // 
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl25.Location = new System.Drawing.Point(105, 32);
+            this.labelControl25.Name = "labelControl25";
+            this.labelControl25.Size = new System.Drawing.Size(6, 17);
+            this.labelControl25.TabIndex = 215;
+            this.labelControl25.Text = "*";
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl15.Location = new System.Drawing.Point(14, 64);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(77, 17);
+            this.labelControl15.TabIndex = 221;
+            this.labelControl15.Text = "Received By";
+            // 
+            // txtTransportChargewithTax
+            // 
+            this.txtTransportChargewithTax.EditValue = "";
+            this.txtTransportChargewithTax.Location = new System.Drawing.Point(541, 29);
+            this.txtTransportChargewithTax.Name = "txtTransportChargewithTax";
+            this.txtTransportChargewithTax.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTransportChargewithTax.Properties.Appearance.Options.UseFont = true;
+            this.txtTransportChargewithTax.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtTransportChargewithTax.Properties.Mask.EditMask = "n2";
+            this.txtTransportChargewithTax.Size = new System.Drawing.Size(205, 26);
+            this.txtTransportChargewithTax.TabIndex = 12;
+            this.txtTransportChargewithTax.ToolTip = "Enter Broker Name";
+            // 
+            // cmbReceivedBy
+            // 
+            this.cmbReceivedBy.Location = new System.Drawing.Point(117, 60);
+            this.cmbReceivedBy.Name = "cmbReceivedBy";
+            this.cmbReceivedBy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbReceivedBy.Properties.Appearance.Options.UseFont = true;
+            this.cmbReceivedBy.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbReceivedBy.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cmbReceivedBy.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbReceivedBy.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cmbReceivedBy.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbReceivedBy.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbReceivedBy.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbReceivedBy.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cmbReceivedBy.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbReceivedBy.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbReceivedBy.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.cmbReceivedBy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbReceivedBy.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
+            this.cmbReceivedBy.Properties.NullText = "";
+            this.cmbReceivedBy.Size = new System.Drawing.Size(205, 26);
+            this.cmbReceivedBy.TabIndex = 10;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Location = new System.Drawing.Point(14, 32);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(58, 17);
+            this.labelControl13.TabIndex = 197;
+            this.labelControl13.Text = "Tax Type";
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Location = new System.Drawing.Point(349, 33);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(167, 17);
+            this.labelControl12.TabIndex = 194;
+            this.labelControl12.Text = "Transport Charge with Tax";
+            // 
             // frmBeamPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,10 +690,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbReceivedBy.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTransportChargewithTax.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTaxType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTransportCharge.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTaxType.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTransportChargewithTax.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbReceivedBy.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -721,7 +723,7 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_View;
         private DevExpress.XtraGrid.Columns.GridColumn Id;
         private DevExpress.XtraGrid.Columns.GridColumn Quality;
-        private DevExpress.XtraGrid.Columns.GridColumn Tar;
+        private DevExpress.XtraGrid.Columns.GridColumn Ends;
         private DevExpress.XtraGrid.Columns.GridColumn Weight;
         private DevExpress.XtraGrid.Columns.GridColumn Length;
         private DevExpress.XtraGrid.Columns.GridColumn Rate;

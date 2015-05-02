@@ -8,24 +8,17 @@ using System.Windows.Forms;
 
 namespace LoomsManagement.Windows.Forms.Order
 {
-    public partial class frmBeamPurchase : LoomsManagement.Windows.FormDemo1
+    public partial class frmBeamPurchaseItem : LoomsManagement.Windows.FormDemo1
     {
-        public frmBeamPurchase()
+        public frmBeamPurchaseItem()
         {
             InitializeComponent();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            frmBeamPurchaseItem objBeamPurchase = new frmBeamPurchaseItem();
-            objBeamPurchase.ShowDialog();
+            btnReport.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-      
     }
 }
