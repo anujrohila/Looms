@@ -139,7 +139,7 @@ namespace LoomsManagement.Windows.Forms.Challan
             ErrorHandlor.SetErrorCount();
             ErrorHandlor.SetLookUPErrorWithCount(errorChallanNumber, cmbChallanNo, "Select Challan Number");
             ErrorHandlor.SetDateErrorWithCount(errorChallanDate, dpChallanDate, "Select Challan Date");
-            ErrorHandlor.SetLookUPErrorWithCount(errorOrderNo, cmbOrderName, "Select Order Name");
+            ErrorHandlor.SetTextboxErrorWithCount(errorOrderNo, txtOrderNumber, "Enter Order Name");
             ErrorHandlor.SetLookUPErrorWithCount(errorPartyname, cmbPartyName, "Select Party Name");
             ErrorHandlor.SetLookUPErrorWithCount(errorBrokerName, cmbBrokerName, "Select Broker Name");
             ErrorHandlor.SetLookUPErrorWithCount(errorCheckedBy, cmbCheckedBy, "Select Person Name");
@@ -162,7 +162,7 @@ namespace LoomsManagement.Windows.Forms.Challan
             cmbBrokerName.EditValue = 0;
             cmbChallanNo.EditValue = 0;
             dpChallanDate.EditValue = DateTime.Now;
-            cmbOrderName.EditValue = 0;
+            txtOrderNumber.Text = "";
             cmbQualityTypeName.EditValue = 0;
             txtLRNo.Text = "";
             txtTransport.Text = "";
@@ -170,7 +170,7 @@ namespace LoomsManagement.Windows.Forms.Challan
             cmbCheckedBy.EditValue = 0;
             dpDeliveryDate.EditValue = DateTime.Now;
             dpDeliveredDate.EditValue = DateTime.Now;
-            txtRemark.Text = "";
+            txtRemarks.Text = "";
 
 
 
@@ -179,7 +179,7 @@ namespace LoomsManagement.Windows.Forms.Challan
             cmbBrokerName.BackColor = CommanClass.m_tbcolorleave;
             cmbChallanNo.BackColor = CommanClass.m_tbcolorleave;
             dpChallanDate.BackColor = CommanClass.m_tbcolorleave;
-            cmbOrderName.BackColor = CommanClass.m_tbcolorleave;
+            txtOrderNumber.BackColor = CommanClass.m_tbcolorleave;
             cmbQualityTypeName.BackColor = CommanClass.m_tbcolorleave;
             txtLRNo.BackColor = CommanClass.m_tbcolorleave;
             txtTransport.BackColor = CommanClass.m_tbcolorleave;
@@ -187,15 +187,15 @@ namespace LoomsManagement.Windows.Forms.Challan
             cmbCheckedBy.BackColor = CommanClass.m_tbcolorleave;
             dpDeliveryDate.BackColor = CommanClass.m_tbcolorleave;
             dpDeliveredDate.BackColor = CommanClass.m_tbcolorleave;
-            txtRemark.BackColor = CommanClass.m_tbcolorleave;
+            txtRemarks.BackColor = CommanClass.m_tbcolorleave;
            
 
 
             //Reset error 
             errorChallanNumber.SetError(cmbChallanNo, "");
             errorChallanDate.SetError(dpChallanDate, "");
-            errorOrderNo.SetError(cmbOrderName, "");
-            errorPartyname.SetError(cmbOrderName, "");
+            errorOrderNo.SetError(txtOrderNumber, "");
+            errorPartyname.SetError(cmbPartyName, "");
             errorBrokerName.SetError(cmbBrokerName, "");
             errorQualityTypeName.SetError(cmbQualityTypeName,"");
             errorLRNumber.SetError(txtLRNo, "");

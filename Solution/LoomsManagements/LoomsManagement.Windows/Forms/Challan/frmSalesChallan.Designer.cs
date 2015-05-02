@@ -70,7 +70,7 @@
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.errorDeliveredDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtOrderNumber = new DevExpress.XtraEditors.TextEdit();
             this.errorDeliveryDate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorCheckedBy = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorTruckNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
@@ -83,7 +83,7 @@
             this.errorChallanNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorLRNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.txtRemarks = new DevExpress.XtraEditors.MemoEdit();
             this.gridViewCompany = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Id = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -113,7 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityTypeName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDeliveredDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDeliveryDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorCheckedBy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorTruckNo)).BeginInit();
@@ -127,7 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorLRNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).BeginInit();
@@ -765,30 +765,30 @@
             // 
             this.errorDeliveredDate.ContainerControl = this;
             // 
-            // textEdit1
+            // txtOrderNumber
             // 
-            this.textEdit1.EditValue = "";
-            this.errorChallanDate.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityTypeName.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTransport.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyname.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNo.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorLRNumber.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorChallanNumber.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCheckedBy.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTruckNo.SetIconAlignment(this.textEdit1, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.textEdit1.Location = new System.Drawing.Point(824, 29);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit1.Properties.Mask.EditMask = "n2";
-            this.textEdit1.Size = new System.Drawing.Size(205, 26);
-            this.textEdit1.TabIndex = 304;
-            this.textEdit1.ToolTip = "Enter Broker Name";
+            this.txtOrderNumber.EditValue = "";
+            this.errorChallanDate.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityTypeName.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTransport.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyname.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNo.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorLRNumber.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorChallanNumber.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCheckedBy.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTruckNo.SetIconAlignment(this.txtOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtOrderNumber.Location = new System.Drawing.Point(824, 29);
+            this.txtOrderNumber.Name = "txtOrderNumber";
+            this.txtOrderNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderNumber.Properties.Appearance.Options.UseFont = true;
+            this.txtOrderNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtOrderNumber.Properties.Mask.EditMask = "n2";
+            this.txtOrderNumber.Size = new System.Drawing.Size(205, 26);
+            this.txtOrderNumber.TabIndex = 304;
+            this.txtOrderNumber.ToolTip = "Enter Broker Name";
             // 
             // errorDeliveryDate
             // 
@@ -836,9 +836,9 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.memoEdit1);
+            this.groupControl1.Controls.Add(this.txtRemarks);
             this.groupControl1.Controls.Add(this.labelControl16);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtOrderNumber);
             this.groupControl1.Controls.Add(this.txtTruckNo);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.labelControl14);
@@ -879,13 +879,13 @@
             this.groupControl1.Size = new System.Drawing.Size(1052, 270);
             this.groupControl1.TabIndex = 303;
             // 
-            // memoEdit1
+            // txtRemarks
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(140, 157);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.memoEdit1.Size = new System.Drawing.Size(538, 96);
-            this.memoEdit1.TabIndex = 303;
+            this.txtRemarks.Location = new System.Drawing.Point(140, 157);
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtRemarks.Size = new System.Drawing.Size(538, 96);
+            this.txtRemarks.TabIndex = 303;
             // 
             // gridViewCompany
             // 
@@ -1044,7 +1044,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityTypeName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDeliveredDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDeliveryDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorCheckedBy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorTruckNo)).EndInit();
@@ -1059,7 +1059,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).EndInit();
@@ -1120,8 +1120,8 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorChallanNumber;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorLRNumber;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.MemoEdit txtRemarks;
+        private DevExpress.XtraEditors.TextEdit txtOrderNumber;
         public DevExpress.XtraGrid.GridControl gridViewCompany;
         public DevExpress.XtraGrid.Views.Grid.GridView InnerGrid;
         private DevExpress.XtraGrid.Columns.GridColumn Id;

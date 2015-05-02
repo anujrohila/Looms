@@ -156,7 +156,7 @@ namespace LoomsManagement.Windows.Forms.Challan
          txtTruckNo.BackColor = CommanClass.m_tbcolorleave;
          dpDeliveryDate.BackColor = CommanClass.m_tbcolorleave;
          dpDeliveredDate.BackColor = CommanClass.m_tbcolorleave;
-         txtRemark.BackColor = CommanClass.m_tbcolorleave;
+         txtRemarks.BackColor = CommanClass.m_tbcolorleave;
         
 
          //Reset error 
