@@ -96,9 +96,6 @@
             this.TareWeight = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NetWeight = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Rate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -809,10 +806,7 @@
             this.GrossWeight,
             this.TareWeight,
             this.NetWeight,
-            this.Rate,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6});
+            this.Rate});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
@@ -890,27 +884,6 @@
             this.Rate.Name = "Rate";
             this.Rate.Visible = true;
             this.Rate.VisibleIndex = 7;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "gridColumn4";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 8;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "gridColumn5";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 9;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "gridColumn6";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 10;
             // 
             // btnAdd
             // 
@@ -1041,9 +1014,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn TareWeight;
         private DevExpress.XtraGrid.Columns.GridColumn NetWeight;
         private DevExpress.XtraGrid.Columns.GridColumn Rate;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         public DevExpress.XtraEditors.SimpleButton btnAdd;
     }
 }
