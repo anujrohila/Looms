@@ -244,6 +244,7 @@ namespace LoomsManagement.Windows.Forms.Master
             ErrorHandlor.SetTextboxErrorWithCount(errorECCNo, txtECCNo, "Enter ECC No");
             ErrorHandlor.SetTextboxErrorWithCount(errorRefPersonName, txtRefPersonName, "Enter Refrence Person Name");
             ErrorHandlor.SetTextboxErrorWithCount(errorRefPersonMobileNo, txtRefPersonMobNo, "Enter Reference Person Mobile Number");
+            ErrorHandlor.SetTextboxErrorWithCount(errorSMSNo, txtSMSNo, "Enter SMS Number");
            
 
 
@@ -275,6 +276,7 @@ namespace LoomsManagement.Windows.Forms.Master
             txtRefPersonMobNo.Text = "";
             txtRefPersonMobNo.Text = "";
             txtExtraDetails.Text = "";
+            txtSMSNo.Text = "";
 
             //Reset BackGround Color
             cmbCompanyCode.BackColor = CommanClass.m_tbcolorleave;
@@ -296,6 +298,7 @@ namespace LoomsManagement.Windows.Forms.Master
             txtRefPersonName.BackColor = CommanClass.m_tbcolorleave;
             txtRefPersonMobNo.BackColor = CommanClass.m_tbcolorleave;
             txtExtraDetails.BackColor = CommanClass.m_tbcolorleave;
+            txtSMSNo.BackColor = CommanClass.m_tbcolorleave;
 
 
             //Reset error 
@@ -318,11 +321,13 @@ namespace LoomsManagement.Windows.Forms.Master
             errorECCNo.SetError(txtECCNo, "");
             errorRefPersonName.SetError(txtRefPersonName, "");
             errorRefPersonMobileNo.SetError(txtRefPersonMobNo, "");
+            errorSMSNo.SetError(txtSMSNo, "");
             cmbCompanyCode.Focus();
         }
 
         #endregion    
 
+      
       
     }
 }

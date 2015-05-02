@@ -103,6 +103,13 @@
             this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.chkAddress = new System.Windows.Forms.CheckBox();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
+            this.txtSMSNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
+            this.errorSMSNo = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -145,12 +152,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorRefPersonName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorRefPersonMobileNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPhoneNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorSMSNo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.Location = new System.Drawing.Point(820, 0);
-            this.panelControl1.Size = new System.Drawing.Size(131, 387);
+            this.panelControl1.Location = new System.Drawing.Point(828, 0);
+            this.panelControl1.Size = new System.Drawing.Size(131, 578);
             // 
             // btnReport
             // 
@@ -181,86 +194,33 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.labelControl37);
-            this.panel1.Controls.Add(this.labelControl36);
-            this.panel1.Controls.Add(this.labelControl35);
-            this.panel1.Controls.Add(this.labelControl34);
-            this.panel1.Controls.Add(this.labelControl33);
-            this.panel1.Controls.Add(this.labelControl32);
-            this.panel1.Controls.Add(this.labelControl31);
-            this.panel1.Controls.Add(this.labelControl30);
-            this.panel1.Controls.Add(this.labelControl29);
-            this.panel1.Controls.Add(this.labelControl28);
-            this.panel1.Controls.Add(this.labelControl27);
-            this.panel1.Controls.Add(this.labelControl26);
-            this.panel1.Controls.Add(this.labelControl25);
-            this.panel1.Controls.Add(this.labelControl24);
-            this.panel1.Controls.Add(this.labelControl23);
-            this.panel1.Controls.Add(this.labelControl22);
-            this.panel1.Controls.Add(this.labelControl21);
-            this.panel1.Controls.Add(this.labelControl20);
-            this.panel1.Controls.Add(this.txtExtraDetails);
-            this.panel1.Controls.Add(this.txtShippingAddress);
-            this.panel1.Controls.Add(this.txtofficeAddress);
-            this.panel1.Controls.Add(this.cmbCompanyCode);
-            this.panel1.Controls.Add(this.txtECCNo);
-            this.panel1.Controls.Add(this.txtCSTNo);
-            this.panel1.Controls.Add(this.labelControl19);
-            this.panel1.Controls.Add(this.labelControl18);
-            this.panel1.Controls.Add(this.dpCSTDate);
-            this.panel1.Controls.Add(this.labelControl17);
-            this.panel1.Controls.Add(this.dpTINDate);
-            this.panel1.Controls.Add(this.txtPANNo);
-            this.panel1.Controls.Add(this.labelControl16);
-            this.panel1.Controls.Add(this.labelControl15);
-            this.panel1.Controls.Add(this.txtTINNo);
-            this.panel1.Controls.Add(this.labelControl14);
-            this.panel1.Controls.Add(this.labelControl13);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.labelControl12);
-            this.panel1.Controls.Add(this.txtRefPersonMobNo);
-            this.panel1.Controls.Add(this.labelControl11);
-            this.panel1.Controls.Add(this.txtRefPersonName);
-            this.panel1.Controls.Add(this.labelControl10);
-            this.panel1.Controls.Add(this.txtPhoneNo);
-            this.panel1.Controls.Add(this.labelControl9);
-            this.panel1.Controls.Add(this.txtMobileNo);
-            this.panel1.Controls.Add(this.labelControl8);
-            this.panel1.Controls.Add(this.txtState);
-            this.panel1.Controls.Add(this.labelControl7);
-            this.panel1.Controls.Add(this.txtCity);
-            this.panel1.Controls.Add(this.labelControl5);
-            this.panel1.Controls.Add(this.labelControl4);
-            this.panel1.Controls.Add(this.labelControl3);
-            this.panel1.Controls.Add(this.txtContactPersonName);
-            this.panel1.Controls.Add(this.labelControl2);
-            this.panel1.Controls.Add(this.txtPartyName);
-            this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Controls.Add(this.labelControl6);
-            this.panel1.Size = new System.Drawing.Size(820, 387);
+            this.panel1.Controls.Add(this.groupControl2);
+            this.panel1.Controls.Add(this.groupControl1);
+            this.panel1.Size = new System.Drawing.Size(828, 578);
             // 
             // txtECCNo
             // 
             this.txtECCNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtECCNo.Location = new System.Drawing.Point(577, 197);
+            this.errorECCNo.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtECCNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtECCNo.Location = new System.Drawing.Point(175, 141);
             this.txtECCNo.Name = "txtECCNo";
             this.txtECCNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtECCNo.Properties.Appearance.Options.UseFont = true;
@@ -276,25 +236,26 @@
             // txtCSTNo
             // 
             this.txtCSTNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtCSTNo.Location = new System.Drawing.Point(577, 135);
+            this.errorECCNo.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtCSTNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtCSTNo.Location = new System.Drawing.Point(175, 78);
             this.txtCSTNo.Name = "txtCSTNo";
             this.txtCSTNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCSTNo.Properties.Appearance.Options.UseFont = true;
@@ -310,7 +271,7 @@
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Location = new System.Drawing.Point(414, 202);
+            this.labelControl19.Location = new System.Drawing.Point(12, 146);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(49, 17);
             this.labelControl19.TabIndex = 136;
@@ -319,7 +280,7 @@
             // labelControl18
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Location = new System.Drawing.Point(414, 171);
+            this.labelControl18.Location = new System.Drawing.Point(12, 115);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(56, 17);
             this.labelControl18.TabIndex = 135;
@@ -331,22 +292,23 @@
             this.errorCity.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorContactPersonName.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOfficeAddress.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorShippingAddress.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonMobileNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPhoneNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonName.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmail.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCSTDate.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCSTNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorEmail.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.dpCSTDate.Location = new System.Drawing.Point(577, 166);
+            this.errorRefPersonName.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorECCNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPhoneNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonMobileNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.dpCSTDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.dpCSTDate.Location = new System.Drawing.Point(175, 110);
             this.dpCSTDate.Name = "dpCSTDate";
             this.dpCSTDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dpCSTDate.Properties.Appearance.Options.UseFont = true;
@@ -365,7 +327,7 @@
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Location = new System.Drawing.Point(414, 140);
+            this.labelControl17.Location = new System.Drawing.Point(12, 83);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(48, 17);
             this.labelControl17.TabIndex = 134;
@@ -377,22 +339,23 @@
             this.errorCity.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorContactPersonName.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOfficeAddress.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorShippingAddress.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonMobileNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPhoneNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonName.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmail.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCSTDate.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCSTNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorEmail.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.dpTINDate.Location = new System.Drawing.Point(577, 73);
+            this.errorRefPersonName.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorECCNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPhoneNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonMobileNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.dpTINDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.dpTINDate.Location = new System.Drawing.Point(580, 73);
             this.dpTINDate.Name = "dpTINDate";
             this.dpTINDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dpTINDate.Properties.Appearance.Options.UseFont = true;
@@ -411,25 +374,26 @@
             // txtPANNo
             // 
             this.txtPANNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtPANNo.Location = new System.Drawing.Point(577, 104);
+            this.errorECCNo.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtPANNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtPANNo.Location = new System.Drawing.Point(175, 47);
             this.txtPANNo.Name = "txtPANNo";
             this.txtPANNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPANNo.Properties.Appearance.Options.UseFont = true;
@@ -445,7 +409,7 @@
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Location = new System.Drawing.Point(414, 109);
+            this.labelControl16.Location = new System.Drawing.Point(12, 52);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(52, 17);
             this.labelControl16.TabIndex = 133;
@@ -454,7 +418,7 @@
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Location = new System.Drawing.Point(414, 78);
+            this.labelControl15.Location = new System.Drawing.Point(417, 78);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(56, 17);
             this.labelControl15.TabIndex = 132;
@@ -463,25 +427,26 @@
             // txtTINNo
             // 
             this.txtTINNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtTINNo.Location = new System.Drawing.Point(577, 42);
+            this.errorECCNo.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtTINNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtTINNo.Location = new System.Drawing.Point(580, 42);
             this.txtTINNo.Name = "txtTINNo";
             this.txtTINNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTINNo.Properties.Appearance.Options.UseFont = true;
@@ -497,7 +462,7 @@
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl14.Location = new System.Drawing.Point(414, 47);
+            this.labelControl14.Location = new System.Drawing.Point(417, 47);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(48, 17);
             this.labelControl14.TabIndex = 131;
@@ -506,7 +471,7 @@
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl13.Location = new System.Drawing.Point(414, 297);
+            this.labelControl13.Location = new System.Drawing.Point(417, 110);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(80, 17);
             this.labelControl13.TabIndex = 130;
@@ -515,25 +480,26 @@
             // txtEmail
             // 
             this.txtEmail.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtEmail.Location = new System.Drawing.Point(577, 11);
+            this.errorECCNo.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtEmail, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtEmail.Location = new System.Drawing.Point(169, 192);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Properties.Appearance.Options.UseFont = true;
@@ -549,7 +515,7 @@
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(414, 16);
+            this.labelControl12.Location = new System.Drawing.Point(14, 196);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(36, 17);
             this.labelControl12.TabIndex = 129;
@@ -558,25 +524,26 @@
             // txtRefPersonMobNo
             // 
             this.txtRefPersonMobNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtRefPersonMobNo.Location = new System.Drawing.Point(577, 260);
+            this.errorECCNo.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtRefPersonMobNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtRefPersonMobNo.Location = new System.Drawing.Point(580, 205);
             this.txtRefPersonMobNo.Name = "txtRefPersonMobNo";
             this.txtRefPersonMobNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRefPersonMobNo.Properties.Appearance.Options.UseFont = true;
@@ -592,7 +559,7 @@
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(414, 265);
+            this.labelControl11.Location = new System.Drawing.Point(417, 210);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(141, 17);
             this.labelControl11.TabIndex = 128;
@@ -601,25 +568,26 @@
             // txtRefPersonName
             // 
             this.txtRefPersonName.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtRefPersonName.Location = new System.Drawing.Point(577, 229);
+            this.errorECCNo.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtRefPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtRefPersonName.Location = new System.Drawing.Point(175, 205);
             this.txtRefPersonName.Name = "txtRefPersonName";
             this.txtRefPersonName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRefPersonName.Properties.Appearance.Options.UseFont = true;
@@ -635,7 +603,7 @@
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(414, 234);
+            this.labelControl10.Location = new System.Drawing.Point(12, 210);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(110, 17);
             this.labelControl10.TabIndex = 127;
@@ -644,25 +612,26 @@
             // txtPhoneNo
             // 
             this.txtPhoneNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtPhoneNo.Location = new System.Drawing.Point(172, 345);
+            this.errorECCNo.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtPhoneNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtPhoneNo.Location = new System.Drawing.Point(566, 225);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNo.Properties.Appearance.Options.UseFont = true;
@@ -678,7 +647,7 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(17, 346);
+            this.labelControl9.Location = new System.Drawing.Point(411, 226);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(64, 17);
             this.labelControl9.TabIndex = 126;
@@ -687,25 +656,26 @@
             // txtMobileNo
             // 
             this.txtMobileNo.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtMobileNo.Location = new System.Drawing.Point(172, 314);
+            this.errorECCNo.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtMobileNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtMobileNo.Location = new System.Drawing.Point(169, 224);
             this.txtMobileNo.Name = "txtMobileNo";
             this.txtMobileNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobileNo.Properties.Appearance.Options.UseFont = true;
@@ -721,7 +691,7 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(17, 316);
+            this.labelControl8.Location = new System.Drawing.Point(14, 226);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(67, 17);
             this.labelControl8.TabIndex = 125;
@@ -730,25 +700,26 @@
             // txtState
             // 
             this.txtState.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtState.Location = new System.Drawing.Point(172, 283);
+            this.errorECCNo.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtState, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtState.Location = new System.Drawing.Point(169, 161);
             this.txtState.Name = "txtState";
             this.txtState.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtState.Properties.Appearance.Options.UseFont = true;
@@ -764,7 +735,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(17, 286);
+            this.labelControl7.Location = new System.Drawing.Point(14, 164);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(31, 17);
             this.labelControl7.TabIndex = 120;
@@ -773,25 +744,26 @@
             // txtCity
             // 
             this.txtCity.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtCity.Location = new System.Drawing.Point(172, 252);
+            this.errorECCNo.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtCity, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtCity.Location = new System.Drawing.Point(169, 129);
             this.txtCity.Name = "txtCity";
             this.txtCity.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCity.Properties.Appearance.Options.UseFont = true;
@@ -807,7 +779,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(17, 256);
+            this.labelControl5.Location = new System.Drawing.Point(14, 133);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(25, 17);
             this.labelControl5.TabIndex = 124;
@@ -816,7 +788,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(17, 180);
+            this.labelControl4.Location = new System.Drawing.Point(411, 152);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(107, 17);
             this.labelControl4.TabIndex = 123;
@@ -825,7 +797,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(17, 108);
+            this.labelControl3.Location = new System.Drawing.Point(411, 43);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(91, 17);
             this.labelControl3.TabIndex = 122;
@@ -834,25 +806,26 @@
             // txtContactPersonName
             // 
             this.txtContactPersonName.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtContactPersonName.Location = new System.Drawing.Point(172, 73);
+            this.errorECCNo.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtContactPersonName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtContactPersonName.Location = new System.Drawing.Point(169, 97);
             this.txtContactPersonName.Name = "txtContactPersonName";
             this.txtContactPersonName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContactPersonName.Properties.Appearance.Options.UseFont = true;
@@ -868,7 +841,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(17, 77);
+            this.labelControl2.Location = new System.Drawing.Point(14, 101);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(134, 17);
             this.labelControl2.TabIndex = 121;
@@ -877,25 +850,26 @@
             // txtPartyName
             // 
             this.txtPartyName.EditValue = "";
-            this.errorCSTNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonMobileNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPhoneNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOfficeAddress.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCity.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMobileNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorEmail.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtPartyName.Location = new System.Drawing.Point(172, 42);
+            this.errorECCNo.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtPartyName.Location = new System.Drawing.Point(169, 66);
             this.txtPartyName.Name = "txtPartyName";
             this.txtPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPartyName.Properties.Appearance.Options.UseFont = true;
@@ -911,7 +885,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(17, 46);
+            this.labelControl1.Location = new System.Drawing.Point(14, 70);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(74, 17);
             this.labelControl1.TabIndex = 119;
@@ -920,7 +894,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(17, 16);
+            this.labelControl6.Location = new System.Drawing.Point(14, 40);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(98, 17);
             this.labelControl6.TabIndex = 118;
@@ -928,25 +902,26 @@
             // 
             // cmbCompanyCode
             // 
-            this.errorCity.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorContactPersonName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorShippingAddress.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMobileNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorState.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorEmail.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPANNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTINDate.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCSTDate.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonMobileNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPhoneNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorECCNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorOfficeAddress.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorState.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCSTNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.cmbCompanyCode.Location = new System.Drawing.Point(172, 11);
+            this.errorRefPersonName.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorECCNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorShippingAddress.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmail.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPhoneNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonMobileNo.SetIconAlignment(this.cmbCompanyCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.cmbCompanyCode.Location = new System.Drawing.Point(169, 35);
             this.cmbCompanyCode.Name = "cmbCompanyCode";
             this.cmbCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbCompanyCode.Properties.Appearance.Options.UseFont = true;
@@ -977,25 +952,26 @@
             // 
             // txtofficeAddress
             // 
-            this.errorOfficeAddress.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonMobileNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPhoneNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorContactPersonName.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCity.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorShippingAddress.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPhoneNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMobileNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmail.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorECCNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorEmail.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtofficeAddress.Location = new System.Drawing.Point(172, 104);
+            this.errorCSTNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonMobileNo.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtofficeAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtofficeAddress.Location = new System.Drawing.Point(566, 39);
             this.txtofficeAddress.Name = "txtofficeAddress";
             this.txtofficeAddress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtofficeAddress.Size = new System.Drawing.Size(205, 69);
@@ -1006,25 +982,26 @@
             // 
             // txtShippingAddress
             // 
-            this.errorOfficeAddress.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRefPersonMobileNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPhoneNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCompanyCode.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPANNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorContactPersonName.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorCity.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorShippingAddress.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTDate.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorCSTNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPhoneNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMobileNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorState.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmail.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorECCNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRefPersonName.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorEmail.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTINDate.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtShippingAddress.Location = new System.Drawing.Point(172, 178);
+            this.errorCSTNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonMobileNo.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtShippingAddress, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtShippingAddress.Location = new System.Drawing.Point(566, 150);
             this.txtShippingAddress.Name = "txtShippingAddress";
             this.txtShippingAddress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtShippingAddress.Size = new System.Drawing.Size(205, 69);
@@ -1035,10 +1012,10 @@
             // 
             // txtExtraDetails
             // 
-            this.txtExtraDetails.Location = new System.Drawing.Point(577, 292);
+            this.txtExtraDetails.Location = new System.Drawing.Point(580, 105);
             this.txtExtraDetails.Name = "txtExtraDetails";
             this.txtExtraDetails.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtExtraDetails.Size = new System.Drawing.Size(205, 79);
+            this.txtExtraDetails.Size = new System.Drawing.Size(205, 94);
             this.txtExtraDetails.TabIndex = 18;
             this.txtExtraDetails.Enter += new System.EventHandler(this.EnterEvent);
             this.txtExtraDetails.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
@@ -1120,7 +1097,7 @@
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl20.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl20.Location = new System.Drawing.Point(160, 11);
+            this.labelControl20.Location = new System.Drawing.Point(157, 44);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(6, 17);
             this.labelControl20.TabIndex = 178;
@@ -1130,7 +1107,7 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl21.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl21.Location = new System.Drawing.Point(160, 46);
+            this.labelControl21.Location = new System.Drawing.Point(157, 70);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(6, 17);
             this.labelControl21.TabIndex = 179;
@@ -1140,7 +1117,7 @@
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl22.Location = new System.Drawing.Point(160, 77);
+            this.labelControl22.Location = new System.Drawing.Point(157, 101);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(6, 17);
             this.labelControl22.TabIndex = 180;
@@ -1150,7 +1127,7 @@
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl23.Location = new System.Drawing.Point(163, 108);
+            this.labelControl23.Location = new System.Drawing.Point(557, 43);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(6, 17);
             this.labelControl23.TabIndex = 181;
@@ -1160,7 +1137,7 @@
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl24.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl24.Location = new System.Drawing.Point(163, 182);
+            this.labelControl24.Location = new System.Drawing.Point(557, 154);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(6, 17);
             this.labelControl24.TabIndex = 182;
@@ -1170,7 +1147,7 @@
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl25.Location = new System.Drawing.Point(163, 256);
+            this.labelControl25.Location = new System.Drawing.Point(160, 133);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(6, 17);
             this.labelControl25.TabIndex = 183;
@@ -1180,7 +1157,7 @@
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl26.Location = new System.Drawing.Point(163, 286);
+            this.labelControl26.Location = new System.Drawing.Point(160, 164);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(6, 17);
             this.labelControl26.TabIndex = 184;
@@ -1190,7 +1167,7 @@
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl27.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl27.Location = new System.Drawing.Point(163, 317);
+            this.labelControl27.Location = new System.Drawing.Point(160, 227);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(6, 17);
             this.labelControl27.TabIndex = 185;
@@ -1200,7 +1177,7 @@
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl28.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl28.Location = new System.Drawing.Point(163, 348);
+            this.labelControl28.Location = new System.Drawing.Point(557, 228);
             this.labelControl28.Name = "labelControl28";
             this.labelControl28.Size = new System.Drawing.Size(6, 17);
             this.labelControl28.TabIndex = 186;
@@ -1210,7 +1187,7 @@
             // 
             this.labelControl29.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl29.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl29.Location = new System.Drawing.Point(568, 15);
+            this.labelControl29.Location = new System.Drawing.Point(160, 196);
             this.labelControl29.Name = "labelControl29";
             this.labelControl29.Size = new System.Drawing.Size(6, 17);
             this.labelControl29.TabIndex = 187;
@@ -1220,7 +1197,7 @@
             // 
             this.labelControl30.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl30.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl30.Location = new System.Drawing.Point(568, 46);
+            this.labelControl30.Location = new System.Drawing.Point(571, 46);
             this.labelControl30.Name = "labelControl30";
             this.labelControl30.Size = new System.Drawing.Size(6, 17);
             this.labelControl30.TabIndex = 188;
@@ -1230,7 +1207,7 @@
             // 
             this.labelControl31.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl31.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl31.Location = new System.Drawing.Point(568, 139);
+            this.labelControl31.Location = new System.Drawing.Point(166, 82);
             this.labelControl31.Name = "labelControl31";
             this.labelControl31.Size = new System.Drawing.Size(6, 17);
             this.labelControl31.TabIndex = 189;
@@ -1240,7 +1217,7 @@
             // 
             this.labelControl32.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl32.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl32.Location = new System.Drawing.Point(568, 170);
+            this.labelControl32.Location = new System.Drawing.Point(166, 114);
             this.labelControl32.Name = "labelControl32";
             this.labelControl32.Size = new System.Drawing.Size(6, 17);
             this.labelControl32.TabIndex = 190;
@@ -1250,7 +1227,7 @@
             // 
             this.labelControl33.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl33.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl33.Location = new System.Drawing.Point(568, 200);
+            this.labelControl33.Location = new System.Drawing.Point(166, 144);
             this.labelControl33.Name = "labelControl33";
             this.labelControl33.Size = new System.Drawing.Size(6, 17);
             this.labelControl33.TabIndex = 191;
@@ -1260,7 +1237,7 @@
             // 
             this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl34.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl34.Location = new System.Drawing.Point(568, 108);
+            this.labelControl34.Location = new System.Drawing.Point(166, 51);
             this.labelControl34.Name = "labelControl34";
             this.labelControl34.Size = new System.Drawing.Size(6, 17);
             this.labelControl34.TabIndex = 192;
@@ -1270,7 +1247,7 @@
             // 
             this.labelControl35.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl35.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl35.Location = new System.Drawing.Point(568, 77);
+            this.labelControl35.Location = new System.Drawing.Point(571, 77);
             this.labelControl35.Name = "labelControl35";
             this.labelControl35.Size = new System.Drawing.Size(6, 17);
             this.labelControl35.TabIndex = 193;
@@ -1280,7 +1257,7 @@
             // 
             this.labelControl36.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl36.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl36.Location = new System.Drawing.Point(568, 233);
+            this.labelControl36.Location = new System.Drawing.Point(166, 209);
             this.labelControl36.Name = "labelControl36";
             this.labelControl36.Size = new System.Drawing.Size(6, 17);
             this.labelControl36.TabIndex = 194;
@@ -1290,16 +1267,156 @@
             // 
             this.labelControl37.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl37.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl37.Location = new System.Drawing.Point(568, 264);
+            this.labelControl37.Location = new System.Drawing.Point(571, 204);
             this.labelControl37.Name = "labelControl37";
             this.labelControl37.Size = new System.Drawing.Size(6, 17);
             this.labelControl37.TabIndex = 195;
             this.labelControl37.Text = "*";
             // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.chkAddress);
+            this.groupControl1.Controls.Add(this.txtPartyName);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.txtContactPersonName);
+            this.groupControl1.Controls.Add(this.cmbCompanyCode);
+            this.groupControl1.Controls.Add(this.labelControl21);
+            this.groupControl1.Controls.Add(this.labelControl22);
+            this.groupControl1.Controls.Add(this.txtShippingAddress);
+            this.groupControl1.Controls.Add(this.labelControl29);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.labelControl28);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.labelControl27);
+            this.groupControl1.Controls.Add(this.txtofficeAddress);
+            this.groupControl1.Controls.Add(this.labelControl26);
+            this.groupControl1.Controls.Add(this.labelControl12);
+            this.groupControl1.Controls.Add(this.labelControl23);
+            this.groupControl1.Controls.Add(this.labelControl25);
+            this.groupControl1.Controls.Add(this.labelControl24);
+            this.groupControl1.Controls.Add(this.labelControl20);
+            this.groupControl1.Controls.Add(this.txtCity);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.txtState);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Controls.Add(this.txtMobileNo);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.txtEmail);
+            this.groupControl1.Controls.Add(this.txtPhoneNo);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Location = new System.Drawing.Point(12, 7);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(807, 272);
+            this.groupControl1.TabIndex = 196;
+            this.groupControl1.Text = "Party Information";
+            // 
+            // chkAddress
+            // 
+            this.chkAddress.AutoSize = true;
+            this.chkAddress.Location = new System.Drawing.Point(566, 121);
+            this.chkAddress.Name = "chkAddress";
+            this.chkAddress.Size = new System.Drawing.Size(212, 17);
+            this.chkAddress.TabIndex = 197;
+            this.chkAddress.Text = "Permanet Address same as Residential ";
+            this.chkAddress.UseVisualStyleBackColor = true;
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.labelControl38);
+            this.groupControl2.Controls.Add(this.txtSMSNo);
+            this.groupControl2.Controls.Add(this.labelControl39);
+            this.groupControl2.Controls.Add(this.labelControl16);
+            this.groupControl2.Controls.Add(this.labelControl37);
+            this.groupControl2.Controls.Add(this.txtPANNo);
+            this.groupControl2.Controls.Add(this.labelControl35);
+            this.groupControl2.Controls.Add(this.labelControl36);
+            this.groupControl2.Controls.Add(this.labelControl17);
+            this.groupControl2.Controls.Add(this.labelControl30);
+            this.groupControl2.Controls.Add(this.labelControl33);
+            this.groupControl2.Controls.Add(this.dpTINDate);
+            this.groupControl2.Controls.Add(this.labelControl34);
+            this.groupControl2.Controls.Add(this.labelControl15);
+            this.groupControl2.Controls.Add(this.labelControl32);
+            this.groupControl2.Controls.Add(this.txtTINNo);
+            this.groupControl2.Controls.Add(this.txtExtraDetails);
+            this.groupControl2.Controls.Add(this.labelControl14);
+            this.groupControl2.Controls.Add(this.txtCSTNo);
+            this.groupControl2.Controls.Add(this.labelControl31);
+            this.groupControl2.Controls.Add(this.txtECCNo);
+            this.groupControl2.Controls.Add(this.labelControl19);
+            this.groupControl2.Controls.Add(this.dpCSTDate);
+            this.groupControl2.Controls.Add(this.labelControl18);
+            this.groupControl2.Controls.Add(this.txtRefPersonName);
+            this.groupControl2.Controls.Add(this.labelControl10);
+            this.groupControl2.Controls.Add(this.labelControl11);
+            this.groupControl2.Controls.Add(this.txtRefPersonMobNo);
+            this.groupControl2.Controls.Add(this.labelControl13);
+            this.groupControl2.Location = new System.Drawing.Point(14, 285);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(805, 281);
+            this.groupControl2.TabIndex = 197;
+            this.groupControl2.Text = "groupControl2";
+            // 
+            // labelControl38
+            // 
+            this.labelControl38.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl38.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl38.Location = new System.Drawing.Point(166, 177);
+            this.labelControl38.Name = "labelControl38";
+            this.labelControl38.Size = new System.Drawing.Size(6, 17);
+            this.labelControl38.TabIndex = 198;
+            this.labelControl38.Text = "*";
+            // 
+            // txtSMSNo
+            // 
+            this.txtSMSNo.EditValue = "";
+            this.errorShippingAddress.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMobileNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCompanyCode.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorSMSNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCity.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonMobileNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPhoneNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorState.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOfficeAddress.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorEmail.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPANNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTINDate.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTDate.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorCSTNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRefPersonName.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorECCNo.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorContactPersonName.SetIconAlignment(this.txtSMSNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtSMSNo.Location = new System.Drawing.Point(175, 173);
+            this.txtSMSNo.Name = "txtSMSNo";
+            this.txtSMSNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSMSNo.Properties.Appearance.Options.UseFont = true;
+            this.txtSMSNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtSMSNo.Properties.Mask.EditMask = "n2";
+            this.txtSMSNo.Size = new System.Drawing.Size(205, 26);
+            this.txtSMSNo.TabIndex = 196;
+            // 
+            // labelControl39
+            // 
+            this.labelControl39.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl39.Location = new System.Drawing.Point(12, 178);
+            this.labelControl39.Name = "labelControl39";
+            this.labelControl39.Size = new System.Drawing.Size(50, 17);
+            this.labelControl39.TabIndex = 197;
+            this.labelControl39.Text = "SMS No.";
+            // 
+            // errorSMSNo
+            // 
+            this.errorSMSNo.ContainerControl = this;
+            // 
             // frmPartyMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(951, 387);
+            this.ClientSize = new System.Drawing.Size(959, 578);
             this.Name = "frmPartyMaster";
             this.ShowInTaskbar = false;
             this.Text = "Party Master";
@@ -1307,7 +1424,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtECCNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCSTNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpCSTDate.Properties.CalendarTimeProperties)).EndInit();
@@ -1347,6 +1463,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorRefPersonName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorRefPersonMobileNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPhoneNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorSMSNo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1427,6 +1551,13 @@
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private System.Windows.Forms.CheckBox chkAddress;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl38;
+        private DevExpress.XtraEditors.TextEdit txtSMSNo;
+        private DevExpress.XtraEditors.LabelControl labelControl39;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorSMSNo;
 
     }
 }
