@@ -177,5 +177,10 @@ namespace LoomsManagement.Windows.Forms.Challan
      }
 
      #endregion
+
+     private void groupControl1_Paint(object sender, PaintEventArgs e)
+     {
+
+     }
  }
 }

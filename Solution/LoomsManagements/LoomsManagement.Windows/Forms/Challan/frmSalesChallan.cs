@@ -1,4 +1,5 @@
 ﻿using LoomsManagement.Windows.Classes;
+using LoomsManagement.Windows.Forms.Returns;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -209,6 +210,12 @@ namespace LoomsManagement.Windows.Forms.Challan
 
         #endregion        
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddSalesReturnItem objSalesItem = new frmAddSalesReturnItem();
+            objSalesItem.ShowDialog();
+        }
 
+      
     }
 }
