@@ -20,6 +20,11 @@ namespace LoomsManagement.Windows.Forms.Order
 
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
        
     }
 }

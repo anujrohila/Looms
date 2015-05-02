@@ -75,6 +75,7 @@
             this.cmbQualityType = new DevExpress.XtraEditors.LookUpEdit();
             this.errorOrderNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.txtOrderStatus = new DevExpress.XtraEditors.TextEdit();
+            this.txtOrderNo = new DevExpress.XtraEditors.TextEdit();
             this.errorPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorBrokerName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorQualityType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
@@ -94,12 +95,11 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.txtRemark = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.txtRemark = new DevExpress.XtraEditors.MemoEdit();
-            this.txtOrderNo = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -122,6 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorOrderNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderStatus.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorQualityType)).BeginInit();
@@ -145,7 +146,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -164,6 +164,7 @@
             this.btnExit.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
             this.btnExit.TabIndex = 20;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
@@ -972,6 +973,36 @@
             this.txtOrderStatus.TabIndex = 249;
             this.txtOrderStatus.ToolTip = "Enter Broker Name";
             // 
+            // txtOrderNo
+            // 
+            this.txtOrderNo.EditValue = "";
+            this.errorRate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeter.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityCode.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtOrderNo.Location = new System.Drawing.Point(120, 28);
+            this.txtOrderNo.Name = "txtOrderNo";
+            this.txtOrderNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderNo.Properties.Appearance.Options.UseFont = true;
+            this.txtOrderNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtOrderNo.Properties.Mask.EditMask = "n2";
+            this.txtOrderNo.Size = new System.Drawing.Size(205, 26);
+            this.txtOrderNo.TabIndex = 1;
+            this.txtOrderNo.ToolTip = "Enter Broker Name";
+            // 
             // errorPartyName
             // 
             this.errorPartyName.ContainerControl = this;
@@ -1112,6 +1143,14 @@
             this.groupControl3.TabIndex = 252;
             this.groupControl3.Text = "Other Details";
             // 
+            // txtRemark
+            // 
+            this.txtRemark.Location = new System.Drawing.Point(445, 34);
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtRemark.Size = new System.Drawing.Size(544, 96);
+            this.txtRemark.TabIndex = 11;
+            // 
             // labelControl34
             // 
             this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1150,44 +1189,6 @@
             this.labelControl24.TabIndex = 250;
             this.labelControl24.Text = "Order Status";
             // 
-            // txtRemark
-            // 
-            this.txtRemark.Location = new System.Drawing.Point(445, 34);
-            this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtRemark.Size = new System.Drawing.Size(544, 96);
-            this.txtRemark.TabIndex = 11;
-            // 
-            // txtOrderNo
-            // 
-            this.txtOrderNo.EditValue = "";
-            this.errorRate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMeter.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorAmount.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityCode.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtOrderNo.Location = new System.Drawing.Point(120, 28);
-            this.txtOrderNo.Name = "txtOrderNo";
-            this.txtOrderNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrderNo.Properties.Appearance.Options.UseFont = true;
-            this.txtOrderNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtOrderNo.Properties.Mask.EditMask = "n2";
-            this.txtOrderNo.Size = new System.Drawing.Size(205, 26);
-            this.txtOrderNo.TabIndex = 1;
-            this.txtOrderNo.ToolTip = "Enter Broker Name";
-            // 
             // frmSalesOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1216,6 +1217,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorOrderNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderStatus.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorQualityType)).EndInit();
@@ -1242,7 +1244,6 @@
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
