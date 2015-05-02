@@ -34,7 +34,6 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtPartyOrderNumber = new DevExpress.XtraEditors.TextEdit();
-            this.cmbOrderNumber = new DevExpress.XtraEditors.LookUpEdit();
             this.dpDeliveryDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -76,7 +75,6 @@
             this.cmbQualityType = new DevExpress.XtraEditors.LookUpEdit();
             this.errorOrderNumber = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.txtOrderStatus = new DevExpress.XtraEditors.TextEdit();
-            this.txtRemark = new DevExpress.XtraEditors.TextEdit();
             this.errorPartyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorBrokerName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorQualityType = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
@@ -95,17 +93,17 @@
             this.errorRemark = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.txtRemark = new DevExpress.XtraEditors.MemoEdit();
+            this.txtOrderNo = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPartyOrderNumber.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbOrderNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOrderDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -124,7 +122,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorOrderNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderStatus.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorQualityType)).BeginInit();
@@ -145,16 +142,16 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
-            this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.Location = new System.Drawing.Point(1129, 0);
-            this.panelControl1.Size = new System.Drawing.Size(127, 409);
+            this.panelControl1.Location = new System.Drawing.Point(1088, 0);
+            this.panelControl1.Size = new System.Drawing.Size(127, 396);
             // 
             // btnReport
             // 
@@ -185,14 +182,14 @@
             this.panel1.Controls.Add(this.groupControl3);
             this.panel1.Controls.Add(this.groupControl2);
             this.panel1.Controls.Add(this.groupControl1);
-            this.panel1.Size = new System.Drawing.Size(1129, 409);
+            this.panel1.Size = new System.Drawing.Size(1088, 396);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl12.Location = new System.Drawing.Point(831, 22);
+            this.labelControl12.Location = new System.Drawing.Point(820, 27);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(6, 17);
             this.labelControl12.TabIndex = 202;
@@ -202,7 +199,7 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl11.Location = new System.Drawing.Point(379, 78);
+            this.labelControl11.Location = new System.Drawing.Point(379, 62);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(6, 17);
             this.labelControl11.TabIndex = 201;
@@ -212,7 +209,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl7.Location = new System.Drawing.Point(216, 82);
+            this.labelControl7.Location = new System.Drawing.Point(216, 62);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(6, 17);
             this.labelControl7.TabIndex = 200;
@@ -231,23 +228,23 @@
             // txtPartyOrderNumber
             // 
             this.txtPartyOrderNumber.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtPartyOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.txtPartyOrderNumber.Location = new System.Drawing.Point(503, 60);
             this.txtPartyOrderNumber.Name = "txtPartyOrderNumber";
             this.txtPartyOrderNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,70 +255,27 @@
             this.txtPartyOrderNumber.TabIndex = 4;
             this.txtPartyOrderNumber.ToolTip = "Enter Broker Name";
             // 
-            // cmbOrderNumber
-            // 
-            this.errorDate.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityCode.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorAmount.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMeter.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.cmbOrderNumber, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.cmbOrderNumber.Location = new System.Drawing.Point(120, 28);
-            this.cmbOrderNumber.Name = "cmbOrderNumber";
-            this.cmbOrderNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbOrderNumber.Properties.Appearance.Options.UseFont = true;
-            this.cmbOrderNumber.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbOrderNumber.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbOrderNumber.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbOrderNumber.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbOrderNumber.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbOrderNumber.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbOrderNumber.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbOrderNumber.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbOrderNumber.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbOrderNumber.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbOrderNumber.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.cmbOrderNumber.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbOrderNumber.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
-            this.cmbOrderNumber.Properties.NullText = "";
-            this.cmbOrderNumber.Size = new System.Drawing.Size(205, 26);
-            this.cmbOrderNumber.TabIndex = 1;
-            // 
             // dpDeliveryDate
             // 
             this.dpDeliveryDate.EditValue = null;
-            this.errorWeight.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityCode.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaka.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityCode.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.dpDeliveryDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.dpDeliveryDate.Location = new System.Drawing.Point(462, 33);
+            this.dpDeliveryDate.Location = new System.Drawing.Point(130, 65);
             this.dpDeliveryDate.Name = "dpDeliveryDate";
             this.dpDeliveryDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dpDeliveryDate.Properties.Appearance.Options.UseFont = true;
@@ -364,7 +318,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(732, 61);
+            this.labelControl3.Location = new System.Drawing.Point(9, 96);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(81, 17);
             this.labelControl3.TabIndex = 211;
@@ -391,7 +345,7 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(703, 37);
+            this.labelControl8.Location = new System.Drawing.Point(16, 101);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(93, 17);
             this.labelControl8.TabIndex = 214;
@@ -400,7 +354,7 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(355, 37);
+            this.labelControl9.Location = new System.Drawing.Point(16, 69);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(86, 17);
             this.labelControl9.TabIndex = 213;
@@ -409,7 +363,7 @@
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(9, 92);
+            this.labelControl10.Location = new System.Drawing.Point(732, 60);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(37, 17);
             this.labelControl10.TabIndex = 212;
@@ -418,7 +372,7 @@
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl13.Location = new System.Drawing.Point(424, 9);
+            this.labelControl13.Location = new System.Drawing.Point(428, 26);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(46, 17);
             this.labelControl13.TabIndex = 218;
@@ -427,7 +381,7 @@
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Location = new System.Drawing.Point(587, 9);
+            this.labelControl15.Location = new System.Drawing.Point(591, 26);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(37, 17);
             this.labelControl15.TabIndex = 217;
@@ -436,7 +390,7 @@
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Location = new System.Drawing.Point(269, 9);
+            this.labelControl16.Location = new System.Drawing.Point(273, 26);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(31, 17);
             this.labelControl16.TabIndex = 216;
@@ -445,7 +399,7 @@
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Location = new System.Drawing.Point(77, 9);
+            this.labelControl17.Location = new System.Drawing.Point(81, 26);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(80, 17);
             this.labelControl17.TabIndex = 215;
@@ -454,7 +408,7 @@
             // labelControl18
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Location = new System.Drawing.Point(926, 9);
+            this.labelControl18.Location = new System.Drawing.Point(919, 26);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(51, 17);
             this.labelControl18.TabIndex = 224;
@@ -463,7 +417,7 @@
             // labelControl20
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl20.Location = new System.Drawing.Point(761, 9);
+            this.labelControl20.Location = new System.Drawing.Point(765, 26);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(28, 17);
             this.labelControl20.TabIndex = 222;
@@ -483,7 +437,7 @@
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl22.Location = new System.Drawing.Point(450, 37);
+            this.labelControl22.Location = new System.Drawing.Point(120, 69);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(6, 17);
             this.labelControl22.TabIndex = 220;
@@ -493,7 +447,7 @@
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl23.Location = new System.Drawing.Point(831, 61);
+            this.labelControl23.Location = new System.Drawing.Point(108, 96);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(6, 17);
             this.labelControl23.TabIndex = 219;
@@ -502,23 +456,23 @@
             // dpOrderDate
             // 
             this.dpOrderDate.EditValue = null;
-            this.errorWeight.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityCode.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaka.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityCode.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRate.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.dpOrderDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.dpOrderDate.Location = new System.Drawing.Point(503, 27);
             this.dpOrderDate.Name = "dpOrderDate";
             this.dpOrderDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
@@ -534,22 +488,22 @@
             // 
             // cmbPartyName
             // 
-            this.errorDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorWeight.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyOrderNo.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.cmbPartyName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.cmbPartyName.Location = new System.Drawing.Point(120, 60);
             this.cmbPartyName.Name = "cmbPartyName";
@@ -577,24 +531,24 @@
             // 
             // cmbBrokerName
             // 
-            this.errorDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorWeight.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyOrderNo.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.cmbBrokerName, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.cmbBrokerName.Location = new System.Drawing.Point(843, 22);
+            this.cmbBrokerName.Location = new System.Drawing.Point(832, 27);
             this.cmbBrokerName.Name = "cmbBrokerName";
             this.cmbBrokerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbBrokerName.Properties.Appearance.Options.UseFont = true;
@@ -621,24 +575,24 @@
             // txtQualityCode
             // 
             this.txtQualityCode.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtQualityCode.Location = new System.Drawing.Point(60, 76);
+            this.errorTaka.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtQualityCode, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtQualityCode.Location = new System.Drawing.Point(60, 57);
             this.txtQualityCode.Name = "txtQualityCode";
             this.txtQualityCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQualityCode.Properties.Appearance.Options.UseFont = true;
@@ -651,24 +605,24 @@
             // dpDeliveredDate
             // 
             this.dpDeliveredDate.EditValue = null;
-            this.errorWeight.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityCode.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveryDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorTaka.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityCode.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorRate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.dpDeliveredDate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.dpDeliveredDate.Location = new System.Drawing.Point(855, 32);
+            this.dpDeliveredDate.Location = new System.Drawing.Point(130, 97);
             this.dpDeliveredDate.Name = "dpDeliveredDate";
             this.dpDeliveredDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dpDeliveredDate.Properties.Appearance.Options.UseFont = true;
@@ -684,24 +638,24 @@
             // txtGrade
             // 
             this.txtGrade.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtGrade.Location = new System.Drawing.Point(120, 92);
+            this.errorTaka.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtGrade, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtGrade.Location = new System.Drawing.Point(832, 60);
             this.txtGrade.Name = "txtGrade";
             this.txtGrade.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrade.Properties.Appearance.Options.UseFont = true;
@@ -714,24 +668,24 @@
             // txtTaka
             // 
             this.txtTaka.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtTaka.Location = new System.Drawing.Point(228, 76);
+            this.errorTaka.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtTaka, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtTaka.Location = new System.Drawing.Point(228, 57);
             this.txtTaka.Name = "txtTaka";
             this.txtTaka.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaka.Properties.Appearance.Options.UseFont = true;
@@ -744,24 +698,24 @@
             // txtRate
             // 
             this.txtRate.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtRate.Location = new System.Drawing.Point(721, 76);
+            this.errorTaka.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtRate, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtRate.Location = new System.Drawing.Point(721, 57);
             this.txtRate.Name = "txtRate";
             this.txtRate.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRate.Properties.Appearance.Options.UseFont = true;
@@ -774,24 +728,24 @@
             // txtWeight
             // 
             this.txtWeight.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtWeight.Location = new System.Drawing.Point(388, 75);
+            this.errorTaka.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtWeight, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtWeight.Location = new System.Drawing.Point(388, 57);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWeight.Properties.Appearance.Options.UseFont = true;
@@ -804,24 +758,24 @@
             // txtMeter
             // 
             this.txtMeter.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtMeter.Location = new System.Drawing.Point(558, 76);
+            this.errorTaka.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtMeter, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtMeter.Location = new System.Drawing.Point(558, 57);
             this.txtMeter.Name = "txtMeter";
             this.txtMeter.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeter.Properties.Appearance.Options.UseFont = true;
@@ -834,24 +788,24 @@
             // txtAmount
             // 
             this.txtAmount.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtAmount.Location = new System.Drawing.Point(895, 76);
+            this.errorTaka.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtAmount, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtAmount.Location = new System.Drawing.Point(884, 57);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount.Properties.Appearance.Options.UseFont = true;
@@ -875,7 +829,7 @@
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl26.Location = new System.Drawing.Point(843, 37);
+            this.labelControl26.Location = new System.Drawing.Point(120, 102);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(6, 17);
             this.labelControl26.TabIndex = 245;
@@ -885,7 +839,7 @@
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl27.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl27.Location = new System.Drawing.Point(48, 83);
+            this.labelControl27.Location = new System.Drawing.Point(48, 62);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(6, 17);
             this.labelControl27.TabIndex = 244;
@@ -895,7 +849,7 @@
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl28.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl28.Location = new System.Drawing.Point(108, 92);
+            this.labelControl28.Location = new System.Drawing.Point(820, 60);
             this.labelControl28.Name = "labelControl28";
             this.labelControl28.Size = new System.Drawing.Size(6, 17);
             this.labelControl28.TabIndex = 243;
@@ -905,7 +859,7 @@
             // 
             this.labelControl29.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl29.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl29.Location = new System.Drawing.Point(546, 80);
+            this.labelControl29.Location = new System.Drawing.Point(546, 62);
             this.labelControl29.Name = "labelControl29";
             this.labelControl29.Size = new System.Drawing.Size(6, 17);
             this.labelControl29.TabIndex = 242;
@@ -915,7 +869,7 @@
             // 
             this.labelControl30.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl30.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl30.Location = new System.Drawing.Point(712, 79);
+            this.labelControl30.Location = new System.Drawing.Point(712, 62);
             this.labelControl30.Name = "labelControl30";
             this.labelControl30.Size = new System.Drawing.Size(6, 17);
             this.labelControl30.TabIndex = 241;
@@ -935,7 +889,7 @@
             // 
             this.labelControl32.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl32.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl32.Location = new System.Drawing.Point(883, 80);
+            this.labelControl32.Location = new System.Drawing.Point(872, 62);
             this.labelControl32.Name = "labelControl32";
             this.labelControl32.Size = new System.Drawing.Size(6, 17);
             this.labelControl32.TabIndex = 247;
@@ -943,24 +897,24 @@
             // 
             // cmbQualityType
             // 
-            this.errorDate.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorWeight.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorPartyOrderNo.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorGrade.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveredDate.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorDeliveryDate.SetIconAlignment(this.cmbQualityType, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.cmbQualityType.Location = new System.Drawing.Point(843, 57);
+            this.cmbQualityType.Location = new System.Drawing.Point(120, 92);
             this.cmbQualityType.Name = "cmbQualityType";
             this.cmbQualityType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbQualityType.Properties.Appearance.Options.UseFont = true;
@@ -991,24 +945,24 @@
             // txtOrderStatus
             // 
             this.txtOrderStatus.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityType.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorMeter.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorAmount.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
             this.errorQualityCode.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtOrderStatus.Location = new System.Drawing.Point(123, 33);
+            this.errorTaka.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtOrderStatus, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtOrderStatus.Location = new System.Drawing.Point(130, 33);
             this.txtOrderStatus.Name = "txtOrderStatus";
             this.txtOrderStatus.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderStatus.Properties.Appearance.Options.UseFont = true;
@@ -1017,36 +971,6 @@
             this.txtOrderStatus.Size = new System.Drawing.Size(205, 26);
             this.txtOrderStatus.TabIndex = 249;
             this.txtOrderStatus.ToolTip = "Enter Broker Name";
-            // 
-            // txtRemark
-            // 
-            this.txtRemark.EditValue = "";
-            this.errorDeliveryDate.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorBrokerName.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityType.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderStatus.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorWeight.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorTaka.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorGrade.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDate.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRemark.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorMeter.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorAmount.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyOrderNo.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorDeliveredDate.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorOrderNumber.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorRate.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorPartyName.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.errorQualityCode.SetIconAlignment(this.txtRemark, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
-            this.txtRemark.Location = new System.Drawing.Point(123, 71);
-            this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRemark.Properties.Appearance.Options.UseFont = true;
-            this.txtRemark.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtRemark.Properties.Mask.EditMask = "n2";
-            this.txtRemark.Size = new System.Drawing.Size(937, 26);
-            this.txtRemark.TabIndex = 252;
-            this.txtRemark.ToolTip = "Enter Broker Name";
             // 
             // errorPartyName
             // 
@@ -1115,7 +1039,7 @@
             // groupControl1
             // 
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.groupControl1.Controls.Add(this.cmbOrderNumber);
+            this.groupControl1.Controls.Add(this.txtOrderNo);
             this.groupControl1.Controls.Add(this.cmbQualityType);
             this.groupControl1.Controls.Add(this.labelControl14);
             this.groupControl1.Controls.Add(this.labelControl6);
@@ -1136,18 +1060,23 @@
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl23);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Location = new System.Drawing.Point(12, 10);
+            this.groupControl1.Location = new System.Drawing.Point(12, 5);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1100, 137);
+            this.groupControl1.Size = new System.Drawing.Size(1068, 137);
             this.groupControl1.TabIndex = 250;
             this.groupControl1.Text = "Sales Order ";
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.panelControl2);
+            this.groupControl2.Controls.Add(this.labelControl17);
+            this.groupControl2.Controls.Add(this.labelControl16);
+            this.groupControl2.Controls.Add(this.labelControl13);
             this.groupControl2.Controls.Add(this.labelControl32);
+            this.groupControl2.Controls.Add(this.labelControl15);
             this.groupControl2.Controls.Add(this.labelControl29);
+            this.groupControl2.Controls.Add(this.labelControl20);
             this.groupControl2.Controls.Add(this.txtAmount);
+            this.groupControl2.Controls.Add(this.labelControl18);
             this.groupControl2.Controls.Add(this.labelControl27);
             this.groupControl2.Controls.Add(this.labelControl30);
             this.groupControl2.Controls.Add(this.txtTaka);
@@ -1157,29 +1086,16 @@
             this.groupControl2.Controls.Add(this.txtRate);
             this.groupControl2.Controls.Add(this.labelControl11);
             this.groupControl2.Controls.Add(this.txtQualityCode);
-            this.groupControl2.Location = new System.Drawing.Point(12, 153);
+            this.groupControl2.Location = new System.Drawing.Point(12, 147);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1100, 114);
+            this.groupControl2.Size = new System.Drawing.Size(1068, 95);
             this.groupControl2.TabIndex = 251;
             this.groupControl2.Text = "Order Details";
             // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.labelControl17);
-            this.panelControl2.Controls.Add(this.labelControl16);
-            this.panelControl2.Controls.Add(this.labelControl13);
-            this.panelControl2.Controls.Add(this.labelControl15);
-            this.panelControl2.Controls.Add(this.labelControl20);
-            this.panelControl2.Controls.Add(this.labelControl18);
-            this.panelControl2.Location = new System.Drawing.Point(9, 30);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1071, 39);
-            this.panelControl2.TabIndex = 248;
-            // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.labelControl34);
             this.groupControl3.Controls.Add(this.txtRemark);
+            this.groupControl3.Controls.Add(this.labelControl34);
             this.groupControl3.Controls.Add(this.labelControl19);
             this.groupControl3.Controls.Add(this.labelControl33);
             this.groupControl3.Controls.Add(this.dpDeliveryDate);
@@ -1190,9 +1106,9 @@
             this.groupControl3.Controls.Add(this.labelControl22);
             this.groupControl3.Controls.Add(this.labelControl26);
             this.groupControl3.Controls.Add(this.labelControl9);
-            this.groupControl3.Location = new System.Drawing.Point(12, 273);
+            this.groupControl3.Location = new System.Drawing.Point(12, 247);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1100, 122);
+            this.groupControl3.Size = new System.Drawing.Size(1068, 141);
             this.groupControl3.TabIndex = 252;
             this.groupControl3.Text = "Other Details";
             // 
@@ -1200,7 +1116,7 @@
             // 
             this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl34.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl34.Location = new System.Drawing.Point(111, 75);
+            this.labelControl34.Location = new System.Drawing.Point(433, 35);
             this.labelControl34.Name = "labelControl34";
             this.labelControl34.Size = new System.Drawing.Size(6, 17);
             this.labelControl34.TabIndex = 254;
@@ -1209,7 +1125,7 @@
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Location = new System.Drawing.Point(16, 75);
+            this.labelControl19.Location = new System.Drawing.Point(369, 37);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(49, 17);
             this.labelControl19.TabIndex = 253;
@@ -1219,7 +1135,7 @@
             // 
             this.labelControl33.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl33.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl33.Location = new System.Drawing.Point(111, 37);
+            this.labelControl33.Location = new System.Drawing.Point(120, 37);
             this.labelControl33.Name = "labelControl33";
             this.labelControl33.Size = new System.Drawing.Size(6, 17);
             this.labelControl33.TabIndex = 251;
@@ -1234,17 +1150,54 @@
             this.labelControl24.TabIndex = 250;
             this.labelControl24.Text = "Order Status";
             // 
+            // txtRemark
+            // 
+            this.txtRemark.Location = new System.Drawing.Point(445, 34);
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtRemark.Size = new System.Drawing.Size(544, 96);
+            this.txtRemark.TabIndex = 11;
+            // 
+            // txtOrderNo
+            // 
+            this.txtOrderNo.EditValue = "";
+            this.errorRate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderNumber.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityType.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorBrokerName.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorMeter.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorAmount.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorRemark.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorQualityCode.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorTaka.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyName.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorGrade.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorOrderStatus.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorWeight.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveredDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorPartyOrderNo.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.errorDeliveryDate.SetIconAlignment(this.txtOrderNo, System.Windows.Forms.ErrorIconAlignment.MiddleRight);
+            this.txtOrderNo.Location = new System.Drawing.Point(120, 28);
+            this.txtOrderNo.Name = "txtOrderNo";
+            this.txtOrderNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderNo.Properties.Appearance.Options.UseFont = true;
+            this.txtOrderNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtOrderNo.Properties.Mask.EditMask = "n2";
+            this.txtOrderNo.Size = new System.Drawing.Size(205, 26);
+            this.txtOrderNo.TabIndex = 1;
+            this.txtOrderNo.ToolTip = "Enter Broker Name";
+            // 
             // frmSalesOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1256, 409);
+            this.ClientSize = new System.Drawing.Size(1215, 396);
             this.Name = "frmSalesOrder";
             this.Text = "Sales Order";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtPartyOrderNumber.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbOrderNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOrderDate.Properties.CalendarTimeProperties)).EndInit();
@@ -1263,7 +1216,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorOrderNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderStatus.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorPartyName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorBrokerName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorQualityType)).EndInit();
@@ -1286,12 +1238,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
-            this.panelControl2.ResumeLayout(false);
-            this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1303,7 +1254,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit txtPartyOrderNumber;
-        private DevExpress.XtraEditors.LookUpEdit cmbOrderNumber;
         private DevExpress.XtraEditors.DateEdit dpDeliveryDate;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
@@ -1364,11 +1314,11 @@
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.LabelControl labelControl34;
-        private DevExpress.XtraEditors.TextEdit txtRemark;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.TextEdit txtOrderStatus;
         private DevExpress.XtraEditors.LabelControl labelControl24;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.MemoEdit txtRemark;
+        private DevExpress.XtraEditors.TextEdit txtOrderNo;
     }
 }
