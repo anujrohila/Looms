@@ -21,6 +21,11 @@ namespace LoomsManagement.Windows.Forms.Returns
             objPurchaseItem.ShowDialog();
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
        
 
       

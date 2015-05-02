@@ -13,6 +13,12 @@ namespace LoomsManagement.Windows.Forms.Returns
         public frmAddSalesReturnItem()
         {
             InitializeComponent();
+            btnReport.Visible = false;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
