@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYarnPurchaseReturn));
             this.txtBillNumber = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -52,7 +53,6 @@
             this.txtLotNo = new DevExpress.XtraEditors.TextEdit();
             this.txtGrade = new DevExpress.XtraEditors.TextEdit();
             this.txtTwistShed = new DevExpress.XtraEditors.TextEdit();
-            this.txtRemarks = new DevExpress.XtraEditors.TextEdit();
             this.txtTaxAmount = new DevExpress.XtraEditors.TextEdit();
             this.txtFinalAmount = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -81,6 +81,25 @@
             this.errorReceivedBy = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.errorTaxAmount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.cmbTaxType = new DevExpress.XtraEditors.LookUpEdit();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.txtRemarks = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.Id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SrNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PurchaseId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.BoxNoPlatNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Chese = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GrossWeight = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TareWeight = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NetWeight = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Rate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -94,7 +113,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtLotNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTwistShed.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAmount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFinalAmount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbReceivedBy.Properties)).BeginInit();
@@ -112,12 +130,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorReceivedBy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorTaxAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTaxType.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.Location = new System.Drawing.Point(719, 0);
-            this.panelControl1.Size = new System.Drawing.Size(127, 260);
+            this.panelControl1.Location = new System.Drawing.Point(1096, 0);
+            this.panelControl1.Size = new System.Drawing.Size(127, 529);
             // 
             // btnReport
             // 
@@ -145,51 +170,16 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cmbTaxType);
-            this.panel1.Controls.Add(this.labelControl15);
-            this.panel1.Controls.Add(this.cmbReceivedBy);
-            this.panel1.Controls.Add(this.labelControl21);
-            this.panel1.Controls.Add(this.labelControl22);
-            this.panel1.Controls.Add(this.labelControl23);
-            this.panel1.Controls.Add(this.labelControl24);
-            this.panel1.Controls.Add(this.labelControl25);
-            this.panel1.Controls.Add(this.labelControl26);
-            this.panel1.Controls.Add(this.labelControl19);
-            this.panel1.Controls.Add(this.labelControl20);
-            this.panel1.Controls.Add(this.labelControl17);
-            this.panel1.Controls.Add(this.labelControl11);
-            this.panel1.Controls.Add(this.txtFinalAmount);
-            this.panel1.Controls.Add(this.txtTaxAmount);
-            this.panel1.Controls.Add(this.txtRemarks);
-            this.panel1.Controls.Add(this.txtTwistShed);
-            this.panel1.Controls.Add(this.txtGrade);
-            this.panel1.Controls.Add(this.txtLotNo);
-            this.panel1.Controls.Add(this.cmbQualityTypeName);
-            this.panel1.Controls.Add(this.cmbBrokerName);
-            this.panel1.Controls.Add(this.cmbPartyName);
-            this.panel1.Controls.Add(this.labelControl13);
-            this.panel1.Controls.Add(this.labelControl16);
-            this.panel1.Controls.Add(this.labelControl12);
-            this.panel1.Controls.Add(this.labelControl10);
-            this.panel1.Controls.Add(this.labelControl9);
-            this.panel1.Controls.Add(this.labelControl8);
-            this.panel1.Controls.Add(this.labelControl7);
-            this.panel1.Controls.Add(this.labelControl6);
-            this.panel1.Controls.Add(this.labelControl4);
-            this.panel1.Controls.Add(this.labelControl3);
-            this.panel1.Controls.Add(this.labelControl2);
-            this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Controls.Add(this.cmbChallanNumber);
-            this.panel1.Controls.Add(this.dpBillDate);
-            this.panel1.Controls.Add(this.labelControl5);
-            this.panel1.Controls.Add(this.labelControl14);
-            this.panel1.Controls.Add(this.txtBillNumber);
-            this.panel1.Size = new System.Drawing.Size(719, 260);
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.gridControl1);
+            this.panel1.Controls.Add(this.groupControl2);
+            this.panel1.Controls.Add(this.groupControl1);
+            this.panel1.Size = new System.Drawing.Size(1096, 529);
             // 
             // txtBillNumber
             // 
             this.txtBillNumber.EditValue = "";
-            this.txtBillNumber.Location = new System.Drawing.Point(115, 18);
+            this.txtBillNumber.Location = new System.Drawing.Point(111, 29);
             this.txtBillNumber.Name = "txtBillNumber";
             this.txtBillNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBillNumber.Properties.Appearance.Options.UseFont = true;
@@ -202,7 +192,7 @@
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl14.Location = new System.Drawing.Point(12, 19);
+            this.labelControl14.Location = new System.Drawing.Point(8, 30);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(75, 17);
             this.labelControl14.TabIndex = 180;
@@ -212,7 +202,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl5.Location = new System.Drawing.Point(103, 154);
+            this.labelControl5.Location = new System.Drawing.Point(780, 34);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(6, 17);
             this.labelControl5.TabIndex = 181;
@@ -221,7 +211,7 @@
             // dpBillDate
             // 
             this.dpBillDate.EditValue = null;
-            this.dpBillDate.Location = new System.Drawing.Point(115, 51);
+            this.dpBillDate.Location = new System.Drawing.Point(839, 27);
             this.dpBillDate.Name = "dpBillDate";
             this.dpBillDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dpBillDate.Properties.Appearance.Options.UseFont = true;
@@ -236,7 +226,7 @@
             // 
             // cmbChallanNumber
             // 
-            this.cmbChallanNumber.Location = new System.Drawing.Point(488, 18);
+            this.cmbChallanNumber.Location = new System.Drawing.Point(464, 29);
             this.cmbChallanNumber.Name = "cmbChallanNumber";
             this.cmbChallanNumber.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbChallanNumber.Properties.Appearance.Options.UseFont = true;
@@ -263,7 +253,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(348, 85);
+            this.labelControl1.Location = new System.Drawing.Point(692, 63);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(120, 17);
             this.labelControl1.TabIndex = 184;
@@ -272,7 +262,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(348, 22);
+            this.labelControl2.Location = new System.Drawing.Point(344, 33);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(100, 17);
             this.labelControl2.TabIndex = 185;
@@ -281,7 +271,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(348, 121);
+            this.labelControl3.Location = new System.Drawing.Point(344, 33);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(37, 17);
             this.labelControl3.TabIndex = 186;
@@ -290,7 +280,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(12, 53);
+            this.labelControl4.Location = new System.Drawing.Point(692, 31);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(53, 17);
             this.labelControl4.TabIndex = 187;
@@ -299,7 +289,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(12, 154);
+            this.labelControl6.Location = new System.Drawing.Point(689, 34);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(69, 17);
             this.labelControl6.TabIndex = 188;
@@ -308,7 +298,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(348, 53);
+            this.labelControl7.Location = new System.Drawing.Point(8, 65);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(74, 17);
             this.labelControl7.TabIndex = 189;
@@ -317,7 +307,7 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(12, 122);
+            this.labelControl8.Location = new System.Drawing.Point(8, 34);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(75, 17);
             this.labelControl8.TabIndex = 190;
@@ -326,7 +316,7 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(12, 88);
+            this.labelControl9.Location = new System.Drawing.Point(344, 65);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(83, 17);
             this.labelControl9.TabIndex = 191;
@@ -335,7 +325,7 @@
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(12, 221);
+            this.labelControl10.Location = new System.Drawing.Point(351, 97);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(55, 17);
             this.labelControl10.TabIndex = 192;
@@ -344,7 +334,7 @@
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(348, 188);
+            this.labelControl12.Location = new System.Drawing.Point(348, 66);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(77, 17);
             this.labelControl12.TabIndex = 194;
@@ -353,7 +343,7 @@
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl13.Location = new System.Drawing.Point(12, 187);
+            this.labelControl13.Location = new System.Drawing.Point(8, 65);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(58, 17);
             this.labelControl13.TabIndex = 197;
@@ -362,7 +352,7 @@
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Location = new System.Drawing.Point(348, 222);
+            this.labelControl16.Location = new System.Drawing.Point(689, 66);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(85, 17);
             this.labelControl16.TabIndex = 195;
@@ -370,7 +360,7 @@
             // 
             // cmbPartyName
             // 
-            this.cmbPartyName.Location = new System.Drawing.Point(488, 51);
+            this.cmbPartyName.Location = new System.Drawing.Point(111, 61);
             this.cmbPartyName.Name = "cmbPartyName";
             this.cmbPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbPartyName.Properties.Appearance.Options.UseFont = true;
@@ -396,7 +386,7 @@
             // 
             // cmbBrokerName
             // 
-            this.cmbBrokerName.Location = new System.Drawing.Point(115, 84);
+            this.cmbBrokerName.Location = new System.Drawing.Point(464, 61);
             this.cmbBrokerName.Name = "cmbBrokerName";
             this.cmbBrokerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbBrokerName.Properties.Appearance.Options.UseFont = true;
@@ -422,7 +412,7 @@
             // 
             // cmbQualityTypeName
             // 
-            this.cmbQualityTypeName.Location = new System.Drawing.Point(488, 84);
+            this.cmbQualityTypeName.Location = new System.Drawing.Point(839, 59);
             this.cmbQualityTypeName.Name = "cmbQualityTypeName";
             this.cmbQualityTypeName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbQualityTypeName.Properties.Appearance.Options.UseFont = true;
@@ -449,7 +439,7 @@
             // txtLotNo
             // 
             this.txtLotNo.EditValue = "";
-            this.txtLotNo.Location = new System.Drawing.Point(115, 117);
+            this.txtLotNo.Location = new System.Drawing.Point(111, 29);
             this.txtLotNo.Name = "txtLotNo";
             this.txtLotNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLotNo.Properties.Appearance.Options.UseFont = true;
@@ -462,7 +452,7 @@
             // txtGrade
             // 
             this.txtGrade.EditValue = "";
-            this.txtGrade.Location = new System.Drawing.Point(488, 117);
+            this.txtGrade.Location = new System.Drawing.Point(454, 29);
             this.txtGrade.Name = "txtGrade";
             this.txtGrade.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrade.Properties.Appearance.Options.UseFont = true;
@@ -475,7 +465,7 @@
             // txtTwistShed
             // 
             this.txtTwistShed.EditValue = "";
-            this.txtTwistShed.Location = new System.Drawing.Point(115, 150);
+            this.txtTwistShed.Location = new System.Drawing.Point(792, 30);
             this.txtTwistShed.Name = "txtTwistShed";
             this.txtTwistShed.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTwistShed.Properties.Appearance.Options.UseFont = true;
@@ -485,23 +475,10 @@
             this.txtTwistShed.TabIndex = 9;
             this.txtTwistShed.ToolTip = "Enter Broker Name";
             // 
-            // txtRemarks
-            // 
-            this.txtRemarks.EditValue = "";
-            this.txtRemarks.Location = new System.Drawing.Point(115, 217);
-            this.txtRemarks.Name = "txtRemarks";
-            this.txtRemarks.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRemarks.Properties.Appearance.Options.UseFont = true;
-            this.txtRemarks.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtRemarks.Properties.Mask.EditMask = "n2";
-            this.txtRemarks.Size = new System.Drawing.Size(205, 26);
-            this.txtRemarks.TabIndex = 13;
-            this.txtRemarks.ToolTip = "Enter Broker Name";
-            // 
             // txtTaxAmount
             // 
             this.txtTaxAmount.EditValue = "";
-            this.txtTaxAmount.Location = new System.Drawing.Point(488, 184);
+            this.txtTaxAmount.Location = new System.Drawing.Point(454, 61);
             this.txtTaxAmount.Name = "txtTaxAmount";
             this.txtTaxAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaxAmount.Properties.Appearance.Options.UseFont = true;
@@ -514,7 +491,7 @@
             // txtFinalAmount
             // 
             this.txtFinalAmount.EditValue = "";
-            this.txtFinalAmount.Location = new System.Drawing.Point(488, 218);
+            this.txtFinalAmount.Location = new System.Drawing.Point(792, 62);
             this.txtFinalAmount.Name = "txtFinalAmount";
             this.txtFinalAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFinalAmount.Properties.Appearance.Options.UseFont = true;
@@ -528,7 +505,7 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl11.Location = new System.Drawing.Point(103, 56);
+            this.labelControl11.Location = new System.Drawing.Point(827, 31);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(6, 17);
             this.labelControl11.TabIndex = 209;
@@ -538,7 +515,7 @@
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl17.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl17.Location = new System.Drawing.Point(103, 85);
+            this.labelControl17.Location = new System.Drawing.Point(452, 62);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(6, 17);
             this.labelControl17.TabIndex = 210;
@@ -548,7 +525,7 @@
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl19.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl19.Location = new System.Drawing.Point(478, 87);
+            this.labelControl19.Location = new System.Drawing.Point(829, 62);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(6, 17);
             this.labelControl19.TabIndex = 212;
@@ -558,7 +535,7 @@
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl20.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl20.Location = new System.Drawing.Point(103, 116);
+            this.labelControl20.Location = new System.Drawing.Point(99, 28);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(6, 17);
             this.labelControl20.TabIndex = 211;
@@ -568,7 +545,7 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl21.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl21.Location = new System.Drawing.Point(478, 187);
+            this.labelControl21.Location = new System.Drawing.Point(444, 64);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(6, 17);
             this.labelControl21.TabIndex = 219;
@@ -578,7 +555,7 @@
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl22.Location = new System.Drawing.Point(478, 121);
+            this.labelControl22.Location = new System.Drawing.Point(444, 33);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(6, 17);
             this.labelControl22.TabIndex = 218;
@@ -588,7 +565,7 @@
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl23.Location = new System.Drawing.Point(478, 55);
+            this.labelControl23.Location = new System.Drawing.Point(101, 65);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(6, 17);
             this.labelControl23.TabIndex = 217;
@@ -598,7 +575,7 @@
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl24.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl24.Location = new System.Drawing.Point(478, 21);
+            this.labelControl24.Location = new System.Drawing.Point(454, 32);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(6, 17);
             this.labelControl24.TabIndex = 216;
@@ -608,7 +585,7 @@
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl25.Location = new System.Drawing.Point(103, 187);
+            this.labelControl25.Location = new System.Drawing.Point(99, 65);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(6, 17);
             this.labelControl25.TabIndex = 215;
@@ -618,7 +595,7 @@
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl26.Location = new System.Drawing.Point(103, 19);
+            this.labelControl26.Location = new System.Drawing.Point(99, 30);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(6, 17);
             this.labelControl26.TabIndex = 214;
@@ -626,7 +603,7 @@
             // 
             // cmbReceivedBy
             // 
-            this.cmbReceivedBy.Location = new System.Drawing.Point(488, 150);
+            this.cmbReceivedBy.Location = new System.Drawing.Point(111, 93);
             this.cmbReceivedBy.Name = "cmbReceivedBy";
             this.cmbReceivedBy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbReceivedBy.Properties.Appearance.Options.UseFont = true;
@@ -653,7 +630,7 @@
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Location = new System.Drawing.Point(348, 154);
+            this.labelControl15.Location = new System.Drawing.Point(8, 97);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(77, 17);
             this.labelControl15.TabIndex = 221;
@@ -713,7 +690,7 @@
             // 
             // cmbTaxType
             // 
-            this.cmbTaxType.Location = new System.Drawing.Point(115, 183);
+            this.cmbTaxType.Location = new System.Drawing.Point(111, 61);
             this.cmbTaxType.Name = "cmbTaxType";
             this.cmbTaxType.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
             this.cmbTaxType.Properties.Appearance.Options.UseFont = true;
@@ -737,16 +714,224 @@
             this.cmbTaxType.Size = new System.Drawing.Size(205, 26);
             this.cmbTaxType.TabIndex = 11;
             // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.txtBillNumber);
+            this.groupControl1.Controls.Add(this.labelControl14);
+            this.groupControl1.Controls.Add(this.cmbChallanNumber);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.labelControl26);
+            this.groupControl1.Controls.Add(this.labelControl24);
+            this.groupControl1.Controls.Add(this.labelControl23);
+            this.groupControl1.Controls.Add(this.labelControl19);
+            this.groupControl1.Controls.Add(this.dpBillDate);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.labelControl17);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Controls.Add(this.cmbPartyName);
+            this.groupControl1.Controls.Add(this.labelControl11);
+            this.groupControl1.Controls.Add(this.cmbBrokerName);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.cmbQualityTypeName);
+            this.groupControl1.Location = new System.Drawing.Point(12, 6);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(1077, 101);
+            this.groupControl1.TabIndex = 222;
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.txtRemarks);
+            this.groupControl2.Controls.Add(this.labelControl18);
+            this.groupControl2.Controls.Add(this.txtLotNo);
+            this.groupControl2.Controls.Add(this.labelControl3);
+            this.groupControl2.Controls.Add(this.txtFinalAmount);
+            this.groupControl2.Controls.Add(this.cmbTaxType);
+            this.groupControl2.Controls.Add(this.labelControl16);
+            this.groupControl2.Controls.Add(this.labelControl21);
+            this.groupControl2.Controls.Add(this.labelControl10);
+            this.groupControl2.Controls.Add(this.labelControl8);
+            this.groupControl2.Controls.Add(this.labelControl25);
+            this.groupControl2.Controls.Add(this.labelControl15);
+            this.groupControl2.Controls.Add(this.txtGrade);
+            this.groupControl2.Controls.Add(this.txtTaxAmount);
+            this.groupControl2.Controls.Add(this.cmbReceivedBy);
+            this.groupControl2.Controls.Add(this.labelControl20);
+            this.groupControl2.Controls.Add(this.labelControl13);
+            this.groupControl2.Controls.Add(this.labelControl22);
+            this.groupControl2.Controls.Add(this.txtTwistShed);
+            this.groupControl2.Controls.Add(this.labelControl12);
+            this.groupControl2.Controls.Add(this.labelControl5);
+            this.groupControl2.Controls.Add(this.labelControl6);
+            this.groupControl2.Location = new System.Drawing.Point(12, 325);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(1077, 201);
+            this.groupControl2.TabIndex = 223;
+            // 
+            // txtRemarks
+            // 
+            this.txtRemarks.Location = new System.Drawing.Point(454, 93);
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtRemarks.Size = new System.Drawing.Size(543, 96);
+            this.txtRemarks.TabIndex = 223;
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl18.Location = new System.Drawing.Point(101, 96);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(6, 17);
+            this.labelControl18.TabIndex = 222;
+            this.labelControl18.Text = "*";
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridControl1.Location = new System.Drawing.Point(12, 146);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1077, 173);
+            this.gridControl1.TabIndex = 270;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.Id,
+            this.SrNo,
+            this.PurchaseId,
+            this.BoxNoPlatNo,
+            this.Chese,
+            this.GrossWeight,
+            this.TareWeight,
+            this.NetWeight,
+            this.Rate,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // Id
+            // 
+            this.Id.Caption = "Id";
+            this.Id.FieldName = "Id";
+            this.Id.Name = "Id";
+            // 
+            // SrNo
+            // 
+            this.SrNo.Caption = "Sr. No";
+            this.SrNo.FieldName = "SrNo";
+            this.SrNo.Name = "SrNo";
+            this.SrNo.Visible = true;
+            this.SrNo.VisibleIndex = 0;
+            this.SrNo.Width = 50;
+            // 
+            // PurchaseId
+            // 
+            this.PurchaseId.Caption = "Purchase No.";
+            this.PurchaseId.FieldName = "PurchaseId";
+            this.PurchaseId.Name = "PurchaseId";
+            this.PurchaseId.Visible = true;
+            this.PurchaseId.VisibleIndex = 1;
+            this.PurchaseId.Width = 100;
+            // 
+            // BoxNoPlatNo
+            // 
+            this.BoxNoPlatNo.Caption = "Box/ Plat No.";
+            this.BoxNoPlatNo.FieldName = "BoxNoPlatNo";
+            this.BoxNoPlatNo.Name = "BoxNoPlatNo";
+            this.BoxNoPlatNo.Visible = true;
+            this.BoxNoPlatNo.VisibleIndex = 2;
+            this.BoxNoPlatNo.Width = 120;
+            // 
+            // Chese
+            // 
+            this.Chese.Caption = "Chese";
+            this.Chese.FieldName = "Chese";
+            this.Chese.Name = "Chese";
+            this.Chese.Visible = true;
+            this.Chese.VisibleIndex = 3;
+            this.Chese.Width = 120;
+            // 
+            // GrossWeight
+            // 
+            this.GrossWeight.Caption = "Gross Weight";
+            this.GrossWeight.FieldName = "GrossWeight";
+            this.GrossWeight.Name = "GrossWeight";
+            this.GrossWeight.Visible = true;
+            this.GrossWeight.VisibleIndex = 4;
+            this.GrossWeight.Width = 120;
+            // 
+            // TareWeight
+            // 
+            this.TareWeight.Caption = "Tare Weight";
+            this.TareWeight.FieldName = "TareWeight";
+            this.TareWeight.Name = "TareWeight";
+            this.TareWeight.Visible = true;
+            this.TareWeight.VisibleIndex = 5;
+            // 
+            // NetWeight
+            // 
+            this.NetWeight.Caption = "Net Weight";
+            this.NetWeight.FieldName = "NetWeight";
+            this.NetWeight.Name = "NetWeight";
+            this.NetWeight.Visible = true;
+            this.NetWeight.VisibleIndex = 6;
+            // 
+            // Rate
+            // 
+            this.Rate.Caption = "Rate";
+            this.Rate.FieldName = "Rate";
+            this.Rate.Name = "Rate";
+            this.Rate.Visible = true;
+            this.Rate.VisibleIndex = 7;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "gridColumn4";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 8;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "gridColumn5";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 9;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "gridColumn6";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 10;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(12, 111);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(103, 31);
+            this.btnAdd.TabIndex = 306;
+            this.btnAdd.Text = "&Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // frmYarnPurchaseReturn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(846, 260);
+            this.ClientSize = new System.Drawing.Size(1223, 529);
             this.Name = "frmYarnPurchaseReturn";
             this.Text = "Yarn Purchase Return";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtBillNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBillDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBillDate.Properties)).EndInit();
@@ -757,7 +942,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtLotNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTwistShed.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAmount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFinalAmount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbReceivedBy.Properties)).EndInit();
@@ -775,6 +959,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorReceivedBy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorTaxAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTaxType.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -806,7 +999,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.TextEdit txtFinalAmount;
         private DevExpress.XtraEditors.TextEdit txtTaxAmount;
-        private DevExpress.XtraEditors.TextEdit txtRemarks;
         private DevExpress.XtraEditors.TextEdit txtTwistShed;
         private DevExpress.XtraEditors.TextEdit txtGrade;
         private DevExpress.XtraEditors.TextEdit txtLotNo;
@@ -833,5 +1025,24 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorGrade;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorReceivedBy;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider errorTaxAmount;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.MemoEdit txtRemarks;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn Id;
+        private DevExpress.XtraGrid.Columns.GridColumn SrNo;
+        private DevExpress.XtraGrid.Columns.GridColumn PurchaseId;
+        private DevExpress.XtraGrid.Columns.GridColumn BoxNoPlatNo;
+        private DevExpress.XtraGrid.Columns.GridColumn Chese;
+        private DevExpress.XtraGrid.Columns.GridColumn GrossWeight;
+        private DevExpress.XtraGrid.Columns.GridColumn TareWeight;
+        private DevExpress.XtraGrid.Columns.GridColumn NetWeight;
+        private DevExpress.XtraGrid.Columns.GridColumn Rate;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        public DevExpress.XtraEditors.SimpleButton btnAdd;
     }
 }

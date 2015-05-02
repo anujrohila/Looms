@@ -14,5 +14,15 @@ namespace LoomsManagement.Windows.Forms.Returns
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddPurchaseReturnItem objPurchaseItem = new frmAddPurchaseReturnItem();
+            objPurchaseItem.ShowDialog();
+        }
+
+       
+
+      
     }
 }
