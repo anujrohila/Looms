@@ -19,7 +19,7 @@ namespace LoomsManagement.Windows.Forms.Account
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserContext.GetALLtblCompanyDTO();
+           // UserContext.GetALLtblCompanyDTO();
             var dashboard = new Dashboard();
            
             dashboard.Show();
