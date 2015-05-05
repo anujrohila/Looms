@@ -1,0 +1,2954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LoomsManagementModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="LoomsManagementModelStoreContainer">
+          <EntitySet Name="tblAttendanceMST" EntityType="LoomsManagementModel.Store.tblAttendanceMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBankMST" EntityType="LoomsManagementModel.Store.tblBankMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBeamMST" EntityType="LoomsManagementModel.Store.tblBeamMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBeemProcess" EntityType="LoomsManagementModel.Store.tblBeemProcess" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBemProcessDetails" EntityType="LoomsManagementModel.Store.tblBemProcessDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBoilerProcess" EntityType="LoomsManagementModel.Store.tblBoilerProcess" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBolierProcessDetails" EntityType="LoomsManagementModel.Store.tblBolierProcessDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBranchMST" EntityType="LoomsManagementModel.Store.tblBranchMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBrokersMST" EntityType="LoomsManagementModel.Store.tblBrokersMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCompany" EntityType="LoomsManagementModel.Store.tblCompany" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCompanyMachineMST" EntityType="LoomsManagementModel.Store.tblCompanyMachineMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblEmployee" EntityType="LoomsManagementModel.Store.tblEmployee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblEmployeeTypeMST" EntityType="LoomsManagementModel.Store.tblEmployeeTypeMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblFiscalYear" EntityType="LoomsManagementModel.Store.tblFiscalYear" store:Type="Tables" store:Schema="dbo" store:Name="tblFiscalYear">
+            <DefiningQuery>SELECT 
+      [tblFiscalYear].[FiscalYearId] AS [FiscalYearId], 
+      [tblFiscalYear].[FiscalName] AS [FiscalName], 
+      [tblFiscalYear].[StartDate] AS [StartDate], 
+      [tblFiscalYear].[EndDate] AS [EndDate], 
+      [tblFiscalYear].[IsActive] AS [IsActive], 
+      [tblFiscalYear].[IsDelete] AS [IsDelete], 
+      [tblFiscalYear].[CreatedBy] AS [CreatedBy], 
+      [tblFiscalYear].[CreatedDateTime] AS [CreatedDateTime], 
+      [tblFiscalYear].[UpdatedBy] AS [UpdatedBy], 
+      [tblFiscalYear].[UpdatedDateTime] AS [UpdatedDateTime]
+      FROM [dbo].[tblFiscalYear] AS [tblFiscalYear]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tblLoomProcess" EntityType="LoomsManagementModel.Store.tblLoomProcess" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblLoomProcessWork" EntityType="LoomsManagementModel.Store.tblLoomProcessWork" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMachineMST" EntityType="LoomsManagementModel.Store.tblMachineMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMachineTypeMST" EntityType="LoomsManagementModel.Store.tblMachineTypeMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMandingProcess" EntityType="LoomsManagementModel.Store.tblMandingProcess" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMendingDetailsProcess" EntityType="LoomsManagementModel.Store.tblMendingDetailsProcess" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMendingPenulty" EntityType="LoomsManagementModel.Store.tblMendingPenulty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblPartysMST" EntityType="LoomsManagementModel.Store.tblPartysMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblPenaltyMST" EntityType="LoomsManagementModel.Store.tblPenaltyMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblProductQualityMST" EntityType="LoomsManagementModel.Store.tblProductQualityMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblProfeListMst" EntityType="LoomsManagementModel.Store.tblProfeListMst" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblSalaryMST" EntityType="LoomsManagementModel.Store.tblSalaryMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblTFOProcess" EntityType="LoomsManagementModel.Store.tblTFOProcess" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblWindingWork" EntityType="LoomsManagementModel.Store.tblWindingWork" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblWithdrownMST" EntityType="LoomsManagementModel.Store.tblWithdrownMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblWorkingYear" EntityType="LoomsManagementModel.Store.tblWorkingYear" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblYarnPackageType" EntityType="LoomsManagementModel.Store.tblYarnPackageType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblYarnPurchase" EntityType="LoomsManagementModel.Store.tblYarnPurchase" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblYarnPurchaseItems" EntityType="LoomsManagementModel.Store.tblYarnPurchaseItems" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblYarnQualityMST" EntityType="LoomsManagementModel.Store.tblYarnQualityMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblYarnTypeMST" EntityType="LoomsManagementModel.Store.tblYarnTypeMST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WithdrownReturnMST" EntityType="LoomsManagementModel.Store.WithdrownReturnMST" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_tblAttendanceMST_tblEmployee" Association="LoomsManagementModel.Store.FK_tblAttendanceMST_tblEmployee">
+            <End Role="tblEmployee" EntitySet="tblEmployee" />
+            <End Role="tblAttendanceMST" EntitySet="tblAttendanceMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBeamMST_tblBeamMST" Association="LoomsManagementModel.Store.FK_tblBeamMST_tblBeamMST">
+            <End Role="tblBeamMST" EntitySet="tblBeamMST" />
+            <End Role="tblBeamMST1" EntitySet="tblBeamMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBemProcessDetails_tblBeemProcess" Association="LoomsManagementModel.Store.FK_tblBemProcessDetails_tblBeemProcess">
+            <End Role="tblBeemProcess" EntitySet="tblBeemProcess" />
+            <End Role="tblBemProcessDetails" EntitySet="tblBemProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBemProcessDetails_tblBoilerProcess" Association="LoomsManagementModel.Store.FK_tblBemProcessDetails_tblBoilerProcess">
+            <End Role="tblBoilerProcess" EntitySet="tblBoilerProcess" />
+            <End Role="tblBemProcessDetails" EntitySet="tblBemProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBemProcessDetails_tblTFOProcess" Association="LoomsManagementModel.Store.FK_tblBemProcessDetails_tblTFOProcess">
+            <End Role="tblTFOProcess" EntitySet="tblTFOProcess" />
+            <End Role="tblBemProcessDetails" EntitySet="tblBemProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBolierProcessDetails_tblBoilerProcess" Association="LoomsManagementModel.Store.FK_tblBolierProcessDetails_tblBoilerProcess">
+            <End Role="tblBoilerProcess" EntitySet="tblBoilerProcess" />
+            <End Role="tblBolierProcessDetails" EntitySet="tblBolierProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBolierProcessDetails_tblTFOProcess" Association="LoomsManagementModel.Store.FK_tblBolierProcessDetails_tblTFOProcess">
+            <End Role="tblTFOProcess" EntitySet="tblTFOProcess" />
+            <End Role="tblBolierProcessDetails" EntitySet="tblBolierProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBranchMST_tblBankMST" Association="LoomsManagementModel.Store.FK_tblBranchMST_tblBankMST">
+            <End Role="tblBankMST" EntitySet="tblBankMST" />
+            <End Role="tblBranchMST" EntitySet="tblBranchMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompanyMachine_tblCompany" Association="LoomsManagementModel.Store.FK_tblCompanyMachine_tblCompany">
+            <End Role="tblCompany" EntitySet="tblCompany" />
+            <End Role="tblCompanyMachineMST" EntitySet="tblCompanyMachineMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompanyMachine_tblMachine" Association="LoomsManagementModel.Store.FK_tblCompanyMachine_tblMachine">
+            <End Role="tblMachineMST" EntitySet="tblMachineMST" />
+            <End Role="tblCompanyMachineMST" EntitySet="tblCompanyMachineMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblEmployee_tblEmployeeType" Association="LoomsManagementModel.Store.FK_tblEmployee_tblEmployeeType">
+            <End Role="tblEmployeeTypeMST" EntitySet="tblEmployeeTypeMST" />
+            <End Role="tblEmployee" EntitySet="tblEmployee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblSalaryMST_tblEmployee" Association="LoomsManagementModel.Store.FK_tblSalaryMST_tblEmployee">
+            <End Role="tblEmployee" EntitySet="tblEmployee" />
+            <End Role="tblSalaryMST" EntitySet="tblSalaryMST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTFOProcess_tblWindingWork" Association="LoomsManagementModel.Store.FK_tblTFOProcess_tblWindingWork">
+            <End Role="tblWindingWork" EntitySet="tblWindingWork" />
+            <End Role="tblTFOProcess" EntitySet="tblTFOProcess" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblWindingWork_tblYarnPurchaseItems" Association="LoomsManagementModel.Store.FK_tblWindingWork_tblYarnPurchaseItems">
+            <End Role="tblYarnPurchaseItems" EntitySet="tblYarnPurchaseItems" />
+            <End Role="tblWindingWork" EntitySet="tblWindingWork" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnMST" Association="LoomsManagementModel.Store.FK_tblYarnPurchaseItems_tblYarnMST">
+            <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMST" />
+            <End Role="tblYarnPurchaseItems" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnPackageType" Association="LoomsManagementModel.Store.FK_tblYarnPurchaseItems_tblYarnPackageType">
+            <End Role="tblYarnPackageType" EntitySet="tblYarnPackageType" />
+            <End Role="tblYarnPurchaseItems" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnPurchase" Association="LoomsManagementModel.Store.FK_tblYarnPurchaseItems_tblYarnPurchase">
+            <End Role="tblYarnPurchase" EntitySet="tblYarnPurchase" />
+            <End Role="tblYarnPurchaseItems" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnQualityMST" Association="LoomsManagementModel.Store.FK_tblYarnPurchaseItems_tblYarnQualityMST">
+            <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMST" />
+            <End Role="tblYarnPurchaseItems" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnTypeMST" Association="LoomsManagementModel.Store.FK_tblYarnPurchaseItems_tblYarnTypeMST">
+            <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMST" />
+            <End Role="tblYarnPurchaseItems" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnTypeMST_tblYarnQualityMST" Association="LoomsManagementModel.Store.FK_tblYarnTypeMST_tblYarnQualityMST">
+            <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMST" />
+            <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMST" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tblAttendanceMST">
+          <Key>
+            <PropertyRef Name="AttendanceID" />
+          </Key>
+          <Property Name="AttendanceID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="MeterWorked" Type="float" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBankMST">
+          <Key>
+            <PropertyRef Name="BankID" />
+          </Key>
+          <Property Name="BankID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BankName" Type="varchar" MaxLength="50" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBeamMST">
+          <Key>
+            <PropertyRef Name="BeemID" />
+          </Key>
+          <Property Name="BeemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="BeamNo" Type="varchar" MaxLength="50" />
+          <Property Name="WrapperPartyID" Type="bigint" />
+          <Property Name="JobberPartyName" Type="bigint" />
+          <Property Name="BeemDate" Type="date" />
+          <Property Name="YarnQualityID" Type="bigint" />
+          <Property Name="GrayQualityId" Type="bigint" />
+          <Property Name="LotNo" Type="varchar" MaxLength="50" />
+          <Property Name="NoofTar" Type="int" />
+          <Property Name="Meters" Type="float" />
+          <Property Name="Taka" Type="int" />
+          <Property Name="GrossWeight" Type="float" />
+          <Property Name="NetWeight" Type="float" />
+          <Property Name="LoadingDate" Type="date" />
+          <Property Name="BhidanStatus" Type="bit" />
+          <Property Name="BhidanDate" Type="date" />
+          <Property Name="PasaraiEmployeeId" Type="int" />
+          <Property Name="ProductionMeters" Type="float" />
+          <Property Name="ProductionTaka" Type="int" />
+          <Property Name="PipeWeight" Type="float" />
+          <Property Name="MinStrategy" Type="float" />
+          <Property Name="MachineId" Type="bigint" />
+          <Property Name="Remarks" Type="varchar" MaxLength="100" />
+          <Property Name="IssueDate" Type="date" />
+          <Property Name="TakaMeter" Type="bit" />
+          <Property Name="Rate" Type="float" />
+          <Property Name="Amount" Type="float" />
+          <Property Name="MeterConsumption" Type="float" />
+          <Property Name="RPM" Type="float" />
+          <Property Name="Pick" Type="float" />
+          <Property Name="My" Type="float" />
+          <Property Name="FinalAmount" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBeemProcess">
+          <Key>
+            <PropertyRef Name="BeemProcessID" />
+          </Key>
+          <Property Name="BeemProcessID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MachineID" Type="bigint" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="Shift" Type="varchar" MaxLength="50" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBemProcessDetails">
+          <Key>
+            <PropertyRef Name="BemProcessDetailsID" />
+          </Key>
+          <Property Name="BemProcessDetailsID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BemProcessID" Type="bigint" />
+          <Property Name="TFORoleProcessID" Type="bigint" />
+          <Property Name="IssueNoOFCopes" Type="int" />
+          <Property Name="IssueWeights" Type="float" />
+          <Property Name="YarnQualityID" Type="bigint" />
+          <Property Name="YarnTypeID" Type="bigint" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBoilerProcess">
+          <Key>
+            <PropertyRef Name="BolierProcessID" />
+          </Key>
+          <Property Name="BolierProcessID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MachineID" Type="bigint" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="Shift" Type="varchar" MaxLength="50" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="Tempreture" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+          <Property Name="CreationDateTIme" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBolierProcessDetails">
+          <Key>
+            <PropertyRef Name="BoilerProcessDetailsID" />
+          </Key>
+          <Property Name="BoilerProcessDetailsID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BoilerProcessID" Type="bigint" />
+          <Property Name="TFORoleProcessID" Type="bigint" />
+          <Property Name="IssueNoOfTFORoles" Type="int" />
+          <Property Name="IssueWeights" Type="float" />
+          <Property Name="YarnQualityID" Type="bigint" />
+          <Property Name="YarnTypeID" Type="bigint" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblBranchMST">
+          <Key>
+            <PropertyRef Name="BranchID" />
+          </Key>
+          <Property Name="BranchID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchName" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="1000" />
+          <Property Name="BankID" Type="bigint" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBrokersMST">
+          <Key>
+            <PropertyRef Name="BrokerID" />
+          </Key>
+          <Property Name="BrokerID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BrokerName" Type="varchar" MaxLength="50" />
+          <Property Name="BrokerFirmName" Type="varchar" MaxLength="500" />
+          <Property Name="Address" Type="varchar" MaxLength="500" />
+          <Property Name="ContactNo" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+          <Property Name="DealingIn" Type="varchar" MaxLength="500" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblCompany">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompanyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="100" />
+          <Property Name="ComapnyCode" Type="varchar" MaxLength="10" />
+          <Property Name="OwnerName" Type="varchar" MaxLength="50" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="Address" Type="varchar" MaxLength="500" />
+          <Property Name="ContactPersonName" Type="varchar" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="InvestmentAmount" Type="float" />
+          <Property Name="PANNo" Type="varchar" MaxLength="50" />
+          <Property Name="CSTNo" Type="varchar" MaxLength="50" />
+          <Property Name="ECCNo" Type="varchar" MaxLength="50" />
+          <Property Name="SMSNO" Type="varchar" MaxLength="15" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblCompanyMachineMST">
+          <Key>
+            <PropertyRef Name="RowId" />
+          </Key>
+          <Property Name="RowId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MachineId" Type="bigint" Nullable="false" />
+          <Property Name="CompanyId" Type="bigint" Nullable="false" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblEmployee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="EmployeeTypeID" Type="bigint" />
+          <Property Name="EmployeeCode" Type="varchar" MaxLength="50" />
+          <Property Name="JobTitle" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="ResidentialAddress" Type="varchar" MaxLength="500" />
+          <Property Name="PermanentAddress" Type="varchar" MaxLength="500" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+          <Property Name="EmailID" Type="varchar" MaxLength="100" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="Gender" Type="varchar" MaxLength="50" />
+          <Property Name="IDProfe" Type="varchar" MaxLength="200" />
+          <Property Name="IDProfeNo" Type="varchar" MaxLength="100" />
+          <Property Name="Photo" Type="image" />
+          <Property Name="JoinDate" Type="date" />
+          <Property Name="LeaveDate" Type="date" />
+          <Property Name="SponsorsID" Type="int" />
+          <Property Name="Shift" Type="varchar" MaxLength="50" />
+          <Property Name="Salary" Type="float" />
+          <Property Name="PerDayWorkingHours" Type="float" />
+          <Property Name="PerHourSalary" Type="float" />
+          <Property Name="PaymentType" Type="bit" />
+          <Property Name="BankName" Type="varchar" MaxLength="100" />
+          <Property Name="BranchName" Type="varchar" MaxLength="100" />
+          <Property Name="AccountNo" Type="varchar" MaxLength="30" />
+          <Property Name="RTGSNo" Type="varchar" MaxLength="20" />
+          <Property Name="IFSCCode" Type="varchar" MaxLength="20" />
+          <Property Name="OpeningBalance" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBY" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblEmployeeTypeMST">
+          <Key>
+            <PropertyRef Name="EmployeeTypeID" />
+          </Key>
+          <Property Name="EmployeeTypeID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'LoomsManagement.dbo.tblFiscalYear' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="tblFiscalYear">
+          <Key>
+            <PropertyRef Name="FiscalYearId" />
+            <PropertyRef Name="FiscalName" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="EndDate" />
+          </Key>
+          <Property Name="FiscalYearId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FiscalName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" Nullable="false" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblLoomProcess">
+          <Key>
+            <PropertyRef Name="LoomProcessID" />
+          </Key>
+          <Property Name="LoomProcessID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BeemProcessID" Type="bigint" />
+          <Property Name="MachineID" Type="bigint" />
+          <Property Name="NoofTFORole" Type="float" />
+          <Property Name="CreatoinDateTime" Type="datetime" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblLoomProcessWork">
+          <Key>
+            <PropertyRef Name="LoomProcessWorkID" />
+          </Key>
+          <Property Name="LoomProcessWorkID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoomProcessID" Type="bigint" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="WorkingDate" Type="date" />
+          <Property Name="StartTime" Type="time" />
+          <Property Name="EndTime" Type="time" />
+          <Property Name="Shift" Type="varchar" MaxLength="50" />
+          <Property Name="MTRStart" Type="float" />
+          <Property Name="MTREnd" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblMachineMST">
+          <Key>
+            <PropertyRef Name="MachineID" />
+          </Key>
+          <Property Name="MachineID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MachineName" Type="varchar" MaxLength="50" />
+          <Property Name="MachineTypeID" Type="bigint" />
+          <Property Name="AboutMachine" Type="varchar" MaxLength="50" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblMachineTypeMST">
+          <Key>
+            <PropertyRef Name="MachineTypeID" />
+          </Key>
+          <Property Name="MachineTypeID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblMandingProcess">
+          <Key>
+            <PropertyRef Name="MendingID" />
+          </Key>
+          <Property Name="MendingID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TakaNo" Type="int" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="Grade" Type="varchar" MaxLength="5" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="TotalMeter" Type="float" />
+          <Property Name="TotalNoOfFaults" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblMendingDetailsProcess">
+          <Key>
+            <PropertyRef Name="MendingDetailsID" />
+          </Key>
+          <Property Name="MendingDetailsID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MendingID" Type="bigint" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="StartMeter" Type="float" />
+          <Property Name="EndMeter" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblMendingPenulty">
+          <Key>
+            <PropertyRef Name="MendingPenultyID" />
+          </Key>
+          <Property Name="MendingPenultyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="PenultyID" Type="bigint" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblPartysMST">
+          <Key>
+            <PropertyRef Name="PartyID" />
+          </Key>
+          <Property Name="PartyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyCode" Type="int" />
+          <Property Name="PartyName" Type="varchar" MaxLength="50" />
+          <Property Name="ContactPersonName" Type="varchar" MaxLength="15" />
+          <Property Name="OfficeAddress" Type="varchar" MaxLength="200" />
+          <Property Name="ShippingAddress" Type="varchar" MaxLength="200" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="15" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="15" />
+          <Property Name="SMSNo" Type="varchar" MaxLength="15" />
+          <Property Name="ReferencePersonName" Type="varchar" MaxLength="100" />
+          <Property Name="ReferencePersonMobileNo" Type="varchar" MaxLength="15" />
+          <Property Name="EmailID" Type="varchar" MaxLength="100" />
+          <Property Name="ExtraDetails" Type="varchar" MaxLength="500" />
+          <Property Name="TINNo" Type="varchar" MaxLength="50" />
+          <Property Name="TINDate" Type="date" />
+          <Property Name="PANNO" Type="varchar" MaxLength="50" />
+          <Property Name="CSTTINNo" Type="varchar" MaxLength="50" />
+          <Property Name="CSTDate" Type="date" />
+          <Property Name="ECCNo" Type="varchar" MaxLength="50" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBye" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTIme" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblPenaltyMST">
+          <Key>
+            <PropertyRef Name="PenaltyID" />
+          </Key>
+          <Property Name="PenaltyID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PenaltyCode" Type="varchar" MaxLength="10" />
+          <Property Name="PenaltyName" Type="varchar" MaxLength="200" />
+          <Property Name="Description" Type="text" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblProductQualityMST">
+          <Key>
+            <PropertyRef Name="ProductQualityID" />
+          </Key>
+          <Property Name="ProductQualityID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductQualityName" Type="varchar" MaxLength="50" />
+          <Property Name="WARPDenierAfterTPM" Type="float" />
+          <Property Name="WARPNumberOfFilaments" Type="int" />
+          <Property Name="WARPYarnQualityID" Type="int" />
+          <Property Name="WARPYarnTypeID" Type="int" />
+          <Property Name="WARPDirectionOfTwistS" Type="varchar" MaxLength="50" />
+          <Property Name="WARPDirectionOfTwistZ" Type="varchar" MaxLength="50" />
+          <Property Name="WARPTwistPerMeterS" Type="int" />
+          <Property Name="WARPTwistPerMeterZ" Type="int" />
+          <Property Name="WEFTDenierAfterTPM" Type="float" />
+          <Property Name="WEFTNumberOfFilaments1" Type="int" />
+          <Property Name="WEFTYarnQualityID" Type="int" />
+          <Property Name="WEFTYarnTypeID" Type="int" />
+          <Property Name="WEFTDirectionOfTwistS" Type="varchar" MaxLength="50" />
+          <Property Name="WEFTDirectionOfTwistZ" Type="varchar" MaxLength="50" />
+          <Property Name="WEFTTwistPerMeterS" Type="int" />
+          <Property Name="WEFTTwistPerMeterZ" Type="int" />
+          <Property Name="ApproxTotalEndsWithBorder" Type="int" />
+          <Property Name="ReedOnLoom" Type="float" />
+          <Property Name="PickOnLoom" Type="float" />
+          <Property Name="Border" Type="float" />
+          <Property Name="HeatSetting" Type="varchar" MaxLength="50" />
+          <Property Name="WeightOfFabricWARP" Type="float" />
+          <Property Name="WeightOfFabricWEFT" Type="float" />
+          <Property Name="TotalWeight" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblProfeListMst">
+          <Key>
+            <PropertyRef Name="ProfeID" />
+          </Key>
+          <Property Name="ProfeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdateDateTime" Type="datetime" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblSalaryMST">
+          <Key>
+            <PropertyRef Name="SalaryID" />
+          </Key>
+          <Property Name="SalaryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="EndDate" Type="date" />
+          <Property Name="WorkedHours" Type="float" />
+          <Property Name="TotalPenalty" Type="float" />
+          <Property Name="Bonus" Type="float" />
+          <Property Name="WithdrownAmount" Type="float" />
+          <Property Name="WithdrownID" Type="bigint" />
+          <Property Name="NetSalary" Type="float" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblTFOProcess">
+          <Key>
+            <PropertyRef Name="TFORoleProcessId" />
+          </Key>
+          <Property Name="TFORoleProcessId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="WindingProcessId" Type="int" />
+          <Property Name="PurchaseItemID" Type="int" />
+          <Property Name="MachineId" Type="int" />
+          <Property Name="EmployeeId" Type="int" />
+          <Property Name="Shift" Type="varchar" MaxLength="50" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="IssueNoOfCopes" Type="int" />
+          <Property Name="IssueWights" Type="float" />
+          <Property Name="NoofTFORole" Type="float" />
+          <Property Name="ProducttionNoOfTFORoles" Type="int" />
+          <Property Name="ProducttionWights" Type="float" />
+          <Property Name="QualityName" Type="varchar" MaxLength="50" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="YarnQualityId" Type="int" />
+          <Property Name="YarnTypeId" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+          <Property Name="CreationDateTIme" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblWindingWork">
+          <Key>
+            <PropertyRef Name="WindingProcessId" />
+          </Key>
+          <Property Name="WindingProcessId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MachineId" Type="int" />
+          <Property Name="EmployeeId" Type="int" />
+          <Property Name="PuchaseItemId" Type="bigint" />
+          <Property Name="Shift" Type="varchar" MaxLength="50" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="TotalIssueWeight" Type="float" />
+          <Property Name="WastedWeight" Type="float" />
+          <Property Name="ProductionWeight" Type="float" />
+          <Property Name="NoOfCopes" Type="int" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="YarnQualityId" Type="int" />
+          <Property Name="YarnTypeId" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+          <Property Name="CreationDateTIme" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblWithdrownMST">
+          <Key>
+            <PropertyRef Name="WithdrownID" />
+          </Key>
+          <Property Name="WithdrownID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="Remarks" Type="varchar" MaxLength="100" />
+          <Property Name="WithdrownAmount" Type="float" />
+          <Property Name="WithdrownDate" Type="datetime" />
+          <Property Name="ReturnDate" Type="datetime" />
+          <Property Name="ISStatus" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblWorkingYear">
+          <Key>
+            <PropertyRef Name="YearID" />
+          </Key>
+          <Property Name="YearID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="YearName" Type="varchar" MaxLength="50" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblYarnPackageType">
+          <Key>
+            <PropertyRef Name="YarnPackageTypeID" />
+          </Key>
+          <Property Name="YarnPackageTypeID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="varchar" MaxLength="50" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblYarnPurchase">
+          <Key>
+            <PropertyRef Name="PurchaseID" />
+          </Key>
+          <Property Name="PurchaseID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SRNo" Type="int" />
+          <Property Name="CompanyID" Type="bigint" />
+          <Property Name="PartyID" Type="bigint" Nullable="false" />
+          <Property Name="BrokerID" Type="bigint" />
+          <Property Name="YearID" Type="bigint" />
+          <Property Name="PurchaseDate" Type="date" />
+          <Property Name="ChallanNo" Type="varchar" MaxLength="100" />
+          <Property Name="LRNo" Type="varchar" MaxLength="50" />
+          <Property Name="RecieveAt" Type="varchar" MaxLength="50" />
+          <Property Name="Grade" Type="varchar" MaxLength="50" />
+          <Property Name="EmployeeId" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpDatedDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblYarnPurchaseItems">
+          <Key>
+            <PropertyRef Name="PurchaseItemID" />
+          </Key>
+          <Property Name="PurchaseItemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PurchaseID" Type="bigint" />
+          <Property Name="YarnID" Type="bigint" />
+          <Property Name="YarnPackageTypeID" Type="bigint" />
+          <Property Name="PurchaseDate" Type="date" />
+          <Property Name="BoxNo" Type="varchar" MaxLength="50" />
+          <Property Name="GrossWeight" Type="float" />
+          <Property Name="TareWeight" Type="float" />
+          <Property Name="NetWeight" Type="float" />
+          <Property Name="Cheese" Type="float" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="YarnQualityID" Type="bigint" />
+          <Property Name="YarnTypeID" Type="bigint" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+          <Property Name="CreationDateTIme" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblYarnQualityMST">
+          <Key>
+            <PropertyRef Name="YarnQualityID" />
+          </Key>
+          <Property Name="YarnQualityID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="YarnQualityName" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblYarnTypeMST">
+          <Key>
+            <PropertyRef Name="YarnTypeID" />
+          </Key>
+          <Property Name="YarnTypeID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="YarnTypeName" Type="varchar" MaxLength="50" />
+          <Property Name="YarnQualityID" Type="bigint" />
+          <Property Name="Denier" Type="varchar" MaxLength="50" />
+          <Property Name="NumberOfFilaments" Type="int" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+          <Property Name="CreationDateTIme" Type="datetime" />
+        </EntityType>
+        <EntityType Name="WithdrownReturnMST">
+          <Key>
+            <PropertyRef Name="WithdrownReturnID" />
+          </Key>
+          <Property Name="WithdrownReturnID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="date" />
+          <Property Name="EmployeeID" Type="bigint" />
+          <Property Name="ReturnType" Type="int" />
+          <Property Name="SalaryID" Type="bigint" />
+          <Property Name="Amount" Type="float" />
+          <Property Name="Remark" Type="varchar" MaxLength="100" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreateBy" Type="int" />
+          <Property Name="CreationDateTime" Type="datetime" />
+          <Property Name="UpdateBy" Type="int" />
+          <Property Name="UpdationDateTime" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_tblAttendanceMST_tblEmployee">
+          <End Role="tblEmployee" Type="LoomsManagementModel.Store.tblEmployee" Multiplicity="0..1" />
+          <End Role="tblAttendanceMST" Type="LoomsManagementModel.Store.tblAttendanceMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="tblAttendanceMST">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBeamMST_tblBeamMST">
+          <End Role="tblBeamMST" Type="LoomsManagementModel.Store.tblBeamMST" Multiplicity="1" />
+          <End Role="tblBeamMST1" Type="LoomsManagementModel.Store.tblBeamMST" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblBeamMST">
+              <PropertyRef Name="BeemID" />
+            </Principal>
+            <Dependent Role="tblBeamMST1">
+              <PropertyRef Name="BeemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBemProcessDetails_tblBeemProcess">
+          <End Role="tblBeemProcess" Type="LoomsManagementModel.Store.tblBeemProcess" Multiplicity="0..1" />
+          <End Role="tblBemProcessDetails" Type="LoomsManagementModel.Store.tblBemProcessDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBeemProcess">
+              <PropertyRef Name="BeemProcessID" />
+            </Principal>
+            <Dependent Role="tblBemProcessDetails">
+              <PropertyRef Name="BemProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBemProcessDetails_tblBoilerProcess">
+          <End Role="tblBoilerProcess" Type="LoomsManagementModel.Store.tblBoilerProcess" Multiplicity="0..1" />
+          <End Role="tblBemProcessDetails" Type="LoomsManagementModel.Store.tblBemProcessDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBoilerProcess">
+              <PropertyRef Name="BolierProcessID" />
+            </Principal>
+            <Dependent Role="tblBemProcessDetails">
+              <PropertyRef Name="BemProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBemProcessDetails_tblTFOProcess">
+          <End Role="tblTFOProcess" Type="LoomsManagementModel.Store.tblTFOProcess" Multiplicity="0..1" />
+          <End Role="tblBemProcessDetails" Type="LoomsManagementModel.Store.tblBemProcessDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTFOProcess">
+              <PropertyRef Name="TFORoleProcessId" />
+            </Principal>
+            <Dependent Role="tblBemProcessDetails">
+              <PropertyRef Name="TFORoleProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBolierProcessDetails_tblBoilerProcess">
+          <End Role="tblBoilerProcess" Type="LoomsManagementModel.Store.tblBoilerProcess" Multiplicity="0..1" />
+          <End Role="tblBolierProcessDetails" Type="LoomsManagementModel.Store.tblBolierProcessDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBoilerProcess">
+              <PropertyRef Name="BolierProcessID" />
+            </Principal>
+            <Dependent Role="tblBolierProcessDetails">
+              <PropertyRef Name="BoilerProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBolierProcessDetails_tblTFOProcess">
+          <End Role="tblTFOProcess" Type="LoomsManagementModel.Store.tblTFOProcess" Multiplicity="0..1" />
+          <End Role="tblBolierProcessDetails" Type="LoomsManagementModel.Store.tblBolierProcessDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTFOProcess">
+              <PropertyRef Name="TFORoleProcessId" />
+            </Principal>
+            <Dependent Role="tblBolierProcessDetails">
+              <PropertyRef Name="TFORoleProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBranchMST_tblBankMST">
+          <End Role="tblBankMST" Type="LoomsManagementModel.Store.tblBankMST" Multiplicity="0..1" />
+          <End Role="tblBranchMST" Type="LoomsManagementModel.Store.tblBranchMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBankMST">
+              <PropertyRef Name="BankID" />
+            </Principal>
+            <Dependent Role="tblBranchMST">
+              <PropertyRef Name="BankID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompanyMachine_tblCompany">
+          <End Role="tblCompany" Type="LoomsManagementModel.Store.tblCompany" Multiplicity="1" />
+          <End Role="tblCompanyMachineMST" Type="LoomsManagementModel.Store.tblCompanyMachineMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCompany">
+              <PropertyRef Name="CompanyID" />
+            </Principal>
+            <Dependent Role="tblCompanyMachineMST">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompanyMachine_tblMachine">
+          <End Role="tblMachineMST" Type="LoomsManagementModel.Store.tblMachineMST" Multiplicity="1" />
+          <End Role="tblCompanyMachineMST" Type="LoomsManagementModel.Store.tblCompanyMachineMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMachineMST">
+              <PropertyRef Name="MachineID" />
+            </Principal>
+            <Dependent Role="tblCompanyMachineMST">
+              <PropertyRef Name="MachineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblEmployee_tblEmployeeType">
+          <End Role="tblEmployeeTypeMST" Type="LoomsManagementModel.Store.tblEmployeeTypeMST" Multiplicity="0..1" />
+          <End Role="tblEmployee" Type="LoomsManagementModel.Store.tblEmployee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployeeTypeMST">
+              <PropertyRef Name="EmployeeTypeID" />
+            </Principal>
+            <Dependent Role="tblEmployee">
+              <PropertyRef Name="EmployeeTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblSalaryMST_tblEmployee">
+          <End Role="tblEmployee" Type="LoomsManagementModel.Store.tblEmployee" Multiplicity="0..1" />
+          <End Role="tblSalaryMST" Type="LoomsManagementModel.Store.tblSalaryMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="tblSalaryMST">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTFOProcess_tblWindingWork">
+          <End Role="tblWindingWork" Type="LoomsManagementModel.Store.tblWindingWork" Multiplicity="0..1" />
+          <End Role="tblTFOProcess" Type="LoomsManagementModel.Store.tblTFOProcess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWindingWork">
+              <PropertyRef Name="WindingProcessId" />
+            </Principal>
+            <Dependent Role="tblTFOProcess">
+              <PropertyRef Name="WindingProcessId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblWindingWork_tblYarnPurchaseItems">
+          <End Role="tblYarnPurchaseItems" Type="LoomsManagementModel.Store.tblYarnPurchaseItems" Multiplicity="0..1" />
+          <End Role="tblWindingWork" Type="LoomsManagementModel.Store.tblWindingWork" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPurchaseItems">
+              <PropertyRef Name="PurchaseItemID" />
+            </Principal>
+            <Dependent Role="tblWindingWork">
+              <PropertyRef Name="PuchaseItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnMST">
+          <End Role="tblYarnQualityMST" Type="LoomsManagementModel.Store.tblYarnQualityMST" Multiplicity="0..1" />
+          <End Role="tblYarnPurchaseItems" Type="LoomsManagementModel.Store.tblYarnPurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnQualityMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItems">
+              <PropertyRef Name="YarnID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnPackageType">
+          <End Role="tblYarnPackageType" Type="LoomsManagementModel.Store.tblYarnPackageType" Multiplicity="0..1" />
+          <End Role="tblYarnPurchaseItems" Type="LoomsManagementModel.Store.tblYarnPurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPackageType">
+              <PropertyRef Name="YarnPackageTypeID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItems">
+              <PropertyRef Name="YarnPackageTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnPurchase">
+          <End Role="tblYarnPurchase" Type="LoomsManagementModel.Store.tblYarnPurchase" Multiplicity="0..1" />
+          <End Role="tblYarnPurchaseItems" Type="LoomsManagementModel.Store.tblYarnPurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPurchase">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItems">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnQualityMST">
+          <End Role="tblYarnQualityMST" Type="LoomsManagementModel.Store.tblYarnQualityMST" Multiplicity="0..1" />
+          <End Role="tblYarnPurchaseItems" Type="LoomsManagementModel.Store.tblYarnPurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnQualityMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItems">
+              <PropertyRef Name="YarnQualityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnTypeMST">
+          <End Role="tblYarnTypeMST" Type="LoomsManagementModel.Store.tblYarnTypeMST" Multiplicity="0..1" />
+          <End Role="tblYarnPurchaseItems" Type="LoomsManagementModel.Store.tblYarnPurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnTypeMST">
+              <PropertyRef Name="YarnTypeID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItems">
+              <PropertyRef Name="YarnTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnTypeMST_tblYarnQualityMST">
+          <End Role="tblYarnQualityMST" Type="LoomsManagementModel.Store.tblYarnQualityMST" Multiplicity="0..1" />
+          <End Role="tblYarnTypeMST" Type="LoomsManagementModel.Store.tblYarnTypeMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnQualityMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Principal>
+            <Dependent Role="tblYarnTypeMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LoomsManagementModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LoomsManagementEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAttendanceMSTs" EntityType="LoomsManagementModel.tblAttendanceMST" />
+          <EntitySet Name="tblBankMSTs" EntityType="LoomsManagementModel.tblBankMST" />
+          <EntitySet Name="tblBeemProcesses" EntityType="LoomsManagementModel.tblBeemProcess" />
+          <EntitySet Name="tblBemProcessDetails" EntityType="LoomsManagementModel.tblBemProcessDetail" />
+          <EntitySet Name="tblBoilerProcesses" EntityType="LoomsManagementModel.tblBoilerProcess" />
+          <EntitySet Name="tblBolierProcessDetails" EntityType="LoomsManagementModel.tblBolierProcessDetail" />
+          <EntitySet Name="tblBranchMSTs" EntityType="LoomsManagementModel.tblBranchMST" />
+          <EntitySet Name="tblBrokersMSTs" EntityType="LoomsManagementModel.tblBrokersMST" />
+          <EntitySet Name="tblCompanies" EntityType="LoomsManagementModel.tblCompany" />
+          <EntitySet Name="tblCompanyMachineMSTs" EntityType="LoomsManagementModel.tblCompanyMachineMST" />
+          <EntitySet Name="tblEmployees" EntityType="LoomsManagementModel.tblEmployee" />
+          <EntitySet Name="tblEmployeeTypeMSTs" EntityType="LoomsManagementModel.tblEmployeeTypeMST" />
+          <EntitySet Name="tblLoomProcesses" EntityType="LoomsManagementModel.tblLoomProcess" />
+          <EntitySet Name="tblLoomProcessWorks" EntityType="LoomsManagementModel.tblLoomProcessWork" />
+          <EntitySet Name="tblMachineMSTs" EntityType="LoomsManagementModel.tblMachineMST" />
+          <EntitySet Name="tblMachineTypeMSTs" EntityType="LoomsManagementModel.tblMachineTypeMST" />
+          <EntitySet Name="tblMandingProcesses" EntityType="LoomsManagementModel.tblMandingProcess" />
+          <EntitySet Name="tblMendingDetailsProcesses" EntityType="LoomsManagementModel.tblMendingDetailsProcess" />
+          <EntitySet Name="tblMendingPenulties" EntityType="LoomsManagementModel.tblMendingPenulty" />
+          <EntitySet Name="tblPartysMSTs" EntityType="LoomsManagementModel.tblPartysMST" />
+          <EntitySet Name="tblPenaltyMSTs" EntityType="LoomsManagementModel.tblPenaltyMST" />
+          <EntitySet Name="tblProductQualityMSTs" EntityType="LoomsManagementModel.tblProductQualityMST" />
+          <EntitySet Name="tblProfeListMsts" EntityType="LoomsManagementModel.tblProfeListMst" />
+          <EntitySet Name="tblSalaryMSTs" EntityType="LoomsManagementModel.tblSalaryMST" />
+          <EntitySet Name="tblTFOProcesses" EntityType="LoomsManagementModel.tblTFOProcess" />
+          <EntitySet Name="tblWindingWorks" EntityType="LoomsManagementModel.tblWindingWork" />
+          <EntitySet Name="tblWithdrownMSTs" EntityType="LoomsManagementModel.tblWithdrownMST" />
+          <EntitySet Name="tblWorkingYears" EntityType="LoomsManagementModel.tblWorkingYear" />
+          <EntitySet Name="tblYarnPackageTypes" EntityType="LoomsManagementModel.tblYarnPackageType" />
+          <EntitySet Name="tblYarnPurchases" EntityType="LoomsManagementModel.tblYarnPurchase" />
+          <EntitySet Name="tblYarnPurchaseItems" EntityType="LoomsManagementModel.tblYarnPurchaseItem" />
+          <EntitySet Name="tblYarnQualityMSTs" EntityType="LoomsManagementModel.tblYarnQualityMST" />
+          <EntitySet Name="tblYarnTypeMSTs" EntityType="LoomsManagementModel.tblYarnTypeMST" />
+          <EntitySet Name="WithdrownReturnMSTs" EntityType="LoomsManagementModel.WithdrownReturnMST" />
+          <AssociationSet Name="FK_tblAttendanceMST_tblEmployee" Association="LoomsManagementModel.FK_tblAttendanceMST_tblEmployee">
+            <End Role="tblEmployee" EntitySet="tblEmployees" />
+            <End Role="tblAttendanceMST" EntitySet="tblAttendanceMSTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBranchMST_tblBankMST" Association="LoomsManagementModel.FK_tblBranchMST_tblBankMST">
+            <End Role="tblBankMST" EntitySet="tblBankMSTs" />
+            <End Role="tblBranchMST" EntitySet="tblBranchMSTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBemProcessDetails_tblBeemProcess" Association="LoomsManagementModel.FK_tblBemProcessDetails_tblBeemProcess">
+            <End Role="tblBeemProcess" EntitySet="tblBeemProcesses" />
+            <End Role="tblBemProcessDetail" EntitySet="tblBemProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBemProcessDetails_tblBoilerProcess" Association="LoomsManagementModel.FK_tblBemProcessDetails_tblBoilerProcess">
+            <End Role="tblBoilerProcess" EntitySet="tblBoilerProcesses" />
+            <End Role="tblBemProcessDetail" EntitySet="tblBemProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBemProcessDetails_tblTFOProcess" Association="LoomsManagementModel.FK_tblBemProcessDetails_tblTFOProcess">
+            <End Role="tblTFOProcess" EntitySet="tblTFOProcesses" />
+            <End Role="tblBemProcessDetail" EntitySet="tblBemProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBolierProcessDetails_tblBoilerProcess" Association="LoomsManagementModel.FK_tblBolierProcessDetails_tblBoilerProcess">
+            <End Role="tblBoilerProcess" EntitySet="tblBoilerProcesses" />
+            <End Role="tblBolierProcessDetail" EntitySet="tblBolierProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBolierProcessDetails_tblTFOProcess" Association="LoomsManagementModel.FK_tblBolierProcessDetails_tblTFOProcess">
+            <End Role="tblTFOProcess" EntitySet="tblTFOProcesses" />
+            <End Role="tblBolierProcessDetail" EntitySet="tblBolierProcessDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompanyMachine_tblCompany" Association="LoomsManagementModel.FK_tblCompanyMachine_tblCompany">
+            <End Role="tblCompany" EntitySet="tblCompanies" />
+            <End Role="tblCompanyMachineMST" EntitySet="tblCompanyMachineMSTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompanyMachine_tblMachine" Association="LoomsManagementModel.FK_tblCompanyMachine_tblMachine">
+            <End Role="tblMachineMST" EntitySet="tblMachineMSTs" />
+            <End Role="tblCompanyMachineMST" EntitySet="tblCompanyMachineMSTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblEmployee_tblEmployeeType" Association="LoomsManagementModel.FK_tblEmployee_tblEmployeeType">
+            <End Role="tblEmployeeTypeMST" EntitySet="tblEmployeeTypeMSTs" />
+            <End Role="tblEmployee" EntitySet="tblEmployees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblSalaryMST_tblEmployee" Association="LoomsManagementModel.FK_tblSalaryMST_tblEmployee">
+            <End Role="tblEmployee" EntitySet="tblEmployees" />
+            <End Role="tblSalaryMST" EntitySet="tblSalaryMSTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTFOProcess_tblWindingWork" Association="LoomsManagementModel.FK_tblTFOProcess_tblWindingWork">
+            <End Role="tblWindingWork" EntitySet="tblWindingWorks" />
+            <End Role="tblTFOProcess" EntitySet="tblTFOProcesses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblWindingWork_tblYarnPurchaseItems" Association="LoomsManagementModel.FK_tblWindingWork_tblYarnPurchaseItems">
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+            <End Role="tblWindingWork" EntitySet="tblWindingWorks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnPackageType" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPackageType">
+            <End Role="tblYarnPackageType" EntitySet="tblYarnPackageTypes" />
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnPurchase" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase">
+            <End Role="tblYarnPurchase" EntitySet="tblYarnPurchases" />
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnMST" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnMST">
+            <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMSTs" />
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnQualityMST" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST">
+            <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMSTs" />
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnPurchaseItems_tblYarnTypeMST" Association="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST">
+            <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMSTs" />
+            <End Role="tblYarnPurchaseItem" EntitySet="tblYarnPurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblYarnTypeMST_tblYarnQualityMST" Association="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST">
+            <End Role="tblYarnQualityMST" EntitySet="tblYarnQualityMSTs" />
+            <End Role="tblYarnTypeMST" EntitySet="tblYarnTypeMSTs" />
+          </AssociationSet>
+          <EntitySet Name="tblBeamMSTs" EntityType="LoomsManagementModel.tblBeamMST" />
+          <AssociationSet Name="FK_tblBeamMST_tblBeamMST" Association="LoomsManagementModel.FK_tblBeamMST_tblBeamMST">
+            <End Role="tblBeamMST" EntitySet="tblBeamMSTs" />
+            <End Role="tblBeamMST1" EntitySet="tblBeamMSTs" />
+          </AssociationSet>
+          <EntitySet Name="tblFiscalYears" EntityType="LoomsManagementModel.tblFiscalYear" />
+        </EntityContainer>
+        <EntityType Name="tblAttendanceMST">
+          <Key>
+            <PropertyRef Name="AttendanceID" />
+          </Key>
+          <Property Type="Int64" Name="AttendanceID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="DateTime" Name="StartTime" Precision="3" />
+          <Property Type="DateTime" Name="EndTime" Precision="3" />
+          <Property Type="Double" Name="MeterWorked" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblEmployee" Relationship="LoomsManagementModel.FK_tblAttendanceMST_tblEmployee" FromRole="tblAttendanceMST" ToRole="tblEmployee" />
+        </EntityType>
+        <EntityType Name="tblBankMST">
+          <Key>
+            <PropertyRef Name="BankID" />
+          </Key>
+          <Property Type="Int64" Name="BankID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BankName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblBranchMSTs" Relationship="LoomsManagementModel.FK_tblBranchMST_tblBankMST" FromRole="tblBankMST" ToRole="tblBranchMST" />
+        </EntityType>
+        <EntityType Name="tblBeemProcess">
+          <Key>
+            <PropertyRef Name="BeemProcessID" />
+          </Key>
+          <Property Type="Int64" Name="BeemProcessID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="MachineID" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="String" Name="Shift" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDateTime" Precision="3" />
+          <Property Type="DateTime" Name="EndDateTime" Precision="3" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblBemProcessDetails" Relationship="LoomsManagementModel.FK_tblBemProcessDetails_tblBeemProcess" FromRole="tblBeemProcess" ToRole="tblBemProcessDetail" />
+        </EntityType>
+        <EntityType Name="tblBemProcessDetail">
+          <Key>
+            <PropertyRef Name="BemProcessDetailsID" />
+          </Key>
+          <Property Type="Int64" Name="BemProcessDetailsID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="BemProcessID" />
+          <Property Type="Int64" Name="TFORoleProcessID" />
+          <Property Type="Int32" Name="IssueNoOFCopes" />
+          <Property Type="Double" Name="IssueWeights" />
+          <Property Type="Int64" Name="YarnQualityID" />
+          <Property Type="Int64" Name="YarnTypeID" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblBeemProcess" Relationship="LoomsManagementModel.FK_tblBemProcessDetails_tblBeemProcess" FromRole="tblBemProcessDetail" ToRole="tblBeemProcess" />
+          <NavigationProperty Name="tblBoilerProcess" Relationship="LoomsManagementModel.FK_tblBemProcessDetails_tblBoilerProcess" FromRole="tblBemProcessDetail" ToRole="tblBoilerProcess" />
+          <NavigationProperty Name="tblTFOProcess" Relationship="LoomsManagementModel.FK_tblBemProcessDetails_tblTFOProcess" FromRole="tblBemProcessDetail" ToRole="tblTFOProcess" />
+        </EntityType>
+        <EntityType Name="tblBoilerProcess">
+          <Key>
+            <PropertyRef Name="BolierProcessID" />
+          </Key>
+          <Property Type="Int64" Name="BolierProcessID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="MachineID" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="String" Name="Shift" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDateTime" Precision="3" />
+          <Property Type="DateTime" Name="EndDateTime" Precision="3" />
+          <Property Type="Double" Name="Tempreture" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <Property Type="DateTime" Name="CreationDateTIme" Precision="3" />
+          <NavigationProperty Name="tblBemProcessDetails" Relationship="LoomsManagementModel.FK_tblBemProcessDetails_tblBoilerProcess" FromRole="tblBoilerProcess" ToRole="tblBemProcessDetail" />
+          <NavigationProperty Name="tblBolierProcessDetails" Relationship="LoomsManagementModel.FK_tblBolierProcessDetails_tblBoilerProcess" FromRole="tblBoilerProcess" ToRole="tblBolierProcessDetail" />
+        </EntityType>
+        <EntityType Name="tblBolierProcessDetail">
+          <Key>
+            <PropertyRef Name="BoilerProcessDetailsID" />
+          </Key>
+          <Property Type="Int64" Name="BoilerProcessDetailsID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="BoilerProcessID" />
+          <Property Type="Int64" Name="TFORoleProcessID" />
+          <Property Type="Int32" Name="IssueNoOfTFORoles" />
+          <Property Type="Double" Name="IssueWeights" />
+          <Property Type="Int64" Name="YarnQualityID" />
+          <Property Type="Int64" Name="YarnTypeID" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+          <Property Type="Boolean" Name="IsActive" />
+          <NavigationProperty Name="tblBoilerProcess" Relationship="LoomsManagementModel.FK_tblBolierProcessDetails_tblBoilerProcess" FromRole="tblBolierProcessDetail" ToRole="tblBoilerProcess" />
+          <NavigationProperty Name="tblTFOProcess" Relationship="LoomsManagementModel.FK_tblBolierProcessDetails_tblTFOProcess" FromRole="tblBolierProcessDetail" ToRole="tblTFOProcess" />
+        </EntityType>
+        <EntityType Name="tblBranchMST">
+          <Key>
+            <PropertyRef Name="BranchID" />
+          </Key>
+          <Property Type="Int64" Name="BranchID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BranchName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="BankID" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblBankMST" Relationship="LoomsManagementModel.FK_tblBranchMST_tblBankMST" FromRole="tblBranchMST" ToRole="tblBankMST" />
+        </EntityType>
+        <EntityType Name="tblBrokersMST">
+          <Key>
+            <PropertyRef Name="BrokerID" />
+          </Key>
+          <Property Type="Int64" Name="BrokerID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BrokerName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BrokerFirmName" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ContactNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MobileNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DealingIn" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblCompany">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Type="Int64" Name="CompanyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CompanyName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ComapnyCode" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OwnerName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDate" Precision="0" />
+          <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ContactPersonName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreationDate" Precision="3" />
+          <Property Type="Double" Name="InvestmentAmount" />
+          <Property Type="String" Name="PANNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CSTNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ECCNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMSNO" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+          <NavigationProperty Name="tblCompanyMachineMSTs" Relationship="LoomsManagementModel.FK_tblCompanyMachine_tblCompany" FromRole="tblCompany" ToRole="tblCompanyMachineMST" />
+        </EntityType>
+        <EntityType Name="tblCompanyMachineMST">
+          <Key>
+            <PropertyRef Name="RowId" />
+          </Key>
+          <Property Type="Int64" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="MachineId" Nullable="false" />
+          <Property Type="Int64" Name="CompanyId" Nullable="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <NavigationProperty Name="tblCompany" Relationship="LoomsManagementModel.FK_tblCompanyMachine_tblCompany" FromRole="tblCompanyMachineMST" ToRole="tblCompany" />
+          <NavigationProperty Name="tblMachineMST" Relationship="LoomsManagementModel.FK_tblCompanyMachine_tblMachine" FromRole="tblCompanyMachineMST" ToRole="tblMachineMST" />
+        </EntityType>
+        <EntityType Name="tblEmployee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Type="Int64" Name="EmployeeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="EmployeeTypeID" />
+          <Property Type="String" Name="EmployeeCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobTitle" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MiddleName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ResidentialAddress" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PermanentAddress" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MobileNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DOB" Precision="0" />
+          <Property Type="String" Name="Gender" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IDProfe" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IDProfeNo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Binary" Name="Photo" MaxLength="Max" FixedLength="false" />
+          <Property Type="DateTime" Name="JoinDate" Precision="0" />
+          <Property Type="DateTime" Name="LeaveDate" Precision="0" />
+          <Property Type="Int32" Name="SponsorsID" />
+          <Property Type="String" Name="Shift" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="Salary" />
+          <Property Type="Double" Name="PerDayWorkingHours" />
+          <Property Type="Double" Name="PerHourSalary" />
+          <Property Type="Boolean" Name="PaymentType" />
+          <Property Type="String" Name="BankName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BranchName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="AccountNo" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RTGSNo" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IFSCCode" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="OpeningBalance" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBY" />
+          <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+          <NavigationProperty Name="tblAttendanceMSTs" Relationship="LoomsManagementModel.FK_tblAttendanceMST_tblEmployee" FromRole="tblEmployee" ToRole="tblAttendanceMST" />
+          <NavigationProperty Name="tblEmployeeTypeMST" Relationship="LoomsManagementModel.FK_tblEmployee_tblEmployeeType" FromRole="tblEmployee" ToRole="tblEmployeeTypeMST" />
+          <NavigationProperty Name="tblSalaryMSTs" Relationship="LoomsManagementModel.FK_tblSalaryMST_tblEmployee" FromRole="tblEmployee" ToRole="tblSalaryMST" />
+        </EntityType>
+        <EntityType Name="tblEmployeeTypeMST">
+          <Key>
+            <PropertyRef Name="EmployeeTypeID" />
+          </Key>
+          <Property Type="Int64" Name="EmployeeTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TypeName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+          <NavigationProperty Name="tblEmployees" Relationship="LoomsManagementModel.FK_tblEmployee_tblEmployeeType" FromRole="tblEmployeeTypeMST" ToRole="tblEmployee" />
+        </EntityType>
+        <EntityType Name="tblLoomProcess">
+          <Key>
+            <PropertyRef Name="LoomProcessID" />
+          </Key>
+          <Property Type="Int64" Name="LoomProcessID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="BeemProcessID" />
+          <Property Type="Int64" Name="MachineID" />
+          <Property Type="Double" Name="NoofTFORole" />
+          <Property Type="DateTime" Name="CreatoinDateTime" Precision="3" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblLoomProcessWork">
+          <Key>
+            <PropertyRef Name="LoomProcessWorkID" />
+          </Key>
+          <Property Type="Int64" Name="LoomProcessWorkID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="LoomProcessID" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="DateTime" Name="WorkingDate" Precision="0" />
+          <Property Type="Time" Name="StartTime" Precision="7" />
+          <Property Type="Time" Name="EndTime" Precision="7" />
+          <Property Type="String" Name="Shift" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="MTRStart" />
+          <Property Type="Double" Name="MTREnd" />
+          <Property Type="Boolean" Name="IsDelete" />
+        </EntityType>
+        <EntityType Name="tblMachineMST">
+          <Key>
+            <PropertyRef Name="MachineID" />
+          </Key>
+          <Property Type="Int64" Name="MachineID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="MachineName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="MachineTypeID" />
+          <Property Type="String" Name="AboutMachine" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+          <NavigationProperty Name="tblCompanyMachineMSTs" Relationship="LoomsManagementModel.FK_tblCompanyMachine_tblMachine" FromRole="tblMachineMST" ToRole="tblCompanyMachineMST" />
+        </EntityType>
+        <EntityType Name="tblMachineTypeMST">
+          <Key>
+            <PropertyRef Name="MachineTypeID" />
+          </Key>
+          <Property Type="Int64" Name="MachineTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TypeName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblMandingProcess">
+          <Key>
+            <PropertyRef Name="MendingID" />
+          </Key>
+          <Property Type="Int64" Name="MendingID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="TakaNo" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="String" Name="Grade" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDateTime" Precision="3" />
+          <Property Type="DateTime" Name="EndDateTime" Precision="3" />
+          <Property Type="Double" Name="TotalMeter" />
+          <Property Type="Int32" Name="TotalNoOfFaults" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblMendingDetailsProcess">
+          <Key>
+            <PropertyRef Name="MendingDetailsID" />
+          </Key>
+          <Property Type="Int64" Name="MendingDetailsID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="MendingID" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="Double" Name="StartMeter" />
+          <Property Type="Double" Name="EndMeter" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblMendingPenulty">
+          <Key>
+            <PropertyRef Name="MendingPenultyID" />
+          </Key>
+          <Property Type="Int64" Name="MendingPenultyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="Int64" Name="PenultyID" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblPartysMST">
+          <Key>
+            <PropertyRef Name="PartyID" />
+          </Key>
+          <Property Type="Int64" Name="PartyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CompanyCode" />
+          <Property Type="String" Name="PartyName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ContactPersonName" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OfficeAddress" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ShippingAddress" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MobileNo" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PhoneNo" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMSNo" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ReferencePersonName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ReferencePersonMobileNo" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EmailID" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ExtraDetails" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TINNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="TINDate" Precision="0" />
+          <Property Type="String" Name="PANNO" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CSTTINNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CSTDate" Precision="0" />
+          <Property Type="String" Name="ECCNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBye" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTIme" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblPenaltyMST">
+          <Key>
+            <PropertyRef Name="PenaltyID" />
+          </Key>
+          <Property Type="Int64" Name="PenaltyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="PenaltyCode" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PenaltyName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblProductQualityMST">
+          <Key>
+            <PropertyRef Name="ProductQualityID" />
+          </Key>
+          <Property Type="Int64" Name="ProductQualityID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ProductQualityName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="WARPDenierAfterTPM" />
+          <Property Type="Int32" Name="WARPNumberOfFilaments" />
+          <Property Type="Int32" Name="WARPYarnQualityID" />
+          <Property Type="Int32" Name="WARPYarnTypeID" />
+          <Property Type="String" Name="WARPDirectionOfTwistS" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="WARPDirectionOfTwistZ" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="WARPTwistPerMeterS" />
+          <Property Type="Int32" Name="WARPTwistPerMeterZ" />
+          <Property Type="Double" Name="WEFTDenierAfterTPM" />
+          <Property Type="Int32" Name="WEFTNumberOfFilaments1" />
+          <Property Type="Int32" Name="WEFTYarnQualityID" />
+          <Property Type="Int32" Name="WEFTYarnTypeID" />
+          <Property Type="String" Name="WEFTDirectionOfTwistS" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="WEFTDirectionOfTwistZ" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="WEFTTwistPerMeterS" />
+          <Property Type="Int32" Name="WEFTTwistPerMeterZ" />
+          <Property Type="Int32" Name="ApproxTotalEndsWithBorder" />
+          <Property Type="Double" Name="ReedOnLoom" />
+          <Property Type="Double" Name="PickOnLoom" />
+          <Property Type="Double" Name="Border" />
+          <Property Type="String" Name="HeatSetting" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="WeightOfFabricWARP" />
+          <Property Type="Double" Name="WeightOfFabricWEFT" />
+          <Property Type="Double" Name="TotalWeight" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblProfeListMst">
+          <Key>
+            <PropertyRef Name="ProfeID" />
+          </Key>
+          <Property Type="Int32" Name="ProfeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdateDateTime" Precision="3" />
+          <Property Type="Boolean" Name="IsDelete" />
+        </EntityType>
+        <EntityType Name="tblSalaryMST">
+          <Key>
+            <PropertyRef Name="SalaryID" />
+          </Key>
+          <Property Type="Int32" Name="SalaryID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="DateTime" Name="Date" Precision="3" />
+          <Property Type="DateTime" Name="StartDate" Precision="0" />
+          <Property Type="DateTime" Name="EndDate" Precision="0" />
+          <Property Type="Double" Name="WorkedHours" />
+          <Property Type="Double" Name="TotalPenalty" />
+          <Property Type="Double" Name="Bonus" />
+          <Property Type="Double" Name="WithdrownAmount" />
+          <Property Type="Int64" Name="WithdrownID" />
+          <Property Type="Double" Name="NetSalary" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblEmployee" Relationship="LoomsManagementModel.FK_tblSalaryMST_tblEmployee" FromRole="tblSalaryMST" ToRole="tblEmployee" />
+        </EntityType>
+        <EntityType Name="tblTFOProcess">
+          <Key>
+            <PropertyRef Name="TFORoleProcessId" />
+          </Key>
+          <Property Type="Int64" Name="TFORoleProcessId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="WindingProcessId" />
+          <Property Type="Int32" Name="PurchaseItemID" />
+          <Property Type="Int32" Name="MachineId" />
+          <Property Type="Int32" Name="EmployeeId" />
+          <Property Type="String" Name="Shift" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDateTime" Precision="3" />
+          <Property Type="Int32" Name="IssueNoOfCopes" />
+          <Property Type="Double" Name="IssueWights" />
+          <Property Type="Double" Name="NoofTFORole" />
+          <Property Type="Int32" Name="ProducttionNoOfTFORoles" />
+          <Property Type="Double" Name="ProducttionWights" />
+          <Property Type="String" Name="QualityName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="EndDateTime" Precision="3" />
+          <Property Type="Int32" Name="YarnQualityId" />
+          <Property Type="Int32" Name="YarnTypeId" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <Property Type="DateTime" Name="CreationDateTIme" Precision="3" />
+          <NavigationProperty Name="tblBemProcessDetails" Relationship="LoomsManagementModel.FK_tblBemProcessDetails_tblTFOProcess" FromRole="tblTFOProcess" ToRole="tblBemProcessDetail" />
+          <NavigationProperty Name="tblBolierProcessDetails" Relationship="LoomsManagementModel.FK_tblBolierProcessDetails_tblTFOProcess" FromRole="tblTFOProcess" ToRole="tblBolierProcessDetail" />
+          <NavigationProperty Name="tblWindingWork" Relationship="LoomsManagementModel.FK_tblTFOProcess_tblWindingWork" FromRole="tblTFOProcess" ToRole="tblWindingWork" />
+        </EntityType>
+        <EntityType Name="tblWindingWork">
+          <Key>
+            <PropertyRef Name="WindingProcessId" />
+          </Key>
+          <Property Type="Int32" Name="WindingProcessId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MachineId" />
+          <Property Type="Int32" Name="EmployeeId" />
+          <Property Type="Int64" Name="PuchaseItemId" />
+          <Property Type="String" Name="Shift" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDateTime" Precision="3" />
+          <Property Type="Double" Name="TotalIssueWeight" />
+          <Property Type="Double" Name="WastedWeight" />
+          <Property Type="Double" Name="ProductionWeight" />
+          <Property Type="Int32" Name="NoOfCopes" />
+          <Property Type="DateTime" Name="EndDateTime" Precision="3" />
+          <Property Type="Int32" Name="YarnQualityId" />
+          <Property Type="Int32" Name="YarnTypeId" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <Property Type="DateTime" Name="CreationDateTIme" Precision="3" />
+          <NavigationProperty Name="tblTFOProcesses" Relationship="LoomsManagementModel.FK_tblTFOProcess_tblWindingWork" FromRole="tblWindingWork" ToRole="tblTFOProcess" />
+          <NavigationProperty Name="tblYarnPurchaseItem" Relationship="LoomsManagementModel.FK_tblWindingWork_tblYarnPurchaseItems" FromRole="tblWindingWork" ToRole="tblYarnPurchaseItem" />
+        </EntityType>
+        <EntityType Name="tblWithdrownMST">
+          <Key>
+            <PropertyRef Name="WithdrownID" />
+          </Key>
+          <Property Type="Int64" Name="WithdrownID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="WithdrownAmount" />
+          <Property Type="DateTime" Name="WithdrownDate" Precision="3" />
+          <Property Type="DateTime" Name="ReturnDate" Precision="3" />
+          <Property Type="Boolean" Name="ISStatus" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblWorkingYear">
+          <Key>
+            <PropertyRef Name="YearID" />
+          </Key>
+          <Property Type="Int32" Name="YearID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="YearName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblYarnPackageType">
+          <Key>
+            <PropertyRef Name="YarnPackageTypeID" />
+          </Key>
+          <Property Type="Int64" Name="YarnPackageTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TypeName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+          <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPackageType" FromRole="tblYarnPackageType" ToRole="tblYarnPurchaseItem" />
+        </EntityType>
+        <EntityType Name="tblYarnPurchase">
+          <Key>
+            <PropertyRef Name="PurchaseID" />
+          </Key>
+          <Property Type="Int64" Name="PurchaseID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="SRNo" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="Int64" Name="PartyID" Nullable="false" />
+          <Property Type="Int64" Name="BrokerID" />
+          <Property Type="Int64" Name="YearID" />
+          <Property Type="DateTime" Name="PurchaseDate" Precision="0" />
+          <Property Type="String" Name="ChallanNo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LRNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RecieveAt" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Grade" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EmployeeId" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpDatedDateTime" Precision="3" />
+          <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" FromRole="tblYarnPurchase" ToRole="tblYarnPurchaseItem" />
+        </EntityType>
+        <EntityType Name="tblYarnPurchaseItem">
+          <Key>
+            <PropertyRef Name="PurchaseItemID" />
+          </Key>
+          <Property Type="Int64" Name="PurchaseItemID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="PurchaseID" />
+          <Property Type="Int64" Name="YarnID" />
+          <Property Type="Int64" Name="YarnPackageTypeID" />
+          <Property Type="DateTime" Name="PurchaseDate" Precision="0" />
+          <Property Type="String" Name="BoxNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="GrossWeight" />
+          <Property Type="Double" Name="TareWeight" />
+          <Property Type="Double" Name="NetWeight" />
+          <Property Type="Double" Name="Cheese" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="Int64" Name="YarnQualityID" />
+          <Property Type="Int64" Name="YarnTypeID" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <Property Type="DateTime" Name="CreationDateTIme" Precision="3" />
+          <NavigationProperty Name="tblWindingWorks" Relationship="LoomsManagementModel.FK_tblWindingWork_tblYarnPurchaseItems" FromRole="tblYarnPurchaseItem" ToRole="tblWindingWork" />
+          <NavigationProperty Name="tblYarnPackageType" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPackageType" FromRole="tblYarnPurchaseItem" ToRole="tblYarnPackageType" />
+          <NavigationProperty Name="tblYarnPurchase" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnPurchase" FromRole="tblYarnPurchaseItem" ToRole="tblYarnPurchase" />
+          <NavigationProperty Name="tblYarnQualityMST" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnMST" FromRole="tblYarnPurchaseItem" ToRole="tblYarnQualityMST" />
+          <NavigationProperty Name="tblYarnQualityMST1" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST" FromRole="tblYarnPurchaseItem" ToRole="tblYarnQualityMST" />
+          <NavigationProperty Name="tblYarnTypeMST" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST" FromRole="tblYarnPurchaseItem" ToRole="tblYarnTypeMST" />
+        </EntityType>
+        <EntityType Name="tblYarnQualityMST">
+          <Key>
+            <PropertyRef Name="YarnQualityID" />
+          </Key>
+          <Property Type="Int64" Name="YarnQualityID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="YarnQualityName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnMST" FromRole="tblYarnQualityMST" ToRole="tblYarnPurchaseItem" />
+          <NavigationProperty Name="tblYarnPurchaseItems1" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnQualityMST" FromRole="tblYarnQualityMST" ToRole="tblYarnPurchaseItem" />
+          <NavigationProperty Name="tblYarnTypeMSTs" Relationship="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST" FromRole="tblYarnQualityMST" ToRole="tblYarnTypeMST" />
+        </EntityType>
+        <EntityType Name="tblYarnTypeMST">
+          <Key>
+            <PropertyRef Name="YarnTypeID" />
+          </Key>
+          <Property Type="Int64" Name="YarnTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="YarnTypeName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="YarnQualityID" />
+          <Property Type="String" Name="Denier" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NumberOfFilaments" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <Property Type="DateTime" Name="CreationDateTIme" Precision="3" />
+          <NavigationProperty Name="tblYarnPurchaseItems" Relationship="LoomsManagementModel.FK_tblYarnPurchaseItems_tblYarnTypeMST" FromRole="tblYarnTypeMST" ToRole="tblYarnPurchaseItem" />
+          <NavigationProperty Name="tblYarnQualityMST" Relationship="LoomsManagementModel.FK_tblYarnTypeMST_tblYarnQualityMST" FromRole="tblYarnTypeMST" ToRole="tblYarnQualityMST" />
+        </EntityType>
+        <EntityType Name="WithdrownReturnMST">
+          <Key>
+            <PropertyRef Name="WithdrownReturnID" />
+          </Key>
+          <Property Type="Int64" Name="WithdrownReturnID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="Int64" Name="EmployeeID" />
+          <Property Type="Int32" Name="ReturnType" />
+          <Property Type="Int64" Name="SalaryID" />
+          <Property Type="Double" Name="Amount" />
+          <Property Type="String" Name="Remark" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreateBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+        </EntityType>
+        <Association Name="FK_tblAttendanceMST_tblEmployee">
+          <End Type="LoomsManagementModel.tblEmployee" Role="tblEmployee" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblAttendanceMST" Role="tblAttendanceMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="tblAttendanceMST">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBranchMST_tblBankMST">
+          <End Type="LoomsManagementModel.tblBankMST" Role="tblBankMST" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblBranchMST" Role="tblBranchMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBankMST">
+              <PropertyRef Name="BankID" />
+            </Principal>
+            <Dependent Role="tblBranchMST">
+              <PropertyRef Name="BankID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBemProcessDetails_tblBeemProcess">
+          <End Type="LoomsManagementModel.tblBeemProcess" Role="tblBeemProcess" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblBemProcessDetail" Role="tblBemProcessDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBeemProcess">
+              <PropertyRef Name="BeemProcessID" />
+            </Principal>
+            <Dependent Role="tblBemProcessDetail">
+              <PropertyRef Name="BemProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBemProcessDetails_tblBoilerProcess">
+          <End Type="LoomsManagementModel.tblBoilerProcess" Role="tblBoilerProcess" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblBemProcessDetail" Role="tblBemProcessDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBoilerProcess">
+              <PropertyRef Name="BolierProcessID" />
+            </Principal>
+            <Dependent Role="tblBemProcessDetail">
+              <PropertyRef Name="BemProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBemProcessDetails_tblTFOProcess">
+          <End Type="LoomsManagementModel.tblTFOProcess" Role="tblTFOProcess" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblBemProcessDetail" Role="tblBemProcessDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTFOProcess">
+              <PropertyRef Name="TFORoleProcessId" />
+            </Principal>
+            <Dependent Role="tblBemProcessDetail">
+              <PropertyRef Name="TFORoleProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBolierProcessDetails_tblBoilerProcess">
+          <End Type="LoomsManagementModel.tblBoilerProcess" Role="tblBoilerProcess" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblBolierProcessDetail" Role="tblBolierProcessDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBoilerProcess">
+              <PropertyRef Name="BolierProcessID" />
+            </Principal>
+            <Dependent Role="tblBolierProcessDetail">
+              <PropertyRef Name="BoilerProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBolierProcessDetails_tblTFOProcess">
+          <End Type="LoomsManagementModel.tblTFOProcess" Role="tblTFOProcess" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblBolierProcessDetail" Role="tblBolierProcessDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTFOProcess">
+              <PropertyRef Name="TFORoleProcessId" />
+            </Principal>
+            <Dependent Role="tblBolierProcessDetail">
+              <PropertyRef Name="TFORoleProcessID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompanyMachine_tblCompany">
+          <End Type="LoomsManagementModel.tblCompany" Role="tblCompany" Multiplicity="1" />
+          <End Type="LoomsManagementModel.tblCompanyMachineMST" Role="tblCompanyMachineMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCompany">
+              <PropertyRef Name="CompanyID" />
+            </Principal>
+            <Dependent Role="tblCompanyMachineMST">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompanyMachine_tblMachine">
+          <End Type="LoomsManagementModel.tblMachineMST" Role="tblMachineMST" Multiplicity="1" />
+          <End Type="LoomsManagementModel.tblCompanyMachineMST" Role="tblCompanyMachineMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMachineMST">
+              <PropertyRef Name="MachineID" />
+            </Principal>
+            <Dependent Role="tblCompanyMachineMST">
+              <PropertyRef Name="MachineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblEmployee_tblEmployeeType">
+          <End Type="LoomsManagementModel.tblEmployeeTypeMST" Role="tblEmployeeTypeMST" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblEmployee" Role="tblEmployee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployeeTypeMST">
+              <PropertyRef Name="EmployeeTypeID" />
+            </Principal>
+            <Dependent Role="tblEmployee">
+              <PropertyRef Name="EmployeeTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblSalaryMST_tblEmployee">
+          <End Type="LoomsManagementModel.tblEmployee" Role="tblEmployee" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblSalaryMST" Role="tblSalaryMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="tblSalaryMST">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTFOProcess_tblWindingWork">
+          <End Type="LoomsManagementModel.tblWindingWork" Role="tblWindingWork" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblTFOProcess" Role="tblTFOProcess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWindingWork">
+              <PropertyRef Name="WindingProcessId" />
+            </Principal>
+            <Dependent Role="tblTFOProcess">
+              <PropertyRef Name="WindingProcessId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblWindingWork_tblYarnPurchaseItems">
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblWindingWork" Role="tblWindingWork" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPurchaseItem">
+              <PropertyRef Name="PurchaseItemID" />
+            </Principal>
+            <Dependent Role="tblWindingWork">
+              <PropertyRef Name="PuchaseItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnPackageType">
+          <End Type="LoomsManagementModel.tblYarnPackageType" Role="tblYarnPackageType" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPackageType">
+              <PropertyRef Name="YarnPackageTypeID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItem">
+              <PropertyRef Name="YarnPackageTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnPurchase">
+          <End Type="LoomsManagementModel.tblYarnPurchase" Role="tblYarnPurchase" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnPurchase">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItem">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnMST">
+          <End Type="LoomsManagementModel.tblYarnQualityMST" Role="tblYarnQualityMST" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnQualityMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItem">
+              <PropertyRef Name="YarnID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnQualityMST">
+          <End Type="LoomsManagementModel.tblYarnQualityMST" Role="tblYarnQualityMST" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnQualityMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItem">
+              <PropertyRef Name="YarnQualityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnPurchaseItems_tblYarnTypeMST">
+          <End Type="LoomsManagementModel.tblYarnTypeMST" Role="tblYarnTypeMST" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnPurchaseItem" Role="tblYarnPurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnTypeMST">
+              <PropertyRef Name="YarnTypeID" />
+            </Principal>
+            <Dependent Role="tblYarnPurchaseItem">
+              <PropertyRef Name="YarnTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblYarnTypeMST_tblYarnQualityMST">
+          <End Type="LoomsManagementModel.tblYarnQualityMST" Role="tblYarnQualityMST" Multiplicity="0..1" />
+          <End Type="LoomsManagementModel.tblYarnTypeMST" Role="tblYarnTypeMST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblYarnQualityMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Principal>
+            <Dependent Role="tblYarnTypeMST">
+              <PropertyRef Name="YarnQualityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tblBeamMST">
+          <Key>
+            <PropertyRef Name="BeemID" />
+          </Key>
+          <Property Type="Int64" Name="BeemID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="CompanyID" />
+          <Property Type="String" Name="BeamNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="WrapperPartyID" />
+          <Property Type="Int32" Name="JobberPartyName" />
+          <Property Type="DateTime" Name="BeemDate" Precision="0" />
+          <Property Type="Int32" Name="YarnQualityID" />
+          <Property Type="Int32" Name="GrayQualityId" />
+          <Property Type="String" Name="LotNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NoofTar" />
+          <Property Type="Double" Name="Meters" />
+          <Property Type="Int32" Name="Taka" />
+          <Property Type="Double" Name="GrossWeight" />
+          <Property Type="Double" Name="NetWeight" />
+          <Property Type="DateTime" Name="LoadingDate" Precision="0" />
+          <Property Type="Boolean" Name="BhidanStatus" />
+          <Property Type="DateTime" Name="BhidanDate" Precision="0" />
+          <Property Type="Int32" Name="PasaraiEmployeeId" />
+          <Property Type="Double" Name="ProductionMeters" />
+          <Property Type="Int32" Name="ProductionTaka" />
+          <Property Type="Double" Name="PipeWeight" />
+          <Property Type="Double" Name="MinStrategy" />
+          <Property Type="Int64" Name="MachineId" />
+          <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="IssueDate" Precision="0" />
+          <Property Type="Boolean" Name="TakaMeter" />
+          <Property Type="Double" Name="Rate" />
+          <Property Type="Double" Name="Amount" />
+          <Property Type="Double" Name="MeterConsumption" />
+          <Property Type="Double" Name="RPM" />
+          <Property Type="Double" Name="Pick" />
+          <Property Type="Double" Name="My" />
+          <Property Type="Double" Name="FinalAmount" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreationDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdateBy" />
+          <Property Type="DateTime" Name="UpdationDateTime" Precision="3" />
+          <NavigationProperty Name="tblBeamMST1" Relationship="LoomsManagementModel.FK_tblBeamMST_tblBeamMST" FromRole="tblBeamMST" ToRole="tblBeamMST1" />
+          <NavigationProperty Name="tblBeamMST2" Relationship="LoomsManagementModel.FK_tblBeamMST_tblBeamMST" FromRole="tblBeamMST1" ToRole="tblBeamMST" />
+        </EntityType>
+        <Association Name="FK_tblBeamMST_tblBeamMST">
+          <End Type="LoomsManagementModel.tblBeamMST" Role="tblBeamMST" Multiplicity="1" />
+          <End Type="LoomsManagementModel.tblBeamMST" Role="tblBeamMST1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblBeamMST">
+              <PropertyRef Name="BeemID" />
+            </Principal>
+            <Dependent Role="tblBeamMST1">
+              <PropertyRef Name="BeemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tblFiscalYear">
+          <Key>
+            <PropertyRef Name="FiscalYearId" />
+            <PropertyRef Name="FiscalName" />
+            <PropertyRef Name="StartDate" />
+            <PropertyRef Name="EndDate" />
+          </Key>
+          <Property Type="Int64" Name="FiscalYearId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FiscalName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="0" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="0" />
+          <Property Type="Boolean" Name="IsActive" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="Int32" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedDateTime" Precision="3" />
+          <Property Type="Int32" Name="UpdatedBy" />
+          <Property Type="DateTime" Name="UpdatedDateTime" Precision="3" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LoomsManagementModelStoreContainer" CdmEntityContainer="LoomsManagementEntities">
+          <EntitySetMapping Name="tblAttendanceMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblAttendanceMST">
+              <MappingFragment StoreEntitySet="tblAttendanceMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="MeterWorked" ColumnName="MeterWorked" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="AttendanceID" ColumnName="AttendanceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBankMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBankMST">
+              <MappingFragment StoreEntitySet="tblBankMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="BankName" ColumnName="BankName" />
+                <ScalarProperty Name="BankID" ColumnName="BankID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBeemProcesses">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBeemProcess">
+              <MappingFragment StoreEntitySet="tblBeemProcess">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+                <ScalarProperty Name="BeemProcessID" ColumnName="BeemProcessID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBemProcessDetails">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBemProcessDetail">
+              <MappingFragment StoreEntitySet="tblBemProcessDetails">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="YarnTypeID" ColumnName="YarnTypeID" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
+                <ScalarProperty Name="IssueWeights" ColumnName="IssueWeights" />
+                <ScalarProperty Name="IssueNoOFCopes" ColumnName="IssueNoOFCopes" />
+                <ScalarProperty Name="TFORoleProcessID" ColumnName="TFORoleProcessID" />
+                <ScalarProperty Name="BemProcessID" ColumnName="BemProcessID" />
+                <ScalarProperty Name="BemProcessDetailsID" ColumnName="BemProcessDetailsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBoilerProcesses">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBoilerProcess">
+              <MappingFragment StoreEntitySet="tblBoilerProcess">
+                <ScalarProperty Name="CreationDateTIme" ColumnName="CreationDateTIme" />
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Tempreture" ColumnName="Tempreture" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+                <ScalarProperty Name="BolierProcessID" ColumnName="BolierProcessID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBolierProcessDetails">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBolierProcessDetail">
+              <MappingFragment StoreEntitySet="tblBolierProcessDetails">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="YarnTypeID" ColumnName="YarnTypeID" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
+                <ScalarProperty Name="IssueWeights" ColumnName="IssueWeights" />
+                <ScalarProperty Name="IssueNoOfTFORoles" ColumnName="IssueNoOfTFORoles" />
+                <ScalarProperty Name="TFORoleProcessID" ColumnName="TFORoleProcessID" />
+                <ScalarProperty Name="BoilerProcessID" ColumnName="BoilerProcessID" />
+                <ScalarProperty Name="BoilerProcessDetailsID" ColumnName="BoilerProcessDetailsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBranchMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBranchMST">
+              <MappingFragment StoreEntitySet="tblBranchMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="BankID" ColumnName="BankID" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBrokersMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBrokersMST">
+              <MappingFragment StoreEntitySet="tblBrokersMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="DealingIn" ColumnName="DealingIn" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="BrokerFirmName" ColumnName="BrokerFirmName" />
+                <ScalarProperty Name="BrokerName" ColumnName="BrokerName" />
+                <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCompanies">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblCompany">
+              <MappingFragment StoreEntitySet="tblCompany">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="SMSNO" ColumnName="SMSNO" />
+                <ScalarProperty Name="ECCNo" ColumnName="ECCNo" />
+                <ScalarProperty Name="CSTNo" ColumnName="CSTNo" />
+                <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+                <ScalarProperty Name="InvestmentAmount" ColumnName="InvestmentAmount" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+                <ScalarProperty Name="ComapnyCode" ColumnName="ComapnyCode" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCompanyMachineMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblCompanyMachineMST">
+              <MappingFragment StoreEntitySet="tblCompanyMachineMST">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="MachineId" ColumnName="MachineId" />
+                <ScalarProperty Name="RowId" ColumnName="RowId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEmployees">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblEmployee">
+              <MappingFragment StoreEntitySet="tblEmployee">
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBY" ColumnName="CreatedBY" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+                <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+                <ScalarProperty Name="RTGSNo" ColumnName="RTGSNo" />
+                <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="BankName" ColumnName="BankName" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="PerHourSalary" ColumnName="PerHourSalary" />
+                <ScalarProperty Name="PerDayWorkingHours" ColumnName="PerDayWorkingHours" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="SponsorsID" ColumnName="SponsorsID" />
+                <ScalarProperty Name="LeaveDate" ColumnName="LeaveDate" />
+                <ScalarProperty Name="JoinDate" ColumnName="JoinDate" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="IDProfeNo" ColumnName="IDProfeNo" />
+                <ScalarProperty Name="IDProfe" ColumnName="IDProfe" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+                <ScalarProperty Name="ResidentialAddress" ColumnName="ResidentialAddress" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="EmployeeTypeID" ColumnName="EmployeeTypeID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEmployeeTypeMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblEmployeeTypeMST">
+              <MappingFragment StoreEntitySet="tblEmployeeTypeMST">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="EmployeeTypeID" ColumnName="EmployeeTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblLoomProcesses">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblLoomProcess">
+              <MappingFragment StoreEntitySet="tblLoomProcess">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="CreatoinDateTime" ColumnName="CreatoinDateTime" />
+                <ScalarProperty Name="NoofTFORole" ColumnName="NoofTFORole" />
+                <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+                <ScalarProperty Name="BeemProcessID" ColumnName="BeemProcessID" />
+                <ScalarProperty Name="LoomProcessID" ColumnName="LoomProcessID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblLoomProcessWorks">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblLoomProcessWork">
+              <MappingFragment StoreEntitySet="tblLoomProcessWork">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="MTREnd" ColumnName="MTREnd" />
+                <ScalarProperty Name="MTRStart" ColumnName="MTRStart" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="WorkingDate" ColumnName="WorkingDate" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="LoomProcessID" ColumnName="LoomProcessID" />
+                <ScalarProperty Name="LoomProcessWorkID" ColumnName="LoomProcessWorkID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMachineMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblMachineMST">
+              <MappingFragment StoreEntitySet="tblMachineMST">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="AboutMachine" ColumnName="AboutMachine" />
+                <ScalarProperty Name="MachineTypeID" ColumnName="MachineTypeID" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMachineTypeMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblMachineTypeMST">
+              <MappingFragment StoreEntitySet="tblMachineTypeMST">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="MachineTypeID" ColumnName="MachineTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMandingProcesses">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblMandingProcess">
+              <MappingFragment StoreEntitySet="tblMandingProcess">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="TotalNoOfFaults" ColumnName="TotalNoOfFaults" />
+                <ScalarProperty Name="TotalMeter" ColumnName="TotalMeter" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="TakaNo" ColumnName="TakaNo" />
+                <ScalarProperty Name="MendingID" ColumnName="MendingID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMendingDetailsProcesses">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblMendingDetailsProcess">
+              <MappingFragment StoreEntitySet="tblMendingDetailsProcess">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="EndMeter" ColumnName="EndMeter" />
+                <ScalarProperty Name="StartMeter" ColumnName="StartMeter" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="MendingID" ColumnName="MendingID" />
+                <ScalarProperty Name="MendingDetailsID" ColumnName="MendingDetailsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMendingPenulties">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblMendingPenulty">
+              <MappingFragment StoreEntitySet="tblMendingPenulty">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="PenultyID" ColumnName="PenultyID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="MendingPenultyID" ColumnName="MendingPenultyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblPartysMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblPartysMST">
+              <MappingFragment StoreEntitySet="tblPartysMST">
+                <ScalarProperty Name="UpdationDateTIme" ColumnName="UpdationDateTIme" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBye" ColumnName="CreateBye" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="ECCNo" ColumnName="ECCNo" />
+                <ScalarProperty Name="CSTDate" ColumnName="CSTDate" />
+                <ScalarProperty Name="CSTTINNo" ColumnName="CSTTINNo" />
+                <ScalarProperty Name="PANNO" ColumnName="PANNO" />
+                <ScalarProperty Name="TINDate" ColumnName="TINDate" />
+                <ScalarProperty Name="TINNo" ColumnName="TINNo" />
+                <ScalarProperty Name="ExtraDetails" ColumnName="ExtraDetails" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="ReferencePersonMobileNo" ColumnName="ReferencePersonMobileNo" />
+                <ScalarProperty Name="ReferencePersonName" ColumnName="ReferencePersonName" />
+                <ScalarProperty Name="SMSNo" ColumnName="SMSNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="OfficeAddress" ColumnName="OfficeAddress" />
+                <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+                <ScalarProperty Name="PartyName" ColumnName="PartyName" />
+                <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+                <ScalarProperty Name="PartyID" ColumnName="PartyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblPenaltyMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblPenaltyMST">
+              <MappingFragment StoreEntitySet="tblPenaltyMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="PenaltyName" ColumnName="PenaltyName" />
+                <ScalarProperty Name="PenaltyCode" ColumnName="PenaltyCode" />
+                <ScalarProperty Name="PenaltyID" ColumnName="PenaltyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblProductQualityMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblProductQualityMST">
+              <MappingFragment StoreEntitySet="tblProductQualityMST">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+                <ScalarProperty Name="WeightOfFabricWEFT" ColumnName="WeightOfFabricWEFT" />
+                <ScalarProperty Name="WeightOfFabricWARP" ColumnName="WeightOfFabricWARP" />
+                <ScalarProperty Name="HeatSetting" ColumnName="HeatSetting" />
+                <ScalarProperty Name="Border" ColumnName="Border" />
+                <ScalarProperty Name="PickOnLoom" ColumnName="PickOnLoom" />
+                <ScalarProperty Name="ReedOnLoom" ColumnName="ReedOnLoom" />
+                <ScalarProperty Name="ApproxTotalEndsWithBorder" ColumnName="ApproxTotalEndsWithBorder" />
+                <ScalarProperty Name="WEFTTwistPerMeterZ" ColumnName="WEFTTwistPerMeterZ" />
+                <ScalarProperty Name="WEFTTwistPerMeterS" ColumnName="WEFTTwistPerMeterS" />
+                <ScalarProperty Name="WEFTDirectionOfTwistZ" ColumnName="WEFTDirectionOfTwistZ" />
+                <ScalarProperty Name="WEFTDirectionOfTwistS" ColumnName="WEFTDirectionOfTwistS" />
+                <ScalarProperty Name="WEFTYarnTypeID" ColumnName="WEFTYarnTypeID" />
+                <ScalarProperty Name="WEFTYarnQualityID" ColumnName="WEFTYarnQualityID" />
+                <ScalarProperty Name="WEFTNumberOfFilaments1" ColumnName="WEFTNumberOfFilaments1" />
+                <ScalarProperty Name="WEFTDenierAfterTPM" ColumnName="WEFTDenierAfterTPM" />
+                <ScalarProperty Name="WARPTwistPerMeterZ" ColumnName="WARPTwistPerMeterZ" />
+                <ScalarProperty Name="WARPTwistPerMeterS" ColumnName="WARPTwistPerMeterS" />
+                <ScalarProperty Name="WARPDirectionOfTwistZ" ColumnName="WARPDirectionOfTwistZ" />
+                <ScalarProperty Name="WARPDirectionOfTwistS" ColumnName="WARPDirectionOfTwistS" />
+                <ScalarProperty Name="WARPYarnTypeID" ColumnName="WARPYarnTypeID" />
+                <ScalarProperty Name="WARPYarnQualityID" ColumnName="WARPYarnQualityID" />
+                <ScalarProperty Name="WARPNumberOfFilaments" ColumnName="WARPNumberOfFilaments" />
+                <ScalarProperty Name="WARPDenierAfterTPM" ColumnName="WARPDenierAfterTPM" />
+                <ScalarProperty Name="ProductQualityName" ColumnName="ProductQualityName" />
+                <ScalarProperty Name="ProductQualityID" ColumnName="ProductQualityID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblProfeListMsts">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblProfeListMst">
+              <MappingFragment StoreEntitySet="tblProfeListMst">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ProfeID" ColumnName="ProfeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSalaryMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblSalaryMST">
+              <MappingFragment StoreEntitySet="tblSalaryMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="NetSalary" ColumnName="NetSalary" />
+                <ScalarProperty Name="WithdrownID" ColumnName="WithdrownID" />
+                <ScalarProperty Name="WithdrownAmount" ColumnName="WithdrownAmount" />
+                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+                <ScalarProperty Name="TotalPenalty" ColumnName="TotalPenalty" />
+                <ScalarProperty Name="WorkedHours" ColumnName="WorkedHours" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="SalaryID" ColumnName="SalaryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTFOProcesses">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblTFOProcess">
+              <MappingFragment StoreEntitySet="tblTFOProcess">
+                <ScalarProperty Name="CreationDateTIme" ColumnName="CreationDateTIme" />
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="YarnTypeId" ColumnName="YarnTypeId" />
+                <ScalarProperty Name="YarnQualityId" ColumnName="YarnQualityId" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="QualityName" ColumnName="QualityName" />
+                <ScalarProperty Name="ProducttionWights" ColumnName="ProducttionWights" />
+                <ScalarProperty Name="ProducttionNoOfTFORoles" ColumnName="ProducttionNoOfTFORoles" />
+                <ScalarProperty Name="NoofTFORole" ColumnName="NoofTFORole" />
+                <ScalarProperty Name="IssueWights" ColumnName="IssueWights" />
+                <ScalarProperty Name="IssueNoOfCopes" ColumnName="IssueNoOfCopes" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="MachineId" ColumnName="MachineId" />
+                <ScalarProperty Name="PurchaseItemID" ColumnName="PurchaseItemID" />
+                <ScalarProperty Name="WindingProcessId" ColumnName="WindingProcessId" />
+                <ScalarProperty Name="TFORoleProcessId" ColumnName="TFORoleProcessId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblWindingWorks">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblWindingWork">
+              <MappingFragment StoreEntitySet="tblWindingWork">
+                <ScalarProperty Name="CreationDateTIme" ColumnName="CreationDateTIme" />
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="YarnTypeId" ColumnName="YarnTypeId" />
+                <ScalarProperty Name="YarnQualityId" ColumnName="YarnQualityId" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="NoOfCopes" ColumnName="NoOfCopes" />
+                <ScalarProperty Name="ProductionWeight" ColumnName="ProductionWeight" />
+                <ScalarProperty Name="WastedWeight" ColumnName="WastedWeight" />
+                <ScalarProperty Name="TotalIssueWeight" ColumnName="TotalIssueWeight" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="PuchaseItemId" ColumnName="PuchaseItemId" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="MachineId" ColumnName="MachineId" />
+                <ScalarProperty Name="WindingProcessId" ColumnName="WindingProcessId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblWithdrownMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblWithdrownMST">
+              <MappingFragment StoreEntitySet="tblWithdrownMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ISStatus" ColumnName="ISStatus" />
+                <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+                <ScalarProperty Name="WithdrownDate" ColumnName="WithdrownDate" />
+                <ScalarProperty Name="WithdrownAmount" ColumnName="WithdrownAmount" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="WithdrownID" ColumnName="WithdrownID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblWorkingYears">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblWorkingYear">
+              <MappingFragment StoreEntitySet="tblWorkingYear">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="YearName" ColumnName="YearName" />
+                <ScalarProperty Name="YearID" ColumnName="YearID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblYarnPackageTypes">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnPackageType">
+              <MappingFragment StoreEntitySet="tblYarnPackageType">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="YarnPackageTypeID" ColumnName="YarnPackageTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblYarnPurchases">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnPurchase">
+              <MappingFragment StoreEntitySet="tblYarnPurchase">
+                <ScalarProperty Name="UpDatedDateTime" ColumnName="UpDatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="RecieveAt" ColumnName="RecieveAt" />
+                <ScalarProperty Name="LRNo" ColumnName="LRNo" />
+                <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+                <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+                <ScalarProperty Name="YearID" ColumnName="YearID" />
+                <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+                <ScalarProperty Name="PartyID" ColumnName="PartyID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="SRNo" ColumnName="SRNo" />
+                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblYarnPurchaseItems">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnPurchaseItem">
+              <MappingFragment StoreEntitySet="tblYarnPurchaseItems">
+                <ScalarProperty Name="CreationDateTIme" ColumnName="CreationDateTIme" />
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="YarnTypeID" ColumnName="YarnTypeID" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Cheese" ColumnName="Cheese" />
+                <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+                <ScalarProperty Name="TareWeight" ColumnName="TareWeight" />
+                <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+                <ScalarProperty Name="BoxNo" ColumnName="BoxNo" />
+                <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+                <ScalarProperty Name="YarnPackageTypeID" ColumnName="YarnPackageTypeID" />
+                <ScalarProperty Name="YarnID" ColumnName="YarnID" />
+                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+                <ScalarProperty Name="PurchaseItemID" ColumnName="PurchaseItemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblYarnQualityMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnQualityMST">
+              <MappingFragment StoreEntitySet="tblYarnQualityMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YarnQualityName" ColumnName="YarnQualityName" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblYarnTypeMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblYarnTypeMST">
+              <MappingFragment StoreEntitySet="tblYarnTypeMST">
+                <ScalarProperty Name="CreationDateTIme" ColumnName="CreationDateTIme" />
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="NumberOfFilaments" ColumnName="NumberOfFilaments" />
+                <ScalarProperty Name="Denier" ColumnName="Denier" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
+                <ScalarProperty Name="YarnTypeName" ColumnName="YarnTypeName" />
+                <ScalarProperty Name="YarnTypeID" ColumnName="YarnTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WithdrownReturnMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.WithdrownReturnMST">
+              <MappingFragment StoreEntitySet="WithdrownReturnMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="SalaryID" ColumnName="SalaryID" />
+                <ScalarProperty Name="ReturnType" ColumnName="ReturnType" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="WithdrownReturnID" ColumnName="WithdrownReturnID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBeamMSTs">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblBeamMST">
+              <MappingFragment StoreEntitySet="tblBeamMST">
+                <ScalarProperty Name="UpdationDateTime" ColumnName="UpdationDateTime" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="FinalAmount" ColumnName="FinalAmount" />
+                <ScalarProperty Name="My" ColumnName="My" />
+                <ScalarProperty Name="Pick" ColumnName="Pick" />
+                <ScalarProperty Name="RPM" ColumnName="RPM" />
+                <ScalarProperty Name="MeterConsumption" ColumnName="MeterConsumption" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="TakaMeter" ColumnName="TakaMeter" />
+                <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="MachineId" ColumnName="MachineId" />
+                <ScalarProperty Name="MinStrategy" ColumnName="MinStrategy" />
+                <ScalarProperty Name="PipeWeight" ColumnName="PipeWeight" />
+                <ScalarProperty Name="ProductionTaka" ColumnName="ProductionTaka" />
+                <ScalarProperty Name="ProductionMeters" ColumnName="ProductionMeters" />
+                <ScalarProperty Name="PasaraiEmployeeId" ColumnName="PasaraiEmployeeId" />
+                <ScalarProperty Name="BhidanDate" ColumnName="BhidanDate" />
+                <ScalarProperty Name="BhidanStatus" ColumnName="BhidanStatus" />
+                <ScalarProperty Name="LoadingDate" ColumnName="LoadingDate" />
+                <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+                <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+                <ScalarProperty Name="Taka" ColumnName="Taka" />
+                <ScalarProperty Name="Meters" ColumnName="Meters" />
+                <ScalarProperty Name="NoofTar" ColumnName="NoofTar" />
+                <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+                <ScalarProperty Name="GrayQualityId" ColumnName="GrayQualityId" />
+                <ScalarProperty Name="YarnQualityID" ColumnName="YarnQualityID" />
+                <ScalarProperty Name="BeemDate" ColumnName="BeemDate" />
+                <ScalarProperty Name="JobberPartyName" ColumnName="JobberPartyName" />
+                <ScalarProperty Name="WrapperPartyID" ColumnName="WrapperPartyID" />
+                <ScalarProperty Name="BeamNo" ColumnName="BeamNo" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="BeemID" ColumnName="BeemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblFiscalYears">
+            <EntityTypeMapping TypeName="LoomsManagementModel.tblFiscalYear">
+              <MappingFragment StoreEntitySet="tblFiscalYear">
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="FiscalName" ColumnName="FiscalName" />
+                <ScalarProperty Name="FiscalYearId" ColumnName="FiscalYearId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

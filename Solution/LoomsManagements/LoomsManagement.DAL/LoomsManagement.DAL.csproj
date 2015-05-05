@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03F518E2-DFF5-4923-A42F-F7C2D68D58AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoomsManagement.DAL</RootNamespace>
+    <AssemblyName>LoomsManagement.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assemblers\tblAttendanceMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblBankMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblBeamMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblBeemProcessAssembler.cs" />
+    <Compile Include="Assemblers\tblBemProcessDetailAssembler.cs" />
+    <Compile Include="Assemblers\tblBoilerProcessAssembler.cs" />
+    <Compile Include="Assemblers\tblBolierProcessDetailAssembler.cs" />
+    <Compile Include="Assemblers\tblBranchMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblBrokersMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblCompanyAssembler.cs" />
+    <Compile Include="Assemblers\tblCompanyMachineMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblEmployeeAssembler.cs" />
+    <Compile Include="Assemblers\tblEmployeeTypeMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblFiscalYearAssembler.cs" />
+    <Compile Include="Assemblers\tblLoomProcessAssembler.cs" />
+    <Compile Include="Assemblers\tblLoomProcessWorkAssembler.cs" />
+    <Compile Include="Assemblers\tblMachineMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblMachineTypeMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblMandingProcessAssembler.cs" />
+    <Compile Include="Assemblers\tblMendingDetailsProcessAssembler.cs" />
+    <Compile Include="Assemblers\tblMendingPenultyAssembler.cs" />
+    <Compile Include="Assemblers\tblPartysMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblPenaltyMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblProductQualityMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblProfeListMstAssembler.cs" />
+    <Compile Include="Assemblers\tblSalaryMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblTFOProcessAssembler.cs" />
+    <Compile Include="Assemblers\tblWindingWorkAssembler.cs" />
+    <Compile Include="Assemblers\tblWithdrownMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblWorkingYearAssembler.cs" />
+    <Compile Include="Assemblers\tblYarnPackageTypeAssembler.cs" />
+    <Compile Include="Assemblers\tblYarnPurchaseAssembler.cs" />
+    <Compile Include="Assemblers\tblYarnPurchaseItemAssembler.cs" />
+    <Compile Include="Assemblers\tblYarnQualityMSTAssembler.cs" />
+    <Compile Include="Assemblers\tblYarnTypeMSTAssembler.cs" />
+    <Compile Include="Assemblers\WithdrownReturnMSTAssembler.cs" />
+    <Compile Include="ORM\LoomsManagementDatabase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoomsManagementDatabase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\LoomsManagementDatabase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\LoomsManagementDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblAttendanceMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBankMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeamMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBeemProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBemProcessDetail.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBoilerProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBolierProcessDetail.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBranchMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblBrokersMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblCompany.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblCompanyMachineMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblEmployee.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblEmployeeTypeMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblFiscalYear.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblLoomProcessWork.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMachineMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMachineTypeMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMandingProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingDetailsProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblMendingPenulty.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPartysMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblPenaltyMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblProductQualityMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblProfeListMst.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblSalaryMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblTFOProcess.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWindingWork.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWithdrownMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblWorkingYear.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPackageType.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchase.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnPurchaseItem.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnQualityMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\tblYarnTypeMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\WithdrownReturnMST.cs">
+      <DependentUpon>LoomsManagementDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respository\BeamMasterRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Respository\FiscalYearRepository.cs" />
+    <Compile Include="Respository\PartyRepositotry.cs" />
+    <Compile Include="Respository\BankRepository.cs" />
+    <Compile Include="Respository\CompanyRepository.cs" />
+    <Compile Include="Respository\EmployeeRepository.cs" />
+    <Compile Include="Respository\MachineRepository.cs" />
+    <Compile Include="Respository\ProofRepository.cs" />
+    <Compile Include="Respository\YarnPurchaseRepository.cs" />
+    <Compile Include="Respository\YarnRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="ORM\LoomsManagementDatabase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoomsManagementDatabase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ORM\LoomsManagementDatabase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+      <LastGenOutput>LoomsManagementDatabase.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ORM\LoomsManagementDatabase.edmx.diagram">
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+    </None>
+    <None Include="ORM\LoomsManagementDatabase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoomsManagementDatabase.edmx</DependentUpon>
+      <LastGenOutput>LoomsManagementDatabase.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoomsManagement.Domain\LoomsManagement.Domain.csproj">
+      <Project>{96c17e4b-d6e1-4a60-ab95-3cf50cf29594}</Project>
+      <Name>LoomsManagement.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
