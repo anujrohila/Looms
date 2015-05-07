@@ -10,22 +10,17 @@ using System.Windows.Forms;
 
 namespace LoomsMana.Forms.Master
 {
-    public partial class FrmSimple : Form
+    public partial class FrmCompanyView : LoomsMana.Forms.Master.FrmGrid
     {
-        public FrmSimple()
+        public FrmCompanyView()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FrmCompanyMst frm = new FrmCompanyMst();
+            frm.ShowDialog();
         }
-
-        private void FrmSimple_KeyDown(object sender, KeyEventArgs e)
-        {
-            this.Close();
-        }
-
     }
 }

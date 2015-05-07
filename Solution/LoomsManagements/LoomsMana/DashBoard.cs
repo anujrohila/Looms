@@ -51,6 +51,32 @@ namespace LoomsMana
                 }
                 lblNav.Text = ">>";
                 pnlMainBack.Refresh();
+                try
+                {
+                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
+                    {
+                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
+                        {
+                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
+                            {
+                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
+                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
+                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
+                                frm.Parent = null;
+                                frm.Height = pnl.Height;
+                                frm.Width = pnl.Width;
+                                pnl.Controls.Add(frm);
+                                frm.Location = new Point(pnl.Width / 2 - frm.Size.Width / 2, pnl.Height / 2 - frm.Size.Height / 2);
+                                //frm.Dock = DockStyle.Fill;
+                                frm.Visible = true;
+                            }
+                        }
+
+                    }
+
+                }
+                catch { }
+
                 flag = true;
             }
             else
@@ -65,6 +91,32 @@ namespace LoomsMana
                 }
                 lblNav.Text = "<<";
                 pnlMainBack.Refresh();
+
+                try
+                {
+                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
+                    {
+                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
+                        {
+                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
+                            {
+                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
+                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
+                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
+                                frm.Parent = null;
+                                frm.Height = pnl.Height;
+                                frm.Width = pnl.Width;
+                                pnl.Controls.Add(frm);
+                                frm.Location = new Point(pnl.Width / 2 - frm.Size.Width / 2, pnl.Height / 2 - frm.Size.Height / 2);
+                                //frm.Dock = DockStyle.Fill;
+                                frm.Visible = true;
+                            }
+                        }
+
+                    }
+
+                }
+                catch { }
                 flag = false;
 
             }
@@ -207,7 +259,7 @@ namespace LoomsMana
 
         private void navCompMst_LinkClicked(object sender, NavBarLinkEventArgs e)
         {
-            FillFrm(new FrmCompanyMst());
+            FillFrm(new FrmCompanyView());
         }
 
         private void tabControl1_CloseButtonClick(object sender, EventArgs e)

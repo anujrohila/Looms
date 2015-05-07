@@ -58,7 +58,10 @@
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v14.1.Extensions, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -84,6 +87,18 @@
     <Compile Include="Forms\Master\FrmCompanyMst.Designer.cs">
       <DependentUpon>FrmCompanyMst.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\FrmCompanyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmCompanyView.Designer.cs">
+      <DependentUpon>FrmCompanyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\FrmGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\FrmGrid.Designer.cs">
+      <DependentUpon>FrmGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\FrmSimple.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\FrmCompanyMst.resx">
       <DependentUpon>FrmCompanyMst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmCompanyView.resx">
+      <DependentUpon>FrmCompanyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\FrmGrid.resx">
+      <DependentUpon>FrmGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\FrmSimple.resx">
       <DependentUpon>FrmSimple.cs</DependentUpon>

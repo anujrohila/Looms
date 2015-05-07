@@ -851,7 +851,7 @@
             this.pnlMainBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainBack.Location = new System.Drawing.Point(200, 50);
             this.pnlMainBack.Name = "pnlMainBack";
-            this.pnlMainBack.Size = new System.Drawing.Size(894, 643);
+            this.pnlMainBack.Size = new System.Drawing.Size(894, 622);
             this.pnlMainBack.TabIndex = 3;
             // 
             // tabControl1
@@ -872,7 +872,7 @@
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Size = new System.Drawing.Size(894, 643);
+            this.tabControl1.Size = new System.Drawing.Size(894, 622);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.CloseButtonClick += new System.EventHandler(this.tabControl1_CloseButtonClick);
             // 
@@ -886,8 +886,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 693);
-            this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlMainBack);
+            this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

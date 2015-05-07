@@ -126,7 +126,7 @@
             this.groupBox1.Controls.Add(this.btnReport);
             this.groupBox1.Controls.Add(this.btndelete);
             this.groupBox1.Controls.Add(this.btnExit);
-            this.groupBox1.Location = new System.Drawing.Point(10, 2);
+            this.groupBox1.Location = new System.Drawing.Point(10, -1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(544, 54);
             this.groupBox1.TabIndex = 19;
@@ -141,8 +141,10 @@
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "FrmSimple";
             this.Text = "FrmSimple";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSimple_KeyDown);
             this.pnlFooter.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
