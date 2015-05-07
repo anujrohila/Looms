@@ -1,6 +1,6 @@
 ﻿namespace LoomsMana
 {
-    partial class Form1
+    partial class DashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.navbarImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
@@ -38,8 +38,10 @@
             this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             this.pnlFooter = new System.Windows.Forms.Panel();
+            this.lblNav = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
+            this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarMaster = new DevExpress.XtraNavBar.NavBarGroup();
             this.navCompMst = new DevExpress.XtraNavBar.NavBarItem();
             this.navOwnerMst = new DevExpress.XtraNavBar.NavBarItem();
@@ -73,7 +75,8 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlMainBack = new System.Windows.Forms.Panel();
+            this.tabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
@@ -82,9 +85,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
+            this.pnlFooter.SuspendLayout();
             this.pnlLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             this.pnlTop.SuspendLayout();
+            this.pnlMainBack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // navbarImageCollectionLarge
@@ -294,29 +300,57 @@
             // pnlFooter
             // 
             this.pnlFooter.BackColor = System.Drawing.Color.White;
+            this.pnlFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlFooter.Controls.Add(this.lblNav);
+            this.pnlFooter.Controls.Add(this.label6);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 680);
+            this.pnlFooter.Location = new System.Drawing.Point(200, 672);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(1094, 13);
+            this.pnlFooter.Size = new System.Drawing.Size(894, 21);
             this.pnlFooter.TabIndex = 0;
+            // 
+            // lblNav
+            // 
+            this.lblNav.BackColor = System.Drawing.Color.Red;
+            this.lblNav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblNav.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNav.ForeColor = System.Drawing.Color.White;
+            this.lblNav.Location = new System.Drawing.Point(-1, 3);
+            this.lblNav.Name = "lblNav";
+            this.lblNav.Size = new System.Drawing.Size(27, 16);
+            this.lblNav.TabIndex = 2;
+            this.lblNav.Text = "<<";
+            this.lblNav.Click += new System.EventHandler(this.lblNav_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(30, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(173, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "( ctr+Q ) Show && Hide Menu";
             // 
             // pnlLeft
             // 
-            this.pnlLeft.Controls.Add(this.navBarControl1);
+            this.pnlLeft.Controls.Add(this.navBarControl);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 50);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(200, 630);
+            this.pnlLeft.Size = new System.Drawing.Size(200, 643);
             this.pnlLeft.TabIndex = 1;
             // 
-            // navBarControl1
+            // navBarControl
             // 
-            this.navBarControl1.ActiveGroup = this.navBarMaster;
-            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.navBarControl.ActiveGroup = this.navBarMaster;
+            this.navBarControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navBarControl.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarMaster,
             this.navBarProduction});
-            this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
+            this.navBarControl.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navCompMst,
             this.navOwnerMst,
             this.navPartyMst,
@@ -338,14 +372,16 @@
             this.navSaleReturn,
             this.navBeamPurchase,
             this.navGrayPurchase});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 0);
-            this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 200;
-            this.navBarControl1.SharedImageCollectionImageSizeMode = DevExpress.Utils.SharedImageCollectionImageSizeMode.UseImageSize;
-            this.navBarControl1.Size = new System.Drawing.Size(200, 630);
-            this.navBarControl1.SmallImages = this.ribbonImageCollection;
-            this.navBarControl1.TabIndex = 0;
-            this.navBarControl1.Text = "navBarControl1";
+            this.navBarControl.Location = new System.Drawing.Point(0, 0);
+            this.navBarControl.Name = "navBarControl";
+            this.navBarControl.OptionsNavPane.ExpandedWidth = 200;
+            this.navBarControl.SharedImageCollectionImageSizeMode = DevExpress.Utils.SharedImageCollectionImageSizeMode.UseImageSize;
+            this.navBarControl.Size = new System.Drawing.Size(200, 643);
+            this.navBarControl.SmallImages = this.ribbonImageCollection;
+            this.navBarControl.TabIndex = 0;
+            this.navBarControl.Text = "navBarControl1";
+            this.navBarControl.GroupExpanded += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_GroupExpanded);
+            this.navBarControl.MouseClick += new System.Windows.Forms.MouseEventHandler(this.navBarControl_MouseClick);
             // 
             // navBarMaster
             // 
@@ -391,6 +427,7 @@
             this.navCompMst.Caption = "Comapany Master";
             this.navCompMst.Name = "navCompMst";
             this.navCompMst.SmallImageIndex = 7;
+            this.navCompMst.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navOwnerMst
             // 
@@ -807,34 +844,60 @@
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(121, 2);
             // 
-            // pnlMain
+            // pnlMainBack
             // 
-            this.pnlMain.BackColor = System.Drawing.Color.White;
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(200, 50);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(894, 630);
-            this.pnlMain.TabIndex = 3;
+            this.pnlMainBack.BackColor = System.Drawing.Color.White;
+            this.pnlMainBack.Controls.Add(this.tabControl1);
+            this.pnlMainBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainBack.Location = new System.Drawing.Point(200, 50);
+            this.pnlMainBack.Name = "pnlMainBack";
+            this.pnlMainBack.Size = new System.Drawing.Size(894, 643);
+            this.pnlMainBack.TabIndex = 3;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.Appearance.Options.UseFont = true;
+            this.tabControl1.AppearancePage.Header.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.AppearancePage.Header.Options.UseFont = true;
+            this.tabControl1.AppearancePage.HeaderActive.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.AppearancePage.HeaderActive.Options.UseFont = true;
+            this.tabControl1.AppearancePage.HeaderDisabled.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.AppearancePage.HeaderDisabled.Options.UseFont = true;
+            this.tabControl1.AppearancePage.HeaderHotTracked.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.AppearancePage.HeaderHotTracked.Options.UseFont = true;
+            this.tabControl1.AppearancePage.PageClient.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.AppearancePage.PageClient.Options.UseFont = true;
+            this.tabControl1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Size = new System.Drawing.Size(894, 643);
+            this.tabControl1.TabIndex = 0;
+            this.tabControl1.CloseButtonClick += new System.EventHandler(this.tabControl1_CloseButtonClick);
             // 
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "VS2010";
             // 
-            // Form1
+            // DashBoard
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 693);
-            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.pnlFooter);
+            this.Controls.Add(this.pnlMainBack);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlTop);
-            this.Controls.Add(this.pnlFooter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.KeyPreview = true;
+            this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "z";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Shown += new System.EventHandler(this.DashBoard_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DashBoard_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).EndInit();
@@ -842,10 +905,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
+            this.pnlFooter.ResumeLayout(false);
+            this.pnlFooter.PerformLayout();
             this.pnlLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
+            this.pnlMainBack.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -862,9 +929,9 @@
         private System.Windows.Forms.Panel pnlFooter;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel pnlTop;
-        private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Panel pnlMainBack;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
-        private DevExpress.XtraNavBar.NavBarControl navBarControl1;
+        private DevExpress.XtraNavBar.NavBarControl navBarControl;
         private DevExpress.XtraNavBar.NavBarGroup navBarMaster;
         private DevExpress.XtraNavBar.NavBarItem navCompMst;
         private DevExpress.XtraNavBar.NavBarItem navOwnerMst;
@@ -897,6 +964,9 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel1;
+        private System.Windows.Forms.Label label6;
+        private DevExpress.XtraTab.XtraTabControl tabControl1;
+        private System.Windows.Forms.Label lblNav;
 
     }
 }

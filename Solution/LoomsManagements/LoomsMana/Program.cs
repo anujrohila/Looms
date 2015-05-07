@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
+using LoomsMana.Forms.Master;
 
 namespace LoomsMana
 {
@@ -19,7 +20,7 @@ namespace LoomsMana
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
 
-            Application.Run(new Form1());
+            Application.Run(new DashBoard());
         }
     }
 }
