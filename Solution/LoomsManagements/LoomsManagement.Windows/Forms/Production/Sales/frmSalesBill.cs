@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace LoomsManagement.Windows.Forms.Production.Sales
+namespace LoomsManagement.Windows.Forms
 {
     public partial class frmSalesBill : LoomsManagement.Windows.FromButtonBottam
     {

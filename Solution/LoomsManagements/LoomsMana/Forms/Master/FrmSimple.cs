@@ -24,7 +24,10 @@ namespace LoomsMana.Forms.Master
 
         private void FrmSimple_KeyDown(object sender, KeyEventArgs e)
         {
-            this.Close();
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
         }
 
     }

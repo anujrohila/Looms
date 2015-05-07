@@ -1,4 +1,4 @@
-﻿namespace LoomsManagement.Windows.Forms.Production.Sales
+﻿namespace LoomsManagement.Windows.Forms
 {
     partial class frmSalesBill
     {

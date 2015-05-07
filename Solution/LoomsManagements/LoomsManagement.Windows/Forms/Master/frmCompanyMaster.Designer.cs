@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtaddress = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -63,17 +62,17 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.errorcompanyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorcompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorOwnername = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.erroropeningdate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorinvestmentamount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_contactpersoanname = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_address = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.error_panno = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorcst = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorecc = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
-            this.errorsms = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorcompanyName = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorcompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorOwnername = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.erroropeningdate = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorinvestmentamount = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.error_contactpersoanname = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.error_address = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.error_panno = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorcst = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorecc = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.errorsms = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.panel1.SuspendLayout();

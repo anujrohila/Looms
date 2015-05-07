@@ -82,7 +82,6 @@
             // gridViewCompany
             // 
             this.gridViewCompany.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridViewCompany.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridViewCompany.Location = new System.Drawing.Point(0, 43);
             this.gridViewCompany.MainView = this.InnerGrid;
             this.gridViewCompany.Name = "gridViewCompany";
@@ -90,7 +89,7 @@
             this.Btn_Edit,
             this.Btn_Delete,
             this.Btn_View});
-            this.gridViewCompany.Size = new System.Drawing.Size(796, 338);
+            this.gridViewCompany.Size = new System.Drawing.Size(438, 338);
             this.gridViewCompany.TabIndex = 65;
             this.gridViewCompany.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});

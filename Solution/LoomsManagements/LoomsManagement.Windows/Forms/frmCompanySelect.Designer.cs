@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompanySelect));
             this.cmbCompanyCode = new DevExpress.XtraEditors.LookUpEdit();
             this.label13 = new System.Windows.Forms.Label();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
-            this.error_CompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.error_CompanyCode = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_CompanyCode)).BeginInit();
             this.SuspendLayout();

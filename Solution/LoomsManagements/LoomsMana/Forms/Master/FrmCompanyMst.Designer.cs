@@ -99,7 +99,7 @@
             // 
             this.pnlMain.Controls.Add(this.groupBox1);
             this.pnlMain.Location = new System.Drawing.Point(0, 40);
-            this.pnlMain.Size = new System.Drawing.Size(771, 260);
+            this.pnlMain.Size = new System.Drawing.Size(771, 232);
             // 
             // pnlHeader
             // 
@@ -111,7 +111,7 @@
             // 
             // pnlFooter
             // 
-            this.pnlFooter.Location = new System.Drawing.Point(0, 300);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 272);
             this.pnlFooter.Size = new System.Drawing.Size(771, 60);
             // 
             // label3
@@ -160,7 +160,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(771, 360);
+            this.panel2.Size = new System.Drawing.Size(771, 332);
             this.panel2.TabIndex = 1;
             // 
             // shapeContainer2
@@ -177,6 +177,7 @@
             // txtCompanyName
             // 
             this.txtCompanyName.EditValue = "";
+            this.txtCompanyName.EnterMoveNextControl = true;
             this.txtCompanyName.Location = new System.Drawing.Point(170, 24);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,6 +192,7 @@
             // dpOpeningDate
             // 
             this.dpOpeningDate.EditValue = null;
+            this.dpOpeningDate.EnterMoveNextControl = true;
             this.dpOpeningDate.Location = new System.Drawing.Point(170, 117);
             this.dpOpeningDate.Name = "dpOpeningDate";
             this.dpOpeningDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
@@ -209,6 +211,7 @@
             // txtContactPerrsonName
             // 
             this.txtContactPerrsonName.EditValue = "";
+            this.txtContactPerrsonName.EnterMoveNextControl = true;
             this.txtContactPerrsonName.Location = new System.Drawing.Point(170, 179);
             this.txtContactPerrsonName.Name = "txtContactPerrsonName";
             this.txtContactPerrsonName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,6 +226,7 @@
             // txtCompanyCode
             // 
             this.txtCompanyCode.EditValue = "";
+            this.txtCompanyCode.EnterMoveNextControl = true;
             this.txtCompanyCode.Location = new System.Drawing.Point(170, 55);
             this.txtCompanyCode.Name = "txtCompanyCode";
             this.txtCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,6 +241,7 @@
             // txtOwnerName
             // 
             this.txtOwnerName.EditValue = "";
+            this.txtOwnerName.EnterMoveNextControl = true;
             this.txtOwnerName.Location = new System.Drawing.Point(170, 86);
             this.txtOwnerName.Name = "txtOwnerName";
             this.txtOwnerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,6 +256,7 @@
             // txtInvestmentAmount
             // 
             this.txtInvestmentAmount.EditValue = "";
+            this.txtInvestmentAmount.EnterMoveNextControl = true;
             this.txtInvestmentAmount.Location = new System.Drawing.Point(170, 148);
             this.txtInvestmentAmount.Name = "txtInvestmentAmount";
             this.txtInvestmentAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -265,6 +271,7 @@
             // 
             // txtaddress
             // 
+            this.txtaddress.EnterMoveNextControl = true;
             this.txtaddress.Location = new System.Drawing.Point(495, 28);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
@@ -275,6 +282,7 @@
             // txtSMSNo
             // 
             this.txtSMSNo.EditValue = "";
+            this.txtSMSNo.EnterMoveNextControl = true;
             this.txtSMSNo.Location = new System.Drawing.Point(495, 179);
             this.txtSMSNo.Name = "txtSMSNo";
             this.txtSMSNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -290,6 +298,7 @@
             // txtPANNo
             // 
             this.txtPANNo.EditValue = "";
+            this.txtPANNo.EnterMoveNextControl = true;
             this.txtPANNo.Location = new System.Drawing.Point(495, 86);
             this.txtPANNo.Name = "txtPANNo";
             this.txtPANNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,6 +313,7 @@
             // txtECCNo
             // 
             this.txtECCNo.EditValue = "";
+            this.txtECCNo.EnterMoveNextControl = true;
             this.txtECCNo.Location = new System.Drawing.Point(495, 148);
             this.txtECCNo.Name = "txtECCNo";
             this.txtECCNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -318,6 +328,7 @@
             // txtCST
             // 
             this.txtCST.EditValue = "";
+            this.txtCST.EnterMoveNextControl = true;
             this.txtCST.Location = new System.Drawing.Point(495, 117);
             this.txtCST.Name = "txtCST";
             this.txtCST.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -454,7 +465,7 @@
             this.groupBox1.Controls.Add(this.txtCST);
             this.groupBox1.Location = new System.Drawing.Point(15, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(744, 236);
+            this.groupBox1.Size = new System.Drawing.Size(744, 218);
             this.groupBox1.TabIndex = 105;
             this.groupBox1.TabStop = false;
             // 
@@ -462,7 +473,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 360);
+            this.ClientSize = new System.Drawing.Size(771, 332);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmCompanyMst";

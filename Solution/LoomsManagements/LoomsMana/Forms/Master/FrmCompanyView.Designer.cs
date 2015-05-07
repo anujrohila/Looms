@@ -68,6 +68,21 @@
             this.btnAdd.Appearance.Options.UseFont = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnMasterExcel
+            // 
+            this.btnMasterExcel.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMasterExcel.Appearance.Options.UseFont = true;
+            // 
+            // BtnMasterPrint
+            // 
+            this.BtnMasterPrint.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMasterPrint.Appearance.Options.UseFont = true;
+            // 
+            // BtnMasterPDF
+            // 
+            this.BtnMasterPDF.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMasterPDF.Appearance.Options.UseFont = true;
+            // 
             // gridViewCompany
             // 
             this.gridViewCompany.Cursor = System.Windows.Forms.Cursors.Default;

@@ -103,7 +103,7 @@
             this.panel1.Size = new System.Drawing.Size(558, 356);
             this.panel1.TabIndex = 63;
             // 
-            // FormDemo1
+            // FromButtonRight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +111,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelControl1);
             this.KeyPreview = true;
-            this.Name = "FormDemo1";
+            this.Name = "FromButtonRight";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDemo1";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

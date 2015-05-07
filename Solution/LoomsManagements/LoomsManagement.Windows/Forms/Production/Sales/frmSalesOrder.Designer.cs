@@ -1,4 +1,4 @@
-﻿namespace LoomsManagement.Windows.Forms.Production.Sales
+﻿namespace LoomsManagement.Windows.Forms
 {
     partial class frmSalesOrder
     {
@@ -51,6 +51,17 @@
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.txtRemark = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOrderStatus = new DevExpress.XtraEditors.LabelControl();
+            this.dpDeliveryDate = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.dpDeliveredDate = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
@@ -69,17 +80,6 @@
             this.txtRate = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtQualityCode = new DevExpress.XtraEditors.TextEdit();
-            this.dpDeliveryDate = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.dpDeliveredDate = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.lblOrderStatus = new DevExpress.XtraEditors.LabelControl();
-            this.txtRemark = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -95,17 +95,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtGrade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeter.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWeight.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQualityCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -481,6 +481,122 @@
             this.groupControl2.TabIndex = 252;
             this.groupControl2.Text = "Order Details";
             // 
+            // txtRemark
+            // 
+            this.txtRemark.Location = new System.Drawing.Point(120, 125);
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtRemark.Size = new System.Drawing.Size(393, 82);
+            this.txtRemark.TabIndex = 261;
+            // 
+            // labelControl34
+            // 
+            this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl34.Location = new System.Drawing.Point(108, 126);
+            this.labelControl34.Name = "labelControl34";
+            this.labelControl34.Size = new System.Drawing.Size(6, 17);
+            this.labelControl34.TabIndex = 263;
+            this.labelControl34.Text = "*";
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl19.Location = new System.Drawing.Point(12, 126);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(49, 17);
+            this.labelControl19.TabIndex = 262;
+            this.labelControl19.Text = "Remark";
+            // 
+            // lblOrderStatus
+            // 
+            this.lblOrderStatus.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderStatus.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.lblOrderStatus.Location = new System.Drawing.Point(659, 33);
+            this.lblOrderStatus.Name = "lblOrderStatus";
+            this.lblOrderStatus.Size = new System.Drawing.Size(29, 17);
+            this.lblOrderStatus.TabIndex = 260;
+            this.lblOrderStatus.Text = "New";
+            // 
+            // dpDeliveryDate
+            // 
+            this.dpDeliveryDate.EditValue = null;
+            this.dpDeliveryDate.Location = new System.Drawing.Point(659, 60);
+            this.dpDeliveryDate.Name = "dpDeliveryDate";
+            this.dpDeliveryDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.dpDeliveryDate.Properties.Appearance.Options.UseFont = true;
+            this.dpDeliveryDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.dpDeliveryDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dpDeliveryDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dpDeliveryDate.Size = new System.Drawing.Size(205, 26);
+            this.dpDeliveryDate.TabIndex = 252;
+            this.dpDeliveryDate.ToolTip = "Select Date.";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Location = new System.Drawing.Point(545, 96);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(93, 17);
+            this.labelControl8.TabIndex = 255;
+            this.labelControl8.Text = "Delivered Date";
+            // 
+            // labelControl24
+            // 
+            this.labelControl24.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl24.Location = new System.Drawing.Point(545, 32);
+            this.labelControl24.Name = "labelControl24";
+            this.labelControl24.Size = new System.Drawing.Size(78, 17);
+            this.labelControl24.TabIndex = 259;
+            this.labelControl24.Text = "Order Status";
+            // 
+            // dpDeliveredDate
+            // 
+            this.dpDeliveredDate.EditValue = null;
+            this.dpDeliveredDate.Location = new System.Drawing.Point(659, 92);
+            this.dpDeliveredDate.Name = "dpDeliveredDate";
+            this.dpDeliveredDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.dpDeliveredDate.Properties.Appearance.Options.UseFont = true;
+            this.dpDeliveredDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.dpDeliveredDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dpDeliveredDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dpDeliveredDate.Size = new System.Drawing.Size(205, 26);
+            this.dpDeliveredDate.TabIndex = 253;
+            this.dpDeliveredDate.ToolTip = "Select Date.";
+            // 
+            // labelControl22
+            // 
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl22.Location = new System.Drawing.Point(649, 64);
+            this.labelControl22.Name = "labelControl22";
+            this.labelControl22.Size = new System.Drawing.Size(6, 17);
+            this.labelControl22.TabIndex = 256;
+            this.labelControl22.Text = "*";
+            // 
+            // labelControl26
+            // 
+            this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl26.Location = new System.Drawing.Point(649, 97);
+            this.labelControl26.Name = "labelControl26";
+            this.labelControl26.Size = new System.Drawing.Size(6, 17);
+            this.labelControl26.TabIndex = 257;
+            this.labelControl26.Text = "*";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Location = new System.Drawing.Point(545, 64);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(86, 17);
+            this.labelControl9.TabIndex = 254;
+            this.labelControl9.Text = "Delivery Date";
+            // 
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -673,122 +789,6 @@
             this.txtQualityCode.TabIndex = 8;
             this.txtQualityCode.ToolTip = "Enter Broker Name";
             // 
-            // dpDeliveryDate
-            // 
-            this.dpDeliveryDate.EditValue = null;
-            this.dpDeliveryDate.Location = new System.Drawing.Point(659, 60);
-            this.dpDeliveryDate.Name = "dpDeliveryDate";
-            this.dpDeliveryDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.dpDeliveryDate.Properties.Appearance.Options.UseFont = true;
-            this.dpDeliveryDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.dpDeliveryDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dpDeliveryDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dpDeliveryDate.Size = new System.Drawing.Size(205, 26);
-            this.dpDeliveryDate.TabIndex = 252;
-            this.dpDeliveryDate.ToolTip = "Select Date.";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(545, 96);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(93, 17);
-            this.labelControl8.TabIndex = 255;
-            this.labelControl8.Text = "Delivered Date";
-            // 
-            // labelControl24
-            // 
-            this.labelControl24.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl24.Location = new System.Drawing.Point(545, 32);
-            this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(78, 17);
-            this.labelControl24.TabIndex = 259;
-            this.labelControl24.Text = "Order Status";
-            // 
-            // dpDeliveredDate
-            // 
-            this.dpDeliveredDate.EditValue = null;
-            this.dpDeliveredDate.Location = new System.Drawing.Point(659, 92);
-            this.dpDeliveredDate.Name = "dpDeliveredDate";
-            this.dpDeliveredDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.dpDeliveredDate.Properties.Appearance.Options.UseFont = true;
-            this.dpDeliveredDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.dpDeliveredDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dpDeliveredDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dpDeliveredDate.Size = new System.Drawing.Size(205, 26);
-            this.dpDeliveredDate.TabIndex = 253;
-            this.dpDeliveredDate.ToolTip = "Select Date.";
-            // 
-            // labelControl22
-            // 
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl22.Location = new System.Drawing.Point(649, 64);
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(6, 17);
-            this.labelControl22.TabIndex = 256;
-            this.labelControl22.Text = "*";
-            // 
-            // labelControl26
-            // 
-            this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl26.Location = new System.Drawing.Point(649, 97);
-            this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(6, 17);
-            this.labelControl26.TabIndex = 257;
-            this.labelControl26.Text = "*";
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(545, 64);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(86, 17);
-            this.labelControl9.TabIndex = 254;
-            this.labelControl9.Text = "Delivery Date";
-            // 
-            // lblOrderStatus
-            // 
-            this.lblOrderStatus.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderStatus.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblOrderStatus.Location = new System.Drawing.Point(659, 33);
-            this.lblOrderStatus.Name = "lblOrderStatus";
-            this.lblOrderStatus.Size = new System.Drawing.Size(29, 17);
-            this.lblOrderStatus.TabIndex = 260;
-            this.lblOrderStatus.Text = "New";
-            // 
-            // txtRemark
-            // 
-            this.txtRemark.Location = new System.Drawing.Point(120, 125);
-            this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtRemark.Size = new System.Drawing.Size(393, 82);
-            this.txtRemark.TabIndex = 261;
-            // 
-            // labelControl34
-            // 
-            this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl34.Location = new System.Drawing.Point(108, 126);
-            this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(6, 17);
-            this.labelControl34.TabIndex = 263;
-            this.labelControl34.Text = "*";
-            // 
-            // labelControl19
-            // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Location = new System.Drawing.Point(12, 126);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(49, 17);
-            this.labelControl19.TabIndex = 262;
-            this.labelControl19.Text = "Remark";
-            // 
             // frmSalesOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -812,17 +812,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeter.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWeight.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQualityCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpDeliveredDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
