@@ -81,6 +81,54 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmProofMst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmProofMst.Designer.cs">
+      <DependentUpon>frmProofMst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmProofMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmProofMasterView.Designer.cs">
+      <DependentUpon>frmProofMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnPackageTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnPackageTypeMaster.Designer.cs">
+      <DependentUpon>frmYarnPackageTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnPackageTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnPackageTypeMasterView.Designer.cs">
+      <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMaster.Designer.cs">
+      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnQualityMasterView.Designer.cs">
+      <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMaster.Designer.cs">
+      <DependentUpon>frmYarnTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmYarnTypeMasterView.Designer.cs">
+      <DependentUpon>frmYarnTypeMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\FrmCompanyMst.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +241,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmProofMst.resx">
+      <DependentUpon>frmProofMst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmProofMasterView.resx">
+      <DependentUpon>frmProofMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMaster.resx">
+      <DependentUpon>frmYarnPackageTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMasterView.resx">
+      <DependentUpon>frmYarnPackageTypeMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnQualityMaster.resx">
+      <DependentUpon>frmYarnQualityMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnQualityMasterView.resx">
+      <DependentUpon>frmYarnQualityMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnTypeMaster.resx">
+      <DependentUpon>frmYarnTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmYarnTypeMasterView.resx">
+      <DependentUpon>frmYarnTypeMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\FrmCompanyMst.resx">
       <DependentUpon>FrmCompanyMst.cs</DependentUpon>

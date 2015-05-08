@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeamPurchase));
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -652,14 +654,19 @@
             // 
             this.gridBeamPurchase.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridBeamPurchase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBeamPurchase.Location = new System.Drawing.Point(2, 15);
+            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level2";
+            this.gridBeamPurchase.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1,
+            gridLevelNode2});
+            this.gridBeamPurchase.Location = new System.Drawing.Point(2, 21);
             this.gridBeamPurchase.MainView = this.InnerGrid;
             this.gridBeamPurchase.Name = "gridBeamPurchase";
             this.gridBeamPurchase.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.Btn_Edit,
             this.Btn_Delete,
             this.Btn_View});
-            this.gridBeamPurchase.Size = new System.Drawing.Size(1138, 263);
+            this.gridBeamPurchase.Size = new System.Drawing.Size(1138, 257);
             this.gridBeamPurchase.TabIndex = 311;
             this.gridBeamPurchase.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});

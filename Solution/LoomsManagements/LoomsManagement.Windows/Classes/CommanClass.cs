@@ -17,6 +17,8 @@ namespace LoomsManagement.Windows.Classes
         public static System.Drawing.Color m_tbcolorenter = Color.FromArgb(233, 240, 173);
         public static System.Drawing.Color m_tbcolorleave = System.Drawing.Color.White;
         public static System.Drawing.Color m_tbcolorerror = Color.FromArgb(255, 189, 186);
+
+
         public static DateTime newdata = new DateTime(2016, 2, 1);
         public static Keys SaveButton = Keys.S;
         public static Keys DeleteButton = Keys.Delete;

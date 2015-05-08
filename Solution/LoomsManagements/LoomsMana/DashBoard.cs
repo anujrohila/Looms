@@ -294,7 +294,7 @@ namespace LoomsMana
             switch (tagname)
             {
                 case "Bank Branch":
-                    Currentform = new frmBankBranchMasterView();
+                  //  Currentform = new frmBankBranchMasterView();
                     break;
                 //case "Owner Master View":
                 //    // Currentform = new CustomerMaster();
@@ -408,7 +408,7 @@ namespace LoomsMana
 
         private void navBankBranch_LinkClicked(object sender, NavBarLinkEventArgs e)
         {
-            FillFrm(new frmBankBranchMasterView());
+            //FillFrm(new frmBankBranchMasterView());
         }
 
     }
