@@ -111,6 +111,42 @@
     <Compile Include="Forms\Production\Purchase\frmBeamPurchase.Designer.cs">
       <DependentUpon>frmBeamPurchase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Production\Purchase\frmBeamPurchaseItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmBeamPurchaseItem.Designer.cs">
+      <DependentUpon>frmBeamPurchaseItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmGrayPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmGrayPurchase.Designer.cs">
+      <DependentUpon>frmGrayPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmPurchaseBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmPurchaseBill.Designer.cs">
+      <DependentUpon>frmPurchaseBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmPurchaseReturnItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmPurchaseReturnItem.Designer.cs">
+      <DependentUpon>frmPurchaseReturnItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseMaster.Designer.cs">
+      <DependentUpon>frmYarnPurchaseMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseMasterView.Designer.cs">
+      <DependentUpon>frmYarnPurchaseMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DashBoard.resx">
@@ -130,6 +166,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Production\Purchase\frmBeamPurchase.resx">
       <DependentUpon>frmBeamPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmBeamPurchaseItem.resx">
+      <DependentUpon>frmBeamPurchaseItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmGrayPurchase.resx">
+      <DependentUpon>frmGrayPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmPurchaseBill.resx">
+      <DependentUpon>frmPurchaseBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmPurchaseReturnItem.resx">
+      <DependentUpon>frmPurchaseReturnItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmYarnPurchaseMaster.resx">
+      <DependentUpon>frmYarnPurchaseMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmYarnPurchaseMasterView.resx">
+      <DependentUpon>frmYarnPurchaseMasterView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

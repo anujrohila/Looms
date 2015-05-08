@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGrid));
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -37,7 +38,6 @@
             this.BtnMasterPrint = new DevExpress.XtraEditors.SimpleButton();
             this.BtnMasterPDF = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -54,6 +54,14 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(689, 202);
             this.pnlMain.TabIndex = 5;
+            // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(689, 202);
+            this.xtraScrollableControl1.TabIndex = 0;
             // 
             // pnlHeader
             // 
@@ -134,14 +142,6 @@
             this.btnAdd.TabIndex = 60;
             this.btnAdd.Text = "&Add";
             // 
-            // xtraScrollableControl1
-            // 
-            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
-            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(689, 202);
-            this.xtraScrollableControl1.TabIndex = 0;
-            // 
             // FrmGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,12 +165,12 @@
 
         public System.Windows.Forms.Panel pnlMain;
         public System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.GroupBox groupBox1;
         public DevExpress.XtraEditors.SimpleButton btnAdd;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         public DevExpress.XtraEditors.SimpleButton btnMasterExcel;
         public DevExpress.XtraEditors.SimpleButton BtnMasterPrint;
         public DevExpress.XtraEditors.SimpleButton BtnMasterPDF;
         public DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        public System.Windows.Forms.GroupBox groupBox1;
     }
 }
