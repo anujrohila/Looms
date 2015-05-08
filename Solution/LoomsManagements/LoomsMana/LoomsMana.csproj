@@ -105,6 +105,12 @@
     <Compile Include="Forms\Master\FrmSimple.Designer.cs">
       <DependentUpon>FrmSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Production\Purchase\frmBeamPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmBeamPurchase.Designer.cs">
+      <DependentUpon>frmBeamPurchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DashBoard.resx">
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\FrmSimple.resx">
       <DependentUpon>FrmSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmBeamPurchase.resx">
+      <DependentUpon>frmBeamPurchase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
