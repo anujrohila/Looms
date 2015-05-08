@@ -166,11 +166,11 @@
         public System.Windows.Forms.Panel pnlMain;
         public System.Windows.Forms.Panel pnlHeader;
         public DevExpress.XtraEditors.SimpleButton btnAdd;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
         public DevExpress.XtraEditors.SimpleButton btnMasterExcel;
         public DevExpress.XtraEditors.SimpleButton BtnMasterPrint;
         public DevExpress.XtraEditors.SimpleButton BtnMasterPDF;
         public DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
         public System.Windows.Forms.GroupBox groupBox1;
+        public DevExpress.XtraEditors.PanelControl panelControl2;
     }
 }
