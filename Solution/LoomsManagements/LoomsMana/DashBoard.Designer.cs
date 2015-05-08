@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
-            this.navbarImageCollection = new DevExpress.Utils.ImageCollection(this.components);
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
-            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
-            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
-            this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
+            this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection();
+            this.navbarImageCollection = new DevExpress.Utils.ImageCollection();
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection();
+            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection();
+            this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage();
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.lblNav = new System.Windows.Forms.Label();
@@ -77,7 +76,7 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnlMainBack = new System.Windows.Forms.Panel();
             this.tabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -427,7 +426,6 @@
             this.navCompMst.Caption = "Comapany Master";
             this.navCompMst.Name = "navCompMst";
             this.navCompMst.SmallImageIndex = 7;
-            this.navCompMst.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navOwnerMst
             // 
@@ -596,6 +594,8 @@
             this.navBankBranch.Caption = "Bank Branch";
             this.navBankBranch.Name = "navBankBranch";
             this.navBankBranch.SmallImageIndex = 8;
+            this.navBankBranch.Tag = "";
+            this.navBankBranch.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBankBranch_LinkClicked);
             // 
             // navBemType
             // 
