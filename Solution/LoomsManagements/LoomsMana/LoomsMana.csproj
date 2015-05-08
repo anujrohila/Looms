@@ -147,6 +147,48 @@
     <Compile Include="Forms\Production\Purchase\frmYarnPurchaseMasterView.Designer.cs">
       <DependentUpon>frmYarnPurchaseMasterView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseOrder.Designer.cs">
+      <DependentUpon>frmYarnPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Purchase\frmYarnPurchaseReturn.Designer.cs">
+      <DependentUpon>frmYarnPurchaseReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmAddSalesReturnItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmAddSalesReturnItem.Designer.cs">
+      <DependentUpon>frmAddSalesReturnItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSalesBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSalesBill.Designer.cs">
+      <DependentUpon>frmSalesBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSalesChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSalesChallan.Designer.cs">
+      <DependentUpon>frmSalesChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSaleOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSaleOrder.Designer.cs">
+      <DependentUpon>frmSaleOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSaleReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Production\Sale\frmSaleReturn.Designer.cs">
+      <DependentUpon>frmSaleReturn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DashBoard.resx">
@@ -184,6 +226,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Production\Purchase\frmYarnPurchaseMasterView.resx">
       <DependentUpon>frmYarnPurchaseMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmYarnPurchaseOrder.resx">
+      <DependentUpon>frmYarnPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Purchase\frmYarnPurchaseReturn.resx">
+      <DependentUpon>frmYarnPurchaseReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Sale\frmAddSalesReturnItem.resx">
+      <DependentUpon>frmAddSalesReturnItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Sale\frmSalesBill.resx">
+      <DependentUpon>frmSalesBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Sale\frmSalesChallan.resx">
+      <DependentUpon>frmSalesChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Sale\frmSaleOrder.resx">
+      <DependentUpon>frmSaleOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Production\Sale\frmSaleReturn.resx">
+      <DependentUpon>frmSaleReturn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
