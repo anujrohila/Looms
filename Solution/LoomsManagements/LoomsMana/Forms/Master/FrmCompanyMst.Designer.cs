@@ -59,6 +59,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
+            this.xtraScrollableControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties)).BeginInit();
@@ -97,9 +98,8 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Controls.Add(this.groupBox1);
             this.pnlMain.Location = new System.Drawing.Point(0, 40);
-            this.pnlMain.Size = new System.Drawing.Size(771, 232);
+            this.pnlMain.Size = new System.Drawing.Size(771, 222);
             // 
             // pnlHeader
             // 
@@ -111,8 +111,13 @@
             // 
             // pnlFooter
             // 
-            this.pnlFooter.Location = new System.Drawing.Point(0, 272);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 262);
             this.pnlFooter.Size = new System.Drawing.Size(771, 60);
+            // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Controls.Add(this.groupBox1);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(771, 222);
             // 
             // label3
             // 
@@ -160,7 +165,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(771, 332);
+            this.panel2.Size = new System.Drawing.Size(771, 322);
             this.panel2.TabIndex = 1;
             // 
             // shapeContainer2
@@ -178,7 +183,7 @@
             // 
             this.txtCompanyName.EditValue = "";
             this.txtCompanyName.EnterMoveNextControl = true;
-            this.txtCompanyName.Location = new System.Drawing.Point(170, 24);
+            this.txtCompanyName.Location = new System.Drawing.Point(170, 15);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompanyName.Properties.Appearance.Options.UseFont = true;
@@ -193,7 +198,7 @@
             // 
             this.dpOpeningDate.EditValue = null;
             this.dpOpeningDate.EnterMoveNextControl = true;
-            this.dpOpeningDate.Location = new System.Drawing.Point(170, 117);
+            this.dpOpeningDate.Location = new System.Drawing.Point(170, 108);
             this.dpOpeningDate.Name = "dpOpeningDate";
             this.dpOpeningDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.dpOpeningDate.Properties.Appearance.Options.UseFont = true;
@@ -212,7 +217,7 @@
             // 
             this.txtContactPerrsonName.EditValue = "";
             this.txtContactPerrsonName.EnterMoveNextControl = true;
-            this.txtContactPerrsonName.Location = new System.Drawing.Point(170, 179);
+            this.txtContactPerrsonName.Location = new System.Drawing.Point(170, 170);
             this.txtContactPerrsonName.Name = "txtContactPerrsonName";
             this.txtContactPerrsonName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContactPerrsonName.Properties.Appearance.Options.UseFont = true;
@@ -227,7 +232,7 @@
             // 
             this.txtCompanyCode.EditValue = "";
             this.txtCompanyCode.EnterMoveNextControl = true;
-            this.txtCompanyCode.Location = new System.Drawing.Point(170, 55);
+            this.txtCompanyCode.Location = new System.Drawing.Point(170, 46);
             this.txtCompanyCode.Name = "txtCompanyCode";
             this.txtCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompanyCode.Properties.Appearance.Options.UseFont = true;
@@ -242,7 +247,7 @@
             // 
             this.txtOwnerName.EditValue = "";
             this.txtOwnerName.EnterMoveNextControl = true;
-            this.txtOwnerName.Location = new System.Drawing.Point(170, 86);
+            this.txtOwnerName.Location = new System.Drawing.Point(170, 77);
             this.txtOwnerName.Name = "txtOwnerName";
             this.txtOwnerName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOwnerName.Properties.Appearance.Options.UseFont = true;
@@ -257,7 +262,7 @@
             // 
             this.txtInvestmentAmount.EditValue = "";
             this.txtInvestmentAmount.EnterMoveNextControl = true;
-            this.txtInvestmentAmount.Location = new System.Drawing.Point(170, 148);
+            this.txtInvestmentAmount.Location = new System.Drawing.Point(170, 139);
             this.txtInvestmentAmount.Name = "txtInvestmentAmount";
             this.txtInvestmentAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInvestmentAmount.Properties.Appearance.Options.UseFont = true;
@@ -272,7 +277,7 @@
             // txtaddress
             // 
             this.txtaddress.EnterMoveNextControl = true;
-            this.txtaddress.Location = new System.Drawing.Point(495, 28);
+            this.txtaddress.Location = new System.Drawing.Point(495, 19);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
             this.txtaddress.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -284,7 +289,7 @@
             // 
             this.txtSMSNo.EditValue = "";
             this.txtSMSNo.EnterMoveNextControl = true;
-            this.txtSMSNo.Location = new System.Drawing.Point(495, 179);
+            this.txtSMSNo.Location = new System.Drawing.Point(495, 170);
             this.txtSMSNo.Name = "txtSMSNo";
             this.txtSMSNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSMSNo.Properties.Appearance.Options.UseFont = true;
@@ -300,7 +305,7 @@
             // 
             this.txtPANNo.EditValue = "";
             this.txtPANNo.EnterMoveNextControl = true;
-            this.txtPANNo.Location = new System.Drawing.Point(495, 86);
+            this.txtPANNo.Location = new System.Drawing.Point(495, 77);
             this.txtPANNo.Name = "txtPANNo";
             this.txtPANNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPANNo.Properties.Appearance.Options.UseFont = true;
@@ -315,7 +320,7 @@
             // 
             this.txtECCNo.EditValue = "";
             this.txtECCNo.EnterMoveNextControl = true;
-            this.txtECCNo.Location = new System.Drawing.Point(495, 148);
+            this.txtECCNo.Location = new System.Drawing.Point(495, 139);
             this.txtECCNo.Name = "txtECCNo";
             this.txtECCNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtECCNo.Properties.Appearance.Options.UseFont = true;
@@ -330,7 +335,7 @@
             // 
             this.txtCST.EditValue = "";
             this.txtCST.EnterMoveNextControl = true;
-            this.txtCST.Location = new System.Drawing.Point(495, 117);
+            this.txtCST.Location = new System.Drawing.Point(495, 108);
             this.txtCST.Name = "txtCST";
             this.txtCST.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCST.Properties.Appearance.Options.UseFont = true;
@@ -345,7 +350,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl6.Location = new System.Drawing.Point(25, 28);
+            this.labelControl6.Location = new System.Drawing.Point(25, 19);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(98, 17);
             this.labelControl6.TabIndex = 94;
@@ -355,7 +360,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl9.Location = new System.Drawing.Point(411, 85);
+            this.labelControl9.Location = new System.Drawing.Point(411, 76);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(48, 17);
             this.labelControl9.TabIndex = 104;
@@ -365,7 +370,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl10.Location = new System.Drawing.Point(411, 122);
+            this.labelControl10.Location = new System.Drawing.Point(411, 113);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(48, 17);
             this.labelControl10.TabIndex = 103;
@@ -375,7 +380,7 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl11.Location = new System.Drawing.Point(410, 152);
+            this.labelControl11.Location = new System.Drawing.Point(410, 143);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(49, 17);
             this.labelControl11.TabIndex = 102;
@@ -385,7 +390,7 @@
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl12.Location = new System.Drawing.Point(25, 152);
+            this.labelControl12.Location = new System.Drawing.Point(25, 143);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(125, 17);
             this.labelControl12.TabIndex = 101;
@@ -395,7 +400,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl4.Location = new System.Drawing.Point(25, 183);
+            this.labelControl4.Location = new System.Drawing.Point(25, 174);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(134, 17);
             this.labelControl4.TabIndex = 100;
@@ -405,7 +410,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl7.Location = new System.Drawing.Point(411, 183);
+            this.labelControl7.Location = new System.Drawing.Point(411, 174);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(50, 17);
             this.labelControl7.TabIndex = 99;
@@ -415,7 +420,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl8.Location = new System.Drawing.Point(409, 28);
+            this.labelControl8.Location = new System.Drawing.Point(409, 19);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(50, 17);
             this.labelControl8.TabIndex = 98;
@@ -425,7 +430,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl3.Location = new System.Drawing.Point(25, 59);
+            this.labelControl3.Location = new System.Drawing.Point(25, 50);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(93, 17);
             this.labelControl3.TabIndex = 97;
@@ -435,7 +440,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl2.Location = new System.Drawing.Point(25, 90);
+            this.labelControl2.Location = new System.Drawing.Point(25, 81);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(82, 17);
             this.labelControl2.TabIndex = 96;
@@ -445,7 +450,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl1.Location = new System.Drawing.Point(25, 121);
+            this.labelControl1.Location = new System.Drawing.Point(25, 112);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(84, 17);
             this.labelControl1.TabIndex = 95;
@@ -475,9 +480,9 @@
             this.groupBox1.Controls.Add(this.txtECCNo);
             this.groupBox1.Controls.Add(this.labelControl9);
             this.groupBox1.Controls.Add(this.txtCST);
-            this.groupBox1.Location = new System.Drawing.Point(15, 6);
+            this.groupBox1.Location = new System.Drawing.Point(16, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(744, 218);
+            this.groupBox1.Size = new System.Drawing.Size(744, 204);
             this.groupBox1.TabIndex = 105;
             this.groupBox1.TabStop = false;
             // 
@@ -485,7 +490,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 332);
+            this.ClientSize = new System.Drawing.Size(771, 322);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmCompanyMst";
@@ -498,6 +503,7 @@
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
+            this.xtraScrollableControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOpeningDate.Properties)).EndInit();

@@ -32,11 +32,13 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnMasterExcel = new DevExpress.XtraEditors.SimpleButton();
             this.BtnMasterPrint = new DevExpress.XtraEditors.SimpleButton();
             this.BtnMasterPDF = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -46,6 +48,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.White;
+            this.pnlMain.Controls.Add(this.xtraScrollableControl1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 59);
             this.pnlMain.Name = "pnlMain";
@@ -72,18 +75,6 @@
             this.groupBox1.Size = new System.Drawing.Size(677, 46);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Appearance.Options.UseFont = true;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(7, 14);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(63, 25);
-            this.btnAdd.TabIndex = 60;
-            this.btnAdd.Text = "&Add";
             // 
             // panelControl2
             // 
@@ -131,6 +122,26 @@
             this.BtnMasterPDF.TabIndex = 60;
             this.BtnMasterPDF.Text = "&PDF";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(7, 14);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(63, 25);
+            this.btnAdd.TabIndex = 60;
+            this.btnAdd.Text = "&Add";
+            // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(689, 202);
+            this.xtraScrollableControl1.TabIndex = 0;
+            // 
             // FrmGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +152,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmGrid";
             this.Text = "FrmGrid";
+            this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -159,5 +171,6 @@
         public DevExpress.XtraEditors.SimpleButton btnMasterExcel;
         public DevExpress.XtraEditors.SimpleButton BtnMasterPrint;
         public DevExpress.XtraEditors.SimpleButton BtnMasterPDF;
+        public DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
     }
 }

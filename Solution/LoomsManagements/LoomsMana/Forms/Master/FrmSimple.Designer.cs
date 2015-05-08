@@ -37,6 +37,8 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            this.pnlMain.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +46,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.White;
+            this.pnlMain.Controls.Add(this.xtraScrollableControl1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 38);
             this.pnlMain.Name = "pnlMain";
@@ -132,6 +135,14 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(566, 338);
+            this.xtraScrollableControl1.TabIndex = 0;
+            // 
             // FrmSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +156,7 @@
             this.Name = "FrmSimple";
             this.Text = "FrmSimple";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSimple_KeyDown);
+            this.pnlMain.ResumeLayout(false);
             this.pnlFooter.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -161,5 +173,6 @@
         public System.Windows.Forms.Panel pnlHeader;
         public System.Windows.Forms.Panel pnlFooter;
         private System.Windows.Forms.GroupBox groupBox1;
+        public DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
     }
 }

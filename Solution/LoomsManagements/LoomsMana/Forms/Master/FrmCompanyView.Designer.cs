@@ -46,6 +46,7 @@
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.pnlMain.SuspendLayout();
+            this.xtraScrollableControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).BeginInit();
@@ -55,7 +56,6 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Controls.Add(this.gridViewCompany);
             this.pnlMain.Size = new System.Drawing.Size(884, 318);
             // 
             // pnlHeader
@@ -83,6 +83,11 @@
             this.BtnMasterPDF.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMasterPDF.Appearance.Options.UseFont = true;
             // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Controls.Add(this.gridViewCompany);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(884, 318);
+            // 
             // gridViewCompany
             // 
             this.gridViewCompany.Cursor = System.Windows.Forms.Cursors.Default;
@@ -95,7 +100,7 @@
             this.Btn_Delete,
             this.Btn_View});
             this.gridViewCompany.Size = new System.Drawing.Size(884, 318);
-            this.gridViewCompany.TabIndex = 66;
+            this.gridViewCompany.TabIndex = 67;
             this.gridViewCompany.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.InnerGrid});
             // 
@@ -285,6 +290,7 @@
             this.Name = "FrmCompanyView";
             this.Text = "Company";
             this.pnlMain.ResumeLayout(false);
+            this.xtraScrollableControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCompany)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_Edit)).EndInit();
@@ -313,5 +319,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_Edit;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_Delete;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_View;
+
     }
 }
