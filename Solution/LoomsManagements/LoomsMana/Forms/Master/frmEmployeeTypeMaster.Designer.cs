@@ -1,6 +1,6 @@
 ﻿namespace LoomsMana.Forms.Master
 {
-    partial class frmTypeMaster
+    partial class frmEmployeeTypeMaster
     {
         /// <summary>
         /// Required designer variable.

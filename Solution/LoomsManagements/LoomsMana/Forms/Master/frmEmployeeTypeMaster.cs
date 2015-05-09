@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LoomsMana.Forms.Master
 {
-    public partial class frmTypeMaster : LoomsMana.Forms.Master.FrmSimple
+    public partial class frmEmployeeTypeMaster : LoomsMana.Forms.Master.FrmSimple
     {
-        public frmTypeMaster()
+        public frmEmployeeTypeMaster()
         {
             InitializeComponent();
         }
