@@ -96,11 +96,11 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(10, 38);
-            this.groupBox1.Size = new System.Drawing.Size(1059, 46);
+            this.groupBox1.Size = new System.Drawing.Size(861, 46);
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(751, 10);
+            this.panelControl2.Location = new System.Drawing.Point(553, 10);
             // 
             // groupBox2
             // 

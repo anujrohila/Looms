@@ -227,11 +227,14 @@
             this.groupBox2.TabIndex = 181;
             this.groupBox2.TabStop = false;
             // 
-            // frmTypeMaster
+            // frmEmployeeTypeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(457, 226);
-            this.Name = "frmTypeMaster";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "frmEmployeeTypeMaster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Employee Type";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.chkAddress = new System.Windows.Forms.CheckBox();
             this.txtPartyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -66,6 +65,7 @@
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.txtPhoneNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
             this.txtSMSNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
@@ -99,7 +99,6 @@
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPartyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContactPersonName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).BeginInit();
@@ -110,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMobileNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNo.Properties)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPANNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpTINDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -178,7 +178,7 @@
             this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
             this.rectangleShape1.Location = new System.Drawing.Point(20, 35);
             this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(148, 2);
+            this.rectangleShape1.Size = new System.Drawing.Size(112, 2);
             // 
             // shapeContainer1
             // 
@@ -259,43 +259,6 @@
             this.groupBox2.Size = new System.Drawing.Size(795, 239);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.labelControl38);
-            this.groupBox3.Controls.Add(this.txtSMSNo);
-            this.groupBox3.Controls.Add(this.labelControl39);
-            this.groupBox3.Controls.Add(this.labelControl16);
-            this.groupBox3.Controls.Add(this.labelControl37);
-            this.groupBox3.Controls.Add(this.txtPANNo);
-            this.groupBox3.Controls.Add(this.labelControl35);
-            this.groupBox3.Controls.Add(this.labelControl36);
-            this.groupBox3.Controls.Add(this.labelControl17);
-            this.groupBox3.Controls.Add(this.labelControl30);
-            this.groupBox3.Controls.Add(this.labelControl33);
-            this.groupBox3.Controls.Add(this.dpTINDate);
-            this.groupBox3.Controls.Add(this.labelControl34);
-            this.groupBox3.Controls.Add(this.labelControl15);
-            this.groupBox3.Controls.Add(this.labelControl32);
-            this.groupBox3.Controls.Add(this.txtTINNo);
-            this.groupBox3.Controls.Add(this.txtExtraDetails);
-            this.groupBox3.Controls.Add(this.labelControl14);
-            this.groupBox3.Controls.Add(this.txtCSTNo);
-            this.groupBox3.Controls.Add(this.labelControl31);
-            this.groupBox3.Controls.Add(this.txtECCNo);
-            this.groupBox3.Controls.Add(this.labelControl19);
-            this.groupBox3.Controls.Add(this.dpCSTDate);
-            this.groupBox3.Controls.Add(this.labelControl18);
-            this.groupBox3.Controls.Add(this.txtRefPersonName);
-            this.groupBox3.Controls.Add(this.labelControl10);
-            this.groupBox3.Controls.Add(this.labelControl11);
-            this.groupBox3.Controls.Add(this.txtRefPersonMobNo);
-            this.groupBox3.Controls.Add(this.labelControl13);
-            this.groupBox3.Location = new System.Drawing.Point(20, 251);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(795, 215);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
             // 
             // chkAddress
             // 
@@ -662,6 +625,43 @@
             this.labelControl9.TabIndex = 216;
             this.labelControl9.Text = "Phone No.";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.labelControl38);
+            this.groupBox3.Controls.Add(this.txtSMSNo);
+            this.groupBox3.Controls.Add(this.labelControl39);
+            this.groupBox3.Controls.Add(this.labelControl16);
+            this.groupBox3.Controls.Add(this.labelControl37);
+            this.groupBox3.Controls.Add(this.txtPANNo);
+            this.groupBox3.Controls.Add(this.labelControl35);
+            this.groupBox3.Controls.Add(this.labelControl36);
+            this.groupBox3.Controls.Add(this.labelControl17);
+            this.groupBox3.Controls.Add(this.labelControl30);
+            this.groupBox3.Controls.Add(this.labelControl33);
+            this.groupBox3.Controls.Add(this.dpTINDate);
+            this.groupBox3.Controls.Add(this.labelControl34);
+            this.groupBox3.Controls.Add(this.labelControl15);
+            this.groupBox3.Controls.Add(this.labelControl32);
+            this.groupBox3.Controls.Add(this.txtTINNo);
+            this.groupBox3.Controls.Add(this.txtExtraDetails);
+            this.groupBox3.Controls.Add(this.labelControl14);
+            this.groupBox3.Controls.Add(this.txtCSTNo);
+            this.groupBox3.Controls.Add(this.labelControl31);
+            this.groupBox3.Controls.Add(this.txtECCNo);
+            this.groupBox3.Controls.Add(this.labelControl19);
+            this.groupBox3.Controls.Add(this.dpCSTDate);
+            this.groupBox3.Controls.Add(this.labelControl18);
+            this.groupBox3.Controls.Add(this.txtRefPersonName);
+            this.groupBox3.Controls.Add(this.labelControl10);
+            this.groupBox3.Controls.Add(this.labelControl11);
+            this.groupBox3.Controls.Add(this.txtRefPersonMobNo);
+            this.groupBox3.Controls.Add(this.labelControl13);
+            this.groupBox3.Location = new System.Drawing.Point(20, 251);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(795, 215);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            // 
             // labelControl38
             // 
             this.labelControl38.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1006,15 +1006,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(838, 587);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPartyMaster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Party Master";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.xtraScrollableControl1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPartyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContactPersonName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).EndInit();
@@ -1025,6 +1026,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMobileNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhoneNo.Properties)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSMSNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPANNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpTINDate.Properties.CalendarTimeProperties)).EndInit();

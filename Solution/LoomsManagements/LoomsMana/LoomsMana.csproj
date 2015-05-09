@@ -81,6 +81,132 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMaster.Designer.cs">
+      <DependentUpon>frmBankBranchMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankBranchMasterView.Designer.cs">
+      <DependentUpon>frmBankBranchMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMaster.Designer.cs">
+      <DependentUpon>frmBankMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBankMasterView.Designer.cs">
+      <DependentUpon>frmBankMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMaster.Designer.cs">
+      <DependentUpon>frmBeamMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBeamMasterView.Designer.cs">
+      <DependentUpon>frmBeamMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMaster.Designer.cs">
+      <DependentUpon>frmBrokerMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmBrokerMasterView.Designer.cs">
+      <DependentUpon>frmBrokerMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeMasterView.Designer.cs">
+      <DependentUpon>frmEmployeeMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeMaster.Designer.cs">
+      <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMasterView.Designer.cs">
+      <DependentUpon>frmEmployeeTypeMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearMaster.Designer.cs">
+      <DependentUpon>frmFiscalYearMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmFiscalYearView.Designer.cs">
+      <DependentUpon>frmFiscalYearView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMaster.Designer.cs">
+      <DependentUpon>frmMachineMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineMasterView.Designer.cs">
+      <DependentUpon>frmMachineMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineTypeMaster.Designer.cs">
+      <DependentUpon>frmMachineTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineTypeMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmMachineTypeMasterView.Designer.cs">
+      <DependentUpon>frmMachineTypeMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmPartyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPartyMaster.Designer.cs">
+      <DependentUpon>frmPartyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmPartyMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPartyMasterView.Designer.cs">
+      <DependentUpon>frmPartyMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMaster.Designer.cs">
+      <DependentUpon>frmPenaltyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMasterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmPenaltyMasterView.Designer.cs">
+      <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Master\frmProofMst.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +218,12 @@
     </Compile>
     <Compile Include="Forms\Master\frmProofMasterView.Designer.cs">
       <DependentUpon>frmProofMasterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmEmployeeTypeMaster.Designer.cs">
+      <DependentUpon>frmEmployeeTypeMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Master\frmYarnPackageTypeMaster.cs">
       <SubType>Form</SubType>
@@ -242,11 +374,77 @@
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBankBranchMaster.resx">
+      <DependentUpon>frmBankBranchMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBankBranchMasterView.resx">
+      <DependentUpon>frmBankBranchMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBankMaster.resx">
+      <DependentUpon>frmBankMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBankMasterView.resx">
+      <DependentUpon>frmBankMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBeamMaster.resx">
+      <DependentUpon>frmBeamMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBeamMasterView.resx">
+      <DependentUpon>frmBeamMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBrokerMaster.resx">
+      <DependentUpon>frmBrokerMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmBrokerMasterView.resx">
+      <DependentUpon>frmBrokerMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeMasterView.resx">
+      <DependentUpon>frmEmployeeMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeMaster.resx">
+      <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeTypeMasterView.resx">
+      <DependentUpon>frmEmployeeTypeMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmFiscalYearMaster.resx">
+      <DependentUpon>frmFiscalYearMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmFiscalYearView.resx">
+      <DependentUpon>frmFiscalYearView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmMachineMaster.resx">
+      <DependentUpon>frmMachineMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmMachineMasterView.resx">
+      <DependentUpon>frmMachineMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmMachineTypeMaster.resx">
+      <DependentUpon>frmMachineTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmMachineTypeMasterView.resx">
+      <DependentUpon>frmMachineTypeMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmPartyMaster.resx">
+      <DependentUpon>frmPartyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmPartyMasterView.resx">
+      <DependentUpon>frmPartyMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmPenaltyMaster.resx">
+      <DependentUpon>frmPenaltyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmPenaltyMasterView.resx">
+      <DependentUpon>frmPenaltyMasterView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmProofMst.resx">
       <DependentUpon>frmProofMst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmProofMasterView.resx">
       <DependentUpon>frmProofMasterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmEmployeeTypeMaster.resx">
+      <DependentUpon>frmEmployeeTypeMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Master\frmYarnPackageTypeMaster.resx">
       <DependentUpon>frmYarnPackageTypeMaster.cs</DependentUpon>

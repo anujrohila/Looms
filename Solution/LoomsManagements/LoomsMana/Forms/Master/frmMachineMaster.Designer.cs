@@ -74,8 +74,8 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Location = new System.Drawing.Point(0, 53);
-            this.pnlMain.Size = new System.Drawing.Size(395, 180);
+            this.pnlMain.Location = new System.Drawing.Point(0, 41);
+            this.pnlMain.Size = new System.Drawing.Size(395, 175);
             // 
             // pnlHeader
             // 
@@ -83,17 +83,17 @@
             this.pnlHeader.Controls.Add(this.label2);
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Controls.Add(this.shapeContainer1);
-            this.pnlHeader.Size = new System.Drawing.Size(395, 53);
+            this.pnlHeader.Size = new System.Drawing.Size(395, 41);
             // 
             // pnlFooter
             // 
-            this.pnlFooter.Location = new System.Drawing.Point(0, 233);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 216);
             this.pnlFooter.Size = new System.Drawing.Size(395, 62);
             // 
             // xtraScrollableControl1
             // 
             this.xtraScrollableControl1.Controls.Add(this.groupBox2);
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(395, 180);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(395, 175);
             // 
             // label3
             // 
@@ -143,7 +143,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(395, 53);
+            this.shapeContainer1.Size = new System.Drawing.Size(395, 41);
             this.shapeContainer1.TabIndex = 8;
             this.shapeContainer1.TabStop = false;
             // 
@@ -270,8 +270,11 @@
             // frmMachineMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(395, 295);
+            this.ClientSize = new System.Drawing.Size(395, 278);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmMachineMaster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Machine Master";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

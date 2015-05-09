@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.gridViewCompany = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.EmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -47,6 +42,11 @@
             this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
@@ -108,11 +108,11 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(10, 38);
-            this.groupBox1.Size = new System.Drawing.Size(1251, 46);
+            this.groupBox1.Size = new System.Drawing.Size(862, 46);
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(943, 10);
+            this.panelControl2.Location = new System.Drawing.Point(554, 10);
             // 
             // groupBox2
             // 
@@ -125,58 +125,6 @@
             this.groupBox2.Size = new System.Drawing.Size(864, 267);
             this.groupBox2.TabIndex = 68;
             this.groupBox2.TabStop = false;
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape1.Location = new System.Drawing.Point(23, 32);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(130, 2);
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(884, 92);
-            this.shapeContainer1.TabIndex = 24;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(103, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 29);
-            this.label3.TabIndex = 186;
-            this.label3.Text = "V";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 21);
-            this.label2.TabIndex = 185;
-            this.label2.Text = "mployee      iew";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(17, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 29);
-            this.label1.TabIndex = 184;
-            this.label1.Text = "E";
             // 
             // gridViewCompany
             // 
@@ -326,6 +274,58 @@
             this.Btn_View.Name = "Btn_View";
             this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape1.Location = new System.Drawing.Point(23, 32);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(130, 2);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(884, 92);
+            this.shapeContainer1.TabIndex = 24;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(103, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 29);
+            this.label3.TabIndex = 186;
+            this.label3.Text = "V";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 21);
+            this.label2.TabIndex = 185;
+            this.label2.Text = "mployee      iew";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(17, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 29);
+            this.label1.TabIndex = 184;
+            this.label1.Text = "E";
+            // 
             // frmEmployeeMasterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,7 +333,7 @@
             this.ClientSize = new System.Drawing.Size(884, 377);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmEmployeeMasterView";
-            this.Text = "";
+            this.Text = "Employee";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

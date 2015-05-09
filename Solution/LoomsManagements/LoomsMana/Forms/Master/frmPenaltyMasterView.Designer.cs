@@ -38,8 +38,17 @@
             this.Btn_Edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
+            this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPenaltyMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
@@ -50,16 +59,27 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Size = new System.Drawing.Size(777, 286);
+            this.pnlMain.Location = new System.Drawing.Point(0, 95);
+            this.pnlMain.Size = new System.Drawing.Size(777, 250);
             // 
             // pnlHeader
             // 
-            this.pnlHeader.Size = new System.Drawing.Size(777, 59);
+            this.pnlHeader.Controls.Add(this.label3);
+            this.pnlHeader.Controls.Add(this.label2);
+            this.pnlHeader.Controls.Add(this.label1);
+            this.pnlHeader.Controls.Add(this.shapeContainer1);
+            this.pnlHeader.Size = new System.Drawing.Size(777, 95);
+            this.pnlHeader.Controls.SetChildIndex(this.shapeContainer1, 0);
+            this.pnlHeader.Controls.SetChildIndex(this.label1, 0);
+            this.pnlHeader.Controls.SetChildIndex(this.label2, 0);
+            this.pnlHeader.Controls.SetChildIndex(this.label3, 0);
+            this.pnlHeader.Controls.SetChildIndex(this.groupBox1, 0);
             // 
             // btnAdd
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnMasterExcel
             // 
@@ -79,7 +99,16 @@
             // xtraScrollableControl1
             // 
             this.xtraScrollableControl1.Controls.Add(this.groupBox2);
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(777, 286);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(777, 250);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(6, 43);
+            this.groupBox1.Size = new System.Drawing.Size(759, 46);
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Location = new System.Drawing.Point(451, 10);
             // 
             // groupBox2
             // 
@@ -192,13 +221,71 @@
             this.Btn_View.Name = "Btn_View";
             this.Btn_View.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(85, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 29);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "V";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(19, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 29);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "P";
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape1.Location = new System.Drawing.Point(24, 36);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(118, 2);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(777, 95);
+            this.shapeContainer1.TabIndex = 24;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(37, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 21);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "enalty     iew";
+            // 
             // frmPenaltyMasterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(777, 345);
             this.Name = "frmPenaltyMasterView";
+            this.Text = "Penalty";
             this.pnlMain.ResumeLayout(false);
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
             this.xtraScrollableControl1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPenaltyMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
@@ -221,5 +308,10 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_Edit;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_Delete;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit Btn_View;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
     }
 }

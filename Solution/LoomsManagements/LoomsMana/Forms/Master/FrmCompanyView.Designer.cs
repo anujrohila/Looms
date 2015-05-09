@@ -112,11 +112,11 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(10, 38);
-            this.groupBox1.Size = new System.Drawing.Size(1056, 46);
+            this.groupBox1.Size = new System.Drawing.Size(862, 46);
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(748, 10);
+            this.panelControl2.Location = new System.Drawing.Point(554, 10);
             // 
             // gridViewCompany
             // 

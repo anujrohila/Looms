@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtReferenceBy = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
@@ -61,6 +56,11 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtBrokerName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
@@ -99,8 +99,8 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Location = new System.Drawing.Point(0, 52);
-            this.pnlMain.Size = new System.Drawing.Size(783, 250);
+            this.pnlMain.Location = new System.Drawing.Point(0, 46);
+            this.pnlMain.Size = new System.Drawing.Size(783, 256);
             // 
             // pnlHeader
             // 
@@ -108,7 +108,7 @@
             this.pnlHeader.Controls.Add(this.label2);
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Controls.Add(this.shapeContainer1);
-            this.pnlHeader.Size = new System.Drawing.Size(783, 52);
+            this.pnlHeader.Size = new System.Drawing.Size(783, 46);
             // 
             // pnlFooter
             // 
@@ -118,7 +118,7 @@
             // xtraScrollableControl1
             // 
             this.xtraScrollableControl1.Controls.Add(this.groupBox2);
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(783, 250);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(783, 256);
             // 
             // groupBox2
             // 
@@ -154,58 +154,6 @@
             this.groupBox2.Size = new System.Drawing.Size(750, 248);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(82, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 29);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "M";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "roker     aster";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(21, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "B";
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape1.Location = new System.Drawing.Point(23, 32);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(138, 2);
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(783, 52);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
             // 
             // labelControl7
             // 
@@ -305,6 +253,7 @@
             // chkAddress
             // 
             this.chkAddress.AutoSize = true;
+            this.chkAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.chkAddress.Location = new System.Drawing.Point(509, 121);
             this.chkAddress.Name = "chkAddress";
             this.chkAddress.Size = new System.Drawing.Size(212, 17);
@@ -518,11 +467,66 @@
             this.labelControl14.TabIndex = 217;
             this.labelControl14.Text = "Broker Name";
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(82, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 29);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "M";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(39, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 21);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "roker     aster";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(21, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "B";
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape1.Location = new System.Drawing.Point(23, 32);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(120, 2);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(783, 46);
+            this.shapeContainer1.TabIndex = 8;
+            this.shapeContainer1.TabStop = false;
+            // 
             // frmBrokerMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(783, 364);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmBrokerMaster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Broker Master";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

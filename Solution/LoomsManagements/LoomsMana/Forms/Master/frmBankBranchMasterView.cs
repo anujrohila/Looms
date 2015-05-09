@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoomsMana.Forms.Master;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,12 @@ namespace LoomsMana.Forms
         public frmBankBranchMasterView()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmBankBranchMaster frm = new frmBankBranchMaster();
+            frm.ShowDialog();
         }
     }
 }

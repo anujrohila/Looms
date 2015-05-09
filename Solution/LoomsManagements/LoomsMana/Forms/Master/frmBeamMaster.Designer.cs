@@ -32,60 +32,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.cmbTakaMeter = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            this.txtLotNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.txtBeamNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
-            this.dpIssueDate = new DevExpress.XtraEditors.DateEdit();
-            this.dpBeamDate = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbCompanyCode = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            this.txtRemarks = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMachineNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMinStrategy = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.txtPipeWeight = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.txtProductionTaka = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtProductionMeters = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtGrayQuality = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.txtYarnQuality = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.txtJobberPartyName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtWrapperPartyName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.txtMY = new DevExpress.XtraEditors.TextEdit();
+            this.txtPick = new DevExpress.XtraEditors.TextEdit();
+            this.txtRPM = new DevExpress.XtraEditors.TextEdit();
+            this.txtMeterConsumption = new DevExpress.XtraEditors.TextEdit();
+            this.txtAmount = new DevExpress.XtraEditors.TextEdit();
+            this.txtRate = new DevExpress.XtraEditors.TextEdit();
+            this.txtFinalAmount = new DevExpress.XtraEditors.TextEdit();
+            this.cmbTakaMeter = new DevExpress.XtraEditors.LookUpEdit();
+            this.dpIssueDate = new DevExpress.XtraEditors.DateEdit();
+            this.txtRemarks = new DevExpress.XtraEditors.TextEdit();
             this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
             this.txtNetWeight = new DevExpress.XtraEditors.TextEdit();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.dpLoadingDate = new DevExpress.XtraEditors.DateEdit();
             this.dpBhidanDate = new DevExpress.XtraEditors.DateEdit();
-            this.txtPick = new DevExpress.XtraEditors.TextEdit();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
-            this.txtRPM = new DevExpress.XtraEditors.TextEdit();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMeterConsumption = new DevExpress.XtraEditors.TextEdit();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
-            this.txtAmount = new DevExpress.XtraEditors.TextEdit();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.txtRate = new DevExpress.XtraEditors.TextEdit();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.txtFinalAmount = new DevExpress.XtraEditors.TextEdit();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.txtPasaraiName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
@@ -99,48 +65,82 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtMeters = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTarNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMachineNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMinStrategy = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.txtPipeWeight = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.txtProductionTaka = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtProductionMeters = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTarNo = new DevExpress.XtraEditors.TextEdit();
+            this.txtLotNo = new DevExpress.XtraEditors.TextEdit();
+            this.txtBeamNo = new DevExpress.XtraEditors.TextEdit();
+            this.dpBeamDate = new DevExpress.XtraEditors.DateEdit();
+            this.cmbCompanyCode = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtGrayQuality = new DevExpress.XtraEditors.TextEdit();
+            this.txtYarnQuality = new DevExpress.XtraEditors.TextEdit();
+            this.txtJobberPartyName = new DevExpress.XtraEditors.TextEdit();
+            this.txtWrapperPartyName = new DevExpress.XtraEditors.TextEdit();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTakaMeter.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLotNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBeamNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMachineNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMinStrategy.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPipeWeight.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductionTaka.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductionMeters.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGrayQuality.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQuality.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJobberPartyName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWrapperPartyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMY.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNetWeight.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPick.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRPM.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeterConsumption.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFinalAmount.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTakaMeter.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNetWeight.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPasaraiName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBhidanStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWeight.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeters.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMachineNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMinStrategy.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPipeWeight.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProductionTaka.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProductionMeters.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLotNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBeamNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGrayQuality.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQuality.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJobberPartyName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWrapperPartyName.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReport
@@ -294,27 +294,110 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // rectangleShape1
+            // txtMY
             // 
-            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape1.Location = new System.Drawing.Point(21, 41);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(117, 2);
+            this.txtMY.EditValue = "";
+            this.txtMY.Location = new System.Drawing.Point(582, 446);
+            this.txtMY.Name = "txtMY";
+            this.txtMY.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMY.Properties.Appearance.Options.UseFont = true;
+            this.txtMY.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtMY.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMY.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtMY.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtMY.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtMY.Size = new System.Drawing.Size(205, 24);
+            this.txtMY.TabIndex = 314;
             // 
-            // shapeContainer1
+            // txtPick
             // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(854, 47);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
+            this.txtPick.EditValue = "";
+            this.txtPick.Location = new System.Drawing.Point(582, 413);
+            this.txtPick.Name = "txtPick";
+            this.txtPick.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPick.Properties.Appearance.Options.UseFont = true;
+            this.txtPick.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtPick.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPick.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtPick.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtPick.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtPick.Size = new System.Drawing.Size(205, 24);
+            this.txtPick.TabIndex = 308;
+            // 
+            // txtRPM
+            // 
+            this.txtRPM.EditValue = "";
+            this.txtRPM.Location = new System.Drawing.Point(582, 380);
+            this.txtRPM.Name = "txtRPM";
+            this.txtRPM.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRPM.Properties.Appearance.Options.UseFont = true;
+            this.txtRPM.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtRPM.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtRPM.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtRPM.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtRPM.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtRPM.Size = new System.Drawing.Size(205, 24);
+            this.txtRPM.TabIndex = 306;
+            // 
+            // txtMeterConsumption
+            // 
+            this.txtMeterConsumption.EditValue = "";
+            this.txtMeterConsumption.Location = new System.Drawing.Point(582, 347);
+            this.txtMeterConsumption.Name = "txtMeterConsumption";
+            this.txtMeterConsumption.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMeterConsumption.Properties.Appearance.Options.UseFont = true;
+            this.txtMeterConsumption.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtMeterConsumption.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMeterConsumption.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtMeterConsumption.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtMeterConsumption.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtMeterConsumption.Size = new System.Drawing.Size(205, 24);
+            this.txtMeterConsumption.TabIndex = 304;
+            // 
+            // txtAmount
+            // 
+            this.txtAmount.EditValue = "";
+            this.txtAmount.Location = new System.Drawing.Point(582, 314);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount.Properties.Appearance.Options.UseFont = true;
+            this.txtAmount.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtAmount.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtAmount.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtAmount.Size = new System.Drawing.Size(205, 24);
+            this.txtAmount.TabIndex = 302;
+            // 
+            // txtRate
+            // 
+            this.txtRate.EditValue = "";
+            this.txtRate.Location = new System.Drawing.Point(582, 281);
+            this.txtRate.Name = "txtRate";
+            this.txtRate.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRate.Properties.Appearance.Options.UseFont = true;
+            this.txtRate.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtRate.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtRate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtRate.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtRate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtRate.Size = new System.Drawing.Size(205, 24);
+            this.txtRate.TabIndex = 300;
+            // 
+            // txtFinalAmount
+            // 
+            this.txtFinalAmount.EditValue = "";
+            this.txtFinalAmount.Location = new System.Drawing.Point(582, 479);
+            this.txtFinalAmount.Name = "txtFinalAmount";
+            this.txtFinalAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFinalAmount.Properties.Appearance.Options.UseFont = true;
+            this.txtFinalAmount.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtFinalAmount.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtFinalAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtFinalAmount.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtFinalAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtFinalAmount.Size = new System.Drawing.Size(205, 24);
+            this.txtFinalAmount.TabIndex = 298;
             // 
             // cmbTakaMeter
             // 
@@ -346,75 +429,6 @@
             this.cmbTakaMeter.TabIndex = 283;
             this.cmbTakaMeter.ToolTip = "Select Taka Meter ";
             // 
-            // labelControl34
-            // 
-            this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl34.Location = new System.Drawing.Point(479, 252);
-            this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(71, 17);
-            this.labelControl34.TabIndex = 282;
-            this.labelControl34.Text = "Taka Meter";
-            // 
-            // txtLotNo
-            // 
-            this.txtLotNo.EditValue = "";
-            this.txtLotNo.Location = new System.Drawing.Point(188, 79);
-            this.txtLotNo.Name = "txtLotNo";
-            this.txtLotNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLotNo.Properties.Appearance.Options.UseFont = true;
-            this.txtLotNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtLotNo.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtLotNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtLotNo.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtLotNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtLotNo.Size = new System.Drawing.Size(205, 24);
-            this.txtLotNo.TabIndex = 280;
-            // 
-            // labelControl32
-            // 
-            this.labelControl32.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl32.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl32.Location = new System.Drawing.Point(124, 237);
-            this.labelControl32.Name = "labelControl32";
-            this.labelControl32.Size = new System.Drawing.Size(42, 17);
-            this.labelControl32.TabIndex = 281;
-            this.labelControl32.Text = "Lot No";
-            // 
-            // labelControl30
-            // 
-            this.labelControl30.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl30.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl30.Location = new System.Drawing.Point(174, 58);
-            this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(6, 17);
-            this.labelControl30.TabIndex = 279;
-            this.labelControl30.Text = "*";
-            // 
-            // txtBeamNo
-            // 
-            this.txtBeamNo.EditValue = "";
-            this.txtBeamNo.Location = new System.Drawing.Point(188, 110);
-            this.txtBeamNo.Name = "txtBeamNo";
-            this.txtBeamNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBeamNo.Properties.Appearance.Options.UseFont = true;
-            this.txtBeamNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtBeamNo.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtBeamNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtBeamNo.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtBeamNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtBeamNo.Size = new System.Drawing.Size(205, 24);
-            this.txtBeamNo.TabIndex = 277;
-            // 
-            // labelControl31
-            // 
-            this.labelControl31.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl31.Location = new System.Drawing.Point(110, 51);
-            this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(56, 17);
-            this.labelControl31.TabIndex = 278;
-            this.labelControl31.Text = "Beam No";
-            // 
             // dpIssueDate
             // 
             this.dpIssueDate.EditValue = null;
@@ -433,84 +447,6 @@
             this.dpIssueDate.TabIndex = 276;
             this.dpIssueDate.ToolTip = "Select Date.";
             // 
-            // dpBeamDate
-            // 
-            this.dpBeamDate.EditValue = null;
-            this.dpBeamDate.Location = new System.Drawing.Point(188, 141);
-            this.dpBeamDate.Name = "dpBeamDate";
-            this.dpBeamDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.dpBeamDate.Properties.Appearance.Options.UseFont = true;
-            this.dpBeamDate.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.dpBeamDate.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.dpBeamDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.dpBeamDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dpBeamDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dpBeamDate.Size = new System.Drawing.Size(205, 24);
-            this.dpBeamDate.TabIndex = 275;
-            this.dpBeamDate.ToolTip = "Select Date.";
-            // 
-            // labelControl29
-            // 
-            this.labelControl29.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl29.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl29.Location = new System.Drawing.Point(174, 92);
-            this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(6, 17);
-            this.labelControl29.TabIndex = 274;
-            this.labelControl29.Text = "*";
-            // 
-            // labelControl25
-            // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl25.Location = new System.Drawing.Point(176, 21);
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(6, 17);
-            this.labelControl25.TabIndex = 273;
-            this.labelControl25.Text = "*";
-            // 
-            // cmbCompanyCode
-            // 
-            this.cmbCompanyCode.Location = new System.Drawing.Point(188, 172);
-            this.cmbCompanyCode.Name = "cmbCompanyCode";
-            this.cmbCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbCompanyCode.Properties.Appearance.Options.UseFont = true;
-            this.cmbCompanyCode.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbCompanyCode.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbCompanyCode.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbCompanyCode.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbCompanyCode.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbCompanyCode.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbCompanyCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.cmbCompanyCode.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbCompanyCode.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.cmbCompanyCode.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbCompanyCode.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbCompanyCode.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbCompanyCode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.cmbCompanyCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbCompanyCode.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyID", "CompanyID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyName", "CompanyName"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ComapnyCode", "ComapnyCode")});
-            this.cmbCompanyCode.Properties.NullText = "";
-            this.cmbCompanyCode.Size = new System.Drawing.Size(205, 24);
-            this.cmbCompanyCode.TabIndex = 272;
-            this.cmbCompanyCode.ToolTip = "Select Company Name";
-            // 
-            // labelControl21
-            // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl21.Location = new System.Drawing.Point(486, 220);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(64, 17);
-            this.labelControl21.TabIndex = 271;
-            this.labelControl21.Text = "Issue Date";
-            // 
             // txtRemarks
             // 
             this.txtRemarks.EditValue = "";
@@ -525,266 +461,6 @@
             this.txtRemarks.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtRemarks.Size = new System.Drawing.Size(205, 24);
             this.txtRemarks.TabIndex = 269;
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl13.Location = new System.Drawing.Point(495, 186);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(55, 17);
-            this.labelControl13.TabIndex = 270;
-            this.labelControl13.Text = "Remarks";
-            // 
-            // txtMachineNo
-            // 
-            this.txtMachineNo.EditValue = "";
-            this.txtMachineNo.Location = new System.Drawing.Point(582, 149);
-            this.txtMachineNo.Name = "txtMachineNo";
-            this.txtMachineNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMachineNo.Properties.Appearance.Options.UseFont = true;
-            this.txtMachineNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtMachineNo.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtMachineNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtMachineNo.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtMachineNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtMachineNo.Size = new System.Drawing.Size(205, 24);
-            this.txtMachineNo.TabIndex = 267;
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Location = new System.Drawing.Point(476, 153);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(74, 17);
-            this.labelControl15.TabIndex = 268;
-            this.labelControl15.Text = "Machine No";
-            // 
-            // txtMinStrategy
-            // 
-            this.txtMinStrategy.EditValue = "";
-            this.txtMinStrategy.Location = new System.Drawing.Point(582, 116);
-            this.txtMinStrategy.Name = "txtMinStrategy";
-            this.txtMinStrategy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMinStrategy.Properties.Appearance.Options.UseFont = true;
-            this.txtMinStrategy.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtMinStrategy.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtMinStrategy.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtMinStrategy.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtMinStrategy.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtMinStrategy.Size = new System.Drawing.Size(205, 24);
-            this.txtMinStrategy.TabIndex = 265;
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Location = new System.Drawing.Point(471, 120);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(79, 17);
-            this.labelControl16.TabIndex = 266;
-            this.labelControl16.Text = "Min Strategy";
-            // 
-            // txtPipeWeight
-            // 
-            this.txtPipeWeight.EditValue = "";
-            this.txtPipeWeight.Location = new System.Drawing.Point(582, 83);
-            this.txtPipeWeight.Name = "txtPipeWeight";
-            this.txtPipeWeight.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPipeWeight.Properties.Appearance.Options.UseFont = true;
-            this.txtPipeWeight.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtPipeWeight.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPipeWeight.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtPipeWeight.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtPipeWeight.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtPipeWeight.Size = new System.Drawing.Size(205, 24);
-            this.txtPipeWeight.TabIndex = 263;
-            // 
-            // labelControl18
-            // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Location = new System.Drawing.Point(473, 87);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(77, 17);
-            this.labelControl18.TabIndex = 264;
-            this.labelControl18.Text = "Pipe Weight";
-            // 
-            // txtProductionTaka
-            // 
-            this.txtProductionTaka.EditValue = "";
-            this.txtProductionTaka.Location = new System.Drawing.Point(582, 50);
-            this.txtProductionTaka.Name = "txtProductionTaka";
-            this.txtProductionTaka.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductionTaka.Properties.Appearance.Options.UseFont = true;
-            this.txtProductionTaka.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtProductionTaka.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtProductionTaka.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtProductionTaka.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtProductionTaka.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtProductionTaka.Size = new System.Drawing.Size(205, 24);
-            this.txtProductionTaka.TabIndex = 261;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(445, 54);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(105, 17);
-            this.labelControl1.TabIndex = 262;
-            this.labelControl1.Text = "Production Taka";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
-            // 
-            // txtProductionMeters
-            // 
-            this.txtProductionMeters.EditValue = "";
-            this.txtProductionMeters.Location = new System.Drawing.Point(582, 17);
-            this.txtProductionMeters.Name = "txtProductionMeters";
-            this.txtProductionMeters.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductionMeters.Properties.Appearance.Options.UseFont = true;
-            this.txtProductionMeters.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtProductionMeters.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtProductionMeters.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtProductionMeters.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtProductionMeters.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtProductionMeters.Size = new System.Drawing.Size(205, 24);
-            this.txtProductionMeters.TabIndex = 259;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(433, 21);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(117, 17);
-            this.labelControl3.TabIndex = 260;
-            this.labelControl3.Text = "Production Meters";
-            // 
-            // txtGrayQuality
-            // 
-            this.txtGrayQuality.EditValue = "";
-            this.txtGrayQuality.Location = new System.Drawing.Point(188, 203);
-            this.txtGrayQuality.Name = "txtGrayQuality";
-            this.txtGrayQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrayQuality.Properties.Appearance.Options.UseFont = true;
-            this.txtGrayQuality.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtGrayQuality.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtGrayQuality.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtGrayQuality.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtGrayQuality.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtGrayQuality.Size = new System.Drawing.Size(205, 24);
-            this.txtGrayQuality.TabIndex = 257;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl7.Location = new System.Drawing.Point(87, 206);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(79, 17);
-            this.labelControl7.TabIndex = 258;
-            this.labelControl7.Text = "Gray Quality";
-            // 
-            // txtYarnQuality
-            // 
-            this.txtYarnQuality.EditValue = "";
-            this.txtYarnQuality.Location = new System.Drawing.Point(188, 234);
-            this.txtYarnQuality.Name = "txtYarnQuality";
-            this.txtYarnQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYarnQuality.Properties.Appearance.Options.UseFont = true;
-            this.txtYarnQuality.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtYarnQuality.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtYarnQuality.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtYarnQuality.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtYarnQuality.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtYarnQuality.Size = new System.Drawing.Size(205, 24);
-            this.txtYarnQuality.TabIndex = 255;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(87, 175);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(79, 17);
-            this.labelControl9.TabIndex = 256;
-            this.labelControl9.Text = "Yarn Quality";
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(99, 144);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(67, 17);
-            this.labelControl11.TabIndex = 254;
-            this.labelControl11.Text = "Beem Date";
-            // 
-            // txtJobberPartyName
-            // 
-            this.txtJobberPartyName.EditValue = "";
-            this.txtJobberPartyName.Location = new System.Drawing.Point(188, 265);
-            this.txtJobberPartyName.Name = "txtJobberPartyName";
-            this.txtJobberPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJobberPartyName.Properties.Appearance.Options.UseFont = true;
-            this.txtJobberPartyName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtJobberPartyName.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtJobberPartyName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtJobberPartyName.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtJobberPartyName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtJobberPartyName.Size = new System.Drawing.Size(205, 24);
-            this.txtJobberPartyName.TabIndex = 252;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(86, 113);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(80, 17);
-            this.labelControl5.TabIndex = 253;
-            this.labelControl5.Text = "Jobber Party";
-            // 
-            // txtWrapperPartyName
-            // 
-            this.txtWrapperPartyName.EditValue = "";
-            this.txtWrapperPartyName.Location = new System.Drawing.Point(188, 296);
-            this.txtWrapperPartyName.Name = "txtWrapperPartyName";
-            this.txtWrapperPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWrapperPartyName.Properties.Appearance.Options.UseFont = true;
-            this.txtWrapperPartyName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtWrapperPartyName.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtWrapperPartyName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtWrapperPartyName.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtWrapperPartyName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtWrapperPartyName.Size = new System.Drawing.Size(205, 24);
-            this.txtWrapperPartyName.TabIndex = 250;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(72, 82);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(94, 17);
-            this.labelControl2.TabIndex = 251;
-            this.labelControl2.Text = "Wrapper Party";
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl14.Location = new System.Drawing.Point(68, 20);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(98, 17);
-            this.labelControl14.TabIndex = 249;
-            this.labelControl14.Text = "Company Name";
-            // 
-            // txtMY
-            // 
-            this.txtMY.EditValue = "";
-            this.txtMY.Location = new System.Drawing.Point(582, 446);
-            this.txtMY.Name = "txtMY";
-            this.txtMY.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMY.Properties.Appearance.Options.UseFont = true;
-            this.txtMY.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtMY.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtMY.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtMY.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtMY.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtMY.Size = new System.Drawing.Size(205, 24);
-            this.txtMY.TabIndex = 314;
             // 
             // labelControl35
             // 
@@ -857,21 +533,6 @@
             this.dpBhidanDate.TabIndex = 310;
             this.dpBhidanDate.ToolTip = "Select Date.";
             // 
-            // txtPick
-            // 
-            this.txtPick.EditValue = "";
-            this.txtPick.Location = new System.Drawing.Point(582, 413);
-            this.txtPick.Name = "txtPick";
-            this.txtPick.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPick.Properties.Appearance.Options.UseFont = true;
-            this.txtPick.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtPick.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPick.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtPick.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtPick.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtPick.Size = new System.Drawing.Size(205, 24);
-            this.txtPick.TabIndex = 308;
-            // 
             // labelControl26
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -881,21 +542,6 @@
             this.labelControl26.Size = new System.Drawing.Size(28, 17);
             this.labelControl26.TabIndex = 309;
             this.labelControl26.Text = "Pick";
-            // 
-            // txtRPM
-            // 
-            this.txtRPM.EditValue = "";
-            this.txtRPM.Location = new System.Drawing.Point(582, 380);
-            this.txtRPM.Name = "txtRPM";
-            this.txtRPM.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRPM.Properties.Appearance.Options.UseFont = true;
-            this.txtRPM.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtRPM.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtRPM.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtRPM.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtRPM.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtRPM.Size = new System.Drawing.Size(205, 24);
-            this.txtRPM.TabIndex = 306;
             // 
             // labelControl27
             // 
@@ -907,21 +553,6 @@
             this.labelControl27.TabIndex = 307;
             this.labelControl27.Text = "RPM";
             // 
-            // txtMeterConsumption
-            // 
-            this.txtMeterConsumption.EditValue = "";
-            this.txtMeterConsumption.Location = new System.Drawing.Point(582, 347);
-            this.txtMeterConsumption.Name = "txtMeterConsumption";
-            this.txtMeterConsumption.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMeterConsumption.Properties.Appearance.Options.UseFont = true;
-            this.txtMeterConsumption.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtMeterConsumption.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtMeterConsumption.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtMeterConsumption.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtMeterConsumption.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtMeterConsumption.Size = new System.Drawing.Size(205, 24);
-            this.txtMeterConsumption.TabIndex = 304;
-            // 
             // labelControl28
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -931,21 +562,6 @@
             this.labelControl28.Size = new System.Drawing.Size(123, 17);
             this.labelControl28.TabIndex = 305;
             this.labelControl28.Text = "Meter Consumption";
-            // 
-            // txtAmount
-            // 
-            this.txtAmount.EditValue = "";
-            this.txtAmount.Location = new System.Drawing.Point(582, 314);
-            this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmount.Properties.Appearance.Options.UseFont = true;
-            this.txtAmount.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtAmount.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtAmount.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtAmount.Size = new System.Drawing.Size(205, 24);
-            this.txtAmount.TabIndex = 302;
             // 
             // labelControl19
             // 
@@ -957,21 +573,6 @@
             this.labelControl19.TabIndex = 303;
             this.labelControl19.Text = "Amount";
             // 
-            // txtRate
-            // 
-            this.txtRate.EditValue = "";
-            this.txtRate.Location = new System.Drawing.Point(582, 281);
-            this.txtRate.Name = "txtRate";
-            this.txtRate.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRate.Properties.Appearance.Options.UseFont = true;
-            this.txtRate.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtRate.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtRate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtRate.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtRate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtRate.Size = new System.Drawing.Size(205, 24);
-            this.txtRate.TabIndex = 300;
-            // 
             // labelControl20
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -981,21 +582,6 @@
             this.labelControl20.Size = new System.Drawing.Size(28, 17);
             this.labelControl20.TabIndex = 301;
             this.labelControl20.Text = "Rate";
-            // 
-            // txtFinalAmount
-            // 
-            this.txtFinalAmount.EditValue = "";
-            this.txtFinalAmount.Location = new System.Drawing.Point(582, 479);
-            this.txtFinalAmount.Name = "txtFinalAmount";
-            this.txtFinalAmount.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFinalAmount.Properties.Appearance.Options.UseFont = true;
-            this.txtFinalAmount.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.txtFinalAmount.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtFinalAmount.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtFinalAmount.Properties.Mask.EditMask = "\\p{L}+";
-            this.txtFinalAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtFinalAmount.Size = new System.Drawing.Size(205, 24);
-            this.txtFinalAmount.TabIndex = 298;
             // 
             // labelControl22
             // 
@@ -1151,6 +737,270 @@
             this.labelControl8.TabIndex = 287;
             this.labelControl8.Text = "Meters";
             // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl10.Location = new System.Drawing.Point(107, 268);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(59, 17);
+            this.labelControl10.TabIndex = 285;
+            this.labelControl10.Text = "No of Tar";
+            // 
+            // labelControl34
+            // 
+            this.labelControl34.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl34.Location = new System.Drawing.Point(479, 252);
+            this.labelControl34.Name = "labelControl34";
+            this.labelControl34.Size = new System.Drawing.Size(71, 17);
+            this.labelControl34.TabIndex = 282;
+            this.labelControl34.Text = "Taka Meter";
+            // 
+            // labelControl32
+            // 
+            this.labelControl32.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl32.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl32.Location = new System.Drawing.Point(124, 237);
+            this.labelControl32.Name = "labelControl32";
+            this.labelControl32.Size = new System.Drawing.Size(42, 17);
+            this.labelControl32.TabIndex = 281;
+            this.labelControl32.Text = "Lot No";
+            // 
+            // labelControl30
+            // 
+            this.labelControl30.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl30.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl30.Location = new System.Drawing.Point(174, 58);
+            this.labelControl30.Name = "labelControl30";
+            this.labelControl30.Size = new System.Drawing.Size(6, 17);
+            this.labelControl30.TabIndex = 279;
+            this.labelControl30.Text = "*";
+            // 
+            // labelControl31
+            // 
+            this.labelControl31.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl31.Location = new System.Drawing.Point(110, 51);
+            this.labelControl31.Name = "labelControl31";
+            this.labelControl31.Size = new System.Drawing.Size(56, 17);
+            this.labelControl31.TabIndex = 278;
+            this.labelControl31.Text = "Beam No";
+            // 
+            // labelControl29
+            // 
+            this.labelControl29.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl29.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl29.Location = new System.Drawing.Point(174, 92);
+            this.labelControl29.Name = "labelControl29";
+            this.labelControl29.Size = new System.Drawing.Size(6, 17);
+            this.labelControl29.TabIndex = 274;
+            this.labelControl29.Text = "*";
+            // 
+            // labelControl25
+            // 
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl25.Location = new System.Drawing.Point(176, 21);
+            this.labelControl25.Name = "labelControl25";
+            this.labelControl25.Size = new System.Drawing.Size(6, 17);
+            this.labelControl25.TabIndex = 273;
+            this.labelControl25.Text = "*";
+            // 
+            // labelControl21
+            // 
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl21.Location = new System.Drawing.Point(486, 220);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(64, 17);
+            this.labelControl21.TabIndex = 271;
+            this.labelControl21.Text = "Issue Date";
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Location = new System.Drawing.Point(495, 186);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(55, 17);
+            this.labelControl13.TabIndex = 270;
+            this.labelControl13.Text = "Remarks";
+            // 
+            // txtMachineNo
+            // 
+            this.txtMachineNo.EditValue = "";
+            this.txtMachineNo.Location = new System.Drawing.Point(582, 149);
+            this.txtMachineNo.Name = "txtMachineNo";
+            this.txtMachineNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMachineNo.Properties.Appearance.Options.UseFont = true;
+            this.txtMachineNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtMachineNo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMachineNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtMachineNo.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtMachineNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtMachineNo.Size = new System.Drawing.Size(205, 24);
+            this.txtMachineNo.TabIndex = 267;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl15.Location = new System.Drawing.Point(476, 153);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(74, 17);
+            this.labelControl15.TabIndex = 268;
+            this.labelControl15.Text = "Machine No";
+            // 
+            // txtMinStrategy
+            // 
+            this.txtMinStrategy.EditValue = "";
+            this.txtMinStrategy.Location = new System.Drawing.Point(582, 116);
+            this.txtMinStrategy.Name = "txtMinStrategy";
+            this.txtMinStrategy.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMinStrategy.Properties.Appearance.Options.UseFont = true;
+            this.txtMinStrategy.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtMinStrategy.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMinStrategy.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtMinStrategy.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtMinStrategy.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtMinStrategy.Size = new System.Drawing.Size(205, 24);
+            this.txtMinStrategy.TabIndex = 265;
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl16.Location = new System.Drawing.Point(471, 120);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(79, 17);
+            this.labelControl16.TabIndex = 266;
+            this.labelControl16.Text = "Min Strategy";
+            // 
+            // txtPipeWeight
+            // 
+            this.txtPipeWeight.EditValue = "";
+            this.txtPipeWeight.Location = new System.Drawing.Point(582, 83);
+            this.txtPipeWeight.Name = "txtPipeWeight";
+            this.txtPipeWeight.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPipeWeight.Properties.Appearance.Options.UseFont = true;
+            this.txtPipeWeight.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtPipeWeight.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPipeWeight.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtPipeWeight.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtPipeWeight.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtPipeWeight.Size = new System.Drawing.Size(205, 24);
+            this.txtPipeWeight.TabIndex = 263;
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl18.Location = new System.Drawing.Point(473, 87);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(77, 17);
+            this.labelControl18.TabIndex = 264;
+            this.labelControl18.Text = "Pipe Weight";
+            // 
+            // txtProductionTaka
+            // 
+            this.txtProductionTaka.EditValue = "";
+            this.txtProductionTaka.Location = new System.Drawing.Point(582, 50);
+            this.txtProductionTaka.Name = "txtProductionTaka";
+            this.txtProductionTaka.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductionTaka.Properties.Appearance.Options.UseFont = true;
+            this.txtProductionTaka.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtProductionTaka.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtProductionTaka.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtProductionTaka.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtProductionTaka.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtProductionTaka.Size = new System.Drawing.Size(205, 24);
+            this.txtProductionTaka.TabIndex = 261;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Location = new System.Drawing.Point(445, 54);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(105, 17);
+            this.labelControl1.TabIndex = 262;
+            this.labelControl1.Text = "Production Taka";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
+            // 
+            // txtProductionMeters
+            // 
+            this.txtProductionMeters.EditValue = "";
+            this.txtProductionMeters.Location = new System.Drawing.Point(582, 17);
+            this.txtProductionMeters.Name = "txtProductionMeters";
+            this.txtProductionMeters.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductionMeters.Properties.Appearance.Options.UseFont = true;
+            this.txtProductionMeters.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtProductionMeters.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtProductionMeters.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtProductionMeters.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtProductionMeters.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtProductionMeters.Size = new System.Drawing.Size(205, 24);
+            this.txtProductionMeters.TabIndex = 259;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Location = new System.Drawing.Point(433, 21);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(117, 17);
+            this.labelControl3.TabIndex = 260;
+            this.labelControl3.Text = "Production Meters";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl7.Location = new System.Drawing.Point(87, 206);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(79, 17);
+            this.labelControl7.TabIndex = 258;
+            this.labelControl7.Text = "Gray Quality";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Location = new System.Drawing.Point(87, 175);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(79, 17);
+            this.labelControl9.TabIndex = 256;
+            this.labelControl9.Text = "Yarn Quality";
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Location = new System.Drawing.Point(99, 144);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(67, 17);
+            this.labelControl11.TabIndex = 254;
+            this.labelControl11.Text = "Beem Date";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Location = new System.Drawing.Point(86, 113);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(80, 17);
+            this.labelControl5.TabIndex = 253;
+            this.labelControl5.Text = "Jobber Party";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Location = new System.Drawing.Point(72, 82);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(94, 17);
+            this.labelControl2.TabIndex = 251;
+            this.labelControl2.Text = "Wrapper Party";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl14.Location = new System.Drawing.Point(68, 20);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(98, 17);
+            this.labelControl14.TabIndex = 249;
+            this.labelControl14.Text = "Company Name";
+            // 
             // txtTarNo
             // 
             this.txtTarNo.EditValue = "";
@@ -1166,63 +1016,216 @@
             this.txtTarNo.Size = new System.Drawing.Size(205, 24);
             this.txtTarNo.TabIndex = 284;
             // 
-            // labelControl10
+            // txtLotNo
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl10.Location = new System.Drawing.Point(107, 268);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(59, 17);
-            this.labelControl10.TabIndex = 285;
-            this.labelControl10.Text = "No of Tar";
+            this.txtLotNo.EditValue = "";
+            this.txtLotNo.Location = new System.Drawing.Point(188, 79);
+            this.txtLotNo.Name = "txtLotNo";
+            this.txtLotNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLotNo.Properties.Appearance.Options.UseFont = true;
+            this.txtLotNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtLotNo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtLotNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtLotNo.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtLotNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtLotNo.Size = new System.Drawing.Size(205, 24);
+            this.txtLotNo.TabIndex = 280;
+            // 
+            // txtBeamNo
+            // 
+            this.txtBeamNo.EditValue = "";
+            this.txtBeamNo.Location = new System.Drawing.Point(188, 110);
+            this.txtBeamNo.Name = "txtBeamNo";
+            this.txtBeamNo.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBeamNo.Properties.Appearance.Options.UseFont = true;
+            this.txtBeamNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtBeamNo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtBeamNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtBeamNo.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtBeamNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtBeamNo.Size = new System.Drawing.Size(205, 24);
+            this.txtBeamNo.TabIndex = 277;
+            // 
+            // dpBeamDate
+            // 
+            this.dpBeamDate.EditValue = null;
+            this.dpBeamDate.Location = new System.Drawing.Point(188, 141);
+            this.dpBeamDate.Name = "dpBeamDate";
+            this.dpBeamDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.dpBeamDate.Properties.Appearance.Options.UseFont = true;
+            this.dpBeamDate.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.dpBeamDate.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.dpBeamDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.dpBeamDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dpBeamDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dpBeamDate.Size = new System.Drawing.Size(205, 24);
+            this.dpBeamDate.TabIndex = 275;
+            this.dpBeamDate.ToolTip = "Select Date.";
+            // 
+            // cmbCompanyCode
+            // 
+            this.cmbCompanyCode.Location = new System.Drawing.Point(188, 172);
+            this.cmbCompanyCode.Name = "cmbCompanyCode";
+            this.cmbCompanyCode.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbCompanyCode.Properties.Appearance.Options.UseFont = true;
+            this.cmbCompanyCode.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbCompanyCode.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cmbCompanyCode.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbCompanyCode.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cmbCompanyCode.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbCompanyCode.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbCompanyCode.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.cmbCompanyCode.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbCompanyCode.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.cmbCompanyCode.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cmbCompanyCode.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbCompanyCode.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbCompanyCode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.cmbCompanyCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCompanyCode.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyID", "CompanyID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CompanyName", "CompanyName"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ComapnyCode", "ComapnyCode")});
+            this.cmbCompanyCode.Properties.NullText = "";
+            this.cmbCompanyCode.Size = new System.Drawing.Size(205, 24);
+            this.cmbCompanyCode.TabIndex = 272;
+            this.cmbCompanyCode.ToolTip = "Select Company Name";
+            // 
+            // txtGrayQuality
+            // 
+            this.txtGrayQuality.EditValue = "";
+            this.txtGrayQuality.Location = new System.Drawing.Point(188, 203);
+            this.txtGrayQuality.Name = "txtGrayQuality";
+            this.txtGrayQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrayQuality.Properties.Appearance.Options.UseFont = true;
+            this.txtGrayQuality.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtGrayQuality.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtGrayQuality.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtGrayQuality.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtGrayQuality.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtGrayQuality.Size = new System.Drawing.Size(205, 24);
+            this.txtGrayQuality.TabIndex = 257;
+            // 
+            // txtYarnQuality
+            // 
+            this.txtYarnQuality.EditValue = "";
+            this.txtYarnQuality.Location = new System.Drawing.Point(188, 234);
+            this.txtYarnQuality.Name = "txtYarnQuality";
+            this.txtYarnQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYarnQuality.Properties.Appearance.Options.UseFont = true;
+            this.txtYarnQuality.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtYarnQuality.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtYarnQuality.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtYarnQuality.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtYarnQuality.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtYarnQuality.Size = new System.Drawing.Size(205, 24);
+            this.txtYarnQuality.TabIndex = 255;
+            // 
+            // txtJobberPartyName
+            // 
+            this.txtJobberPartyName.EditValue = "";
+            this.txtJobberPartyName.Location = new System.Drawing.Point(188, 265);
+            this.txtJobberPartyName.Name = "txtJobberPartyName";
+            this.txtJobberPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobberPartyName.Properties.Appearance.Options.UseFont = true;
+            this.txtJobberPartyName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtJobberPartyName.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtJobberPartyName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtJobberPartyName.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtJobberPartyName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtJobberPartyName.Size = new System.Drawing.Size(205, 24);
+            this.txtJobberPartyName.TabIndex = 252;
+            // 
+            // txtWrapperPartyName
+            // 
+            this.txtWrapperPartyName.EditValue = "";
+            this.txtWrapperPartyName.Location = new System.Drawing.Point(188, 296);
+            this.txtWrapperPartyName.Name = "txtWrapperPartyName";
+            this.txtWrapperPartyName.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWrapperPartyName.Properties.Appearance.Options.UseFont = true;
+            this.txtWrapperPartyName.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.txtWrapperPartyName.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtWrapperPartyName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtWrapperPartyName.Properties.Mask.EditMask = "\\p{L}+";
+            this.txtWrapperPartyName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtWrapperPartyName.Size = new System.Drawing.Size(205, 24);
+            this.txtWrapperPartyName.TabIndex = 250;
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape1.Location = new System.Drawing.Point(21, 41);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(117, 2);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(854, 47);
+            this.shapeContainer1.TabIndex = 8;
+            this.shapeContainer1.TabStop = false;
             // 
             // frmBeamMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(854, 664);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmBeamMaster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Beam Master";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.xtraScrollableControl1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTakaMeter.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLotNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBeamNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMachineNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMinStrategy.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPipeWeight.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductionTaka.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductionMeters.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGrayQuality.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQuality.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJobberPartyName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWrapperPartyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMY.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNetWeight.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPick.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRPM.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeterConsumption.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFinalAmount.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTakaMeter.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpIssueDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNetWeight.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpLoadingDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBhidanDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPasaraiName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBhidanStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWeight.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeters.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMachineNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMinStrategy.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPipeWeight.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProductionTaka.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProductionMeters.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLotNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBeamNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dpBeamDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCompanyCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGrayQuality.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYarnQuality.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJobberPartyName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWrapperPartyName.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

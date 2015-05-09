@@ -192,7 +192,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmProofMst";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "";
+            this.Text = "Proof Master";
             this.Controls.SetChildIndex(this.panel2, 0);
             this.Controls.SetChildIndex(this.pnlHeader, 0);
             this.Controls.SetChildIndex(this.pnlFooter, 0);

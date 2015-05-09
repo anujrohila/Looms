@@ -76,7 +76,7 @@
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnlMainBack = new System.Windows.Forms.Panel();
-            this.tabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.TabControl = new DevExpress.XtraTab.XtraTabControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
@@ -90,7 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlMainBack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TabControl)).BeginInit();
             this.SuspendLayout();
             // 
             // navbarImageCollectionLarge
@@ -868,34 +868,34 @@
             // pnlMainBack
             // 
             this.pnlMainBack.BackColor = System.Drawing.Color.White;
-            this.pnlMainBack.Controls.Add(this.tabControl1);
+            this.pnlMainBack.Controls.Add(this.TabControl);
             this.pnlMainBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainBack.Location = new System.Drawing.Point(200, 50);
             this.pnlMainBack.Name = "pnlMainBack";
             this.pnlMainBack.Size = new System.Drawing.Size(894, 622);
             this.pnlMainBack.TabIndex = 3;
             // 
-            // tabControl1
+            // TabControl
             // 
-            this.tabControl1.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.Appearance.Options.UseFont = true;
-            this.tabControl1.AppearancePage.Header.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.AppearancePage.Header.Options.UseFont = true;
-            this.tabControl1.AppearancePage.HeaderActive.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.AppearancePage.HeaderActive.Options.UseFont = true;
-            this.tabControl1.AppearancePage.HeaderDisabled.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.AppearancePage.HeaderDisabled.Options.UseFont = true;
-            this.tabControl1.AppearancePage.HeaderHotTracked.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.AppearancePage.HeaderHotTracked.Options.UseFont = true;
-            this.tabControl1.AppearancePage.PageClient.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.AppearancePage.PageClient.Options.UseFont = true;
-            this.tabControl1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Size = new System.Drawing.Size(894, 622);
-            this.tabControl1.TabIndex = 0;
-            this.tabControl1.CloseButtonClick += new System.EventHandler(this.tabControl1_CloseButtonClick);
+            this.TabControl.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TabControl.Appearance.Options.UseFont = true;
+            this.TabControl.AppearancePage.Header.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TabControl.AppearancePage.Header.Options.UseFont = true;
+            this.TabControl.AppearancePage.HeaderActive.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TabControl.AppearancePage.HeaderActive.Options.UseFont = true;
+            this.TabControl.AppearancePage.HeaderDisabled.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TabControl.AppearancePage.HeaderDisabled.Options.UseFont = true;
+            this.TabControl.AppearancePage.HeaderHotTracked.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TabControl.AppearancePage.HeaderHotTracked.Options.UseFont = true;
+            this.TabControl.AppearancePage.PageClient.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TabControl.AppearancePage.PageClient.Options.UseFont = true;
+            this.TabControl.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
+            this.TabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl.Location = new System.Drawing.Point(0, 0);
+            this.TabControl.Name = "TabControl";
+            this.TabControl.Size = new System.Drawing.Size(894, 622);
+            this.TabControl.TabIndex = 0;
+            this.TabControl.CloseButtonClick += new System.EventHandler(this.tabControl1_CloseButtonClick);
             // 
             // defaultLookAndFeel1
             // 
@@ -933,7 +933,7 @@
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             this.pnlMainBack.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TabControl)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -986,7 +986,7 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel btnWindowClose;
         private System.Windows.Forms.Label label6;
-        private DevExpress.XtraTab.XtraTabControl tabControl1;
+        private DevExpress.XtraTab.XtraTabControl TabControl;
         private System.Windows.Forms.Label labelNavigation;
 
     }

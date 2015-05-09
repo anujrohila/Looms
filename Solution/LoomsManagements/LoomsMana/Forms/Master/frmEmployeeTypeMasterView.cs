@@ -14,5 +14,11 @@ namespace LoomsMana.Forms.Master
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmEmployeeTypeMaster frm = new frmEmployeeTypeMaster();
+            frm.ShowDialog();
+        }
     }
 }

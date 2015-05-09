@@ -108,11 +108,11 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(10, 38);
-            this.groupBox1.Size = new System.Drawing.Size(1251, 46);
+            this.groupBox1.Size = new System.Drawing.Size(861, 46);
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(943, 10);
+            this.panelControl2.Location = new System.Drawing.Point(553, 10);
             // 
             // groupBox2
             // 
@@ -284,7 +284,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmYarnPackageTypeMasterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Yarn Package Type Master";
+            this.Text = "Yarn Package Type";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

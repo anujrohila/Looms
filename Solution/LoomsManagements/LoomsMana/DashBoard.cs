@@ -100,13 +100,13 @@ namespace LoomsMana
             {
                 DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs arg = e as DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs;
                 (arg.Page as DevExpress.XtraTab.XtraTabPage).PageVisible = false;
-                tabControl1.TabPages.Remove((arg.Page as DevExpress.XtraTab.XtraTabPage));
+                TabControl.TabPages.Remove((arg.Page as DevExpress.XtraTab.XtraTabPage));
             }
             catch
             { }
-            if (tabControl1.TabPages.Count == 0)
+            if (TabControl.TabPages.Count == 0)
             {
-                tabControl1.Visible = false;
+                TabControl.Visible = false;
                 pnlTop.BorderStyle = BorderStyle.FixedSingle;
             }
         }
@@ -133,25 +133,25 @@ namespace LoomsMana
            switch (tagname)
            {
                case "navCompMst":
-                   FillFrm(new FrmCompanyMst());
+                   FillFrm(new FrmCompanyView());
                    break;
                case "navOwnerMst":
                    // Currentform = new CustomerMaster();
                    break;
                case "navPartyMst":
-                 //  Currentform = new frmpa();
+                  FillFrm( new frmPartyMasterView());
                    break;
                case "navEmpMst":
-                   //Currentform = new frmEmployeeTypeMasterView();
+                   FillFrm(new frmEmployeeMasterView());
                    break;
                case "navEmpType":
-                  // Currentform = new frmEmployeeMasterView();
+                  FillFrm(new frmEmployeeTypeMasterView());
                    break;
                case "navPanalty":
-                  // Currentform = new frmPenaltyMasterView();
+                  FillFrm( new frmPenaltyMasterView());
                    break;
                case "navYarnType":
-                    FillFrm( new frmYarnTypeMasterView());
+                   FillFrm(new frmFiscalYearView());
                    break;
                case "navYarnQty":
                   FillFrm(  Currentform = new frmYarnQualityMasterView());
@@ -160,22 +160,22 @@ namespace LoomsMana
                   FillFrm(  Currentform = new frmYarnPackageTypeMasterView());
                    break;
                case "navMachineType":
-                 //  Currentform = new frmMachineMasterView();
+                   FillFrm(new frmMachineTypeMasterView());
                    break;
                case "navMachine":
-                 //  Currentform = new frmBankMasterView();
+                   FillFrm(new frmMachineMasterView());
                    break;
                case "navBank":
-                 //  Currentform = new frmBankBranchMasterView();
+                   FillFrm(new frmBankMasterView());
                    break;
                case "navBankBranch":
-                  // Currentform = new frmYarnPackageTypeMasterView();
+                   FillFrm(new frmBankBranchMasterView());
                    break;
                case "navBemType":
-                 //  Currentform = new frmBeamMasterView();
+                   FillFrm(new frmBeamMasterView());
                    break;
                case "navFiscaYear":
-                 //  Currentform = new frmFiscalYearView();
+                   FillFrm(new frmFiscalYearView());
                    break;
                case "navPurOrder":
                    FillFrm( Currentform = new frmYarnPurchaseOrder());
@@ -231,15 +231,15 @@ namespace LoomsMana
                 pnlMainBack.Refresh();
                 try
                 {
-                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
+                    for (int i = 0; i < TabControl.TabPages.Count; i++)
                     {
-                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
+                        for (int j = 0; j < TabControl.TabPages[i].Controls.Count; j++)
                         {
-                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
+                            if (TabControl.TabPages[i].Controls[j].Name.ToString() == "pnl" + TabControl.TabPages[i].Text.ToString())
                             {
-                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
-                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
-                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
+                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + TabControl.TabPages[i].Text.ToString(), true)[0];
+                                Form frm = (Form)pnl.Controls.Find(TabControl.TabPages[i].Tag.ToString(), true)[0];
+                                pnl.Controls.Remove(pnlMainBack.Controls.Find(TabControl.TabPages[i].Tag.ToString(), true)[0]);
                                 frm.Parent = null;
                                 frm.Height = pnl.Height;
                                 frm.Width = pnl.Width;
@@ -272,15 +272,15 @@ namespace LoomsMana
 
                 try
                 {
-                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
+                    for (int i = 0; i < TabControl.TabPages.Count; i++)
                     {
-                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
+                        for (int j = 0; j < TabControl.TabPages[i].Controls.Count; j++)
                         {
-                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
+                            if (TabControl.TabPages[i].Controls[j].Name.ToString() == "pnl" + TabControl.TabPages[i].Text.ToString())
                             {
-                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
-                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
-                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
+                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + TabControl.TabPages[i].Text.ToString(), true)[0];
+                                Form frm = (Form)pnl.Controls.Find(TabControl.TabPages[i].Tag.ToString(), true)[0];
+                                pnl.Controls.Remove(pnlMainBack.Controls.Find(TabControl.TabPages[i].Tag.ToString(), true)[0]);
                                 frm.Parent = null;
                                 frm.Height = pnl.Height;
                                 frm.Width = pnl.Width;
@@ -304,11 +304,11 @@ namespace LoomsMana
             try
             {
                 int i = 0;
-                foreach (var item in tabControl1.TabPages)
+                foreach (var item in TabControl.TabPages)
                 {
                     if (((DevExpress.XtraTab.XtraTabPage)item).Text.ToString() == frm.Text.ToString())
                     {
-                        tabControl1.SelectedTabPage = ((DevExpress.XtraTab.XtraTabPage)item);
+                        TabControl.SelectedTabPage = ((DevExpress.XtraTab.XtraTabPage)item);
                         return;
                     }
                     i++;
@@ -318,10 +318,10 @@ namespace LoomsMana
             { }
             pnlTop.BorderStyle = BorderStyle.None;
 
-            tabControl1.Visible = true;
+            TabControl.Visible = true;
             Panel pnl = new Panel();
             DevExpress.XtraTab.XtraTabPage tbp = new DevExpress.XtraTab.XtraTabPage();
-            tabControl1.TabPages.Add(tbp);
+            TabControl.TabPages.Add(tbp);
             tbp.ShowCloseButton = DefaultBoolean.True;
             frm.TopLevel = false;
             tbp.Controls.Add(pnl);
@@ -329,7 +329,7 @@ namespace LoomsMana
             pnl.BackColor = Color.White;
             pnl.Name = "pnl" + frm.Text;
             tbp.Refresh();
-            if (tabControl1.TabPages.Count == 1)
+            if (TabControl.TabPages.Count == 1)
             {
                 frm.Height = pnl.Height;
                 frm.Width = tbp.Width;
@@ -346,7 +346,7 @@ namespace LoomsMana
 
             tbp.BackColor = Color.White;
             pnl.Controls.Add(frm);
-            tabControl1.SelectedTabPage = tbp;
+            TabControl.SelectedTabPage = tbp;
             frm.Visible = true;
             tbp.Focus();
             tbp.Tag = frm.Name.ToString();
@@ -380,131 +380,6 @@ namespace LoomsMana
             //pnlMainBack.Width / 2 - pnlMain.Size.Width / 2,
             //pnlMainBack.Height / 2 - pnlMain.Size.Height / 2);
             //pnlMain.Anchor = AnchorStyles.None;
-        }
-
-        #endregion
-
-        #region Control Event
-
-        private void Menulink_Click(object sender, NavBarLinkEventArgs e)
-        {
-            string tagname = e.Link.Caption.ToString().Trim();
-            if (tagname == "")
-                return;
-
-            Form Currentform = new Form();
-
-            switch (tagname)
-            {
-                case "Bank Branch":
-                  //  Currentform = new frmBankBranchMasterView();
-                    break;
-                //case "Owner Master View":
-                //    // Currentform = new CustomerMaster();
-                //    break;
-                //case "Party Master View":
-                //    Currentform = new frmPartyMasterView();
-                //    break;
-                //case "Employee Type Master View":
-                //    Currentform = new frmEmployeeTypeMasterView();
-                //    break;
-                //case "Employee Master View":
-                //    Currentform = new frmEmployeeMasterView();
-                //    break;
-                //case "Panalty Master View":
-                //    Currentform = new frmPenaltyMasterView();
-                //    break;
-                //case "Yarn Type Master View":
-                //    Currentform = new frmYarnTypeMasterView();
-                //    break;
-                //case "Yarn Quality Master View":
-                //    Currentform = new frmYarnQualityMasterView();
-                //    break;
-                //case "Machine Type Master View":
-                //    Currentform = new frmMachineTypeMasterView();
-                //    break;
-                //case "Machine Master View":
-                //    Currentform = new frmMachineMasterView();
-                //    break;
-                //case "Bank Master View":
-                //    Currentform = new frmBankMasterView();
-                //    break;
-                //case "Bank Branch Master View":
-                //    Currentform = new frmBankBranchMasterView();
-                //    break;
-                //case "Yarn Package Type View":
-                //    Currentform = new frmYarnPackageTypeMasterView();
-                //    break;
-                //case "Beam Master":
-                //    Currentform = new frmBeamMasterView();
-                //    break;
-                //case "Fiscal Year":
-                //    Currentform = new frmFiscalYearView();
-                //    break;
-                //case "Sales Order":
-                //    Currentform = new frmSalesOrder();
-                //    break;
-                //case "Purchase Order":
-                //    Currentform = new frmYarnPurchaseOrder();
-                //    break;
-                //case "Sales Bill":
-                //    Currentform = new frmSalesBill();
-                //    break;
-                //case "Purchase Bill":
-                //    Currentform = new frmPurchaseBill();
-                //    break;
-                //case "Sales Challan":
-                //    Currentform = new frmSalesChallan();
-                //    break;
-                //case "Sales Return":
-                //    Currentform = new frmSalesReturn();
-                //    break;
-                //case "Purchase Return":
-                //    Currentform = new frmYarnPurchaseReturn();
-                //    break;
-
-                //case "Beam Purchase":
-                //    Currentform = new frmBeamPurchase();
-                //    break;
-                //case "Gray Purchase":
-                //    Currentform = new frmGrayPurchase();
-                //    break;
-                //case "payment details list":
-                //    Currentform = new PaymentDetailsList();
-                //    break;
-                //case "lab details":
-                //    Currentform = new LabDetails();
-                //    break;
-
-                case "exit":
-                    Close();
-                    return;
-
-                default:
-                    return;
-            }
-
-            bool flag = false;
-            foreach (Form form in this.MdiChildren)
-            {
-                if (tagname == Convert.ToString(form.Text))
-                {
-                    flag = true;
-                    form.Focus();
-                    break;
-                }
-                flag = false;
-            }
-
-            if (flag == false)
-            {
-                Currentform.ShowInTaskbar = false;
-                Currentform.MdiParent = this;
-                Currentform.StartPosition = FormStartPosition.CenterParent;
-                Currentform.WindowState = FormWindowState.Maximized;
-                Currentform.Text = tagname;
-                Currentform.Show();
-            }
         }
 
         #endregion

@@ -321,7 +321,7 @@
             this.ClientSize = new System.Drawing.Size(884, 377);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmYarnTypeMasterView";
-            this.Text = "Yarn Type Master";
+            this.Text = "Yarn Type";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
