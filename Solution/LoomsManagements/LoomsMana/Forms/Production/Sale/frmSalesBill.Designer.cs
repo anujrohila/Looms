@@ -34,8 +34,6 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtInvoiceNumber = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -54,8 +52,7 @@
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
             this.cmbQualityTypeName = new DevExpress.XtraEditors.LookUpEdit();
-            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -74,6 +71,9 @@
             this.txtRate = new DevExpress.XtraEditors.TextEdit();
             this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
             this.txtQualityCode = new DevExpress.XtraEditors.TextEdit();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtRemarks = new DevExpress.XtraEditors.MemoEdit();
             this.txtLRNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
@@ -97,8 +97,6 @@
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties)).BeginInit();
@@ -106,12 +104,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbOrderName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityTypeName.Properties)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeter.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWeight.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQualityCode.Properties)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLRNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTransport.Properties)).BeginInit();
@@ -248,65 +248,6 @@
             this.groupBox2.Size = new System.Drawing.Size(1008, 123);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.labelControl18);
-            this.groupBox3.Controls.Add(this.labelControl2);
-            this.groupBox3.Controls.Add(this.labelControl3);
-            this.groupBox3.Controls.Add(this.labelControl6);
-            this.groupBox3.Controls.Add(this.labelControl12);
-            this.groupBox3.Controls.Add(this.labelControl13);
-            this.groupBox3.Controls.Add(this.labelControl15);
-            this.groupBox3.Controls.Add(this.txtAmount);
-            this.groupBox3.Controls.Add(this.labelControl33);
-            this.groupBox3.Controls.Add(this.labelControl34);
-            this.groupBox3.Controls.Add(this.labelControl35);
-            this.groupBox3.Controls.Add(this.txtTaka);
-            this.groupBox3.Controls.Add(this.labelControl36);
-            this.groupBox3.Controls.Add(this.txtMeter);
-            this.groupBox3.Controls.Add(this.txtWeight);
-            this.groupBox3.Controls.Add(this.txtRate);
-            this.groupBox3.Controls.Add(this.labelControl37);
-            this.groupBox3.Controls.Add(this.txtQualityCode);
-            this.groupBox3.Controls.Add(this.shapeContainer2);
-            this.groupBox3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBox3.Location = new System.Drawing.Point(22, 134);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1009, 105);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Order Details";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.txtRemarks);
-            this.groupBox4.Controls.Add(this.txtLRNo);
-            this.groupBox4.Controls.Add(this.labelControl16);
-            this.groupBox4.Controls.Add(this.labelControl19);
-            this.groupBox4.Controls.Add(this.labelControl20);
-            this.groupBox4.Controls.Add(this.txtTransport);
-            this.groupBox4.Controls.Add(this.dpDeliveredDate);
-            this.groupBox4.Controls.Add(this.labelControl21);
-            this.groupBox4.Controls.Add(this.dpDeliveryDate);
-            this.groupBox4.Controls.Add(this.labelControl22);
-            this.groupBox4.Controls.Add(this.labelControl23);
-            this.groupBox4.Controls.Add(this.labelControl24);
-            this.groupBox4.Controls.Add(this.txtTruckNo);
-            this.groupBox4.Controls.Add(this.labelControl26);
-            this.groupBox4.Controls.Add(this.cmbCheckedBy);
-            this.groupBox4.Controls.Add(this.labelControl27);
-            this.groupBox4.Controls.Add(this.labelControl29);
-            this.groupBox4.Controls.Add(this.labelControl30);
-            this.groupBox4.Controls.Add(this.labelControl38);
-            this.groupBox4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBox4.Location = new System.Drawing.Point(22, 247);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1009, 157);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
             // 
             // txtInvoiceNumber
             // 
@@ -577,27 +518,35 @@
             this.cmbQualityTypeName.Size = new System.Drawing.Size(205, 24);
             this.cmbQualityTypeName.TabIndex = 347;
             // 
-            // rectangleShape2
+            // groupBox3
             // 
-            this.rectangleShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape2.FillColor = System.Drawing.Color.Red;
-            this.rectangleShape2.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape2.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape2.Location = new System.Drawing.Point(8, 0);
-            this.rectangleShape2.Name = "rectangleShape2";
-            this.rectangleShape2.Size = new System.Drawing.Size(79, 2);
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(3, 19);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape2});
-            this.shapeContainer2.Size = new System.Drawing.Size(1003, 83);
-            this.shapeContainer2.TabIndex = 318;
-            this.shapeContainer2.TabStop = false;
+            this.groupBox3.Controls.Add(this.labelControl18);
+            this.groupBox3.Controls.Add(this.labelControl2);
+            this.groupBox3.Controls.Add(this.labelControl3);
+            this.groupBox3.Controls.Add(this.labelControl6);
+            this.groupBox3.Controls.Add(this.labelControl12);
+            this.groupBox3.Controls.Add(this.labelControl13);
+            this.groupBox3.Controls.Add(this.labelControl15);
+            this.groupBox3.Controls.Add(this.txtAmount);
+            this.groupBox3.Controls.Add(this.labelControl33);
+            this.groupBox3.Controls.Add(this.labelControl34);
+            this.groupBox3.Controls.Add(this.labelControl35);
+            this.groupBox3.Controls.Add(this.txtTaka);
+            this.groupBox3.Controls.Add(this.labelControl36);
+            this.groupBox3.Controls.Add(this.txtMeter);
+            this.groupBox3.Controls.Add(this.txtWeight);
+            this.groupBox3.Controls.Add(this.txtRate);
+            this.groupBox3.Controls.Add(this.labelControl37);
+            this.groupBox3.Controls.Add(this.txtQualityCode);
+            this.groupBox3.Controls.Add(this.shapeContainer2);
+            this.groupBox3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBox3.Location = new System.Drawing.Point(22, 134);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1009, 105);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Order Details";
             // 
             // labelControl18
             // 
@@ -814,6 +763,57 @@
             this.txtQualityCode.Size = new System.Drawing.Size(131, 24);
             this.txtQualityCode.TabIndex = 319;
             this.txtQualityCode.ToolTip = "Enter Broker Name";
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(3, 19);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape2});
+            this.shapeContainer2.Size = new System.Drawing.Size(1003, 83);
+            this.shapeContainer2.TabIndex = 318;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // rectangleShape2
+            // 
+            this.rectangleShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape2.FillColor = System.Drawing.Color.Red;
+            this.rectangleShape2.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape2.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape2.Location = new System.Drawing.Point(8, 0);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(79, 2);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.txtRemarks);
+            this.groupBox4.Controls.Add(this.txtLRNo);
+            this.groupBox4.Controls.Add(this.labelControl16);
+            this.groupBox4.Controls.Add(this.labelControl19);
+            this.groupBox4.Controls.Add(this.labelControl20);
+            this.groupBox4.Controls.Add(this.txtTransport);
+            this.groupBox4.Controls.Add(this.dpDeliveredDate);
+            this.groupBox4.Controls.Add(this.labelControl21);
+            this.groupBox4.Controls.Add(this.dpDeliveryDate);
+            this.groupBox4.Controls.Add(this.labelControl22);
+            this.groupBox4.Controls.Add(this.labelControl23);
+            this.groupBox4.Controls.Add(this.labelControl24);
+            this.groupBox4.Controls.Add(this.txtTruckNo);
+            this.groupBox4.Controls.Add(this.labelControl26);
+            this.groupBox4.Controls.Add(this.cmbCheckedBy);
+            this.groupBox4.Controls.Add(this.labelControl27);
+            this.groupBox4.Controls.Add(this.labelControl29);
+            this.groupBox4.Controls.Add(this.labelControl30);
+            this.groupBox4.Controls.Add(this.labelControl38);
+            this.groupBox4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBox4.Location = new System.Drawing.Point(22, 247);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1009, 157);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
             // 
             // txtRemarks
             // 
@@ -1063,17 +1063,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 554);
             this.Name = "frmSalesBill";
-            this.Text = "frmSalesBill";
+            this.Text = "Sales Bill";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.xtraScrollableControl1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpInvoiceDate.Properties)).EndInit();
@@ -1081,12 +1077,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbOrderName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityTypeName.Properties)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMeter.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWeight.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQualityCode.Properties)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRemarks.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLRNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTransport.Properties)).EndInit();

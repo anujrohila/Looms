@@ -31,14 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYarnPurchaseReturn));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.label4 = new System.Windows.Forms.Label();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
@@ -63,6 +55,14 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.cmbQualityTypeName = new DevExpress.XtraEditors.LookUpEdit();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gridBeamPurchase = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -77,8 +77,7 @@
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.txtRemarks = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.txtFinalAmount = new DevExpress.XtraEditors.TextEdit();
@@ -89,7 +88,8 @@
             this.txtTaxAmount = new DevExpress.XtraEditors.TextEdit();
             this.cmbReceivedBy = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
@@ -211,90 +211,7 @@
             this.btnAdd.Size = new System.Drawing.Size(94, 29);
             this.btnAdd.TabIndex = 312;
             this.btnAdd.Text = "&Add (F2)";
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(3, 19);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape2});
-            this.shapeContainer2.Size = new System.Drawing.Size(932, 119);
-            this.shapeContainer2.TabIndex = 0;
-            this.shapeContainer2.TabStop = false;
-            // 
-            // rectangleShape2
-            // 
-            this.rectangleShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape2.FillColor = System.Drawing.Color.Red;
-            this.rectangleShape2.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape2.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape2.Location = new System.Drawing.Point(7, 0);
-            this.rectangleShape2.Name = "rectangleShape2";
-            this.rectangleShape2.Size = new System.Drawing.Size(174, 2);
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(62, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 29);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "P";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(18, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 29);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Y";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 21);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "arn    urchase    eturn";
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape1.Location = new System.Drawing.Point(22, 36);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(175, 2);
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(966, 54);
-            this.shapeContainer1.TabIndex = 11;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(137, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 29);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "R";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // labelControl27
             // 
@@ -626,6 +543,90 @@
             this.cmbQualityTypeName.Size = new System.Drawing.Size(161, 24);
             this.cmbQualityTypeName.TabIndex = 227;
             // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(3, 19);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape2});
+            this.shapeContainer2.Size = new System.Drawing.Size(932, 119);
+            this.shapeContainer2.TabIndex = 0;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // rectangleShape2
+            // 
+            this.rectangleShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape2.FillColor = System.Drawing.Color.Red;
+            this.rectangleShape2.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape2.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape2.Location = new System.Drawing.Point(7, 0);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(174, 2);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(62, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 29);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "P";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(18, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 29);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Y";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 21);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "arn    urchase    eturn";
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape1.FillColor = System.Drawing.Color.Blue;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape1.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape1.Location = new System.Drawing.Point(22, 36);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(175, 2);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(966, 54);
+            this.shapeContainer1.TabIndex = 11;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(137, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 29);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "R";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.gridBeamPurchase);
@@ -792,27 +793,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Payment Details";
             // 
-            // shapeContainer3
+            // labelControl12
             // 
-            this.shapeContainer3.Location = new System.Drawing.Point(3, 19);
-            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer3.Name = "shapeContainer3";
-            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape3});
-            this.shapeContainer3.Size = new System.Drawing.Size(934, 152);
-            this.shapeContainer3.TabIndex = 0;
-            this.shapeContainer3.TabStop = false;
-            // 
-            // rectangleShape3
-            // 
-            this.rectangleShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape3.FillColor = System.Drawing.Color.Red;
-            this.rectangleShape3.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape3.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape3.Location = new System.Drawing.Point(7, 0);
-            this.rectangleShape3.Name = "rectangleShape2";
-            this.rectangleShape3.Size = new System.Drawing.Size(94, 2);
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl12.Location = new System.Drawing.Point(357, 35);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(77, 17);
+            this.labelControl12.TabIndex = 234;
+            this.labelControl12.Text = "Tax Amount";
             // 
             // txtRemarks
             // 
@@ -965,15 +954,27 @@
             this.labelControl13.TabIndex = 230;
             this.labelControl13.Text = "Tax Type";
             // 
-            // labelControl12
+            // shapeContainer3
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl12.Location = new System.Drawing.Point(357, 35);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(77, 17);
-            this.labelControl12.TabIndex = 234;
-            this.labelControl12.Text = "Tax Amount";
+            this.shapeContainer3.Location = new System.Drawing.Point(3, 19);
+            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer3.Name = "shapeContainer3";
+            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape3});
+            this.shapeContainer3.Size = new System.Drawing.Size(934, 152);
+            this.shapeContainer3.TabIndex = 0;
+            this.shapeContainer3.TabStop = false;
+            // 
+            // rectangleShape3
+            // 
+            this.rectangleShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape3.FillColor = System.Drawing.Color.Red;
+            this.rectangleShape3.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape3.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape3.Location = new System.Drawing.Point(7, 0);
+            this.rectangleShape3.Name = "rectangleShape2";
+            this.rectangleShape3.Size = new System.Drawing.Size(94, 2);
             // 
             // frmYarnPurchaseReturn
             // 
@@ -981,7 +982,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(966, 736);
             this.Name = "frmYarnPurchaseReturn";
-            this.Text = "frmYarnPurchaseReturn";
+            this.Text = "Yarn Purchase Return";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

@@ -34,11 +34,6 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.txtOrderNo = new DevExpress.XtraEditors.TextEdit();
             this.cmbQualityType = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -60,6 +55,9 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtRemark = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
@@ -89,11 +87,12 @@
             this.txtRate = new DevExpress.XtraEditors.TextEdit();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.txtQualityCode = new DevExpress.XtraEditors.TextEdit();
+            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOrderDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -102,6 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPartyOrderNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrade.Properties)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).BeginInit();
@@ -244,91 +244,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Party Details";
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(3, 19);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape2});
-            this.shapeContainer2.Size = new System.Drawing.Size(879, 140);
-            this.shapeContainer2.TabIndex = 216;
-            this.shapeContainer2.TabStop = false;
-            // 
-            // rectangleShape2
-            // 
-            this.rectangleShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape2.FillColor = System.Drawing.Color.Red;
-            this.rectangleShape2.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape2.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape2.Location = new System.Drawing.Point(5, -2);
-            this.rectangleShape2.Name = "rectangleShape2";
-            this.rectangleShape2.Size = new System.Drawing.Size(75, 4);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txtRemark);
-            this.groupBox3.Controls.Add(this.labelControl34);
-            this.groupBox3.Controls.Add(this.labelControl19);
-            this.groupBox3.Controls.Add(this.lblOrderStatus);
-            this.groupBox3.Controls.Add(this.dpDeliveryDate);
-            this.groupBox3.Controls.Add(this.labelControl8);
-            this.groupBox3.Controls.Add(this.labelControl24);
-            this.groupBox3.Controls.Add(this.dpDeliveredDate);
-            this.groupBox3.Controls.Add(this.labelControl22);
-            this.groupBox3.Controls.Add(this.labelControl26);
-            this.groupBox3.Controls.Add(this.labelControl9);
-            this.groupBox3.Controls.Add(this.labelControl17);
-            this.groupBox3.Controls.Add(this.labelControl16);
-            this.groupBox3.Controls.Add(this.labelControl13);
-            this.groupBox3.Controls.Add(this.labelControl32);
-            this.groupBox3.Controls.Add(this.labelControl15);
-            this.groupBox3.Controls.Add(this.labelControl29);
-            this.groupBox3.Controls.Add(this.labelControl20);
-            this.groupBox3.Controls.Add(this.txtAmount);
-            this.groupBox3.Controls.Add(this.labelControl18);
-            this.groupBox3.Controls.Add(this.labelControl27);
-            this.groupBox3.Controls.Add(this.labelControl30);
-            this.groupBox3.Controls.Add(this.txtTaka);
-            this.groupBox3.Controls.Add(this.labelControl11);
-            this.groupBox3.Controls.Add(this.txtMeter);
-            this.groupBox3.Controls.Add(this.txtWeight);
-            this.groupBox3.Controls.Add(this.txtRate);
-            this.groupBox3.Controls.Add(this.labelControl33);
-            this.groupBox3.Controls.Add(this.txtQualityCode);
-            this.groupBox3.Controls.Add(this.shapeContainer3);
-            this.groupBox3.Font = new System.Drawing.Font("Cambria", 9.75F);
-            this.groupBox3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBox3.Location = new System.Drawing.Point(20, 178);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(885, 217);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Order Details";
-            // 
-            // shapeContainer3
-            // 
-            this.shapeContainer3.Location = new System.Drawing.Point(3, 19);
-            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer3.Name = "shapeContainer3";
-            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape3});
-            this.shapeContainer3.Size = new System.Drawing.Size(879, 195);
-            this.shapeContainer3.TabIndex = 259;
-            this.shapeContainer3.TabStop = false;
-            // 
-            // rectangleShape3
-            // 
-            this.rectangleShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape3.FillColor = System.Drawing.Color.Red;
-            this.rectangleShape3.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape3.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape3.Location = new System.Drawing.Point(7, 0);
-            this.rectangleShape3.Name = "rectangleShape3";
-            this.rectangleShape3.Size = new System.Drawing.Size(88, 2);
             // 
             // txtOrderNo
             // 
@@ -623,6 +538,69 @@
             this.labelControl10.Size = new System.Drawing.Size(37, 17);
             this.labelControl10.TabIndex = 262;
             this.labelControl10.Text = "Grade";
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(3, 19);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape2});
+            this.shapeContainer2.Size = new System.Drawing.Size(879, 140);
+            this.shapeContainer2.TabIndex = 216;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // rectangleShape2
+            // 
+            this.rectangleShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape2.FillColor = System.Drawing.Color.Red;
+            this.rectangleShape2.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape2.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape2.Location = new System.Drawing.Point(5, -2);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(75, 4);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtRemark);
+            this.groupBox3.Controls.Add(this.labelControl34);
+            this.groupBox3.Controls.Add(this.labelControl19);
+            this.groupBox3.Controls.Add(this.lblOrderStatus);
+            this.groupBox3.Controls.Add(this.dpDeliveryDate);
+            this.groupBox3.Controls.Add(this.labelControl8);
+            this.groupBox3.Controls.Add(this.labelControl24);
+            this.groupBox3.Controls.Add(this.dpDeliveredDate);
+            this.groupBox3.Controls.Add(this.labelControl22);
+            this.groupBox3.Controls.Add(this.labelControl26);
+            this.groupBox3.Controls.Add(this.labelControl9);
+            this.groupBox3.Controls.Add(this.labelControl17);
+            this.groupBox3.Controls.Add(this.labelControl16);
+            this.groupBox3.Controls.Add(this.labelControl13);
+            this.groupBox3.Controls.Add(this.labelControl32);
+            this.groupBox3.Controls.Add(this.labelControl15);
+            this.groupBox3.Controls.Add(this.labelControl29);
+            this.groupBox3.Controls.Add(this.labelControl20);
+            this.groupBox3.Controls.Add(this.txtAmount);
+            this.groupBox3.Controls.Add(this.labelControl18);
+            this.groupBox3.Controls.Add(this.labelControl27);
+            this.groupBox3.Controls.Add(this.labelControl30);
+            this.groupBox3.Controls.Add(this.txtTaka);
+            this.groupBox3.Controls.Add(this.labelControl11);
+            this.groupBox3.Controls.Add(this.txtMeter);
+            this.groupBox3.Controls.Add(this.txtWeight);
+            this.groupBox3.Controls.Add(this.txtRate);
+            this.groupBox3.Controls.Add(this.labelControl33);
+            this.groupBox3.Controls.Add(this.txtQualityCode);
+            this.groupBox3.Controls.Add(this.shapeContainer3);
+            this.groupBox3.Font = new System.Drawing.Font("Cambria", 9.75F);
+            this.groupBox3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBox3.Location = new System.Drawing.Point(20, 178);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(885, 217);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Order Details";
             // 
             // txtRemark
             // 
@@ -969,21 +947,41 @@
             this.txtQualityCode.TabIndex = 264;
             this.txtQualityCode.ToolTip = "Enter Broker Name";
             // 
+            // shapeContainer3
+            // 
+            this.shapeContainer3.Location = new System.Drawing.Point(3, 19);
+            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer3.Name = "shapeContainer3";
+            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape3});
+            this.shapeContainer3.Size = new System.Drawing.Size(879, 195);
+            this.shapeContainer3.TabIndex = 259;
+            this.shapeContainer3.TabStop = false;
+            // 
+            // rectangleShape3
+            // 
+            this.rectangleShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape3.FillColor = System.Drawing.Color.Red;
+            this.rectangleShape3.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape3.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape3.Location = new System.Drawing.Point(7, 0);
+            this.rectangleShape3.Name = "rectangleShape3";
+            this.rectangleShape3.Size = new System.Drawing.Size(88, 2);
+            // 
             // frmSaleOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 518);
             this.Name = "frmSaleOrder";
-            this.Text = "frmYarnPurchaseOrder";
+            this.Text = "Sale Order";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.xtraScrollableControl1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbQualityType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpOrderDate.Properties.CalendarTimeProperties)).EndInit();
@@ -992,6 +990,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPartyOrderNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrade.Properties)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtRemark.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpDeliveryDate.Properties)).EndInit();

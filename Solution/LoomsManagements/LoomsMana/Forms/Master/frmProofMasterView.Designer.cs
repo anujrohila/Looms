@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gridProofMaster = new DevExpress.XtraGrid.GridControl();
+            this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ProfeID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.gridProofMaster = new DevExpress.XtraGrid.GridControl();
-            this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ProfeID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
@@ -96,11 +96,11 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(10, 38);
-            this.groupBox1.Size = new System.Drawing.Size(864, 46);
+            this.groupBox1.Size = new System.Drawing.Size(1059, 46);
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(556, 10);
+            this.panelControl2.Location = new System.Drawing.Point(751, 10);
             // 
             // groupBox2
             // 
@@ -113,6 +113,40 @@
             this.groupBox2.Size = new System.Drawing.Size(864, 267);
             this.groupBox2.TabIndex = 68;
             this.groupBox2.TabStop = false;
+            // 
+            // gridProofMaster
+            // 
+            this.gridProofMaster.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridProofMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridProofMaster.Location = new System.Drawing.Point(3, 16);
+            this.gridProofMaster.MainView = this.InnerGrid;
+            this.gridProofMaster.Name = "gridProofMaster";
+            this.gridProofMaster.Size = new System.Drawing.Size(858, 248);
+            this.gridProofMaster.TabIndex = 66;
+            this.gridProofMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.InnerGrid});
+            // 
+            // InnerGrid
+            // 
+            this.InnerGrid.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ProfeID,
+            this.Name});
+            this.InnerGrid.GridControl = this.gridProofMaster;
+            this.InnerGrid.Name = "InnerGrid";
+            // 
+            // ProfeID
+            // 
+            this.ProfeID.Caption = "ProfeID";
+            this.ProfeID.FieldName = "ProfeID";
+            this.ProfeID.Name = "ProfeID";
+            // 
+            // Name
+            // 
+            this.Name.Caption = "Name";
+            this.Name.FieldName = "Name";
+            this.Name.Name = "Name";
+            this.Name.Visible = true;
+            this.Name.VisibleIndex = 0;
             // 
             // label3
             // 
@@ -166,47 +200,13 @@
             this.shapeContainer1.TabIndex = 24;
             this.shapeContainer1.TabStop = false;
             // 
-            // gridProofMaster
-            // 
-            this.gridProofMaster.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridProofMaster.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridProofMaster.Location = new System.Drawing.Point(3, 16);
-            this.gridProofMaster.MainView = this.InnerGrid;
-            this.gridProofMaster.Name = "gridProofMaster";
-            this.gridProofMaster.Size = new System.Drawing.Size(858, 248);
-            this.gridProofMaster.TabIndex = 66;
-            this.gridProofMaster.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.InnerGrid});
-            // 
-            // InnerGrid
-            // 
-            this.InnerGrid.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ProfeID,
-            this.Name});
-            this.InnerGrid.GridControl = this.gridProofMaster;
-            this.InnerGrid.Name = "InnerGrid";
-            // 
-            // ProfeID
-            // 
-            this.ProfeID.Caption = "ProfeID";
-            this.ProfeID.FieldName = "ProfeID";
-            this.ProfeID.Name = "ProfeID";
-            // 
-            // Name
-            // 
-            this.Name.Caption = "Name";
-            this.Name.FieldName = "Name";
-            this.Name.Name = "Name";
-            this.Name.Visible = true;
-            this.Name.VisibleIndex = 0;
-            // 
             // frmProofMasterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 377);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Text = "";
+            this.Text = "Proof Master";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

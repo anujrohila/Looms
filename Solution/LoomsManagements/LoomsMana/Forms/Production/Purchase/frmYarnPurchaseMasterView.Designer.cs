@@ -81,6 +81,7 @@
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnMasterExcel
             // 
@@ -105,11 +106,11 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(6, 40);
-            this.groupBox1.Size = new System.Drawing.Size(786, 46);
+            this.groupBox1.Size = new System.Drawing.Size(1009, 46);
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(478, 12);
+            this.panelControl2.Location = new System.Drawing.Point(701, 12);
             // 
             // rectangleShape1
             // 
@@ -272,7 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 400);
             this.Name = "frmYarnPurchaseMasterView";
-            this.Text = "frmYarnPurchaseMasterView";
+            this.Text = "Yarn Purchase Master ";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

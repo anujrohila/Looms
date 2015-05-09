@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoomsMana.Forms.Production.Sale;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace LoomsMana.Forms.Production.Purchase
         public frmSaleReturn()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddSalesReturnItem form = new frmAddSalesReturnItem();
+            form.ShowDialog();
         }
     }
 }

@@ -16,5 +16,11 @@ namespace LoomsMana.Forms.Production.Purchase
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmPurchaseReturnItem form = new frmPurchaseReturnItem();
+            form.ShowDialog();
+        }
     }
 }

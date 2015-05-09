@@ -19,8 +19,8 @@ namespace LoomsMana.Forms.Master
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FrmCompanyMst frm = new FrmCompanyMst();
-            frm.ShowDialog();
+            frmYarnTypeMaster form = new frmYarnTypeMaster();
+            form.ShowDialog();
         }
     }
 }

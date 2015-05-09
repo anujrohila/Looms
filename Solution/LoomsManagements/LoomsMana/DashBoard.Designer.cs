@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection();
-            this.navbarImageCollection = new DevExpress.Utils.ImageCollection();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
-            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection();
-            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection();
-            this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage();
+            this.navbarImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
+            this.navbarImageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
+            this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
+            this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             this.pnlFooter = new System.Windows.Forms.Panel();
-            this.lblNav = new System.Windows.Forms.Label();
+            this.labelNavigation = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pnlLeft = new System.Windows.Forms.Panel();
+            this.panelMasterMenuLeft = new System.Windows.Forms.Panel();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarMaster = new DevExpress.XtraNavBar.NavBarGroup();
             this.navCompMst = new DevExpress.XtraNavBar.NavBarItem();
@@ -65,7 +66,7 @@
             this.navBeamPurchase = new DevExpress.XtraNavBar.NavBarItem();
             this.navGrayPurchase = new DevExpress.XtraNavBar.NavBarItem();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
+            this.btnWindowClose = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,7 +77,7 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnlMainBack = new System.Windows.Forms.Panel();
             this.tabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbarImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
@@ -85,7 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
             this.pnlFooter.SuspendLayout();
-            this.pnlLeft.SuspendLayout();
+            this.panelMasterMenuLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlMainBack.SuspendLayout();
@@ -300,7 +301,7 @@
             // 
             this.pnlFooter.BackColor = System.Drawing.Color.White;
             this.pnlFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlFooter.Controls.Add(this.lblNav);
+            this.pnlFooter.Controls.Add(this.labelNavigation);
             this.pnlFooter.Controls.Add(this.label6);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlFooter.Location = new System.Drawing.Point(200, 672);
@@ -308,18 +309,18 @@
             this.pnlFooter.Size = new System.Drawing.Size(894, 21);
             this.pnlFooter.TabIndex = 0;
             // 
-            // lblNav
+            // labelNavigation
             // 
-            this.lblNav.BackColor = System.Drawing.Color.Red;
-            this.lblNav.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblNav.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNav.ForeColor = System.Drawing.Color.White;
-            this.lblNav.Location = new System.Drawing.Point(-1, 3);
-            this.lblNav.Name = "lblNav";
-            this.lblNav.Size = new System.Drawing.Size(27, 16);
-            this.lblNav.TabIndex = 2;
-            this.lblNav.Text = "<<";
-            this.lblNav.Click += new System.EventHandler(this.lblNav_Click);
+            this.labelNavigation.BackColor = System.Drawing.Color.Red;
+            this.labelNavigation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelNavigation.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNavigation.ForeColor = System.Drawing.Color.White;
+            this.labelNavigation.Location = new System.Drawing.Point(-1, 3);
+            this.labelNavigation.Name = "labelNavigation";
+            this.labelNavigation.Size = new System.Drawing.Size(27, 16);
+            this.labelNavigation.TabIndex = 2;
+            this.labelNavigation.Text = "<<";
+            this.labelNavigation.Click += new System.EventHandler(this.labelNavigation_Click);
             // 
             // label6
             // 
@@ -333,14 +334,14 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "( ctr+Q ) Show && Hide Menu";
             // 
-            // pnlLeft
+            // panelMasterMenuLeft
             // 
-            this.pnlLeft.Controls.Add(this.navBarControl);
-            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlLeft.Location = new System.Drawing.Point(0, 50);
-            this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(200, 643);
-            this.pnlLeft.TabIndex = 1;
+            this.panelMasterMenuLeft.Controls.Add(this.navBarControl);
+            this.panelMasterMenuLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMasterMenuLeft.Location = new System.Drawing.Point(0, 50);
+            this.panelMasterMenuLeft.Name = "panelMasterMenuLeft";
+            this.panelMasterMenuLeft.Size = new System.Drawing.Size(200, 643);
+            this.panelMasterMenuLeft.TabIndex = 1;
             // 
             // navBarControl
             // 
@@ -426,6 +427,7 @@
             this.navCompMst.Caption = "Comapany Master";
             this.navCompMst.Name = "navCompMst";
             this.navCompMst.SmallImageIndex = 7;
+            this.navCompMst.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navOwnerMst
             // 
@@ -440,6 +442,7 @@
             this.navOwnerMst.Caption = "Owner Master";
             this.navOwnerMst.Name = "navOwnerMst";
             this.navOwnerMst.SmallImageIndex = 3;
+            this.navOwnerMst.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navPartyMst
             // 
@@ -454,6 +457,7 @@
             this.navPartyMst.Caption = "Party Master";
             this.navPartyMst.Name = "navPartyMst";
             this.navPartyMst.SmallImageIndex = 131;
+            this.navPartyMst.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navEmpMst
             // 
@@ -468,6 +472,7 @@
             this.navEmpMst.Caption = "Employee Master";
             this.navEmpMst.Name = "navEmpMst";
             this.navEmpMst.SmallImageIndex = 2;
+            this.navEmpMst.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navEmpType
             // 
@@ -482,6 +487,7 @@
             this.navEmpType.Caption = "Employee Type";
             this.navEmpType.Name = "navEmpType";
             this.navEmpType.SmallImageIndex = 75;
+            this.navEmpType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navPanalty
             // 
@@ -496,6 +502,7 @@
             this.navPanalty.Caption = "Panalty";
             this.navPanalty.Name = "navPanalty";
             this.navPanalty.SmallImageIndex = 12;
+            this.navPanalty.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navYarnType
             // 
@@ -510,6 +517,7 @@
             this.navYarnType.Caption = "Yarn Type";
             this.navYarnType.Name = "navYarnType";
             this.navYarnType.SmallImageIndex = 15;
+            this.navYarnType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navYarnQty
             // 
@@ -524,6 +532,7 @@
             this.navYarnQty.Caption = "Yarn Quality";
             this.navYarnQty.Name = "navYarnQty";
             this.navYarnQty.SmallImageIndex = 14;
+            this.navYarnQty.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navYarnPkg
             // 
@@ -538,6 +547,7 @@
             this.navYarnPkg.Caption = "Yarn Pkg Type";
             this.navYarnPkg.Name = "navYarnPkg";
             this.navYarnPkg.SmallImageIndex = 0;
+            this.navYarnPkg.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navMachineType
             // 
@@ -552,6 +562,7 @@
             this.navMachineType.Caption = "Machine Type";
             this.navMachineType.Name = "navMachineType";
             this.navMachineType.SmallImageIndex = 10;
+            this.navMachineType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navMachine
             // 
@@ -566,6 +577,7 @@
             this.navMachine.Caption = "Machine";
             this.navMachine.Name = "navMachine";
             this.navMachine.SmallImageIndex = 10;
+            this.navMachine.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navBank
             // 
@@ -580,6 +592,7 @@
             this.navBank.Caption = "Bank";
             this.navBank.Name = "navBank";
             this.navBank.SmallImageIndex = 6;
+            this.navBank.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navBankBranch
             // 
@@ -595,7 +608,7 @@
             this.navBankBranch.Name = "navBankBranch";
             this.navBankBranch.SmallImageIndex = 8;
             this.navBankBranch.Tag = "";
-            this.navBankBranch.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBankBranch_LinkClicked);
+            this.navBankBranch.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navBemType
             // 
@@ -610,6 +623,7 @@
             this.navBemType.Caption = "Beam Type";
             this.navBemType.Name = "navBemType";
             this.navBemType.SmallImageIndex = 6;
+            this.navBemType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navFiscaYear
             // 
@@ -624,6 +638,7 @@
             this.navFiscaYear.Caption = "Fiscal Year";
             this.navFiscaYear.Name = "navFiscaYear";
             this.navFiscaYear.SmallImageIndex = 6;
+            this.navFiscaYear.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navBarProduction
             // 
@@ -660,6 +675,7 @@
             this.navPurOrder.Caption = "Purchsae Order";
             this.navPurOrder.Name = "navPurOrder";
             this.navPurOrder.SmallImageIndex = 167;
+            this.navPurOrder.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navPurReturn
             // 
@@ -674,6 +690,7 @@
             this.navPurReturn.Caption = "Purchase Return";
             this.navPurReturn.Name = "navPurReturn";
             this.navPurReturn.SmallImageIndex = 158;
+            this.navPurReturn.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navSaleOrder
             // 
@@ -688,6 +705,7 @@
             this.navSaleOrder.Caption = "Sale Order";
             this.navSaleOrder.Name = "navSaleOrder";
             this.navSaleOrder.SmallImageIndex = 160;
+            this.navSaleOrder.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navSaleReturn
             // 
@@ -702,6 +720,7 @@
             this.navSaleReturn.Caption = "Sale Return";
             this.navSaleReturn.Name = "navSaleReturn";
             this.navSaleReturn.SmallImageIndex = 162;
+            this.navSaleReturn.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navBeamPurchase
             // 
@@ -716,6 +735,7 @@
             this.navBeamPurchase.Caption = "Beam Purchase";
             this.navBeamPurchase.Name = "navBeamPurchase";
             this.navBeamPurchase.SmallImageIndex = 44;
+            this.navBeamPurchase.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // navGrayPurchase
             // 
@@ -730,12 +750,13 @@
             this.navGrayPurchase.Caption = "Gray Purchase";
             this.navGrayPurchase.Name = "navGrayPurchase";
             this.navGrayPurchase.SmallImageIndex = 162;
+            this.navGrayPurchase.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navCompMst_LinkClicked);
             // 
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.White;
             this.pnlTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTop.Controls.Add(this.windowsUIButtonPanel1);
+            this.pnlTop.Controls.Add(this.btnWindowClose);
             this.pnlTop.Controls.Add(this.label4);
             this.pnlTop.Controls.Add(this.label3);
             this.pnlTop.Controls.Add(this.label1);
@@ -748,18 +769,18 @@
             this.pnlTop.Size = new System.Drawing.Size(1094, 50);
             this.pnlTop.TabIndex = 2;
             // 
-            // windowsUIButtonPanel1
+            // btnWindowClose
             // 
-            this.windowsUIButtonPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", ((System.Drawing.Image)(resources.GetObject("windowsUIButtonPanel1.Buttons"))), -1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, -1)});
-            this.windowsUIButtonPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(1043, 8);
-            this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(47, 40);
-            this.windowsUIButtonPanel1.TabIndex = 5;
-            this.windowsUIButtonPanel1.Text = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Click += new System.EventHandler(this.windowsUIButtonPanel1_Click);
+            this.btnWindowClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnWindowClose.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("", ((System.Drawing.Image)(resources.GetObject("btnWindowClose.Buttons"))), -1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, -1)});
+            this.btnWindowClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWindowClose.Location = new System.Drawing.Point(1043, 8);
+            this.btnWindowClose.Name = "btnWindowClose";
+            this.btnWindowClose.Size = new System.Drawing.Size(47, 40);
+            this.btnWindowClose.TabIndex = 5;
+            this.btnWindowClose.Text = "windowsUIButtonPanel1";
+            this.btnWindowClose.Click += new System.EventHandler(this.btnWindowClose_Click);
             // 
             // label4
             // 
@@ -888,7 +909,7 @@
             this.ClientSize = new System.Drawing.Size(1094, 693);
             this.Controls.Add(this.pnlMainBack);
             this.Controls.Add(this.pnlFooter);
-            this.Controls.Add(this.pnlLeft);
+            this.Controls.Add(this.panelMasterMenuLeft);
             this.Controls.Add(this.pnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
@@ -907,7 +928,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
-            this.pnlLeft.ResumeLayout(false);
+            this.panelMasterMenuLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
@@ -927,7 +948,7 @@
         private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage;
         private DevExpress.XtraScheduler.UI.SchedulerBarController schedulerBarController1;
         private System.Windows.Forms.Panel pnlFooter;
-        private System.Windows.Forms.Panel pnlLeft;
+        private System.Windows.Forms.Panel panelMasterMenuLeft;
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.Panel pnlMainBack;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
@@ -963,10 +984,10 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
-        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel1;
+        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel btnWindowClose;
         private System.Windows.Forms.Label label6;
         private DevExpress.XtraTab.XtraTabControl tabControl1;
-        private System.Windows.Forms.Label lblNav;
+        private System.Windows.Forms.Label labelNavigation;
 
     }
 }

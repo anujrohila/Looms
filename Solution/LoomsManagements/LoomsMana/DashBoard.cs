@@ -17,117 +17,31 @@ using DevExpress.XtraNavBar;
 using LoomsMana.Forms.Master;
 using DevExpress.Utils;
 using LoomsMana.Forms;
+using LoomsMana.Forms.Production.Purchase;
 
 
 namespace LoomsMana
 {
     public partial class DashBoard : RibbonForm
     {
+
+        #region [Declaration]
+
+        private bool flag = false;
+        int h = 0, w = 0;
+
+        #endregion
+
+        #region constructor
+
         public DashBoard()
         {
             InitializeComponent();
-            InitSkinGallery();
-          
-        }
-        void InitSkinGallery()
-        {
-            
         }
 
-        private void windowsUIButtonPanel1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        #endregion
 
-        bool flag = false;
-        public void HideShowPnl()
-        {
-            if (flag == false)
-            {
-                while (pnlLeft.Width > 10)
-                {
-                    Thread.Sleep(1);
-                    pnlLeft.Width -= 20;
-                    pnlLeft.Refresh();
-                }
-                lblNav.Text = ">>";
-                pnlMainBack.Refresh();
-                try
-                {
-                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
-                    {
-                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
-                        {
-                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
-                            {
-                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
-                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
-                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
-                                frm.Parent = null;
-                                frm.Height = pnl.Height;
-                                frm.Width = pnl.Width;
-                                pnl.Controls.Add(frm);
-                                frm.Location = new Point(pnl.Width / 2 - frm.Size.Width / 2, pnl.Height / 2 - frm.Size.Height / 2);
-                                //frm.Dock = DockStyle.Fill;
-                                frm.Visible = true;
-                            }
-                        }
-
-                    }
-
-                }
-                catch { }
-
-                flag = true;
-            }
-            else
-            {
-                flag = true;
-
-                while (pnlLeft.Width < 238)
-                {
-                    Thread.Sleep(1);
-                    pnlLeft.Width += 20;
-                    pnlLeft.Refresh();
-                }
-                lblNav.Text = "<<";
-                pnlMainBack.Refresh();
-
-                try
-                {
-                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
-                    {
-                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
-                        {
-                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
-                            {
-                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
-                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
-                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
-                                frm.Parent = null;
-                                frm.Height = pnl.Height;
-                                frm.Width = pnl.Width;
-                                pnl.Controls.Add(frm);
-                                frm.Location = new Point(pnl.Width / 2 - frm.Size.Width / 2, pnl.Height / 2 - frm.Size.Height / 2);
-                                //frm.Dock = DockStyle.Fill;
-                                frm.Visible = true;
-                            }
-                        }
-
-                    }
-
-                }
-                catch { }
-                flag = false;
-
-            }
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            HideShowPnl();
-        }
+        #region [Page Event]
 
         private void DashBoard_KeyDown(object sender, KeyEventArgs e)
         {
@@ -169,8 +83,223 @@ namespace LoomsMana
             catch
             { }
         }
-        int h = 0, w = 0;
-        public void FillFrm(Form frm)
+
+        private void btnWindowClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DashBoard_Shown(object sender, EventArgs e)
+        {
+            navBarProduction.Expanded = false;
+        }
+
+        private void tabControl1_CloseButtonClick(object sender, EventArgs e)
+        {
+            try
+            {
+                DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs arg = e as DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs;
+                (arg.Page as DevExpress.XtraTab.XtraTabPage).PageVisible = false;
+                tabControl1.TabPages.Remove((arg.Page as DevExpress.XtraTab.XtraTabPage));
+            }
+            catch
+            { }
+            if (tabControl1.TabPages.Count == 0)
+            {
+                tabControl1.Visible = false;
+                pnlTop.BorderStyle = BorderStyle.FixedSingle;
+            }
+        }
+
+        private void labelNavigation_Click(object sender, EventArgs e)
+        {
+            HideShowPnl();
+        }
+
+        private void navBankBranch_LinkClicked(object sender, NavBarLinkEventArgs e)
+        {
+            //FillFrm(new frmBankBranchMasterView());
+        }
+
+        private void navCompMst_LinkClicked(object sender, NavBarLinkEventArgs e)
+        {
+           string tagname= ((DevExpress.XtraNavBar.NavBarItem)sender).Name.ToString();
+
+           if (tagname == "")
+               return;
+
+           Form Currentform = new Form();
+
+           switch (tagname)
+           {
+               case "navCompMst":
+                   FillFrm(new FrmCompanyMst());
+                   break;
+               case "navOwnerMst":
+                   // Currentform = new CustomerMaster();
+                   break;
+               case "navPartyMst":
+                 //  Currentform = new frmpa();
+                   break;
+               case "navEmpMst":
+                   //Currentform = new frmEmployeeTypeMasterView();
+                   break;
+               case "navEmpType":
+                  // Currentform = new frmEmployeeMasterView();
+                   break;
+               case "navPanalty":
+                  // Currentform = new frmPenaltyMasterView();
+                   break;
+               case "navYarnType":
+                    FillFrm( new frmYarnTypeMasterView());
+                   break;
+               case "navYarnQty":
+                  FillFrm(  Currentform = new frmYarnQualityMasterView());
+                   break;
+               case "navYarnPkg":
+                  FillFrm(  Currentform = new frmYarnPackageTypeMasterView());
+                   break;
+               case "navMachineType":
+                 //  Currentform = new frmMachineMasterView();
+                   break;
+               case "navMachine":
+                 //  Currentform = new frmBankMasterView();
+                   break;
+               case "navBank":
+                 //  Currentform = new frmBankBranchMasterView();
+                   break;
+               case "navBankBranch":
+                  // Currentform = new frmYarnPackageTypeMasterView();
+                   break;
+               case "navBemType":
+                 //  Currentform = new frmBeamMasterView();
+                   break;
+               case "navFiscaYear":
+                 //  Currentform = new frmFiscalYearView();
+                   break;
+               case "navPurOrder":
+                   FillFrm( Currentform = new frmYarnPurchaseOrder());
+                   break;
+               case "navPurReturn":
+                   FillFrm( Currentform = new frmYarnPurchaseReturn());
+                   break;
+               case "navSaleOrder":
+                   FillFrm( Currentform = new frmSaleOrder());
+                   break;
+               case "navSaleReturn":
+                   FillFrm( Currentform = new frmSaleReturn());
+                   break;
+               case "navBeamPurchase":
+                   FillFrm( Currentform = new frmBeamPurchase());
+                   break;
+               case "navGrayPurchase":
+                   FillFrm( Currentform = new frmGrayPurchase());
+                   break;
+               case "exit":
+                   Close();
+                   return;
+
+               default:
+                   return;
+           }
+
+           bool flag = false;
+        }
+
+        #endregion
+
+        #region Public Method
+
+        #endregion
+
+        #region [Private Method]
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HideShowPnl()
+        {
+            if (flag == false)
+            {
+                while (panelMasterMenuLeft.Width > 10)
+                {
+                    Thread.Sleep(1);
+                    panelMasterMenuLeft.Width -= 20;
+                    panelMasterMenuLeft.Refresh();
+                }
+                labelNavigation.Text = ">>";
+                pnlMainBack.Refresh();
+                try
+                {
+                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
+                    {
+                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
+                        {
+                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
+                            {
+                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
+                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
+                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
+                                frm.Parent = null;
+                                frm.Height = pnl.Height;
+                                frm.Width = pnl.Width;
+                                pnl.Controls.Add(frm);
+                                frm.Location = new Point(pnl.Width / 2 - frm.Size.Width / 2, pnl.Height / 2 - frm.Size.Height / 2);
+                                //frm.Dock = DockStyle.Fill;
+                                frm.Visible = true;
+                            }
+                        }
+
+                    }
+
+                }
+                catch { }
+
+                flag = true;
+            }
+            else
+            {
+                flag = true;
+
+                while (panelMasterMenuLeft.Width < 238)
+                {
+                    Thread.Sleep(1);
+                    panelMasterMenuLeft.Width += 20;
+                    panelMasterMenuLeft.Refresh();
+                }
+                labelNavigation.Text = "<<";
+                pnlMainBack.Refresh();
+
+                try
+                {
+                    for (int i = 0; i < tabControl1.TabPages.Count; i++)
+                    {
+                        for (int j = 0; j < tabControl1.TabPages[i].Controls.Count; j++)
+                        {
+                            if (tabControl1.TabPages[i].Controls[j].Name.ToString() == "pnl" + tabControl1.TabPages[i].Text.ToString())
+                            {
+                                Panel pnl = (Panel)pnlMainBack.Controls.Find("pnl" + tabControl1.TabPages[i].Text.ToString(), true)[0];
+                                Form frm = (Form)pnl.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0];
+                                pnl.Controls.Remove(pnlMainBack.Controls.Find(tabControl1.TabPages[i].Tag.ToString(), true)[0]);
+                                frm.Parent = null;
+                                frm.Height = pnl.Height;
+                                frm.Width = pnl.Width;
+                                pnl.Controls.Add(frm);
+                                frm.Location = new Point(pnl.Width / 2 - frm.Size.Width / 2, pnl.Height / 2 - frm.Size.Height / 2);
+                                //frm.Dock = DockStyle.Fill;
+                                frm.Visible = true;
+                            }
+                        }
+
+                    }
+
+                }
+                catch { }
+                flag = false;
+            }
+        }
+
+        private void FillFrm(Form frm)
         {
             try
             {
@@ -214,7 +343,7 @@ namespace LoomsMana
             }
             frm.Anchor = AnchorStyles.None;
             frm.FormBorderStyle = FormBorderStyle.None;
-           
+
             tbp.BackColor = Color.White;
             pnl.Controls.Add(frm);
             tabControl1.SelectedTabPage = tbp;
@@ -253,34 +382,8 @@ namespace LoomsMana
             //pnlMain.Anchor = AnchorStyles.None;
         }
 
-        private void DashBoard_Shown(object sender, EventArgs e)
-        {
-            navBarProduction.Expanded = false;
-        }
+        #endregion
 
-        private void tabControl1_CloseButtonClick(object sender, EventArgs e)
-        {
-            try
-            {
-                DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs arg = e as DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs;
-                (arg.Page as DevExpress.XtraTab.XtraTabPage).PageVisible = false;
-                tabControl1.TabPages.Remove((arg.Page as DevExpress.XtraTab.XtraTabPage));
-            }
-            catch
-            { }
-            if (tabControl1.TabPages.Count == 0)
-            {
-                tabControl1.Visible = false;
-                pnlTop.BorderStyle = BorderStyle.FixedSingle;
-            }
-        }
-
-        private void lblNav_Click(object sender, EventArgs e)
-        {
-            HideShowPnl();
-        }
-
-       
         #region Control Event
 
         private void Menulink_Click(object sender, NavBarLinkEventArgs e)
@@ -405,11 +508,6 @@ namespace LoomsMana
         }
 
         #endregion
-
-        private void navBankBranch_LinkClicked(object sender, NavBarLinkEventArgs e)
-        {
-            //FillFrm(new frmBankBranchMasterView());
-        }
 
     }
 }

@@ -16,5 +16,10 @@ namespace LoomsMana.Forms.Production.Sale
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddSalesReturnItem form = new frmAddSalesReturnItem();
+        }
     }
 }

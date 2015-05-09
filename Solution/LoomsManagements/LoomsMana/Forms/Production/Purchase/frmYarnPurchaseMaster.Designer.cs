@@ -676,7 +676,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 339);
             this.Name = "frmYarnPurchaseMaster";
-            this.Text = "frmYarnPurchaseMaster";
+            this.Text = "Yarn Purchase Master";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

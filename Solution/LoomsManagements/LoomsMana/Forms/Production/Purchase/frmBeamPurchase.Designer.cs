@@ -37,19 +37,24 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.dpBeamPurchaseDate = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbBeamQuality = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbBrokerName = new DevExpress.XtraEditors.LookUpEdit();
             this.txtPurchaseBillNo = new DevExpress.XtraEditors.TextEdit();
             this.cmbPartyName = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.cmbBeamQuality = new DevExpress.XtraEditors.LookUpEdit();
-            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gridBeamPurchase = new DevExpress.XtraGrid.GridControl();
             this.InnerGrid = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -64,8 +69,6 @@
             this.Btn_Delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.Btn_View = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtFinalAmount = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
@@ -81,21 +84,18 @@
             this.cmbReceivedBy = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnlMain.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dpBeamPurchaseDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBeamPurchaseDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBeamQuality.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPurchaseBillNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbBeamQuality.Properties)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBeamPurchase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).BeginInit();
@@ -236,6 +236,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bill && Party Details";
             // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl11.Location = new System.Drawing.Point(524, 67);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(6, 17);
+            this.labelControl11.TabIndex = 317;
+            this.labelControl11.Text = "*";
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl17.Location = new System.Drawing.Point(525, 36);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(6, 17);
+            this.labelControl17.TabIndex = 316;
+            this.labelControl17.Text = "*";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl10.Location = new System.Drawing.Point(144, 99);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(6, 17);
+            this.labelControl10.TabIndex = 315;
+            this.labelControl10.Text = "*";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl5.Location = new System.Drawing.Point(143, 67);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(6, 17);
+            this.labelControl5.TabIndex = 314;
+            this.labelControl5.Text = "*";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl8.Location = new System.Drawing.Point(144, 36);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(6, 17);
+            this.labelControl8.TabIndex = 313;
+            this.labelControl8.Text = "*";
+            // 
             // dpBeamPurchaseDate
             // 
             this.dpBeamPurchaseDate.EditValue = null;
@@ -254,6 +304,57 @@
             this.dpBeamPurchaseDate.Size = new System.Drawing.Size(205, 24);
             this.dpBeamPurchaseDate.TabIndex = 199;
             this.dpBeamPurchaseDate.ToolTip = "Select Date.";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelControl4.Location = new System.Drawing.Point(384, 38);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(128, 17);
+            this.labelControl4.TabIndex = 193;
+            this.labelControl4.Text = "Beam Purchase Date";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Appearance.Options.UseFont = true;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(536, 98);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 29);
+            this.btnAdd.TabIndex = 312;
+            this.btnAdd.Text = "&Add (F2)";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // cmbBeamQuality
+            // 
+            this.cmbBeamQuality.EnterMoveNextControl = true;
+            this.cmbBeamQuality.Location = new System.Drawing.Point(155, 95);
+            this.cmbBeamQuality.Name = "cmbBeamQuality";
+            this.cmbBeamQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBeamQuality.Properties.Appearance.Options.UseFont = true;
+            this.cmbBeamQuality.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBeamQuality.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cmbBeamQuality.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBeamQuality.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cmbBeamQuality.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBeamQuality.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbBeamQuality.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
+            this.cmbBeamQuality.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBeamQuality.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.cmbBeamQuality.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cmbBeamQuality.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
+            this.cmbBeamQuality.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbBeamQuality.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.cmbBeamQuality.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbBeamQuality.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
+            this.cmbBeamQuality.Properties.NullText = "";
+            this.cmbBeamQuality.Size = new System.Drawing.Size(205, 24);
+            this.cmbBeamQuality.TabIndex = 201;
             // 
             // cmbBrokerName
             // 
@@ -349,16 +450,6 @@
             this.labelControl14.TabIndex = 192;
             this.labelControl14.Text = "Purchase Bill No.";
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelControl4.Location = new System.Drawing.Point(384, 38);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(128, 17);
-            this.labelControl4.TabIndex = 193;
-            this.labelControl4.Text = "Beam Purchase Date";
-            // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -400,46 +491,6 @@
             this.rectangleShape2.Location = new System.Drawing.Point(7, 0);
             this.rectangleShape2.Name = "rectangleShape2";
             this.rectangleShape2.Size = new System.Drawing.Size(91, 2);
-            // 
-            // cmbBeamQuality
-            // 
-            this.cmbBeamQuality.EnterMoveNextControl = true;
-            this.cmbBeamQuality.Location = new System.Drawing.Point(155, 95);
-            this.cmbBeamQuality.Name = "cmbBeamQuality";
-            this.cmbBeamQuality.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbBeamQuality.Properties.Appearance.Options.UseFont = true;
-            this.cmbBeamQuality.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbBeamQuality.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cmbBeamQuality.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbBeamQuality.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cmbBeamQuality.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbBeamQuality.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbBeamQuality.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Lavender;
-            this.cmbBeamQuality.Properties.AppearanceFocused.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbBeamQuality.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.cmbBeamQuality.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cmbBeamQuality.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Cambria", 11.25F);
-            this.cmbBeamQuality.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbBeamQuality.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.cmbBeamQuality.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbBeamQuality.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityID", "Yarn Quality ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("YarnQualityName", 50, "Yarn Quality Name")});
-            this.cmbBeamQuality.Properties.NullText = "";
-            this.cmbBeamQuality.Size = new System.Drawing.Size(205, 24);
-            this.cmbBeamQuality.TabIndex = 201;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Appearance.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Appearance.Options.UseFont = true;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(536, 98);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 29);
-            this.btnAdd.TabIndex = 312;
-            this.btnAdd.Text = "&Add (F2)";
             // 
             // groupBox3
             // 
@@ -615,28 +666,6 @@
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "PaymentInformation";
-            // 
-            // shapeContainer3
-            // 
-            this.shapeContainer3.Location = new System.Drawing.Point(3, 19);
-            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer3.Name = "shapeContainer3";
-            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape3});
-            this.shapeContainer3.Size = new System.Drawing.Size(846, 114);
-            this.shapeContainer3.TabIndex = 0;
-            this.shapeContainer3.TabStop = false;
-            // 
-            // rectangleShape3
-            // 
-            this.rectangleShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rectangleShape3.FillColor = System.Drawing.Color.Red;
-            this.rectangleShape3.FillGradientColor = System.Drawing.Color.Transparent;
-            this.rectangleShape3.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
-            this.rectangleShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.rectangleShape3.Location = new System.Drawing.Point(7, 0);
-            this.rectangleShape3.Name = "rectangleShape2";
-            this.rectangleShape3.Size = new System.Drawing.Size(108, 2);
             // 
             // checkBox1
             // 
@@ -843,55 +872,27 @@
             this.labelControl12.TabIndex = 268;
             this.labelControl12.Text = "Transport Charge with Tax";
             // 
-            // labelControl5
+            // shapeContainer3
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl5.Location = new System.Drawing.Point(143, 67);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(6, 17);
-            this.labelControl5.TabIndex = 314;
-            this.labelControl5.Text = "*";
+            this.shapeContainer3.Location = new System.Drawing.Point(3, 19);
+            this.shapeContainer3.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer3.Name = "shapeContainer3";
+            this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape3});
+            this.shapeContainer3.Size = new System.Drawing.Size(846, 114);
+            this.shapeContainer3.TabIndex = 0;
+            this.shapeContainer3.TabStop = false;
             // 
-            // labelControl8
+            // rectangleShape3
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl8.Location = new System.Drawing.Point(144, 36);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(6, 17);
-            this.labelControl8.TabIndex = 313;
-            this.labelControl8.Text = "*";
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl10.Location = new System.Drawing.Point(144, 99);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(6, 17);
-            this.labelControl10.TabIndex = 315;
-            this.labelControl10.Text = "*";
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl11.Location = new System.Drawing.Point(524, 67);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(6, 17);
-            this.labelControl11.TabIndex = 317;
-            this.labelControl11.Text = "*";
-            // 
-            // labelControl17
-            // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl17.Location = new System.Drawing.Point(525, 36);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(6, 17);
-            this.labelControl17.TabIndex = 316;
-            this.labelControl17.Text = "*";
+            this.rectangleShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rectangleShape3.FillColor = System.Drawing.Color.Red;
+            this.rectangleShape3.FillGradientColor = System.Drawing.Color.Transparent;
+            this.rectangleShape3.FillGradientStyle = Microsoft.VisualBasic.PowerPacks.FillGradientStyle.Horizontal;
+            this.rectangleShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
+            this.rectangleShape3.Location = new System.Drawing.Point(7, 0);
+            this.rectangleShape3.Name = "rectangleShape2";
+            this.rectangleShape3.Size = new System.Drawing.Size(108, 2);
             // 
             // frmBeamPurchase
             // 
@@ -899,7 +900,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 683);
             this.Name = "frmBeamPurchase";
-            this.Text = "frmBeamPurchase";
+            this.Text = "Beam Purchase";
             this.pnlMain.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
@@ -908,10 +909,10 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dpBeamPurchaseDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpBeamPurchaseDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBeamQuality.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBrokerName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPurchaseBillNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPartyName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbBeamQuality.Properties)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridBeamPurchase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InnerGrid)).EndInit();
