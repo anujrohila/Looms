@@ -151,7 +151,7 @@ namespace LoomsMana
                   FillFrm( new frmPenaltyMasterView());
                    break;
                case "navYarnType":
-                   FillFrm(new frmFiscalYearView());
+                   FillFrm(new frmYarnTypeMasterView());
                    break;
                case "navYarnQty":
                   FillFrm(  Currentform = new frmYarnQualityMasterView());
